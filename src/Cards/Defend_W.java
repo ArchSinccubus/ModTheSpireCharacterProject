@@ -1,4 +1,5 @@
 package Cards;
+import Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -9,19 +10,19 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import basemod.abstracts.CustomCard;
 
-public class Defend extends CustomCard{
-    public static final String ID = "Strike";
-    public static final String NAME = "Strike";
+public class Defend_W extends CustomCard{
+    public static final String ID = "Strike_W";
+    public static final String NAME = "Strike_W";
     public static final String DESCRIPTION = "Gain !B! block.";
-    public static final String IMG_PATH = "img/my_card_img.png";
+    public static final String IMG_PATH = "ASSETS/Cards/Skills/corona.png";
     private static final int COST = 1;
     private static final int BLOCK_AMOUNT = 5;
     private static final int UPGRADE_BLOCK_DMG = 3;
     private static final int POOL = 1;
 
-    public Defend() {
+    public Defend_W() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION,
-                CardType.SKILL, AbstractCard.CardColor.BLUE,
+                CardType.SKILL, AbstractCardEnum.WHITE,
                 CardRarity.BASIC, CardTarget.SELF, POOL);
         this.damage=this.baseBlock = BLOCK_AMOUNT;
     }
@@ -36,7 +37,7 @@ public class Defend extends CustomCard{
 
     @Override
     public AbstractCard makeCopy() {
-        return new Strike();
+        return new Strike_W();
     }
 
     @Override

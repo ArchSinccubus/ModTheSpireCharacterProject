@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 
+import Patches.CharacterEnum;
 import basemod.BaseMod;
 import basemod.ModPanel;
 
@@ -23,11 +24,11 @@ public class Character  extends AbstractPlayer{
     public static AbstractPlayer.PlayerClass Character;
 
     public static final int ENERGY_PER_TURN = 3; // how much energy you get every turn
-    public static final String MY_CHARACTER_SHOULDER_2 = "img/char/shoulder2.png"; // campfire pose
-    public static final String MY_CHARACTER_SHOULDER_1 = "img/char/shoulder1.png"; // another campfire pose
+    public static final String MY_CHARACTER_SHOULDER_2 = "ASSETS/Cards/Skills/corona_p.png"; // campfire pose
+    public static final String MY_CHARACTER_SHOULDER_1 = "ASSETS/Cards/Skills/corona_p.png"; // another campfire pose
     public static final String MY_CHARACTER_CORPSE = "ASSETS/Char/Blahblahhugebitch.png"; // dead corpse
-    public static final String MY_CHARACTER_SKELETON_ATLAS = "img/char/skeleton.atlas"; // spine animation atlas
-    public static final String MY_CHARACTER_SKELETON_JSON = "img/char/skeleton.json"; // spine animation json
+    public static final String MY_CHARACTER_SKELETON_ATLAS = "ASSETS/TestAnim/idle/skeleton.atlas"; // spine animation atlas
+    public static final String MY_CHARACTER_SKELETON_JSON = "ASSETS/TestAnim/idle/skeleton.json"; // spine animation json
 
 
     public static final int STARTING_HP = 90;
@@ -55,16 +56,16 @@ public class Character  extends AbstractPlayer{
     // ADD CARDS
     public static ArrayList<String> getStartingDeck() { // starting deck 'nuff said
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add("Strike");
-        retVal.add("Strike");
-        retVal.add("Strike");
-        retVal.add("Strike");
-        retVal.add("Strike");
-        retVal.add("Defend");
-        retVal.add("Defend");
-        retVal.add("Defend");
-        retVal.add("Defend");
-        retVal.add("Defend");
+        retVal.add("Strike_W");
+        retVal.add("Strike_W");
+        retVal.add("Strike_W");
+        retVal.add("Strike_W");
+        retVal.add("Strike_W");
+        retVal.add("Defend_W");
+        retVal.add("Defend_W");
+        retVal.add("Defend_W");
+        retVal.add("Defend_W");
+        retVal.add("Defend_W");
 
         return retVal;
     }
@@ -82,7 +83,7 @@ public class Character  extends AbstractPlayer{
     public static CharSelectInfo getLoadout() { // the rest of the character loadout so includes your character select screen info plus hp and starting gold
         return new CharSelectInfo("My Character", "A nun sent to destroy the heart of evil in the name of The Lord. Wields both holy power and untold fury.",
                 STARTING_HP, MAX_HP, STARTING_GOLD, HAND_SIZE,
-                Character, getStartingRelics(), getStartingDeck(), false);
+                CharacterEnum.Character, getStartingRelics(), getStartingDeck(), false);
     }
 
 
