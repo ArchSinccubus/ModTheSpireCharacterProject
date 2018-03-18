@@ -31,7 +31,7 @@ public class Fudgesickle implements EditCharactersSubscriber {
         logger.info("begin editting characters");
 
         logger.info("add " + CharacterEnum.Character.toString());
-        BaseMod.addCharacter(Character.class, "The Valiant", "A nun sent to destroy the heart of evil in the name of justice. Wields both holy power and untold fury.",
+        BaseMod.addCharacter(Character.class, "The Valiant", "A nun sent to destroy the heart of evil in the name of The Lord. Wields both holy power and untold fury.",
                 AbstractCardEnum.WHITE.toString(), "My Character",
                 VALIANT_BUTTON , VALIANT_POTRAIT,
                 CharacterEnum.Character.toString());
