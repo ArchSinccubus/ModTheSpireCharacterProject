@@ -1,27 +1,43 @@
 package Relics;
 
+import MainMod.*;
+import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-
-import basemod.abstracts.CustomRelic;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class DivineWrath extends CustomRelic {
     private static final String ID = "Divine Wrath";
+    public static final String[] DESCRIPTIONS = new String[] {
+            "You get 200 Strength. I hope you're happy"
+    };
     private static final int StrengthAmount = 200;
 
-    private static final String texturePath = "ASSETS/Relics/Wrath.png";
+    private static final String texturePath = "ASSETS/Relics/arcanosphere.png";
+
+    public static final Logger logger = LogManager.getLogger(DivineWrath.class.getName());
+
 
     public DivineWrath() {
-        super(ID, getRelicTexture(), RelicTier.STARTER, LandingSound.MAGICAL);
+        super(ID, Fudgesickle.getRelicTexture(), RelicTier.STARTER, LandingSound.MAGICAL);
+        logger.info("initialized");
     }
 
     private static Texture getRelicTexture() {
-        return new Texture(texturePath);
+        logger.info("getting texture");
+        Texture tex = new Texture(texturePath);
+        logger.info("got texture");
+        return tex;
+    }
+
+    @Override
+    public String getUpdatedDescription() {
+        return DESCRIPTIONS[0];
     }
 
     @Override
@@ -32,10 +48,7 @@ public class DivineWrath extends CustomRelic {
     @Override
     public void atTurnStart() {
         AbstractPlayer p = AbstractDungeon.player;
-        AbstractPower power = null;
-        power = new StrengthPower(p, StrengthAmount);
-
-        if(power != null)
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, power, 1));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new StrengthPower(p, StrengthAmount), 1));
+        }
     }
-}
+

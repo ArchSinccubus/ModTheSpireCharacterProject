@@ -1,0 +1,9 @@
+{
+	"DivineWrath": {
+		"NAME": "Divine Wrath",
+		"FLAVOR": "The absolute wrath of god, unleashed on the spire",
+		"DESCRIPTIONS": [
+			"gain 200 power. Seriously though, this is just a test relic."
+		]
+	}
+}

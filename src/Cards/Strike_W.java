@@ -1,6 +1,7 @@
 package Cards;
 import Patches.AbstractCardEnum;
 import basemod.abstracts.CustomCard;
+
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -21,10 +22,11 @@ public class Strike_W extends CustomCard{
     private static final int POOL = 1;
 
     public Strike_W() {
-        super(ID, NAME, IMG_PATH, COST, DESCRIPTION,
-                AbstractCard.CardType.ATTACK, AbstractCardEnum.WHITE,
-                AbstractCard.CardRarity.BASIC, AbstractCard.CardTarget.ENEMY, POOL);
-        this.damage=this.baseDamage = ATTACK_DMG;
+        super(ID, NAME, IMG_PATH, COST, DESCRIPTION, AbstractCard.CardType.ATTACK,
+                AbstractCardEnum.WHITE, AbstractCard.CardRarity.BASIC,
+                AbstractCard.CardTarget.ENEMY, POOL);
+
+        this.baseDamage = ATTACK_DMG;
     }
 
     @Override

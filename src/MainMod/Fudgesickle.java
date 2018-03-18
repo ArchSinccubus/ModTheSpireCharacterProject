@@ -1,3 +1,5 @@
+package MainMod;
+
 import Patches.AbstractCardEnum;
 import Patches.CharacterEnum;
 import basemod.BaseMod;
@@ -13,16 +15,24 @@ import Relics.*;
 import Cards.*;
 import Character.*;
 
+import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.nio.charset.StandardCharsets;
+import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.localization.RelicStrings;
 
 @SpireInitializer
 public class Fudgesickle implements PostInitializeSubscriber,
         EditCardsSubscriber, EditRelicsSubscriber, EditCharactersSubscriber,
         EditStringsSubscriber {
+
+    private static final Color WHITE = CardHelper.getColor(255.0f, 250.0f, 250.0f);
+    private static final String ARCHMOD_ASSETS_FOLDER = "ASSETS"; //TODO: Change to your folder if different;
 
     //MiscStuff
     private static final String Dev = "ArchSinccubus";
@@ -49,11 +59,15 @@ public class Fudgesickle implements PostInitializeSubscriber,
     // badge
     public static final String BADGE_IMG = "ASSETS/BaseModBadge.png";
 
+    private static final String texturePath = "Relics/arcanosphere.png";
+
     public static final Logger logger = LogManager.getLogger(Fudgesickle.class.getName());
 
-    public Fudgesickle(){
+    public static final String makePath(String ressource) {
+        return ARCHMOD_ASSETS_FOLDER + "/" + ressource;
+    }
 
-        BaseMod.subscribeToEditCharacters(this);
+    public Fudgesickle(){
 
         logger.info("subscribing to postInitialize event");
         BaseMod.subscribeToPostInitialize(this);
@@ -72,7 +86,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
 
         logger.info("creating the color " + AbstractCardEnum.WHITE.toString());
         BaseMod.addColor(AbstractCardEnum.WHITE.toString(),
-                Color.WHITE, Color.WHITE, Color.WHITE, Color.WHITE, Color.WHITE, Color.WHITE, Color.WHITE,
+                WHITE, WHITE, WHITE, WHITE, WHITE, WHITE, WHITE,
                 ATTACK_WHITE, SKILL_WHITE,
                 POWER_WHITE, ENERGY_ORB_PURPLE,
                 ATTACK_PURPLE_PORTRAIT, SKILL_PURPLE_PORTRAIT,
@@ -90,6 +104,10 @@ public class Fudgesickle implements PostInitializeSubscriber,
         ModPanel settingsPanel = new ModPanel();
         settingsPanel.addLabel("This mod does not have any settings (yet)", 400.0f, 700.0f, (me) -> {});
         BaseMod.registerModBadge(badgeTexture, Dev, Dev, "This is muh shit. F**k ye", settingsPanel);
+
+        Settings.isDailyRun = false;
+        Settings.isTrial = false;
+        Settings.isDemo = false;
     }
 
     @Override
@@ -132,14 +150,23 @@ public class Fudgesickle implements PostInitializeSubscriber,
         logger.info("begin editting strings");
 
         // RelicStrings
-        String relicStrings = Gdx.files.internal("localization/FruityMod-RelicStrings.json").readString(
+
+        String relicStrings = Gdx.files.internal("Localization/Valiant-RelicStrings.json").readString(
                 String.valueOf(StandardCharsets.UTF_8));
-        //BaseMod.loadCustomStrings(RelicStrings.class, relicStrings);
+        BaseMod.loadCustomStrings(RelicStrings.class, relicStrings);
         // CardStrings
-        String cardStrings = Gdx.files.internal("localization/FruityMod-CardStrings.json").readString(
+        String cardStrings = Gdx.files.internal("Localization/Valiant-CardStrings.json").readString(
                 String.valueOf(StandardCharsets.UTF_8));
-        //BaseMod.loadCustomStrings(CardStrings.class, cardStrings);
+        BaseMod.loadCustomStrings(CardStrings.class, cardStrings);
 
         logger.info("done editting strings");
+    }
+
+
+    public static Texture getRelicTexture() {
+        logger.info("getting texture");
+        Texture tex = new Texture(makePath(texturePath));
+logger.info(tex.getDepth() + " " + tex.getHeight());
+        return tex;
     }
 }

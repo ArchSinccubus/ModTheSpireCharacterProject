@@ -1,0 +1,10 @@
+{
+	"Strike_P": {
+		"NAME": "Strike",
+		"DESCRIPTION": "Deal !D! damage."
+	},
+	"Defend_P": {
+		"NAME": "Defend",
+		"DESCRIPTION": "Gain !B! Block."
+	}
+}

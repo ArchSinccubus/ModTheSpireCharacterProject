@@ -20,11 +20,10 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Valiant extends CustomPlayer{
-
-    @SpireEnum
-    public static AbstractPlayer.PlayerClass Character;
 
     public static final int ENERGY_PER_TURN = 3; // how much energy you get every turn
     public static final String MY_CHARACTER_SHOULDER_2 = "ASSETS/Cards/Skills/corona_p.png"; // campfire pose
@@ -32,6 +31,8 @@ public class Valiant extends CustomPlayer{
     public static final String MY_CHARACTER_CORPSE = "ASSETS/Char/Blahblahhugebitch.png"; // dead corpse
     public static final String MY_CHARACTER_SKELETON_ATLAS = "ASSETS/TestAnim/idle/skeleton.atlas"; // spine animation atlas
     public static final String MY_CHARACTER_SKELETON_JSON = "ASSETS/TestAnim/idle/skeleton.json"; // spine animation json
+
+    public static final Logger logger = LogManager.getLogger(Valiant.class.getName());
 
     public static final String[] orbTextures = {
             "ASSETS/orb/layer1.png",
@@ -89,16 +90,20 @@ public class Valiant extends CustomPlayer{
 
     // ADD RELICS
     public static ArrayList<String> getStartingRelics() { // starting relics - also simple
+        logger.info("1");
         ArrayList<String> retVal = new ArrayList<>();
+        logger.info("2");
         retVal.add("DivineWrath");
+        logger.info("3");
         UnlockTracker.markRelicAsSeen("DivineWrath");
+        logger.info("4");
 
         return retVal;
     }
 
 
     public static CharSelectInfo getLoadout() { // the rest of the character loadout so includes your character select screen info plus hp and starting gold
-        return new CharSelectInfo("My Valiant.Valiant", "A nun sent to destroy the heart of evil in the name of The Lord. Wields both holy power and untold fury.",
+        return new CharSelectInfo("Valiant", "A nun sent to destroy the heart of evil in the name of The Lord. Wields both holy power and untold fury.",
                 STARTING_HP, MAX_HP, STARTING_GOLD, HAND_SIZE,
                 CharacterEnum.TheValiant, getStartingRelics(), getStartingDeck(), false);
     }
