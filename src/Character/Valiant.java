@@ -1,9 +1,12 @@
+package Character;
+
 import java.util.ArrayList;
 
 import Patches.CharacterEnum;
 import basemod.BaseMod;
 import basemod.ModPanel;
 
+import basemod.abstracts.CustomPlayer;
 import com.badlogic.gdx.math.MathUtils;
 import com.esotericsoftware.spine.AnimationState;
 import com.megacrit.cardcrawl.actions.utility.ExhaustAllEtherealAction;
@@ -18,7 +21,7 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 
-public class Character  extends AbstractPlayer{
+public class Valiant extends CustomPlayer{
 
     @SpireEnum
     public static AbstractPlayer.PlayerClass Character;
@@ -30,14 +33,28 @@ public class Character  extends AbstractPlayer{
     public static final String MY_CHARACTER_SKELETON_ATLAS = "ASSETS/TestAnim/idle/skeleton.atlas"; // spine animation atlas
     public static final String MY_CHARACTER_SKELETON_JSON = "ASSETS/TestAnim/idle/skeleton.json"; // spine animation json
 
+    public static final String[] orbTextures = {
+            "ASSETS/orb/layer1.png",
+            "ASSETS/orb/layer2.png",
+            "ASSETS/orb/layer3.png",
+            "ASSETS/orb/layer4.png",
+            "ASSETS/orb/layer5.png",
+            "ASSETS/orb/layer6.png",
+            "ASSETS/orb/layer1d.png",
+            "ASSETS/orb/layer2d.png",
+            "ASSETS/orb/layer3d.png",
+            "ASSETS/orb/layer4d.png",
+            "ASSETS/orb/layer5d.png",
+    };
+
 
     public static final int STARTING_HP = 90;
     public static final int MAX_HP = 90;
     public static final int STARTING_GOLD = 99;
     public static final int HAND_SIZE = 5;
 
-    public Character (String name, PlayerClass chosenClass) {
-        super(name, chosenClass);
+    public Valiant(String name, PlayerClass chosenClass) {
+        super(name, chosenClass,orbTextures ,"ASSETS/orb/vfx.png" ,MY_CHARACTER_SKELETON_ATLAS, MY_CHARACTER_SKELETON_JSON );
 
         this.dialogX = (this.drawX + 0.0F * Settings.scale); // set location for text bubbles
         this.dialogY = (this.drawY + 220.0F * Settings.scale); // you can just copy these values
@@ -81,7 +98,7 @@ public class Character  extends AbstractPlayer{
 
 
     public static CharSelectInfo getLoadout() { // the rest of the character loadout so includes your character select screen info plus hp and starting gold
-        return new CharSelectInfo("My Character", "A nun sent to destroy the heart of evil in the name of The Lord. Wields both holy power and untold fury.",
+        return new CharSelectInfo("My Valiant.Valiant", "A nun sent to destroy the heart of evil in the name of The Lord. Wields both holy power and untold fury.",
                 STARTING_HP, MAX_HP, STARTING_GOLD, HAND_SIZE,
                 CharacterEnum.TheValiant, getStartingRelics(), getStartingDeck(), false);
     }

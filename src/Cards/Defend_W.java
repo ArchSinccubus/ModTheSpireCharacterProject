@@ -11,8 +11,8 @@ import com.megacrit.cardcrawl.powers.VulnerablePower;
 import basemod.abstracts.CustomCard;
 
 public class Defend_W extends CustomCard{
-    public static final String ID = "Strike_W";
-    public static final String NAME = "Strike_W";
+    public static final String ID = "Defend_W";
+    public static final String NAME = "Defend_W";
     public static final String DESCRIPTION = "Gain !B! block.";
     public static final String IMG_PATH = "ASSETS/Cards/Skills/corona.png";
     private static final int COST = 1;
@@ -29,9 +29,9 @@ public class Defend_W extends CustomCard{
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DamageAction(m,
-                new DamageInfo(p, this.damage, this.damageTypeForTurn),
-                AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.(m,
+                new B(p, this.damage, this.damageTypeForTurn),
+                AbstractGameAction.ActionType.BLOCK));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new VulnerablePower(m, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
     }
 

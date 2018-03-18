@@ -5,11 +5,13 @@ import basemod.BaseMod;
 import basemod.ModPanel;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 
 import Relics.*;
 import Cards.*;
+import Character.*;
 
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import org.apache.logging.log4j.LogManager;
@@ -44,6 +46,9 @@ public class Fudgesickle implements PostInitializeSubscriber,
     private static final String VALIANT_BUTTON = "ASSETS/TestIcon.png";
     private static final String VALIANT_POTRAIT = "ASSETS/Leila Pic.png";
 
+    // badge
+    public static final String BADGE_IMG = "ASSETS/BaseModBadge.png";
+
     public static final Logger logger = LogManager.getLogger(Fudgesickle.class.getName());
 
     public Fudgesickle(){
@@ -64,6 +69,14 @@ public class Fudgesickle implements PostInitializeSubscriber,
 
         logger.info("subscribing to editStrings event");
         BaseMod.subscribeToEditStrings(this);
+
+        logger.info("creating the color " + AbstractCardEnum.WHITE.toString());
+        BaseMod.addColor(AbstractCardEnum.WHITE.toString(),
+                Color.WHITE, Color.WHITE, Color.WHITE, Color.WHITE, Color.WHITE, Color.WHITE, Color.WHITE,
+                ATTACK_WHITE, SKILL_WHITE,
+                POWER_WHITE, ENERGY_ORB_PURPLE,
+                ATTACK_PURPLE_PORTRAIT, SKILL_PURPLE_PORTRAIT,
+                POWER_PURPLE_PORTRAIT, ENERGY_ORB_PURPLE_PORTRAIT);
     }
 
     public static void initialize() {
@@ -73,7 +86,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
     @Override
     public void receivePostInitialize() {
         // Mod badge
-        Texture badgeTexture = new Texture(Gdx.files.internal("ASSETS/TestIcon.png"));
+        Texture badgeTexture = new Texture(Gdx.files.internal("ASSETS/BaseModBadge.png"));
         ModPanel settingsPanel = new ModPanel();
         settingsPanel.addLabel("This mod does not have any settings (yet)", 400.0f, 700.0f, (me) -> {});
         BaseMod.registerModBadge(badgeTexture, Dev, Dev, "This is muh shit. F**k ye", settingsPanel);
@@ -106,8 +119,8 @@ public class Fudgesickle implements PostInitializeSubscriber,
         logger.info("begin editting characters");
 
         logger.info("add " + CharacterEnum.TheValiant.toString());
-        BaseMod.addCharacter(Character.class, "The Valiant", "A nun sent to destroy the heart of evil in the name of The Lord. Wields both holy power and untold fury.",
-                AbstractCardEnum.WHITE.toString(), "My Character",
+        BaseMod.addCharacter(Valiant.class, "The Valiant", "A nun sent to destroy the heart of evil in the name of The Lord. Wields both holy power and untold fury.",
+                AbstractCardEnum.WHITE.toString(), "My Valiant.Valiant",
                 VALIANT_BUTTON , VALIANT_POTRAIT,
                 CharacterEnum.TheValiant.toString());
 

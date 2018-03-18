@@ -17,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Character.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Character.java">
+      <file leaf-file-name="Valiant.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Character/Valiant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="85" column="40" lean-forward="false" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
+            <state relative-caret-position="409">
+              <caret line="46" column="24" lean-forward="false" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,18 +62,18 @@
       <file leaf-file-name="Fudgesickle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Fudgesickle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2331">
-              <caret line="111" column="40" lean-forward="true" selection-start-line="111" selection-start-column="40" selection-end-line="111" selection-end-column="40" />
+            <state relative-caret-position="466">
+              <caret line="72" column="66" lean-forward="false" selection-start-line="72" selection-start-column="66" selection-end-line="72" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2713#2714#0" expanded="true" />
-                <element signature="e#2764#2765#0" expanded="true" />
+                <element signature="e#3327#3328#0" expanded="true" />
+                <element signature="e#3378#3379#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LibraryTypeEnum.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LibraryTypeEnum.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Patches/LibraryTypeEnum.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
@@ -111,15 +111,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Defend_W.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Defend_W.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Cards/Defend_W.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="16" column="73" lean-forward="false" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
+            <state relative-caret-position="462">
+              <caret line="31" column="92" lean-forward="false" selection-start-line="31" selection-start-column="92" selection-end-line="31" selection-end-column="92" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1800#1801#0" expanded="true" />
-                <element signature="e#1837#1838#0" expanded="true" />
+                <element signature="e#1768#1769#0" expanded="true" />
+                <element signature="e#1805#1806#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -131,14 +131,14 @@
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1521363845012" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1521363845012" expanded="false" signature="141:756" ph="..." />
-                <marker date="1521363845012" expanded="true" signature="1027:1483" ph="{...}" />
-                <marker date="1521363845012" expanded="true" signature="1660:1847" ph="{...}" />
-                <marker date="1521363845012" expanded="false" signature="1947:1958" ph=" { " />
-                <marker date="1521363845012" expanded="false" signature="1969:1975" ph=" }" />
-                <marker date="1521363845012" expanded="true" signature="2056:2148" ph="{...}" />
-                <marker date="1521363845012" expanded="true" signature="2192:2755" ph="{...}" />
+                <marker date="1521391172399" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1521391172399" expanded="false" signature="141:756" ph="..." />
+                <marker date="1521391172399" expanded="true" signature="1027:1483" ph="{...}" />
+                <marker date="1521391172399" expanded="true" signature="1660:1847" ph="{...}" />
+                <marker date="1521391172399" expanded="false" signature="1947:1958" ph=" { " />
+                <marker date="1521391172399" expanded="false" signature="1969:1975" ph=" }" />
+                <marker date="1521391172399" expanded="true" signature="2056:2148" ph="{...}" />
+                <marker date="1521391172399" expanded="true" signature="2192:2755" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -176,16 +176,18 @@
         <option value="$PROJECT_DIR$/src/Patches/AbstractCardEnum.java" />
         <option value="$PROJECT_DIR$/src/Cards/Strike.java" />
         <option value="$PROJECT_DIR$/src/Cards/Defend.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Defend_W.java" />
         <option value="$PROJECT_DIR$/src/Cards/Strike_W.java" />
         <option value="$PROJECT_DIR$/src/Patches/LibraryTypeEnum.java" />
         <option value="$PROJECT_DIR$/src/Patches/CharacterEnum.java" />
         <option value="$PROJECT_DIR$/src/Character.java" />
+        <option value="$PROJECT_DIR$/src/Character/Character.java" />
         <option value="$PROJECT_DIR$/src/Fudgesickle.java" />
+        <option value="$PROJECT_DIR$/src/Character/Valiant.java" />
+        <option value="$PROJECT_DIR$/src/Cards/Defend_W.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -270,6 +272,12 @@
             <path>
               <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ASSETS" type="462c0819:PsiDirectoryNode" />
+              <item name="orb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -277,6 +285,12 @@
               <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Cards" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Character" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
@@ -308,11 +322,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\IdeaProjects\ModTheSpireCharacterProject\ASSETS\orb" />
+      <recent name="C:\Users\user\IdeaProjects\ModTheSpireCharacterProject\ASSETS" />
       <recent name="C:\Users\user\IdeaProjects\ModTheSpireCharacterProject\ASSETS\Cards\Skills" />
       <recent name="C:\Users\user\IdeaProjects\ModTheSpireCharacterProject\ASSETS\Cards\Attacks" />
       <recent name="C:\Users\user\IdeaProjects\ModTheSpireCharacterProject\ASSETS\Cards\Backgrounds\1024" />
-      <recent name="C:\Users\user\IdeaProjects\ModTheSpireCharacterProject\ASSETS\Cards\Backgrounds" />
-      <recent name="C:\Users\user\IdeaProjects\ModTheSpireCharacterProject\ASSETS\Cards\Backgrounds\512" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -427,7 +441,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -500,14 +514,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1521363845012" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521363845012" expanded="false" signature="141:756" ph="..." />
-            <marker date="1521363845012" expanded="true" signature="1027:1483" ph="{...}" />
-            <marker date="1521363845012" expanded="true" signature="1660:1847" ph="{...}" />
-            <marker date="1521363845012" expanded="false" signature="1947:1958" ph=" { " />
-            <marker date="1521363845012" expanded="false" signature="1969:1975" ph=" }" />
-            <marker date="1521363845012" expanded="true" signature="2056:2148" ph="{...}" />
-            <marker date="1521363845012" expanded="true" signature="2192:2755" ph="{...}" />
+            <marker date="1521391172399" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1521391172399" expanded="false" signature="141:756" ph="..." />
+            <marker date="1521391172399" expanded="true" signature="1027:1483" ph="{...}" />
+            <marker date="1521391172399" expanded="true" signature="1660:1847" ph="{...}" />
+            <marker date="1521391172399" expanded="false" signature="1947:1958" ph=" { " />
+            <marker date="1521391172399" expanded="false" signature="1969:1975" ph=" }" />
+            <marker date="1521391172399" expanded="true" signature="2056:2148" ph="{...}" />
+            <marker date="1521391172399" expanded="true" signature="2192:2755" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -522,18 +536,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Defend_W.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="73" lean-forward="false" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1800#1801#0" expanded="true" />
-            <element signature="e#1837#1838#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -575,33 +577,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Character.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="85" column="40" lean-forward="false" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/util/function/Consumer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
           <caret line="48" column="9" lean-forward="false" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Fudgesickle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2331">
-          <caret line="111" column="40" lean-forward="true" selection-start-line="111" selection-start-column="40" selection-end-line="111" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2713#2714#0" expanded="true" />
-            <element signature="e#2764#2765#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -621,6 +601,45 @@
           <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Fudgesickle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="72" column="66" lean-forward="false" selection-start-line="72" selection-start-column="66" selection-end-line="72" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3327#3328#0" expanded="true" />
+            <element signature="e#3378#3379#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ASSETS/orb/vfx.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Character/Valiant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="46" column="24" lean-forward="false" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Defend_W.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="31" column="92" lean-forward="false" selection-start-line="31" selection-start-column="92" selection-end-line="31" selection-end-column="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1768#1769#0" expanded="true" />
+            <element signature="e#1805#1806#0" expanded="true" />
           </folding>
         </state>
       </provider>
