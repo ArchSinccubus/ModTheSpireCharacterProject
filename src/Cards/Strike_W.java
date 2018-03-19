@@ -1,4 +1,5 @@
 package Cards;
+import MainMod.*;
 import Patches.AbstractCardEnum;
 import basemod.abstracts.CustomCard;
 
@@ -13,7 +14,7 @@ import com.megacrit.cardcrawl.powers.VulnerablePower;
 
 public class Strike_W extends CustomCard{
     public static final String ID = "Strike_W";
-    public static final String NAME = "Strike_W";
+    public static final String NAME = "Strike";
     public static final String DESCRIPTION = "Deal !D! damage.";
     public static final String IMG_PATH = "ASSETS/Cards/Attacks/comet.png";
     private static final int COST = 1;

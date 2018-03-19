@@ -34,11 +34,12 @@
 	{ "name": "bone16", "parent": "kneeleft", "length": 33.89, "rotation": -87.57, "x": -0.97, "y": -1.9 },
 	{ "name": "bone17", "parent": "bone16", "length": 16.79, "rotation": -75.53, "x": 34.17, "y": -0.29 },
 	{ "name": "hair", "parent": "body", "x": -5.84, "y": 52.14 },
+	{ "name": "helmet", "parent": "hair", "x": 12.18, "y": 6.12 },
+	{ "name": "eye", "parent": "helmet", "x": 8, "y": -4.91 },
 	{ "name": "llp", "parent": "armleft", "rotation": -88.94, "x": 1.61, "y": -0.09, "inheritRotation": false },
 	{ "name": "lrp", "parent": "armright", "rotation": -66.46, "x": 6.7, "y": -0.92, "inheritRotation": false },
 	{ "name": "pauldronleft", "parent": "armleft", "rotation": -88.94, "x": -12.73, "y": -1.35, "inheritRotation": false },
 	{ "name": "pauldronright", "parent": "armright", "rotation": -66.46, "x": -9.8, "y": -1.68, "inheritRotation": false },
-	{ "name": "helmet", "parent": "hair", "x": -14, "y": 3 },
 	{ "name": "shadow", "parent": "root", "x": 0.1, "y": 2.12 },
 	{ "name": "sword", "parent": "armright", "length": 50, "rotation": 179.5, "x": 9.83, "y": -34.2, "inheritRotation": false }
 ],
@@ -49,6 +50,8 @@
 	{ "name": "images/belt", "bone": "belt", "attachment": "images/belt" },
 	{ "name": "images/armleft", "bone": "armleft", "attachment": "images/armleft" },
 	{ "name": "images/hair", "bone": "hair", "attachment": "images/hair" },
+	{ "name": "images/helmet", "bone": "helmet", "attachment": "images/helmet" },
+	{ "name": "images/eye", "bone": "eye", "attachment": "images/eye" },
 	{ "name": "images/llp", "bone": "llp", "attachment": "images/llp" },
 	{ "name": "images/armright", "bone": "armright", "attachment": "images/armright" },
 	{ "name": "images/pauldronleft", "bone": "pauldronleft", "attachment": "images/pauldronleft" },
@@ -59,7 +62,6 @@
 	{ "name": "images/handleft", "bone": "handleft", "attachment": "images/handleft" },
 	{ "name": "rightleg", "bone": "legs", "attachment": "rightleg" },
 	{ "name": "leftlg", "bone": "legs", "attachment": "leftlg" },
-	{ "name": "images/helmet", "bone": "helmet", "attachment": "images/helmet" },
 	{ "name": "images/bootleft", "bone": "kneeleft", "attachment": "images/bootleft" },
 	{ "name": "images/bootright", "bone": "kneeright", "attachment": "images/bootright" }
 ],
@@ -168,6 +170,9 @@
 				"height": 63
 			}
 		},
+		"images/eye": {
+			"images/eye": { "width": 18, "height": 16 }
+		},
 		"images/hair": {
 			"images/hair": {
 				"type": "mesh",
@@ -187,7 +192,7 @@
 			"images/handright": { "x": 18.81, "y": 1.91, "rotation": -128.02, "width": 46, "height": 46 }
 		},
 		"images/helmet": {
-			"images/helmet": { "width": 111, "height": 76 }
+			"images/helmet": { "width": 47, "height": 42 }
 		},
 		"images/legs": {
 			"images/legs": {

@@ -49,12 +49,12 @@ public class Fudgesickle implements PostInitializeSubscriber,
     private static final String ENERGY_ORB_PURPLE_PORTRAIT = "ASSETS/Cards/Backgrounds/1024/card_hybrid_orb.png";
 
     //card pics
-    public static final String Strike_W = "ASSETS/Cards/Attacks/comet.png";
-    public static final String Defend_W = "ASSETS/Cards/Skills/corona.png";
+    public static final String Strike_W = "Cards/Attacks/comet.png";
+    public static final String Defend_W = "Cards/Skills/corona.png";
 
     //icons
-    private static final String VALIANT_BUTTON = "ASSETS/TestIcon.png";
-    private static final String VALIANT_POTRAIT = "ASSETS/Leila Pic.png";
+    private static final String VALIANT_BUTTON = "TestIcon.png";
+    private static final String VALIANT_POTRAIT = "LeilaPic.jpg";
 
     // badge
     public static final String BADGE_IMG = "ASSETS/BaseModBadge.png";
@@ -62,6 +62,8 @@ public class Fudgesickle implements PostInitializeSubscriber,
     private static final String texturePath = "Relics/arcanosphere.png";
 
     public static final Logger logger = LogManager.getLogger(Fudgesickle.class.getName());
+
+
 
     public static final String makePath(String ressource) {
         return ARCHMOD_ASSETS_FOLDER + "/" + ressource;
@@ -91,6 +93,23 @@ public class Fudgesickle implements PostInitializeSubscriber,
                 POWER_WHITE, ENERGY_ORB_PURPLE,
                 ATTACK_PURPLE_PORTRAIT, SKILL_PURPLE_PORTRAIT,
                 POWER_PURPLE_PORTRAIT, ENERGY_ORB_PURPLE_PORTRAIT);
+    }
+
+    public static Texture GetAttack_WTexture()
+    {
+        return new Texture(makePath(Strike_W));
+    }
+
+    public static Texture GetDefend_WTexture()
+    {
+        return new Texture(makePath(Defend_W));
+    }
+
+    public static Texture getRelicTexture() {
+        logger.info("getting texture");
+        Texture tex = new Texture(makePath(texturePath));
+        logger.info(tex.getDepth() + " " + tex.getHeight());
+        return tex;
     }
 
     public static void initialize() {
@@ -139,7 +158,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
         logger.info("add " + CharacterEnum.TheValiant.toString());
         BaseMod.addCharacter(Valiant.class, "The Valiant", "A nun sent to destroy the heart of evil in the name of The Lord. Wields both holy power and untold fury.",
                 AbstractCardEnum.WHITE.toString(), "My Valiant.Valiant",
-                VALIANT_BUTTON , VALIANT_POTRAIT,
+                makePath(VALIANT_BUTTON) , makePath(VALIANT_POTRAIT),
                 CharacterEnum.TheValiant.toString());
 
         logger.info("done editting characters");
@@ -163,10 +182,5 @@ public class Fudgesickle implements PostInitializeSubscriber,
     }
 
 
-    public static Texture getRelicTexture() {
-        logger.info("getting texture");
-        Texture tex = new Texture(makePath(texturePath));
-logger.info(tex.getDepth() + " " + tex.getHeight());
-        return tex;
-    }
+
 }

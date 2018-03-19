@@ -74,6 +74,13 @@ images/handright
   orig: 46, 46
   offset: 0, 0
   index: -1
+images/helmet
+  rotate: false
+  xy: 595, 84
+  size: 47, 42
+  orig: 47, 42
+  offset: 0, 0
+  index: -1
 images/legs
   rotate: false
   xy: 316, 46
@@ -121,12 +128,5 @@ images/sword
   xy: 2, 65
   size: 238, 28
   orig: 238, 28
-  offset: 0, 0
-  index: -1
-images/helmet
-  rotate: false
-  xy: 627, 2
-  size: 111, 76
-  orig: 111, 76
   offset: 0, 0
   index: -1

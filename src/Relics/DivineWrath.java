@@ -12,7 +12,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class DivineWrath extends CustomRelic {
-    private static final String ID = "Divine Wrath";
+    public  static final String ID = "Divine Wrath";
     public static final String[] DESCRIPTIONS = new String[] {
             "You get 200 Strength. I hope you're happy"
     };

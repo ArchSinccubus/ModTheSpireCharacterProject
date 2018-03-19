@@ -1,10 +1,14 @@
 {
-	"Strike_P": {
+	"Strike_W": {
 		"NAME": "Strike",
 		"DESCRIPTION": "Deal !D! damage."
 	},
-	"Defend_P": {
+	"Defend_W": {
 		"NAME": "Defend",
+		"DESCRIPTION": "Gain !B! Block."
+	},
+	"MinorHealing": {
+		"NAME": "Minor Healing",
 		"DESCRIPTION": "Gain !B! Block."
 	}
 }

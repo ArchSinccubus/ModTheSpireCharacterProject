@@ -6,6 +6,8 @@ import Patches.CharacterEnum;
 import basemod.BaseMod;
 import basemod.ModPanel;
 
+import Relics.*;
+
 import basemod.abstracts.CustomPlayer;
 import com.badlogic.gdx.math.MathUtils;
 import com.esotericsoftware.spine.AnimationState;
@@ -14,6 +16,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
@@ -55,7 +58,7 @@ public class Valiant extends CustomPlayer{
     public static final int HAND_SIZE = 5;
 
     public Valiant(String name, PlayerClass chosenClass) {
-        super(name, chosenClass,orbTextures ,"ASSETS/orb/vfx.png" ,MY_CHARACTER_SKELETON_ATLAS, MY_CHARACTER_SKELETON_JSON );
+        super(name, chosenClass,orbTextures ,"ASSETS/orb/vfx.png" ,null, MY_CHARACTER_SKELETON_JSON );
 
         this.dialogX = (this.drawX + 0.0F * Settings.scale); // set location for text bubbles
         this.dialogY = (this.drawY + 220.0F * Settings.scale); // you can just copy these values
@@ -65,7 +68,7 @@ public class Valiant extends CustomPlayer{
                 MY_CHARACTER_CORPSE,
                 getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(ENERGY_PER_TURN));
 
-        //loadAnimation(MY_CHARACTER_SKELETON_ATLAS, MY_CHARCTER_SKELETON_JSON, 1.0F); // if you're using modified versions of base game animations or made animations in spine make sure to include this bit and the following lines
+        loadAnimation(MY_CHARACTER_SKELETON_ATLAS, MY_CHARACTER_SKELETON_JSON, 1.0F); // if you're using modified versions of base game animations or made animations in spine make sure to include this bit and the following lines
 
         AnimationState.TrackEntry e = this.state.setAnimation(0, "animation", true);
         e.setTime(e.getEndTime() * MathUtils.random());
@@ -93,7 +96,7 @@ public class Valiant extends CustomPlayer{
         logger.info("1");
         ArrayList<String> retVal = new ArrayList<>();
         logger.info("2");
-        retVal.add("DivineWrath");
+        retVal.add(DivineWrath.ID);
         logger.info("3");
         UnlockTracker.markRelicAsSeen("DivineWrath");
         logger.info("4");
