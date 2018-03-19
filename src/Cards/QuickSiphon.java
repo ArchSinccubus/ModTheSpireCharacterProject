@@ -14,47 +14,46 @@ import com.megacrit.cardcrawl.powers.*;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.powers.WeakPower;
 
-public class PiercingStab extends CustomCard
+public class QuickSiphon extends CustomCard
 {
-    public static final String ID = "PiercingStab";
-    public static final String NAME = "Piercing Stab";
+    public static final String ID = "QuickSiphon";
+    public static final String NAME = "Quick Siphon";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Attacks/comet.png";
     private static final int COST = 1;
     private static final int POOL = 1;
     private static final CardRarity rarity = CardRarity.COMMON;
     private static final CardTarget target = CardTarget.ENEMY;
-    private static final int DAMAGE = 7;
-    private static final int UPGRADE_PLUS_DMG = 3;
-    private static final int WEAK_AMOUNT = 2;
+    private static final int ATTACK_DMG = 6;
+    private static final int UPGRADED_COST = 0;
 
-    public PiercingStab() {
+
+    public QuickSiphon() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.WHITE,
                 rarity, target, POOL);
-        this.baseDamage = this.damage = DAMAGE;
+        this.baseDamage = this.damage = ATTACK_DMG;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DamageAction(m,
-                new DamageInfo(p, this.damage, this.damageTypeForTurn),
-                AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new WeakPower(m, WEAK_AMOUNT, false), WEAK_AMOUNT, true, AbstractGameAction.AttackEffect.NONE));
-
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, 1));
     }
 
     @Override
     public AbstractCard makeCopy() {
-        return new PiercingStab();
+        return new QuickSiphon();
     }
 
     @Override
     public void upgrade() {
-        if (!this.upgraded) {
+        if (!upgraded)
+        {
             this.upgradeName();
-            this.upgradeDamage(UPGRADE_PLUS_DMG);
+            this.upgradeBaseCost(0);
         }
+
     }
 }

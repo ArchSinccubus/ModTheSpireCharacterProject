@@ -9,6 +9,7 @@ import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.utils.compression.lzma.Base;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 
 import Relics.*;
@@ -150,6 +151,10 @@ public class Fudgesickle implements PostInitializeSubscriber,
         BaseMod.addCard(new BlindingLight());
         BaseMod.addCard(new MinorHealing());
         BaseMod.addCard(new PiercingStab());
+        BaseMod.addCard(new EmpoweringForce());
+        BaseMod.addCard(new QuickSiphon());
+        BaseMod.addCard(new Smite());
+        BaseMod.addCard(new RecklessSmite());
 
         logger.info("done editting cards");
     }

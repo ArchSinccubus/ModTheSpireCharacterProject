@@ -12,19 +12,19 @@
     "DESCRIPTION": "Deal !D! damage. NL If the enemy is weak, deal 50% more.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is weak, deal twice as much."
   },
-  "EmpoweringStrike": {
-    "NAME": "Empowering Strike",
+  "EmpoweringForce": {
+    "NAME": "Empowering Force",
     "DESCRIPTION": "Deal !D! damage. Upgrade up to !M! card in your hand.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. Upgrade up to !M! cards in your hand."
   },
   "RecklessSmite": {
     "NAME": "Reckless Smite",
-    "DESCRIPTION": "Deal !D! damage. Gain !M! vulnerable.  NL If the enemy is weak, deal 50% more.",
+    "DESCRIPTION": "Deal !D! damage. Gain !M! vulnerable. NL If the enemy is weak, deal 50% more.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. Gain !M! vulnerable. NL If the enemy is weak, deal twice as much."
   },
   "QuickSiphon": {
     "NAME": "Quick Siphon",
-    "DESCRIPTION": "Deal !D! damage. Draw 1 card.  NL If the enemy is weak, deal 50% more.",
+    "DESCRIPTION": "Deal !D! damage. Draw 1 card."
   },
 	"Defend_W": {
 		"NAME": "Defend",

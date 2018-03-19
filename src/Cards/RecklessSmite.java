@@ -13,22 +13,21 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.*;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.powers.WeakPower;
+import jdk.nashorn.internal.ir.IfNode;
 
-public class PiercingStab extends CustomCard
+public class RecklessSmite extends CustomCard
 {
-    public static final String ID = "PiercingStab";
-    public static final String NAME = "Piercing Stab";
+    public static final String ID = "RecklessSmite";
+    public static final String NAME = "Reckless Smite";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Attacks/comet.png";
     private static final int COST = 1;
     private static final int POOL = 1;
     private static final CardRarity rarity = CardRarity.COMMON;
     private static final CardTarget target = CardTarget.ENEMY;
-    private static final int DAMAGE = 7;
-    private static final int UPGRADE_PLUS_DMG = 3;
-    private static final int WEAK_AMOUNT = 2;
+    private static final int DAMAGE = 9;
 
-    public PiercingStab() {
+    public RecklessSmite() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.WHITE,
                 rarity, target, POOL);
@@ -38,23 +37,30 @@ public class PiercingStab extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DamageAction(m,
-                new DamageInfo(p, this.damage, this.damageTypeForTurn),
-                AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new WeakPower(m, WEAK_AMOUNT, false), WEAK_AMOUNT, true, AbstractGameAction.AttackEffect.NONE));
+        int finalPower = this.damage;
+        if (!this.upgraded)
+            finalPower = (int) (this.damage * 1.5f);
+        else
+            finalPower = (int) (this.damage * 2f);
 
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(m,
+                new DamageInfo(p, finalPower, this.damageTypeForTurn),
+                AbstractGameAction.AttackEffect.FIRE));
+
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new VulnerablePower(m, 1, false), 1, true, AbstractGameAction.AttackEffect.NONE));
     }
 
     @Override
     public AbstractCard makeCopy() {
-        return new PiercingStab();
+        return new RecklessSmite();
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(UPGRADE_PLUS_DMG);
+            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
+            this.initializeDescription();
         }
     }
 }
