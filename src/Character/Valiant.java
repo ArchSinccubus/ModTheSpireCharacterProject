@@ -85,9 +85,9 @@ public class Valiant extends CustomPlayer{
         retVal.add("Defend_W");
         retVal.add("Defend_W");
         retVal.add("Defend_W");
-        retVal.add("Defend_W");
-        retVal.add("Defend_W");
-
+        retVal.add("BlindingLight");
+        retVal.add("BlindingLight");
+        retVal.add("MinorHealing");
         return retVal;
     }
 
@@ -106,7 +106,7 @@ public class Valiant extends CustomPlayer{
 
 
     public static CharSelectInfo getLoadout() { // the rest of the character loadout so includes your character select screen info plus hp and starting gold
-        return new CharSelectInfo("Valiant", "A nun sent to destroy the heart of evil in the name of The Lord. Wields both holy power and untold fury.",
+        return new CharSelectInfo("Valiant", "A zealous nun wielding both holy power and untold fury.",
                 STARTING_HP, MAX_HP, STARTING_GOLD, HAND_SIZE,
                 CharacterEnum.TheValiant, getStartingRelics(), getStartingDeck(), false);
     }

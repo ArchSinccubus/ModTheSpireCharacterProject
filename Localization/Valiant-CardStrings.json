@@ -3,12 +3,39 @@
 		"NAME": "Strike",
 		"DESCRIPTION": "Deal !D! damage."
 	},
+  "PiercingStab": {
+    "NAME": "Piercing Stab",
+    "DESCRIPTION": "Deal !D! damage. NL Apply 2 Weak."
+  },
+  "Smite": {
+    "NAME": "Smite",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy is weak, deal 50% more.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is weak, deal twice as much."
+  },
+  "EmpoweringStrike": {
+    "NAME": "Empowering Strike",
+    "DESCRIPTION": "Deal !D! damage. Upgrade up to !M! card in your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Upgrade up to !M! cards in your hand."
+  },
+  "RecklessSmite": {
+    "NAME": "Reckless Smite",
+    "DESCRIPTION": "Deal !D! damage. Gain !M! vulnerable.  NL If the enemy is weak, deal 50% more.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Gain !M! vulnerable. NL If the enemy is weak, deal twice as much."
+  },
+  "QuickSiphon": {
+    "NAME": "Quick Siphon",
+    "DESCRIPTION": "Deal !D! damage. Draw 1 card.  NL If the enemy is weak, deal 50% more.",
+  },
 	"Defend_W": {
 		"NAME": "Defend",
 		"DESCRIPTION": "Gain !B! Block."
 	},
 	"MinorHealing": {
 		"NAME": "Minor Healing",
-		"DESCRIPTION": "Gain !B! Block."
+		"DESCRIPTION": "Heal !M! HP. NL Exhaust."
+	},
+	"BlindingLight": {
+		"NAME": "Blinding Light",
+		"DESCRIPTION": "Apply !M! Weak to ALL enemies."
 	}
 }

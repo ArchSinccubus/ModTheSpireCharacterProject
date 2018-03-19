@@ -147,6 +147,9 @@ public class Fudgesickle implements PostInitializeSubscriber,
 
         BaseMod.addCard(new Defend_W());
         BaseMod.addCard(new Strike_W());
+        BaseMod.addCard(new BlindingLight());
+        BaseMod.addCard(new MinorHealing());
+        BaseMod.addCard(new PiercingStab());
 
         logger.info("done editting cards");
     }

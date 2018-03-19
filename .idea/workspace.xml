@@ -20,37 +20,11 @@
       <file leaf-file-name="Valiant.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Character/Valiant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-360">
-              <caret line="31" column="49" lean-forward="false" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="49" />
+            <state relative-caret-position="1533">
+              <caret line="100" column="53" lean-forward="false" selection-start-line="100" selection-start-column="53" selection-end-line="100" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DivineWrath.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Relics/DivineWrath.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1347#1348#0" expanded="true" />
-                <element signature="e#1385#1386#0" expanded="true" />
-                <element signature="e#1438#1439#0" expanded="true" />
-                <element signature="e#1478#1479#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Valiant-RelicStrings.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Localization/Valiant-RelicStrings.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -58,8 +32,8 @@
       <file leaf-file-name="Fudgesickle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainMod/Fudgesickle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="40" column="104" lean-forward="true" selection-start-line="40" selection-start-column="104" selection-end-line="40" selection-end-column="104" />
+            <state relative-caret-position="628">
+              <caret line="151" column="42" lean-forward="false" selection-start-line="151" selection-start-column="42" selection-end-line="151" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#Fudgesickle#0;class#Fudgesickle#0" expanded="false" />
@@ -77,9 +51,32 @@
       <file leaf-file-name="Valiant-CardStrings.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Localization/Valiant-CardStrings.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+            <state relative-caret-position="546">
+              <caret line="26" column="92" lean-forward="false" selection-start-line="26" selection-start-column="92" selection-end-line="26" selection-end-column="92" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Smite.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Cards/Smite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="14" lean-forward="true" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlindingLight.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cards/BlindingLight.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="41" column="8" lean-forward="false" selection-start-line="40" selection-start-column="11" selection-end-line="41" selection-end-column="8" />
+              <folding>
+                <element signature="e#2021#2022#0" expanded="true" />
+                <element signature="e#2063#2064#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,35 +84,40 @@
       <file leaf-file-name="MinorHealing.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cards/MinorHealing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="36" />
+            <state relative-caret-position="367">
+              <caret line="43" column="91" lean-forward="false" selection-start-line="43" selection-start-column="91" selection-end-line="43" selection-end-column="91" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1680#1681#0" expanded="true" />
-                <element signature="e#1717#1718#0" expanded="true" />
+                <element signature="e#1944#1945#0" expanded="true" />
+                <element signature="e#1985#1986#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CardTemplate.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PiercingStab.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cards/PiercingStab.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="556">
+              <caret line="43" column="170" lean-forward="false" selection-start-line="43" selection-start-column="170" selection-end-line="43" selection-end-column="170" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2168#2169#0" expanded="true" />
+                <element signature="e#2209#2210#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CardTemplate.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cards/CardTemplate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="664">
+              <caret line="46" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1746#1747#0" expanded="true" />
+                <element signature="e#1787#1788#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GainBlockAction.class" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/actions/common/GainBlockAction.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -137,12 +139,12 @@
       <file leaf-file-name="Strike_W.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cards/Strike_W.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="17" column="59" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+            <state relative-caret-position="325">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1844#1845#0" expanded="true" />
-                <element signature="e#1881#1882#0" expanded="true" />
+                <element signature="e#1654#1655#0" expanded="true" />
+                <element signature="e#1691#1692#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -171,6 +173,7 @@
       <find>VALIANT_POTRAIT</find>
       <find>animation</find>
       <find>portr</find>
+      <find>neutra</find>
       <find>shoul</find>
       <find>VALIANT_BUTTON</find>
     </findStrings>
@@ -204,13 +207,16 @@
         <option value="$PROJECT_DIR$/src/Fudgesickle.java" />
         <option value="$PROJECT_DIR$/Localization/Valiant-RelicStrings.json" />
         <option value="$PROJECT_DIR$/src/Relics/DivineWrath.java" />
-        <option value="$PROJECT_DIR$/src/Character/Valiant.java" />
         <option value="$PROJECT_DIR$/src/Cards/Defend_W.java" />
-        <option value="$PROJECT_DIR$/src/MainMod/Fudgesickle.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Strike_W.java" />
-        <option value="$PROJECT_DIR$/Localization/Valiant-CardStrings.json" />
-        <option value="$PROJECT_DIR$/src/Cards/MinorHealing.java" />
+        <option value="$PROJECT_DIR$/src/Character/Valiant.java" />
         <option value="$PROJECT_DIR$/src/Cards/CardTemplate.java" />
+        <option value="$PROJECT_DIR$/src/Cards/BlindingLight.java" />
+        <option value="$PROJECT_DIR$/src/Cards/MinorHealing.java" />
+        <option value="$PROJECT_DIR$/src/Cards/Strike_W.java" />
+        <option value="$PROJECT_DIR$/src/Cards/PiercingStab.java" />
+        <option value="$PROJECT_DIR$/src/MainMod/Fudgesickle.java" />
+        <option value="$PROJECT_DIR$/Localization/Valiant-CardStrings.json" />
+        <option value="$PROJECT_DIR$/src/Cards/Smite.java" />
       </list>
     </option>
   </component>
@@ -527,7 +533,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -941,51 +949,41 @@
         <state relative-caret-position="105">
           <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1347#1348#0" expanded="true" />
-            <element signature="e#1385#1386#0" expanded="true" />
-            <element signature="e#1438#1439#0" expanded="true" />
-            <element signature="e#1478#1479#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1347#1348#0" expanded="false" />
+            <element signature="e#1385#1386#0" expanded="false" />
+            <element signature="e#1438#1439#0" expanded="false" />
+            <element signature="e#1478#1479#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Character/Valiant.java">
+    <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/actions/common/GainBlockAction.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360">
-          <caret line="31" column="49" lean-forward="false" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="49" />
+        <state relative-caret-position="189">
+          <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1521355460324" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1521355460324" expanded="false" signature="161:597" ph="..." />
+            <marker date="1521355460324" expanded="true" signature="791:921" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="948:1471" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainMod/Fudgesickle.java">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa14160.6338/com/megacrit/cardcrawl/cards/green/Neutralize.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="40" column="104" lean-forward="true" selection-start-line="40" selection-start-column="104" selection-end-line="40" selection-end-column="104" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Fudgesickle#0;class#Fudgesickle#0" expanded="false" />
-            <element signature="e#3842#3843#0" expanded="true" />
-            <element signature="e#3896#3897#0" expanded="true" />
-            <element signature="e#3950#3951#0" expanded="true" />
-            <element signature="e#4004#4005#0" expanded="true" />
-            <element signature="e#4275#4276#0" expanded="true" />
-            <element signature="e#4326#4327#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="273">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="139" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Strike_W.java">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa14160.20375/localization/eng/cards.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="59" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1844#1845#0" expanded="true" />
-            <element signature="e#1881#1882#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="312">
+          <caret line="799" column="56" lean-forward="true" selection-start-line="799" selection-start-column="56" selection-end-line="799" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1001,41 +999,145 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Localization/Valiant-CardStrings.json">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa15072.33751/Cards/BlindingLight.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        <state relative-caret-position="-231">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/actions/common/GainBlockAction.class">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa3872.6656/com/megacrit/cardcrawl/cards/green/Neutralize.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        <state relative-caret-position="567">
+          <caret line="52" column="34" lean-forward="false" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+          <folding>
+            <marker date="1521310070000" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1521310070000" expanded="false" signature="158:1005" ph="..." />
+            <marker date="1521310070000" expanded="true" signature="1429:1713" ph="{...}" />
+            <marker date="1521310070000" expanded="true" signature="1772:2073" ph="{...}" />
+            <marker date="1521310070000" expanded="false" signature="2109:2120" ph=" { " />
+            <marker date="1521310070000" expanded="false" signature="2144:2150" ph=" }" />
+            <marker date="1521310070000" expanded="true" signature="2178:2333" ph="{...}" />
+            <marker date="1521310070000" expanded="true" signature="2346:2512" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa1068.47842/Cards/BlindingLight.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-189">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa1068.49317/Cards/MinorHealing.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cards/MinorHealing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="36" />
+        <state relative-caret-position="367">
+          <caret line="43" column="91" lean-forward="false" selection-start-line="43" selection-start-column="91" selection-end-line="43" selection-end-column="91" />
+          <folding>
+            <element signature="e#1944#1945#0" expanded="true" />
+            <element signature="e#1985#1986#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Character/Valiant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1533">
+          <caret line="100" column="53" lean-forward="false" selection-start-line="100" selection-start-column="53" selection-end-line="100" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1680#1681#0" expanded="true" />
-            <element signature="e#1717#1718#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cards/CardTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="664">
+          <caret line="46" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1746#1747#0" expanded="true" />
+            <element signature="e#1787#1788#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/BlindingLight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="41" column="8" lean-forward="false" selection-start-line="40" selection-start-column="11" selection-end-line="41" selection-end-column="8" />
+          <folding>
+            <element signature="e#2021#2022#0" expanded="true" />
+            <element signature="e#2063#2064#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Strike_W.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1654#1655#0" expanded="true" />
+            <element signature="e#1691#1692#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/PiercingStab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="43" column="170" lean-forward="false" selection-start-line="43" selection-start-column="170" selection-end-line="43" selection-end-column="170" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2168#2169#0" expanded="true" />
+            <element signature="e#2209#2210#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainMod/Fudgesickle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="151" column="42" lean-forward="false" selection-start-line="151" selection-start-column="42" selection-end-line="151" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Fudgesickle#0;class#Fudgesickle#0" expanded="false" />
+            <element signature="e#3842#3843#0" expanded="true" />
+            <element signature="e#3896#3897#0" expanded="true" />
+            <element signature="e#3950#3951#0" expanded="true" />
+            <element signature="e#4004#4005#0" expanded="true" />
+            <element signature="e#4275#4276#0" expanded="true" />
+            <element signature="e#4326#4327#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Localization/Valiant-CardStrings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="26" column="92" lean-forward="false" selection-start-line="26" selection-start-column="92" selection-end-line="26" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Smite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="14" lean-forward="true" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>

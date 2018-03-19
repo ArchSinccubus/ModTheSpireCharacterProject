@@ -14,39 +14,47 @@ import com.megacrit.cardcrawl.powers.*;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.powers.WeakPower;
 
-public class CardTemplate extends CustomCard
+public class PiercingStab extends CustomCard
 {
-    public static final String ID = "MinorHealing";
-    public static final String NAME = "Minor Healing";
+    public static final String ID = "PiercingStab";
+    public static final String NAME = "Piercing Stab";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG_PATH = "Cards/Skills/corona.png";
+    public static final String IMG_PATH = "Cards/Skills/comet.png";
     private static final int COST = 1;
     private static final int POOL = 1;
-    private static final CardRarity rarity = CardRarity.BASIC;
-    private static final CardTarget target = CardTarget.NONE;
+    private static final CardRarity rarity = CardRarity.COMMON;
+    private static final CardTarget target = CardTarget.ENEMY;
+    private static final int DAMAGE = 7;
+    private static final int UPGRADE_PLUS_DMG = 3;
+    private static final int WEAK_AMOUNT = 2;
 
-
-    public CardTemplate() {
+    public PiercingStab() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.WHITE,
                 rarity, target, POOL);
+        this.baseDamage = this.damage = DAMAGE;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new WeakPower(m, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+        AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DamageAction(m,
+                new DamageInfo(p, this.damage, this.damageTypeForTurn),
+                AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new WeakPower(m, WEAK_AMOUNT, false), WEAK_AMOUNT, true, AbstractGameAction.AttackEffect.NONE));
 
     }
 
     @Override
     public AbstractCard makeCopy() {
-        return new CardTemplate();
+        return new PiercingStab();
     }
 
     @Override
     public void upgrade() {
-
-
+        if (!this.upgraded) {
+            this.upgradeName();
+            this.upgradeDamage(UPGRADE_PLUS_DMG);
+        }
     }
 }
