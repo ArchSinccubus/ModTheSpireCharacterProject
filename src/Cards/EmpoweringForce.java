@@ -5,8 +5,6 @@ import Patches.AbstractCardEnum;
 import basemod.abstracts.CustomCard;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.ExhaustAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -14,7 +12,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.VulnerablePower;
 
 public class EmpoweringForce extends CustomCard{
     public static final String ID = "EmpoweringForce";
@@ -30,7 +27,7 @@ public class EmpoweringForce extends CustomCard{
 
     public EmpoweringForce() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION, AbstractCard.CardType.ATTACK,
-                AbstractCardEnum.WHITE, AbstractCard.CardRarity.BASIC,
+                AbstractCardEnum.Holy, AbstractCard.CardRarity.BASIC,
                 AbstractCard.CardTarget.ENEMY, POOL);
 
         this.baseDamage = this.damage = ATTACK_DMG;

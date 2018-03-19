@@ -13,20 +13,20 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
 
-public class Smite extends CustomCard
+public class WideSmite extends CustomCard
 {
-    public static final String ID = "Smite";
-    public static final String NAME = "Smite";
+    public static final String ID = "WideSmite";
+    public static final String NAME = "Wide Smite";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Attacks/comet.png";
     private static final int COST = 2;
     private static final int POOL = 1;
     private static final CardRarity rarity = CardRarity.COMMON;
-    private static final CardTarget target = CardTarget.ENEMY;
+    private static final CardTarget target = CardTarget.ALL_ENEMY;
     private static final int DAMAGE = 8;
 
 
-    public Smite() {
+    public WideSmite() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
                 rarity, target, POOL);
@@ -36,26 +36,20 @@ public class Smite extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
+
         int finalPower = this.damage;
-        if (m.hasPower("Weakened")) {
-            if (!this.upgraded)
-                finalPower = (int) (this.damage * 0.5f);
+        for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+            AbstractDungeon.actionManager.addToBottom(new DamageAction(mo,
+                    new DamageInfo(p, this.damage, this.damageTypeForTurn),
+                    AbstractGameAction.AttackEffect.FIRE));
+            AbstractDungeon.actionManager.addToBottom(new SmiteAction(mo, new DamageInfo(p, finalPower, this.damageTypeForTurn)));
         }
-
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
-        AbstractDungeon.actionManager.addToBottom(new SmiteAction(m, new DamageInfo(p, finalPower, this.damageTypeForTurn)));
-
-
-    }
-
-    @Override
-    public void applyPowers() {
 
     }
 
     @Override
     public AbstractCard makeCopy() {
-        return new Smite();
+        return new WideSmite();
     }
 
     @Override

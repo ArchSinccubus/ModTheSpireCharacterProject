@@ -1,15 +1,10 @@
 package Cards;
-import MainMod.*;
 import Patches.AbstractCardEnum;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.VulnerablePower;
 import basemod.abstracts.CustomCard;
 
 public class Defend_W extends CustomCard{
@@ -24,7 +19,7 @@ public class Defend_W extends CustomCard{
 
     public Defend_W() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION,
-                CardType.SKILL, AbstractCardEnum.WHITE,
+                CardType.SKILL, AbstractCardEnum.Holy,
                 CardRarity.BASIC, CardTarget.SELF, POOL);
         this.block=this.baseBlock = BLOCK_AMOUNT;
     }

@@ -4,13 +4,11 @@ import Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.VulnerablePower;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.powers.*;
 
@@ -28,7 +26,7 @@ public class BlindingLight extends CustomCard
 
     public BlindingLight() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
-                CardType.SKILL, AbstractCardEnum.WHITE,
+                CardType.SKILL, AbstractCardEnum.Holy,
                 CardRarity.BASIC, CardTarget.ALL_ENEMY, POOL);
         this.baseMagicNumber =WEAK_AMOUNT;
         this.magicNumber = this.baseMagicNumber;

@@ -10,9 +10,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.*;
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.powers.WeakPower;
 
 public class QuickSiphon extends CustomCard
 {
@@ -30,7 +28,7 @@ public class QuickSiphon extends CustomCard
 
     public QuickSiphon() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
-                CardType.SKILL, AbstractCardEnum.WHITE,
+                CardType.SKILL, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.baseDamage = this.damage = ATTACK_DMG;
     }

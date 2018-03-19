@@ -22,9 +22,49 @@
     "DESCRIPTION": "Deal !D! damage. Gain !M! vulnerable. NL If the enemy is weak, deal 50% more.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. Gain !M! vulnerable. NL If the enemy is weak, deal twice as much."
   },
+  "MercilessSmite": {
+    "NAME": "Merciless Smite",
+    "DESCRIPTION": "Deal !M! damage for each Smite card in your hand. If the enemy is weak, deal 50% more",
+    "UPGRADE_DESCRIPTION": "Deal !M! damage for each Smite card in your hand. If the enemy is weak, deal twice as much",
+    "EXTENDED_DESCRIPTION": [
+      " (You will deal !D! Damage)"
+    ]
+  },
+  "Decimate": {
+    "NAME": "Decimate",
+    "DESCRIPTION": "If you have !M!% HP or more, deal !D! damage."
+  },
+  "PowerStrike": {
+    "NAME": "Power Strike",
+    "DESCRIPTION": "For max [R] you have, deal !D! damage.",
+    "EXTENDED_DESCRIPTION": [
+      " (You will deal !F! Damage)"
+    ]
+  },
+  "WideSmite": {
+    "NAME": "Wide Smite",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Each weakened enemy is dealt 50% more.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. Each weakened enemy is dealt twice as much."
+  },
+  "CombatDance": {
+    "NAME": "Combat Dance",
+    "DESCRIPTION": "Deal !D! damage. NL Gain [R]. NL Lose 8HP."
+  },
+  "DivineLashes": {
+    "NAME": "Divine Lashes",
+    "DESCRIPTION": "Deal !D! Damage. Gain !B! Block."
+  },
   "QuickSiphon": {
     "NAME": "Quick Siphon",
     "DESCRIPTION": "Deal !D! damage. Draw 1 card."
+  },
+  "ToweringCharge": {
+    "NAME": "Towering Charge",
+    "DESCRIPTION": "Deal !D! damage. If, after playing this card, you have 2 or more MP, apply !M! Weak."
+  },
+  "GracefulSiphon": {
+    "NAME": "Graceful Siphon",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. Heal !M! HP. Exhaust."
   },
 	"Defend_W": {
 		"NAME": "Defend",

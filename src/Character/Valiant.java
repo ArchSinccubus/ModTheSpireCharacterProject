@@ -18,6 +18,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.relics.CursedKey;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
@@ -52,8 +53,8 @@ public class Valiant extends CustomPlayer{
     };
 
 
-    public static final int STARTING_HP = 90;
-    public static final int MAX_HP = 90;
+    public static final int STARTING_HP = 100;
+    public static final int MAX_HP = 100;
     public static final int STARTING_GOLD = 99;
     public static final int HAND_SIZE = 5;
 
@@ -93,13 +94,12 @@ public class Valiant extends CustomPlayer{
 
     // ADD RELICS
     public static ArrayList<String> getStartingRelics() { // starting relics - also simple
-        logger.info("1");
         ArrayList<String> retVal = new ArrayList<>();
-        logger.info("2");
+
         retVal.add(DivineWrath.ID);
-        logger.info("3");
+        retVal.add(CursedKey.ID);
+
         UnlockTracker.markRelicAsSeen("DivineWrath");
-        logger.info("4");
 
         return retVal;
     }

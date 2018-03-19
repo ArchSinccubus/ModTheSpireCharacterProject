@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="unnamed" />
+      <artifact name="TheValiant" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
@@ -17,42 +17,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Smite.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cards/Smite.java">
+      <file leaf-file-name="Valiant.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Character/Valiant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="48" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2044#2045#0" expanded="true" />
-                <element signature="e#2078#2079#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PiercingStab.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cards/PiercingStab.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2169#2170#0" expanded="true" />
-                <element signature="e#2210#2211#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Fudgesickle.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MainMod/Fudgesickle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="156" column="16" lean-forward="false" selection-start-line="156" selection-start-column="16" selection-end-line="156" selection-end-column="16" />
-              <folding>
-                <element signature="method#Fudgesickle#0;class#Fudgesickle#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="562">
+              <caret line="99" column="33" lean-forward="false" selection-start-line="99" selection-start-column="33" selection-end-line="99" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -60,90 +30,245 @@
       <file leaf-file-name="Valiant-CardStrings.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Localization/Valiant-CardStrings.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="89" lean-forward="false" selection-start-line="12" selection-start-column="89" selection-end-line="12" selection-end-column="89" />
+            <state relative-caret-position="588">
+              <caret line="40" column="24" lean-forward="false" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuickSiphon.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cards/QuickSiphon.java">
+      <file leaf-file-name="GracefulSiphon.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cards/GracefulSiphon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="97" />
+            <state relative-caret-position="168">
+              <caret line="22" column="58" lean-forward="false" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1954#1955#0" expanded="true" />
-                <element signature="e#1994#1995#0" expanded="true" />
+                <element signature="e#2408#2409#0" expanded="true" />
+                <element signature="e#2451#2452#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Nightmare.class" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.12409/com/megacrit/cardcrawl/cards/green/Nightmare.class">
+      <file leaf-file-name="MercilessSmite.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cards/MercilessSmite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="51" column="36" lean-forward="false" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
+            <state relative-caret-position="546">
+              <caret line="40" column="56" lean-forward="false" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PowerStrike.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cards/PowerStrike.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="559">
+              <caret line="63" column="100" lean-forward="false" selection-start-line="63" selection-start-column="100" selection-end-line="63" selection-end-column="100" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2836#2837#0" expanded="true" />
+                <element signature="e#2876#2877#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Whirlwind.class" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.16502/com/megacrit/cardcrawl/cards/red/Whirlwind.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="35" column="152" lean-forward="false" selection-start-line="35" selection-start-column="136" selection-end-line="35" selection-end-column="152" />
               <folding>
                 <marker date="1521310070000" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1521310070000" expanded="false" signature="158:778" ph="..." />
-                <marker date="1521310070000" expanded="true" signature="1209:1471" ph="{...}" />
-                <marker date="1521310070000" expanded="true" signature="1530:1700" ph="{...}" />
-                <marker date="1521310070000" expanded="false" signature="1736:1747" ph=" { " />
-                <marker date="1521310070000" expanded="false" signature="1770:1776" ph=" }" />
-                <marker date="1521310070000" expanded="true" signature="1804:1921" ph="{...}" />
-                <marker date="1521310070000" expanded="true" signature="1934:2167" ph="{...}" />
+                <marker date="1521310070000" expanded="false" signature="156:776" ph="..." />
+                <marker date="1521310070000" expanded="true" signature="1152:1400" ph="{...}" />
+                <marker date="1521310070000" expanded="true" signature="1459:1622" ph="{...}" />
+                <marker date="1521310070000" expanded="false" signature="1658:1669" ph=" { " />
+                <marker date="1521310070000" expanded="false" signature="1692:1698" ph=" }" />
+                <marker date="1521310070000" expanded="true" signature="1726:1841" ph="{...}" />
+                <marker date="1521310070000" expanded="true" signature="1854:2019" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RecklessSmite.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cards/RecklessSmite.java">
+      <file leaf-file-name="Decimate.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Cards/Decimate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="43" column="50" lean-forward="false" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
+            <state relative-caret-position="84">
+              <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2236#2237#0" expanded="true" />
-                <element signature="e#2278#2279#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CardTemplate.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cards/CardTemplate.java">
+      <file leaf-file-name="AbstractCard.class" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/cards/AbstractCard.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmpoweringForce.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Cards/EmpoweringForce.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="27" column="49" lean-forward="false" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+            <state relative-caret-position="628">
+              <caret line="994" column="42" lean-forward="false" selection-start-line="994" selection-start-column="42" selection-end-line="994" selection-end-column="42" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2291#2292#0" expanded="true" />
-                <element signature="e#2335#2336#0" expanded="true" />
+                <marker date="1521355460324" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1521355460324" expanded="false" signature="152:2483" ph="..." />
+                <marker date="1521355460324" expanded="true" signature="10127:10255" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="10490:10624" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="10892:15026" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="15064:15604" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="15643:16088" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="16130:20621" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="20665:27414" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="27448:27689" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="27762:28262" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="28309:28387" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="28433:28509" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="28561:28698" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="28733:28869" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="28923:29255" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="29306:29435" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="29481:29858" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="29900:32462" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="32499:35032" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="35129:36012" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="36065:36397" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="36436:38069" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="38100:38107" ph="{}" />
+                <marker date="1521355460324" expanded="true" signature="38138:38145" ph="{}" />
+                <marker date="1521355460324" expanded="true" signature="38198:38374" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="38427:38506" ph="{...}" />
+                <marker date="1521355460324" expanded="false" signature="38553:38564" ph=" { " />
+                <marker date="1521355460324" expanded="false" signature="38576:38582" ph=" }" />
+                <marker date="1521355460324" expanded="true" signature="38647:39363" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="39497:39504" ph="{}" />
+                <marker date="1521355460324" expanded="true" signature="39531:41622" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="41658:41841" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="41873:42375" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="42425:42838" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="42873:43009" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="43050:43139" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="43191:43403" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="43453:44447" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="44506:44746" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="44801:45099" ph="{...}" />
+                <marker date="1521355460324" expanded="false" signature="45153:45164" ph=" { " />
+                <marker date="1521355460324" expanded="false" signature="45197:45203" ph=" }" />
+                <marker date="1521355460324" expanded="true" signature="45284:46052" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="46098:46336" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="46386:47205" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="47238:47713" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="47759:48104" ph="{...}" />
+                <marker date="1521355460324" expanded="false" signature="48136:48147" ph=" { " />
+                <marker date="1521355460324" expanded="false" signature="48169:48175" ph=" }" />
+                <marker date="1521355460324" expanded="true" signature="48207:48421" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="48521:48857" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="48970:49197" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="49287:49800" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="49882:51072" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="51138:51573" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="51641:52453" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="52520:53328" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="53395:54203" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="54276:54741" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="54815:55664" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="55737:56580" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="56653:57496" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="57575:58436" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="58517:58704" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="58754:60070" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="60124:61464" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="61517:69040" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="69087:70321" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="70376:76184" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="76320:78546" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="78585:78874" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="78921:81003" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="81049:82134" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="82199:82691" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="82739:84463" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="84501:85351" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="85393:85690" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="85735:86033" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="86080:86414" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="86450:86835" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="86866:87038" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="87079:87202" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="87228:87384" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="87412:87609" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="87646:87976" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="88002:88076" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="88114:88371" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="88413:88785" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="88821:88828" ph="{}" />
+                <marker date="1521355460324" expanded="true" signature="88876:90034" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="90071:90078" ph="{}" />
+                <marker date="1521355460324" expanded="true" signature="90123:90130" ph="{}" />
+                <marker date="1521355460324" expanded="true" signature="90183:90190" ph="{}" />
+                <marker date="1521355460324" expanded="true" signature="90249:90256" ph="{}" />
+                <marker date="1521355460324" expanded="true" signature="90320:90327" ph="{}" />
+                <marker date="1521355460324" expanded="true" signature="90370:90377" ph="{}" />
+                <marker date="1521355460324" expanded="true" signature="90441:90448" ph="{}" />
+                <marker date="1521355460324" expanded="true" signature="90480:90487" ph="{}" />
+                <marker date="1521355460324" expanded="true" signature="90524:90531" ph="{}" />
+                <marker date="1521355460324" expanded="true" signature="90563:94067" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="94107:94573" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="94631:94877" ph="{...}" />
+                <marker date="1521355460324" expanded="false" signature="94937:94948" ph=" { " />
+                <marker date="1521355460324" expanded="false" signature="94977:94983" ph=" }" />
+                <marker date="1521355460324" expanded="true" signature="95041:100121" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="100182:100304" ph="{...}" />
+                <marker date="1521355460324" expanded="false" signature="100330:100341" ph=" { " />
+                <marker date="1521355460324" expanded="false" signature="100370:100376" ph=" }" />
+                <marker date="1521355460324" expanded="true" signature="100420:100497" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="100541:100715" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="100760:100935" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="100968:101381" ph="{...}" />
+                <marker date="1521355460324" expanded="false" signature="101418:101429" ph=" { " />
+                <marker date="1521355460324" expanded="false" signature="101477:101483" ph=" }" />
+                <marker date="1521355460324" expanded="false" signature="101513:101524" ph=" { " />
+                <marker date="1521355460324" expanded="false" signature="101569:101575" ph=" }" />
+                <marker date="1521355460324" expanded="false" signature="101600:101611" ph=" { " />
+                <marker date="1521355460324" expanded="false" signature="101650:101656" ph=" }" />
+                <marker date="1521355460324" expanded="false" signature="101688:101699" ph=" { " />
+                <marker date="1521355460324" expanded="false" signature="101741:101747" ph=" }" />
+                <marker date="1521355460324" expanded="false" signature="101783:101794" ph=" { " />
+                <marker date="1521355460324" expanded="false" signature="101840:101846" ph=" }" />
+                <marker date="1521355460324" expanded="true" signature="101876:102542" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="102582:103701" ph="{...}" />
+                <marker date="1521355460324" expanded="false" signature="103742:103753" ph=" { " />
+                <marker date="1521355460324" expanded="false" signature="103783:103789" ph=" }" />
+                <marker date="1521355460324" expanded="false" signature="103832:103843" ph=" { " />
+                <marker date="1521355460324" expanded="false" signature="103859:103865" ph=" }" />
+                <marker date="1521355460324" expanded="true" signature="103897:103975" ph="{...}" />
+                <marker date="1521355460324" expanded="false" signature="104034:104045" ph=" { " />
+                <marker date="1521355460324" expanded="false" signature="104088:104094" ph=" }" />
+                <marker date="1521355460324" expanded="true" signature="104151:105070" ph="{...}" />
+                <marker date="1521355460324" expanded="false" signature="105116:105127" ph=" { " />
+                <marker date="1521355460324" expanded="false" signature="105175:105181" ph=" }" />
+                <marker date="1521355460324" expanded="true" signature="105231:106287" ph="{...}" />
+                <marker date="1521355460324" expanded="false" signature="106362:106373" ph=" { " />
+                <marker date="1521355460324" expanded="false" signature="106408:106414" ph=" }" />
+                <marker date="1521355460324" expanded="true" signature="106487:106550" ph="{...}" />
+                <marker date="1521355460324" expanded="false" signature="106580:106591" ph=" { " />
+                <marker date="1521355460324" expanded="false" signature="106608:106614" ph=" }" />
+                <marker date="1521355460324" expanded="false" signature="106660:106671" ph=" { " />
+                <marker date="1521355460324" expanded="false" signature="106714:106720" ph=" }" />
+                <marker date="1521355460324" expanded="true" signature="106750:107147" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="107174:107515" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="107574:107807" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="107820:111235" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="111272:111350" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="111333:111344" ph="{}" />
+                <marker date="1521355460324" expanded="true" signature="111384:111508" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="111491:111502" ph="{}" />
+                <marker date="1521355460324" expanded="true" signature="111544:111688" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="111671:111682" ph="{}" />
+                <marker date="1521355460324" expanded="true" signature="111723:111847" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="111830:111841" ph="{}" />
+                <marker date="1521355460324" expanded="true" signature="111883:112031" ph="{...}" />
+                <marker date="1521355460324" expanded="true" signature="112014:112025" ph="{}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Strike_W.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cards/Strike_W.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -177,6 +302,10 @@
       <find>Hover</find>
       <find>power</find>
       <find>vulnerable</find>
+      <find>energy</find>
+      <find>Energy</find>
+      <find>ex</find>
+      <find>STARTING_HP</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -194,10 +323,8 @@
         <option value="$PROJECT_DIR$/src/CharacterEnum.java" />
         <option value="$PROJECT_DIR$/src/Cards/Block.java" />
         <option value="$PROJECT_DIR$/src/AbstractCardEnum.java" />
-        <option value="$PROJECT_DIR$/src/Patches/AbstractCardEnum.java" />
         <option value="$PROJECT_DIR$/src/Cards/Strike.java" />
         <option value="$PROJECT_DIR$/src/Cards/Defend.java" />
-        <option value="$PROJECT_DIR$/src/Patches/LibraryTypeEnum.java" />
         <option value="$PROJECT_DIR$/src/Patches/CharacterEnum.java" />
         <option value="$PROJECT_DIR$/src/Character.java" />
         <option value="$PROJECT_DIR$/src/Character/Character.java" />
@@ -209,25 +336,36 @@
         <option value="$PROJECT_DIR$/src/Fudgesickle.java" />
         <option value="$PROJECT_DIR$/Localization/Valiant-RelicStrings.json" />
         <option value="$PROJECT_DIR$/src/Cards/Defend_W.java" />
-        <option value="$PROJECT_DIR$/src/Character/Valiant.java" />
-        <option value="$PROJECT_DIR$/src/Cards/CardTemplate.java" />
         <option value="$PROJECT_DIR$/src/Cards/BlindingLight.java" />
         <option value="$PROJECT_DIR$/src/Cards/MinorHealing.java" />
         <option value="$PROJECT_DIR$/src/Cards/Strike_W.java" />
         <option value="$PROJECT_DIR$/src/Relics/DivineWrath.java" />
-        <option value="$PROJECT_DIR$/src/Cards/MercilessSmite.java" />
         <option value="$PROJECT_DIR$/src/Actions/EmpoweringForceAction.java" />
         <option value="$PROJECT_DIR$/src/Cards/PiercingStab.java" />
-        <option value="$PROJECT_DIR$/src/MainMod/Fudgesickle.java" />
         <option value="$PROJECT_DIR$/src/Cards/QuickSiphon.java" />
-        <option value="$PROJECT_DIR$/Localization/Valiant-CardStrings.json" />
-        <option value="$PROJECT_DIR$/src/Cards/Smite.java" />
-        <option value="$PROJECT_DIR$/src/Cards/RecklessSmite.java" />
         <option value="$PROJECT_DIR$/src/Cards/EmpoweringForce.java" />
+        <option value="$PROJECT_DIR$/src/PowerStrike.java" />
+        <option value="$PROJECT_DIR$/src/Actions/SmiteAction.java" />
+        <option value="$PROJECT_DIR$/src/Cards/Smite.java" />
+        <option value="$PROJECT_DIR$/src/Patches/AbstractCardEnum.java" />
+        <option value="$PROJECT_DIR$/src/Patches/LibraryTypeEnum.java" />
+        <option value="$PROJECT_DIR$/src/Cards/CardTemplate.java" />
+        <option value="$PROJECT_DIR$/src/MainMod/Fudgesickle.java" />
+        <option value="$PROJECT_DIR$/src/Cards/DivineLashes.java" />
+        <option value="$PROJECT_DIR$/src/Cards/GracefulSiphon.java" />
+        <option value="$PROJECT_DIR$/src/Cards/MercilessSmite.java" />
+        <option value="$PROJECT_DIR$/src/Cards/RecklessSmite.java" />
+        <option value="$PROJECT_DIR$/src/Cards/WideSmite.java" />
+        <option value="$PROJECT_DIR$/src/Cards/CombatDance.java" />
+        <option value="$PROJECT_DIR$/src/Cards/ToweringCharge.java" />
+        <option value="$PROJECT_DIR$/Localization/Valiant-CardStrings.json" />
+        <option value="$PROJECT_DIR$/src/Cards/PowerStrike.java" />
+        <option value="$PROJECT_DIR$/src/Character/Valiant.java" />
+        <option value="$PROJECT_DIR$/src/Cards/Decimate.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -406,7 +544,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHubDesktop/GitHubDesktop.exe" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
@@ -535,7 +673,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -551,7 +689,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2109375" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -571,243 +709,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/STS mod projects/localization/FruityMod-RelicStrings.json" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa7880.20212/Fudgesickle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="172" column="0" lean-forward="false" selection-start-line="172" selection-start-column="0" selection-end-line="178" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa7880.19729/src/main/java/Cards/Strike_W.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="38" column="76" lean-forward="false" selection-start-line="38" selection-start-column="65" selection-end-line="38" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa12544.10925/necromod/relics/Vampire_Amulet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="35" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa12544.47478/necromod/NecroMod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="474" column="61" lean-forward="false" selection-start-line="474" selection-start-column="49" selection-end-line="474" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa7880.10702/src/main/java/Relics/DivineWrath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="24" column="46" lean-forward="false" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ASSETS/Relics/Wrath.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa14204.45143/fruitymod/cards/Anomaly.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/STS mod projects/BaseMod.jar!/basemod/abstracts/CustomRelic.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ASSETS/TestIcon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ASSETS/LeilaPic.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ASSETS/TestAnim/idle/skeleton.atlas">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ASSETS/TestAnim/idle/skeleton.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Localization/Valiant-RelicStrings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/relics/AbstractRelic.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="108" column="27" lean-forward="false" selection-start-line="108" selection-start-column="27" selection-end-line="108" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/STS mod projects/BaseMod.jar!/basemod/abstracts/CustomPlayer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="47" column="11" lean-forward="false" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/actions/common/GainBlockAction.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa14160.6338/com/megacrit/cardcrawl/cards/green/Neutralize.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="139" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa14160.20375/localization/eng/cards.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="799" column="56" lean-forward="true" selection-start-line="799" selection-start-column="56" selection-end-line="799" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa15072.33751/Cards/BlindingLight.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-231">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa3872.6656/com/megacrit/cardcrawl/cards/green/Neutralize.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="52" column="34" lean-forward="false" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa1068.47842/Cards/BlindingLight.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa1068.49317/Cards/MinorHealing.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/MinorHealing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="43" column="91" lean-forward="false" selection-start-line="43" selection-start-column="91" selection-end-line="43" selection-end-column="91" />
-          <folding>
-            <element signature="e#1944#1945#0" expanded="false" />
-            <element signature="e#1985#1986#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Character/Valiant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1596">
-          <caret line="100" column="53" lean-forward="false" selection-start-line="100" selection-start-column="53" selection-end-line="100" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.32494/com/megacrit/cardcrawl/cards/green/CloakAndDagger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="41" />
-          <folding>
-            <marker date="1521310070000" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521310070000" expanded="false" signature="158:901" ph="..." />
-            <marker date="1521310070000" expanded="true" signature="1383:1690" ph="{...}" />
-            <marker date="1521310070000" expanded="true" signature="1749:1957" ph="{...}" />
-            <marker date="1521310070000" expanded="false" signature="1993:2004" ph=" { " />
-            <marker date="1521310070000" expanded="false" signature="2032:2038" ph=" }" />
-            <marker date="1521310070000" expanded="true" signature="2066:2283" ph="{...}" />
-            <marker date="1521310070000" expanded="true" signature="2296:2531" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.922/com/megacrit/cardcrawl/cards/red/Dropkick.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="37" column="60" lean-forward="false" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
-          <folding>
-            <marker date="1521310070000" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521310070000" expanded="false" signature="156:953" ph="..." />
-            <marker date="1521310070000" expanded="true" signature="1321:1527" ph="{...}" />
-            <marker date="1521310070000" expanded="true" signature="1586:1821" ph="{...}" />
-            <marker date="1521310070000" expanded="false" signature="1857:1868" ph=" { " />
-            <marker date="1521310070000" expanded="false" signature="1890:1896" ph=" }" />
-            <marker date="1521310070000" expanded="true" signature="1924:2039" ph="{...}" />
-            <marker date="1521310070000" expanded="true" signature="2052:2216" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/actions/unique/DropkickAction.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="23" column="55" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="55" />
-          <folding>
-            <marker date="1521355460324" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521355460324" expanded="false" signature="161:558" ph="..." />
-            <marker date="1521355460324" expanded="true" signature="668:800" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="827:1122" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Relics/DivineWrath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="21" column="66" lean-forward="false" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/cards/AbstractCard.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="1155" column="38" lean-forward="false" selection-start-line="1155" selection-start-column="33" selection-end-line="1155" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.14664/com/megacrit/cardcrawl/cards/red/HeavyBlade.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
@@ -898,62 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Actions/EmpoweringForceAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/BlindingLight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="26" column="61" lean-forward="false" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Defend_W.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="43" column="29" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Strike_W.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/PiercingStab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2169#2170#0" expanded="true" />
-            <element signature="e#2210#2211#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainMod/Fudgesickle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="156" column="16" lean-forward="false" selection-start-line="156" selection-start-column="16" selection-end-line="156" selection-end-column="16" />
-          <folding>
-            <element signature="method#Fudgesickle#0;class#Fudgesickle#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.12409/com/megacrit/cardcrawl/cards/green/Nightmare.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
@@ -971,66 +821,547 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Localization/Valiant-CardStrings.json">
+    <entry file="file://$PROJECT_DIR$/src/Cards/EmpoweringForce.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="27" column="49" lean-forward="false" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2113#2114#0" expanded="false" />
+            <element signature="e#2157#2158#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Strike_W.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="36" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Defend_W.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.31435/com/megacrit/cardcrawl/cards/red/Offering.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.34529/com/megacrit/cardcrawl/cards/red/SpotWeakness.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="35" column="65" lean-forward="false" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/actions/unique/OpeningAction.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="12" column="89" lean-forward="false" selection-start-line="12" selection-start-column="89" selection-end-line="12" selection-end-column="89" />
+          <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.10333/com/megacrit/cardcrawl/cards/green/Blur.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Actions/EmpoweringForceAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/actions/AbstractGameAction.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/actions/unique/BaneAction.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <marker date="1521355460324" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1521355460324" expanded="false" signature="161:688" ph="..." />
+            <marker date="1521355460324" expanded="true" signature="976:1205" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="1232:2474" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/monsters/MonsterGroup.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="104" column="19" lean-forward="false" selection-start-line="104" selection-start-column="19" selection-end-line="104" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.11324/com/megacrit/cardcrawl/cards/green/Bane.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="38" column="8" lean-forward="false" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="125" />
+          <folding>
+            <marker date="1521310070000" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1521310070000" expanded="false" signature="158:951" ph="..." />
+            <marker date="1521310070000" expanded="true" signature="1307:1497" ph="{...}" />
+            <marker date="1521310070000" expanded="true" signature="1556:1848" ph="{...}" />
+            <marker date="1521310070000" expanded="false" signature="1884:1895" ph=" { " />
+            <marker date="1521310070000" expanded="false" signature="1913:1919" ph=" }" />
+            <marker date="1521310070000" expanded="true" signature="1947:2062" ph="{...}" />
+            <marker date="1521310070000" expanded="true" signature="2075:2235" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Patches/LibraryTypeEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Patches/AbstractCardEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="8" column="45" lean-forward="false" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Patches/CharacterEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/MinorHealing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="40" column="12" lean-forward="false" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/powers/DemonFormPower.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="70" lean-forward="false" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.40400/com/megacrit/cardcrawl/cards/red/DemonForm.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="35" column="92" lean-forward="true" selection-start-line="35" selection-start-column="81" selection-end-line="35" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/BlindingLight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="31" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/CardTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="23" column="61" lean-forward="false" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.35227/com/megacrit/cardcrawl/cards/red/Cleave.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="34" column="23" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/characters/AbstractPlayer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-308">
+          <caret line="227" column="191" lean-forward="false" selection-start-line="227" selection-start-column="185" selection-end-line="227" selection-end-column="191" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/PiercingStab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="41" column="56" lean-forward="false" selection-start-line="41" selection-start-column="56" selection-end-line="41" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cards/Smite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="48" selection-end-column="55" />
+        <state relative-caret-position="840">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2044#2045#0" expanded="true" />
-            <element signature="e#2078#2079#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2086#2087#0" expanded="false" />
+            <element signature="e#2120#2121#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/DivineLashes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="19" column="58" lean-forward="false" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+          <folding>
+            <element signature="e#2105#2106#0" expanded="false" />
+            <element signature="e#2146#2147#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/MercilessSmite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="40" column="56" lean-forward="false" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Actions/SmiteAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/WideSmite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="45" column="9" lean-forward="false" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+          <folding>
+            <element signature="e#2060#2061#0" expanded="false" />
+            <element signature="e#2098#2099#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/CombatDance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="25" column="43" lean-forward="false" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.14270/com/megacrit/cardcrawl/cards/red/Whirlwind.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="35" column="152" lean-forward="false" selection-start-line="35" selection-start-column="152" selection-end-line="35" selection-end-column="152" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/ToweringCharge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-378">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cards/RecklessSmite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="43" column="50" lean-forward="false" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2236#2237#0" expanded="true" />
-            <element signature="e#2278#2279#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="567">
+          <caret line="43" column="56" lean-forward="false" selection-start-line="43" selection-start-column="56" selection-end-line="43" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cards/QuickSiphon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="97" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1954#1955#0" expanded="true" />
-            <element signature="e#1994#1995#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/CardTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        <state relative-caret-position="588">
+          <caret line="39" column="68" lean-forward="false" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="68" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/EmpoweringForce.java">
+    <entry file="file://$PROJECT_DIR$/Localization/Valiant-RelicStrings.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="27" column="49" lean-forward="false" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/GracefulSiphon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="22" column="58" lean-forward="false" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+          <folding>
+            <element signature="e#2408#2409#0" expanded="true" />
+            <element signature="e#2451#2452#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.16502/com/megacrit/cardcrawl/cards/red/Whirlwind.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="35" column="152" lean-forward="false" selection-start-line="35" selection-start-column="136" selection-end-line="35" selection-end-column="152" />
+          <folding>
+            <marker date="1521310070000" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1521310070000" expanded="false" signature="156:776" ph="..." />
+            <marker date="1521310070000" expanded="true" signature="1152:1400" ph="{...}" />
+            <marker date="1521310070000" expanded="true" signature="1459:1622" ph="{...}" />
+            <marker date="1521310070000" expanded="false" signature="1658:1669" ph=" { " />
+            <marker date="1521310070000" expanded="false" signature="1692:1698" ph=" }" />
+            <marker date="1521310070000" expanded="true" signature="1726:1841" ph="{...}" />
+            <marker date="1521310070000" expanded="true" signature="1854:2019" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/PowerStrike.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="63" column="100" lean-forward="false" selection-start-line="63" selection-start-column="100" selection-end-line="63" selection-end-column="100" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2291#2292#0" expanded="true" />
-            <element signature="e#2335#2336#0" expanded="true" />
+            <element signature="e#2836#2837#0" expanded="true" />
+            <element signature="e#2876#2877#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainMod/Fudgesickle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#Fudgesickle#0;class#Fudgesickle#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Localization/Valiant-CardStrings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="40" column="24" lean-forward="false" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Character/Valiant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="99" column="33" lean-forward="false" selection-start-line="99" selection-start-column="33" selection-end-line="99" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/cards/AbstractCard.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="994" column="42" lean-forward="false" selection-start-line="994" selection-start-column="42" selection-end-line="994" selection-end-column="42" />
+          <folding>
+            <marker date="1521355460324" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1521355460324" expanded="false" signature="152:2483" ph="..." />
+            <marker date="1521355460324" expanded="true" signature="10127:10255" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="10490:10624" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="10892:15026" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="15064:15604" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="15643:16088" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="16130:20621" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="20665:27414" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="27448:27689" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="27762:28262" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="28309:28387" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="28433:28509" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="28561:28698" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="28733:28869" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="28923:29255" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="29306:29435" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="29481:29858" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="29900:32462" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="32499:35032" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="35129:36012" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="36065:36397" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="36436:38069" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="38100:38107" ph="{}" />
+            <marker date="1521355460324" expanded="true" signature="38138:38145" ph="{}" />
+            <marker date="1521355460324" expanded="true" signature="38198:38374" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="38427:38506" ph="{...}" />
+            <marker date="1521355460324" expanded="false" signature="38553:38564" ph=" { " />
+            <marker date="1521355460324" expanded="false" signature="38576:38582" ph=" }" />
+            <marker date="1521355460324" expanded="true" signature="38647:39363" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="39497:39504" ph="{}" />
+            <marker date="1521355460324" expanded="true" signature="39531:41622" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="41658:41841" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="41873:42375" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="42425:42838" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="42873:43009" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="43050:43139" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="43191:43403" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="43453:44447" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="44506:44746" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="44801:45099" ph="{...}" />
+            <marker date="1521355460324" expanded="false" signature="45153:45164" ph=" { " />
+            <marker date="1521355460324" expanded="false" signature="45197:45203" ph=" }" />
+            <marker date="1521355460324" expanded="true" signature="45284:46052" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="46098:46336" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="46386:47205" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="47238:47713" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="47759:48104" ph="{...}" />
+            <marker date="1521355460324" expanded="false" signature="48136:48147" ph=" { " />
+            <marker date="1521355460324" expanded="false" signature="48169:48175" ph=" }" />
+            <marker date="1521355460324" expanded="true" signature="48207:48421" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="48521:48857" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="48970:49197" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="49287:49800" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="49882:51072" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="51138:51573" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="51641:52453" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="52520:53328" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="53395:54203" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="54276:54741" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="54815:55664" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="55737:56580" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="56653:57496" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="57575:58436" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="58517:58704" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="58754:60070" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="60124:61464" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="61517:69040" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="69087:70321" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="70376:76184" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="76320:78546" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="78585:78874" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="78921:81003" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="81049:82134" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="82199:82691" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="82739:84463" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="84501:85351" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="85393:85690" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="85735:86033" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="86080:86414" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="86450:86835" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="86866:87038" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="87079:87202" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="87228:87384" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="87412:87609" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="87646:87976" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="88002:88076" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="88114:88371" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="88413:88785" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="88821:88828" ph="{}" />
+            <marker date="1521355460324" expanded="true" signature="88876:90034" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="90071:90078" ph="{}" />
+            <marker date="1521355460324" expanded="true" signature="90123:90130" ph="{}" />
+            <marker date="1521355460324" expanded="true" signature="90183:90190" ph="{}" />
+            <marker date="1521355460324" expanded="true" signature="90249:90256" ph="{}" />
+            <marker date="1521355460324" expanded="true" signature="90320:90327" ph="{}" />
+            <marker date="1521355460324" expanded="true" signature="90370:90377" ph="{}" />
+            <marker date="1521355460324" expanded="true" signature="90441:90448" ph="{}" />
+            <marker date="1521355460324" expanded="true" signature="90480:90487" ph="{}" />
+            <marker date="1521355460324" expanded="true" signature="90524:90531" ph="{}" />
+            <marker date="1521355460324" expanded="true" signature="90563:94067" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="94107:94573" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="94631:94877" ph="{...}" />
+            <marker date="1521355460324" expanded="false" signature="94937:94948" ph=" { " />
+            <marker date="1521355460324" expanded="false" signature="94977:94983" ph=" }" />
+            <marker date="1521355460324" expanded="true" signature="95041:100121" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="100182:100304" ph="{...}" />
+            <marker date="1521355460324" expanded="false" signature="100330:100341" ph=" { " />
+            <marker date="1521355460324" expanded="false" signature="100370:100376" ph=" }" />
+            <marker date="1521355460324" expanded="true" signature="100420:100497" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="100541:100715" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="100760:100935" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="100968:101381" ph="{...}" />
+            <marker date="1521355460324" expanded="false" signature="101418:101429" ph=" { " />
+            <marker date="1521355460324" expanded="false" signature="101477:101483" ph=" }" />
+            <marker date="1521355460324" expanded="false" signature="101513:101524" ph=" { " />
+            <marker date="1521355460324" expanded="false" signature="101569:101575" ph=" }" />
+            <marker date="1521355460324" expanded="false" signature="101600:101611" ph=" { " />
+            <marker date="1521355460324" expanded="false" signature="101650:101656" ph=" }" />
+            <marker date="1521355460324" expanded="false" signature="101688:101699" ph=" { " />
+            <marker date="1521355460324" expanded="false" signature="101741:101747" ph=" }" />
+            <marker date="1521355460324" expanded="false" signature="101783:101794" ph=" { " />
+            <marker date="1521355460324" expanded="false" signature="101840:101846" ph=" }" />
+            <marker date="1521355460324" expanded="true" signature="101876:102542" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="102582:103701" ph="{...}" />
+            <marker date="1521355460324" expanded="false" signature="103742:103753" ph=" { " />
+            <marker date="1521355460324" expanded="false" signature="103783:103789" ph=" }" />
+            <marker date="1521355460324" expanded="false" signature="103832:103843" ph=" { " />
+            <marker date="1521355460324" expanded="false" signature="103859:103865" ph=" }" />
+            <marker date="1521355460324" expanded="true" signature="103897:103975" ph="{...}" />
+            <marker date="1521355460324" expanded="false" signature="104034:104045" ph=" { " />
+            <marker date="1521355460324" expanded="false" signature="104088:104094" ph=" }" />
+            <marker date="1521355460324" expanded="true" signature="104151:105070" ph="{...}" />
+            <marker date="1521355460324" expanded="false" signature="105116:105127" ph=" { " />
+            <marker date="1521355460324" expanded="false" signature="105175:105181" ph=" }" />
+            <marker date="1521355460324" expanded="true" signature="105231:106287" ph="{...}" />
+            <marker date="1521355460324" expanded="false" signature="106362:106373" ph=" { " />
+            <marker date="1521355460324" expanded="false" signature="106408:106414" ph=" }" />
+            <marker date="1521355460324" expanded="true" signature="106487:106550" ph="{...}" />
+            <marker date="1521355460324" expanded="false" signature="106580:106591" ph=" { " />
+            <marker date="1521355460324" expanded="false" signature="106608:106614" ph=" }" />
+            <marker date="1521355460324" expanded="false" signature="106660:106671" ph=" { " />
+            <marker date="1521355460324" expanded="false" signature="106714:106720" ph=" }" />
+            <marker date="1521355460324" expanded="true" signature="106750:107147" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="107174:107515" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="107574:107807" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="107820:111235" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="111272:111350" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="111333:111344" ph="{}" />
+            <marker date="1521355460324" expanded="true" signature="111384:111508" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="111491:111502" ph="{}" />
+            <marker date="1521355460324" expanded="true" signature="111544:111688" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="111671:111682" ph="{}" />
+            <marker date="1521355460324" expanded="true" signature="111723:111847" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="111830:111841" ph="{}" />
+            <marker date="1521355460324" expanded="true" signature="111883:112031" ph="{...}" />
+            <marker date="1521355460324" expanded="true" signature="112014:112025" ph="{}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Decimate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1041,7 +1372,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>unnamed</last-edited>
+          <last-edited>TheValiant</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

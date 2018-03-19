@@ -1,4 +1,5 @@
 package Cards;
+import Actions.SmiteAction;
 import MainMod.*;
 import Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.*;
@@ -12,8 +13,6 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.*;
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.powers.WeakPower;
-import jdk.nashorn.internal.ir.IfNode;
 
 public class RecklessSmite extends CustomCard
 {
@@ -29,23 +28,26 @@ public class RecklessSmite extends CustomCard
 
     public RecklessSmite() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
-                CardType.SKILL, AbstractCardEnum.WHITE,
+                CardType.SKILL, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.baseDamage = this.damage = DAMAGE;
+        this.baseMagicNumber = this.magicNumber = 1;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
+
         int finalPower = this.damage;
-        if (!this.upgraded)
-            finalPower = (int) (this.damage * 1.5f);
-        else
-            finalPower = (int) (this.damage * 2f);
+        if (m.hasPower("Weakened")) {
+            if (!this.upgraded)
+                finalPower = (int) (this.damage * 0.5f);
+        }
 
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m,
-                new DamageInfo(p, finalPower, this.damageTypeForTurn),
+                new DamageInfo(p, this.damage, this.damageTypeForTurn),
                 AbstractGameAction.AttackEffect.FIRE));
+        AbstractDungeon.actionManager.addToBottom(new SmiteAction(m, new DamageInfo(p, finalPower, this.damageTypeForTurn)));
 
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new VulnerablePower(m, 1, false), 1, true, AbstractGameAction.AttackEffect.NONE));
     }

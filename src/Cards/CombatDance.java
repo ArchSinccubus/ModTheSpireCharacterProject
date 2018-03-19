@@ -1,5 +1,4 @@
 package Cards;
-import Actions.SmiteAction;
 import MainMod.*;
 import Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.*;
@@ -13,20 +12,20 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
 
-public class Smite extends CustomCard
+public class CombatDance extends CustomCard
 {
-    public static final String ID = "Smite";
-    public static final String NAME = "Smite";
+    public static final String ID = "CombatDance";
+    public static final String NAME = "Combat Dance";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Attacks/comet.png";
-    private static final int COST = 2;
+    private static final int COST = 1;
     private static final int POOL = 1;
     private static final CardRarity rarity = CardRarity.COMMON;
     private static final CardTarget target = CardTarget.ENEMY;
-    private static final int DAMAGE = 8;
+    private static final int DAMAGE = 7;
+    private static final int UPGRADE_MP = 0;
 
-
-    public Smite() {
+    public CombatDance() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
                 rarity, target, POOL);
@@ -36,34 +35,23 @@ public class Smite extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        int finalPower = this.damage;
-        if (m.hasPower("Weakened")) {
-            if (!this.upgraded)
-                finalPower = (int) (this.damage * 0.5f);
-        }
-
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
-        AbstractDungeon.actionManager.addToBottom(new SmiteAction(m, new DamageInfo(p, finalPower, this.damageTypeForTurn)));
-
-
-    }
-
-    @Override
-    public void applyPowers() {
-
+        AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DamageAction(m,
+                new DamageInfo(p, this.damage, this.damageTypeForTurn),
+                AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(1));
+        AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p, p, 8));
     }
 
     @Override
     public AbstractCard makeCopy() {
-        return new Smite();
+        return new CombatDance();
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
-            this.initializeDescription();
+            this.upgradeBaseCost(UPGRADE_MP);
         }
     }
 }

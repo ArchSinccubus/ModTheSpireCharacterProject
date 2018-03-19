@@ -9,7 +9,6 @@ import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.utils.compression.lzma.Base;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 
 import Relics.*;
@@ -32,7 +31,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
         EditCardsSubscriber, EditRelicsSubscriber, EditCharactersSubscriber,
         EditStringsSubscriber {
 
-    private static final Color WHITE = CardHelper.getColor(255.0f, 250.0f, 250.0f);
+    private static final Color HOLY = CardHelper.getColor(255.0f, 250.0f, 250.0f);
     private static final String ARCHMOD_ASSETS_FOLDER = "ASSETS"; //TODO: Change to your folder if different;
 
     //MiscStuff
@@ -87,9 +86,9 @@ public class Fudgesickle implements PostInitializeSubscriber,
         logger.info("subscribing to editStrings event");
         BaseMod.subscribeToEditStrings(this);
 
-        logger.info("creating the color " + AbstractCardEnum.WHITE.toString());
-        BaseMod.addColor(AbstractCardEnum.WHITE.toString(),
-                WHITE, WHITE, WHITE, WHITE, WHITE, WHITE, WHITE,
+        logger.info("creating the color " + AbstractCardEnum.Holy.toString());
+        BaseMod.addColor(AbstractCardEnum.Holy.toString(),
+                HOLY, HOLY, HOLY, HOLY, HOLY, HOLY, HOLY,
                 ATTACK_WHITE, SKILL_WHITE,
                 POWER_WHITE, ENERGY_ORB_PURPLE,
                 ATTACK_PURPLE_PORTRAIT, SKILL_PURPLE_PORTRAIT,
@@ -155,6 +154,14 @@ public class Fudgesickle implements PostInitializeSubscriber,
         BaseMod.addCard(new QuickSiphon());
         BaseMod.addCard(new Smite());
         BaseMod.addCard(new RecklessSmite());
+        BaseMod.addCard(new Decimate());
+        BaseMod.addCard(new WideSmite());
+        BaseMod.addCard(new MercilessSmite());
+        BaseMod.addCard(new CombatDance());
+        BaseMod.addCard(new DivineLashes());
+        BaseMod.addCard(new PowerStrike());
+        BaseMod.addCard(new GracefulSiphon());
+        BaseMod.addCard(new ToweringCharge());
 
         logger.info("done editting cards");
     }
@@ -165,7 +172,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
 
         logger.info("add " + CharacterEnum.TheValiant.toString());
         BaseMod.addCharacter(Valiant.class, "The Valiant", "A nun sent to destroy the heart of evil in the name of The Lord. Wields both holy power and untold fury.",
-                AbstractCardEnum.WHITE.toString(), "My Valiant.Valiant",
+                AbstractCardEnum.Holy.toString(), "My Valiant.Valiant",
                 makePath(VALIANT_BUTTON) , makePath(VALIANT_POTRAIT),
                 CharacterEnum.TheValiant.toString());
 
