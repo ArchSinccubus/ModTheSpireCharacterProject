@@ -1,4 +1,4 @@
-package Cards;
+package Cards.Common.Attack;
 import Actions.SmiteAction;
 import MainMod.*;
 import Patches.AbstractCardEnum;

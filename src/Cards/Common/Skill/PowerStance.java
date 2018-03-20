@@ -1,8 +1,8 @@
-package Cards;
-import Actions.SmiteAction;
+package Cards.Common.Skill;
 import MainMod.*;
 import Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -11,45 +11,48 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.powers.AbstractPower;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-public class MercilessSmite extends CustomCard
+import java.util.Iterator;
+
+public class PowerStance extends CustomCard
 {
-    public static final String ID = "MercilessSmite";
-    public static final String NAME = "Merciless Smite";
+    public static final String ID = "PowerStance";
+    public static final String NAME = "Power Stance";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG_PATH = "Cards/Attacks/comet.png";
+    public static final String IMG_PATH = "Cards/Skills/corona.png";
     private static final int COST = 2;
     private static final int POOL = 1;
-    private static final int ATTACK_DMG = 8;
+    private static final int BLOCK_AMOUNT = 5;
+    private static final int UPGRADE_COST = 0;
     private static final CardRarity rarity = CardRarity.COMMON;
-    private static final CardTarget target = CardTarget.ENEMY;
+    private static final CardTarget target = CardTarget.SELF;
 
+    public static final Logger logger = LogManager.getLogger(Fudgesickle.class.getName());
 
-    public MercilessSmite() {
+    public PowerStance() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
                 rarity, target, POOL);
-        this.baseMagicNumber = this.magicNumber = ATTACK_DMG;
+        this.magicNumber = this.baseMagicNumber = BLOCK_AMOUNT;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        int finalPower = this.damage;
-        if (m.hasPower("Weakened")) {
-            if (!this.upgraded)
-                finalPower = (int) (this.damage * 0.5f);
-        }
+        int NewBlock = this.baseBlock * AbstractDungeon.player.energy.energy;
+        this.block = NewBlock;
 
-        AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DamageAction(m,
-                new DamageInfo(p, this.damage, this.damageTypeForTurn),
-                AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-        AbstractDungeon.actionManager.addToBottom(new SmiteAction(m, new DamageInfo(p, finalPower, this.damageTypeForTurn)));
+        logger.info(NewBlock + " " + p.energy.energy + " " + this.baseBlock + " " + this.block);
+
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
     }
 
     @Override
     public void applyPowers() {
-        this.baseDamage = countEtherealInHand() * this.magicNumber;
+        this.baseBlock = this.baseMagicNumber * AbstractDungeon.player.energy.energy;
         super.applyPowers();
         this.setDescription(true);
     }
@@ -64,29 +67,16 @@ public class MercilessSmite extends CustomCard
 
     @Override
     public AbstractCard makeCopy() {
-        return new MercilessSmite();
+        return new PowerStance();
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
+            this.upgradeBaseCost(UPGRADE_COST);
             this.initializeDescription();
         }
 
     }
-
-
-    public static int countEtherealInHand() {
-        int etherealCount = 0;
-        for (AbstractCard c : AbstractDungeon.player.hand.group) {
-            if (!c.name.contains("Smite"))
-                continue;
-            etherealCount++;
-        }
-        return etherealCount;
-    }
 }
-
-

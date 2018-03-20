@@ -36,9 +36,9 @@
   },
   "PowerStrike": {
     "NAME": "Power Strike",
-    "DESCRIPTION": "For max [R] you have, deal !D! damage.",
+    "DESCRIPTION": "For max [R] you have, deal !M! damage.",
     "EXTENDED_DESCRIPTION": [
-      " (You will deal !F! Damage)"
+      " (You will deal !D! Damage)"
     ]
   },
   "WideSmite": {
@@ -77,5 +77,33 @@
 	"BlindingLight": {
 		"NAME": "Blinding Light",
 		"DESCRIPTION": "Apply !M! Weak to ALL enemies."
-	}
+	},
+  "FlashOfAnger": {
+    "NAME": "Flash Of Anger",
+    "DESCRIPTION": "Gain !B! Block. NL Apply !M! Vulnerable."
+  }
+,
+  "ArcaneHealing": {
+    "NAME": "Arcane Healing",
+    "DESCRIPTION": "Heal !M! HP. NL Exhaust."
+  }
+,
+  "DivineFavor": {
+    "NAME": "Divine Favor",
+    "DESCRIPTION": "Gain !B! Block. NL Heal !M! HP."
+  },
+  "Quickstep": {
+    "NAME": "Quickstep",
+    "DESCRIPTION": "Draw !M! cards. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards."
+  }
+,
+  "PowerStance": {
+    "NAME": "Power Stance",
+    "DESCRIPTION": "For max [R] you have, gain !M! Block.",
+    "EXTENDED_DESCRIPTION": [
+      " (You will gain !B! Block)"
+    ]
+  }
+
 }

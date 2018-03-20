@@ -1,4 +1,4 @@
-package Cards;
+package Cards.Common.Skill;
 import MainMod.*;
 import Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.*;
@@ -10,21 +10,21 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
 
-public class MinorHealing extends CustomCard
+public class ArcaneHealing extends CustomCard
 {
-    public static final String ID = "MinorHealing";
-    public static final String NAME = "Minor Healing";
+    public static final String ID = "ArcaneHealing";
+    public static final String NAME = "Arcane Healing";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Skills/corona.png";
     private static final int COST = 1;
-    private static final int HP_AMOUNT = 6;
-    private static final int UPGRADE_HP_AMOUNT = 2;
+    private static final int HP_AMOUNT = 8;
+    private static final int UPGRADE_HP_AMOUNT = 3;
     private static final int POOL = 1;
 
-    public MinorHealing() {
+    public ArcaneHealing() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
-                CardRarity.BASIC, CardTarget.SELF, POOL);
+                CardRarity.COMMON, CardTarget.SELF, POOL);
         this.baseMagicNumber = HP_AMOUNT;
         this.magicNumber = this.baseMagicNumber;
         this.heal=this.baseHeal = HP_AMOUNT;
@@ -44,7 +44,7 @@ public class MinorHealing extends CustomCard
 
     @Override
     public AbstractCard makeCopy() {
-        return new MinorHealing();
+        return new ArcaneHealing();
     }
 
     @Override

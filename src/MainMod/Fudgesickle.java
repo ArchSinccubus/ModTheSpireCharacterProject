@@ -1,5 +1,11 @@
 package MainMod;
 
+import Cards.Common.Attack.*;
+import Cards.Common.Skill.*;
+import Cards.Starter.BlindingLight;
+import Cards.Starter.Defend_W;
+import Cards.Starter.MinorHealing;
+import Cards.Starter.Strike_W;
 import Patches.AbstractCardEnum;
 import Patches.CharacterEnum;
 import basemod.BaseMod;
@@ -12,7 +18,6 @@ import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 
 import Relics.*;
-import Cards.*;
 import Character.*;
 
 import com.megacrit.cardcrawl.core.Settings;
@@ -162,6 +167,12 @@ public class Fudgesickle implements PostInitializeSubscriber,
         BaseMod.addCard(new PowerStrike());
         BaseMod.addCard(new GracefulSiphon());
         BaseMod.addCard(new ToweringCharge());
+
+        BaseMod.addCard(new Quickstep());
+        BaseMod.addCard(new DivineFavor());
+        BaseMod.addCard(new ArcaneHealing());
+        BaseMod.addCard(new FlashOfAnger());
+        BaseMod.addCard(new PowerStance());
 
         logger.info("done editting cards");
     }

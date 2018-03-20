@@ -1,4 +1,4 @@
-package Cards;
+package Cards.Starter;
 import MainMod.*;
 import Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.*;

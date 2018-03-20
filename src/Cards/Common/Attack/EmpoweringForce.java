@@ -1,4 +1,4 @@
-package Cards;
+package Cards.Common.Attack;
 import Actions.EmpoweringForceAction;
 import MainMod.*;
 import Patches.AbstractCardEnum;

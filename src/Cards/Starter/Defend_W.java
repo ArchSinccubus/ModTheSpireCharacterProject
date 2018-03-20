@@ -1,4 +1,5 @@
-package Cards;
+package Cards.Starter;
+import MainMod.Fudgesickle;
 import Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -11,16 +12,18 @@ public class Defend_W extends CustomCard{
     public static final String ID = "Defend_W";
     public static final String NAME = "Defend";
     public static final String DESCRIPTION = "Gain !B! block.";
-    public static final String IMG_PATH = "ASSETS/Cards/Skills/corona.png";
+    public static final String IMG_PATH = "Cards/Skills/corona.png";
     private static final int COST = 1;
     private static final int BLOCK_AMOUNT = 5;
     private static final int UPGRADE_BLOCK_DMG = 3;
     private static final int POOL = 1;
+    private static final CardRarity rarity = CardRarity.BASIC;
+    private static final CardTarget target = CardTarget.SELF;
 
     public Defend_W() {
-        super(ID, NAME, IMG_PATH, COST, DESCRIPTION,
+        super(ID, NAME, Fudgesickle.makePath(IMG_PATH), COST, DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
-                CardRarity.BASIC, CardTarget.SELF, POOL);
+                rarity, target, POOL);
         this.block=this.baseBlock = BLOCK_AMOUNT;
     }
 
