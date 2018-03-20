@@ -49,7 +49,7 @@ public class MercilessSmite extends CustomCard
 
     @Override
     public void applyPowers() {
-        this.baseDamage = countEtherealInHand() * this.magicNumber;
+        this.baseDamage = countSmiteInHand() * this.magicNumber;
         super.applyPowers();
         this.setDescription(true);
     }
@@ -78,10 +78,10 @@ public class MercilessSmite extends CustomCard
     }
 
 
-    public static int countEtherealInHand() {
+    public static int countSmiteInHand() {
         int etherealCount = 0;
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
-            if (!c.name.contains("Smite"))
+            if (!c.name.contains("Smit"))
                 continue;
             etherealCount++;
         }

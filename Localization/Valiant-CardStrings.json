@@ -36,7 +36,7 @@
   },
   "PowerStrike": {
     "NAME": "Power Strike",
-    "DESCRIPTION": "For max [R] you have, deal !M! damage.",
+    "DESCRIPTION": "For each [R] you have, deal !M! damage.",
     "EXTENDED_DESCRIPTION": [
       " (You will deal !D! Damage)"
     ]
@@ -66,28 +66,26 @@
     "NAME": "Graceful Siphon",
     "DESCRIPTION": "Deal !D! damage to ALL enemies. Heal !M! HP. Exhaust."
   },
-	"Defend_W": {
-		"NAME": "Defend",
-		"DESCRIPTION": "Gain !B! Block."
-	},
-	"MinorHealing": {
-		"NAME": "Minor Healing",
-		"DESCRIPTION": "Heal !M! HP. NL Exhaust."
-	},
-	"BlindingLight": {
-		"NAME": "Blinding Light",
-		"DESCRIPTION": "Apply !M! Weak to ALL enemies."
-	},
+  "Defend_W": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "MinorHealing": {
+    "NAME": "Minor Healing",
+    "DESCRIPTION": "Heal !M! HP. NL Exhaust."
+  },
+  "BlindingLight": {
+    "NAME": "Blinding Light",
+    "DESCRIPTION": "Apply !M! Weak to ALL enemies."
+  },
   "FlashOfAnger": {
     "NAME": "Flash Of Anger",
     "DESCRIPTION": "Gain !B! Block. NL Apply !M! Vulnerable."
-  }
-,
+  },
   "ArcaneHealing": {
     "NAME": "Arcane Healing",
     "DESCRIPTION": "Heal !M! HP. NL Exhaust."
-  }
-,
+  },
   "DivineFavor": {
     "NAME": "Divine Favor",
     "DESCRIPTION": "Gain !B! Block. NL Heal !M! HP."
@@ -96,14 +94,44 @@
     "NAME": "Quickstep",
     "DESCRIPTION": "Draw !M! cards. Exhaust.",
     "UPGRADE_DESCRIPTION": "Draw !M! cards."
-  }
-,
+  },
   "PowerStance": {
     "NAME": "Power Stance",
-    "DESCRIPTION": "For max [R] you have, gain !M! Block.",
+    "DESCRIPTION": "For each [R] you have, gain !M! Block.",
     "EXTENDED_DESCRIPTION": [
       " (You will gain !B! Block)"
     ]
+  },
+  "Intimidation": {
+    "NAME": "Intimidation",
+    "DESCRIPTION": "Apply !M! Weak. Exhaust."
+  },
+  "TakeAim": {
+    "NAME": "Take Aim",
+    "DESCRIPTION": "Choose a card in your hand. It costs 1 less this turn."
+  },
+  "MightBracer": {
+    "NAME": "MightBracer",
+    "DESCRIPTION": "Gain !B! Block. Exhaust the top card of your deck"
+  },
+  "HolyFury": {
+    "NAME": "Holy Fury",
+    "DESCRIPTION": "Gain !B! Block. NL Apply !M! Weak."
+  },
+  "ItsSmitingTime": {
+    "NAME": "It's Smitin' Time!",
+    "DESCRIPTION": "Gain !M! for each Smite card in your hand.",
+    "EXTENDED_DESCRIPTION": [
+      " (You will gain !B! Block)"
+    ]
+  },
+  "ZealousPersecution": {
+    "NAME": "Zealous Persecusion",
+    "DESCRIPTION": "Can only be played if you have a card in your hand that costs 3 or more. NL Draw !M! cards. Lose 6 life."
+  },
+  "SeekAnswers": {
+    "NAME": "Seek Answers",
+    "DESCRIPTION": "Draw a card. If it costs !M! Or more, gain [R]"
   }
 
 }

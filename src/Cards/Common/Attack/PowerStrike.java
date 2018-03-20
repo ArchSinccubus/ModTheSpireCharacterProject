@@ -38,11 +38,6 @@ public class PowerStrike extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        int NewDamage = this.baseDamage * AbstractDungeon.player.energy.energy;
-        this.damage = NewDamage;
-
-        logger.info(NewDamage + " " + p.energy.energy + " " + this.baseDamage + " " + this.damage);
-
         AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DamageAction(m,
                 new DamageInfo(p, this.damage, this.damageTypeForTurn),
                 AbstractGameAction.AttackEffect.SMASH));
@@ -50,7 +45,7 @@ public class PowerStrike extends CustomCard
 
     @Override
     public void applyPowers() {
-        this.baseDamage = this.baseMagicNumber * AbstractDungeon.player.energy.energy;
+        this.baseDamage = this.baseMagicNumber * this.energyOnUse;
         super.applyPowers();
         this.setDescription(true);
     }

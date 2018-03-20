@@ -1,58 +1,47 @@
 package Cards.Common.Skill;
+
 import MainMod.*;
 import Patches.AbstractCardEnum;
+import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.powers.AbstractPower;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import com.megacrit.cardcrawl.powers.WeakPower;
 
-import java.util.Iterator;
-
-public class PowerStance extends CustomCard
+public class ItsSmitingTime extends CustomCard
 {
-    public static final String ID = "PowerStance";
-    public static final String NAME = "Power Stance";
+    public static final String ID = "ItsSmitingTime";
+    public static final String NAME = "It's Smitin' Time!";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Skills/corona.png";
-    private static final int COST = 2;
+    private static final int COST = 3;
     private static final int POOL = 1;
-    private static final int BLOCK_AMOUNT = 5;
-    private static final int UPGRADE_COST = 0;
+    private static final int BLOCK_AMOUNT = 8;
     private static final CardRarity rarity = CardRarity.COMMON;
     private static final CardTarget target = CardTarget.SELF;
 
-    public static final Logger logger = LogManager.getLogger(Fudgesickle.class.getName());
 
-    public PowerStance() {
+    public ItsSmitingTime() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
                 rarity, target, POOL);
-        this.magicNumber = this.baseMagicNumber = BLOCK_AMOUNT;
+        this.baseMagicNumber = this.magicNumber = BLOCK_AMOUNT;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        int NewBlock = this.baseBlock * AbstractDungeon.player.energy.energy;
-        this.block = NewBlock;
-
-        logger.info(NewBlock + " " + p.energy.energy + " " + this.baseBlock + " " + this.block);
-
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
     }
 
     @Override
     public void applyPowers() {
-        this.baseBlock = this.baseMagicNumber * this.energyOnUse;
+        this.baseBlock = countSmiteInHand() * this.magicNumber;
         super.applyPowers();
         this.setDescription(true);
     }
@@ -65,17 +54,25 @@ public class PowerStance extends CustomCard
         this.initializeDescription();
     }
 
+    public static int countSmiteInHand() {
+        int SmiteCount = 0;
+        for (AbstractCard c : AbstractDungeon.player.hand.group) {
+            if (!c.name.contains("Smit"))
+                continue;
+            SmiteCount++;
+        }
+        return SmiteCount;
+    }
+
     @Override
     public AbstractCard makeCopy() {
-        return new PowerStance();
+        return new ItsSmitingTime();
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBaseCost(UPGRADE_COST);
-            this.initializeDescription();
         }
 
     }

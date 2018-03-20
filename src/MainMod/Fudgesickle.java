@@ -173,6 +173,13 @@ public class Fudgesickle implements PostInitializeSubscriber,
         BaseMod.addCard(new ArcaneHealing());
         BaseMod.addCard(new FlashOfAnger());
         BaseMod.addCard(new PowerStance());
+        BaseMod.addCard(new ZealousPersecution());
+        BaseMod.addCard(new HolyFury());
+        BaseMod.addCard(new ItsSmitingTime());
+        BaseMod.addCard(new Quickstep());
+        BaseMod.addCard(new SeekAnswers());
+        BaseMod.addCard(new TakeAim());
+        BaseMod.addCard(new Intimidation());
 
         logger.info("done editting cards");
     }
@@ -183,7 +190,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
 
         logger.info("add " + CharacterEnum.TheValiant.toString());
         BaseMod.addCharacter(Valiant.class, "The Valiant", "A nun sent to destroy the heart of evil in the name of The Lord. Wields both holy power and untold fury.",
-                AbstractCardEnum.Holy.toString(), "My Valiant.Valiant",
+                AbstractCardEnum.Holy.toString(), "The Valiant",
                 makePath(VALIANT_BUTTON) , makePath(VALIANT_POTRAIT),
                 CharacterEnum.TheValiant.toString());
 
