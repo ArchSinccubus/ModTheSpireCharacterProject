@@ -14,8 +14,8 @@ import com.megacrit.cardcrawl.powers.WeakPower;
 
 public class ZealousPersecution extends CustomCard
 {
-    public static final String ID = "MinorHealing";
-    public static final String NAME = "Minor Healing";
+    public static final String ID = "ZealousPersecution";
+    public static final String NAME = "Zealous Persecution";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Skills/corona.png";
     private static final int COST = 0;
@@ -44,7 +44,7 @@ public class ZealousPersecution extends CustomCard
     }
 
     @Override
-public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
 
     boolean canUse = super.canUse(p, m);
 
@@ -82,7 +82,7 @@ public boolean canUse(AbstractPlayer p, AbstractMonster m) {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBaseCost(CARD_DRAW_UPGRADE);
+            this.upgradeMagicNumber(CARD_DRAW_UPGRADE);
             this.costLimit = 2;
         }
 

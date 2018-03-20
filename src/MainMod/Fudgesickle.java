@@ -176,10 +176,10 @@ public class Fudgesickle implements PostInitializeSubscriber,
         BaseMod.addCard(new ZealousPersecution());
         BaseMod.addCard(new HolyFury());
         BaseMod.addCard(new ItsSmitingTime());
-        BaseMod.addCard(new Quickstep());
         BaseMod.addCard(new SeekAnswers());
         BaseMod.addCard(new TakeAim());
-        BaseMod.addCard(new Intimidation());
+        BaseMod.addCard(new UnyieldingZeal());
+        BaseMod.addCard(new MightBracer());
 
         logger.info("done editting cards");
     }

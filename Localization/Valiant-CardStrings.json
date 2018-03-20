@@ -102,8 +102,8 @@
       " (You will gain !B! Block)"
     ]
   },
-  "Intimidation": {
-    "NAME": "Intimidation",
+  "UnyieldingZeal": {
+    "NAME": "Unyielding Zeal",
     "DESCRIPTION": "Apply !M! Weak. Exhaust."
   },
   "TakeAim": {
@@ -111,7 +111,7 @@
     "DESCRIPTION": "Choose a card in your hand. It costs 1 less this turn."
   },
   "MightBracer": {
-    "NAME": "MightBracer",
+    "NAME": "Might Bracer",
     "DESCRIPTION": "Gain !B! Block. Exhaust the top card of your deck"
   },
   "HolyFury": {
@@ -126,7 +126,7 @@
     ]
   },
   "ZealousPersecution": {
-    "NAME": "Zealous Persecusion",
+    "NAME": "Zealous Persecution",
     "DESCRIPTION": "Can only be played if you have a card in your hand that costs 3 or more. NL Draw !M! cards. Lose 6 life."
   },
   "SeekAnswers": {

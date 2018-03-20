@@ -15,8 +15,8 @@ import com.megacrit.cardcrawl.powers.WeakPower;
 
 public class SeekAnswers extends CustomCard
 {
-    public static final String ID = "MinorHealing";
-    public static final String NAME = "Minor Healing";
+    public static final String ID = "SeekAnswers";
+    public static final String NAME = "Seek Answers";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Skills/corona.png";
     private static final int COST = 1;

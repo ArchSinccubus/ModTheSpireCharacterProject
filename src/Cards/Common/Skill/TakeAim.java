@@ -15,8 +15,8 @@ import com.megacrit.cardcrawl.powers.WeakPower;
 
 public class TakeAim extends CustomCard
 {
-    public static final String ID = "MinorHealing";
-    public static final String NAME = "Minor Healing";
+    public static final String ID = "TakeAim";
+    public static final String NAME = "Take Aim";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Skills/corona.png";
     private static final int COST = 1;
@@ -39,6 +39,35 @@ public class TakeAim extends CustomCard
         AbstractDungeon.actionManager.addToBottom(new TakeAimAction(p, p, -this.magicNumber));
     }
 
+    @Override
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+
+        boolean canUse = super.canUse(p, m);
+
+
+        if (!canUse) {
+            return false;
+        }
+        canUse = false;
+        if (HasReducableCost()) {
+            canUse = true;
+            return canUse;
+        }
+        this.cantUseMessage = "I don't have a card that can be aimed...";
+        return canUse;
+    }
+
+    public boolean HasReducableCost()
+    {
+        int SmiteCount = 0;
+        for (AbstractCard c : AbstractDungeon.player.hand.group) {
+            if (c.cost > 0 && c != this)
+                return true;
+            SmiteCount++;
+        }
+        return false;
+
+    }
     @Override
     public AbstractCard makeCopy() {
         return new TakeAim();

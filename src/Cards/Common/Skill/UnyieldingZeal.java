@@ -12,21 +12,21 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.powers.WeakPower;
 
-public class Intimidation extends CustomCard
+public class UnyieldingZeal extends CustomCard
 {
-    public static final String ID = "Intimidation";
-    public static final String NAME = "Intimidation";
+    public static final String ID = "UnyieldingZeal";
+    public static final String NAME = "Unyielding Zeal";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Skills/corona.png";
     private static final int COST = 0;
     private static final int POOL = 1;
     private static final int WEAK_AMOUNT = 4;
-    private static final int WEAK_AMOUNT_PLUS = 4;
+    private static final int WEAK_AMOUNT_PLUS = 2;
     private static final CardRarity rarity = CardRarity.COMMON;
     private static final CardTarget target = CardTarget.ENEMY;
 
 
-    public Intimidation() {
+    public UnyieldingZeal() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
                 rarity, target, POOL);
@@ -42,7 +42,7 @@ public class Intimidation extends CustomCard
 
     @Override
     public AbstractCard makeCopy() {
-        return new Intimidation();
+        return new UnyieldingZeal();
     }
 
     @Override

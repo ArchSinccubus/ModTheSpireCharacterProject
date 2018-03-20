@@ -16,7 +16,6 @@ public class TakeAimAction extends AbstractGameAction {
     private int CostReduceBy;
 
     public static final String TEXT = "Select a card to cheapen.";
-    public static final String TEXTUpgrade = "Select cards to upgrade.";
 
     public TakeAimAction(AbstractCreature target, AbstractCreature source, int amount) {
         this.actionType = AbstractGameAction.ActionType.CARD_MANIPULATION;
@@ -43,7 +42,7 @@ public class TakeAimAction extends AbstractGameAction {
             if (this.p.hand.group.size() - this.cannotReduce.size() == 1) {
                 for (AbstractCard c : this.p.hand.group) {
                     if (canReduce(c)) {
-                        c.modifyCostForTurn(amount);
+                        c.modifyCostForTurn(-1);
                         this.isDone = true;
                         return;
                     }
@@ -53,29 +52,22 @@ public class TakeAimAction extends AbstractGameAction {
                 this.p.hand.group.removeAll(this.cannotReduce);
 
                 if (this.p.hand.group.size() > 1) {
+
                     AbstractDungeon.handCardSelectScreen.open(TEXT, 1, false, true);
-                    AbstractCard tmpCard = AbstractDungeon.handCardSelectScreen.selectedCards.getBottomCard();
-                    tmpCard.modifyCostForTurn(amount);
-                    AbstractDungeon.player.hand.addToHand(tmpCard);
-                    AbstractDungeon.handCardSelectScreen.selectedCards.clear();
                     tickDuration();
+
                     return;
                 }
-                if (this.p.hand.group.size() == 1) {
-                    this.p.hand.getTopCard().modifyCostForTurn(amount);
+                else if (this.p.hand.group.size() == 1) {
+                    this.p.hand.getTopCard().modifyCostForTurn(-1);
                     returnCards();
                     this.isDone = true;
                 }
-
-
-
-
-
         }
 
         if (!AbstractDungeon.handCardSelectScreen.wereCardsRetrieved) {
             for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group) {
-                c.upgrade();
+                c.modifyCostForTurn(-1);
                 this.p.hand.addToTop(c);
             }
 
@@ -94,7 +86,7 @@ public class TakeAimAction extends AbstractGameAction {
         } else if (c.type == AbstractCard.CardType.STATUS) {
             return false;
         } else {
-            return !(c.cost > 0);
+            return (c.cost > 0);
         }
     }
 
