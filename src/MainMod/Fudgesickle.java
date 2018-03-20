@@ -2,10 +2,12 @@ package MainMod;
 
 import Cards.Common.Attack.*;
 import Cards.Common.Skill.*;
+import Cards.Rare.Attack.AlmightySmite;
 import Cards.Starter.BlindingLight;
 import Cards.Starter.Defend_W;
 import Cards.Starter.MinorHealing;
 import Cards.Starter.Strike_W;
+import Cards.Uncommon.Attack.ZealousSmite;
 import Patches.AbstractCardEnum;
 import Patches.CharacterEnum;
 import basemod.BaseMod;
@@ -15,6 +17,7 @@ import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.utils.compression.lzma.Base;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 
 import Relics.*;
@@ -180,6 +183,10 @@ public class Fudgesickle implements PostInitializeSubscriber,
         BaseMod.addCard(new TakeAim());
         BaseMod.addCard(new UnyieldingZeal());
         BaseMod.addCard(new MightBracer());
+
+        BaseMod.addCard(new ZealousSmite());
+
+        BaseMod.addCard(new AlmightySmite());
 
         logger.info("done editting cards");
     }

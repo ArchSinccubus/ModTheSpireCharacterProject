@@ -17,11 +17,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="Valiant.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Character/Valiant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="479">
+              <caret line="88" column="28" lean-forward="false" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Smite.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/Smite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="601">
+              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="65" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Fudgesickle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainMod/Fudgesickle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="181" column="39" lean-forward="false" selection-start-line="181" selection-start-column="28" selection-end-line="181" selection-end-column="39" />
+            <state relative-caret-position="1192">
+              <caret line="188" column="43" lean-forward="false" selection-start-line="188" selection-start-column="43" selection-end-line="188" selection-end-column="43" />
               <folding>
                 <element signature="method#Fudgesickle#0;class#Fudgesickle#0" expanded="false" />
               </folding>
@@ -29,43 +49,61 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="DivineWrath.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Relics/DivineWrath.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Valiant-CardStrings.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Localization/Valiant-CardStrings.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="104" column="17" lean-forward="false" selection-start-line="104" selection-start-column="3" selection-end-line="104" selection-end-column="17" />
+            <state relative-caret-position="1438">
+              <caret line="121" column="83" lean-forward="false" selection-start-line="121" selection-start-column="83" selection-end-line="121" selection-end-column="83" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZealousPersecution.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cards/Common/Skill/ZealousPersecution.java">
+      <file leaf-file-name="ZealousSmite.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/ZealousSmite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="73" selection-end-column="5" />
-              <folding>
-                <element signature="method#canUse#0;class#ZealousPersecution#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="231">
+              <caret line="23" column="64" lean-forward="false" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TakeAim.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AlmightySmite.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cards/Rare/Attack/AlmightySmite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TakeAim.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Cards/Common/Skill/TakeAim.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="55" column="71" lean-forward="false" selection-start-line="55" selection-start-column="71" selection-end-line="55" selection-end-column="71" />
+            <state relative-caret-position="703">
+              <caret line="82" column="41" lean-forward="false" selection-start-line="82" selection-start-column="41" selection-end-line="82" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TakeAimAction.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TakeAimAction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Actions/TakeAimAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="669">
-              <caret line="69" column="38" lean-forward="false" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
+            <state relative-caret-position="336">
+              <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -76,36 +114,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
               <caret line="17" column="50" lean-forward="false" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SeekAnswersAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Actions/SeekAnswersAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-126">
-              <caret line="19" column="61" lean-forward="false" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmpoweringForceAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Actions/EmpoweringForceAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-830">
-              <caret line="29" column="55" lean-forward="false" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SeekAnswers.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cards/Common/Skill/SeekAnswers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="18" column="44" lean-forward="false" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -163,9 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Cards/BlindingLight.java" />
-        <option value="$PROJECT_DIR$/src/Cards/MinorHealing.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Strike_W.java" />
         <option value="$PROJECT_DIR$/src/Actions/EmpoweringForceAction.java" />
         <option value="$PROJECT_DIR$/src/Cards/PiercingStab.java" />
         <option value="$PROJECT_DIR$/src/Cards/QuickSiphon.java" />
@@ -183,7 +188,6 @@
         <option value="$PROJECT_DIR$/src/Cards/CombatDance.java" />
         <option value="$PROJECT_DIR$/src/Cards/ToweringCharge.java" />
         <option value="$PROJECT_DIR$/src/Cards/PowerStrike.java" />
-        <option value="$PROJECT_DIR$/src/Character/Valiant.java" />
         <option value="$PROJECT_DIR$/src/Cards/Decimate.java" />
         <option value="$PROJECT_DIR$/src/Cards/Common/QuickSiphon.java" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Attack/QuickSiphon.java" />
@@ -196,7 +200,6 @@
         <option value="$PROJECT_DIR$/src/Cards/Starter/Defend_W.java" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Skill/Quickstep.java" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Attack/RecklessSmite.java" />
-        <option value="$PROJECT_DIR$/src/Relics/DivineWrath.java" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Attack/PowerStrike.java" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Skill/PowerStance.java" />
         <option value="$PROJECT_DIR$/src/Actions/MightBracerAction.java" />
@@ -206,18 +209,23 @@
         <option value="$PROJECT_DIR$/src/Cards/Common/Skill/HolyFury.java" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Skill/ItsSmitingTime.java" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Skill/MightBracer.java" />
-        <option value="$PROJECT_DIR$/src/MainMod/Fudgesickle.java" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Skill/SeekAnswers.java" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Skill/ZealousPersecution.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Common/Skill/TakeAim.java" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Skill/Intimidation.java" />
-        <option value="$PROJECT_DIR$/Localization/Valiant-CardStrings.json" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Skill/UnyieldingZeal.java" />
         <option value="$PROJECT_DIR$/src/Actions/TakeAimAction.java" />
+        <option value="$PROJECT_DIR$/src/Cards/Rare/AlmightySmite.java" />
+        <option value="$PROJECT_DIR$/src/MainMod/Fudgesickle.java" />
+        <option value="$PROJECT_DIR$/src/Relics/DivineWrath.java" />
+        <option value="$PROJECT_DIR$/src/Cards/Rare/Attack/AlmightySmite.java" />
+        <option value="$PROJECT_DIR$/src/Cards/Uncommon/Attack/ZealousSmite.java" />
+        <option value="$PROJECT_DIR$/src/Character/Valiant.java" />
+        <option value="$PROJECT_DIR$/Localization/Valiant-CardStrings.json" />
+        <option value="$PROJECT_DIR$/src/Cards/Common/Skill/TakeAim.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -374,14 +382,37 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Cards" type="462c0819:PsiDirectoryNode" />
               <item name="Common" type="462c0819:PsiDirectoryNode" />
-              <item name="Skill" type="462c0819:PsiDirectoryNode" />
+              <item name="Attack" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Cards" type="462c0819:PsiDirectoryNode" />
-              <item name="Starter" type="462c0819:PsiDirectoryNode" />
+              <item name="Rare" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Cards" type="462c0819:PsiDirectoryNode" />
+              <item name="Rare" type="462c0819:PsiDirectoryNode" />
+              <item name="Attack" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Cards" type="462c0819:PsiDirectoryNode" />
+              <item name="Uncommon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Cards" type="462c0819:PsiDirectoryNode" />
+              <item name="Uncommon" type="462c0819:PsiDirectoryNode" />
+              <item name="Attack" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
@@ -394,6 +425,12 @@
               <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="MainMod" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Relics" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -535,7 +572,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -550,7 +588,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2109375" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2109375" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -575,31 +613,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Localization/Valiant-RelicStrings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.16502/com/megacrit/cardcrawl/cards/red/Whirlwind.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="35" column="152" lean-forward="false" selection-start-line="35" selection-start-column="136" selection-end-line="35" selection-end-column="152" />
-          <folding>
-            <marker date="1521310070000" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521310070000" expanded="false" signature="156:776" ph="..." />
-            <marker date="1521310070000" expanded="true" signature="1152:1400" ph="{...}" />
-            <marker date="1521310070000" expanded="true" signature="1459:1622" ph="{...}" />
-            <marker date="1521310070000" expanded="false" signature="1658:1669" ph=" { " />
-            <marker date="1521310070000" expanded="false" signature="1692:1698" ph=" }" />
-            <marker date="1521310070000" expanded="true" signature="1726:1841" ph="{...}" />
-            <marker date="1521310070000" expanded="true" signature="1854:2019" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/DivineLashes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -715,14 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Relics/DivineWrath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="52" column="96" lean-forward="false" selection-start-line="52" selection-start-column="96" selection-end-line="52" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/PowerStrike.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
@@ -789,14 +794,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/Smite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="45" column="59" lean-forward="false" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/MercilessSmite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -857,14 +854,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Character/Valiant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="937">
-          <caret line="90" column="35" lean-forward="false" selection-start-line="90" selection-start-column="35" selection-end-line="90" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -952,32 +941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Common/Skill/TakeAim.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="55" column="71" lean-forward="false" selection-start-line="55" selection-start-column="71" selection-end-line="55" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainMod/Fudgesickle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="181" column="39" lean-forward="false" selection-start-line="181" selection-start-column="28" selection-end-line="181" selection-end-column="39" />
-          <folding>
-            <element signature="method#Fudgesickle#0;class#Fudgesickle#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Localization/Valiant-CardStrings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="104" column="17" lean-forward="false" selection-start-line="104" selection-start-column="3" selection-end-line="104" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Actions/EmpoweringForceAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-830">
@@ -1004,8 +967,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Actions/TakeAimAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="669">
-          <caret line="69" column="38" lean-forward="false" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
+        <state relative-caret-position="336">
+          <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Relics/DivineWrath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainMod/Fudgesickle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1192">
+          <caret line="188" column="43" lean-forward="false" selection-start-line="188" selection-start-column="43" selection-end-line="188" selection-end-column="43" />
+          <folding>
+            <element signature="method#Fudgesickle#0;class#Fudgesickle#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Rare/Attack/AlmightySmite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/ZealousSmite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="23" column="64" lean-forward="false" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Character/Valiant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="88" column="28" lean-forward="false" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Localization/Valiant-CardStrings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1438">
+          <caret line="121" column="83" lean-forward="false" selection-start-line="121" selection-start-column="83" selection-end-line="121" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/Smite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="601">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="65" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Common/Skill/TakeAim.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="82" column="41" lean-forward="false" selection-start-line="82" selection-start-column="41" selection-end-line="82" selection-end-column="41" />
           <folding />
         </state>
       </provider>

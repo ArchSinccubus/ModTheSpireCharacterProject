@@ -17,7 +17,7 @@ public class DivineWrath extends CustomRelic {
     public static final String[] DESCRIPTIONS = new String[] {
             "You get 200 Dexterity. I hope you're happy"
     };
-    private static final int StrengthAmount = 200;
+    private static final int StrengthAmount = 1;
 
     private static final String texturePath = "ASSETS/Relics/Wrath.png";
 

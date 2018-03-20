@@ -66,6 +66,16 @@
     "NAME": "Graceful Siphon",
     "DESCRIPTION": "Deal !D! damage to ALL enemies. Heal !M! HP. Exhaust."
   },
+  "ZealousSmite": {
+  "NAME": "Zealous Smite",
+  "DESCRIPTION": "Deal !D! damage. NL If the enemy is weak, deal 50% more, gain [R] and draw a card.",
+  "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is weak, deal twice as much, gain [R] and draw a card."
+},
+  "AlmightySmite": {
+    "NAME": "Almighty Smite",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy is weak, deal 50% more.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is weak, deal twice as much."
+  },
   "Defend_W": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
@@ -108,7 +118,8 @@
   },
   "TakeAim": {
     "NAME": "Take Aim",
-    "DESCRIPTION": "Choose a card in your hand. It costs 1 less this turn."
+    "DESCRIPTION": "Choose a card in your hand. It costs 1 less this turn. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose a card in your hand. It costs 1 less this turn. "
   },
   "MightBracer": {
     "NAME": "Might Bracer",

@@ -86,7 +86,7 @@ public class Valiant extends CustomPlayer{
         retVal.add("Defend_W");
         retVal.add("Defend_W");
         retVal.add("Defend_W");
-        retVal.add("BlindingLight");
+        retVal.add("Defend_W");
         retVal.add("BlindingLight");
         retVal.add("MinorHealing");
         return retVal;
