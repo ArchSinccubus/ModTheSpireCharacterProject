@@ -24,11 +24,14 @@ public class EmpoweringForce extends CustomCard{
     private static final int UPGRADE_NUM = 1;
     private static final int UPGRADE_PLUS_NUM = 2;
     private static final int POOL = 1;
+    private static final CardRarity rarity = CardRarity.COMMON;
+    private static final CardTarget target = CardTarget.ENEMY;
+    private static final CardType type = CardType.ATTACK;
 
     public EmpoweringForce() {
-        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION, AbstractCard.CardType.ATTACK,
-                AbstractCardEnum.Holy, AbstractCard.CardRarity.BASIC,
-                AbstractCard.CardTarget.ENEMY, POOL);
+        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
+                type, AbstractCardEnum.Holy,
+                rarity, target, POOL);
 
         this.baseDamage = this.damage = ATTACK_DMG;
         this.baseMagicNumber = this.magicNumber = UPGRADE_NUM;

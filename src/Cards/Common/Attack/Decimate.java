@@ -25,9 +25,10 @@ public class Decimate extends CustomCard
     private static final int UPGRADE_PLUS_DMG = 2;
     private float percent;
     private static final int MAGIC_PERCENT = 75;
-    private static final int UPGRADE_MAGIC_PERCENT = 15;
+    private static final int UPGRADE_MAGIC_PERCENT = -15;
     private static final CardRarity rarity = CardRarity.COMMON;
     private static final CardTarget target = CardTarget.ENEMY;
+    private static final CardType type = CardType.ATTACK;
 
     public static final Logger logger = LogManager.getLogger(Fudgesickle.class.getName());
 
@@ -77,7 +78,7 @@ public class Decimate extends CustomCard
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeDamage(UPGRADE_PLUS_DMG);
-            this.baseMagicNumber = this.magicNumber -= UPGRADE_MAGIC_PERCENT;
+            this.upgradeMagicNumber(UPGRADE_MAGIC_PERCENT);
             this.initializeDescription();
         }
 

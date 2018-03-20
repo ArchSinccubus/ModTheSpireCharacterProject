@@ -17,16 +17,17 @@ public class CardTemplate extends CustomCard
     public static final String ID = "MinorHealing";
     public static final String NAME = "Minor Healing";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG_PATH = "Cards/Skills/corona.png";
+    public static final String IMG_PATH = "Cards/Attacks/comet.png";
     private static final int COST = 1;
     private static final int POOL = 1;
-    private static final CardRarity rarity = CardRarity.COMMON;
+    private static final CardRarity rarity = CardRarity.UNCOMMON;
     private static final CardTarget target = CardTarget.ENEMY;
+    private static final CardType type = CardType.ATTACK;
 
 
     public CardTemplate() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
-                CardType.SKILL, AbstractCardEnum.Holy,
+                type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
     }
 

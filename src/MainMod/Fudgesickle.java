@@ -7,7 +7,7 @@ import Cards.Starter.BlindingLight;
 import Cards.Starter.Defend_W;
 import Cards.Starter.MinorHealing;
 import Cards.Starter.Strike_W;
-import Cards.Uncommon.Attack.ZealousSmite;
+import Cards.Uncommon.Attack.*;
 import Patches.AbstractCardEnum;
 import Patches.CharacterEnum;
 import basemod.BaseMod;
@@ -185,6 +185,11 @@ public class Fudgesickle implements PostInitializeSubscriber,
         BaseMod.addCard(new MightBracer());
 
         BaseMod.addCard(new ZealousSmite());
+        BaseMod.addCard(new BreakThrough());
+        BaseMod.addCard(new HolyLight());
+        BaseMod.addCard(new TearPsyche());
+        BaseMod.addCard(new TearSoul());
+        BaseMod.addCard(new Uprising());
 
         BaseMod.addCard(new AlmightySmite());
 

@@ -1,7 +1,9 @@
-package Cards.Common.Attack;
+package Cards.Uncommon.Attack;
 import MainMod.*;
 import Patches.AbstractCardEnum;
+import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.deprecated.DiscardPileToHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -10,66 +12,48 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import com.megacrit.cardcrawl.powers.WeakPower;
 
-public class PowerStrike extends CustomCard
+public class Uprising extends CustomCard
 {
-    public static final String ID = "PowerStrike";
-    public static final String NAME = "Power Strike";
+    public static final String ID = "Uprising";
+    public static final String NAME = "Uprising";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Attacks/comet.png";
     private static final int COST = 1;
     private static final int POOL = 1;
-    private static final int ATTACK_DMG = 3;
-    private static final int UPGRADE_PLUS_DMG = 1;
-    private static final CardRarity rarity = CardRarity.COMMON;
+    private static final CardRarity rarity = CardRarity.UNCOMMON;
     private static final CardTarget target = CardTarget.ENEMY;
     private static final CardType type = CardType.ATTACK;
+    private static final int DAMAGE = 8;
+    private static final int DAMAGE_UPGRADE = 3;
 
-    public static final Logger logger = LogManager.getLogger(Fudgesickle.class.getName());
-
-    public PowerStrike() {
+    public Uprising() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
-        this.baseMagicNumber = this.damage = ATTACK_DMG;
+        this.baseDamage = this.damage = DAMAGE;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DamageAction(m,
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(m,
                 new DamageInfo(p, this.damage, this.damageTypeForTurn),
-                AbstractGameAction.AttackEffect.SMASH));
-    }
-
-    @Override
-    public void applyPowers() {
-        this.baseDamage = this.baseMagicNumber * this.energyOnUse;
-        super.applyPowers();
-        this.setDescription(true);
-    }
-
-    private void setDescription(boolean addExtended) {
-        this.rawDescription = CARD_STRINGS.DESCRIPTION;
-        if (addExtended) {
-            this.rawDescription += CARD_STRINGS.EXTENDED_DESCRIPTION[0];
-        }
-        this.initializeDescription();
+                AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        AbstractDungeon.actionManager.addToBottom(new DiscardPileToHandAction(1));
     }
 
     @Override
     public AbstractCard makeCopy() {
-        return new PowerStrike();
+        return new Uprising();
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADE_PLUS_DMG);
-            this.initializeDescription();
+            this.upgradeDamage(DAMAGE_UPGRADE);
         }
 
     }

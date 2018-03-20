@@ -30,11 +30,12 @@ public class ToweringCharge extends CustomCard
     private static final int WEAK_AMOUNT_PLUS = 2;
     private static final CardRarity rarity = CardRarity.COMMON;
     private static final CardTarget target = CardTarget.ENEMY;
+    private static final CardType type = CardType.ATTACK;
 
     public static final Logger logger = LogManager.getLogger(Fudgesickle.class.getName());
     public ToweringCharge() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
-                CardType.SKILL, AbstractCardEnum.Holy,
+                type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.baseDamage = this.damage = ATTACK_DMG;
         this.baseMagicNumber =WEAK_AMOUNT;

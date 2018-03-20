@@ -23,11 +23,12 @@ public class MercilessSmite extends CustomCard
     private static final int ATTACK_DMG = 8;
     private static final CardRarity rarity = CardRarity.COMMON;
     private static final CardTarget target = CardTarget.ENEMY;
+    private static final CardType type = CardType.ATTACK;
 
 
     public MercilessSmite() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
-                CardType.SKILL, AbstractCardEnum.Holy,
+                type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.baseMagicNumber = this.magicNumber = ATTACK_DMG;
     }

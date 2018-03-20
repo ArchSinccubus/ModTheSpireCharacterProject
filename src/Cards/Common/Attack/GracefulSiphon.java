@@ -27,11 +27,12 @@ public class GracefulSiphon extends CustomCard
     private static final int HEAL_AMOUNT_PLUS = 2;
     private static final CardRarity rarity = CardRarity.COMMON;
     private static final CardTarget target = CardTarget.ALL_ENEMY;
+    private static final CardType type = CardType.ATTACK;
 
 
     public GracefulSiphon() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
-                CardType.SKILL, AbstractCardEnum.Holy,
+                type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.baseDamage = this.damage = ATTACK_DMG;
         this.baseMagicNumber = HEAL_AMOUNT;

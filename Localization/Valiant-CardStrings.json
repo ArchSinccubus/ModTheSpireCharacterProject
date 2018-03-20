@@ -71,6 +71,27 @@
   "DESCRIPTION": "Deal !D! damage. NL If the enemy is weak, deal 50% more, gain [R] and draw a card.",
   "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is weak, deal twice as much, gain [R] and draw a card."
 },
+  "TearPsyche": {
+    "NAME": "Tear Psyche",
+    "DESCRIPTION": "Deal !D! damage. Lose !M!% HP."
+  },
+  "TearSoul": {
+    "NAME": "Tear Soul",
+    "DESCRIPTION": "Deal !D! damage. Next turn, start with [R] [R] LESS.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Next turn, start with [R] LESS."
+  },
+  "HolyLight": {
+    "NAME": "Holy Light",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies."
+  },
+  "BreakThrough": {
+    "NAME": "Break Through",
+    "DESCRIPTION": "Innate. Deal !D! damage and apply !M! Vulnerable. Exhaust."
+  },
+  "Uprising": {
+    "NAME": "Uprising",
+    "DESCRIPTION": "Deal !D! damage. Return a card from your discard pile to your hand."
+  },
   "AlmightySmite": {
     "NAME": "Almighty Smite",
     "DESCRIPTION": "Deal !D! damage. NL If the enemy is weak, deal 50% more.",

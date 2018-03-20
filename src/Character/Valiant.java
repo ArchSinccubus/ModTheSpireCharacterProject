@@ -97,7 +97,6 @@ public class Valiant extends CustomPlayer{
         ArrayList<String> retVal = new ArrayList<>();
 
         retVal.add(DivineWrath.ID);
-        retVal.add(CursedKey.ID);
 
         UnlockTracker.markRelicAsSeen("DivineWrath");
 
