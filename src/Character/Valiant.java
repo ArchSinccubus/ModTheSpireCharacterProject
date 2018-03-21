@@ -8,6 +8,7 @@ import basemod.ModPanel;
 
 import Relics.*;
 
+import MainMod.Fudgesickle;
 import basemod.abstracts.CustomPlayer;
 import com.badlogic.gdx.math.MathUtils;
 import com.esotericsoftware.spine.AnimationState;
@@ -78,15 +79,15 @@ public class Valiant extends CustomPlayer{
     // ADD CARDS
     public static ArrayList<String> getStartingDeck() { // starting deck 'nuff said
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add("Strike_W");
-        retVal.add("Strike_W");
-        retVal.add("Strike_W");
-        retVal.add("Strike_W");
-        retVal.add("Strike_W");
-        retVal.add("Defend_W");
-        retVal.add("Defend_W");
-        retVal.add("Defend_W");
-        retVal.add("Defend_W");
+        retVal.add("AttackDemo");
+        retVal.add("AttackDemo");
+        retVal.add("AttackDemo");
+        retVal.add("AttackDemo");
+        retVal.add("AttackDemo");
+        retVal.add("SkillDemo");
+        retVal.add("SkillDemo");
+        retVal.add("SkillDemo");
+        retVal.add("SkillDemo");
         retVal.add("BlindingLight");
         retVal.add("MinorHealing");
         return retVal;
@@ -103,6 +104,12 @@ public class Valiant extends CustomPlayer{
         return retVal;
     }
 
+    @Override
+    public void applyStartOfTurnPostDrawPowers()
+    {
+        super.applyStartOfTurnPostDrawPowers();
+        this.damagedThisCombat = 0;
+    }
 
     public static CharSelectInfo getLoadout() { // the rest of the character loadout so includes your character select screen info plus hp and starting gold
         return new CharSelectInfo("Valiant", "A zealous nun wielding both holy power and untold fury.",

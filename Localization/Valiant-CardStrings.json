@@ -92,6 +92,39 @@
     "NAME": "Uprising",
     "DESCRIPTION": "Deal !D! damage. Return a card from your discard pile to your hand."
   },
+  "Chainer": {
+    "NAME": "Chainer",
+    "DESCRIPTION": "For each 10 HP you have, deal !M! Damage.",
+    "EXTENDED_DESCRIPTION": [
+      " (You will deal !D! Damage)"
+    ]
+  },
+  "FuriousSmite": {
+    "NAME": "Furious Smite",
+    "DESCRIPTION": "Deal !D! damage. NL Lose !M! HP. NL If the enemy is weak, deal 50% more.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Lose !M! HP. NL If the enemy is weak, deal twice as much."
+  },
+  "AuraDischarge": {
+    "NAME": "Aura Discharge",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies NL Heal !M! HP. Exhaust."
+  },
+  "Desperation": {
+    "NAME": "Desperation",
+    "DESCRIPTION": "Deal !D! damage. NL Lose !M! HP. NL Apply 3 Vulnerable."
+  },
+  "AbandonReason": {
+    "NAME": "Abandon Reason",
+    "DESCRIPTION": "Costs 1 less for each 10 points of HP you lost. Deal !D! damage."
+  },
+  "Retaliate": {
+    "NAME": "Retaliate",
+    "DESCRIPTION": "Can only be played if you lost life this turn. Deal !D! damage."
+  },
+  "StrainingSmite": {
+    "NAME": "Straining Smite",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy is weak, deal 50% more. NL Add a Burn to your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is weak, deal twice as much. NL Add a Burn to your hand."
+  },
   "AlmightySmite": {
     "NAME": "Almighty Smite",
     "DESCRIPTION": "Deal !D! damage. NL If the enemy is weak, deal 50% more.",
@@ -164,6 +197,9 @@
   "SeekAnswers": {
     "NAME": "Seek Answers",
     "DESCRIPTION": "Draw a card. If it costs !M! Or more, gain [R]"
+  },
+  "Ensoul": {
+    "NAME": "Ensoul",
+    "DESCRIPTION": "Gain !M! Spirit."
   }
-
 }

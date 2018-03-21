@@ -47,7 +47,7 @@ public class DivineWrath extends CustomRelic {
     }
 
     @Override
-    public void atTurnStart() {
+    public void atBattleStart() {
         AbstractPlayer p = AbstractDungeon.player;
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DexterityPower(p, StrengthAmount), 1));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new StrengthPower (p, StrengthAmount), 1));

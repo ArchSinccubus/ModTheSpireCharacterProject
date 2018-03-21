@@ -1,0 +1,9 @@
+{
+  "Spirit": {
+    "NAME": "Spirit",
+    "DESCRIPTIONS": [
+      "Increases healing cards' power by #b",
+      "Decrease healing cards' power by #b"
+    ]
+  }
+}

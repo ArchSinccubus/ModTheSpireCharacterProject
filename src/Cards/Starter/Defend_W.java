@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
 
 public class Defend_W extends CustomCard{
-    public static final String ID = "Defend_W";
+    public static final String ID = "SkillDemo";
     public static final String NAME = "Defend";
     public static final String DESCRIPTION = "Gain !B! block.";
     public static final String IMG_PATH = "Cards/Skills/corona.png";

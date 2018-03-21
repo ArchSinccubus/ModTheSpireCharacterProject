@@ -53,11 +53,6 @@ public class ZealousSmite extends CustomCard
     }
 
     @Override
-    public void applyPowers() {
-
-    }
-
-    @Override
     public AbstractCard makeCopy() {
         return new ZealousSmite();
     }

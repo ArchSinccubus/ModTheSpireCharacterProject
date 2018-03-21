@@ -49,11 +49,6 @@ public class AlmightySmite extends CustomCard
     }
 
     @Override
-    public void applyPowers() {
-
-    }
-
-    @Override
     public AbstractCard makeCopy() {
         return new AlmightySmite();
     }

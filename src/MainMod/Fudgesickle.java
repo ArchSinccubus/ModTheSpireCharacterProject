@@ -8,6 +8,7 @@ import Cards.Starter.Defend_W;
 import Cards.Starter.MinorHealing;
 import Cards.Starter.Strike_W;
 import Cards.Uncommon.Attack.*;
+import Cards.Uncommon.Power.Ensoul;
 import Patches.AbstractCardEnum;
 import Patches.CharacterEnum;
 import basemod.BaseMod;
@@ -17,7 +18,6 @@ import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.utils.compression.lzma.Base;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 
 import Relics.*;
@@ -37,7 +37,7 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 @SpireInitializer
 public class Fudgesickle implements PostInitializeSubscriber,
         EditCardsSubscriber, EditRelicsSubscriber, EditCharactersSubscriber,
-        EditStringsSubscriber {
+        EditStringsSubscriber,EditKeywordsSubscriber {
 
     private static final Color HOLY = CardHelper.getColor(255.0f, 250.0f, 250.0f);
     private static final String ARCHMOD_ASSETS_FOLDER = "ASSETS"; //TODO: Change to your folder if different;
@@ -57,8 +57,12 @@ public class Fudgesickle implements PostInitializeSubscriber,
     private static final String ENERGY_ORB_PURPLE_PORTRAIT = "ASSETS/Cards/Backgrounds/1024/card_hybrid_orb.png";
 
     //card pics
-    public static final String Strike_W = "Cards/Attacks/comet.png";
-    public static final String Defend_W = "Cards/Skills/corona.png";
+    public static final String AttackDemo = "Cards/Attacks/comet.png";
+    public static final String SkillDemo = "Cards/Skills/corona.png";
+    public static final String PowerDemo = "Cards/Powers/enigma.png";
+
+    //powers
+    public static final String SpiritPic = "Powers/Spirit.png";
 
     //icons
     private static final String VALIANT_BUTTON = "TestIcon.png";
@@ -71,6 +75,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
 
     public static final Logger logger = LogManager.getLogger(Fudgesickle.class.getName());
 
+    public static boolean IsDamaged;
 
 
     public static final String makePath(String ressource) {
@@ -94,6 +99,9 @@ public class Fudgesickle implements PostInitializeSubscriber,
         logger.info("subscribing to editStrings event");
         BaseMod.subscribeToEditStrings(this);
 
+        logger.info("subscribing to editKeywords event");
+        BaseMod.subscribeToEditKeywords(this);
+
         logger.info("creating the color " + AbstractCardEnum.Holy.toString());
         BaseMod.addColor(AbstractCardEnum.Holy.toString(),
                 HOLY, HOLY, HOLY, HOLY, HOLY, HOLY, HOLY,
@@ -101,16 +109,28 @@ public class Fudgesickle implements PostInitializeSubscriber,
                 POWER_WHITE, ENERGY_ORB_PURPLE,
                 ATTACK_PURPLE_PORTRAIT, SKILL_PURPLE_PORTRAIT,
                 POWER_PURPLE_PORTRAIT, ENERGY_ORB_PURPLE_PORTRAIT);
+
+        IsDamaged = false;
     }
 
     public static Texture GetAttack_WTexture()
     {
-        return new Texture(makePath(Strike_W));
+        return new Texture(makePath(AttackDemo));
     }
 
     public static Texture GetDefend_WTexture()
     {
-        return new Texture(makePath(Defend_W));
+        return new Texture(makePath(SkillDemo));
+    }
+
+    public static Texture GetPower_WTexture()
+    {
+        return new Texture(makePath(PowerDemo));
+    }
+
+    public static Texture GetSpirit_Texture()
+    {
+        return new Texture(makePath(SpiritPic));
     }
 
     public static Texture getRelicTexture() {
@@ -190,6 +210,15 @@ public class Fudgesickle implements PostInitializeSubscriber,
         BaseMod.addCard(new TearPsyche());
         BaseMod.addCard(new TearSoul());
         BaseMod.addCard(new Uprising());
+        BaseMod.addCard(new FuriousSmite());
+        BaseMod.addCard(new Retaliate());
+        BaseMod.addCard(new AuraDischarge());
+        BaseMod.addCard(new Chainer());
+        BaseMod.addCard(new StrainingSmite());
+        BaseMod.addCard(new Desperation());
+        BaseMod.addCard(new AbandonReason());
+
+        BaseMod.addCard(new Ensoul());
 
         BaseMod.addCard(new AlmightySmite());
 
@@ -207,6 +236,12 @@ public class Fudgesickle implements PostInitializeSubscriber,
                 CharacterEnum.TheValiant.toString());
 
         logger.info("done editting characters");
+    }
+
+    @Override
+    public void receiveEditKeywords() {
+        logger.info("setting up custom keywords");
+        BaseMod.addKeyword(new String[] {"spirit", "Spirit"}, "Spirit increases the potency of healing cards.");
     }
 
     @Override

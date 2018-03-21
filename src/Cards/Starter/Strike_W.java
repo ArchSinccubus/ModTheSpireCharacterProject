@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class Strike_W extends CustomCard{
-    public static final String ID = "Strike_W";
+    public static final String ID = "AttackDemo";
     public static final String NAME = "Strike";
     public static final String DESCRIPTION = "Deal !D! damage.";
     public static final String IMG_PATH = "Cards/Attacks/comet.png";

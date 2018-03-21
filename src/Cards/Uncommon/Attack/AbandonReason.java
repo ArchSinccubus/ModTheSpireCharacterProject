@@ -10,73 +10,71 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.*;
 import basemod.abstracts.CustomCard;
 
-public class TearPsyche extends CustomCard
+public class AbandonReason extends CustomCard
 {
-    public static final String ID = "TearPsyche";
-    public static final String NAME = "Tear Psyche";
+    public static final String ID = "AbandonReason";
+    public static final String NAME = "Abandon Reason";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Attacks/comet.png";
-    private static final int COST = 3;
+    private static final int COST = 5;
     private static final int POOL = 1;
     private static final CardRarity rarity = CardRarity.UNCOMMON;
     private static final CardTarget target = CardTarget.ENEMY;
     private static final CardType type = CardType.ATTACK;
-    private static final int DAMAGE = 30;
-    private static final int DAMAGE_UPGRADE = 12;
-    private static final int PERCENT = 30;
+    private static final int DAMAGE = 19;
+    private static final int DAMAGE_PLUS = 6;
 
-    public TearPsyche() {
+
+    public AbandonReason() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
-        this.baseDamage = this.damage = DAMAGE;
-        this.baseMagicNumber = this.magicNumber = PERCENT;
+        this.baseDamage = DAMAGE;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        float percent = (float)this.magicNumber / 100;
-
-        int HP_loss = (int) (p.maxHealth * percent);
-
-        AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p, p, HP_loss));
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m,
                 new DamageInfo(p, this.damage, this.damageTypeForTurn),
-                AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+                AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+    }
 
-}
+    /*
+    @Override
+    public void triggerWhenDrawn() {
+        super.triggerWhenDrawn();
+        this.setCostForTurn(this.cost - (AbstractDungeon.player.maxHealth - AbstractDungeon.player.currentHealth) / 10);
+    }
+*/
 
     @Override
-    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        float percent = (float)(this.magicNumber) / 100;
-        boolean canUse = super.canUse(p, m);
-
-        if (!canUse) {
-            return false;
-        }
-        canUse = false;
-        if (p.currentHealth > percent * p.maxHealth) {
-            canUse = true;
-            return canUse;
-        }
-        this.cantUseMessage = "I won't be able to take it...";
-        return canUse;
+    public void applyPowers() {
+        this.setCostForTurn(this.cost - (AbstractDungeon.player.maxHealth - AbstractDungeon.player.currentHealth) / 10);
+        super.applyPowers();
     }
 
     @Override
     public AbstractCard makeCopy() {
-        return new TearPsyche();
+        return new AbandonReason();
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(DAMAGE_UPGRADE);
+            if (this.cost < 5) {
+                this.upgradeBaseCost(this.cost - 1);
+                if (this.cost < 0) {
+                    this.cost = 0;
+                }
+            } else {
+                this.upgradeBaseCost(4);
+            }
+            this.upgradeDamage(DAMAGE_PLUS);
         }
+
     }
 }

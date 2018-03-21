@@ -17,7 +17,7 @@ public class TearSoulPower extends AbstractPower {
     public static final String[] DESCRIPTIONS;
 
     public TearSoulPower(int energyAmt) {
-        this.name = NAME;
+        this.name = "Torn Soul";
         this.ID = "Darkness";
         this.owner = AbstractDungeon.player;
         this.amount = energyAmt;
