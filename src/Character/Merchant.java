@@ -29,9 +29,9 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class Valiant extends CustomPlayer{
+public class Merchant extends CustomPlayer{
 
-    public static final int ENERGY_PER_TURN = 3; // how much energy you get every turn
+    public static final int ENERGY_PER_TURN = 2; // how much energy you get every turn
     public static final String MY_CHARACTER_SHOULDER_2 = "ASSETS/Cards/Skills/corona_p.png"; // campfire pose
     public static final String MY_CHARACTER_SHOULDER_1 = "ASSETS/Cards/Skills/corona_p.png"; // another campfire pose
     public static final String MY_CHARACTER_CORPSE = "ASSETS/Char/Blahblahhugebitch.png"; // dead corpse
@@ -55,12 +55,12 @@ public class Valiant extends CustomPlayer{
     };
 
 
-    public static final int STARTING_HP = 100;
-    public static final int MAX_HP = 100;
-    public static final int STARTING_GOLD = 99;
-    public static final int HAND_SIZE = 5;
+    public static final int STARTING_HP = 50;
+    public static final int MAX_HP = 60;
+    public static final int STARTING_GOLD = 300;
+    public static final int HAND_SIZE = 6;
 
-    public Valiant(String name, PlayerClass chosenClass) {
+    public Merchant(String name, PlayerClass chosenClass) {
         super(name, chosenClass,orbTextures ,"ASSETS/orb/vfx.png" ,null, MY_CHARACTER_SKELETON_JSON );
 
         this.dialogX = (this.drawX + 0.0F * Settings.scale); // set location for text bubbles

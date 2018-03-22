@@ -14,10 +14,13 @@ import com.megacrit.cardcrawl.powers.AbstractPower.PowerType;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
 public class SpiritPower extends AbstractPower {
-    public static final String POWER_ID = "Strength";
-    private static final PowerStrings powerStrings;
+    public static final String POWER_ID = "Spirit";
     public static final String NAME;
-    public static final String[] DESCRIPTIONS;
+    public boolean MagicNumberModified;
+
+    static {
+        NAME = "Spirit";
+    }
 
     public SpiritPower(AbstractCreature owner, int amount) {
         this.name = NAME;
@@ -74,30 +77,30 @@ public class SpiritPower extends AbstractPower {
     @Override
     public void updateDescription() {
         if (this.amount > 0) {
-            //this.description = DESCRIPTIONS[0] + this.amount + ".";
+            this.description = "Increases healing by " + this.amount + ".";
             this.type = PowerType.BUFF;
         } else {
             int tmp = -this.amount;
-            //this.description = DESCRIPTIONS[1] + tmp + ".";
+            this.description = "Decreases healing by " + this.amount + ".";
             this.type = PowerType.DEBUFF;
         }
 
     }
+
 
     @Override
     public int onHeal(int healAmount) {
         return healAmount + amount;
     }
 
-    /*
+
+
+
+   /*
     public float atDamageGive(float damage, DamageType type) {
         return type == DamageType.NORMAL ? damage + (float)this.amount : damage;
     }
     */
 
-    static {
-        powerStrings = CardCrawlGame.languagePack.getPowerStrings("Spirit");
-        NAME = powerStrings.NAME;
-        DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    }
+
 }

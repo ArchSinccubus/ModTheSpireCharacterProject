@@ -52,6 +52,7 @@ public class Decimate extends CustomCard
 
     @Override
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+
         percent = (float)(this.magicNumber) / 100;
         boolean canUse = super.canUse(p, m);
         logger.info(this.magicNumber + " " + percent + " " + p.maxHealth + " " + p.maxHealth * percent + " " + p.currentHealth + " " + canUse);

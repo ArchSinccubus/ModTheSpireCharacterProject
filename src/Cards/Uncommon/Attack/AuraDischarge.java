@@ -17,7 +17,10 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
+
+import java.util.Iterator;
 
 public class AuraDischarge extends AbstractCard {
     public static final String ID = "AuraDischarge";
@@ -50,6 +53,42 @@ public class AuraDischarge extends AbstractCard {
         AbstractDungeon.actionManager.addToBottom(new VFXAction(p, new CleaveEffect(), 0.1F));
         AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AttackEffect.NONE));
         AbstractDungeon.actionManager.addToBottom(new HealAction(p , p, this.magicNumber));
+    }
+
+    @Override
+    public void applyPowers()
+    {
+        super.applyPowers();
+        applyPowersToHeal();
+    }
+
+    private void applyPowersToHeal() {
+        int tmp = this.baseMagicNumber;
+        Iterator var2 = AbstractDungeon.player.powers.iterator();
+        boolean foundSpirit = false;
+        while(var2.hasNext()) {
+            AbstractPower p = (AbstractPower)var2.next();
+            if (p.name == "Spirit") {
+                setDescription(p, tmp);
+                foundSpirit = true;
+            }
+            else
+            {
+                this.rawDescription = CARD_STRINGS.DESCRIPTION;
+                this.initializeDescription();
+            }
+        }
+
+        this.isMagicNumberModified = foundSpirit;
+
+        if (tmp < 0) {
+            tmp = 0;
+        }
+    }
+
+    private void setDescription(AbstractPower p , int tmp) {
+        this.rawDescription = CARD_STRINGS.DESCRIPTION.replace("!M!" , "" + (tmp + p.amount));
+        this.initializeDescription();
     }
 
     public AbstractCard makeCopy() {

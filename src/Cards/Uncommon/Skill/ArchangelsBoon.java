@@ -1,4 +1,4 @@
-package Cards.Common.Skill;
+package Cards.Uncommon.Skill;
 import MainMod.*;
 import Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.*;
@@ -10,53 +10,56 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.FrailPower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 
-public class HolyFury extends CustomCard
+import java.util.Iterator;
+
+public class ArchangelsBoon extends CustomCard
 {
-    public static final String ID = "HolyFury";
-    public static final String NAME = "Holy Fury";
+    public static final String ID = "ArchangelsBoon";
+    public static final String NAME = "Archangel's Boon";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Skills/corona.png";
-    private static final int COST = 0;
+    private static final int COST = 2;
     private static final int POOL = 1;
-    private static final int BLOCK_AMOUNT = 6;
-    private static final int UPGRADE_BLOCK_UPGRADE = 3;
-    private static final int WEAK_AMOUNT = 2;
-    private static final int WEAK_AMOUNT_UPGRADE = 1;
-    private static final CardRarity rarity = CardRarity.COMMON;
-    private static final CardTarget target = CardTarget.SELF_AND_ENEMY;
+    private static final CardRarity rarity = CardRarity.UNCOMMON;
+    private static final CardTarget target = CardTarget.ENEMY;
+    private static final CardType type = CardType.SKILL;
+    private static final int FRAIL_POWER = 4;
+    private static final int FRAIL_POWER_UPGRADE = 2;
 
 
-    public HolyFury() {
+    public ArchangelsBoon() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
-                CardType.SKILL, AbstractCardEnum.Holy,
+                type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
-        this.baseBlock = this.block = BLOCK_AMOUNT;
-        this.baseMagicNumber = this.magicNumber = WEAK_AMOUNT;
+        this.magicNumber = this.baseMagicNumber = FRAIL_POWER;
+        this.baseBlock = this.block = FRAIL_POWER*2;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new FrailPower(m, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new WeakPower(m, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new FrailPower(m, 2, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
 
     }
 
     @Override
     public AbstractCard makeCopy() {
-        return new HolyFury();
+        return new ArchangelsBoon();
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
-            this.upgradeBlock(UPGRADE_BLOCK_UPGRADE);
-            this.upgradeMagicNumber(WEAK_AMOUNT_UPGRADE);
             this.upgradeName();
+            this.upgradeMagicNumber(FRAIL_POWER_UPGRADE);
+            this.upgradeBlock(FRAIL_POWER_UPGRADE*2);
         }
+
     }
 }

@@ -3,12 +3,17 @@ package MainMod;
 import Cards.Common.Attack.*;
 import Cards.Common.Skill.*;
 import Cards.Rare.Attack.AlmightySmite;
+import Cards.Rare.Power.FullAwakening;
+import Cards.Rare.Skill.AtAllCosts;
+import Cards.Rare.Skill.GrandHealing;
 import Cards.Starter.BlindingLight;
 import Cards.Starter.Defend_W;
 import Cards.Starter.MinorHealing;
 import Cards.Starter.Strike_W;
 import Cards.Uncommon.Attack.*;
 import Cards.Uncommon.Power.Ensoul;
+import Cards.Uncommon.Skill.*;
+import Cards.Uncommon.Skill.Cleanse;
 import Patches.AbstractCardEnum;
 import Patches.CharacterEnum;
 import basemod.BaseMod;
@@ -63,6 +68,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
 
     //powers
     public static final String SpiritPic = "Powers/Spirit.png";
+    public static final String CombatStancePic = "Powers/CombatStance.png";
 
     //icons
     private static final String VALIANT_BUTTON = "TestIcon.png";
@@ -131,6 +137,11 @@ public class Fudgesickle implements PostInitializeSubscriber,
     public static Texture GetSpirit_Texture()
     {
         return new Texture(makePath(SpiritPic));
+    }
+
+    public static Texture getTex(String path)
+    {
+        return new Texture(makePath(path));
     }
 
     public static Texture getRelicTexture() {
@@ -218,9 +229,30 @@ public class Fudgesickle implements PostInitializeSubscriber,
         BaseMod.addCard(new Desperation());
         BaseMod.addCard(new AbandonReason());
 
+        BaseMod.addCard(new BraceThePain());
+        BaseMod.addCard(new Guardian());
+        BaseMod.addCard(new OverwhelmingLight());
+        BaseMod.addCard(new Radiance());
+        BaseMod.addCard(new Vindication());
+        BaseMod.addCard(new ArchangelsBoon());
+        BaseMod.addCard(new MaddeningRevelation());
+        BaseMod.addCard(new Meaballize());
+        BaseMod.addCard(new DualSpirit());
+        BaseMod.addCard(new CombatStance());
+        BaseMod.addCard(new ReduceToNothing());
+        BaseMod.addCard(new Cleanse());
+        BaseMod.addCard(new Charge());
+        BaseMod.addCard(new ZealousAmbition());
+        BaseMod.addCard(new SoulStrain());
+
         BaseMod.addCard(new Ensoul());
 
         BaseMod.addCard(new AlmightySmite());
+
+        BaseMod.addCard(new GrandHealing());
+        BaseMod.addCard(new AtAllCosts());
+
+        BaseMod.addCard(new FullAwakening());
 
         logger.info("done editting cards");
     }
@@ -241,7 +273,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
     @Override
     public void receiveEditKeywords() {
         logger.info("setting up custom keywords");
-        BaseMod.addKeyword(new String[] {"spirit", "Spirit"}, "Spirit increases the potency of healing cards.");
+        BaseMod.addKeyword(new String[] {"spirit", "Spirit"}, "Spirit increases the potency of healing.");
     }
 
     @Override

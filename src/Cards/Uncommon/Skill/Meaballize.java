@@ -1,6 +1,8 @@
-package Cards.Common.Skill;
+package Cards.Uncommon.Skill;
+
 import MainMod.*;
 import Patches.AbstractCardEnum;
+import Powers.TearSoulPower;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -13,18 +15,18 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import java.util.Iterator;
 
-public class ArcaneHealing extends CustomCard
+public class Meaballize extends CustomCard
 {
-    public static final String ID = "ArcaneHealing";
-    public static final String NAME = "Arcane Healing";
+    public static final String ID = "Meaballize";
+    public static final String NAME = "Meaballize";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Skills/corona.png";
     private static final int COST = 1;
-    private static final int HP_AMOUNT = 8;
+    private static final int HP_AMOUNT = 10;
     private static final int UPGRADE_HP_AMOUNT = 3;
     private static final int POOL = 1;
 
-    public ArcaneHealing() {
+    public Meaballize() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
                 CardRarity.COMMON, CardTarget.SELF, POOL);
@@ -43,6 +45,8 @@ public class ArcaneHealing extends CustomCard
         } else {
             AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, this.magicNumber));
         }
+
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new TearSoulPower(1), 1));
     }
     @Override
     public void applyPowers()
@@ -82,7 +86,7 @@ public class ArcaneHealing extends CustomCard
 
     @Override
     public AbstractCard makeCopy() {
-        return new ArcaneHealing();
+        return new Meaballize();
     }
 
     @Override

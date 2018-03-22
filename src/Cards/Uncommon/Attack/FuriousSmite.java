@@ -40,7 +40,7 @@ public class FuriousSmite extends CustomCard
     {
 
         int finalPower = this.damage;
-        if (m.hasPower("Weakened")) {
+        if (m.hasPower("Frail")) {
             if (!this.upgraded)
                 finalPower = (int) (this.damage * 0.5f);
         }

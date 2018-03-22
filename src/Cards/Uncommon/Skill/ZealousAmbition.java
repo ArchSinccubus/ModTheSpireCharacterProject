@@ -1,6 +1,9 @@
-package Cards.Common.Skill;
-import MainMod.*;
+package Cards.Uncommon.Skill;
+
+import MainMod.Fudgesickle;
 import Patches.AbstractCardEnum;
+import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -8,42 +11,54 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.WeakPower;
 
 import java.util.Iterator;
 
-public class ArcaneHealing extends CustomCard
+public class ZealousAmbition extends CustomCard
 {
-    public static final String ID = "ArcaneHealing";
-    public static final String NAME = "Arcane Healing";
+    public static final String ID = "ZealousAmbition";
+    public static final String NAME = "Zealous Ambition";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Skills/corona.png";
     private static final int COST = 1;
-    private static final int HP_AMOUNT = 8;
-    private static final int UPGRADE_HP_AMOUNT = 3;
     private static final int POOL = 1;
+    private static final CardRarity rarity = CardRarity.UNCOMMON;
+    private static final CardTarget target = CardTarget.SELF;
+    private static final CardType type = CardType.SKILL;
 
-    public ArcaneHealing() {
+
+    public ZealousAmbition() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
-                CardType.SKILL, AbstractCardEnum.Holy,
-                CardRarity.COMMON, CardTarget.SELF, POOL);
-        this.baseMagicNumber = HP_AMOUNT;
-        this.magicNumber = this.baseMagicNumber;
-        this.heal=this.baseHeal = HP_AMOUNT;
-        this.exhaust= true;
+                type, AbstractCardEnum.Holy,
+                rarity, target, POOL);
+        this.exhaust = true;
+        this.baseMagicNumber = this.magicNumber = 8;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-
-        if (com.megacrit.cardcrawl.core.Settings.isDebug) {
-            AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, 50));
-        } else {
-            AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, this.magicNumber));
+        int HP = p.currentHealth;
+        if (HP >= p.maxHealth / 2)
+        {
+            AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p, p, 8));
+            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p , 3));
         }
+        else
+        {
+            AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, this.magicNumber));
+            AbstractDungeon.actionManager.addToBottom(new DiscardAction(p , p , 3 , false));
+        }
+
     }
+
+    @Override
+    public AbstractCard makeCopy() {
+        return new ZealousAmbition();
+    }
+
     @Override
     public void applyPowers()
     {
@@ -81,15 +96,12 @@ public class ArcaneHealing extends CustomCard
     }
 
     @Override
-    public AbstractCard makeCopy() {
-        return new ArcaneHealing();
-    }
-
-    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADE_HP_AMOUNT);
+            this.upgradeBaseCost(0);
         }
+
     }
 }
+

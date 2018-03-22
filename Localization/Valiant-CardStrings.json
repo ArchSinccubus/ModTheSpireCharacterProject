@@ -5,12 +5,12 @@
 	},
   "PiercingStab": {
     "NAME": "Piercing Stab",
-    "DESCRIPTION": "Deal !D! damage. NL Apply 2 Weak."
+    "DESCRIPTION": "Deal !D! damage. NL Apply 2 Frail."
   },
   "Smite": {
     "NAME": "Smite",
-    "DESCRIPTION": "Deal !D! damage. NL If the enemy is weak, deal 50% more.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is weak, deal twice as much."
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy is frail, deal 50% more.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is frail, deal twice as much."
   },
   "EmpoweringForce": {
     "NAME": "Empowering Force",
@@ -19,13 +19,13 @@
   },
   "RecklessSmite": {
     "NAME": "Reckless Smite",
-    "DESCRIPTION": "Deal !D! damage. Gain !M! vulnerable. NL If the enemy is weak, deal 50% more.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Gain !M! vulnerable. NL If the enemy is weak, deal twice as much."
+    "DESCRIPTION": "Deal !D! damage. Gain !M! vulnerable. NL If the enemy is frail, deal 50% more.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Gain !M! vulnerable. NL If the enemy is frail, deal twice as much."
   },
   "MercilessSmite": {
     "NAME": "Merciless Smite",
-    "DESCRIPTION": "Deal !M! damage for each Smite card in your hand. If the enemy is weak, deal 50% more",
-    "UPGRADE_DESCRIPTION": "Deal !M! damage for each Smite card in your hand. If the enemy is weak, deal twice as much",
+    "DESCRIPTION": "Deal !M! damage for each Smite card in your hand. If the enemy is frail, deal 50% more",
+    "UPGRADE_DESCRIPTION": "Deal !M! damage for each Smite card in your hand. If the enemy is frail, deal twice as much",
     "EXTENDED_DESCRIPTION": [
       " (You will deal !D! Damage)"
     ]
@@ -43,8 +43,8 @@
   },
   "WideSmite": {
     "NAME": "Wide Smite",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Each weakened enemy is dealt 50% more.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. Each weakened enemy is dealt twice as much."
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Each frail enemy is dealt 50% more.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. Each frail enemy is dealt twice as much."
   },
   "CombatDance": {
     "NAME": "Combat Dance",
@@ -60,7 +60,7 @@
   },
   "ToweringCharge": {
     "NAME": "Towering Charge",
-    "DESCRIPTION": "Deal !D! damage. If, after playing this card, you have 2 or more MP, apply !M! Weak."
+    "DESCRIPTION": "Deal !D! damage. If, after playing this card, you have 2 or more MP, apply !M! Frail."
   },
   "GracefulSiphon": {
     "NAME": "Graceful Siphon",
@@ -68,8 +68,8 @@
   },
   "ZealousSmite": {
   "NAME": "Zealous Smite",
-  "DESCRIPTION": "Deal !D! damage. NL If the enemy is weak, deal 50% more, gain [R] and draw a card.",
-  "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is weak, deal twice as much, gain [R] and draw a card."
+  "DESCRIPTION": "Deal !D! damage. NL If the enemy is frail, deal 50% more, gain [R] and draw a card.",
+  "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is frail, deal twice as much, gain [R] and draw a card."
 },
   "TearPsyche": {
     "NAME": "Tear Psyche",
@@ -101,8 +101,8 @@
   },
   "FuriousSmite": {
     "NAME": "Furious Smite",
-    "DESCRIPTION": "Deal !D! damage. NL Lose !M! HP. NL If the enemy is weak, deal 50% more.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Lose !M! HP. NL If the enemy is weak, deal twice as much."
+    "DESCRIPTION": "Deal !D! damage. NL Lose !M! HP. NL If the enemy is frail, deal 50% more.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Lose !M! HP. NL If the enemy is frail, deal twice as much."
   },
   "AuraDischarge": {
     "NAME": "Aura Discharge",
@@ -122,13 +122,13 @@
   },
   "StrainingSmite": {
     "NAME": "Straining Smite",
-    "DESCRIPTION": "Deal !D! damage. NL If the enemy is weak, deal 50% more. NL Add a Burn to your hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is weak, deal twice as much. NL Add a Burn to your hand."
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy is frail, deal 50% more. NL Add a Burn to your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is frail, deal twice as much. NL Add a Burn to your hand."
   },
   "AlmightySmite": {
     "NAME": "Almighty Smite",
-    "DESCRIPTION": "Deal !D! damage. NL If the enemy is weak, deal 50% more.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is weak, deal twice as much."
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy is frail, deal 50% more.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is frail, deal twice as much."
   },
   "Defend_W": {
     "NAME": "Defend",
@@ -168,7 +168,7 @@
   },
   "UnyieldingZeal": {
     "NAME": "Unyielding Zeal",
-    "DESCRIPTION": "Apply !M! Weak. Exhaust."
+    "DESCRIPTION": "Apply !M! Frail. Exhaust."
   },
   "TakeAim": {
     "NAME": "Take Aim",
@@ -181,7 +181,7 @@
   },
   "HolyFury": {
     "NAME": "Holy Fury",
-    "DESCRIPTION": "Gain !B! Block. NL Apply !M! Weak."
+    "DESCRIPTION": "Gain !B! Block. NL Apply !M! Weak and 2 Frail."
   },
   "ItsSmitingTime": {
     "NAME": "It's Smitin' Time!",
@@ -194,12 +194,100 @@
     "NAME": "Zealous Persecution",
     "DESCRIPTION": "Can only be played if you have a card in your hand that costs 3 or more. NL Draw !M! cards. Lose 6 life."
   },
+  "OverwhelmingLight": {
+    "NAME": "Overwhelming Light",
+    "DESCRIPTION": "Apply !M! weak to ALL enemies. Draw a card."
+  },
+  "Vindication": {
+    "NAME": "Vindication",
+    "DESCRIPTION": "Apply 99 Frail. NL. If the enemy is less than half health, gain !M! Spirit. Exhaust."
+  },
+  "Radiance": {
+    "NAME": "Radiance",
+    "DESCRIPTION": "Add a random Power card to your hand. It costs 0 this turn."
+  },
+  "BraceThePain": {
+    "NAME": "Brace the Pain",
+    "DESCRIPTION": "For each 8 HP you lost, gain !M! Block.",
+    "EXTENDED_DESCRIPTION": [
+      " (You will gain !B! Block)"
+    ]
+  },
+  "Guardian": {
+    "NAME": "Guardian",
+    "DESCRIPTION": "Gain !M! times X Block. Exhaust."
+  },
   "SeekAnswers": {
     "NAME": "Seek Answers",
     "DESCRIPTION": "Draw a card. If it costs !M! Or more, gain [R]"
   },
+  "ArchangelsBoon": {
+    "NAME": "Archangel's Boon",
+    "DESCRIPTION": "Apply !M! Frail. Gain !B! Block."
+  },
+
+  "MaddeningRevelation": {
+    "NAME": "Maddening Revelation",
+    "DESCRIPTION": "Lose 6 HP. Draw !M! cards."
+  },
+
+  "Meaballize": {
+    "NAME": "Meaballize",
+    "DESCRIPTION": "Heal !M! HP. You start your next turn with 1 less energy. Exhaust."
+  },
+
+  "CombatStance": {
+    "NAME": "Combat Stance",
+    "DESCRIPTION": "Whenever an enemy deals damage to you next turn, apply !M! Frail and Weak."
+  },
+  "DualSpirit": {
+    "NAME": "Dual Spirit",
+    "DESCRIPTION": "Put a copy of a skill card to your hand.",
+    "UPGRADE_DESCRIPTION": "Put !M! copies of a skill card to your hand."
+  },
+  "ReduceToNothing": {
+    "NAME": "Reduce to Nothing",
+    "DESCRIPTION": "Double an enemy's Frail.",
+    "UPGRADE_DESCRIPTION": "Triple an enemy's Frail."
+  },
+  "Cleanse": {
+    "NAME": "Cleanse",
+    "DESCRIPTION": "Remove all Weak, Vulnerable and Frail.",
+    "UPGRADE_DESCRIPTION": "Remove all Weak, Vulnerable and Frail. Exhaust all Statuses and Curses in your hand."
+  },
+  "ZealousAmbition": {
+  "NAME": "Zealous Ambition",
+  "DESCRIPTION": "If you have over half your HP, Lose 8 HP and draw 3 cards. If you have less, Discard 2 cards and heal !M! HP. Exhaust"
+},
+  "Charge": {
+  "NAME": "Charge",
+  "DESCRIPTION": "The next Attack you play deals 50% more damage. Lose !M! HP. Exhaust.",
+    "UPGRADE_DESCRIPTION": "The next Attack you play deals 50% more damage. Lose !M! HP."
+},
+  "SoulStrain": {
+  "NAME": "Soul Strain",
+  "DESCRIPTION": "Gain [R] [R] [R]. Lose 10 HP. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain [R] [R] [R] [R]. Lose 10 HP. Exhaust."
+},
   "Ensoul": {
     "NAME": "Ensoul",
     "DESCRIPTION": "Gain !M! Spirit."
   }
+,
+  "GrandHealing": {
+    "NAME": "Grand Healing",
+    "DESCRIPTION": "Heal !M!% of your max HP. Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      " (You will heal !F! HP)"
+    ]
+  }
+, "AtAllCosts": {
+  "NAME": "At All Costs",
+  "DESCRIPTION": "Choose and add a card from your Draw Pile to your hand. Add a random Curse to your hand. Exhaust.",
+  "UPGRADE_DESCRIPTION": "Innate. NL Choose and add a card from your Draw Pile to your hand. Add a random Curse to your hand. Exhaust."
+},
+"FullAwakening": {
+"NAME": "Full Awakening",
+"DESCRIPTION": "Gain !M! Spirit, Strength and Dexterity."
+}
 }

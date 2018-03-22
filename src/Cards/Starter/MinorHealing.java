@@ -1,6 +1,7 @@
 package Cards.Starter;
 import MainMod.*;
 import Patches.AbstractCardEnum;
+import basemod.helpers.SuperclassFinder;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -9,6 +10,9 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.powers.AbstractPower;
+
+import java.util.Iterator;
 
 public class MinorHealing extends CustomCard
 {
@@ -45,6 +49,42 @@ public class MinorHealing extends CustomCard
     @Override
     public AbstractCard makeCopy() {
         return new MinorHealing();
+    }
+
+    @Override
+    public void applyPowers()
+    {
+        super.applyPowers();
+        applyPowersToHeal();
+    }
+
+    private void applyPowersToHeal() {
+        int tmp = this.baseMagicNumber;
+        Iterator var2 = AbstractDungeon.player.powers.iterator();
+        boolean foundSpirit = false;
+        while(var2.hasNext()) {
+            AbstractPower p = (AbstractPower)var2.next();
+            if (p.name == "Spirit") {
+                setDescription(p, tmp);
+                foundSpirit = true;
+            }
+            else
+            {
+                this.rawDescription = CARD_STRINGS.DESCRIPTION;
+                this.initializeDescription();
+            }
+        }
+
+        this.isMagicNumberModified = foundSpirit;
+
+        if (tmp < 0) {
+            tmp = 0;
+        }
+    }
+
+    private void setDescription(AbstractPower p , int tmp) {
+        this.rawDescription = CARD_STRINGS.DESCRIPTION.replace("!M!" , "" + (tmp + p.amount));
+        this.initializeDescription();
     }
 
     @Override

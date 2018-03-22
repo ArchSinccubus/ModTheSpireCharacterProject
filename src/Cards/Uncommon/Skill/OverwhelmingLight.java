@@ -1,4 +1,4 @@
-package Cards.Common.Skill;
+package Cards.Uncommon.Skill;
 import MainMod.*;
 import Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.*;
@@ -10,48 +10,51 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.powers.FrailPower;
-import com.megacrit.cardcrawl.powers.WeakPower;
+import com.megacrit.cardcrawl.powers.*;
 
-public class UnyieldingZeal extends CustomCard
+public class OverwhelmingLight extends CustomCard
 {
-    public static final String ID = "UnyieldingZeal";
-    public static final String NAME = "Unyielding Zeal";
+    public static final String ID = "OverwhelmingLight";
+    public static final String NAME = "Overwhelming Light";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Skills/corona.png";
-    private static final int COST = 0;
-    private static final int POOL = 1;
+    private static final int COST = 1;
     private static final int WEAK_AMOUNT = 2;
-    private static final int WEAK_AMOUNT_PLUS = 2;
-    private static final CardRarity rarity = CardRarity.COMMON;
-    private static final CardTarget target = CardTarget.ENEMY;
+    private static final int WEAK_UPGRADE = 1;
+    private static final int POOL = 1;
+    private static final CardRarity rarity = CardRarity.UNCOMMON;
+    private static final CardTarget target = CardTarget.ALL_ENEMY;
 
-
-    public UnyieldingZeal() {
+    public OverwhelmingLight() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
                 rarity, target, POOL);
-        this.baseMagicNumber = this.magicNumber = WEAK_AMOUNT;
-        this.exhaust = true;
+        this.baseMagicNumber =WEAK_AMOUNT;
+        this.magicNumber = this.baseMagicNumber;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new FrailPower(m, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+        for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new WeakPower(mo, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+        }
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, 1 , false));
     }
 
     @Override
     public AbstractCard makeCopy() {
-        return new UnyieldingZeal();
+        return new OverwhelmingLight();
     }
 
     @Override
     public void upgrade() {
-        if (!this.upgraded) {
+        if (!this.upgraded)
+        {
             this.upgradeName();
-            this.upgradeMagicNumber(WEAK_AMOUNT_PLUS);
+            this.upgradeMagicNumber(WEAK_UPGRADE);
         }
 
     }
 }
+
