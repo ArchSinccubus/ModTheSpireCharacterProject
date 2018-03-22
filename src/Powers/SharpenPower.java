@@ -1,7 +1,9 @@
 package Powers;
 
+import Actions.SharpenAction;
 import MainMod.Fudgesickle;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -17,56 +19,35 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-public class ChargePower extends AbstractPower {
-    public static final String POWER_ID = "Charge";
+public class SharpenPower extends AbstractPower {
+    public static final String POWER_ID = "Sharpen";
     public static final String NAME;
     public static final String[] DESCRIPTIONS;
+    public static int NumBlock;
 
-    public ChargePower(AbstractCreature owner, int amount) {
+    public SharpenPower(AbstractCreature owner,int numBlock, int amount) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
-        this.amount = amount;
+        this.amount = -1;
         this.updateDescription();
+        this.NumBlock = numBlock;
         this.img = Fudgesickle.getTex("Powers/Charge.png");
     }
 
     public void updateDescription() {
-            this.description = DESCRIPTIONS[0];
-
-    }
-
-    public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (!card.purgeOnUse && card.type == CardType.ATTACK && this.amount > 0) {
-            AbstractMonster m = null;
-            if (action.target != null) {
-                m = (AbstractMonster)action.target;
-            }
-
-            --this.amount;
-            if (this.amount == 0) {
-                AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, "Charge"));
-            }
-        }
+        this.description = DESCRIPTIONS[0];
 
     }
 
     public void atEndOfTurn(boolean isPlayer) {
-        if (isPlayer) {
-            AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, "Charge"));
-        }
-
-    }
-
-    public float atDamageGive(float damage, DamageInfo.DamageType type) {
-        return type == DamageInfo.DamageType.NORMAL ? damage * 1.5F : damage;
+        AbstractDungeon.actionManager.addToBottom(new SharpenAction());
     }
 
     static {
         DESCRIPTIONS = new String[] {
-                "On this turn, your next attack deals 50% more damage."
+                "At the end of your turn, upgrade 1 Attack card in your hand. If you can't, lose 2 HP."
         };
-        NAME = "Charge";
+        NAME = "Might Form";
     }
 }
-

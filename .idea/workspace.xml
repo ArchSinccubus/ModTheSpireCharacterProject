@@ -17,94 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="MinorHealing.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cards/Starter/MinorHealing.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="82" column="5" lean-forward="false" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GrandHealing.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cards/Rare/Skill/GrandHealing.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="65" column="43" lean-forward="false" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
-              <folding>
-                <element signature="e#3850#3851#0" expanded="true" />
-                <element signature="e#3891#3892#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArcaneHealing.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cards/Common/Skill/ArcaneHealing.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="75" column="5" lean-forward="false" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DivineFavor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cards/Common/Skill/DivineFavor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="76" column="5" lean-forward="false" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ZealousAmbition.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Skill/ZealousAmbition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="668">
-              <caret line="90" column="5" lean-forward="false" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuraDischarge.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/AuraDischarge.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="86" column="5" lean-forward="false" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GracefulSiphon.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/GracefulSiphon.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="73" column="63" lean-forward="true" selection-start-line="73" selection-start-column="63" selection-end-line="73" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ChargePower.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Powers/ChargePower.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="19" column="37" lean-forward="false" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+            <state relative-caret-position="420">
+              <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractPower.class" pinned="false" current-in-tab="true">
-        <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/powers/AbstractPower.class">
+      <file leaf-file-name="CardTemplate.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Cards/CardTemplate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="305" column="41" lean-forward="false" selection-start-line="305" selection-start-column="41" selection-end-line="305" selection-end-column="41" />
+            <state relative-caret-position="168">
+              <caret line="19" column="68" lean-forward="false" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -121,11 +48,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>turn</find>
-      <find>start</find>
-      <find>OnS</find>
-      <find>OnStart</find>
-      <find>atStartOfTurn</find>
       <find>trigger</find>
       <find>trigg</find>
       <find>endturn</find>
@@ -138,7 +60,6 @@
       <find>card</find>
       <find>text</find>
       <find>Description</find>
-      <find>apply</find>
       <find>UpdateD</find>
       <find>Update</find>
       <find>ApplyPower</find>
@@ -151,6 +72,12 @@
       <find>AbstractCard</find>
       <find>ENERGY_PER_TURN</find>
       <find>isMagicNumberModified</find>
+      <find>lose</find>
+      <find>end</find>
+      <find>upgrade</find>
+      <find>apply</find>
+      <find>start</find>
+      <find>onpla</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -165,22 +92,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Cards/Uncommon/Attack/FuriousSmite.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Uncommon/Attack/StrainingSmite.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Rare/Attack/AlmightySmite.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Common/Attack/MercilessSmite.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Common/Attack/PiercingStab.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Common/Attack/ToweringCharge.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Common/Skill/UnyieldingZeal.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Common/Skill/HolyFury.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Rare/Power/FullAwakening.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Uncommon/Skill/OverwhelmingLight.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Uncommon/Skill/Radiance.java" />
-        <option value="$PROJECT_DIR$/src/Actions/GuardianAction.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Uncommon/Skill/Guardian.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Uncommon/Skill/BraceThePain.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Common/Attack/Decimate.java" />
-        <option value="$PROJECT_DIR$/src/Cards/CardTemplate.java" />
         <option value="$PROJECT_DIR$/src/Actions/DuelSpiritAction.java" />
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Skill/ReduceToNothing.java" />
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Skill/DuelSpirit.java" />
@@ -196,7 +107,6 @@
         <option value="$PROJECT_DIR$/src/Actions/AddCardToHandAtion.java" />
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Skill/SoulStrain.java" />
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Skill/Charge.java" />
-        <option value="$PROJECT_DIR$/src/Powers/ChargePower.java" />
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Skill/AtAllCosts.java" />
         <option value="$PROJECT_DIR$/src/Cards/Rare/Skill/AtAllCosts.java" />
         <option value="$PROJECT_DIR$/src/Actions/CleanseAction.java" />
@@ -216,13 +126,31 @@
         <option value="$PROJECT_DIR$/src/Cards/Common/Skill/ArcaneHealing.java" />
         <option value="$PROJECT_DIR$/src/Cards/Starter/MinorHealing.java" />
         <option value="$PROJECT_DIR$/src/Cards/Rare/Skill/GrandHealing.java" />
+        <option value="$PROJECT_DIR$/src/Powers/ChargePower.java" />
+        <option value="$PROJECT_DIR$/src/Powers/MightFormPower.java" />
+        <option value="$PROJECT_DIR$/src/Powers/Sharpen.java" />
+        <option value="$PROJECT_DIR$/src/Actions/SharpenAction.java" />
+        <option value="$PROJECT_DIR$/src/Powers/SharpenPower.java" />
+        <option value="$PROJECT_DIR$/src/Powers/ZenPower.java" />
+        <option value="$PROJECT_DIR$/src/Actions/PowerThroughAction.java" />
+        <option value="$PROJECT_DIR$/src/Powers/RestlessStrifePower.java" />
+        <option value="$PROJECT_DIR$/src/Powers/PowerThroughPower.java" />
+        <option value="$PROJECT_DIR$/src/Powers/InsightfulPrayerPower.java" />
+        <option value="$PROJECT_DIR$/src/Powers/TurnTablesPower.java" />
+        <option value="$PROJECT_DIR$/src/Actions/ExhaustTopOfDrawPileAction.java" />
+        <option value="$PROJECT_DIR$/src/Powers/DelvingPrayerPower.java" />
+        <option value="$PROJECT_DIR$/src/Actions/PeacefulStancePower.java" />
+        <option value="$PROJECT_DIR$/src/Powers/OverburnPower.java" />
+        <option value="$PROJECT_DIR$/src/Powers/WeakFormPower.java" />
+        <option value="$PROJECT_DIR$/src/Cards/CardTemplate.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="529" />
-    <option name="width" value="1400" />
-    <option name="height" value="990" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -360,12 +288,6 @@
               <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Actions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Cards" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -443,6 +365,14 @@
               <item name="Cards" type="462c0819:PsiDirectoryNode" />
               <item name="Uncommon" type="462c0819:PsiDirectoryNode" />
               <item name="Attack" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Cards" type="462c0819:PsiDirectoryNode" />
+              <item name="Uncommon" type="462c0819:PsiDirectoryNode" />
+              <item name="Power" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
@@ -660,408 +590,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Skill/DualSpirit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1689#1690#0" expanded="false" />
-            <element signature="e#1728#1729#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Skill/Radiance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="37" column="28" lean-forward="true" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.236/localization/eng/ui.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
-          <caret line="166" column="8" lean-forward="false" selection-start-line="166" selection-start-column="8" selection-end-line="166" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Common/Skill/SoulStrain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.44095/com/megacrit/cardcrawl/cards/red/Bloodletting.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Skill/SoulStrain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="17" column="51" lean-forward="true" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
-          <folding>
-            <element signature="e#1855#1856#0" expanded="false" />
-            <element signature="e#1894#1895#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/powers/BurstPower.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="86" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.5035/localization/eng/powers.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="76" column="51" lean-forward="false" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Powers/CombatStancePower.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.28916/com/megacrit/cardcrawl/cards/green/Burst.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="37" column="84" lean-forward="false" selection-start-line="37" selection-start-column="84" selection-end-line="37" selection-end-column="84" />
-          <folding>
-            <marker date="1521310070000" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521310070000" expanded="false" signature="158:828" ph="..." />
-            <marker date="1521310070000" expanded="true" signature="1224:1480" ph="{...}" />
-            <marker date="1521310070000" expanded="true" signature="1539:1680" ph="{...}" />
-            <marker date="1521310070000" expanded="false" signature="1716:1727" ph=" { " />
-            <marker date="1521310070000" expanded="false" signature="1746:1752" ph=" }" />
-            <marker date="1521310070000" expanded="true" signature="1780:1997" ph="{...}" />
-            <marker date="1521310070000" expanded="true" signature="2010:2234" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ASSETS/Powers/Charge.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/DivineLashes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="43" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Skill/Charge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="34" column="58" lean-forward="false" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/HolyLight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="44" column="96" lean-forward="false" selection-start-line="44" selection-start-column="85" selection-end-line="44" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ASSETS/Powers/CombatStance.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Skill/MaddeningRevelation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="39" column="77" lean-forward="false" selection-start-line="39" selection-start-column="77" selection-end-line="39" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.21843/com/megacrit/cardcrawl/powers/BurstPower.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="68" column="13" lean-forward="false" selection-start-line="47" selection-start-column="12" selection-end-line="68" selection-end-column="13" />
-          <folding>
-            <marker date="1521310070000" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521310070000" expanded="false" signature="153:806" ph="..." />
-            <marker date="1521310070000" expanded="true" signature="1102:1326" ph="{...}" />
-            <marker date="1521310070000" expanded="true" signature="1364:1559" ph="{...}" />
-            <marker date="1521310070000" expanded="true" signature="1628:2714" ph="{...}" />
-            <marker date="1521310070000" expanded="true" signature="2762:2923" ph="{...}" />
-            <marker date="1521310070000" expanded="true" signature="2936:3103" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.2583/com/megacrit/cardcrawl/powers/WeakPower.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="74" selection-end-column="5" />
-          <folding>
-            <marker date="1521310070000" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521310070000" expanded="false" signature="153:618" ph="..." />
-            <marker date="1521310070000" expanded="true" signature="1037:1403" ph="{...}" />
-            <marker date="1521310070000" expanded="true" signature="1436:1859" ph="{...}" />
-            <marker date="1521310070000" expanded="true" signature="1897:2646" ph="{...}" />
-            <marker date="1521310070000" expanded="true" signature="2709:2935" ph="{...}" />
-            <marker date="1521310070000" expanded="true" signature="2948:3118" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.8113/com/megacrit/cardcrawl/powers/PhantasmalPower.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="41" column="106" lean-forward="false" selection-start-line="41" selection-start-column="106" selection-end-line="41" selection-end-column="106" />
-          <folding>
-            <marker date="1521310070000" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521310070000" expanded="false" signature="153:539" ph="..." />
-            <marker date="1521310070000" expanded="true" signature="850:1084" ph="{...}" />
-            <marker date="1521310070000" expanded="true" signature="1122:1317" ph="{...}" />
-            <marker date="1521310070000" expanded="true" signature="1351:1650" ph="{...}" />
-            <marker date="1521310070000" expanded="true" signature="1663:1835" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/powers/DoubleDamagePower.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="61" selection-end-column="5" />
-          <folding>
-            <marker date="1521355460324" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521355460324" expanded="false" signature="153:669" ph="..." />
-            <marker date="1521355460324" expanded="true" signature="1053:1432" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="1465:1898" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="1936:2163" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="2226:2300" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="2313:2488" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.12541/com/megacrit/cardcrawl/cards/colorless/SecretTechnique.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="35" column="62" lean-forward="false" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
-          <folding>
-            <marker date="1521310070000" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521310070000" expanded="false" signature="162:819" ph="..." />
-            <marker date="1521310070000" expanded="true" signature="1236:1473" ph="{...}" />
-            <marker date="1521310070000" expanded="true" signature="1532:1624" ph="{...}" />
-            <marker date="1521310070000" expanded="true" signature="1689:2293" ph="{...}" />
-            <marker date="1521310070000" expanded="false" signature="2329:2340" ph=" { " />
-            <marker date="1521310070000" expanded="false" signature="2369:2375" ph=" }" />
-            <marker date="1521310070000" expanded="true" signature="2403:2614" ph="{...}" />
-            <marker date="1521310070000" expanded="true" signature="2627:2927" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/actions/unique/SkillFromDeckToHandAction.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="41" column="43" lean-forward="false" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
-          <folding>
-            <marker date="1521355460324" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521355460324" expanded="false" signature="161:786" ph="..." />
-            <marker date="1521355460324" expanded="true" signature="1021:1238" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="1265:3798" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="3811:3938" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.32892/com/megacrit/cardcrawl/powers/WeakPower.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-693">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/CardTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="53" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Actions/AddCardToHandAtion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126">
-          <caret line="29" column="41" lean-forward="false" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/dungeons/AbstractDungeon.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="150" column="44" lean-forward="false" selection-start-line="150" selection-start-column="28" selection-end-line="150" selection-end-column="44" />
-          <folding>
-            <marker date="1521355460324" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521355460324" expanded="false" signature="155:5967" ph="..." />
-            <marker date="1521355460324" expanded="true" signature="12468:14067" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="14106:16434" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="16513:17880" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="17984:18617" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="18667:19650" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="19705:22440" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="22491:23235" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="23277:24935" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="25037:27181" ph="{...}" />
-            <marker date="1521355460324" expanded="false" signature="27230:27241" ph=" { " />
-            <marker date="1521355460324" expanded="false" signature="27288:27294" ph=" }" />
-            <marker date="1521355460324" expanded="true" signature="27337:27564" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="27642:29413" ph="{...}" />
-            <marker date="1521355460324" expanded="false" signature="29459:29470" ph=" { " />
-            <marker date="1521355460324" expanded="false" signature="29499:29505" ph=" }" />
-            <marker date="1521355460324" expanded="false" signature="29553:29564" ph=" { " />
-            <marker date="1521355460324" expanded="false" signature="29583:29589" ph=" }" />
-            <marker date="1521355460324" expanded="true" signature="29654:29786" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="29882:30219" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="30316:30579" ph="{...}" />
-            <marker date="1521355460324" expanded="false" signature="30634:30645" ph=" { " />
-            <marker date="1521355460324" expanded="false" signature="30656:30662" ph=" }" />
-            <marker date="1521355460324" expanded="true" signature="30730:30874" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="30952:31474" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="31553:32002" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="32073:32220" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="32287:35088" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="35152:37837" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="37891:38150" ph="{...}" />
-            <marker date="1521355460324" expanded="false" signature="38217:38228" ph=" { " />
-            <marker date="1521355460324" expanded="false" signature="38266:38272" ph=" }" />
-            <marker date="1521355460324" expanded="false" signature="38327:38338" ph=" { " />
-            <marker date="1521355460324" expanded="false" signature="38367:38373" ph=" }" />
-            <marker date="1521355460324" expanded="false" signature="38427:38438" ph=" { " />
-            <marker date="1521355460324" expanded="false" signature="38462:38468" ph=" }" />
-            <marker date="1521355460324" expanded="true" signature="38544:38604" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="38692:39813" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="39871:41396" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="41453:41728" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="41795:42064" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="42134:42949" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="43031:43840" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="43927:44760" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="44826:45012" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="45088:45268" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="45382:45783" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="45885:45978" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="46083:47602" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="47695:47779" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="47833:47942" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="48048:48221" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="48325:49695" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="49831:50552" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="50607:50912" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="50965:51093" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="51133:54335" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="54374:54872" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="54907:55390" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="55454:56135" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="56201:56884" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="56949:57631" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="57674:61980" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="62286:62819" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="62884:64424" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="64485:67087" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="67147:67602" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="67674:68125" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="68195:68622" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="68721:70241" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="70318:70827" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="70931:73272" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="73326:73459" ph="{...}" />
-            <marker date="1521355460324" expanded="false" signature="73502:73513" ph=" { " />
-            <marker date="1521355460324" expanded="false" signature="73540:73546" ph=" }" />
-            <marker date="1521355460324" expanded="true" signature="73614:73711" ph="{...}" />
-            <marker date="1521355460324" expanded="false" signature="73765:73776" ph=" { " />
-            <marker date="1521355460324" expanded="false" signature="73823:73829" ph=" }" />
-            <marker date="1521355460324" expanded="true" signature="73906:73986" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="74037:74253" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="74300:75097" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="75136:78641" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="78681:78852" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="78900:79274" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="79335:79731" ph="{...}" />
-            <marker date="1521355460324" expanded="false" signature="79777:79788" ph=" { " />
-            <marker date="1521355460324" expanded="false" signature="79818:79824" ph=" }" />
-            <marker date="1521355460324" expanded="true" signature="79885:80064" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="80130:80279" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="80329:80889" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="80935:83768" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="83813:85767" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="85803:85945" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="85972:89646" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="89685:89939" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="89980:94539" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="94572:95340" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="95386:99102" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="99180:100504" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="100558:100963" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="100997:101292" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="101327:101709" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="101759:103398" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="103431:104386" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="104464:104739" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="104780:105146" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="105190:105330" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="105376:106355" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="106368:109818" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="109855:109954" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="109937:109948" ph="{}" />
-            <marker date="1521355460324" expanded="true" signature="109993:110438" ph="{...}" />
-            <marker date="1521355460324" expanded="true" signature="110421:110432" ph="{}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Rare/Skill/AtAllCosts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1081">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="72" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/actions/utility/ExhaustAllEtherealAction.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="31" selection-end-column="1" />
-          <folding>
-            <marker date="1521355460324" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521355460324" expanded="false" signature="162:486" ph="..." />
-            <marker date="1521355460324" expanded="true" signature="592:603" ph=" { " />
-            <marker date="1521355460324" expanded="true" signature="637:643" ph=" }" />
-            <marker date="1521355460324" expanded="true" signature="670:1040" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Character/Merchant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-567">
@@ -1121,22 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Skill/Cleanse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Actions/SmiteAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/Decimate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
@@ -1157,14 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
           <caret line="20" column="45" lean-forward="false" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Powers/SpiritPower.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="83" column="53" lean-forward="false" selection-start-line="83" selection-start-column="53" selection-end-line="83" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -1236,18 +740,274 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Powers/ChargePower.java">
+    <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Skill/ArchangelsBoon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="46" column="8" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/EmpoweringForce.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.39008/com/megacrit/cardcrawl/powers/RupturePower.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="38" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Powers/SharpenPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding>
+            <element signature="e#1631#1632#0" expanded="true" />
+            <element signature="e#1709#1710#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Actions/SharpenAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Actions/EmpoweringForceAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="33" />
+          <folding>
+            <element signature="method#update#0;class#EmpoweringForceAction#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.34495/com/megacrit/cardcrawl/cards/red/TrueGrit.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.21531/com/megacrit/cardcrawl/cards/green/Caltrops.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="36" column="86" lean-forward="false" selection-start-line="36" selection-start-column="86" selection-end-line="36" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Powers/RestlessStrifePower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/powers/ThornsPower.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="18" column="41" lean-forward="false" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Actions/PowerThroughAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Skill/Cleanse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Powers/ZenPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="48" column="12" lean-forward="true" selection-start-line="48" selection-start-column="12" selection-end-line="49" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Actions/SmiteAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Powers/MightFormPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="55" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.32793/com/megacrit/cardcrawl/powers/StrengthPower.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="58" column="5" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="58" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.33067/com/megacrit/cardcrawl/cards/red/Havoc.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="32" column="60" lean-forward="false" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/actions/unique/HavocAction.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="74" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Powers/TurnTablesPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="56" column="1" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="56" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Powers/InsightfulPrayerPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="78" column="12" lean-forward="true" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Actions/ExhaustTopOfDrawPileAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
-          <caret line="19" column="37" lean-forward="false" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+          <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Powers/PowerThroughPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="49" column="1" lean-forward="false" selection-start-line="49" selection-start-column="1" selection-end-line="56" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.26068/com/megacrit/cardcrawl/powers/WeakPower.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="74" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa2920.18641/com/megacrit/cardcrawl/powers/ThousandCutsPower.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="40" selection-end-column="178" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/powers/AbstractPower.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="305" column="41" lean-forward="false" selection-start-line="305" selection-start-column="41" selection-end-line="305" selection-end-column="41" />
+        <state relative-caret-position="259">
+          <caret line="231" column="0" lean-forward="false" selection-start-line="231" selection-start-column="0" selection-end-line="232" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Powers/OverburnPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Actions/PeacefulStancePower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Powers/WeakFormPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="49" column="73" lean-forward="false" selection-start-line="49" selection-start-column="73" selection-end-line="49" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Powers/SpiritPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1219">
+          <caret line="90" column="1" lean-forward="true" selection-start-line="90" selection-start-column="1" selection-end-line="90" selection-end-column="13" />
+          <folding>
+            <element signature="e#2644#2645#0" expanded="true" />
+            <element signature="e#2686#2687#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Powers/DelvingPrayerPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Power/Ensoul.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Powers/ChargePower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/CardTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="19" column="68" lean-forward="false" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
           <folding />
         </state>
       </provider>
