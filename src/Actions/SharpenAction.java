@@ -38,6 +38,7 @@ public class SharpenAction extends AbstractGameAction {
             }
 
             if (this.cannotUpgrade.size() == this.p.hand.group.size()) {
+                logger.info("LOST LIFE");
                 AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p,p, 2));
                 this.isDone = true;
                 return;
@@ -45,7 +46,7 @@ public class SharpenAction extends AbstractGameAction {
 
             if (this.p.hand.group.size() - this.cannotUpgrade.size() == 1) {
                 for (AbstractCard c : this.p.hand.group) {
-                    if (c.canUpgrade() || c.type != AbstractCard.CardType.ATTACK) {
+                    if (c.canUpgrade() && c.type == AbstractCard.CardType.ATTACK) {
                         c.upgrade();
                         this.isDone = true;
                         return;
@@ -61,6 +62,7 @@ public class SharpenAction extends AbstractGameAction {
 
                 if (this.p.hand.group.size() > 1) {
                     AbstractDungeon.handCardSelectScreen.open(TEXT, 1, false, false, false, true);
+                    logger.info("CHOSE CARD TO UPGRADE");
                     tickDuration();
                     return;
                 }
@@ -68,6 +70,7 @@ public class SharpenAction extends AbstractGameAction {
                     this.p.hand.group.removeAll(this.cannotUpgrade);
                     if ( this.p.hand.getTopCard().type == AbstractCard.CardType.ATTACK)
                     this.p.hand.getTopCard().upgrade();
+                    logger.info("ONLY HAD ONE CARD");
                     tickDuration();
                     returnCards();
                     this.isDone = true;
