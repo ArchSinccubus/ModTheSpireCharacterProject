@@ -27,13 +27,11 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 
 public class OverburnPower extends AbstractPower {
-    public static final String POWER_ID = "DelvingPrayer";
+    public static final String POWER_ID = "OverburnPower";
     public static final String NAME;
     public static final String[] DESCRIPTIONS;
-    public static boolean Upgraded;
-    public static int cardsToDraw;
 
-    public OverburnPower(AbstractCreature owner,int numBlock, int amount,int cards , boolean upgraded) {
+    public OverburnPower(AbstractCreature owner,int numBlock, int amount) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
@@ -46,8 +44,6 @@ public class OverburnPower extends AbstractPower {
             this.amount = -999;
         }
         this.updateDescription();
-        this.Upgraded = upgraded;
-        this.cardsToDraw = cards;
         this.img = Fudgesickle.getTex("Powers/Charge.png");
     }
 
@@ -55,7 +51,7 @@ public class OverburnPower extends AbstractPower {
         this.fontScale = 8.0F;
         this.amount += stackAmount;
         if (this.amount == 0) {
-            AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, "InsightfulPrayer"));
+            AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, "OverburnPower"));
         }
 
         if (this.amount >= 999) {
@@ -72,20 +68,15 @@ public class OverburnPower extends AbstractPower {
         if (damageAmount > 0 && info.owner == this.owner) {
             AbstractDungeon.actionManager.addToBottom(new SFXAction("ATTACK_HEAVY"));
             AbstractDungeon.actionManager.addToBottom(new VFXAction(this.owner, new CleaveEffect(), 0.25F));
-            AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(this.owner, DamageInfo.createDamageMatrix(this.amount * 3, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE));
+            AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(this.owner, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE));
         }
 
         return damageAmount;
     }
 
     public void updateDescription() {
-            this.description = DESCRIPTIONS[0].replace("#b" , "" + this.amount *3);
+            this.description = DESCRIPTIONS[0].replace("#b" , "" + this.amount);
 
-    }
-
-    public void atStartOfTurn() {
-        AbstractDungeon.actionManager.addToTop(new DrawCardAction(this.owner,cardsToDraw));
-        AbstractDungeon.actionManager.addToTop(new ExhaustTopOfDrawPileAction(this.owner,cardsToDraw));
     }
 
     static {

@@ -1,6 +1,7 @@
 package Cards.Rare.Skill;
 
 import Actions.AddCardToHandAtion;
+import Actions.PowerBloomAction;
 import MainMod.*;
 import Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.*;
@@ -16,10 +17,10 @@ import com.megacrit.cardcrawl.random.Random;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class AtAllCosts extends CustomCard
+public class PowerBloom extends CustomCard
 {
-    public static final String ID = "AtAllCosts";
-    public static final String NAME = "AtAllCosts";
+    public static final String ID = "PowerBloom";
+    public static final String NAME = "Power Bloom";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Skills/corona.png";
     private static final int COST = 1;
@@ -29,35 +30,17 @@ public class AtAllCosts extends CustomCard
     private static final CardType type = CardType.SKILL;
 
 
-    public AtAllCosts() {
+    public PowerBloom() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
-        this.isInnate = false;
         this.exhaust = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        AbstractDungeon.actionManager.addToBottom(new AddCardToHandAtion(1));
-        AbstractCard c = returnTrulyRandomCurse(CardType.CURSE, AbstractDungeon.cardRandomRng).makeCopy();
-        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(c, true));
-    }
-
-    public static AbstractCard returnTrulyRandomCurse(CardType type, Random rng) {
-        ArrayList<AbstractCard> list = new ArrayList();
-        Iterator var3 = AbstractDungeon.srcCurseCardPool.group.iterator();
-
-        AbstractCard c;
-        while(var3.hasNext()) {
-            c = (AbstractCard)var3.next();
-            if (c.type == type) {
-                list.add(c);
-            }
-        }
-
-        return (AbstractCard)list.get(rng.random(list.size() - 1));
+        AbstractDungeon.actionManager.addToBottom(new PowerBloomAction(1));
     }
 
     @Override
@@ -67,14 +50,17 @@ public class AtAllCosts extends CustomCard
             return false;
         } else {
             boolean hasCard = false;
-            Iterator var5 = p.drawPile.group.iterator();
+            Iterator var5 = p.discardPile.group.iterator();
 
             while(var5.hasNext()) {
-                hasCard = true;
+                AbstractCard c = (AbstractCard)var5.next();
+                if (c.cost >= 3) {
+                    hasCard = true;
+                }
             }
 
             if (!hasCard) {
-                this.cantUseMessage = "I don't have any cards in my draw pile!...";
+                this.cantUseMessage = "I don't have any cards with cost 3 or more in my discard pile...";
                 canUse = false;
             }
 
@@ -84,7 +70,7 @@ public class AtAllCosts extends CustomCard
 
     @Override
     public AbstractCard makeCopy() {
-        return new AtAllCosts();
+        return new PowerBloom();
     }
 
     @Override
@@ -93,8 +79,9 @@ public class AtAllCosts extends CustomCard
             this.upgradeName();
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
-            this.isInnate = true;
+            this.exhaust = false;
         }
 
     }
 }
+

@@ -32,8 +32,8 @@ import org.apache.logging.log4j.Logger;
 public class Valiant extends CustomPlayer{
 
     public static final int ENERGY_PER_TURN = 3; // how much energy you get every turn
-    public static final String MY_CHARACTER_SHOULDER_2 = "resources/Cards/Skills/corona_p.png"; // campfire pose
-    public static final String MY_CHARACTER_SHOULDER_1 = "resources/Cards/Skills/corona_p.png"; // another campfire pose
+    public static final String MY_CHARACTER_SHOULDER_2 = "resources/TestAnim/shoulder2.png"; // campfire pose
+    public static final String MY_CHARACTER_SHOULDER_1 = "resources/TestAnim/shoulder.png"; // another campfire pose
     public static final String MY_CHARACTER_CORPSE = "resources/Char/Blahblahhugebitch.png"; // dead corpse
     public static final String MY_CHARACTER_SKELETON_ATLAS = "resources/TestAnim/idle/skeleton.atlas"; // spine animation atlas
     public static final String MY_CHARACTER_SKELETON_JSON = "resources/TestAnim/idle/skeleton.json"; // spine animation json
@@ -55,8 +55,8 @@ public class Valiant extends CustomPlayer{
     };
 
 
-    public static final int STARTING_HP = 100;
-    public static final int MAX_HP = 100;
+    public static final int STARTING_HP = 90;
+    public static final int MAX_HP = 90;
     public static final int STARTING_GOLD = 99;
     public static final int HAND_SIZE = 5;
 
@@ -98,8 +98,7 @@ public class Valiant extends CustomPlayer{
     public static ArrayList<String> getStartingRelics() { // starting relics - also simple
         ArrayList<String> retVal = new ArrayList<>();
 
-        retVal.add(DivineWrath.ID);
-        retVal.add(BirdFacedUrn.ID);
+        retVal.add(CrossPendant.ID);
 
         UnlockTracker.markRelicAsSeen("DivineWrath");
 

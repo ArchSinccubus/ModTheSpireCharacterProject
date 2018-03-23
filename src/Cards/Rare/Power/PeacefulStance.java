@@ -1,4 +1,6 @@
-package Cards;
+package Cards.Rare.Power;
+
+import Powers.PeacefulStancePower;
 import MainMod.*;
 import Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.*;
@@ -10,22 +12,21 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.powers.WeakPower;
 
-public class CardTemplate extends CustomCard
+public class PeacefulStance extends CustomCard
 {
-    public static final String ID = "";
-    public static final String NAME = "";
+    public static final String ID = "PeacefulStance";
+    public static final String NAME = "Peaceful Stance";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Skills/corona.png";
-    private static final int COST = 3;
+    private static final int COST = 2;
     private static final int POOL = 1;
     private static final CardRarity rarity = CardRarity.RARE;
     private static final CardTarget target = CardTarget.SELF;
     private static final CardType type = CardType.POWER;
 
 
-    public CardTemplate() {
+    public PeacefulStance() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
@@ -34,18 +35,19 @@ public class CardTemplate extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new PeacefulStancePower(p, 1, 1), 1, true, AbstractGameAction.AttackEffect.NONE));
     }
 
     @Override
     public AbstractCard makeCopy() {
-        return new CardTemplate();
+        return new PeacefulStance();
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.upgradeBaseCost(1);
         }
 
     }

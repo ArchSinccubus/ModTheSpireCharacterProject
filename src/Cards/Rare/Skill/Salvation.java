@@ -13,10 +13,10 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import java.util.Iterator;
 
-public class GrandHealing extends CustomCard
+public class Salvation extends CustomCard
 {
-    public static final String ID = "GrandHealing";
-    public static final String NAME = "Grand Healing";
+    public static final String ID = "Salvation";
+    public static final String NAME = "Salvation";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Skills/corona.png";
     private static final int COST = 3;
@@ -27,7 +27,7 @@ public class GrandHealing extends CustomCard
     private static final CardTarget target = CardTarget.SELF;
     private static final CardType type = CardType.SKILL;
 
-    public GrandHealing() {
+    public Salvation() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
@@ -102,7 +102,7 @@ public class GrandHealing extends CustomCard
 
     @Override
     public AbstractCard makeCopy() {
-        return new GrandHealing();
+        return new Salvation();
     }
 
     @Override

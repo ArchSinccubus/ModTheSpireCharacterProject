@@ -4,6 +4,10 @@ import Actions.ExhaustTopOfDrawPileAction;
 import Actions.PowerThroughAction;
 import Actions.SharpenAction;
 import MainMod.Fudgesickle;
+import basemod.BaseMod;
+import basemod.interfaces.PostBattleSubscriber;
+import basemod.interfaces.PostDrawSubscriber;
+import basemod.interfaces.PostDungeonInitializeSubscriber;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.*;
@@ -23,38 +27,79 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 
-public class WeakFormPower extends AbstractPower {
-    public static final String POWER_ID = "DelvingPrayer";
+public class WeakFormPower extends AbstractPower implements PostDrawSubscriber, PostBattleSubscriber,
+        PostDungeonInitializeSubscriber {
+    public static final String POWER_ID = "WeakForm";
     public static final String NAME;
     public static final String[] DESCRIPTIONS;
-    public static boolean Upgraded;
-    public static int cardsToDraw;
 
-    public WeakFormPower(AbstractCreature owner,int numBlock, int amount,int cards , boolean upgraded) {
+    public WeakFormPower(AbstractCreature owner,int numBlock, int amount) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
         this.amount = -1;
         this.updateDescription();
-        this.Upgraded = upgraded;
-        this.cardsToDraw = cards;
         this.img = Fudgesickle.getTex("Powers/Charge.png");
     }
 
-    public void onPlayCard(AbstractCard card, AbstractMonster m) {
-        if (card.cost >= 3)
-        {
-            AbstractDungeon.actionManager.addToTop(new GainEnergyAction(1));
+    @Override
+    public void onInitialApplication() {
+        BaseMod.subscribeToPostDraw(this);
+        BaseMod.subscribeToPostBattle(this);
+        BaseMod.subscribeToPostDungeonInitialize(this);
+    }
+
+    @Override
+    public void receivePostBattle(AbstractRoom arg0) {
+        BaseMod.unsubscribeFromPostDraw(this);
+        BaseMod.unsubscribeFromPostDungeonInitialize(this);
+        Thread delayed = new Thread(() -> {
+            try {
+                Thread.sleep(200);
+            } catch (Exception e) {
+                System.out.println("could not delay unsubscribe to avoid ConcurrentModificationException");
+                e.printStackTrace();
+            }
+            BaseMod.unsubscribeFromPostBattle(this);
+        });
+        delayed.start();
+    }
+
+    @Override
+    public void receivePostDungeonInitialize() {
+        BaseMod.unsubscribeFromPostDraw(this);
+        BaseMod.unsubscribeFromPostBattle(this);
+        Thread delayed = new Thread(() -> {
+            try {
+                Thread.sleep(200);
+            } catch (Exception e) {
+                System.out.println("could not delay unsubscribe to avoid ConcurrentModificationException");
+                e.printStackTrace();
+            }
+            BaseMod.unsubscribeFromPostDungeonInitialize(this);
+        });
+        delayed.start();
+    }
+
+    @Override
+    public void receivePostDraw(AbstractCard c) {
+        if(c.cost >= 3) {
+            c.setCostForTurn(c.cost - 1);
         }
     }
 
+    public void updateDescription() {
+        this.description = DESCRIPTIONS[0];
+
+    }
 
     static {
         DESCRIPTIONS = new String[] {
-                "Whenever you cast a card that costs 3 or more, gain [R]."
+                "Whenever you draw a card that costs 3 or more, reduce its cost by 1 for this turn."
         };
         NAME = "Weak Form";
     }

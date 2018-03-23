@@ -4,8 +4,10 @@ import Cards.Common.Attack.*;
 import Cards.Common.Skill.*;
 import Cards.Rare.Attack.*;
 import Cards.Rare.Power.FullAwakening;
-import Cards.Rare.Skill.AtAllCosts;
-import Cards.Rare.Skill.GrandHealing;
+import Cards.Rare.Power.Overburn;
+import Cards.Rare.Power.PeacefulStance;
+import Cards.Rare.Power.WeakForm;
+import Cards.Rare.Skill.*;
 import Cards.Starter.BlindingLight;
 import Cards.Starter.Defend_W;
 import Cards.Starter.MinorHealing;
@@ -173,7 +175,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
         logger.info("begin editting relics");
 
         // Add relics
-        RelicLibrary.add(new DivineWrath());
+        RelicLibrary.add(new CrossPendant());
 
         logger.info("done editting relics");
     }
@@ -261,13 +263,18 @@ public class Fudgesickle implements PostInitializeSubscriber,
         BaseMod.addCard(new HolyStorm());
         BaseMod.addCard(new Tantrum());
 
-
-
-
-        BaseMod.addCard(new GrandHealing());
+        BaseMod.addCard(new Salvation());
         BaseMod.addCard(new AtAllCosts());
+        BaseMod.addCard(new PowerBloom());
+        BaseMod.addCard(new DeadlyPlay());
+        BaseMod.addCard(new Bombastic());
+        BaseMod.addCard(new TempoMaster());
 
         BaseMod.addCard(new FullAwakening());
+        BaseMod.addCard(new WeakForm());
+        BaseMod.addCard(new Overburn());
+        BaseMod.addCard(new PeacefulStance());
+
 
         logger.info("done editting cards");
     }

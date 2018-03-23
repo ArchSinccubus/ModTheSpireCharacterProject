@@ -1,4 +1,4 @@
-package Actions;
+package Powers;
 
 import Actions.PowerThroughAction;
 import Actions.SharpenAction;
@@ -25,30 +25,33 @@ public class PeacefulStancePower extends AbstractPower {
     public static final String POWER_ID = "PeacefulStance";
     public static final String NAME;
     public static final String[] DESCRIPTIONS;
-    public static int LifeLost;
 
-    public PeacefulStancePower(AbstractCreature owner,int numBlock, int amount , int LifeLost) {
+    public PeacefulStancePower(AbstractCreature owner,int numBlock, int amount) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
         this.amount = -1;
         this.updateDescription();
-        this.LifeLost = LifeLost;
-        this.priority = 10;
+        this.priority = 100;
         this.img = Fudgesickle.getTex("Powers/Charge.png");
     }
 
     public float atDamageGive(float damage, DamageInfo.DamageType type) {
         if (type == DamageInfo.DamageType.NORMAL) {
-            return damage * 0.5F;
+            return damage * 0.75F;
         } else {
             return damage;
         }
     }
 
+    public void updateDescription() {
+        this.description = DESCRIPTIONS[0];
+
+    }
+
     public int onAttacked(DamageInfo info, int damageAmount) {
         if (damageAmount > 0 && info.owner == this.owner) {
-            return 0;
+            return damageAmount / 2;
         }
 
         return damageAmount;
@@ -56,7 +59,7 @@ public class PeacefulStancePower extends AbstractPower {
 
     static {
         DESCRIPTIONS = new String[] {
-                "You can no longer lose life from cards. Deal 50% less damage."
+                "Cards make you lose 50% less HP. Deal 25% less damage."
         };
         NAME = "Peaceful Stance";
     }

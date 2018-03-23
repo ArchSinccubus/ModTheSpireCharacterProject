@@ -147,7 +147,7 @@
   },
   "Execution": {
     "NAME": "Execution",
-    "DESCRIPTION": "Remove an enemy's Weak and deal that much damage to them."
+    "DESCRIPTION": "Remove an enemy's Frail and deal that much damage to them."
   },
   "Tantrum": {
   "NAME": "Tantrum",
@@ -333,8 +333,8 @@
   "DESCRIPTION": "At the beginning of each turn, draw a card and Exhaust the top card of your draw pile.",
   "UPGRADE_DESCRIPTION": "At the beginning of each turn, draw !M! cards and Exhaust the top !M! cards of your draw pile."
 },
-  "GrandHealing": {
-    "NAME": "Grand Healing",
+  "Salvation": {
+    "NAME": "Salvation",
     "DESCRIPTION": "Heal !M!% of your max HP. Exhaust.",
     "EXTENDED_DESCRIPTION": [
       " (You will heal !F! HP)"
@@ -345,8 +345,39 @@
   "DESCRIPTION": "Choose and add a card from your Draw Pile to your hand. Add a random Curse to your hand. Exhaust.",
   "UPGRADE_DESCRIPTION": "Innate. NL Choose and add a card from your Draw Pile to your hand. Add a random Curse to your hand. Exhaust."
 },
+  "TempoMaster": {
+    "NAME": "Tempo Master",
+    "DESCRIPTION": "Apply !M! Slow to one enemy. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply !M! Slow to ALL enemies. Exhaust."
+  },
+  "DeadlyPlay": {
+    "NAME": "Deadly Play",
+    "DESCRIPTION": "The next card that makes you lose 1 or more HP is played twice this turn.",
+    "UPGRADE_DESCRIPTION": "The next !M! cards that makes you lose 1 or more HP are played twice this turn."
+  },
+  "Bombastic": {
+    "NAME": "Bombastic",
+    "DESCRIPTION": "Choose a card from your hand that costs 3 or more. It costs 0 this combat. You can't draw cards this turn."
+  },
+  "PowerBloom": {
+    "NAME": "PowerBloom",
+    "DESCRIPTION": "Choose and add a card from your Discard Pile that costs 3 or more to your hand. Exhaust.",
+    "UPGRADE_DESCRIPTION": "NL Choose and add a card from your Discard Pile that costs 3 to your hand. Add a random Curse to your hand."
+  },
 "FullAwakening": {
 "NAME": "Full Awakening",
 "DESCRIPTION": "Gain !M! Spirit, Strength and Dexterity."
-}
+},
+  "PeacefulStance": {
+    "NAME": "Peaceful Stance",
+    "DESCRIPTION": "Cards make you lose 50% less HP. Deal 25% less damage."
+  },
+  "Overburn": {
+    "NAME": "Overburn",
+    "DESCRIPTION": "Shuffle !M! Burns to your Discard Pile. Whenever you lose HP from a card, deal 3 damage to ALL enemies."
+  },
+  "WeakForm": {
+    "NAME": "Weak Form",
+    "DESCRIPTION": "Lose !M! Strength. Cards that Whenever you draw a card that costs 3 or more, reduce its cost by 1 for this turn."
+  }
 }

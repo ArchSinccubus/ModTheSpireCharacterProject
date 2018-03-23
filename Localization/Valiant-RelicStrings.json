@@ -5,5 +5,12 @@
 		"DESCRIPTIONS": [
 			"gain 200 power. Seriously though, this is just a test relic."
 		]
+	},
+	"Cross Pendant": {
+		"NAME": "Cross Pendant",
+		"FLAVOR": "A simple cross shaped pendant. Praying on it is said to bring good fortunes.",
+		"DESCRIPTIONS": [
+			"At the start of each combat, choose 1 out of 3 random cards to add to your hand. It has Exhaust."
+		]
 	}
 }

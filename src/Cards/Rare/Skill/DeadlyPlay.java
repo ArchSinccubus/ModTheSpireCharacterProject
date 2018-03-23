@@ -1,6 +1,8 @@
-package Cards;
+package Cards.Rare.Skill;
+
 import MainMod.*;
 import Patches.AbstractCardEnum;
+import Powers.DeadlyPlayPower;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -10,42 +12,48 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.powers.BurstPower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 
-public class CardTemplate extends CustomCard
+public class DeadlyPlay extends CustomCard
 {
-    public static final String ID = "";
-    public static final String NAME = "";
+    public static final String ID = "DeadlyPlay";
+    public static final String NAME = "Deadly Play";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Skills/corona.png";
-    private static final int COST = 3;
+    private static final int COST = 1;
     private static final int POOL = 1;
     private static final CardRarity rarity = CardRarity.RARE;
     private static final CardTarget target = CardTarget.SELF;
-    private static final CardType type = CardType.POWER;
+    private static final CardType type = CardType.SKILL;
+    private int DRAW = 1;
 
 
-    public CardTemplate() {
+    public DeadlyPlay() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
+        this.magicNumber = this.baseMagicNumber = DRAW;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DeadlyPlayPower(p, this.magicNumber), this.magicNumber));
     }
 
     @Override
     public AbstractCard makeCopy() {
-        return new CardTemplate();
+        return new DeadlyPlay();
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.upgradeMagicNumber(DRAW);
+            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
+            this.initializeDescription();
         }
 
     }
