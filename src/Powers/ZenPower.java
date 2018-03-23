@@ -26,16 +26,38 @@ public class ZenPower extends AbstractPower {
     public static final String POWER_ID = "Zen";
     public static final String NAME;
     public static final String[] DESCRIPTIONS;
-    public static int NumBlock;
 
-    public ZenPower(AbstractCreature owner,int numBlock, int amount) {
+    public ZenPower(AbstractCreature owner, int amount) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
-        this.amount = -1;
+        this.amount = amount;
+        if (this.amount >= 999) {
+            this.amount = 999;
+        }
+
+        if (this.amount <= -999) {
+            this.amount = -999;
+        }
         this.updateDescription();
-        this.NumBlock = numBlock;
         this.img = Fudgesickle.getTex("Powers/Charge.png");
+    }
+
+    public void stackPower(int stackAmount) {
+        this.fontScale = 8.0F;
+        this.amount += stackAmount;
+        if (this.amount == 0) {
+            AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, "Zen"));
+        }
+
+        if (this.amount >= 999) {
+            this.amount = 999;
+        }
+
+        if (this.amount <= -999) {
+            this.amount = -999;
+        }
+
     }
 
     public void updateDescription() {
@@ -46,7 +68,7 @@ public class ZenPower extends AbstractPower {
     public int onAttacked(DamageInfo info, int damageAmount) {
         if (damageAmount > 0 && info.owner == this.owner) {
             this.flash();
-            AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(this.owner, this.owner, new DexterityPower(this.owner, this.amount), this.amount));
+            AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(this.owner, this.owner, new DexterityPower(this.owner, 1), this.amount));
         }
 
         return damageAmount;

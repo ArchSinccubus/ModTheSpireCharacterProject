@@ -29,7 +29,7 @@ public class InsightfulPrayerPower extends AbstractPower {
     public static boolean Upgraded;
     public static int cardsToDraw;
 
-    public InsightfulPrayerPower(AbstractCreature owner,int numBlock, int amount,int cards , boolean upgraded) {
+    public InsightfulPrayerPower(AbstractCreature owner, int amount,int cards) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
@@ -42,7 +42,6 @@ public class InsightfulPrayerPower extends AbstractPower {
             this.amount = -999;
         }
         this.updateDescription();
-        this.Upgraded = upgraded;
         this.cardsToDraw = cards;
         this.img = Fudgesickle.getTex("Powers/Charge.png");
     }

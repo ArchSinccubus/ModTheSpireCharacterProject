@@ -27,20 +27,19 @@ public class TurnTablesPower extends AbstractPower {
     public static final String[] DESCRIPTIONS;
     public static int LifeLost;
 
-    public TurnTablesPower(AbstractCreature owner,int numBlock, int amount , int LifeLost) {
+    public TurnTablesPower(AbstractCreature owner) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
         this.amount = -1;
         this.updateDescription();
-        this.LifeLost = LifeLost;
         this.img = Fudgesickle.getTex("Powers/Charge.png");
     }
 
 
 
     public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
-        if (power.ID == "Frail" && target != AbstractDungeon.player)
+        if (power.ID == "Frail" && target != owner)
         {
             AbstractDungeon.actionManager.addToTop(new GainEnergyAction(1));
             AbstractDungeon.actionManager.addToTop(new LoseHPAction(this.owner, this.owner,LifeLost));
@@ -50,7 +49,7 @@ public class TurnTablesPower extends AbstractPower {
 
     static {
         DESCRIPTIONS = new String[] {
-                "Whenever you apply Frail to an Enemy, Lose " + LifeLost + " and gain [R]."
+                "Whenever you apply Frail to an Enemy, Lose 4 HP and gain [R]."
         };
         NAME = "Turn Tables";
     }

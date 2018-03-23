@@ -32,7 +32,7 @@ public class PowerThroughAction extends AbstractGameAction {
     public void update() {
         if (this.duration == Settings.ACTION_DUR_FAST) {
 
-            AbstractDungeon.actionManager.addToBottom(new ExhaustAction(p, p, 1, upgraded));
+            AbstractDungeon.actionManager.addToBottom(new ExhaustAction(p, p, 1, true));
         }
 
         tickDuration();

@@ -273,6 +273,36 @@
     "NAME": "Ensoul",
     "DESCRIPTION": "Gain !M! Spirit."
   }
+,  "Zen": {
+  "NAME": "Zen",
+  "DESCRIPTION": "Whenever you lose life from a card, gain 1 Dexterity."
+}
+,  "MightForm": {
+  "NAME": "Might Form",
+  "DESCRIPTION": "Whenever you play a card that costs 3 or more, gain !M! Block."
+}
+,  "Sharpen": {
+  "NAME": "Sharpen",
+  "DESCRIPTION": "At the end of each turn, upgrade an Attack card in your hand. If you can't, lose 2 HP.",
+  "UPGRADE_DESCRIPTION": "Innate. At the end of each turn, upgrade an Attack card in your hand. If you can't, lose 2 HP."
+
+}
+,  "TurnTables": {
+  "NAME": "Turn Tables",
+  "DESCRIPTION": "Whenever you apply Frail to an enemy, lose 4 HP and gain [R]."
+}
+,  "PowerThrough": {
+  "NAME": "Power Through",
+  "DESCRIPTION": "Whenever you lose life from a card, Exhaust a random card from your hand and gain 2 HP."
+}
+,  "Ensoul": {
+  "NAME": "Ensoul",
+  "DESCRIPTION": "Gain !M! Spirit."
+}
+,  "Ensoul": {
+  "NAME": "Ensoul",
+  "DESCRIPTION": "Gain !M! Spirit."
+}
 ,
   "GrandHealing": {
     "NAME": "Grand Healing",

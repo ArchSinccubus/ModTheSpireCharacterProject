@@ -30,7 +30,7 @@ public class DelvingPrayerPower extends AbstractPower {
     public static boolean Upgraded;
     public static int cardsToDraw;
 
-    public DelvingPrayerPower(AbstractCreature owner,int numBlock, int amount,int cards , boolean upgraded) {
+    public DelvingPrayerPower(AbstractCreature owner, int amount,int cards) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
@@ -43,7 +43,6 @@ public class DelvingPrayerPower extends AbstractPower {
             this.amount = -999;
         }
         this.updateDescription();
-        this.Upgraded = upgraded;
         this.cardsToDraw = cards;
         this.img = Fudgesickle.getTex("Powers/Charge.png");
     }
@@ -59,18 +58,18 @@ public class DelvingPrayerPower extends AbstractPower {
             this.amount = 999;
         }
 
-        if (this.amount <= -999) {
-            this.amount = -999;
+        if (this.amount <= 0) {
+            AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, "InsightfulPrayer"));
         }
 
     }
 
     public void updateDescription() {
         cardsToDraw = amount;
-        if (!Upgraded)
+        if (amount == 1)
             this.description = DESCRIPTIONS[0];
         else
-            this.description = DESCRIPTIONS[1];
+            this.description = DESCRIPTIONS[1].replace("#b" , "" + amount);
 
     }
 
@@ -82,7 +81,7 @@ public class DelvingPrayerPower extends AbstractPower {
     static {
         DESCRIPTIONS = new String[] {
                 "At the beginning to each turn, draw a card and Exhaust the top card of your draw pile",
-                "At the beginning to each turn, draw " + cardsToDraw + " card and Exhaust the top " + cardsToDraw + " cards of your draw pile."
+                "At the beginning to each turn, draw #b card and Exhaust the top #b cards of your draw pile."
         };
         NAME = "Delving Prayer";
     }

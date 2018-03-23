@@ -45,7 +45,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
         EditStringsSubscriber,EditKeywordsSubscriber {
 
     private static final Color HOLY = CardHelper.getColor(255.0f, 250.0f, 250.0f);
-    private static final String ARCHMOD_ASSETS_FOLDER = "ASSETS"; //TODO: Change to your folder if different;
+    private static final String ARCHMOD_ASSETS_FOLDER = "resources"; //TODO: Change to your folder if different;
 
     //MiscStuff
     private static final String Dev = "ArchSinccubus";
@@ -158,7 +158,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
     @Override
     public void receivePostInitialize() {
         // Mod badge
-        Texture badgeTexture = new Texture(Gdx.files.internal("ASSETS/BaseModBadge.png"));
+        Texture badgeTexture = new Texture(Gdx.files.internal("resources/BaseModBadge.png"));
         ModPanel settingsPanel = new ModPanel();
         settingsPanel.addLabel("This mod does not have any settings (yet)", 400.0f, 700.0f, (me) -> {});
         BaseMod.registerModBadge(badgeTexture, Dev, Dev, "This is muh shit. F**k ye", settingsPanel);

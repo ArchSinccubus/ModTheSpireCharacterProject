@@ -28,20 +28,43 @@ public class MightFormPower extends AbstractPower {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
-        this.amount = -1;
+        this.amount = amount;
+        if (this.amount >= 999) {
+            this.amount = 999;
+        }
+
+        if (this.amount <= -999) {
+            this.amount = -999;
+        }
         this.updateDescription();
-        this.NumBlock = numBlock;
         this.img = Fudgesickle.getTex("Powers/Charge.png");
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0];
+        this.description = DESCRIPTIONS[0].replace("#b" , "" + this.amount);
+
+    }
+
+    public void stackPower(int stackAmount) {
+        this.fontScale = 8.0F;
+        this.amount += stackAmount;
+        if (this.amount == 0) {
+            AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, "MightForm"));
+        }
+
+        if (this.amount >= 999) {
+            this.amount = 999;
+        }
+
+        if (this.amount < 0) {
+            AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, "MightForm"));
+        }
 
     }
 
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (!card.purgeOnUse && card.type == CardType.ATTACK) {
-            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(owner, owner, NumBlock));
+        if (!card.purgeOnUse && card.cost >= 3 ) {
+            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(owner, owner, this.amount));
         }
 
     }
@@ -50,7 +73,7 @@ public class MightFormPower extends AbstractPower {
 
     static {
         DESCRIPTIONS = new String[] {
-                "Whenever you play a card that costs 3 or more, gain " + NumBlock + " Block."
+                "Whenever you play a card that costs 3 or more, gain #b Block."
         };
         NAME = "Might Form";
     }
