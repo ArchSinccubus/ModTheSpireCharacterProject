@@ -19,11 +19,13 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
+
 public class SharpenPower extends AbstractPower {
     public static final String POWER_ID = "Sharpen";
     public static final String NAME;
     public static final String[] DESCRIPTIONS;
     public static int NumBlock;
+
 
     public SharpenPower(AbstractCreature owner,int numBlock, int amount) {
         this.name = NAME;
