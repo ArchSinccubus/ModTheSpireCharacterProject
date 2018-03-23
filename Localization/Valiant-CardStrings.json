@@ -272,38 +272,34 @@
   "Ensoul": {
     "NAME": "Ensoul",
     "DESCRIPTION": "Gain !M! Spirit."
-  }
-,  "Zen": {
+  },  "Zen": {
   "NAME": "Zen",
   "DESCRIPTION": "Whenever you lose life from a card, gain 1 Dexterity."
-}
-,  "MightForm": {
+},  "MightForm": {
   "NAME": "Might Form",
   "DESCRIPTION": "Whenever you play a card that costs 3 or more, gain !M! Block."
-}
-,  "Sharpen": {
+},  "Sharpen": {
   "NAME": "Sharpen",
   "DESCRIPTION": "At the end of each turn, upgrade an Attack card in your hand. If you can't, lose 2 HP.",
   "UPGRADE_DESCRIPTION": "Innate. At the end of each turn, upgrade an Attack card in your hand. If you can't, lose 2 HP."
 
-}
-,  "TurnTables": {
+}, "TurnTables": {
   "NAME": "Turn Tables",
   "DESCRIPTION": "Whenever you apply Frail to an enemy, lose 4 HP and gain [R]."
-}
-,  "PowerThrough": {
+},  "PowerThrough": {
   "NAME": "Power Through",
   "DESCRIPTION": "Whenever you lose life from a card, Exhaust a random card from your hand and gain 2 HP."
-}
-,  "Ensoul": {
-  "NAME": "Ensoul",
-  "DESCRIPTION": "Gain !M! Spirit."
-}
-,  "Ensoul": {
-  "NAME": "Ensoul",
-  "DESCRIPTION": "Gain !M! Spirit."
-}
-,
+
+}, "InsightfulPrayer": {
+  "NAME": "Insightful Prayer",
+  "DESCRIPTION": "Whenever you heal, if you're above 60% HP, draw a card.",
+  "UPGRADE_DESCRIPTION": "Whenever you heal, if you're above 60% HP, draw !M! cards."
+
+}, "DelvingPrayer": {
+  "NAME": "Delving Prayer",
+  "DESCRIPTION": "At the beginning of each turn, draw a card and Exhaust the top card of your draw pile.",
+  "UPGRADE_DESCRIPTION": "At the beginning of each turn, draw !M! cards and Exhaust the top !M! cards of your draw pile."
+},
   "GrandHealing": {
     "NAME": "Grand Healing",
     "DESCRIPTION": "Heal !M!% of your max HP. Exhaust.",

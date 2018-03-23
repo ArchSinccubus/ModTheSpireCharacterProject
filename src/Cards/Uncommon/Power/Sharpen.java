@@ -38,7 +38,7 @@ public class Sharpen extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new SharpenPower(p,this.magicNumber, 1), 1, true, AbstractGameAction.AttackEffect.NONE));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new SharpenPower(p,this.magicNumber, 1), 1, true, AbstractGameAction.AttackEffect.NONE));
     }
 
 

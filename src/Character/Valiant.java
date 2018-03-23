@@ -32,26 +32,26 @@ import org.apache.logging.log4j.Logger;
 public class Valiant extends CustomPlayer{
 
     public static final int ENERGY_PER_TURN = 3; // how much energy you get every turn
-    public static final String MY_CHARACTER_SHOULDER_2 = "ASSETS/Cards/Skills/corona_p.png"; // campfire pose
-    public static final String MY_CHARACTER_SHOULDER_1 = "ASSETS/Cards/Skills/corona_p.png"; // another campfire pose
-    public static final String MY_CHARACTER_CORPSE = "ASSETS/Char/Blahblahhugebitch.png"; // dead corpse
-    public static final String MY_CHARACTER_SKELETON_ATLAS = "ASSETS/TestAnim/idle/skeleton.atlas"; // spine animation atlas
-    public static final String MY_CHARACTER_SKELETON_JSON = "ASSETS/TestAnim/idle/skeleton.json"; // spine animation json
+    public static final String MY_CHARACTER_SHOULDER_2 = "resources/Cards/Skills/corona_p.png"; // campfire pose
+    public static final String MY_CHARACTER_SHOULDER_1 = "resources/Cards/Skills/corona_p.png"; // another campfire pose
+    public static final String MY_CHARACTER_CORPSE = "resources/Char/Blahblahhugebitch.png"; // dead corpse
+    public static final String MY_CHARACTER_SKELETON_ATLAS = "resources/TestAnim/idle/skeleton.atlas"; // spine animation atlas
+    public static final String MY_CHARACTER_SKELETON_JSON = "resources/TestAnim/idle/skeleton.json"; // spine animation json
 
     public static final Logger logger = LogManager.getLogger(Valiant.class.getName());
 
     public static final String[] orbTextures = {
-            "ASSETS/orb/layer1.png",
-            "ASSETS/orb/layer2.png",
-            "ASSETS/orb/layer3.png",
-            "ASSETS/orb/layer4.png",
-            "ASSETS/orb/layer5.png",
-            "ASSETS/orb/layer6.png",
-            "ASSETS/orb/layer1d.png",
-            "ASSETS/orb/layer2d.png",
-            "ASSETS/orb/layer3d.png",
-            "ASSETS/orb/layer4d.png",
-            "ASSETS/orb/layer5d.png",
+            "resources/orb/layer1.png",
+            "resources/orb/layer2.png",
+            "resources/orb/layer3.png",
+            "resources/orb/layer4.png",
+            "resources/orb/layer5.png",
+            "resources/orb/layer6.png",
+            "resources/orb/layer1d.png",
+            "resources/orb/layer2d.png",
+            "resources/orb/layer3d.png",
+            "resources/orb/layer4d.png",
+            "resources/orb/layer5d.png",
     };
 
 
@@ -61,7 +61,7 @@ public class Valiant extends CustomPlayer{
     public static final int HAND_SIZE = 5;
 
     public Valiant(String name, PlayerClass chosenClass) {
-        super(name, chosenClass,orbTextures ,"ASSETS/orb/vfx.png" ,null, MY_CHARACTER_SKELETON_JSON );
+        super(name, chosenClass,orbTextures ,"resources/orb/vfx.png" ,null, MY_CHARACTER_SKELETON_JSON );
 
         this.dialogX = (this.drawX + 0.0F * Settings.scale); // set location for text bubbles
         this.dialogY = (this.drawY + 220.0F * Settings.scale); // you can just copy these values

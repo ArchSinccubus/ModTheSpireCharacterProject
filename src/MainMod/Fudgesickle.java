@@ -11,7 +11,7 @@ import Cards.Starter.Defend_W;
 import Cards.Starter.MinorHealing;
 import Cards.Starter.Strike_W;
 import Cards.Uncommon.Attack.*;
-import Cards.Uncommon.Power.Ensoul;
+import Cards.Uncommon.Power.*;
 import Cards.Uncommon.Skill.*;
 import Cards.Uncommon.Skill.Cleanse;
 import Patches.AbstractCardEnum;
@@ -51,15 +51,15 @@ public class Fudgesickle implements PostInitializeSubscriber,
     private static final String Dev = "ArchSinccubus";
 
     //ValiantAssets backgrounds
-    private static final String ATTACK_WHITE = "ASSETS/Cards/Backgrounds/512/WhiteBackgroundAttack.png";
-    private static final String SKILL_WHITE = "ASSETS/Cards/Backgrounds/512/WhiteBackgroundSkill.png";
-    private static final String POWER_WHITE = "ASSETS/Cards/Backgrounds/512/WhiteBackgroundPower.png";
-    private static final String ENERGY_ORB_PURPLE = "ASSETS/Cards/Backgrounds/512/card_hybrid_orb.png";
+    private static final String ATTACK_WHITE = "resources/Cards/Backgrounds/512/bg_attack_holy_512.png";
+    private static final String SKILL_WHITE = "resources/Cards/Backgrounds/512/bg_skill_holy_512.png";
+    private static final String POWER_WHITE = "resources/Cards/Backgrounds/512/bg_power_holy_512.png";
+    private static final String ENERGY_ORB_HOLY = "resources/Cards/Backgrounds/512/card_holy_orb.png";
 
-    private static final String ATTACK_PURPLE_PORTRAIT = "ASSETS/Cards/Backgrounds/1024/bg_attack_hybrid.png";
-    private static final String SKILL_PURPLE_PORTRAIT = "ASSETS/Cards/Backgrounds/1024/bg_skill_hybrid.png";
-    private static final String POWER_PURPLE_PORTRAIT = "ASSETS/Cards/Backgrounds/1024/bg_power_hybrid.png";
-    private static final String ENERGY_ORB_PURPLE_PORTRAIT = "ASSETS/Cards/Backgrounds/1024/card_hybrid_orb.png";
+    private static final String ATTACK_WHITE_PORTRAIT = "resources/Cards/Backgrounds/1024/bg_attack_holy_1024.png";
+    private static final String SKILL_WHITE_PORTRAIT = "resources/Cards/Backgrounds/1024/bg_skill_holy_1024.png";
+    private static final String POWER_WHITE_PORTRAIT = "resources/Cards/Backgrounds/1024/bg_power_holy_1024.png";
+    private static final String ENERGY_ORB_HOLY_PORTRAIT = "resources/Cards/Backgrounds/1024/card_holy_orb.png";
 
     //card pics
     public static final String AttackDemo = "Cards/Attacks/comet.png";
@@ -71,11 +71,11 @@ public class Fudgesickle implements PostInitializeSubscriber,
     public static final String CombatStancePic = "Powers/CombatStance.png";
 
     //icons
-    private static final String VALIANT_BUTTON = "TestIcon.png";
+    private static final String VALIANT_BUTTON = "Logo1.png";
     private static final String VALIANT_POTRAIT = "LeilaPic.jpg";
 
     // badge
-    public static final String BADGE_IMG = "ASSETS/BaseModBadge.png";
+    public static final String BADGE_IMG = "resources/BaseModBadge.png";
 
     private static final String texturePath = "Relics/arcanosphere.png";
 
@@ -112,9 +112,9 @@ public class Fudgesickle implements PostInitializeSubscriber,
         BaseMod.addColor(AbstractCardEnum.Holy.toString(),
                 HOLY, HOLY, HOLY, HOLY, HOLY, HOLY, HOLY,
                 ATTACK_WHITE, SKILL_WHITE,
-                POWER_WHITE, ENERGY_ORB_PURPLE,
-                ATTACK_PURPLE_PORTRAIT, SKILL_PURPLE_PORTRAIT,
-                POWER_PURPLE_PORTRAIT, ENERGY_ORB_PURPLE_PORTRAIT);
+                POWER_WHITE, ENERGY_ORB_HOLY,
+                ATTACK_WHITE_PORTRAIT, SKILL_WHITE_PORTRAIT,
+                POWER_WHITE_PORTRAIT, ENERGY_ORB_HOLY_PORTRAIT);
 
         IsDamaged = false;
     }
@@ -246,6 +246,13 @@ public class Fudgesickle implements PostInitializeSubscriber,
         BaseMod.addCard(new SoulStrain());
 
         BaseMod.addCard(new Ensoul());
+        BaseMod.addCard(new InsightfulPrayer());
+        BaseMod.addCard(new MightForm());
+        BaseMod.addCard(new PowerThrough());
+        BaseMod.addCard(new Sharpen());
+        BaseMod.addCard(new TurnTables());
+        BaseMod.addCard(new Zen());
+        BaseMod.addCard(new DelvingPrayer());
 
         BaseMod.addCard(new AlmightySmite());
 

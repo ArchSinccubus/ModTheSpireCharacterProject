@@ -27,9 +27,9 @@ public class SharpenAction extends AbstractGameAction {
     @Override
     public void update() {
         if (this.duration == Settings.ACTION_DUR_FAST) {
-
+//!c.canUpgrade() && c.type != AbstractCard.CardType.ATTACK
             for (AbstractCard c : this.p.hand.group) {
-                if (!c.canUpgrade() && c.type != AbstractCard.CardType.ATTACK) {
+                if (!c.canUpgrade() || c.type != AbstractCard.CardType.ATTACK) {
                     this.cannotUpgrade.add(c);
                 }
             }
@@ -42,15 +42,18 @@ public class SharpenAction extends AbstractGameAction {
 
             if (this.p.hand.group.size() - this.cannotUpgrade.size() == 1) {
                 for (AbstractCard c : this.p.hand.group) {
-                    if (c.canUpgrade()) {
+                    if (c.canUpgrade() || c.type != AbstractCard.CardType.ATTACK) {
                         c.upgrade();
                         this.isDone = true;
                         return;
                     }
+                    else
+                    {
+                        AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p,p, 2));
+                    }
                 }
             }
 
-            if (!this.upgraded) {
                 this.p.hand.group.removeAll(this.cannotUpgrade);
 
                 if (this.p.hand.group.size() > 1) {
@@ -63,7 +66,6 @@ public class SharpenAction extends AbstractGameAction {
                     returnCards();
                     this.isDone = true;
                 }
-            }
 
 
 

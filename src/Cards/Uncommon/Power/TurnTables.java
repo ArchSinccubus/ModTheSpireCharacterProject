@@ -39,7 +39,7 @@ public class TurnTables extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new TurnTablesPower(p), 1, true, AbstractGameAction.AttackEffect.NONE));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new TurnTablesPower(p), 1, true, AbstractGameAction.AttackEffect.NONE));
     }
 
 

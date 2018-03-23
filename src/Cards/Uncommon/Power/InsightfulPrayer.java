@@ -16,8 +16,8 @@ import com.megacrit.cardcrawl.powers.WeakPower;
 
 public class InsightfulPrayer extends CustomCard
 {
-    public static final String ID = "PowerThrough";
-    public static final String NAME = "Power Through";
+    public static final String ID = "InsightfulPrayer";
+    public static final String NAME = "Insightful Prayer";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Powers/enigma.png";
     private static final int COST = 3;
@@ -39,7 +39,7 @@ public class InsightfulPrayer extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new InsightfulPrayerPower(p, 1, this.magicNumber), 1, true, AbstractGameAction.AttackEffect.NONE));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new InsightfulPrayerPower(p, 1, this.magicNumber), 1, true, AbstractGameAction.AttackEffect.NONE));
     }
 
 
@@ -53,6 +53,8 @@ public class InsightfulPrayer extends CustomCard
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
+            this.initializeDescription();
             this.upgradeMagicNumber(CARS_TO_DRAW_UPGRADE);
         }
 

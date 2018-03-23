@@ -25,7 +25,7 @@ public class DelvingPrayer extends CustomCard
     private static final CardRarity rarity = CardRarity.UNCOMMON;
     private static final CardTarget target = CardTarget.SELF;
     private static final CardType type = CardType.POWER;
-    private static final int CARS_TO_DRAW = 2;
+    private static final int CARS_TO_DRAW = 1;
     private static final int CARS_TO_DRAW_UPGRADE = 1;
 
 
@@ -39,7 +39,7 @@ public class DelvingPrayer extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new DelvingPrayerPower(p, 1, this.magicNumber), 1, true, AbstractGameAction.AttackEffect.NONE));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DelvingPrayerPower(p, 1, this.magicNumber), 1, true, AbstractGameAction.AttackEffect.NONE));
     }
 
 
@@ -53,6 +53,8 @@ public class DelvingPrayer extends CustomCard
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
+            this.initializeDescription();
             this.upgradeMagicNumber(CARS_TO_DRAW_UPGRADE);
         }
 

@@ -39,7 +39,7 @@ public class TurnTablesPower extends AbstractPower {
 
 
     public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
-        if (power.ID == "Frail" && target != owner)
+        if (power.ID == "Frail")
         {
             AbstractDungeon.actionManager.addToTop(new GainEnergyAction(1));
             AbstractDungeon.actionManager.addToTop(new LoseHPAction(this.owner, this.owner,LifeLost));
