@@ -2,7 +2,7 @@ package MainMod;
 
 import Cards.Common.Attack.*;
 import Cards.Common.Skill.*;
-import Cards.Rare.Attack.AlmightySmite;
+import Cards.Rare.Attack.*;
 import Cards.Rare.Power.FullAwakening;
 import Cards.Rare.Skill.AtAllCosts;
 import Cards.Rare.Skill.GrandHealing;
@@ -248,13 +248,21 @@ public class Fudgesickle implements PostInitializeSubscriber,
         BaseMod.addCard(new Ensoul());
         BaseMod.addCard(new InsightfulPrayer());
         BaseMod.addCard(new MightForm());
-        BaseMod.addCard(new PowerThrough());
+        BaseMod.addCard(new PushOnward());
         BaseMod.addCard(new Sharpen());
         BaseMod.addCard(new TurnTables());
         BaseMod.addCard(new Zen());
         BaseMod.addCard(new DelvingPrayer());
 
         BaseMod.addCard(new AlmightySmite());
+        BaseMod.addCard(new DangerousSmash());
+        BaseMod.addCard(new Execution());
+        BaseMod.addCard(new FinalGambit());
+        BaseMod.addCard(new HolyStorm());
+        BaseMod.addCard(new Tantrum());
+
+
+
 
         BaseMod.addCard(new GrandHealing());
         BaseMod.addCard(new AtAllCosts());

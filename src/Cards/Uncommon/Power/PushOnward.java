@@ -2,10 +2,7 @@ package Cards.Uncommon.Power;
 
 import MainMod.*;
 import Patches.AbstractCardEnum;
-import Powers.MightFormPower;
 import Powers.PowerThroughPower;
-import Powers.SharpenPower;
-import Powers.ZenPower;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -15,12 +12,11 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.powers.WeakPower;
 
-public class PowerThrough extends CustomCard
+public class PushOnward extends CustomCard
 {
-    public static final String ID = "PowerThrough";
-    public static final String NAME = "Power Through";
+    public static final String ID = "PushOnward";
+    public static final String NAME = "Push Onward";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Powers/enigma.png";
     private static final int COST = 3;
@@ -30,7 +26,7 @@ public class PowerThrough extends CustomCard
     private static final CardType type = CardType.POWER;
 
 
-    public PowerThrough() {
+    public PushOnward() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
@@ -46,7 +42,7 @@ public class PowerThrough extends CustomCard
 
     @Override
     public AbstractCard makeCopy() {
-        return new PowerThrough();
+        return new PushOnward();
     }
 
     @Override

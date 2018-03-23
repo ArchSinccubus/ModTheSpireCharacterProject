@@ -27,16 +27,22 @@ public class TurnTablesPower extends AbstractPower {
     public static final String[] DESCRIPTIONS;
     public static int LifeLost;
 
-    public TurnTablesPower(AbstractCreature owner) {
+    public TurnTablesPower(AbstractCreature owner, int life) {
         this.name = NAME;
         this.ID = POWER_ID;
+        this.description = DESCRIPTIONS[0];
+        this.LifeLost = life;
         this.owner = owner;
         this.amount = -1;
         this.updateDescription();
         this.img = Fudgesickle.getTex("Powers/Charge.png");
     }
 
+    @Override
+    public void updateDescription() {
 
+
+    }
 
     public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
         if (power.ID == "Frail")
@@ -49,7 +55,7 @@ public class TurnTablesPower extends AbstractPower {
 
     static {
         DESCRIPTIONS = new String[] {
-                "Whenever you apply Frail to an Enemy, Lose 4 HP and gain [R]."
+                "Whenever you apply Frail to an Enemy, Lose 4 HP and gain 1 Energy."
         };
         NAME = "Turn Tables";
     }

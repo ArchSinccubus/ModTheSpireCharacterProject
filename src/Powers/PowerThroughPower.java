@@ -24,7 +24,7 @@ import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 
 public class PowerThroughPower extends AbstractPower {
-    public static final String POWER_ID = "PowerThrough";
+    public static final String POWER_ID = "PushOnward";
     public static final String NAME;
     public static final String[] DESCRIPTIONS;
 

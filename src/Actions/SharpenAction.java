@@ -39,7 +39,7 @@ public class SharpenAction extends AbstractGameAction {
 
             if (this.cannotUpgrade.size() == this.p.hand.group.size()) {
                 logger.info("LOST LIFE");
-                AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p,p, 2));
+                AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p,p, 3));
                 this.isDone = true;
                 return;
             }
@@ -53,7 +53,7 @@ public class SharpenAction extends AbstractGameAction {
                     }
                     else
                     {
-                        AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p,p, 2));
+                        AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p,p, 3));
                     }
                 }
             }

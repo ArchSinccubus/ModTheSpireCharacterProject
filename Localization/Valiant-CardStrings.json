@@ -125,11 +125,44 @@
     "DESCRIPTION": "Deal !D! damage. NL If the enemy is frail, deal 50% more. NL Add a Burn to your hand.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is frail, deal twice as much. NL Add a Burn to your hand."
   },
-  "AlmightySmite": {
-    "NAME": "Almighty Smite",
-    "DESCRIPTION": "Deal !D! damage. NL If the enemy is frail, deal 50% more.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is frail, deal twice as much."
+  "FinalGambit": {
+    "NAME": "Final Gambit",
+    "DESCRIPTION": "Deal damage equal to your HP. Your HP becomes 1.",
+    "UPGRADE_DESCRIPTION": "Deal damage equal to your HP. Lose 80% of your HP.",
+    "EXTENDED_DESCRIPTION": [
+      " (You will deal !D! Damage.)"
+    ]
   },
+  "DangerousSmash": {
+    "NAME": "Dangerous Smash",
+    "DESCRIPTION": "Deal !D! damage. If you have no energy in your pool, start next turn with [R] less."
+  },
+  "HolyStorm": {
+    "NAME": "Holy Storm",
+    "DESCRIPTION": "Deal X + 3 damage X times.",
+    "UPGRADE_DESCRIPTION": "Deal 3 times (X + 3) damage X + 1 times.",
+    "EXTENDED_DESCRIPTION": [
+      " (You will deal !D! Damage !M! times.)"
+    ]
+  },
+  "Execution": {
+    "NAME": "Execution",
+    "DESCRIPTION": "Remove an enemy's Weak and deal that much damage to them."
+  },
+  "Tantrum": {
+  "NAME": "Tantrum",
+  "DESCRIPTION": "Deal damage to ALL enemies equal to the amount of times you lost HP this turn times !M!.",
+    "EXTENDED_DESCRIPTION": [
+      " (You will deal !D! Damage)"
+    ]
+},
+  "AlmightySmite": {
+  "NAME": "Almighty Smite",
+  "DESCRIPTION": "Deal !D! damage. NL If the enemy is frail, deal 50% more.",
+  "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is frail, deal twice as much."
+},
+
+
   "Defend_W": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
@@ -200,7 +233,7 @@
   },
   "Vindication": {
     "NAME": "Vindication",
-    "DESCRIPTION": "Apply 99 Frail. NL. If the enemy is less than half health, gain !M! Spirit. Exhaust."
+    "DESCRIPTION": "Apply 10 Frail. NL. If the enemy is less than half health, gain !M! Spirit. Exhaust."
   },
   "Radiance": {
     "NAME": "Radiance",
@@ -242,8 +275,8 @@
   },
   "DualSpirit": {
     "NAME": "Dual Spirit",
-    "DESCRIPTION": "Put a copy of a skill card to your hand.",
-    "UPGRADE_DESCRIPTION": "Put !M! copies of a skill card to your hand."
+    "DESCRIPTION": "Put a copy of a skill or power card to your hand.",
+    "UPGRADE_DESCRIPTION": "Put !M! copies of a skill or power card to your hand."
   },
   "ReduceToNothing": {
     "NAME": "Reduce to Nothing",
@@ -274,26 +307,26 @@
     "DESCRIPTION": "Gain !M! Spirit."
   },  "Zen": {
   "NAME": "Zen",
-  "DESCRIPTION": "Whenever you lose life from a card, gain 1 Dexterity."
+  "DESCRIPTION": "Whenever you lose HP from a card, gain 1 Dexterity."
 },  "MightForm": {
   "NAME": "Might Form",
   "DESCRIPTION": "Whenever you play a card that costs 3 or more, gain !M! Block."
 },  "Sharpen": {
   "NAME": "Sharpen",
-  "DESCRIPTION": "At the end of each turn, upgrade an Attack card in your hand. If you can't, lose 2 HP.",
+  "DESCRIPTION": "At the end of each turn, upgrade an Attack card in your hand. If you can't, lose 3 HP.",
   "UPGRADE_DESCRIPTION": "Innate. At the end of each turn, upgrade an Attack card in your hand. If you can't, lose 2 HP."
 
 }, "TurnTables": {
   "NAME": "Turn Tables",
   "DESCRIPTION": "Whenever you apply Frail to an enemy, lose 4 HP and gain [R]."
-},  "PowerThrough": {
-  "NAME": "Power Through",
-  "DESCRIPTION": "Whenever you lose life from a card, Exhaust a random card from your hand and gain 2 HP."
+},  "PushOnward": {
+  "NAME": "Push Onward",
+  "DESCRIPTION": "Whenever you lose HP from a card, Exhaust a random card from your hand and gain 2 HP."
 
 }, "InsightfulPrayer": {
   "NAME": "Insightful Prayer",
-  "DESCRIPTION": "Whenever you heal, if you're above 60% HP, draw a card.",
-  "UPGRADE_DESCRIPTION": "Whenever you heal, if you're above 60% HP, draw !M! cards."
+  "DESCRIPTION": "Ethereal. Whenever you heal, if you're above 60% HP, draw a card.",
+  "UPGRADE_DESCRIPTION": "Ethereal. Whenever you heal, if you're above 60% HP, draw !M! cards."
 
 }, "DelvingPrayer": {
   "NAME": "Delving Prayer",

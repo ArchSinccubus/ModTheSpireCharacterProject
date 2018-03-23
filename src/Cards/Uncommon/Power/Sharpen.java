@@ -55,6 +55,7 @@ public class Sharpen extends CustomCard
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
             this.isInnate = true;
+            this.upgradeBaseCost(1);
         }
 
     }

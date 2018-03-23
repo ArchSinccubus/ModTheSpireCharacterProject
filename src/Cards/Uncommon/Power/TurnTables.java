@@ -28,18 +28,20 @@ public class TurnTables extends CustomCard
     private static final CardRarity rarity = CardRarity.UNCOMMON;
     private static final CardTarget target = CardTarget.SELF;
     private static final CardType type = CardType.POWER;
+    private static final int LIFE_LOSING = 4;
 
 
     public TurnTables() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
+        this.magicNumber = this.baseMagicNumber = LIFE_LOSING;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new TurnTablesPower(p), 1, true, AbstractGameAction.AttackEffect.NONE));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new TurnTablesPower(p , this.magicNumber), 1, true, AbstractGameAction.AttackEffect.NONE));
     }
 
 
