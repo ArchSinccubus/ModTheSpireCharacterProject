@@ -24,7 +24,7 @@ public class MercilessSmite extends CustomCard
     private static final CardRarity rarity = CardRarity.COMMON;
     private static final CardTarget target = CardTarget.ENEMY;
     private static final CardType type = CardType.ATTACK;
-
+    private int extraDamage;
 
     public MercilessSmite() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
@@ -36,29 +36,34 @@ public class MercilessSmite extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        int finalPower = this.damage;
-        if (m.hasPower("Frail")) {
-            if (!this.upgraded)
-                finalPower = (int) (this.damage * 0.5f);
+        extraDamage = this.baseDamage / 2;
+        if (this.upgraded)
+        {
+            extraDamage *= 2;
         }
 
         AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DamageAction(m,
                 new DamageInfo(p, this.damage, this.damageTypeForTurn),
                 AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-        AbstractDungeon.actionManager.addToBottom(new SmiteAction(m, new DamageInfo(p, finalPower, this.damageTypeForTurn)));
+        AbstractDungeon.actionManager.addToBottom(new SmiteAction(m, new DamageInfo(p, extraDamage, this.damageTypeForTurn)));
     }
 
     @Override
     public void applyPowers() {
         this.baseDamage = countSmiteInHand() * this.magicNumber;
+        extraDamage = this.baseDamage / 2;
+        if (this.upgraded)
+        {
+            extraDamage *= 2;
+        }
         super.applyPowers();
         this.setDescription(true);
     }
 
     private void setDescription(boolean addExtended) {
-        this.rawDescription = CARD_STRINGS.DESCRIPTION;
+        this.rawDescription = CARD_STRINGS.EXTENDED_DESCRIPTION[0].replace("FFF" , "" + this.baseMagicNumber / 2);
         if (addExtended) {
-            this.rawDescription += CARD_STRINGS.EXTENDED_DESCRIPTION[0];
+            this.rawDescription += CARD_STRINGS.EXTENDED_DESCRIPTION[1].replace("RRR" , "" + extraDamage);
         }
         this.initializeDescription();
     }

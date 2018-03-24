@@ -27,7 +27,7 @@ public class StrainingSmite extends CustomCard
     private static final CardType type = CardType.ATTACK;
     private static final int DAMAGE = 8;
     private static final int DAMAGE_PLUS = 3;
-
+    private int extraDamage;
 
     public StrainingSmite() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
@@ -39,15 +39,34 @@ public class StrainingSmite extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        int finalPower = this.damage;
-        if (m.hasPower("Frail")) {
-            if (!this.upgraded)
-                finalPower = (int) (this.damage * 0.5f);
+        extraDamage = this.damage / 2;
+        if (this.upgraded)
+        {
+            extraDamage *= 2;
         }
 
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
-        AbstractDungeon.actionManager.addToBottom(new SmiteAction(m, new DamageInfo(p, finalPower, this.damageTypeForTurn)));
+        AbstractDungeon.actionManager.addToBottom(new SmiteAction(m, new DamageInfo(p, extraDamage, this.damageTypeForTurn)));
         AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Burn(), 1));
+    }
+
+    @Override
+    public void applyPowers() {
+        extraDamage = this.baseDamage / 2;
+        if (this.upgraded)
+        {
+            extraDamage *= 2;
+        }
+        super.applyPowers();
+        this.setDescription(true);
+    }
+
+    private void setDescription(boolean addExtended) {
+        //this.rawDescription = CARD_STRINGS.DESCRIPTION;
+        if (addExtended) {
+            this.rawDescription = CARD_STRINGS.EXTENDED_DESCRIPTION[0].replace("!F!" , "" + extraDamage);
+        }
+        this.initializeDescription();
     }
 
     @Override

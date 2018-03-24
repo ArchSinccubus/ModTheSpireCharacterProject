@@ -27,7 +27,7 @@ public class SmiteAction extends AbstractGameAction {
         if (this.target == null) {
             this.isDone = true;
         } else {
-            if (this.m.hasPower("Frail")) {
+            if (this.m.hasPower("Wavering")) {
                 if (this.duration == 0 && this.target != null && this.target.currentHealth > 0) {
                     if (this.info.type != DamageType.THORNS && this.info.owner.isDying) {
                         this.isDone = true;

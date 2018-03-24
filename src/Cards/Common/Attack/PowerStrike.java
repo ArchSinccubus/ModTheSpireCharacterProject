@@ -6,10 +6,12 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -33,7 +35,7 @@ public class PowerStrike extends CustomCard
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
-        this.baseMagicNumber = this.damage = ATTACK_DMG;
+        this.baseMagicNumber = this.magicNumber = ATTACK_DMG;
     }
 
     @Override
@@ -46,7 +48,7 @@ public class PowerStrike extends CustomCard
 
     @Override
     public void applyPowers() {
-        this.baseDamage = this.baseMagicNumber * this.energyOnUse;
+        this.baseDamage = this.baseMagicNumber * EnergyPanel.getCurrentEnergy();
         super.applyPowers();
         this.setDescription(true);
     }

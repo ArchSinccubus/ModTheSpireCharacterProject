@@ -28,7 +28,7 @@ public class TurnTables extends CustomCard
     private static final CardRarity rarity = CardRarity.UNCOMMON;
     private static final CardTarget target = CardTarget.SELF;
     private static final CardType type = CardType.POWER;
-    private static final int LIFE_LOSING = 4;
+    private static final int LIFE_LOSING = 3;
 
 
     public TurnTables() {

@@ -1,8 +1,11 @@
 package Powers;
 
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -11,14 +14,12 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import MainMod.Fudgesickle;
 
-public class MobFrailPower extends AbstractPower {
-    private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings("Frail");;
-    public static final String POWER_ID = "MobFrailPower";
-    public static final String NAME = "Frail";
-    public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
+public class WaveringPower extends AbstractPower {
+    public static final String POWER_ID = "Wavering";
+    public static final String NAME = "Wavering";
     private boolean justApplied = false;
 
-    public MobFrailPower(AbstractCreature owner, int amount, boolean isSourcePlayer) {
+    public WaveringPower(AbstractCreature owner, int amount, boolean isSourcePlayer) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
@@ -33,6 +34,7 @@ public class MobFrailPower extends AbstractPower {
 
         this.type = PowerType.DEBUFF;
         this.isTurnBased = true;
+        this.priority = 99;
     }
 
 
@@ -54,9 +56,12 @@ public class MobFrailPower extends AbstractPower {
             this.justApplied = false;
         } else {
             if (this.amount == 0) {
-                AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, "MobFrailPower"));
+                AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, "Wavering"));
             } else {
-                AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, "MobFrailPower", 1));
+                AbstractDungeon.actionManager.addToBottom(new DamageAction(this.owner,
+                        new DamageInfo(AbstractDungeon.player, 3, DamageInfo.DamageType.HP_LOSS),
+                        AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+                AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, "Wavering", 1));
             }
 
         }
@@ -65,9 +70,9 @@ public class MobFrailPower extends AbstractPower {
     @Override
     public void updateDescription() {
         if (this.amount == 1) {
-            this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
+            this.description = "At the start of the next turn, this monster is dealt 3 damage.";
         } else {
-            this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[2];
+            this.description = "At the start of the next " + this.amount + " turns, this monster is dealt 3 damage.";
         }
 
     }

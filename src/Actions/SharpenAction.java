@@ -18,13 +18,14 @@ public class SharpenAction extends AbstractGameAction {
     private ArrayList<AbstractCard> canUpgrade = new ArrayList<>();
     private boolean upgraded = false;
     public static final Logger logger = LogManager.getLogger(Fudgesickle.class.getName());
-
+private int damage;
     public static final String TEXT = "Select a card to upgrade.";
 
-    public SharpenAction() {
+    public SharpenAction(int damageGive) {
         this.actionType = AbstractGameAction.ActionType.CARD_MANIPULATION;
         this.p = AbstractDungeon.player;
         this.duration = Settings.ACTION_DUR_FAST;
+        this.damage = damageGive;
     }
 
     @Override
@@ -39,7 +40,7 @@ public class SharpenAction extends AbstractGameAction {
 
             if (this.cannotUpgrade.size() == this.p.hand.group.size()) {
                 logger.info("LOST LIFE");
-                AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p,p, 3));
+                AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p,p, this.damage));
                 this.isDone = true;
                 return;
             }
@@ -53,7 +54,7 @@ public class SharpenAction extends AbstractGameAction {
                     }
                     else
                     {
-                        AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p,p, 3));
+                        //AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p,p, this.damage));
                     }
                 }
             }

@@ -34,7 +34,7 @@ public class ZealousAmbition extends CustomCard
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.exhaust = true;
-        this.baseMagicNumber = this.magicNumber = 8;
+        this.baseMagicNumber = this.magicNumber = 6;
     }
 
     @Override
@@ -43,13 +43,13 @@ public class ZealousAmbition extends CustomCard
         int HP = p.currentHealth;
         if (HP >= p.maxHealth / 2)
         {
-            AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p, p, 8));
-            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p , 3));
+            AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p, p, 6));
+            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p , 2));
         }
         else
         {
             AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, this.magicNumber));
-            AbstractDungeon.actionManager.addToBottom(new DiscardAction(p , p , 3 , false));
+            AbstractDungeon.actionManager.addToBottom(new DiscardAction(p , p , 2 , false));
         }
 
     }

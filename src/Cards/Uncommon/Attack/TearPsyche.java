@@ -26,7 +26,7 @@ public class TearPsyche extends CustomCard
     private static final CardType type = CardType.ATTACK;
     private static final int DAMAGE = 30;
     private static final int DAMAGE_UPGRADE = 12;
-    private static final int PERCENT = 30;
+    private static final int PERCENT = 15;
 
     public TearPsyche() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,

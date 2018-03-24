@@ -1,5 +1,6 @@
 package Actions;
 
+import Powers.WaveringPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
         import com.megacrit.cardcrawl.actions.AbstractGameAction.ActionType;
         import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
@@ -29,7 +30,7 @@ public class MultiplyPowerAction extends AbstractGameAction {
     public void update() {
         if (this.duration == this.startingDuration && this.target != null && this.target.hasPower(PowerName)) {
 
-            AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(this.target, this.source, new FrailPower(this.target, this.target.getPower(PowerName).amount * multiplyAmount , false), this.target.getPower(PowerName).amount * multiplyAmount));
+            AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(this.target, this.source, new WaveringPower(this.target, this.target.getPower(PowerName).amount * multiplyAmount , false), this.target.getPower(PowerName).amount * multiplyAmount));
         }
 
         this.tickDuration();

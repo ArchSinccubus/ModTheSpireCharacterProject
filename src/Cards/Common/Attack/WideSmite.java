@@ -25,7 +25,7 @@ public class WideSmite extends CustomCard
     private static final CardTarget target = CardTarget.ALL_ENEMY;
     private static final CardType type = CardType.ATTACK;
     private static final int DAMAGE = 8;
-
+    private int extraDamage;
 
     public WideSmite() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
@@ -37,15 +37,37 @@ public class WideSmite extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-
-        int finalPower = this.damage;
+        extraDamage = this.damage / 2;
+        if (this.upgraded)
+        {
+            extraDamage *= 2;
+        }
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
             AbstractDungeon.actionManager.addToBottom(new DamageAction(mo,
                     new DamageInfo(p, this.damage, this.damageTypeForTurn),
                     AbstractGameAction.AttackEffect.FIRE));
-            AbstractDungeon.actionManager.addToBottom(new SmiteAction(mo, new DamageInfo(p, finalPower, this.damageTypeForTurn)));
+            AbstractDungeon.actionManager.addToBottom(new SmiteAction(mo, new DamageInfo(p, extraDamage, this.damageTypeForTurn)));
         }
 
+    }
+
+    @Override
+    public void applyPowers() {
+        extraDamage = this.baseDamage / 2;
+        if (this.upgraded)
+        {
+            extraDamage *= 2;
+        }
+        super.applyPowers();
+        this.setDescription(true);
+    }
+
+    private void setDescription(boolean addExtended) {
+        //this.rawDescription = CARD_STRINGS.DESCRIPTION;
+        if (addExtended) {
+            this.rawDescription = CARD_STRINGS.EXTENDED_DESCRIPTION[0].replace("!F!" , "" + extraDamage);
+        }
+        this.initializeDescription();
     }
 
     @Override

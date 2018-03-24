@@ -17,8 +17,8 @@ public class ExecutionAction extends AbstractGameAction {
 
     public void update() {
         if (this.duration == Settings.ACTION_DUR_FAST) {
-            if (this.target.hasPower("Frail")) {
-                AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(this.target, this.source, "Frail"));
+            if (this.target.hasPower("Wavering")) {
+                AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(this.target, this.source, "Wavering"));
             } else {
                 this.isDone = true;
             }

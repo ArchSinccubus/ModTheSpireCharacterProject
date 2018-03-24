@@ -39,9 +39,9 @@ public class Execution extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (m.getPower("Frail") == null) {
-            AbstractDungeon.effectList.add(new ThoughtBubble(p.dialogX, p.dialogY, 3.0F, "That enemy isn't frail...", true));
+            AbstractDungeon.effectList.add(new ThoughtBubble(p.dialogX, p.dialogY, 3.0F, "That enemy isn't wavering...", true));
         } else {
-            this.baseDamage = m.getPower("Frail").amount;
+            this.baseDamage = m.getPower("Wavering").amount;
             this.baseDamage *= 3;
 
 

@@ -24,7 +24,7 @@ public class MaddeningRevelation extends CustomCard
     private static final CardRarity rarity = CardRarity.UNCOMMON;
     private static final CardTarget target = CardTarget.SELF;
     private static final CardType type = CardType.SKILL;
-    private static final int CARDS_DRAWN = 2;
+    private static final int CARDS_DRAWN = 3;
 
 
     public MaddeningRevelation() {

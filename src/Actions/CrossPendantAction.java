@@ -26,9 +26,11 @@ public class CrossPendantAction extends AbstractGameAction {
                     AbstractCard codexCard = AbstractDungeon.cardRewardScreen.codexCard.makeStatEquivalentCopy();
                     AbstractCard c = codexCard.makeStatEquivalentCopy();
                     c.current_x = -1000.0F * Settings.scale;
-                    if (!c.exhaust){
-                    c.exhaustOnUseOnce = true;
-                        c.rawDescription = codexCard.rawDescription + " Exhaust." ;
+                    if (c.type != AbstractCard.CardType.POWER) {
+                        if (!c.exhaust) {
+                            c.exhaustOnUseOnce = true;
+                            c.rawDescription = codexCard.rawDescription + " Exhaust.";
+                        }
                     }
                     c.initializeDescription();
                     //codexCard.isEthereal = true;

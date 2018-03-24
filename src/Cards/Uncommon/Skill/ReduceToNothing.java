@@ -39,9 +39,9 @@ public class ReduceToNothing extends CustomCard
     public void use(AbstractPlayer p, AbstractMonster m)
     {
         if (!this.upgraded) {
-            AbstractDungeon.actionManager.addToBottom(new MultiplyPowerAction(m, p, 1,"Frail"));
+            AbstractDungeon.actionManager.addToBottom(new MultiplyPowerAction(m, p, 1,"Wavering"));
         } else {
-            AbstractDungeon.actionManager.addToBottom(new MultiplyPowerAction(m, p, 2,"Frail"));
+            AbstractDungeon.actionManager.addToBottom(new MultiplyPowerAction(m, p, 2,"Wavering"));
         }
     }
 

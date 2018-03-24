@@ -10,7 +10,6 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.FrailPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 
@@ -53,7 +52,7 @@ public class CombatStancePower extends AbstractPower {
             AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(info.owner, this.owner,
                     new WeakPower(info.owner, this.amount, true), this.amount, true, AbstractGameAction.AttackEffect.NONE));
             AbstractDungeon.actionManager.addToTop(
-                    new ApplyPowerAction(info.owner, this.owner, new FrailPower(info.owner, this.amount, true), this.amount,
+                    new ApplyPowerAction(info.owner, this.owner, new WaveringPower(info.owner, this.amount, true), this.amount,
                             true, AbstractGameAction.AttackEffect.NONE));
         }
         return damageAmount;

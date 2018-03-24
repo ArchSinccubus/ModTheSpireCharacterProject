@@ -38,7 +38,7 @@ public class PeacefulStancePower extends AbstractPower {
 
     public float atDamageGive(float damage, DamageInfo.DamageType type) {
         if (type == DamageInfo.DamageType.NORMAL) {
-            return damage * 0.75F;
+            return damage * 0.5F;
         } else {
             return damage;
         }
@@ -50,16 +50,13 @@ public class PeacefulStancePower extends AbstractPower {
     }
 
     public int onAttacked(DamageInfo info, int damageAmount) {
-        if (damageAmount > 0 && info.owner == this.owner) {
-            return damageAmount / 2;
-        }
+            return (int)(damageAmount * 0.25F);
 
-        return damageAmount;
     }
 
     static {
         DESCRIPTIONS = new String[] {
-                "Cards make you lose 50% less HP. Deal 25% less damage."
+                "You take 25% damage and give 50% less damage."
         };
         NAME = "Peaceful Stance";
     }

@@ -54,7 +54,7 @@ public class EmpoweringForceAction extends AbstractGameAction {
                 this.p.hand.group.removeAll(this.cannotUpgrade);
 
                 if (this.p.hand.group.size() > 1) {
-                    AbstractDungeon.handCardSelectScreen.open(TEXT, 1, false, true, false, true);
+                    AbstractDungeon.handCardSelectScreen.open(TEXT, 1, true, true, false, true);
                     tickDuration();
                     return;
                 }
@@ -69,7 +69,7 @@ public class EmpoweringForceAction extends AbstractGameAction {
                 this.p.hand.group.removeAll(this.cannotUpgrade);
 
                 if (this.p.hand.group.size() > 1) {
-                    AbstractDungeon.handCardSelectScreen.open(TEXTUpgrade, 3, false, true, false, true);
+                    AbstractDungeon.handCardSelectScreen.open(TEXTUpgrade, 3, true, true, false, true);
                     tickDuration();
                     return;
                 }

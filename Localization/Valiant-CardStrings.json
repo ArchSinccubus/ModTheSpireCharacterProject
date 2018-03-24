@@ -5,12 +5,15 @@
 	},
   "PiercingStab": {
     "NAME": "Piercing Stab",
-    "DESCRIPTION": "Deal !D! damage. NL Apply 2 Frail."
+    "DESCRIPTION": "Deal !D! damage. NL Apply 2 Wavering."
   },
   "Smite": {
     "NAME": "Smite",
-    "DESCRIPTION": "Deal !D! damage. NL If the enemy is frail, deal 50% more.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is frail, deal twice as much."
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy is Wavering, deal 50% more.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is Wavering, deal twice as much.",
+    "EXTENDED_DESCRIPTION": [
+      "Deal !D! damage. NL If the enemy is Wavering, deal !F! more."
+    ]
   },
   "EmpoweringForce": {
     "NAME": "Empowering Force",
@@ -19,15 +22,19 @@
   },
   "RecklessSmite": {
     "NAME": "Reckless Smite",
-    "DESCRIPTION": "Deal !D! damage. Gain !M! vulnerable. NL If the enemy is frail, deal 50% more.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Gain !M! vulnerable. NL If the enemy is frail, deal twice as much."
+    "DESCRIPTION": "Deal !D! damage. Gain !M! vulnerable. NL If the enemy is Wavering, deal 50% more.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Gain !M! vulnerable. NL If the enemy is Wavering, deal twice as much.",
+    "EXTENDED_DESCRIPTION": [
+      "Deal !D! damage. Gain !M! vulnerable. NL If the enemy is Wavering, deal !F! more."
+    ]
   },
   "MercilessSmite": {
     "NAME": "Merciless Smite",
-    "DESCRIPTION": "Deal !M! damage for each Smite card in your hand. If the enemy is frail, deal 50% more",
-    "UPGRADE_DESCRIPTION": "Deal !M! damage for each Smite card in your hand. If the enemy is frail, deal twice as much",
+    "DESCRIPTION": "Deal !M! damage for each Smite card in your hand. If the enemy is Wavering, deal 50% more",
+    "UPGRADE_DESCRIPTION": "Deal !M! damage for each Smite card in your hand. NL If the enemy is Wavering, deal twice as much.",
     "EXTENDED_DESCRIPTION": [
-      " (You will deal !D! Damage)"
+      "Deal !M! damage for each Smite card in your hand. If enemy is Wavering, deal FFF more.",
+      " (You will deal !D! Damage. RRR more if Wavering.)"
     ]
   },
   "Decimate": {
@@ -43,12 +50,15 @@
   },
   "WideSmite": {
     "NAME": "Wide Smite",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Each frail enemy is dealt 50% more.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. Each frail enemy is dealt twice as much."
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Each Wavering enemy is dealt 50% more.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. Each Wavering enemy is dealt twice as much.",
+    "EXTENDED_DESCRIPTION": [
+      "Deal !D! damage to ALL enemies. NL Each Wavering enemy is dealt !F! more."
+    ]
   },
   "CombatDance": {
     "NAME": "Combat Dance",
-    "DESCRIPTION": "Deal !D! damage. NL Gain [R]. NL Lose 8HP."
+    "DESCRIPTION": "Deal !D! damage. NL Gain [R]. NL Lose 5 HP."
   },
   "DivineLashes": {
     "NAME": "Divine Lashes",
@@ -60,7 +70,7 @@
   },
   "ToweringCharge": {
     "NAME": "Towering Charge",
-    "DESCRIPTION": "Deal !D! damage. If, after playing this card, you have 2 or more MP, apply !M! Frail."
+    "DESCRIPTION": "Deal !D! damage. If, after playing this card, you have 2 or more MP, apply !M! Wavering."
   },
   "GracefulSiphon": {
     "NAME": "Graceful Siphon",
@@ -68,8 +78,11 @@
   },
   "ZealousSmite": {
   "NAME": "Zealous Smite",
-  "DESCRIPTION": "Deal !D! damage. NL If the enemy is frail, deal 50% more, gain [R] and draw a card.",
-  "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is frail, deal twice as much, gain [R] and draw a card."
+  "DESCRIPTION": "Deal !D! damage. NL If the enemy is Wavering, deal 50% more, gain [R] and draw a card.",
+  "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is Wavering, deal twice as much, gain [R] and draw a card.",
+    "EXTENDED_DESCRIPTION": [
+      "Deal !D! damage. NL If the enemy is Wavering, deal !F! more, gain [R] and draw a card."
+    ]
 },
   "TearPsyche": {
     "NAME": "Tear Psyche",
@@ -101,8 +114,11 @@
   },
   "FuriousSmite": {
     "NAME": "Furious Smite",
-    "DESCRIPTION": "Deal !D! damage. NL Lose !M! HP. NL If the enemy is frail, deal 50% more.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Lose !M! HP. NL If the enemy is frail, deal twice as much."
+    "DESCRIPTION": "Deal !D! damage. NL Lose !M! HP. NL If the enemy is Wavering, deal 50% more.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Lose !M! HP. NL If the enemy is Wavering, deal twice as much.",
+    "EXTENDED_DESCRIPTION": [
+      "Deal !D! damage. NL. Lose !M! HP. NL If the enemy is Wavering, deal !F! more."
+    ]
   },
   "AuraDischarge": {
     "NAME": "Aura Discharge",
@@ -122,8 +138,11 @@
   },
   "StrainingSmite": {
     "NAME": "Straining Smite",
-    "DESCRIPTION": "Deal !D! damage. NL If the enemy is frail, deal 50% more. NL Add a Burn to your hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is frail, deal twice as much. NL Add a Burn to your hand."
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy is Wavering, deal 50% more. NL Add a Burn to your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is Wavering, deal twice as much. NL Add a Burn to your hand.",
+    "EXTENDED_DESCRIPTION": [
+      "Deal !D! damage. NL If the enemy is Wavering, deal !F! more. NL Add A Burn to your hand."
+    ]
   },
   "FinalGambit": {
     "NAME": "Final Gambit",
@@ -147,7 +166,7 @@
   },
   "Execution": {
     "NAME": "Execution",
-    "DESCRIPTION": "Remove an enemy's Frail and deal that much damage to them."
+    "DESCRIPTION": "Remove an enemy's Wavering and deal that much damage to them."
   },
   "Tantrum": {
   "NAME": "Tantrum",
@@ -158,8 +177,11 @@
 },
   "AlmightySmite": {
   "NAME": "Almighty Smite",
-  "DESCRIPTION": "Deal !D! damage. NL If the enemy is frail, deal 50% more.",
-  "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is frail, deal twice as much."
+  "DESCRIPTION": "Deal !D! damage. NL If the enemy is Wavering, deal 50% more.",
+  "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is Wavering, deal twice as much.",
+    "EXTENDED_DESCRIPTION": [
+      "Deal !D! damage. NL If the enemy is Wavering, deal !F! more."
+    ]
 },
 
 
@@ -201,7 +223,7 @@
   },
   "UnyieldingZeal": {
     "NAME": "Unyielding Zeal",
-    "DESCRIPTION": "Apply !M! Frail. Exhaust."
+    "DESCRIPTION": "Apply !M! Wavering. Exhaust."
   },
   "TakeAim": {
     "NAME": "Take Aim",
@@ -214,7 +236,7 @@
   },
   "HolyFury": {
     "NAME": "Holy Fury",
-    "DESCRIPTION": "Gain !B! Block. NL Apply !M! Weak and 2 Frail."
+    "DESCRIPTION": "Gain !B! Block. NL Apply !M! Weak and 2 Wavering."
   },
   "ItsSmitingTime": {
     "NAME": "It's Smitin' Time!",
@@ -225,7 +247,7 @@
   },
   "ZealousPersecution": {
     "NAME": "Zealous Persecution",
-    "DESCRIPTION": "Can only be played if you have a card in your hand that costs 3 or more. NL Draw !M! cards. Lose 6 life."
+    "DESCRIPTION": "Can only be played if you have a card in your hand that costs 3 or more. NL Draw !M! cards. Lose 4 life."
   },
   "OverwhelmingLight": {
     "NAME": "Overwhelming Light",
@@ -233,7 +255,7 @@
   },
   "Vindication": {
     "NAME": "Vindication",
-    "DESCRIPTION": "Apply 10 Frail. NL. If the enemy is less than half health, gain !M! Spirit. Exhaust."
+    "DESCRIPTION": "Apply 10 Wavering. NL. If the enemy is less than half health, gain !M! Spirit. Exhaust."
   },
   "Radiance": {
     "NAME": "Radiance",
@@ -255,8 +277,8 @@
     "DESCRIPTION": "Draw a card. If it costs !M! Or more, gain [R]"
   },
   "ArchangelsBoon": {
-    "NAME": "Archangel's Boon",
-    "DESCRIPTION": "Apply !M! Frail. Gain !B! Block."
+    "NAME": "Archangel's Denouncement",
+    "DESCRIPTION": "Apply !M! Wavering. Gain !B! Block."
   },
 
   "MaddeningRevelation": {
@@ -271,7 +293,7 @@
 
   "CombatStance": {
     "NAME": "Combat Stance",
-    "DESCRIPTION": "Whenever an enemy deals damage to you next turn, apply !M! Frail and Weak."
+    "DESCRIPTION": "Whenever an enemy deals damage to you next turn, apply !M! Wavering and Weak."
   },
   "DualSpirit": {
     "NAME": "Dual Spirit",
@@ -280,8 +302,8 @@
   },
   "ReduceToNothing": {
     "NAME": "Reduce to Nothing",
-    "DESCRIPTION": "Double an enemy's Frail.",
-    "UPGRADE_DESCRIPTION": "Triple an enemy's Frail."
+    "DESCRIPTION": "Double an enemy's Wavering.",
+    "UPGRADE_DESCRIPTION": "Triple an enemy's Wavering."
   },
   "Cleanse": {
     "NAME": "Cleanse",
@@ -290,7 +312,7 @@
   },
   "ZealousAmbition": {
   "NAME": "Zealous Ambition",
-  "DESCRIPTION": "If you have over half your HP, Lose 8 HP and draw 3 cards. If you have less, Discard 2 cards and heal !M! HP. Exhaust"
+  "DESCRIPTION": "If you have over half your HP, Lose 6 HP and draw 2 cards. If you have less, Discard 2 cards and heal !M! HP. Exhaust"
 },
   "Charge": {
   "NAME": "Charge",
@@ -299,8 +321,8 @@
 },
   "SoulStrain": {
   "NAME": "Soul Strain",
-  "DESCRIPTION": "Gain [R] [R] [R]. Lose 10 HP. Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain [R] [R] [R] [R]. Lose 10 HP. Exhaust."
+  "DESCRIPTION": "Gain [R] [R] [R]. Lose 7 HP. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain [R] [R] [R] [R]. Lose 7 HP. Exhaust."
 },
   "Ensoul": {
     "NAME": "Ensoul",
@@ -318,15 +340,15 @@
 
 }, "TurnTables": {
   "NAME": "Turn Tables",
-  "DESCRIPTION": "Whenever you apply Frail to an enemy, lose 4 HP and gain [R]."
+  "DESCRIPTION": "Whenever you apply Wavering to an enemy, lose 3 HP and gain [R]."
 },  "PushOnward": {
   "NAME": "Push Onward",
   "DESCRIPTION": "Whenever you lose HP from a card, Exhaust a random card from your hand and gain 2 HP."
 
 }, "InsightfulPrayer": {
   "NAME": "Insightful Prayer",
-  "DESCRIPTION": "Ethereal. Whenever you heal, if you're above 60% HP, draw a card.",
-  "UPGRADE_DESCRIPTION": "Ethereal. Whenever you heal, if you're above 60% HP, draw !M! cards."
+  "DESCRIPTION": "Whenever you heal, if you're above 60% HP, draw a card.",
+  "UPGRADE_DESCRIPTION": "Whenever you heal, if you're above 60% HP, draw !M! cards."
 
 }, "DelvingPrayer": {
   "NAME": "Delving Prayer",
@@ -370,7 +392,7 @@
 },
   "PeacefulStance": {
     "NAME": "Peaceful Stance",
-    "DESCRIPTION": "Cards make you lose 50% less HP. Deal 25% less damage."
+    "DESCRIPTION": "Reduce all damage by 25%. Deal 50% less damage."
   },
   "Overburn": {
     "NAME": "Overburn",
@@ -378,6 +400,6 @@
   },
   "WeakForm": {
     "NAME": "Weak Form",
-    "DESCRIPTION": "Lose !M! Strength. Cards that Whenever you draw a card that costs 3 or more, reduce its cost by 1 for this turn."
+    "DESCRIPTION": "Lose !M! Strength. Whenever you draw a card that costs 3 or more, reduce its cost by 1 for this turn."
   }
 }

@@ -40,7 +40,7 @@ public class ZealousPersecution extends CustomCard
     public void use(AbstractPlayer p, AbstractMonster m)
     {
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
-        AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p, p, 6));
+        AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p, p, 4));
     }
 
     @Override

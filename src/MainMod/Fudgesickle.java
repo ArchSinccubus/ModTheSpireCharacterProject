@@ -296,6 +296,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
     public void receiveEditKeywords() {
         logger.info("setting up custom keywords");
         BaseMod.addKeyword(new String[] {"spirit", "Spirit"}, "Spirit increases the potency of healing.");
+        BaseMod.addKeyword(new String[] {"wavering", "Wavering"}, "At the start of each turn, this monster is dealt 3 damage.");
     }
 
     @Override

@@ -26,7 +26,7 @@ public class Desperation extends CustomCard
     private static final CardType type = CardType.ATTACK;
     private static final int DAMAGE = 10;
     private static final int DAMAGE_UPGRADE = 3;
-    private static final int MAGIC_NUM = 10;
+    private static final int MAGIC_NUM = 6;
 
     public Desperation() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,

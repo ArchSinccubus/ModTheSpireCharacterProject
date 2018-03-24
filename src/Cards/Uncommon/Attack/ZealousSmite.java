@@ -24,8 +24,8 @@ public class ZealousSmite extends CustomCard
     private static final CardRarity rarity = CardRarity.UNCOMMON;
     private static final CardTarget target = CardTarget.ENEMY;
     private static final CardType type = CardType.ATTACK;
-    private static final int DAMAGE = 4;
-
+    private static final int DAMAGE = 6;
+    private int extraDamage;
 
     public ZealousSmite() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
@@ -37,19 +37,38 @@ public class ZealousSmite extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        int finalPower = this.damage;
-        if (m.hasPower("Weakened")) {
-            if (!this.upgraded)
-                finalPower = (int) (this.damage * 0.5f);
+        extraDamage = this.damage / 2;
+        if (this.upgraded)
+        {
+            extraDamage *= 2;
         }
 
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
-        AbstractDungeon.actionManager.addToBottom(new SmiteAction(m, new DamageInfo(p, finalPower, this.damageTypeForTurn)));
+        AbstractDungeon.actionManager.addToBottom(new SmiteAction(m, new DamageInfo(p, extraDamage, this.damageTypeForTurn)));
 
-        if (m.hasPower("Weakened")) {
+        if (m.hasPower("Frail")) {
             AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p,1 ));
             AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(1));
         }
+    }
+
+    @Override
+    public void applyPowers() {
+        extraDamage = this.baseDamage / 2;
+        if (this.upgraded)
+        {
+            extraDamage *= 2;
+        }
+        super.applyPowers();
+        this.setDescription(true);
+    }
+
+    private void setDescription(boolean addExtended) {
+        //this.rawDescription = CARD_STRINGS.DESCRIPTION;
+        if (addExtended) {
+            this.rawDescription = CARD_STRINGS.EXTENDED_DESCRIPTION[0].replace("!F!" , "" + extraDamage);
+        }
+        this.initializeDescription();
     }
 
     @Override
