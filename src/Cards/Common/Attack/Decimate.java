@@ -34,7 +34,7 @@ public class Decimate extends CustomCard
 
 
     public Decimate() {
-        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
+        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.DECIMATE), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.baseDamage = this.damage = ATTACK_DMG;

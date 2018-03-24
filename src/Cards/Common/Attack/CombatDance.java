@@ -27,7 +27,7 @@ public class CombatDance extends CustomCard
     private static final int UPGRADE_MP = 0;
 
     public CombatDance() {
-        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
+        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.COMBAT_DANCE), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.baseDamage = this.damage = DAMAGE;

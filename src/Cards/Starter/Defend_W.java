@@ -12,7 +12,7 @@ public class Defend_W extends CustomCard{
     public static final String ID = "SkillDemo";
     public static final String NAME = "Defend";
     public static final String DESCRIPTION = "Gain !B! block.";
-    public static final String IMG_PATH = "Cards/Skills/corona.png";
+    public static final String IMG_PATH = "Cards_other/Skills/corona.png";
     private static final int COST = 1;
     private static final int BLOCK_AMOUNT = 5;
     private static final int UPGRADE_BLOCK_DMG = 3;

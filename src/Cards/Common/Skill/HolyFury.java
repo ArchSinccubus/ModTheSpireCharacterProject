@@ -31,7 +31,7 @@ public class HolyFury extends CustomCard
 
 
     public HolyFury() {
-        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
+        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.HOLY_FURY), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.baseBlock = this.block = BLOCK_AMOUNT;

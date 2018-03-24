@@ -64,9 +64,9 @@ public class Fudgesickle implements PostInitializeSubscriber,
     private static final String ENERGY_ORB_HOLY_PORTRAIT = "resources/Cards/Backgrounds/1024/card_holy_orb.png";
 
     //card pics
-    public static final String AttackDemo = "Cards/Attacks/comet.png";
-    public static final String SkillDemo = "Cards/Skills/corona.png";
-    public static final String PowerDemo = "Cards/Powers/enigma.png";
+    public static final String AttackDemo = "Cards_other/Attacks/comet.png";
+    public static final String SkillDemo = "Cards_other/Skills/corona.png";
+    public static final String PowerDemo = "Cards_other/Powers/enigma.png";
 
 
     public static final String COMBAT_DANCE = "cards/anomaly.png";
@@ -123,7 +123,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
     public static final String UPRISING = "cards/nova.png";
     public static final String ZEALOUS_SMITE = "cards/periapt_of_celerity.png";
     public static final String DELVING_PRAYER = "cards/periapt_of_potency.png";
-    public static final String ENSOUL = "cards/wormhole.png";
+    public static final String ENSOUL = "cards/zenith.png";
     public static final String INSIGHTFUL_PRAYER = "cards/periapt_of_vigor.png";
     public static final String MIGHT_FORM = "cards/power_overwhelming.png";
     public static final String PUSH_ONWARD = "cards/overload.png";
@@ -149,7 +149,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
     public static final String MINOR_HEALING = "cards/flux.png";
 
 
-    public static final String VOID_SHACKLES = "cards/void_shackles.png";
+    public static final String HOLY_LIGHT = "cards/void_shackles.png";
     public static final String VORTEX = "cards/vortex.png";
     public static final String ZENITH = "cards/zenith.png";
     public static final String PHASE_COIL = "cards/phase_coil.png";

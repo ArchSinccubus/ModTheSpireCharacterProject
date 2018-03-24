@@ -25,7 +25,7 @@ public class ArcaneHealing extends CustomCard
     private static final int POOL = 1;
 
     public ArcaneHealing() {
-        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
+        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.ARCANE_HEALING), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
                 CardRarity.COMMON, CardTarget.SELF, POOL);
         this.baseMagicNumber = HP_AMOUNT;

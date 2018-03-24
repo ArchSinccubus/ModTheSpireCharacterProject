@@ -32,7 +32,7 @@ public class HolyLight extends AbstractCard {
     private static final int DAMAGE_UPGRADE = 4;
 
     public HolyLight() {
-        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
+        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.HOLY_LIGHT), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.baseDamage = DAMAGE;

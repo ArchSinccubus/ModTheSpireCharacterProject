@@ -29,7 +29,7 @@ public class TearSoul extends CustomCard {
     private static final int MP_REDUCTION_UPGRADE = -1;
 
     public TearSoul() {
-        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
+        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.TEAR_SOUL), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.baseDamage = this.damage = DAMAGE;

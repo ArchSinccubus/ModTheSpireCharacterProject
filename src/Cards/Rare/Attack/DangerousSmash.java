@@ -35,7 +35,7 @@ public class DangerousSmash extends CustomCard
 
 
     public DangerousSmash() {
-        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
+        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.DANGEROUS_SMASH), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.baseDamage = this.damage = DAMAGE_INIT;

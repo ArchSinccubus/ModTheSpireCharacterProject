@@ -26,7 +26,7 @@ public class OverwhelmingLight extends CustomCard
     private static final CardTarget target = CardTarget.ALL_ENEMY;
 
     public OverwhelmingLight() {
-        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
+        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.OVERWHELMING_LIGHT), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.baseMagicNumber =WEAK_AMOUNT;

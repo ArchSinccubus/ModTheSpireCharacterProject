@@ -36,7 +36,7 @@ public class ToweringCharge extends CustomCard
 
     public static final Logger logger = LogManager.getLogger(Fudgesickle.class.getName());
     public ToweringCharge() {
-        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
+        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.TOWERING_CHARGE), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.baseDamage = this.damage = ATTACK_DMG;

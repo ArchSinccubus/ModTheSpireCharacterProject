@@ -14,7 +14,7 @@ public class Strike_W extends CustomCard{
     public static final String ID = "AttackDemo";
     public static final String NAME = "Strike";
     public static final String DESCRIPTION = "Deal !D! damage.";
-    public static final String IMG_PATH = "Cards/Attacks/comet.png";
+    public static final String IMG_PATH = "Cards_other/Attacks/comet.png";
     private static final int COST = 1;
     private static final int ATTACK_DMG = 6;
     private static final int UPGRADE_PLUS_DMG = 3;

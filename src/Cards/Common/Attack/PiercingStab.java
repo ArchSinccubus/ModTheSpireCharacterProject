@@ -30,7 +30,7 @@ public class PiercingStab extends CustomCard
     private static final int WEAK_AMOUNT = 2;
 
     public PiercingStab() {
-        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
+        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.PIERCING_STAB), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.baseDamage = this.damage = DAMAGE;

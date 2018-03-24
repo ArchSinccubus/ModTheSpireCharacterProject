@@ -33,7 +33,7 @@ public class PowerStance extends CustomCard
     public static final Logger logger = LogManager.getLogger(Fudgesickle.class.getName());
 
     public PowerStance() {
-        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
+        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.POWER_STANCE), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.magicNumber = this.baseMagicNumber = BLOCK_AMOUNT;

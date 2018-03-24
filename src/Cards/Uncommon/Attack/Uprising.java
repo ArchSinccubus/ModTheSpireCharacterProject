@@ -32,7 +32,7 @@ public class Uprising extends CustomCard
     private static final int DAMAGE_UPGRADE = 3;
 
     public Uprising() {
-        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
+        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.UPRISING), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.baseDamage = this.damage = DAMAGE;

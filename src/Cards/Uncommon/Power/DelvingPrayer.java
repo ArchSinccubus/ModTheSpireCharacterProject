@@ -30,7 +30,7 @@ public class DelvingPrayer extends CustomCard
 
 
     public DelvingPrayer() {
-        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
+        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.DELVING_PRAYER), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.baseMagicNumber = this.magicNumber = CARS_TO_DRAW;

@@ -29,7 +29,7 @@ public class ZealousPersecution extends CustomCard
 
 
     public ZealousPersecution() {
-        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
+        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.ZEALOUS_PERSECUTION), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.baseMagicNumber = this.magicNumber = CARD_DRAW;

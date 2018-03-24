@@ -28,7 +28,7 @@ public class CombatStance extends CustomCard {
     private static final CardType type = CardType.SKILL;
 
     public CombatStance() {
-        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
+        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.COMBAT_STANCE), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.magicNumber = this.baseMagicNumber = WEAK_VUL_AMT;

@@ -33,7 +33,7 @@ public class ArchangelsBoon extends CustomCard
 
 
     public ArchangelsBoon() {
-        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
+        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.ARCHANGEL_BOON), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.magicNumber = this.baseMagicNumber = FRAIL_POWER;

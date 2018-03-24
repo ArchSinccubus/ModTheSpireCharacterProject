@@ -25,7 +25,7 @@ public class BlindingLight extends CustomCard
     private static final CardTarget target = CardTarget.ALL_ENEMY;
 
     public BlindingLight() {
-        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
+        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.BLINDING_LIGHT), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
                 CardRarity.BASIC, CardTarget.ALL_ENEMY, POOL);
         this.baseMagicNumber =WEAK_AMOUNT;

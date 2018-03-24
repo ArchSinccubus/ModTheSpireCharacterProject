@@ -32,7 +32,7 @@ public class Ensoul extends CustomCard
 
 
     public Ensoul() {
-        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
+        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.ENSOUL), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.baseMagicNumber = this.magicNumber = STACK_BASE;

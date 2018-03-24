@@ -32,7 +32,7 @@ public class PowerStrike extends CustomCard
     public static final Logger logger = LogManager.getLogger(Fudgesickle.class.getName());
 
     public PowerStrike() {
-        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
+        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.POWER_STRIKE), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.baseMagicNumber = this.magicNumber = ATTACK_DMG;

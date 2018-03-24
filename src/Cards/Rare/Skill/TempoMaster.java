@@ -28,7 +28,7 @@ public class TempoMaster extends CustomCard
 
 
     public TempoMaster() {
-        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
+        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.TEMPO_MASTER), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, CardTarget.ENEMY, POOL);
         this.magicNumber = this.baseMagicNumber = SLOW_AMOUNT;

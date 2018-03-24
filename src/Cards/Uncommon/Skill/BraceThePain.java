@@ -29,7 +29,7 @@ public class BraceThePain extends CustomCard
 
 
     public BraceThePain() {
-        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
+        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.BRACE_THE_PAIN), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         BASIC_DAMAGE = 2;
