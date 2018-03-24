@@ -70,11 +70,11 @@
   },
   "ToweringCharge": {
     "NAME": "Towering Charge",
-    "DESCRIPTION": "Deal !D! damage. If, after playing this card, you have 2 or more MP, apply !M! Wavering."
+    "DESCRIPTION": "Deal !D! damage. If, after playing this card, you have 2 or more Energy, apply !M! Wavering."
   },
   "GracefulSiphon": {
-    "NAME": "Graceful Siphon",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. Heal !M! HP. Exhaust."
+    "NAME": "Debilitation",
+    "DESCRIPTION": "Deal !D! damage and apply !M! Wavering to ALL enemies."
   },
   "ZealousSmite": {
   "NAME": "Zealous Smite",
@@ -122,7 +122,7 @@
   },
   "AuraDischarge": {
     "NAME": "Aura Discharge",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies NL Heal !M! HP. Exhaust."
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Heal !M! HP. Exhaust."
   },
   "Desperation": {
     "NAME": "Desperation",
@@ -215,7 +215,7 @@
     "UPGRADE_DESCRIPTION": "Draw !M! cards."
   },
   "PowerStance": {
-    "NAME": "Power Stance",
+    "NAME": "Dueling Stance",
     "DESCRIPTION": "For each [R] you have, gain !M! Block.",
     "EXTENDED_DESCRIPTION": [
       " (You will gain !B! Block)"
@@ -382,7 +382,7 @@
     "DESCRIPTION": "Choose a card from your hand that costs 3 or more. It costs 0 this combat. You can't draw cards this turn."
   },
   "PowerBloom": {
-    "NAME": "PowerBloom",
+    "NAME": "Power Bloom",
     "DESCRIPTION": "Choose and add a card from your Discard Pile that costs 3 or more to your hand. Exhaust.",
     "UPGRADE_DESCRIPTION": "NL Choose and add a card from your Discard Pile that costs 3 to your hand. Add a random Curse to your hand."
   },
@@ -400,6 +400,6 @@
   },
   "WeakForm": {
     "NAME": "Weak Form",
-    "DESCRIPTION": "Lose !M! Strength. Whenever you draw a card that costs 3 or more, reduce its cost by 1 for this turn."
+    "DESCRIPTION": "Whenever you draw a card that costs 3 or more, reduce its cost by 1 for this turn. You take 50% more damage."
   }
 }

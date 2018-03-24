@@ -1,6 +1,7 @@
 package Cards.Common.Attack;
 import MainMod.*;
 import Patches.AbstractCardEnum;
+import Powers.WaveringPower;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -25,9 +26,9 @@ public class GracefulSiphon extends CustomCard
     private static final int COST = 2;
     private static final int POOL = 1;
     private static final int ATTACK_DMG = 6;
-    private static final int ATTACK_DMG_PLUS = 4;
-    private static final int HEAL_AMOUNT = 3;
-    private static final int HEAL_AMOUNT_PLUS = 1;
+    private static final int ATTACK_DMG_PLUS = 2;
+    private static final int HEAL_AMOUNT = 2;
+    private static final int HEAL_AMOUNT_PLUS = 2;
     private static final CardRarity rarity = CardRarity.COMMON;
     private static final CardTarget target = CardTarget.ALL_ENEMY;
     private static final CardType type = CardType.ATTACK;
@@ -40,7 +41,6 @@ public class GracefulSiphon extends CustomCard
         this.baseDamage = this.damage = ATTACK_DMG;
         this.baseMagicNumber = HEAL_AMOUNT;
         this.magicNumber = this.baseMagicNumber;
-        this.exhaust = true;
         this.isMultiDamage = true;
 
     }
@@ -51,39 +51,15 @@ public class GracefulSiphon extends CustomCard
         AbstractDungeon.actionManager.addToBottom(new VFXAction(p, new CleaveEffect(), 0.1F));
         AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_HEAVY));
 
-        AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, this.magicNumber));
+        for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new WaveringPower(mo, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+        }
     }
 
     @Override
     public void applyPowers()
     {
         super.applyPowers();
-        applyPowersToHeal();
-    }
-
-    private void applyPowersToHeal() {
-        int tmp = this.baseMagicNumber;
-        Iterator var2 = AbstractDungeon.player.powers.iterator();
-
-        while(var2.hasNext()) {
-            AbstractPower p = (AbstractPower)var2.next();
-            if (p.name == "Spirit")
-                setDescription(p , tmp);
-            else
-            {
-                this.rawDescription = CARD_STRINGS.DESCRIPTION;
-                this.initializeDescription();
-            }
-        }
-
-        if (tmp < 0) {
-            tmp = 0;
-        }
-    }
-
-    private void setDescription(AbstractPower p , int tmp) {
-        this.rawDescription = CARD_STRINGS.DESCRIPTION.replace("!M!" , "" + (tmp + p.amount));
-        this.initializeDescription();
     }
 
     @Override

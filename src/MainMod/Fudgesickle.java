@@ -68,6 +68,92 @@ public class Fudgesickle implements PostInitializeSubscriber,
     public static final String SkillDemo = "Cards/Skills/corona.png";
     public static final String PowerDemo = "Cards/Powers/enigma.png";
 
+
+    public static final String COMBAT_DANCE = "cards/anomaly.png";
+    public static final String DECIMATE = "cards/starburst.png";
+    public static final String DIVINE_LASHES = "cards/arcane_tempest.png";
+    public static final String EMPOWERING_FORCE = "cards/irradiate.png";
+    public static final String GRACEFUL_SIPHON = "cards/archives.png";
+    public static final String MERCILESS_SMITE = "cards/astral_haze.png";
+    public static final String PIERCING_STAB = "cards/dimension_door.png";
+    public static final String POWER_STRIKE = "cards/brainstorm.png";
+    public static final String QUICK_SIPHON = "cards/brilliance.png";
+    public static final String RECKLESS_SMITE = "cards/channel.png";
+    public static final String SMITE = "cards/chaos_form.png";
+    public static final String TOWERING_CHARGE = "cards/coalescence.png";
+    public static final String WIDE_SMITE = "cards/comet.png";
+    public static final String ARCANE_HEALING = "cards/convergence.png";
+    public static final String DIVINE_FAVOR = "cards/corona.png";
+    public static final String FLASH_OF_ANGER = "cards/creativity.png";
+    public static final String HOLY_FURY = "cards/dark_matter.png";
+    public static final String ITS_SMITING_TIME = "cards/defend_purple.png";
+    public static final String MIGHT_BRACER = "cards/arcane_armor.png";
+    public static final String POWER_STANCE = "cards/echo.png";
+    public static final String QUICKSTEP = "cards/eclipse.png";
+    public static final String SEEK_ANSWERS = "cards/enigma.png";
+    public static final String TAKE_AIM = "cards/entropy.png";
+    public static final String UNYIELDING_ZEAL = "cards/equinox.png";
+    public static final String ZEALOUS_PERSECUTION = "cards/phase_coil.png";
+    public static final String ALMIGHTY_SMITE = "cards/flicker.png";
+    public static final String DANGEROUS_SMASH = "cards/plasma_wave.png";
+    public static final String EXECUTION = "cards/pulse_barrier.png";
+    public static final String FINAL_GAMBIT = "cards/nebula.png";
+    public static final String HOLY_STORM = "cards/ether_blast.png";
+    public static final String TANTRUM = "cards/essence_dart.png";
+    public static final String FULL_AWAKENING = "cards/eureka.png";
+    public static final String OVERBURN = "cards/event_horizon.png";
+    public static final String PEACEFUL_STANCE = "cards/experiment.png";
+    public static final String WEAK_FORM = "cards/feedback.png";
+    public static final String AT_ALL_COSTS = "cards/flare.png";
+    public static final String BOMBASTIC = "cards/flow.png";
+    public static final String DEADLY_PLAY = "cards/null_storm.png";
+    public static final String POWER_BLOOM = "cards/void_ray.png";
+    public static final String SALVATION = "cards/flux_shield.png";
+    public static final String TEMPO_MASTER = "cards/force_ripple.png";
+    public static final String ABANDON_REASON = "cards/unstable_orb.png";
+    public static final String AURA_DISCHARGE = "cards/gravity_well.png";
+    public static final String BREAK_THROUGH = "cards/hypothesis.png";
+    public static final String CHAINER = "cards/illuminate.png";
+    public static final String DESPERATION = "cards/implosion.png";
+    public static final String FURIOUS_SMITE = "cards/magic_missile.png";
+    public static final String RETALIATE = "cards/magnetize.png";
+    public static final String STRAINING_SMITE = "cards/meteor_shower.png";
+    public static final String TEAR_PSYCHE = "cards/mind_over_matter.png";
+    public static final String TEAR_SOUL = "cards/nexus.png";
+    public static final String UPRISING = "cards/nova.png";
+    public static final String ZEALOUS_SMITE = "cards/periapt_of_celerity.png";
+    public static final String DELVING_PRAYER = "cards/periapt_of_potency.png";
+    public static final String ENSOUL = "cards/wormhole.png";
+    public static final String INSIGHTFUL_PRAYER = "cards/periapt_of_vigor.png";
+    public static final String MIGHT_FORM = "cards/power_overwhelming.png";
+    public static final String PUSH_ONWARD = "cards/overload.png";
+    public static final String SHARPEN = "cards/disperse.png";
+    public static final String TURN_TABLES = "cards/reflection_ward.png";
+    public static final String ZEN = "cards/retrograde.png";
+    public static final String ARCHANGEL_BOON = "cards/runic_binding.png";
+    public static final String BRACE_THE_PAIN = "cards/shimmer.png";
+    public static final String CHARGE = "cards/convergence.png";
+    public static final String CLEANSE = "cards/siphon_power.png";
+    public static final String COMBAT_STANCE = "cards/siphon_speed.png";
+    public static final String DUAL_SPIRIT = "cards/strike_purple.png";
+    public static final String GUARDIAN = "cards/stroke_of_genius.png";
+    public static final String MADDENING_REVELATION = "cards/surge.png";
+    public static final String MEABALIZE = "cards/syzygy.png";
+    public static final String OVERWHELMING_LIGHT = "cards/thought_raze.png";
+    public static final String RADIANCE = "cards/transference.png";
+    public static final String REDUCE_TO_NOTHING = "cards/umbral_bolt.png";
+    public static final String SOUL_STRAIN = "cards/singularity.png";
+    public static final String VINDICATION = "cards/vacuum.png";
+    public static final String ZEALOUS_AMBITION = "cards/genesis.png";
+    public static final String BLINDING_LIGHT = "cards/prismatic_sphere.png";
+    public static final String MINOR_HEALING = "cards/flux.png";
+
+
+    public static final String VOID_SHACKLES = "cards/void_shackles.png";
+    public static final String VORTEX = "cards/vortex.png";
+    public static final String ZENITH = "cards/zenith.png";
+    public static final String PHASE_COIL = "cards/phase_coil.png";
+
     //powers
     public static final String SpiritPic = "Powers/Spirit.png";
     public static final String CombatStancePic = "Powers/CombatStance.png";
@@ -199,8 +285,8 @@ public class Fudgesickle implements PostInitializeSubscriber,
         BaseMod.addCard(new WideSmite());
         BaseMod.addCard(new MercilessSmite());
         BaseMod.addCard(new CombatDance());
-        BaseMod.addCard(new DivineLashes());
-        BaseMod.addCard(new PowerStrike());
+        //BaseMod.addCard(new DivineLashes());
+        //BaseMod.addCard(new PowerStrike());
         BaseMod.addCard(new GracefulSiphon());
         BaseMod.addCard(new ToweringCharge());
 
@@ -208,7 +294,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
         BaseMod.addCard(new DivineFavor());
         BaseMod.addCard(new ArcaneHealing());
         BaseMod.addCard(new FlashOfAnger());
-        BaseMod.addCard(new PowerStance());
+        //BaseMod.addCard(new PowerStance());
         BaseMod.addCard(new ZealousPersecution());
         BaseMod.addCard(new HolyFury());
         BaseMod.addCard(new ItsSmitingTime());
@@ -218,7 +304,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
         BaseMod.addCard(new MightBracer());
 
         BaseMod.addCard(new ZealousSmite());
-        BaseMod.addCard(new BreakThrough());
+        //BaseMod.addCard(new BreakThrough());
         BaseMod.addCard(new HolyLight());
         BaseMod.addCard(new TearPsyche());
         BaseMod.addCard(new TearSoul());
@@ -233,7 +319,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
 
         BaseMod.addCard(new BraceThePain());
         BaseMod.addCard(new Guardian());
-        BaseMod.addCard(new OverwhelmingLight());
+        //BaseMod.addCard(new OverwhelmingLight());
         BaseMod.addCard(new Radiance());
         BaseMod.addCard(new Vindication());
         BaseMod.addCard(new ArchangelsBoon());
@@ -265,7 +351,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
 
         BaseMod.addCard(new Salvation());
         BaseMod.addCard(new AtAllCosts());
-        BaseMod.addCard(new PowerBloom());
+        //BaseMod.addCard(new PowerBloom());
         BaseMod.addCard(new DeadlyPlay());
         BaseMod.addCard(new Bombastic());
         BaseMod.addCard(new TempoMaster());

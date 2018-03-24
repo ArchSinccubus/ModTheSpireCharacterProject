@@ -4,6 +4,7 @@ import Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.deprecated.DiscardPileToHandAction;
+import com.megacrit.cardcrawl.actions.utility.DiscardToHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -13,6 +14,8 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.powers.WeakPower;
+
+import java.util.Iterator;
 
 public class Uprising extends CustomCard
 {
@@ -41,8 +44,12 @@ public class Uprising extends CustomCard
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m,
                 new DamageInfo(p, this.damage, this.damageTypeForTurn),
                 AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        if (p.discardPile.size() > 1)
         AbstractDungeon.actionManager.addToBottom(new DiscardPileToHandAction(1));
+        if (p.discardPile.size() == 1)
+            AbstractDungeon.actionManager.addToBottom(new DiscardToHandAction(p.discardPile.getTopCard()));
     }
+
 
     @Override
     public AbstractCard makeCopy() {

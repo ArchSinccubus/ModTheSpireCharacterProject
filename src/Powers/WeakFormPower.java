@@ -97,9 +97,14 @@ public class WeakFormPower extends AbstractPower implements PostDrawSubscriber, 
 
     }
 
+    public int onAttacked(DamageInfo info, int damageAmount) {
+        return (int)(damageAmount * 1.5F);
+
+    }
+
     static {
         DESCRIPTIONS = new String[] {
-                "Whenever you draw a card that costs 3 or more, reduce its cost by 1 for this turn."
+                "Whenever you draw a card that costs 3 or more, reduce its cost by 1 for this turn. You take 50% more damage."
         };
         NAME = "Weak Form";
     }
