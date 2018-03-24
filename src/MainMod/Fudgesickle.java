@@ -53,15 +53,15 @@ public class Fudgesickle implements PostInitializeSubscriber,
     private static final String Dev = "ArchSinccubus";
 
     //ValiantAssets backgrounds
-    private static final String ATTACK_WHITE = "resources/Cards/Backgrounds/512/bg_attack_holy_512.png";
-    private static final String SKILL_WHITE = "resources/Cards/Backgrounds/512/bg_skill_holy_512.png";
-    private static final String POWER_WHITE = "resources/Cards/Backgrounds/512/bg_power_holy_512.png";
-    private static final String ENERGY_ORB_HOLY = "resources/Cards/Backgrounds/512/card_holy_orb.png";
+    private static final String ATTACK_WHITE = "resources/Cards_other/Backgrounds/512/bg_attack_holy_512.png";
+    private static final String SKILL_WHITE = "resources/Cards_other/Backgrounds/512/bg_skill_holy_512.png";
+    private static final String POWER_WHITE = "resources/Cards_other/Backgrounds/512/bg_power_holy_512.png";
+    private static final String ENERGY_ORB_HOLY = "resources/Cards_other/Backgrounds/512/card_holy_orb.png";
 
-    private static final String ATTACK_WHITE_PORTRAIT = "resources/Cards/Backgrounds/1024/bg_attack_holy_1024.png";
-    private static final String SKILL_WHITE_PORTRAIT = "resources/Cards/Backgrounds/1024/bg_skill_holy_1024.png";
-    private static final String POWER_WHITE_PORTRAIT = "resources/Cards/Backgrounds/1024/bg_power_holy_1024.png";
-    private static final String ENERGY_ORB_HOLY_PORTRAIT = "resources/Cards/Backgrounds/1024/card_holy_orb.png";
+    private static final String ATTACK_WHITE_PORTRAIT = "resources/Cards_other/Backgrounds/1024/bg_attack_holy_1024.png";
+    private static final String SKILL_WHITE_PORTRAIT = "resources/Cards_other/Backgrounds/1024/bg_skill_holy_1024.png";
+    private static final String POWER_WHITE_PORTRAIT = "resources/Cards_other/Backgrounds/1024/bg_power_holy_1024.png";
+    private static final String ENERGY_ORB_HOLY_PORTRAIT = "resources/Cards_other/Backgrounds/1024/card_holy_orb.png";
 
     //card pics
     public static final String AttackDemo = "Cards_other/Attacks/comet.png";
@@ -102,7 +102,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
     public static final String TANTRUM = "cards/essence_dart.png";
     public static final String FULL_AWAKENING = "cards/eureka.png";
     public static final String OVERBURN = "cards/event_horizon.png";
-    public static final String PEACEFUL_STANCE = "cards/experiment.png";
+    public static final String PEACEFUL_STANCE = "cards/conversion.png";
     public static final String WEAK_FORM = "cards/feedback.png";
     public static final String AT_ALL_COSTS = "cards/flare.png";
     public static final String BOMBASTIC = "cards/flow.png";
@@ -124,7 +124,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
     public static final String ZEALOUS_SMITE = "cards/periapt_of_celerity.png";
     public static final String DELVING_PRAYER = "cards/periapt_of_potency.png";
     public static final String ENSOUL = "cards/zenith.png";
-    public static final String INSIGHTFUL_PRAYER = "cards/periapt_of_vigor.png";
+    public static final String INSIGHTFUL_PRAYER = "cards/vortex.png";
     public static final String MIGHT_FORM = "cards/power_overwhelming.png";
     public static final String PUSH_ONWARD = "cards/overload.png";
     public static final String SHARPEN = "cards/disperse.png";
@@ -147,9 +147,9 @@ public class Fudgesickle implements PostInitializeSubscriber,
     public static final String ZEALOUS_AMBITION = "cards/genesis.png";
     public static final String BLINDING_LIGHT = "cards/prismatic_sphere.png";
     public static final String MINOR_HEALING = "cards/flux.png";
+public static final String HOLY_LIGHT = "cards/void_shackles.png";
 
 
-    public static final String HOLY_LIGHT = "cards/void_shackles.png";
     public static final String VORTEX = "cards/vortex.png";
     public static final String ZENITH = "cards/zenith.png";
     public static final String PHASE_COIL = "cards/phase_coil.png";

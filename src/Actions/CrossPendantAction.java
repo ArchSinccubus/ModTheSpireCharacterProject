@@ -27,7 +27,6 @@ public class CrossPendantAction extends AbstractGameAction {
             if (!this.retrieveCard) {
                 if (AbstractDungeon.cardRewardScreen.codexCard != null) {
                     AbstractCard codexCard = AbstractDungeon.cardRewardScreen.codexCard.makeStatEquivalentCopy();
-                    codexCard = new Tantrum();
                     AbstractCard c = codexCard.makeStatEquivalentCopy();
                     c.current_x = -1000.0F * Settings.scale;
                     if (c.type != AbstractCard.CardType.POWER) {
