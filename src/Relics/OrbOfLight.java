@@ -2,6 +2,7 @@ package Relics;
 
 import Actions.CrossPendantAction;
 import MainMod.*;
+import Powers.SpiritPower;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -18,20 +19,19 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class CrossPendant extends CustomRelic {
-    public  static final String ID = "Cross Pendant";
+public class OrbOfLight extends CustomRelic {
+    public  static final String ID = "Orb Of Light";
     public static final RelicStrings STRINGS = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String[] DESCRIPTIONS = STRINGS.DESCRIPTIONS;
     private static final int StrengthAmount = 1;
-    public AbstractCard chosenCard;
 
     private static final String texturePath = "Relics/CrossPendantPic.png";
 
     public static final Logger logger = LogManager.getLogger(DivineWrath.class.getName());
 
 
-    public CrossPendant() {
-        super(ID, Fudgesickle.getTex(texturePath), RelicTier.STARTER, LandingSound.MAGICAL);
+    public OrbOfLight() {
+        super(ID, Fudgesickle.getTex(texturePath), RelicTier.COMMON, LandingSound.MAGICAL);
         logger.info("initialized");
     }
 
@@ -49,14 +49,13 @@ public class CrossPendant extends CustomRelic {
 
     @Override
     public AbstractRelic makeCopy() {
-        return new CrossPendant();
+        return new OrbOfLight();
     }
 
     @Override
     public void atBattleStart() {
         this.flash();
-        AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-        AbstractDungeon.actionManager.addToBottom(new CrossPendantAction());
+        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new SpiritPower(AbstractDungeon.player, 1), 1));
+        AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
     }
 }
-

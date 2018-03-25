@@ -2,8 +2,8 @@ package Cards.Uncommon.Attack;
 import Actions.SmiteAction;
 import MainMod.*;
 import Patches.AbstractCardEnum;
-import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -12,51 +12,47 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.vfx.combat.LightningEffect;
 
-public class FuriousSmite extends CustomCard
+public class MercilessSmite extends CustomCard
 {
-    public static final String ID = "FuriousSmite";
-    public static final String NAME = "Furious Smite";
+    public static final String ID = "MercilessSmite";
+    public static final String NAME = "Merciless Smite";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Attacks/comet.png";
-    private static final int COST = 1;
+    private static final int COST = 2;
     private static final int POOL = 1;
+    private static final int ATTACK_DMG = 8;
     private static final CardRarity rarity = CardRarity.UNCOMMON;
     private static final CardTarget target = CardTarget.ENEMY;
     private static final CardType type = CardType.ATTACK;
-    private static final int DAMAGE = 15;
-    private static final int HP_LOSS = 6;
     private int extraDamage;
 
-    public FuriousSmite() {
-        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.FURIOUS_SMITE), COST, CARD_STRINGS.DESCRIPTION,
+    public MercilessSmite() {
+        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.MERCILESS_SMITE), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
-        this.baseDamage = this.damage = DAMAGE;
-        this.baseMagicNumber = this.magicNumber = HP_LOSS;
+        this.baseMagicNumber = this.magicNumber = ATTACK_DMG;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-
-        extraDamage = this.damage / 2;
+        extraDamage = this.baseDamage / 2;
         if (this.upgraded)
         {
             extraDamage *= 2;
         }
-
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(m,
+        AbstractDungeon.actionManager.addToBottom(new VFXAction(new LightningEffect(m.drawX, m.drawY), 0.05F));
+        AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DamageAction(m,
                 new DamageInfo(p, this.damage, this.damageTypeForTurn),
-                AbstractGameAction.AttackEffect.FIRE));
+                AbstractGameAction.AttackEffect.NONE));
         AbstractDungeon.actionManager.addToBottom(new SmiteAction(m, new DamageInfo(p, extraDamage, this.damageTypeForTurn)));
-
-        AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p ,p, this.magicNumber));
-
-        }
+    }
 
     @Override
     public void applyPowers() {
+        this.baseDamage = countSmiteInHand() * this.magicNumber;
         extraDamage = this.baseDamage / 2;
         if (this.upgraded)
         {
@@ -67,9 +63,9 @@ public class FuriousSmite extends CustomCard
     }
 
     private void setDescription(boolean addExtended) {
-        //this.rawDescription = CARD_STRINGS.DESCRIPTION;
+        this.rawDescription = CARD_STRINGS.EXTENDED_DESCRIPTION[0].replace("FFF" , "" + this.baseMagicNumber / 2);
         if (addExtended) {
-            this.rawDescription = CARD_STRINGS.EXTENDED_DESCRIPTION[0].replace("!F!" , "" + extraDamage);
+            this.rawDescription += CARD_STRINGS.EXTENDED_DESCRIPTION[1].replace("RRR" , "" + extraDamage);
         }
         if (this.exhaustOnUseOnce && !this.exhaust)
             this.rawDescription += " NL Exhaust.";
@@ -78,7 +74,7 @@ public class FuriousSmite extends CustomCard
 
     @Override
     public AbstractCard makeCopy() {
-        return new FuriousSmite();
+        return new MercilessSmite();
     }
 
     @Override
@@ -88,5 +84,19 @@ public class FuriousSmite extends CustomCard
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }
+
+    }
+
+
+    public static int countSmiteInHand() {
+        int etherealCount = 0;
+        for (AbstractCard c : AbstractDungeon.player.hand.group) {
+            if (!c.name.contains("Smit"))
+                continue;
+            etherealCount++;
+        }
+        return etherealCount;
     }
 }
+
+

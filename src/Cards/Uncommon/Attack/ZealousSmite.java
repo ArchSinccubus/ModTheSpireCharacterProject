@@ -46,7 +46,7 @@ public class ZealousSmite extends CustomCard
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
         AbstractDungeon.actionManager.addToBottom(new SmiteAction(m, new DamageInfo(p, extraDamage, this.damageTypeForTurn)));
 
-        if (m.hasPower("Frail")) {
+        if (m.hasPower("Wavering")) {
             AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p,1 ));
             AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(1));
         }

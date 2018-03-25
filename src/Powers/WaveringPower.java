@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -58,8 +59,13 @@ public class WaveringPower extends AbstractPower {
             if (this.amount == 0) {
                 AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, "Wavering"));
             } else {
+                int damage = 3;
+                if (this.owner.isPlayer && AbstractDungeon.player.hasRelic("CrumpledPaper")) {
+                    damage= 6;
+                }
+
                 AbstractDungeon.actionManager.addToBottom(new DamageAction(this.owner,
-                        new DamageInfo(AbstractDungeon.player, 3, DamageInfo.DamageType.HP_LOSS),
+                        new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.HP_LOSS),
                         AbstractGameAction.AttackEffect.BLUNT_LIGHT));
                 AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, "Wavering", 1));
             }
@@ -69,10 +75,14 @@ public class WaveringPower extends AbstractPower {
 
     @Override
     public void updateDescription() {
+        int damage = 3;
+        if (this.owner.isPlayer && AbstractDungeon.player.hasRelic("CrumpledPaper")) {
+            damage= 6;
+        }
         if (this.amount == 1) {
-            this.description = "At the start of the next turn, this monster is dealt 3 damage.";
+            this.description = "At the start of the next turn, this monster is dealt "+damage+" damage.";
         } else {
-            this.description = "At the start of the next " + this.amount + " turns, this monster is dealt 3 damage.";
+            this.description = "At the start of the next " + this.amount + " turns, this monster is dealt "+damage+" damage.";
         }
 
     }

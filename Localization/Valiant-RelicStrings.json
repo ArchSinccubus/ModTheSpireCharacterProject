@@ -31,6 +31,14 @@
 		]
 	}
 ,
+	"Weakening Incase": {
+		"NAME": "Weakening Incase",
+		"FLAVOR": "An incase containing salts and herbs designed to sow fear in those who smell it.",
+		"DESCRIPTIONS": [
+			"At the start of each combat, all enemies gain 1 Wavering."
+		]
+	}
+,
 	"Crumpled Paper": {
 		"NAME": "Crumpled Paper",
 		"FLAVOR": "Just a trashed piece of paper and totally not a failed attempt at a paper dragon.",
@@ -53,5 +61,23 @@
 		"DESCRIPTIONS": [
 			"Whenever you play the first 3 or more cost card for your turn, add a random 1 or 0 cost card. It costs 0 this turn."
 		]
+	},
+	"Crown of Thorns": {
+		"NAME": "Crown of Thorns",
+		"FLAVOR": "A crown shaped thorn vine. Wearing it fills one with both divine protection and untold pain.",
+		"DESCRIPTIONS": [
+			"For every 3 #yLife #yLoss card in your deck, start each combat with #b",
+			" additional #yDexterity.",
+			" You have no #yLife #yLoss cards.",
+			" You have #g",
+			" #yLife #yLoss cards."
+		]
 	}
+,	"Blade of Legends": {
+	"NAME": "Blade of Legends",
+	"FLAVOR": "A blade etched with runes describing each hero that weirded it in the past and the price they paid to take it.",
+	"DESCRIPTIONS": [
+		"Gain [R] at the start of each turn. Whenever you play a Rare card, exhaust it."
+	]
+}
 }

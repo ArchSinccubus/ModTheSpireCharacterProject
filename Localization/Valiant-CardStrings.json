@@ -166,7 +166,7 @@
   },
   "Execution": {
     "NAME": "Execution",
-    "DESCRIPTION": "Remove an enemy's Wavering and deal that much damage to them."
+    "DESCRIPTION": "Remove an enemy's Wavering and deal 3 times that much damage to them."
   },
   "Tantrum": {
   "NAME": "Tantrum",

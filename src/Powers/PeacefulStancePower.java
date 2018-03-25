@@ -50,13 +50,13 @@ public class PeacefulStancePower extends AbstractPower {
     }
 
     public int onAttacked(DamageInfo info, int damageAmount) {
-            return (int)(damageAmount * 0.25F);
+            return (int)(damageAmount * 0.75F);
 
     }
 
     static {
         DESCRIPTIONS = new String[] {
-                "You take 25% damage and give 50% less damage."
+                "You take 25% less damage and give 50% less damage."
         };
         NAME = "Peaceful Stance";
     }

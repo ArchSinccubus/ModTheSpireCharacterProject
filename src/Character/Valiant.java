@@ -1,6 +1,7 @@
 package Character;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 import Patches.CharacterEnum;
 import basemod.BaseMod;
@@ -92,6 +93,15 @@ public class Valiant extends CustomPlayer{
         retVal.add("BlindingLight");
         retVal.add("MinorHealing");
         return retVal;
+    }
+
+    @Override
+    public void addPower(AbstractPower powerToApply) {
+        if (hasRelic("Winged Necklace") && powerToApply.ID == "Frail")
+            getRelic("Winged Necklace").flash();
+        else
+            super.addPower(powerToApply);
+
     }
 
     // ADD RELICS
