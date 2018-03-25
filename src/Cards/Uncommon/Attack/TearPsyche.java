@@ -24,8 +24,8 @@ public class TearPsyche extends CustomCard
     private static final CardRarity rarity = CardRarity.UNCOMMON;
     private static final CardTarget target = CardTarget.ENEMY;
     private static final CardType type = CardType.ATTACK;
-    private static final int DAMAGE = 30;
-    private static final int DAMAGE_UPGRADE = 12;
+    private static final int DAMAGE = 35;
+    private static final int DAMAGE_UPGRADE = 15;
     private static final int PERCENT = 15;
 
     public TearPsyche() {

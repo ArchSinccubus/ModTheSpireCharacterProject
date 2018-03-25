@@ -46,7 +46,7 @@ public class AtAllCosts extends CustomCard
     {
 
         AbstractDungeon.actionManager.addToBottom(new AddCardToHandAtion(1 , upgraded));
-        AbstractCard c = returnTrulyRandomCurse(CardType.CURSE, AbstractDungeon.cardRandomRng).makeCopy();
+        //AbstractCard c = returnTrulyRandomCurse(CardType.CURSE, AbstractDungeon.cardRandomRng).makeCopy();
         //AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(c, true));
         //AbstractDungeon.effectsQueue.add(/*EL:126*/new FastCardObtainEffect(c, c.current_x, c.current_y));;
 

@@ -54,6 +54,8 @@ public class ItsSmitingTime extends CustomCard
         if (addExtended) {
             this.rawDescription += CARD_STRINGS.EXTENDED_DESCRIPTION[0];
         }
+        if (this.exhaustOnUseOnce && !this.exhaust)
+            this.rawDescription += " NL Exhaust.";
         this.initializeDescription();
     }
 

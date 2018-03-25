@@ -67,6 +67,8 @@ public class MercilessSmite extends CustomCard
         if (addExtended) {
             this.rawDescription += CARD_STRINGS.EXTENDED_DESCRIPTION[1].replace("RRR" , "" + extraDamage);
         }
+        if (this.exhaustOnUseOnce && !this.exhaust)
+            this.rawDescription += " NL Exhaust.";
         this.initializeDescription();
     }
 

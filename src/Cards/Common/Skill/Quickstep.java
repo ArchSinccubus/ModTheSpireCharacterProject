@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 
 public class Quickstep extends CustomCard
@@ -37,6 +38,23 @@ public class Quickstep extends CustomCard
     public void use(AbstractPlayer p, AbstractMonster m)
     {
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
+    }
+
+    @Override
+    public void applyPowers()
+    {
+        super.applyPowers();
+        this.setDescription(false);
+    }
+
+    private void setDescription(boolean addExtended) {
+        this.rawDescription = CARD_STRINGS.DESCRIPTION;
+        if (addExtended) {
+            this.rawDescription += CARD_STRINGS.EXTENDED_DESCRIPTION[0];
+        }
+        if (this.exhaustOnUseOnce && !this.exhaust)
+            this.rawDescription += " NL Exhaust.";
+        this.initializeDescription();
     }
 
     @Override

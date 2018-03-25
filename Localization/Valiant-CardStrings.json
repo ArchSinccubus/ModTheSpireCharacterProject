@@ -170,7 +170,7 @@
   },
   "Tantrum": {
   "NAME": "Tantrum",
-  "DESCRIPTION": "Deal damage to ALL enemies equal to the amount of times you lost HP this turn times !M!.",
+  "DESCRIPTION": "For each time you lost life during your turn, deal !M! to ALL enemies.",
     "EXTENDED_DESCRIPTION": [
       " (You will deal !D! Damage)"
     ]

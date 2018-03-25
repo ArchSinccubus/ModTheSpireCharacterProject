@@ -46,11 +46,6 @@ public class EmpoweringForce extends CustomCard{
         AbstractDungeon.actionManager.addToBottom(new EmpoweringForceAction(this.upgraded));
     }
 
-    private void UpgradeAction(boolean updraded)
-    {
-
-    }
-
     @Override
     public AbstractCard makeCopy() {
         return new EmpoweringForce();

@@ -73,6 +73,10 @@ public class FinalGambit extends CustomCard
         if (addExtended) {
             this.rawDescription += CARD_STRINGS.EXTENDED_DESCRIPTION[0];
         }
+        if(exhaustOnUseOnce && !exhaust)
+        {
+            this.rawDescription = this.rawDescription + "Exhaust. NL";
+        }
         this.initializeDescription();
     }
 

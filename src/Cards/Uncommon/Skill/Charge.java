@@ -12,6 +12,8 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.powers.WeakPower;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Charge extends CustomCard
 {
@@ -19,20 +21,22 @@ public class Charge extends CustomCard
     public static final String NAME = "Charge";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Skills/corona.png";
-    private static final int COST = 1;
+    private static final int COST = 0;
     private static final int POOL = 1;
     private static final CardRarity rarity = CardRarity.UNCOMMON;
     private static final CardTarget target = CardTarget.SELF;
     private static final CardType type = CardType.SKILL;
-    private static final int HP_LOSS = 7;
+    private static final int HP_LOSS = 5;
     private static final int HP_LOSS_UPGRADE = -1;
 
+    public static final Logger logger = LogManager.getLogger(Fudgesickle.class.getName());
 
     public Charge() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.CHARGE), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.baseMagicNumber = this.magicNumber = HP_LOSS;
+        this.exhaust = true;
     }
 
     @Override
@@ -48,11 +52,32 @@ public class Charge extends CustomCard
     }
 
     @Override
+    public void applyPowers()
+    {
+        super.applyPowers();
+        this.setDescription(false);
+    }
+
+    private void setDescription(boolean addExtended) {
+        this.rawDescription = CARD_STRINGS.DESCRIPTION;
+        if (addExtended) {
+            this.rawDescription += CARD_STRINGS.EXTENDED_DESCRIPTION[0];
+        }
+        if (this.exhaustOnUseOnce && !this.exhaust)
+            this.rawDescription += " NL Exhaust.";
+        this.initializeDescription();
+    }
+
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(HP_LOSS_UPGRADE);
-            this.upgradeBaseCost(0);
+            logger.info("THIS FUCKING SHIT:" + this.exhaustOnUseOnce + " " + this.exhaust);
+            if (!exhaustOnUseOnce)
+            this.exhaust = false;
+            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
+            this.initializeDescription();
+            //this.upgradeBaseCost(0);
         }
 
     }

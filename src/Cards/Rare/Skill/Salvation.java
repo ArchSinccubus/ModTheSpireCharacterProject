@@ -87,6 +87,7 @@ public class Salvation extends CustomCard
         if (addExtended) {
             this.rawDescription += CARD_STRINGS.EXTENDED_DESCRIPTION[0].replace("!F!" , "" + (finalHP + p.amount));
         }
+
         this.initializeDescription();
     }
 

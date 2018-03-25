@@ -88,6 +88,8 @@ public class AuraDischarge extends AbstractCard {
 
     private void setDescription(AbstractPower p , int tmp) {
         this.rawDescription = CARD_STRINGS.DESCRIPTION.replace("!M!" , "" + (tmp + p.amount));
+        if (this.exhaustOnUseOnce && !this.exhaust)
+            this.rawDescription += " NL Exhaust.";
         this.initializeDescription();
     }
 

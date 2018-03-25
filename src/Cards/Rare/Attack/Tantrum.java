@@ -68,6 +68,9 @@ public class Tantrum extends CustomCard
         if (addExtended) {
             this.rawDescription += CARD_STRINGS.EXTENDED_DESCRIPTION[0];
         }
+        logger.info("THIS FUCKING SHIT:" + this.exhaustOnUseOnce + " " + this.exhaust);
+        if (this.exhaustOnUseOnce && !this.exhaust)
+            this.rawDescription += " NL Exhaust.";
         this.initializeDescription();
     }
 
