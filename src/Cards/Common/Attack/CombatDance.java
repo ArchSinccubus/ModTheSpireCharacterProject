@@ -23,8 +23,8 @@ public class CombatDance extends CustomCard
     private static final CardRarity rarity = CardRarity.COMMON;
     private static final CardTarget target = CardTarget.ENEMY;
     private static final CardType type = CardType.ATTACK;
-    private static final int DAMAGE = 7;
-    private static final int UPGRADE_MP = 0;
+    private static final int DAMAGE = 8;
+    private static final int UPGRADE_DAMAGE = 4;
 
     public CombatDance() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.COMBAT_DANCE), COST, CARD_STRINGS.DESCRIPTION,
@@ -52,7 +52,7 @@ public class CombatDance extends CustomCard
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBaseCost(UPGRADE_MP);
+            this.upgradeDamage(UPGRADE_DAMAGE);
         }
     }
 }

@@ -5,12 +5,53 @@
 		"DESCRIPTIONS": [
 			"gain 200 power. Seriously though, this is just a test relic."
 		]
-	},
+	}
+,
 	"Cross Pendant": {
 		"NAME": "Cross Pendant",
 		"FLAVOR": "A simple cross shaped pendant. Praying on it is said to bring good fortunes.",
 		"DESCRIPTIONS": [
-			"At the start of each combat, choose 1 out of 3 random cards to add to your hand. It has Exhaust."
+			"At the start of each combat, choose a card out of three and add it to your hand. It has Exhaust."
+		]
+	}
+,
+	"Orb Of Light": {
+		"NAME": "Orb Of Light",
+		"FLAVOR": "An orb glowing with divinity. Touching it soothes your temper.",
+		"DESCRIPTIONS": [
+			"Start each combat with 1 Spirit."
+		]
+	}
+,
+	"Winged Necklace": {
+		"NAME": "Winged Necklace",
+		"FLAVOR": "A necklace engraved with the visage of wings for self protection from the ailments of a world filled with evil.",
+		"DESCRIPTIONS": [
+			"You can't become Frail."
+		]
+	}
+,
+	"Crumpled Paper": {
+		"NAME": "Crumpled Paper",
+		"FLAVOR": "Just a trashed piece of paper and totally not a failed attempt at a paper dragon.",
+		"DESCRIPTIONS": [
+			"Wavering deals an extra 3 damage at the start of each turn."
+		]
+	}
+,
+	"Huge Egg": {
+		"NAME": "Huge Egg",
+		"FLAVOR": "An egg of unusual size. Eating that made you feel like you can move mountains.",
+		"DESCRIPTIONS": [
+			"Whenever you pick a card that costs 3 or more, upgrade it."
+		]
+	}
+,
+	"Prayer Beads": {
+		"NAME": "Prayer Beads",
+		"FLAVOR": "A chain of beads for prayer. Invoking them invites divinity to interline.",
+		"DESCRIPTIONS": [
+			"Whenever you play the first 3 or more cost card for your turn, add a random 1 or 0 cost card. It costs 0 this turn."
 		]
 	}
 }

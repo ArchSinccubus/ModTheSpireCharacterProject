@@ -3,12 +3,14 @@ package Actions;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.ActionType;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.FlashAtkImgEffect;
+import com.megacrit.cardcrawl.vfx.combat.LightningEffect;
 
 public class SmiteAction extends AbstractGameAction {
     private DamageInfo info;
@@ -19,7 +21,7 @@ public class SmiteAction extends AbstractGameAction {
         this.setValues(target, info);
         this.m = target;
         this.actionType = ActionType.DAMAGE;
-        this.attackEffect = AttackEffect.FIRE;
+        this.attackEffect = AttackEffect.NONE;
         this.duration = 0.01F;
     }
 
@@ -33,7 +35,7 @@ public class SmiteAction extends AbstractGameAction {
                         this.isDone = true;
                         return;
                     }
-
+                    AbstractDungeon.actionManager.addToBottom(new VFXAction(new LightningEffect(m.drawX, m.drawY), 0.05F));
                     AbstractDungeon.effectList.add(new FlashAtkImgEffect(this.target.hb.cX, this.target.hb.cY, this.attackEffect));
                 }
 

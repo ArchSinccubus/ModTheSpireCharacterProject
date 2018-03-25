@@ -11,17 +11,24 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.UIStrings;
+import com.megacrit.cardcrawl.random.Random;
+import com.megacrit.cardcrawl.vfx.SpeechBubble;
+import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
+
+import java.util.ArrayList;
 import java.util.Iterator;
 
 public class AddCardToHandAtion extends AbstractGameAction {
     public static final String[] TEXT;
     private AbstractPlayer p;
+    private boolean upgraded;
 
-    public AddCardToHandAtion(int amount) {
+    public AddCardToHandAtion(int amount, boolean upgraded) {
         this.p = AbstractDungeon.player;
         this.setValues(this.p, AbstractDungeon.player, amount);
         this.actionType = ActionType.CARD_MANIPULATION;
         this.duration = Settings.ACTION_DUR_MED;
+        this.upgraded = upgraded;
     }
 
     public void update() {
@@ -29,11 +36,27 @@ public class AddCardToHandAtion extends AbstractGameAction {
         if (this.duration == Settings.ACTION_DUR_MED) {
             CardGroup tmp = new CardGroup(CardGroupType.UNSPECIFIED);
             Iterator var5 = this.p.drawPile.group.iterator();
+            Iterator var6 = this.p.discardPile.group.iterator();
+            Iterator var7 = this.p.exhaustPile.group.iterator();
+
 
             while(var5.hasNext()) {
                 AbstractCard c = (AbstractCard)var5.next();
-                    tmp.addToRandomSpot(c);
+                    tmp.addToTop(c);
 
+            }
+            if (upgraded)
+            {
+                while(var6.hasNext()) {
+                    AbstractCard c = (AbstractCard)var6.next();
+                    tmp.addToTop(c);
+
+                }
+                while(var7.hasNext()) {
+                    AbstractCard c = (AbstractCard)var7.next();
+                    tmp.addToTop(c);
+
+                }
             }
 
             if (tmp.size() == 0) {
@@ -49,10 +72,25 @@ public class AddCardToHandAtion extends AbstractGameAction {
                     card.setAngle(0.0F);
                     card.drawScale = 0.12F;
                     card.targetDrawScale = 0.75F;
-                    card.current_x = CardGroup.DRAW_PILE_X;
-                    card.current_y = CardGroup.DRAW_PILE_Y;
-                    this.p.drawPile.removeCard(card);
+                    if (this.p.drawPile.contains(card)) {
+                        card.current_x = CardGroup.DRAW_PILE_X;
+                        card.current_y = CardGroup.DRAW_PILE_Y;
+                        this.p.drawPile.removeCard(card);
+                    }
+                    if (this.p.discardPile.contains(card)) {
+                        card.current_x = CardGroup.DISCARD_PILE_X;
+                        card.current_y = CardGroup.DISCARD_PILE_Y;
+                        this.p.discardPile.removeCard(card);
+                    }
+                    if (this.p.exhaustPile.contains(card)) {
+                        card.current_x = CardGroup.DISCARD_PILE_X;
+                        card.current_y = CardGroup.DISCARD_PILE_Y;
+                        this.p.exhaustPile.removeCard(card);
+                    }
                     AbstractDungeon.player.hand.addToTop(card);
+                    AbstractDungeon.effectList.add(new SpeechBubble(p.dialogX, p.dialogY, 3.0F, "#r@THE@ #r@PRICE@ #r@IS@ #r@PAID@", true));
+                    AbstractCard THEPRICEISPAID = returnTrulyRandomCurse(CardType.CURSE , AbstractDungeon.cardRandomRng);
+                    AbstractDungeon.effectList.add(/*EL:199*/new ShowCardAndObtainEffect(THEPRICEISPAID.makeCopy(), Settings.WIDTH / 1.5f, Settings.HEIGHT / 2.0f));
                     AbstractDungeon.player.hand.refreshHandLayout();
                     AbstractDungeon.player.hand.applyPowers();
                 }
@@ -73,9 +111,18 @@ public class AddCardToHandAtion extends AbstractGameAction {
                         this.p.drawPile.moveToDiscardPile(card);
                         this.p.createHandIsFullDialog();
                     } else {
-                        this.p.drawPile.removeCard(card);
+                        //this.p.drawPile.removeCard(card);
+                        if (this.p.drawPile.contains(card))
+                            this.p.drawPile.removeCard(card);
+                        if (this.p.discardPile.contains(card))
+                            this.p.discardPile.removeCard(card);
+                        if (this.p.exhaustPile.contains(card))
+                            this.p.exhaustPile.removeCard(card);
                         this.p.hand.addToTop(card);
                     }
+                    AbstractDungeon.effectList.add(new SpeechBubble(p.dialogX, p.dialogY, 3.0F, "#r@THE@ #r@PRICE@ #r@IS@ #r@PAID@", true));
+                    AbstractCard THEPRICEISPAID = returnTrulyRandomCurse(CardType.CURSE , AbstractDungeon.cardRandomRng);
+                    AbstractDungeon.effectList.add(/*EL:199*/new ShowCardAndObtainEffect(THEPRICEISPAID.makeCopy(), Settings.WIDTH / 1.5f, Settings.HEIGHT / 2.0f));
 
                     this.p.hand.refreshHandLayout();
                     this.p.hand.applyPowers();
@@ -87,11 +134,28 @@ public class AddCardToHandAtion extends AbstractGameAction {
 
             this.tickDuration();
         }
+
+
+    }
+
+    public static AbstractCard returnTrulyRandomCurse(CardType type, Random rng) {
+        ArrayList<AbstractCard> list = new ArrayList();
+        Iterator var3 = AbstractDungeon.srcCurseCardPool.group.iterator();
+
+        AbstractCard c;
+        while(var3.hasNext()) {
+            c = (AbstractCard)var3.next();
+            if (c.type == type) {
+                list.add(c);
+            }
+        }
+
+        return (AbstractCard)list.get(rng.random(list.size() - 1));
     }
 
     static {
         String[] TEXTS = new String[1];
-        TEXTS[0] = "Choose a Skill to Add to Your Hand";
+        TEXTS[0] = "Choose a card to Add to Your Hand...";
         TEXT = TEXTS;
     }
 }

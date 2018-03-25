@@ -364,8 +364,8 @@
   }
 , "AtAllCosts": {
   "NAME": "At All Costs",
-  "DESCRIPTION": "Choose and add a card from your Draw Pile to your hand. Add a random Curse to your hand. Exhaust.",
-  "UPGRADE_DESCRIPTION": "Innate. NL Choose and add a card from your Draw Pile to your hand. Add a random Curse to your hand. Exhaust."
+  "DESCRIPTION": "Choose and add a card from your Draw Pile to your hand. Add a random Curse to your deck PERMANENTLY. Exhaust.",
+  "UPGRADE_DESCRIPTION": "Choose and add a card from ANY Pile to your hand. Add a random Curse to your deck PERMANENTLY. Exhaust."
 },
   "TempoMaster": {
     "NAME": "Tempo Master",

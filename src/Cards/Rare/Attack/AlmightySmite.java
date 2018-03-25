@@ -2,6 +2,7 @@ package Cards.Rare.Attack;
 import Actions.SmiteAction;
 import MainMod.*;
 import Patches.AbstractCardEnum;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -12,6 +13,10 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.vfx.combat.LightningEffect;
+
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class AlmightySmite extends CustomCard
 {
@@ -41,7 +46,17 @@ public class AlmightySmite extends CustomCard
         {
             extraDamage *= 2;
         }
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+        Random rand = new Random();
+        int xRand = ThreadLocalRandom.current().nextInt(-20, 21);
+        int yRand = ThreadLocalRandom.current().nextInt(-20, 21);
+        AbstractDungeon.actionManager.addToBottom(new VFXAction(new LightningEffect(m.drawX + xRand, m.drawY + yRand), 0.5F));
+        xRand = ThreadLocalRandom.current().nextInt(-20, 21);
+        yRand = ThreadLocalRandom.current().nextInt(-20, 21);
+        AbstractDungeon.actionManager.addToBottom(new VFXAction(new LightningEffect(m.drawX + xRand, m.drawY + yRand), 0.5F));
+        xRand = ThreadLocalRandom.current().nextInt(-20, 21);
+        yRand = ThreadLocalRandom.current().nextInt(-20, 21);
+        AbstractDungeon.actionManager.addToBottom(new VFXAction(new LightningEffect(m.drawX + xRand, m.drawY + yRand), 0.5F));
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
         AbstractDungeon.actionManager.addToBottom(new SmiteAction(m, new DamageInfo(p, extraDamage, this.damageTypeForTurn)));
 
 

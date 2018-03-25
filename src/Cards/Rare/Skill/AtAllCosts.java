@@ -7,11 +7,14 @@ import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.random.Random;
+import com.megacrit.cardcrawl.vfx.FastCardObtainEffect;
+import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -19,10 +22,10 @@ import java.util.Iterator;
 public class AtAllCosts extends CustomCard
 {
     public static final String ID = "AtAllCosts";
-    public static final String NAME = "AtAllCosts";
+    public static final String NAME = "At All Costs";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG_PATH = "Cards/Skills/corona.png";
-    private static final int COST = 1;
+    public static final String IMG_PATH = "Cards_other/Skills/corona.png";
+    private static final int COST = 0;
     private static final int POOL = 1;
     private static final CardRarity rarity = CardRarity.RARE;
     private static final CardTarget target = CardTarget.SELF;
@@ -37,12 +40,16 @@ public class AtAllCosts extends CustomCard
         this.exhaust = true;
     }
 
+
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        AbstractDungeon.actionManager.addToBottom(new AddCardToHandAtion(1));
+
+        AbstractDungeon.actionManager.addToBottom(new AddCardToHandAtion(1 , upgraded));
         AbstractCard c = returnTrulyRandomCurse(CardType.CURSE, AbstractDungeon.cardRandomRng).makeCopy();
-        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(c, true));
+        //AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(c, true));
+        //AbstractDungeon.effectsQueue.add(/*EL:126*/new FastCardObtainEffect(c, c.current_x, c.current_y));;
+
     }
 
     public static AbstractCard returnTrulyRandomCurse(CardType type, Random rng) {
@@ -67,14 +74,21 @@ public class AtAllCosts extends CustomCard
             return false;
         } else {
             boolean hasCard = false;
-            Iterator var5 = p.drawPile.group.iterator();
 
-            while(var5.hasNext()) {
+            int toatl = p.drawPile.size();
+            if (upgraded)
+            {
+                toatl += p.discardPile.size();
+                toatl += p.exhaustPile.size();
+            }
+
+            if (toatl > 0)
+            {
                 hasCard = true;
             }
 
             if (!hasCard) {
-                this.cantUseMessage = "I don't have any cards in my draw pile!...";
+                this.cantUseMessage = (!this.upgraded) ? "I don't have any cards in my draw pile!..." : "I don't have any cards in any pile!...";
                 canUse = false;
             }
 

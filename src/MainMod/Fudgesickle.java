@@ -21,6 +21,7 @@ import Patches.CharacterEnum;
 import basemod.BaseMod;
 
 import basemod.ModPanel;
+import basemod.abstracts.CustomUnlockBundle;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
@@ -34,6 +35,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
 
+import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -44,7 +46,7 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 @SpireInitializer
 public class Fudgesickle implements PostInitializeSubscriber,
         EditCardsSubscriber, EditRelicsSubscriber, EditCharactersSubscriber,
-        EditStringsSubscriber,EditKeywordsSubscriber {
+        EditStringsSubscriber,EditKeywordsSubscriber,SetUnlocksSubscriber {
 
     private static final Color HOLY = CardHelper.getColor(255.0f, 250.0f, 250.0f);
     private static final String ARCHMOD_ASSETS_FOLDER = "resources"; //TODO: Change to your folder if different;
@@ -189,6 +191,10 @@ public static final String HOLY_LIGHT = "cards/void_shackles.png";
 
         logger.info("subscribing to editCards event");
         BaseMod.subscribeToEditCards(this);
+
+        /* Disable this during playtesting for being counterproductive */
+        // logger.info("subscribing to setUnlocks event");
+        // BaseMod.subscribeToSetUnlocks(this);
 
         logger.info("subscribing to editStrings event");
         BaseMod.subscribeToEditStrings(this);
@@ -366,12 +372,39 @@ public static final String HOLY_LIGHT = "cards/void_shackles.png";
     }
 
     @Override
+    public void receiveSetUnlocks() {
+		UnlockTracker.addCard("Charge");
+		UnlockTracker.addCard("Decimate");
+		UnlockTracker.addCard("MercilessSmite");
+		// seeker unlock 1
+		BaseMod.addUnlockBundle(new CustomUnlockBundle(
+				"Charge", "Decimate", "MercilessSmite"
+				), CharacterEnum.TheValiant, 1);
+
+		// seeker unlock 2
+		BaseMod.addUnlockBundle(new CustomUnlockBundle(
+				"TempoMaster", "QuickSiphon", "Zen"
+				), CharacterEnum.TheValiant, 2);
+		UnlockTracker.addCard("TempoMaster");
+		UnlockTracker.addCard("QuickSiphon");
+		UnlockTracker.addCard("Zen");
+
+		// seeker unlock 3 (Vacuum tmp in place of Feedback)
+		BaseMod.addUnlockBundle(new CustomUnlockBundle(
+				"FinalGambit", "AtAllCosts", "Uprising"
+				), CharacterEnum.TheValiant, 3);
+		UnlockTracker.addCard("FinalGambit");
+		UnlockTracker.addCard("AtAllCosts");
+		UnlockTracker.addCard("Nexus");
+    }
+
+    @Override
     public void receiveEditCharacters() {
         logger.info("begin editting characters");
 
         logger.info("add " + CharacterEnum.TheValiant.toString());
-        BaseMod.addCharacter(Valiant.class, "The Valiant", "A nun sent to destroy the heart of evil in the name of The Lord. Wields both holy power and untold fury.",
-                AbstractCardEnum.Holy.toString(), "The Valiant",
+        BaseMod.addCharacter(Valiant.class, "The Zealous", "A nun sent to destroy the heart of evil in the name of The Lord. Wields both holy power and untold fury.",
+                AbstractCardEnum.Holy.toString(), "The Zealous",
                 makePath(VALIANT_BUTTON) , makePath(VALIANT_POTRAIT),
                 CharacterEnum.TheValiant.toString());
 
@@ -393,11 +426,20 @@ public static final String HOLY_LIGHT = "cards/void_shackles.png";
 
         String relicStrings = Gdx.files.internal("Localization/Valiant-RelicStrings.json").readString(
                 String.valueOf(StandardCharsets.UTF_8));
+
+        logger.info("UNO");
+
         BaseMod.loadCustomStrings(RelicStrings.class, relicStrings);
+
+        logger.info("DOS");
         // CardStrings
         String cardStrings = Gdx.files.internal("Localization/Valiant-CardStrings.json").readString(
                 String.valueOf(StandardCharsets.UTF_8));
+
+        logger.info("TRES");
         BaseMod.loadCustomStrings(CardStrings.class, cardStrings);
+
+        logger.info("QUATRO");
 
         logger.info("done editting strings");
     }
