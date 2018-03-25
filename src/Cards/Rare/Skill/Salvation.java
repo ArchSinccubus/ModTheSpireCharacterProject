@@ -53,6 +53,7 @@ public class Salvation extends CustomCard
     public void applyPowers()
     {
         super.applyPowers();
+        setDescription(true);
         applyPowersToHeal();
     }
 
@@ -63,7 +64,7 @@ public class Salvation extends CustomCard
         while(var2.hasNext()) {
             AbstractPower p = (AbstractPower)var2.next();
             if (p.name == "Spirit") {
-                setDescription(p, tmp, true);
+                setDescription(tmp, p, true);
                 foundSpirit = true;
             }
             else
@@ -73,30 +74,30 @@ public class Salvation extends CustomCard
             }
         }
 
-        this.isMagicNumberModified = foundSpirit;
+        //this.isMagicNumberModified = foundSpirit;
 
         if (tmp < 0) {
             tmp = 0;
         }
     }
 
-    private void setDescription(AbstractPower p , int tmp, boolean addExtended) {
-        float percent = (float)(this.magicNumber) / 100;
-        int finalHP = (int)((float)AbstractDungeon.player.maxHealth * percent);
-        this.rawDescription = CARD_STRINGS.DESCRIPTION;
-        if (addExtended) {
-            this.rawDescription += CARD_STRINGS.EXTENDED_DESCRIPTION[0].replace("!F!" , "" + (finalHP + p.amount));
-        }
-
-        this.initializeDescription();
-    }
-
-    private void setDescription(int tmp, boolean addExtended) {
+    private void setDescription(boolean addExtended) {
         float percent = (float)(this.magicNumber) / 100;
         int finalHP = (int)((float)AbstractDungeon.player.maxHealth * percent);
         this.rawDescription = CARD_STRINGS.DESCRIPTION;
         if (addExtended) {
             this.rawDescription += CARD_STRINGS.EXTENDED_DESCRIPTION[0].replace("!F!" , "" + (finalHP));
+        }
+
+        this.initializeDescription();
+    }
+
+    private void setDescription(int tmp, AbstractPower p, boolean addExtended) {
+        float percent = (float)(this.magicNumber) / 100;
+        int finalHP = (int)((float)AbstractDungeon.player.maxHealth * percent);
+        this.rawDescription = CARD_STRINGS.DESCRIPTION.replace("max HP" , "max HP + " + p.amount);
+        if (addExtended) {
+            this.rawDescription += CARD_STRINGS.EXTENDED_DESCRIPTION[0].replace("!F!" , "" + (finalHP + p.amount));
         }
         this.initializeDescription();
     }
