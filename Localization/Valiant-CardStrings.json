@@ -12,7 +12,7 @@
     "DESCRIPTION": "Deal !D! damage. NL If the enemy is Wavering, deal 50% more.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is Wavering, deal twice as much.",
     "EXTENDED_DESCRIPTION": [
-      "Deal !D! damage. NL If the enemy is Wavering, deal !F! more."
+      "Deal !D! damage. If the enemy is Wavering, deal !F! more."
     ]
   },
   "EmpoweringForce": {
@@ -25,7 +25,7 @@
     "DESCRIPTION": "Deal !D! damage. Gain !M! vulnerable. NL If the enemy is Wavering, deal 50% more.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. Gain !M! vulnerable. NL If the enemy is Wavering, deal twice as much.",
     "EXTENDED_DESCRIPTION": [
-      "Deal !D! damage. Gain !M! vulnerable. NL If the enemy is Wavering, deal !F! more."
+      "Deal !D! damage. Gain !M! vulnerable. If the enemy is Wavering, deal !F! more."
     ]
   },
   "MercilessSmite": {
@@ -34,7 +34,7 @@
     "UPGRADE_DESCRIPTION": "Deal !M! damage for each Smite card in your hand. NL If the enemy is Wavering, deal twice as much.",
     "EXTENDED_DESCRIPTION": [
       "Deal !M! damage for each Smite card in your hand. If enemy is Wavering, deal FFF more.",
-      " (You will deal !D! Damage. RRR more if Wavering.)"
+      " NL (You will deal !D! Damage. RRR more if Wavering.)"
     ]
   },
   "Decimate": {
@@ -53,7 +53,7 @@
     "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Each Wavering enemy is dealt 50% more.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. Each Wavering enemy is dealt twice as much.",
     "EXTENDED_DESCRIPTION": [
-      "Deal !D! damage to ALL enemies. NL Each Wavering enemy is dealt !F! more."
+      "Deal !D! damage to ALL enemies. Each Wavering enemy is dealt !F! more."
     ]
   },
   "CombatDance": {
@@ -81,7 +81,7 @@
   "DESCRIPTION": "Deal !D! damage. NL If the enemy is Wavering, deal 50% more, gain [R] and draw a card.",
   "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is Wavering, deal twice as much, gain [R] and draw a card.",
     "EXTENDED_DESCRIPTION": [
-      "Deal !D! damage. NL If the enemy is Wavering, deal !F! more, gain [R] and draw a card."
+      "Deal !D! damage. If the enemy is Wavering, deal !F! more, gain [R] and draw a card."
     ]
 },
   "TearPsyche": {
@@ -114,10 +114,10 @@
   },
   "FuriousSmite": {
     "NAME": "Furious Smite",
-    "DESCRIPTION": "Deal !D! damage. NL Lose !M! HP. NL If the enemy is Wavering, deal 50% more.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Lose !M! HP. NL If the enemy is Wavering, deal twice as much.",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy is Wavering, deal 50% more. NL Lose !M! HP.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is Wavering, deal twice as much. NL Lose !M! HP.",
     "EXTENDED_DESCRIPTION": [
-      "Deal !D! damage. NL. Lose !M! HP. NL If the enemy is Wavering, deal !F! more."
+      "Deal !D! damage. If the enemy is Wavering, deal !F! more. NL Lose !M! HP."
     ]
   },
   "AuraDischarge": {
@@ -138,10 +138,10 @@
   },
   "StrainingSmite": {
     "NAME": "Straining Smite",
-    "DESCRIPTION": "Deal !D! damage. NL If the enemy is Wavering, deal 50% more. NL Add a Burn to your hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is Wavering, deal twice as much. NL Add a Burn to your hand.",
+    "DESCRIPTION": "Deal !D! damage. If the enemy is Wavering, deal 50% more. NL Add a Burn to your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. If the enemy is Wavering, deal twice as much. NL Add a Burn to your hand.",
     "EXTENDED_DESCRIPTION": [
-      "Deal !D! damage. NL If the enemy is Wavering, deal !F! more. NL Add A Burn to your hand."
+      "Deal !D! damage. If the enemy is Wavering, deal !F! more. NL Add A Burn to your hand."
     ]
   },
   "FinalGambit": {
@@ -180,7 +180,7 @@
   "DESCRIPTION": "Deal !D! damage. NL If the enemy is Wavering, deal 50% more.",
   "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is Wavering, deal twice as much.",
     "EXTENDED_DESCRIPTION": [
-      "Deal !D! damage. NL If the enemy is Wavering, deal !F! more."
+      "Deal !D! damage. If the enemy is Wavering, deal !F! more."
     ]
 },
 

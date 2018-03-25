@@ -31,7 +31,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class ArchAngelsFeather extends CustomRelic {
-    public static final String ID = "Archangel's Feather";
+    public static final String ID = "Archangels Feather";
     public static final RelicStrings STRINGS = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String[] DESCRIPTIONS = STRINGS.DESCRIPTIONS;
     private boolean StartOfCombat;
@@ -42,7 +42,7 @@ public class ArchAngelsFeather extends CustomRelic {
 
 
     public ArchAngelsFeather() {
-        super(ID, Fudgesickle.getTex(texturePath), RelicTier.RARE, LandingSound.FLAT);
+        super(ID, Fudgesickle.getTex(texturePath), RelicTier.RARE, LandingSound.MAGICAL);
         logger.info("initialized");
         StartOfCombat = false;
     }
@@ -69,7 +69,14 @@ public class ArchAngelsFeather extends CustomRelic {
 
     @Override
     public void onPlayerEndTurn() {
+        this.pulse = false;
         StartOfCombat = false;
+    }
+
+    public void atPreBattle() {
+        StartOfCombat = true;
+        this.pulse = true;
+        this.beginPulse();
     }
 
     @Override

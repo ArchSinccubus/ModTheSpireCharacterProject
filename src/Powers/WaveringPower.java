@@ -60,7 +60,7 @@ public class WaveringPower extends AbstractPower {
                 AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, "Wavering"));
             } else {
                 int damage = 3;
-                if (this.owner.isPlayer && AbstractDungeon.player.hasRelic("CrumpledPaper")) {
+                if (AbstractDungeon.player.hasRelic("Crumpled Paper")) {
                     damage= 6;
                 }
 
@@ -76,7 +76,7 @@ public class WaveringPower extends AbstractPower {
     @Override
     public void updateDescription() {
         int damage = 3;
-        if (this.owner.isPlayer && AbstractDungeon.player.hasRelic("CrumpledPaper")) {
+        if (AbstractDungeon.player.hasRelic("Crumpled Paper")) {
             damage= 6;
         }
         if (this.amount == 1) {

@@ -97,6 +97,7 @@ public class Valiant extends CustomPlayer{
 
     @Override
     public void addPower(AbstractPower powerToApply) {
+        logger.info(powerToApply.ID + " LOOK AT THIS SHIT SON");
         if (hasRelic("Winged Necklace") && powerToApply.ID == "Frail")
             getRelic("Winged Necklace").flash();
         else

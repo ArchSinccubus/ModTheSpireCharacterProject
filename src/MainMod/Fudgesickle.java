@@ -268,6 +268,17 @@ public static final String HOLY_LIGHT = "cards/void_shackles.png";
 
         // Add relics
         RelicLibrary.add(new CrossPendant());
+        RelicLibrary.add(new WingedNecklace());
+        RelicLibrary.add(new OrbOfLight());
+        RelicLibrary.add(new WeakeningIncense());
+        RelicLibrary.add(new CrumpledPaper());
+        RelicLibrary.add(new HugeEgg());
+        RelicLibrary.add(new PrayerBeads());
+        RelicLibrary.add(new ArchAngelsFeather());
+        RelicLibrary.add(new CrownOfThorns());
+        RelicLibrary.add(new BladeOfLegend());
+
+        //BaseMod.addRelicToCustomPool(new OrbOfLight(), "Holy");
 
         logger.info("done editting relics");
     }
@@ -282,6 +293,7 @@ public static final String HOLY_LIGHT = "cards/void_shackles.png";
         BaseMod.addCard(new Strike_W());
         BaseMod.addCard(new BlindingLight());
         BaseMod.addCard(new MinorHealing());
+
         BaseMod.addCard(new PiercingStab());
         BaseMod.addCard(new EmpoweringForce());
         BaseMod.addCard(new QuickSiphon());
@@ -376,23 +388,39 @@ public static final String HOLY_LIGHT = "cards/void_shackles.png";
 		UnlockTracker.addCard("Charge");
 		UnlockTracker.addCard("Decimate");
 		UnlockTracker.addCard("MercilessSmite");
-		// seeker unlock 1
+		// valiant unlock 1
 		BaseMod.addUnlockBundle(new CustomUnlockBundle(
 				"Charge", "Decimate", "MercilessSmite"
 				), CharacterEnum.TheValiant, 1);
 
-		// seeker unlock 2
+        // valiant unlock 2
+        BaseMod.addUnlockBundle(new CustomUnlockBundle(
+                "Winged Necklace", "Huge Egg", "Crown of Thorns"
+        ), CharacterEnum.TheValiant, 2);
+        UnlockTracker.addRelic("Winged Necklace");
+        UnlockTracker.addRelic("Huge Egg");
+        UnlockTracker.addRelic("Crown of Thorns");
+
+		// valiant unlock 3
 		BaseMod.addUnlockBundle(new CustomUnlockBundle(
 				"TempoMaster", "QuickSiphon", "Zen"
-				), CharacterEnum.TheValiant, 2);
+				), CharacterEnum.TheValiant, 3);
 		UnlockTracker.addCard("TempoMaster");
 		UnlockTracker.addCard("QuickSiphon");
 		UnlockTracker.addCard("Zen");
 
-		// seeker unlock 3 (Vacuum tmp in place of Feedback)
+        // valiant unlock 5
+        BaseMod.addUnlockBundle(new CustomUnlockBundle(
+                "Archangel's Feather", "Blade of Legends", "Prayer Beads"
+        ), CharacterEnum.TheValiant, 4);
+        UnlockTracker.addRelic("Archangel's Feather");
+        UnlockTracker.addRelic("Blade of Legends");
+        UnlockTracker.addRelic("Prayer Beads");
+
+		// valiant unlock 5
 		BaseMod.addUnlockBundle(new CustomUnlockBundle(
 				"FinalGambit", "AtAllCosts", "Uprising"
-				), CharacterEnum.TheValiant, 3);
+				), CharacterEnum.TheValiant, 5);
 		UnlockTracker.addCard("FinalGambit");
 		UnlockTracker.addCard("AtAllCosts");
 		UnlockTracker.addCard("Nexus");

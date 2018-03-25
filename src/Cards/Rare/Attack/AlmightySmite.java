@@ -49,13 +49,13 @@ public class AlmightySmite extends CustomCard
         Random rand = new Random();
         int xRand = ThreadLocalRandom.current().nextInt(-20, 21);
         int yRand = ThreadLocalRandom.current().nextInt(-20, 21);
-        AbstractDungeon.actionManager.addToBottom(new VFXAction(new LightningEffect(m.drawX + xRand, m.drawY + yRand), 0.5F));
+        AbstractDungeon.actionManager.addToBottom(new VFXAction(new LightningEffect(m.drawX + xRand, m.drawY + yRand), 0.2F));
         xRand = ThreadLocalRandom.current().nextInt(-20, 21);
         yRand = ThreadLocalRandom.current().nextInt(-20, 21);
-        AbstractDungeon.actionManager.addToBottom(new VFXAction(new LightningEffect(m.drawX + xRand, m.drawY + yRand), 0.5F));
+        AbstractDungeon.actionManager.addToBottom(new VFXAction(new LightningEffect(m.drawX + xRand, m.drawY + yRand), 0.2F));
         xRand = ThreadLocalRandom.current().nextInt(-20, 21);
         yRand = ThreadLocalRandom.current().nextInt(-20, 21);
-        AbstractDungeon.actionManager.addToBottom(new VFXAction(new LightningEffect(m.drawX + xRand, m.drawY + yRand), 0.5F));
+        AbstractDungeon.actionManager.addToBottom(new VFXAction(new LightningEffect(m.drawX + xRand, m.drawY + yRand), 0.2F));
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
         AbstractDungeon.actionManager.addToBottom(new SmiteAction(m, new DamageInfo(p, extraDamage, this.damageTypeForTurn)));
 

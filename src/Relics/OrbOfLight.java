@@ -23,7 +23,6 @@ public class OrbOfLight extends CustomRelic {
     public  static final String ID = "Orb Of Light";
     public static final RelicStrings STRINGS = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String[] DESCRIPTIONS = STRINGS.DESCRIPTIONS;
-    private static final int StrengthAmount = 1;
 
     private static final String texturePath = "Relics/CrossPendantPic.png";
 

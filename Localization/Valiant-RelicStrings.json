@@ -27,13 +27,13 @@
 		"NAME": "Winged Necklace",
 		"FLAVOR": "A necklace engraved with the visage of wings for self protection from the ailments of a world filled with evil.",
 		"DESCRIPTIONS": [
-			"You can't become Frail."
+			"The first time you gain block each turn, gain 2 more."
 		]
 	}
 ,
-	"Weakening Incase": {
-		"NAME": "Weakening Incase",
-		"FLAVOR": "An incase containing salts and herbs designed to sow fear in those who smell it.",
+	"Weakening Incense": {
+		"NAME": "Weakening Incense",
+		"FLAVOR": "An Incense containing salts and herbs designed to sow fear in those who smell it.",
 		"DESCRIPTIONS": [
 			"At the start of each combat, all enemies gain 1 Wavering."
 		]
@@ -62,8 +62,8 @@
 			"Whenever you play the first 3 or more cost card for your turn, add a random 1 or 0 cost card. It costs 0 this turn."
 		]
 	},
-	"Crown of Thorns": {
-		"NAME": "Crown of Thorns",
+	"Crown Of Thorns": {
+		"NAME": "Crown Of Thorns",
 		"FLAVOR": "A crown shaped thorn vine. Wearing it fills one with both divine protection and untold pain.",
 		"DESCRIPTIONS": [
 			"For every 3 #yLife #yLoss card in your deck, start each combat with #b",
@@ -72,10 +72,17 @@
 			" You have #g",
 			" #yLife #yLoss cards."
 		]
+	},
+	"Archangels Feather": {
+		"NAME": "Archangel's Feather",
+		"FLAVOR": "The feather of a high ranking angel. Holding onto it fills one with life energy and vigor",
+		"DESCRIPTIONS": [
+			"On the first turn of each combat, whenever you play a card, heal 2 HP."
+		]
 	}
-,	"Blade of Legends": {
-	"NAME": "Blade of Legends",
-	"FLAVOR": "A blade etched with runes describing each hero that weirded it in the past and the price they paid to take it.",
+,	"Blade Of Legend": {
+	"NAME": "Blade Of Legend",
+	"FLAVOR": "A blade etched with runes describing each hero that wielded it... and the price they paid.",
 	"DESCRIPTIONS": [
 		"Gain [R] at the start of each turn. Whenever you play a Rare card, exhaust it."
 	]

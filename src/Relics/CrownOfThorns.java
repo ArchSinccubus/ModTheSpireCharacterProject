@@ -32,7 +32,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class CrownOfThorns extends CustomRelic {
-    public static final String ID = "Crumpled Paper";
+    public static final String ID = "Crown Of Thorns";
     public static final RelicStrings STRINGS = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String[] DESCRIPTIONS = STRINGS.DESCRIPTIONS;
     private int AMT;
@@ -52,7 +52,7 @@ public class CrownOfThorns extends CustomRelic {
         if (this.counter == 0) {
             this.description = this.DESCRIPTIONS[0] + 1 + this.DESCRIPTIONS[1] + this.DESCRIPTIONS[2];
         } else {
-            this.description = this.DESCRIPTIONS[0] + 1 + this.DESCRIPTIONS[1] + this.DESCRIPTIONS[3] + this.counter + this.DESCRIPTIONS[4];
+            this.description = this.DESCRIPTIONS[0] + 1 + this.DESCRIPTIONS[1] + this.DESCRIPTIONS[3].replace("#g" , "" + AMT) + this.counter + this.DESCRIPTIONS[4];
         }
 
         this.tips.clear();
@@ -63,20 +63,28 @@ public class CrownOfThorns extends CustomRelic {
     public void onMasterDeckChange() {
         this.counter = 0;
         Iterator var1 = AbstractDungeon.player.masterDeck.group.iterator();
-
+        AMT = 0;
         while(var1.hasNext()) {
             AbstractCard c = (AbstractCard)var1.next();
             if (IsLifeLossCard(c)) {
                 ++this.AMT;
             }
-            this.counter = AMT / 3;
         }
+        logger.info("AMT: " + AMT);
+        this.counter = AMT / 3;
+        logger.info("COUNTER: " + this.counter);
 
         if (this.counter == 0) {
             this.description = this.DESCRIPTIONS[0] + 1 + this.DESCRIPTIONS[1] + this.DESCRIPTIONS[2];
         } else {
-            this.description = this.DESCRIPTIONS[0] + 1 + this.DESCRIPTIONS[1] + this.DESCRIPTIONS[3].replace("#g" , "" + AMT) + this.counter + this.DESCRIPTIONS[4];
+            this.description = this.DESCRIPTIONS[0] + 1 + this.DESCRIPTIONS[1] + this.DESCRIPTIONS[3].replace("#g" , "" + AMT) + this.DESCRIPTIONS[4];
         }
+
+        logger.info(this.DESCRIPTIONS[0]);
+        logger.info(this.DESCRIPTIONS[1]);
+        logger.info(this.DESCRIPTIONS[2]);
+        logger.info(this.DESCRIPTIONS[3]);
+        logger.info(this.DESCRIPTIONS[4]);
 
         this.tips.clear();
         this.tips.add(new PowerTip(this.name, this.description));
@@ -86,19 +94,19 @@ public class CrownOfThorns extends CustomRelic {
     public void onEquip() {
         this.counter = 0;
         Iterator var1 = AbstractDungeon.player.masterDeck.group.iterator();
-
+        AMT = 0;
         while(var1.hasNext()) {
             AbstractCard c = (AbstractCard)var1.next();
             if (IsLifeLossCard(c)) {
                 ++this.AMT;
             }
-            this.counter = AMT / 3;
         }
+        this.counter = AMT / 3;
 
         if (this.counter == 0) {
             this.description = this.DESCRIPTIONS[0] + 1 + this.DESCRIPTIONS[1] + this.DESCRIPTIONS[2];
         } else {
-            this.description = this.DESCRIPTIONS[0] + 1 + this.DESCRIPTIONS[1] + this.DESCRIPTIONS[3].replace("#g" , "" + AMT) + this.counter + this.DESCRIPTIONS[4];
+            this.description = this.DESCRIPTIONS[0] + 1 + this.DESCRIPTIONS[1] + this.DESCRIPTIONS[3].replace("#g" , "" + AMT) + this.DESCRIPTIONS[4];
         }
 
         this.tips.clear();
@@ -117,7 +125,7 @@ public class CrownOfThorns extends CustomRelic {
 
     public boolean IsLifeLossCard (AbstractCard c)
     {
-        //logger.info(c.name + " "+ c.type + " " + c.rawDescription);
+        logger.info(c.name + " "+ c.type + " " + c.rawDescription);
         if (c.name == new DeadlyPlay().name)
             return false;
         if (
@@ -147,6 +155,7 @@ public class CrownOfThorns extends CustomRelic {
     }
 
     public void atTurnStart() {
+
     }
 
 
