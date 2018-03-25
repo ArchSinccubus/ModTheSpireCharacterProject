@@ -20,8 +20,8 @@
       <file leaf-file-name="Smite.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/Smite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="43" column="42" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="43" selection-end-column="42" />
+            <state relative-caret-position="538">
+              <caret line="71" column="87" lean-forward="false" selection-start-line="71" selection-start-column="87" selection-end-line="71" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -30,8 +30,8 @@
       <file leaf-file-name="WideSmite.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/WideSmite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="60" column="42" lean-forward="false" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="42" />
+            <state relative-caret-position="441">
+              <caret line="48" column="91" lean-forward="false" selection-start-line="48" selection-start-column="91" selection-end-line="48" selection-end-column="91" />
               <folding />
             </state>
           </provider>
@@ -40,8 +40,8 @@
       <file leaf-file-name="RecklessSmite.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/RecklessSmite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="45" column="42" lean-forward="false" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
+            <state relative-caret-position="357">
+              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="52" selection-end-column="111" />
               <folding />
             </state>
           </provider>
@@ -50,18 +50,18 @@
       <file leaf-file-name="FuriousSmite.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/FuriousSmite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="44" column="42" lean-forward="false" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
+            <state relative-caret-position="525">
+              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="87" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AlmightySmite.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AlmightySmite.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Cards/Rare/Attack/AlmightySmite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="68" column="42" lean-forward="false" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
+            <state relative-caret-position="504">
+              <caret line="60" column="82" lean-forward="false" selection-start-line="60" selection-start-column="82" selection-end-line="60" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -70,8 +70,8 @@
       <file leaf-file-name="MercilessSmite.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/MercilessSmite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="42" column="42" lean-forward="false" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+            <state relative-caret-position="357">
+              <caret line="48" column="87" lean-forward="false" selection-start-line="48" selection-start-column="87" selection-end-line="48" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -80,19 +80,38 @@
       <file leaf-file-name="StrainingSmite.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/StrainingSmite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="45" column="42" lean-forward="false" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
+            <state relative-caret-position="546">
+              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="52" selection-end-column="111" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZealousSmite.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ZealousSmite.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/ZealousSmite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="58" column="42" lean-forward="false" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
+            <state relative-caret-position="336">
+              <caret line="48" column="106" lean-forward="false" selection-start-line="48" selection-start-column="106" selection-end-line="48" selection-end-column="106" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ThunderClap.class" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa7420.20204/com/megacrit/cardcrawl/cards/red/ThunderClap.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="43" column="2" lean-forward="false" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="87" />
+              <folding>
+                <marker date="1521753310000" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1521753310000" expanded="false" signature="156:1173" ph="..." />
+                <marker date="1521753310000" expanded="true" signature="1603:1854" ph="{...}" />
+                <marker date="1521753310000" expanded="true" signature="1913:2844" ph="{...}" />
+                <marker date="1521753310000" expanded="false" signature="2880:2891" ph=" { " />
+                <marker date="1521753310000" expanded="false" signature="2916:2922" ph=" }" />
+                <marker date="1521753310000" expanded="true" signature="2950:3065" ph="{...}" />
+                <marker date="1521753310000" expanded="true" signature="3078:3245" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -199,10 +218,10 @@
         <option value="$PROJECT_DIR$/src/Cards/Common/Attack/WideSmite.java" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Attack/RecklessSmite.java" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Attack/FuriousSmite.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Rare/Attack/AlmightySmite.java" />
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Attack/MercilessSmite.java" />
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Attack/StrainingSmite.java" />
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Attack/ZealousSmite.java" />
+        <option value="$PROJECT_DIR$/src/Cards/Rare/Attack/AlmightySmite.java" />
       </list>
     </option>
   </component>
@@ -619,14 +638,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa7420.39274/com/megacrit/cardcrawl/relics/MoltenEgg.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa7420.40277/com/megacrit/cardcrawl/relics/MoltenEgg2.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1572,66 +1583,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa7420.20204/com/megacrit/cardcrawl/cards/red/ThunderClap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="43" column="2" lean-forward="false" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="87" />
+          <folding>
+            <marker date="1521753310000" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1521753310000" expanded="false" signature="156:1173" ph="..." />
+            <marker date="1521753310000" expanded="true" signature="1603:1854" ph="{...}" />
+            <marker date="1521753310000" expanded="true" signature="1913:2844" ph="{...}" />
+            <marker date="1521753310000" expanded="false" signature="2880:2891" ph=" { " />
+            <marker date="1521753310000" expanded="false" signature="2916:2922" ph=" }" />
+            <marker date="1521753310000" expanded="true" signature="2950:3065" ph="{...}" />
+            <marker date="1521753310000" expanded="true" signature="3078:3245" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/Smite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="43" column="42" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="43" selection-end-column="42" />
+        <state relative-caret-position="538">
+          <caret line="71" column="87" lean-forward="false" selection-start-line="71" selection-start-column="87" selection-end-line="71" selection-end-column="87" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/WideSmite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="60" column="42" lean-forward="false" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="42" />
+        <state relative-caret-position="441">
+          <caret line="48" column="91" lean-forward="false" selection-start-line="48" selection-start-column="91" selection-end-line="48" selection-end-column="91" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/RecklessSmite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="45" column="42" lean-forward="false" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
+        <state relative-caret-position="357">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="52" selection-end-column="111" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/FuriousSmite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="44" column="42" lean-forward="false" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Rare/Attack/AlmightySmite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="68" column="42" lean-forward="false" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
+        <state relative-caret-position="525">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="87" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/MercilessSmite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="42" column="42" lean-forward="false" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+        <state relative-caret-position="357">
+          <caret line="48" column="87" lean-forward="false" selection-start-line="48" selection-start-column="87" selection-end-line="48" selection-end-column="87" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/StrainingSmite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="45" column="42" lean-forward="false" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
+        <state relative-caret-position="546">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="52" selection-end-column="111" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/ZealousSmite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="58" column="42" lean-forward="false" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
+        <state relative-caret-position="336">
+          <caret line="48" column="106" lean-forward="false" selection-start-line="48" selection-start-column="106" selection-end-line="48" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Rare/Attack/AlmightySmite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="60" column="82" lean-forward="false" selection-start-line="60" selection-start-column="82" selection-end-line="60" selection-end-column="82" />
           <folding />
         </state>
       </provider>
