@@ -39,6 +39,8 @@ public class MercilessSmite extends CustomCard
     public void use(AbstractPlayer p, AbstractMonster m)
     {
         extraDamage = this.baseDamage / 2;
+        if (isDamageModified)
+            extraDamage = this.damage / 2;
         if (this.upgraded)
         {
             extraDamage *= 2;

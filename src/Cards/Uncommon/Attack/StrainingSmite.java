@@ -41,7 +41,9 @@ public class StrainingSmite extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        extraDamage = this.damage / 2;
+        extraDamage = this.baseDamage / 2;
+        if (isDamageModified)
+            extraDamage = this.damage / 2;
         if (this.upgraded)
         {
             extraDamage *= 2;

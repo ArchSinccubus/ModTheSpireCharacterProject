@@ -55,6 +55,8 @@ public class ZealousSmite extends CustomCard
     @Override
     public void applyPowers() {
         extraDamage = this.baseDamage / 2;
+        if (isDamageModified)
+            extraDamage = this.damage / 2;
         if (this.upgraded)
         {
             extraDamage *= 2;

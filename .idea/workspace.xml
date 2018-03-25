@@ -17,217 +17,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Valiant-RelicStrings.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Localization/Valiant-RelicStrings.json">
+      <file leaf-file-name="Smite.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/Smite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-399">
-              <caret line="29" column="66" lean-forward="false" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
+            <state relative-caret-position="412">
+              <caret line="43" column="42" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="43" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CrownOfThorns.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Relics/CrownOfThorns.java">
+      <file leaf-file-name="WideSmite.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/WideSmite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="730">
-              <caret line="108" column="126" lean-forward="false" selection-start-line="108" selection-start-column="126" selection-end-line="108" selection-end-column="126" />
-              <folding>
-                <element signature="e#5679#5680#0" expanded="true" />
-                <element signature="e#5717#5718#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Fudgesickle.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MainMod/Fudgesickle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="171" column="0" lean-forward="false" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="90" />
+            <state relative-caret-position="399">
+              <caret line="60" column="42" lean-forward="false" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplyPowerAction.class" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/actions/common/ApplyPowerAction.class">
+      <file leaf-file-name="RecklessSmite.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/RecklessSmite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2268">
-              <caret line="38" column="11" lean-forward="false" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
-              <folding>
-                <marker date="1521787141399" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1521787141399" expanded="false" signature="161:1430" ph="..." />
-                <marker date="1521787141399" expanded="true" signature="1813:4018" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="4159:4250" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="4358:4413" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="4538:4628" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="4774:4853" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="4880:12825" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="12838:12956" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WingedNecklace.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Relics/WingedNecklace.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="79" column="27" lean-forward="false" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2366#2367#0" expanded="true" />
-                <element signature="e#2404#2405#0" expanded="true" />
-                <element signature="e#2715#2716#0" expanded="true" />
-                <element signature="e#2749#2750#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArchAngelsFeather.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Relics/ArchAngelsFeather.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="73" selection-end-column="5" />
+            <state relative-caret-position="252">
+              <caret line="45" column="42" lean-forward="false" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomRelic.class" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/STS mod projects/BaseMod.jar!/basemod/abstracts/CustomRelic.class">
+      <file leaf-file-name="FuriousSmite.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/FuriousSmite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="12" column="50" lean-forward="false" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-              <folding>
-                <marker date="1521391172399" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1521391172399" expanded="false" signature="141:354" ph="..." />
-                <marker date="1521391172399" expanded="true" signature="499:574" ph="{...}" />
-                <marker date="1521391172399" expanded="true" signature="678:769" ph="{...}" />
-                <marker date="1521391172399" expanded="true" signature="809:894" ph="{...}" />
-                <marker date="1521391172399" expanded="true" signature="952:1037" ph="{...}" />
-              </folding>
+            <state relative-caret-position="420">
+              <caret line="44" column="42" lean-forward="false" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractRelic.class" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/relics/AbstractRelic.class">
+      <file leaf-file-name="AlmightySmite.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cards/Rare/Attack/AlmightySmite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="515" column="27" lean-forward="false" selection-start-line="515" selection-start-column="16" selection-end-line="515" selection-end-column="27" />
-              <folding>
-                <marker date="1521787141399" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1521787141399" expanded="false" signature="153:2284" ph="..." />
-                <marker date="1521787141399" expanded="true" signature="4414:5758" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="5785:5951" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="5993:6664" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="6692:7138" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="7239:8119" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="8173:8264" ph="{...}" />
-                <marker date="1521787141399" expanded="false" signature="8315:8326" ph=" { " />
-                <marker date="1521787141399" expanded="false" signature="8390:8396" ph=" }" />
-                <marker date="1521787141399" expanded="true" signature="8477:9575" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="9632:11211" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="11238:11821" ph="{...}" />
-                <marker date="1521787141399" expanded="false" signature="11849:11860" ph=" { " />
-                <marker date="1521787141399" expanded="false" signature="11911:11917" ph=" }" />
-                <marker date="1521787141399" expanded="true" signature="11946:12346" ph="{...}" />
-                <marker date="1521787141399" expanded="false" signature="12387:12398" ph=" { " />
-                <marker date="1521787141399" expanded="false" signature="12421:12427" ph=" }" />
-                <marker date="1521787141399" expanded="true" signature="12454:16338" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="16381:16723" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="16774:16781" ph="{}" />
-                <marker date="1521787141399" expanded="false" signature="16824:16835" ph=" { " />
-                <marker date="1521787141399" expanded="false" signature="16845:16851" ph=" }" />
-                <marker date="1521787141399" expanded="true" signature="16886:17500" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="17539:17768" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="17801:18139" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="18203:18210" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="18257:18264" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="18295:18302" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="18333:18340" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="18368:18375" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="18405:18412" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="18444:18451" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="18485:18492" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="18533:18540" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="18572:18579" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="18615:18622" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="18653:18660" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="18694:18701" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="18737:18744" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="18826:18833" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="18863:18870" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="18922:18929" ph="{}" />
-                <marker date="1521787141399" expanded="false" signature="18980:18991" ph=" { " />
-                <marker date="1521787141399" expanded="false" signature="19010:19016" ph=" }" />
-                <marker date="1521787141399" expanded="false" signature="19061:19072" ph=" { " />
-                <marker date="1521787141399" expanded="false" signature="19090:19096" ph=" }" />
-                <marker date="1521787141399" expanded="true" signature="19127:19134" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="19171:19178" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="19205:19212" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="19241:19248" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="19284:19291" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="19325:19332" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="19362:19369" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="19397:19404" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="19491:19498" ph="{}" />
-                <marker date="1521787141399" expanded="false" signature="19560:19571" ph=" { " />
-                <marker date="1521787141399" expanded="false" signature="19591:19597" ph=" }" />
-                <marker date="1521787141399" expanded="true" signature="19644:19651" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="19681:19688" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="19741:19748" ph="{}" />
-                <marker date="1521787141399" expanded="false" signature="19783:19794" ph=" { " />
-                <marker date="1521787141399" expanded="false" signature="19807:19813" ph=" }" />
-                <marker date="1521787141399" expanded="true" signature="19862:19869" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="19922:19929" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="19978:19985" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="20021:20028" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="20067:20074" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="20115:22429" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="22494:24486" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="24569:26731" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="26794:27596" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="27644:28351" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="28408:29109" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="29157:29387" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="29433:30257" ph="{...}" />
-                <marker date="1521787141399" expanded="false" signature="30287:30298" ph=" { " />
-                <marker date="1521787141399" expanded="false" signature="30321:30327" ph=" }" />
-                <marker date="1521787141399" expanded="true" signature="30362:30428" ph="{...}" />
-                <marker date="1521787141399" expanded="false" signature="30457:30468" ph=" { " />
-                <marker date="1521787141399" expanded="false" signature="30487:30493" ph=" }" />
-                <marker date="1521787141399" expanded="false" signature="30518:30529" ph=" { " />
-                <marker date="1521787141399" expanded="false" signature="30552:30558" ph=" }" />
-                <marker date="1521787141399" expanded="true" signature="30602:32078" ph="{...}" />
-                <marker date="1521787141399" expanded="false" signature="32125:32136" ph=" { " />
-                <marker date="1521787141399" expanded="false" signature="32148:32154" ph=" }" />
-                <marker date="1521787141399" expanded="true" signature="32212:32598" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="32636:33822" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="33879:34288" ph="{...}" />
-                <marker date="1521787141399" expanded="false" signature="34363:34374" ph=" { " />
-                <marker date="1521787141399" expanded="false" signature="34409:34415" ph=" }" />
-                <marker date="1521787141399" expanded="true" signature="34488:34551" ph="{...}" />
-                <marker date="1521787141399" expanded="false" signature="34658:34669" ph=" { " />
-                <marker date="1521787141399" expanded="false" signature="34681:34687" ph=" }" />
-                <marker date="1521787141399" expanded="false" signature="34717:34728" ph=" { " />
-                <marker date="1521787141399" expanded="false" signature="34745:34751" ph=" }" />
-                <marker date="1521787141399" expanded="false" signature="34797:34808" ph=" { " />
-                <marker date="1521787141399" expanded="false" signature="34846:34852" ph=" }" />
-                <marker date="1521787141399" expanded="false" signature="34885:34896" ph=" { " />
-                <marker date="1521787141399" expanded="false" signature="34917:34923" ph=" }" />
-                <marker date="1521787141399" expanded="true" signature="34982:35178" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="35210:35217" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="35262:35269" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="35282:35707" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="35742:35920" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="35903:35914" ph="{}" />
-                <marker date="1521787141399" expanded="true" signature="35958:36085" ph="{...}" />
-                <marker date="1521787141399" expanded="true" signature="36068:36079" ph="{}" />
-              </folding>
+            <state relative-caret-position="378">
+              <caret line="68" column="42" lean-forward="false" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MercilessSmite.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/MercilessSmite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="42" column="42" lean-forward="false" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StrainingSmite.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/StrainingSmite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="45" column="42" lean-forward="false" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ZealousSmite.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/ZealousSmite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="58" column="42" lean-forward="false" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -294,9 +159,6 @@
         <option value="$PROJECT_DIR$/src/Cards/Rare/Skill/Salvation.java" />
         <option value="$PROJECT_DIR$/src/Cards/Rare/Attack/Tantrum.java" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Attack/PowerStrike.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Common/Attack/RecklessSmite.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Common/Attack/Smite.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Common/Attack/WideSmite.java" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Skill/ArcaneHealing.java" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Skill/DivineFavor.java" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Skill/ItsSmitingTime.java" />
@@ -305,7 +167,6 @@
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Attack/AuraDischarge.java" />
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Attack/Chainer.java" />
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Attack/FuriousSmite.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Uncommon/Attack/StrainingSmite.java" />
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Attack/TearPsyche.java" />
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Skill/BraceThePain.java" />
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Skill/Meaballize.java" />
@@ -318,11 +179,8 @@
         <option value="$PROJECT_DIR$/src/Relics/CrossPendant.java" />
         <option value="$PROJECT_DIR$/src/Cards/Rare/Attack/Execution.java" />
         <option value="$PROJECT_DIR$/src/Relics/HugeEgg.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Uncommon/Attack/ZealousSmite.java" />
         <option value="$PROJECT_DIR$/src/Relics/CrumpledPaper.java" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Attack/MercilessSmite.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Uncommon/Attack/MercilessSmite.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Common/Attack/FuriousSmite.java" />
         <option value="$PROJECT_DIR$/src/Powers/PeacefulStancePower.java" />
         <option value="$PROJECT_DIR$/src/Relics/PrayerBeads.java" />
         <option value="$PROJECT_DIR$/src/Relics/WeakeningIncase.java" />
@@ -330,7 +188,6 @@
         <option value="$PROJECT_DIR$/src/Relics/BladeOfLegend.java" />
         <option value="$PROJECT_DIR$/src/Relics/OrbOfLight.java" />
         <option value="$PROJECT_DIR$/src/Relics/WeakeningIncense.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Rare/Attack/AlmightySmite.java" />
         <option value="$PROJECT_DIR$/src/Relics/ArchAngelsFeather.java" />
         <option value="$PROJECT_DIR$/src/MainMod/Fudgesickle.java" />
         <option value="$PROJECT_DIR$/src/Character/Valiant.java" />
@@ -338,6 +195,14 @@
         <option value="$PROJECT_DIR$/Localization/Valiant-RelicStrings.json" />
         <option value="$PROJECT_DIR$/src/Relics/WingedNecklace.java" />
         <option value="$PROJECT_DIR$/src/Relics/CrownOfThorns.java" />
+        <option value="$PROJECT_DIR$/src/Cards/Common/Attack/Smite.java" />
+        <option value="$PROJECT_DIR$/src/Cards/Common/Attack/WideSmite.java" />
+        <option value="$PROJECT_DIR$/src/Cards/Common/Attack/RecklessSmite.java" />
+        <option value="$PROJECT_DIR$/src/Cards/Common/Attack/FuriousSmite.java" />
+        <option value="$PROJECT_DIR$/src/Cards/Rare/Attack/AlmightySmite.java" />
+        <option value="$PROJECT_DIR$/src/Cards/Uncommon/Attack/MercilessSmite.java" />
+        <option value="$PROJECT_DIR$/src/Cards/Uncommon/Attack/StrainingSmite.java" />
+        <option value="$PROJECT_DIR$/src/Cards/Uncommon/Attack/ZealousSmite.java" />
       </list>
     </option>
   </component>
@@ -754,48 +619,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa7420.40295/com/megacrit/cardcrawl/relics/BagOfMarbles.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="35" column="108" lean-forward="false" selection-start-line="35" selection-start-column="108" selection-end-line="35" selection-end-column="108" />
-          <folding>
-            <marker date="1521753312000" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521753312000" expanded="false" signature="153:599" ph="..." />
-            <marker date="1521753312000" expanded="false" signature="770:781" ph=" { " />
-            <marker date="1521753312000" expanded="false" signature="857:863" ph=" }" />
-            <marker date="1521753312000" expanded="false" signature="906:917" ph=" { " />
-            <marker date="1521753312000" expanded="false" signature="972:978" ph=" }" />
-            <marker date="1521753312000" expanded="true" signature="1012:1476" ph="{...}" />
-            <marker date="1521753312000" expanded="false" signature="1513:1524" ph=" { " />
-            <marker date="1521753312000" expanded="false" signature="1550:1556" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/powers/VulnerablePower.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="70" column="5" lean-forward="false" selection-start-line="53" selection-start-column="4" selection-end-line="70" selection-end-column="5" />
-          <folding>
-            <marker date="1521787141399" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521787141399" expanded="false" signature="153:618" ph="..." />
-            <marker date="1521787141399" expanded="true" signature="1104:1496" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="1529:1956" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="1994:3185" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="3251:3666" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="3679:3851" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Rare/Attack/Execution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="40" column="32" lean-forward="false" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa7420.39274/com/megacrit/cardcrawl/relics/MoltenEgg.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-189">
@@ -812,34 +635,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/ZealousSmite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="46" column="8" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="126" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Actions/AddCardToHandAtion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="91" column="119" lean-forward="false" selection-start-line="91" selection-start-column="88" selection-end-line="91" selection-end-column="119" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/FuriousSmite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="23" column="62" lean-forward="false" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/MercilessSmite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1490,14 +1289,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Rare/Attack/AlmightySmite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="57" column="122" lean-forward="false" selection-start-line="57" selection-start-column="122" selection-end-line="57" selection-end-column="122" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Relics/WeakeningIncense.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-134">
@@ -1538,14 +1329,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-164">
           <caret line="527" column="16" lean-forward="false" selection-start-line="527" selection-start-column="16" selection-end-line="527" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/Smite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="70" column="59" lean-forward="true" selection-start-line="70" selection-start-column="59" selection-end-line="70" selection-end-column="59" />
           <folding />
         </state>
       </provider>
@@ -1712,11 +1495,11 @@
         <state relative-caret-position="493">
           <caret line="79" column="27" lean-forward="false" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2366#2367#0" expanded="true" />
-            <element signature="e#2404#2405#0" expanded="true" />
-            <element signature="e#2715#2716#0" expanded="true" />
-            <element signature="e#2749#2750#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2366#2367#0" expanded="false" />
+            <element signature="e#2404#2405#0" expanded="false" />
+            <element signature="e#2715#2716#0" expanded="false" />
+            <element signature="e#2749#2750#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1783,9 +1566,73 @@
         <state relative-caret-position="730">
           <caret line="108" column="126" lean-forward="false" selection-start-line="108" selection-start-column="126" selection-end-line="108" selection-end-column="126" />
           <folding>
-            <element signature="e#5679#5680#0" expanded="true" />
-            <element signature="e#5717#5718#0" expanded="true" />
+            <element signature="e#5679#5680#0" expanded="false" />
+            <element signature="e#5717#5718#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/Smite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="43" column="42" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="43" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/WideSmite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="60" column="42" lean-forward="false" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/RecklessSmite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="45" column="42" lean-forward="false" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/FuriousSmite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="44" column="42" lean-forward="false" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Rare/Attack/AlmightySmite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="68" column="42" lean-forward="false" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/MercilessSmite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="42" column="42" lean-forward="false" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/StrainingSmite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="45" column="42" lean-forward="false" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/ZealousSmite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="58" column="42" lean-forward="false" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
