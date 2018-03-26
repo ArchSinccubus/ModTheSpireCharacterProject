@@ -30,7 +30,7 @@ public class OrbOfLight extends CustomRelic {
 
 
     public OrbOfLight() {
-        super(ID, Fudgesickle.getTex(texturePath), RelicTier.COMMON, LandingSound.MAGICAL);
+        super(ID, Fudgesickle.getTex(Fudgesickle.ORB_OF_LIGHT), RelicTier.COMMON, LandingSound.MAGICAL);
         logger.info("initialized");
     }
 

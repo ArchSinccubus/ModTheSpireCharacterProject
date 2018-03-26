@@ -42,7 +42,7 @@ public class ArchAngelsFeather extends CustomRelic {
 
 
     public ArchAngelsFeather() {
-        super(ID, Fudgesickle.getTex(texturePath), RelicTier.RARE, LandingSound.MAGICAL);
+        super(ID, Fudgesickle.getTex(Fudgesickle.ARCHANGEL_FEATHER), RelicTier.RARE, LandingSound.MAGICAL);
         logger.info("initialized");
         StartOfCombat = false;
     }
@@ -77,6 +77,11 @@ public class ArchAngelsFeather extends CustomRelic {
         StartOfCombat = true;
         this.pulse = true;
         this.beginPulse();
+    }
+
+    public void onVictory() {
+        this.pulse = false;
+        StartOfCombat = false;
     }
 
     @Override

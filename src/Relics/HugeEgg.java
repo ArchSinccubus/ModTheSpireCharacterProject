@@ -36,7 +36,7 @@ public class HugeEgg extends CustomRelic {
 
 
     public HugeEgg() {
-        super(ID, Fudgesickle.getTex(texturePath), RelicTier.UNCOMMON, LandingSound.HEAVY);
+        super(ID, Fudgesickle.getTex(Fudgesickle.HUGE_EGG), RelicTier.UNCOMMON, LandingSound.HEAVY);
         logger.info("initialized");
     }
 

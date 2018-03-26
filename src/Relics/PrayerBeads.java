@@ -41,7 +41,7 @@ public class PrayerBeads extends CustomRelic {
 
 
     public PrayerBeads() {
-        super(ID, Fudgesickle.getTex(texturePath), RelicTier.UNCOMMON, LandingSound.FLAT);
+        super(ID, Fudgesickle.getTex(Fudgesickle.PRAYER_BEADS), RelicTier.UNCOMMON, LandingSound.FLAT);
         logger.info("initialized");
         WasObtained = false;
     }

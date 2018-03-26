@@ -19,7 +19,7 @@
 		"NAME": "Orb Of Light",
 		"FLAVOR": "An orb glowing with divinity. Touching it soothes your temper.",
 		"DESCRIPTIONS": [
-			"Start each combat with 1 Spirit."
+			"Start each combat with 1 #ySpirit."
 		]
 	}
 ,
@@ -27,7 +27,7 @@
 		"NAME": "Winged Necklace",
 		"FLAVOR": "A necklace engraved with the visage of wings for self protection from the ailments of a world filled with evil.",
 		"DESCRIPTIONS": [
-			"The first time you gain block each turn, gain 2 more."
+			"The first time you gain #yBlock each turn, gain 2 more."
 		]
 	}
 ,
@@ -35,7 +35,7 @@
 		"NAME": "Weakening Incense",
 		"FLAVOR": "An Incense containing salts and herbs designed to sow fear in those who smell it.",
 		"DESCRIPTIONS": [
-			"At the start of each combat, all enemies gain 1 Wavering."
+			"At the start of each combat, all enemies gain 1 #yWavering."
 		]
 	}
 ,
@@ -43,7 +43,7 @@
 		"NAME": "Crumpled Paper",
 		"FLAVOR": "Just a trashed piece of paper and totally not a failed attempt at a paper dragon.",
 		"DESCRIPTIONS": [
-			"Wavering deals an extra 3 damage at the start of each turn."
+			"#yWavering deals an extra #b3 damage at the start of each turn."
 		]
 	}
 ,
@@ -77,14 +77,14 @@
 		"NAME": "Archangel's Feather",
 		"FLAVOR": "The feather of a high ranking angel. Holding onto it fills one with life energy and vigor",
 		"DESCRIPTIONS": [
-			"On the first turn of each combat, whenever you play a card, heal 2 HP."
+			"On the first turn of each combat, whenever you play a card, #yheal 2 HP."
 		]
 	}
 ,	"Blade Of Legend": {
 	"NAME": "Blade Of Legend",
 	"FLAVOR": "A blade etched with runes describing each hero that wielded it... and the price they paid.",
 	"DESCRIPTIONS": [
-		"Gain [R] at the start of each turn. Whenever you play a Rare card, exhaust it."
+		"Gain [R] at the start of each turn. Whenever you play a Rare card, #yExhaust it."
 	]
 }
 }

@@ -42,7 +42,7 @@ public class CrownOfThorns extends CustomRelic {
     public static final Logger logger = LogManager.getLogger(DivineWrath.class.getName());
 
     public CrownOfThorns() {
-        super(ID, Fudgesickle.getTex(texturePath), RelicTier.RARE, LandingSound.FLAT);
+        super(ID, Fudgesickle.getTex(Fudgesickle.CROWN_OF_THORNS), RelicTier.RARE, LandingSound.FLAT);
         logger.info("initialized");
         AMT = 0;
     }

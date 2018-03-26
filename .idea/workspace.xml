@@ -17,51 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Valiant-CardStrings.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Localization/Valiant-CardStrings.json">
+      <file leaf-file-name="ArchAngelsFeather.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Relics/ArchAngelsFeather.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="36" column="58" lean-forward="true" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
+            <state relative-caret-position="220">
+              <caret line="44" column="37" lean-forward="false" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Quickstep.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cards/Common/Skill/Quickstep.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="69" column="41" lean-forward="false" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuraDischarge.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/AuraDischarge.java">
+      <file leaf-file-name="Valiant-RelicStrings.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Localization/Valiant-RelicStrings.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="504">
-              <caret line="53" column="96" lean-forward="false" selection-start-line="53" selection-start-column="96" selection-end-line="53" selection-end-column="96" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Desperation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/Desperation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MinorHealing.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cards/Starter/MinorHealing.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="77" column="8" lean-forward="false" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
+              <caret line="45" column="41" lean-forward="false" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -70,48 +40,78 @@
       <file leaf-file-name="Fudgesickle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainMod/Fudgesickle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1200">
-              <caret line="171" column="0" lean-forward="false" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="90" />
+            <state relative-caret-position="609">
+              <caret line="179" column="74" lean-forward="false" selection-start-line="179" selection-start-column="74" selection-end-line="179" selection-end-column="74" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Valiant.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Character/Valiant.java">
+      <file leaf-file-name="CrownOfThorns.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Relics/CrownOfThorns.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+            <state relative-caret-position="315">
+              <caret line="44" column="64" lean-forward="false" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Salvation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cards/Rare/Skill/Salvation.java">
+      <file leaf-file-name="CrumpledPaper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Relics/CrumpledPaper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="97" column="96" lean-forward="false" selection-start-line="97" selection-start-column="96" selection-end-line="97" selection-end-column="96" />
+            <state relative-caret-position="336">
+              <caret line="38" column="63" lean-forward="false" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Chainer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/Chainer.java">
+      <file leaf-file-name="HugeEgg.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Relics/HugeEgg.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-599">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="336">
+              <caret line="38" column="57" lean-forward="false" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sharpen.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Power/Sharpen.java">
+      <file leaf-file-name="OrbOfLight.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Relics/OrbOfLight.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="56" selection-end-column="41" />
+            <state relative-caret-position="315">
+              <caret line="32" column="61" lean-forward="false" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrayerBeads.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Relics/PrayerBeads.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="43" column="61" lean-forward="false" selection-start-line="43" selection-start-column="61" selection-end-line="43" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WeakeningIncense.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Relics/WeakeningIncense.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="30" column="66" lean-forward="false" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WingedNecklace.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Relics/WingedNecklace.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="48" column="64" lean-forward="false" selection-start-line="48" selection-start-column="64" selection-end-line="48" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -128,7 +128,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>peace</find>
       <find>Cross</find>
       <find>can only</find>
       <find>DescriptionLine</find>
@@ -158,6 +157,7 @@
       <find>salva</find>
       <find>quick</find>
       <find>mercil</find>
+      <find>end</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -193,23 +193,11 @@
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Skill/Charge.java" />
         <option value="$PROJECT_DIR$/src/Actions/CrossPendantAction.java" />
         <option value="$PROJECT_DIR$/ModTheSpire.config" />
-        <option value="$PROJECT_DIR$/src/Relics/CrossPendant.java" />
         <option value="$PROJECT_DIR$/src/Cards/Rare/Attack/Execution.java" />
-        <option value="$PROJECT_DIR$/src/Relics/HugeEgg.java" />
-        <option value="$PROJECT_DIR$/src/Relics/CrumpledPaper.java" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Attack/MercilessSmite.java" />
         <option value="$PROJECT_DIR$/src/Powers/PeacefulStancePower.java" />
-        <option value="$PROJECT_DIR$/src/Relics/PrayerBeads.java" />
         <option value="$PROJECT_DIR$/src/Relics/WeakeningIncase.java" />
         <option value="$PROJECT_DIR$/src/Powers/WaveringPower.java" />
-        <option value="$PROJECT_DIR$/src/Relics/BladeOfLegend.java" />
-        <option value="$PROJECT_DIR$/src/Relics/OrbOfLight.java" />
-        <option value="$PROJECT_DIR$/src/Relics/WeakeningIncense.java" />
-        <option value="$PROJECT_DIR$/src/Relics/ArchAngelsFeather.java" />
-        <option value="$PROJECT_DIR$/src/MainMod/Fudgesickle.java" />
-        <option value="$PROJECT_DIR$/Localization/Valiant-RelicStrings.json" />
-        <option value="$PROJECT_DIR$/src/Relics/WingedNecklace.java" />
-        <option value="$PROJECT_DIR$/src/Relics/CrownOfThorns.java" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Attack/Smite.java" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Attack/WideSmite.java" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Attack/RecklessSmite.java" />
@@ -223,10 +211,22 @@
         <option value="$PROJECT_DIR$/src/Character/Valiant.java" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Skill/Quickstep.java" />
         <option value="$PROJECT_DIR$/Localization/Valiant-CardStrings.json" />
+        <option value="$PROJECT_DIR$/src/Relics/ArchAngelsFeather.java" />
+        <option value="$PROJECT_DIR$/src/Relics/BladeOfLegend.java" />
+        <option value="$PROJECT_DIR$/src/Relics/CrossPendant.java" />
+        <option value="$PROJECT_DIR$/src/Relics/CrownOfThorns.java" />
+        <option value="$PROJECT_DIR$/src/Relics/CrumpledPaper.java" />
+        <option value="$PROJECT_DIR$/src/Relics/HugeEgg.java" />
+        <option value="$PROJECT_DIR$/src/Relics/OrbOfLight.java" />
+        <option value="$PROJECT_DIR$/src/Relics/PrayerBeads.java" />
+        <option value="$PROJECT_DIR$/src/Relics/WeakeningIncense.java" />
+        <option value="$PROJECT_DIR$/src/Relics/WingedNecklace.java" />
+        <option value="$PROJECT_DIR$/src/MainMod/Fudgesickle.java" />
+        <option value="$PROJECT_DIR$/Localization/Valiant-RelicStrings.json" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-9" />
     <option name="y" value="9" />
     <option name="width" value="1938" />
@@ -635,7 +635,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1176,27 +1176,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Relics/PrayerBeads.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-179">
-          <caret line="64" column="83" lean-forward="true" selection-start-line="64" selection-start-column="83" selection-end-line="64" selection-end-column="83" />
-          <folding>
-            <element signature="e#2176#2177#0" expanded="false" />
-            <element signature="e#2214#2215#0" expanded="false" />
-            <element signature="e#2574#2575#0" expanded="false" />
-            <element signature="e#2609#2610#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Relics/CrossPendant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="56" column="21" lean-forward="false" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Relics/DivineWrath.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -1205,56 +1184,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Relics/HugeEgg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="37" column="22" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
-          <folding>
-            <element signature="e#2071#2072#0" expanded="false" />
-            <element signature="e#2109#2110#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Relics/CrumpledPaper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="56" column="28" lean-forward="false" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
-          <folding>
-            <element signature="e#1953#1954#0" expanded="false" />
-            <element signature="e#1991#1992#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Relics/BladeOfLegend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="42" column="85" lean-forward="false" selection-start-line="42" selection-start-column="85" selection-end-line="42" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Powers/WaveringPower.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
           <caret line="62" column="67" lean-forward="false" selection-start-line="62" selection-start-column="67" selection-end-line="62" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Relics/WeakeningIncense.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-134">
-          <caret line="19" column="55" lean-forward="false" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Relics/OrbOfLight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="58" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1311,168 +1244,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/relics/AbstractRelic.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="515" column="27" lean-forward="false" selection-start-line="515" selection-start-column="16" selection-end-line="515" selection-end-column="27" />
-          <folding>
-            <marker date="1521787141399" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521787141399" expanded="false" signature="153:2284" ph="..." />
-            <marker date="1521787141399" expanded="true" signature="4414:5758" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="5785:5951" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="5993:6664" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="6692:7138" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="7239:8119" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="8173:8264" ph="{...}" />
-            <marker date="1521787141399" expanded="false" signature="8315:8326" ph=" { " />
-            <marker date="1521787141399" expanded="false" signature="8390:8396" ph=" }" />
-            <marker date="1521787141399" expanded="true" signature="8477:9575" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="9632:11211" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="11238:11821" ph="{...}" />
-            <marker date="1521787141399" expanded="false" signature="11849:11860" ph=" { " />
-            <marker date="1521787141399" expanded="false" signature="11911:11917" ph=" }" />
-            <marker date="1521787141399" expanded="true" signature="11946:12346" ph="{...}" />
-            <marker date="1521787141399" expanded="false" signature="12387:12398" ph=" { " />
-            <marker date="1521787141399" expanded="false" signature="12421:12427" ph=" }" />
-            <marker date="1521787141399" expanded="true" signature="12454:16338" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="16381:16723" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="16774:16781" ph="{}" />
-            <marker date="1521787141399" expanded="false" signature="16824:16835" ph=" { " />
-            <marker date="1521787141399" expanded="false" signature="16845:16851" ph=" }" />
-            <marker date="1521787141399" expanded="true" signature="16886:17500" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="17539:17768" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="17801:18139" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="18203:18210" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="18257:18264" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="18295:18302" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="18333:18340" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="18368:18375" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="18405:18412" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="18444:18451" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="18485:18492" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="18533:18540" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="18572:18579" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="18615:18622" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="18653:18660" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="18694:18701" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="18737:18744" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="18826:18833" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="18863:18870" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="18922:18929" ph="{}" />
-            <marker date="1521787141399" expanded="false" signature="18980:18991" ph=" { " />
-            <marker date="1521787141399" expanded="false" signature="19010:19016" ph=" }" />
-            <marker date="1521787141399" expanded="false" signature="19061:19072" ph=" { " />
-            <marker date="1521787141399" expanded="false" signature="19090:19096" ph=" }" />
-            <marker date="1521787141399" expanded="true" signature="19127:19134" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="19171:19178" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="19205:19212" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="19241:19248" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="19284:19291" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="19325:19332" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="19362:19369" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="19397:19404" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="19491:19498" ph="{}" />
-            <marker date="1521787141399" expanded="false" signature="19560:19571" ph=" { " />
-            <marker date="1521787141399" expanded="false" signature="19591:19597" ph=" }" />
-            <marker date="1521787141399" expanded="true" signature="19644:19651" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="19681:19688" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="19741:19748" ph="{}" />
-            <marker date="1521787141399" expanded="false" signature="19783:19794" ph=" { " />
-            <marker date="1521787141399" expanded="false" signature="19807:19813" ph=" }" />
-            <marker date="1521787141399" expanded="true" signature="19862:19869" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="19922:19929" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="19978:19985" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="20021:20028" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="20067:20074" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="20115:22429" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="22494:24486" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="24569:26731" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="26794:27596" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="27644:28351" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="28408:29109" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="29157:29387" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="29433:30257" ph="{...}" />
-            <marker date="1521787141399" expanded="false" signature="30287:30298" ph=" { " />
-            <marker date="1521787141399" expanded="false" signature="30321:30327" ph=" }" />
-            <marker date="1521787141399" expanded="true" signature="30362:30428" ph="{...}" />
-            <marker date="1521787141399" expanded="false" signature="30457:30468" ph=" { " />
-            <marker date="1521787141399" expanded="false" signature="30487:30493" ph=" }" />
-            <marker date="1521787141399" expanded="false" signature="30518:30529" ph=" { " />
-            <marker date="1521787141399" expanded="false" signature="30552:30558" ph=" }" />
-            <marker date="1521787141399" expanded="true" signature="30602:32078" ph="{...}" />
-            <marker date="1521787141399" expanded="false" signature="32125:32136" ph=" { " />
-            <marker date="1521787141399" expanded="false" signature="32148:32154" ph=" }" />
-            <marker date="1521787141399" expanded="true" signature="32212:32598" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="32636:33822" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="33879:34288" ph="{...}" />
-            <marker date="1521787141399" expanded="false" signature="34363:34374" ph=" { " />
-            <marker date="1521787141399" expanded="false" signature="34409:34415" ph=" }" />
-            <marker date="1521787141399" expanded="true" signature="34488:34551" ph="{...}" />
-            <marker date="1521787141399" expanded="false" signature="34658:34669" ph=" { " />
-            <marker date="1521787141399" expanded="false" signature="34681:34687" ph=" }" />
-            <marker date="1521787141399" expanded="false" signature="34717:34728" ph=" { " />
-            <marker date="1521787141399" expanded="false" signature="34745:34751" ph=" }" />
-            <marker date="1521787141399" expanded="false" signature="34797:34808" ph=" { " />
-            <marker date="1521787141399" expanded="false" signature="34846:34852" ph=" }" />
-            <marker date="1521787141399" expanded="false" signature="34885:34896" ph=" { " />
-            <marker date="1521787141399" expanded="false" signature="34917:34923" ph=" }" />
-            <marker date="1521787141399" expanded="true" signature="34982:35178" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="35210:35217" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="35262:35269" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="35282:35707" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="35742:35920" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="35903:35914" ph="{}" />
-            <marker date="1521787141399" expanded="true" signature="35958:36085" ph="{...}" />
-            <marker date="1521787141399" expanded="true" signature="36068:36079" ph="{}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Relics/WingedNecklace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="79" column="27" lean-forward="false" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2366#2367#0" expanded="false" />
-            <element signature="e#2404#2405#0" expanded="false" />
-            <element signature="e#2715#2716#0" expanded="false" />
-            <element signature="e#2749#2750#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/STS mod projects/BaseMod.jar!/basemod/abstracts/CustomRelic.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="12" column="50" lean-forward="false" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-          <folding>
-            <marker date="1521391172399" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521391172399" expanded="false" signature="141:354" ph="..." />
-            <marker date="1521391172399" expanded="true" signature="499:574" ph="{...}" />
-            <marker date="1521391172399" expanded="true" signature="678:769" ph="{...}" />
-            <marker date="1521391172399" expanded="true" signature="809:894" ph="{...}" />
-            <marker date="1521391172399" expanded="true" signature="952:1037" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Relics/ArchAngelsFeather.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="73" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Localization/Valiant-RelicStrings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-399">
-          <caret line="29" column="66" lean-forward="false" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/actions/common/ApplyPowerAction.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2268">
@@ -1487,17 +1258,6 @@
             <marker date="1521787141399" expanded="true" signature="4774:4853" ph="{...}" />
             <marker date="1521787141399" expanded="true" signature="4880:12825" ph="{...}" />
             <marker date="1521787141399" expanded="true" signature="12838:12956" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Relics/CrownOfThorns.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="108" column="126" lean-forward="false" selection-start-line="108" selection-start-column="126" selection-end-line="108" selection-end-column="126" />
-          <folding>
-            <element signature="e#5679#5680#0" expanded="false" />
-            <element signature="e#5717#5718#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1616,22 +1376,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainMod/Fudgesickle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1200">
-          <caret line="171" column="0" lean-forward="false" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Character/Valiant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Cards/Rare/Skill/Salvation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
@@ -1682,8 +1426,128 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Localization/Valiant-CardStrings.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="36" column="58" lean-forward="true" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
+        <state relative-caret-position="375">
+          <caret line="35" column="62" lean-forward="false" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/relics/AbstractRelic.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="533" column="0" lean-forward="false" selection-start-line="533" selection-start-column="0" selection-end-line="534" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/STS mod projects/BaseMod.jar!/basemod/abstracts/CustomRelic.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="12" column="48" lean-forward="true" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Character/Valiant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Relics/BladeOfLegend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="42" column="64" lean-forward="false" selection-start-line="42" selection-start-column="64" selection-end-line="42" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Relics/CrossPendant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="33" column="62" lean-forward="false" selection-start-line="33" selection-start-column="62" selection-end-line="33" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Relics/CrownOfThorns.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="44" column="64" lean-forward="false" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Relics/CrumpledPaper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="38" column="63" lean-forward="false" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Relics/HugeEgg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="38" column="57" lean-forward="false" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Relics/OrbOfLight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="32" column="61" lean-forward="false" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Relics/PrayerBeads.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="43" column="61" lean-forward="false" selection-start-line="43" selection-start-column="61" selection-end-line="43" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Relics/WingedNecklace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="48" column="64" lean-forward="false" selection-start-line="48" selection-start-column="64" selection-end-line="48" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Relics/WeakeningIncense.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="30" column="66" lean-forward="false" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainMod/Fudgesickle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="179" column="74" lean-forward="false" selection-start-line="179" selection-start-column="74" selection-end-line="179" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Relics/ArchAngelsFeather.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="44" column="37" lean-forward="false" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Localization/Valiant-RelicStrings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="45" column="41" lean-forward="false" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
           <folding />
         </state>
       </provider>

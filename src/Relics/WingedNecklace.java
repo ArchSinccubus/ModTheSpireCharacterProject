@@ -46,7 +46,7 @@ public class WingedNecklace extends CustomRelic {
 
 
     public WingedNecklace() {
-        super(ID, Fudgesickle.getTex(texturePath), RelicTier.COMMON, LandingSound.FLAT);
+        super(ID, Fudgesickle.getTex(Fudgesickle.WINGED_NECKLACE), RelicTier.COMMON, LandingSound.FLAT);
         logger.info("initialized");
         WasUsed = false;
     }
@@ -85,6 +85,11 @@ public class WingedNecklace extends CustomRelic {
         WasUsed = false;
         this.pulse = true;
         this.beginPulse();
+    }
+
+    public void onVictory() {
+        this.pulse = false;
+        WasUsed = false;
     }
 
     @Override

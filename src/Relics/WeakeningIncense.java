@@ -28,7 +28,7 @@ public class WeakeningIncense extends CustomRelic {
 
 
     public WeakeningIncense() {
-        super(ID, Fudgesickle.getTex(texturePath), RelicTier.COMMON, LandingSound.FLAT);
+        super(ID, Fudgesickle.getTex(Fudgesickle.WEAKENING_INCENSE), RelicTier.COMMON, LandingSound.FLAT);
         logger.info("initialized");
     }
 

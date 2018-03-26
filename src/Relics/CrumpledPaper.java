@@ -36,7 +36,7 @@ public class CrumpledPaper extends CustomRelic {
 
 
     public CrumpledPaper() {
-        super(ID, Fudgesickle.getTex(texturePath), RelicTier.UNCOMMON, LandingSound.FLAT);
+        super(ID, Fudgesickle.getTex(Fudgesickle.CRUMPLED_PAPER), RelicTier.UNCOMMON, LandingSound.FLAT);
         logger.info("initialized");
     }
 

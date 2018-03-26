@@ -33,7 +33,7 @@
     "DESCRIPTION": "Deal !M! damage for each Smite card in your hand. If the enemy is Wavering, deal 50% more",
     "UPGRADE_DESCRIPTION": "Deal !M! damage for each Smite card in your hand. NL If the enemy is Wavering, deal twice as much.",
     "EXTENDED_DESCRIPTION": [
-      "Deal !M! damage for all Smite card in your hand. If enemy is Wavering, deal FFF more.",
+      "Deal !M! damage for all Smite card in your hand. If foe is Wavering, deal FFF more.",
       " (You will deal !D! Damage. RRR more if Wavering.)"
     ]
   },

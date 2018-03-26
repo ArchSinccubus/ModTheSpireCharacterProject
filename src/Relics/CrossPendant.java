@@ -31,7 +31,7 @@ public class CrossPendant extends CustomRelic {
 
 
     public CrossPendant() {
-        super(ID, Fudgesickle.getTex(texturePath), RelicTier.STARTER, LandingSound.MAGICAL);
+        super(ID, Fudgesickle.getTex(Fudgesickle.CROSS_PENDANT), RelicTier.STARTER, LandingSound.MAGICAL);
         logger.info("initialized");
     }
 

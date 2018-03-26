@@ -40,7 +40,7 @@ public class BladeOfLegend extends CustomRelic {
 
 
     public BladeOfLegend() {
-        super(ID, Fudgesickle.getTex(texturePath), RelicTier.BOSS, LandingSound.CLINK);
+        super(ID, Fudgesickle.getTex(Fudgesickle.BLADE_OF_LEGEND), RelicTier.BOSS, LandingSound.CLINK);
         logger.info("initialized");
         WasObtained = false;
     }

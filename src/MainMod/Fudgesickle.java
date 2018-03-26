@@ -149,7 +149,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
     public static final String ZEALOUS_AMBITION = "cards/genesis.png";
     public static final String BLINDING_LIGHT = "cards/prismatic_sphere.png";
     public static final String MINOR_HEALING = "cards/flux.png";
-public static final String HOLY_LIGHT = "cards/void_shackles.png";
+    public static final String HOLY_LIGHT = "cards/void_shackles.png";
 
 
     public static final String VORTEX = "cards/vortex.png";
@@ -167,7 +167,18 @@ public static final String HOLY_LIGHT = "cards/void_shackles.png";
     // badge
     public static final String BADGE_IMG = "resources/BaseModBadge.png";
 
-    private static final String texturePath = "Relics/arcanosphere.png";
+    public static final String texturePath = "Relics/arcanosphere.png";
+    public static final String ARCHANGEL_FEATHER = "Relics/ArchangelsFeather.png";
+    public static final String BLADE_OF_LEGEND = "Relics/BladeOfLegend.png";
+    public static final String CROWN_OF_THORNS = "Relics/CrownOfThorns.png";
+    public static final String CRUMPLED_PAPER = "Relics/CrumpledPaper.png";
+    public static final String HUGE_EGG = "Relics/HugeEgg.png";
+    public static final String ORB_OF_LIGHT = "Relics/OrbOfLight.png";
+    public static final String PRAYER_BEADS = "Relics/PrayerBeads.png";
+    public static final String WEAKENING_INCENSE = "Relics/WeakeningIncease.png";
+    public static final String WINGED_NECKLACE = "Relics/WingedNecklace.png";
+    public static final String CROSS_PENDANT = "Relics/CrossPendantPic.png";
+
 
     public static final Logger logger = LogManager.getLogger(Fudgesickle.class.getName());
 
