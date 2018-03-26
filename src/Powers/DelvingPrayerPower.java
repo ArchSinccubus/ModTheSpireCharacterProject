@@ -51,7 +51,7 @@ public class DelvingPrayerPower extends AbstractPower {
         this.fontScale = 8.0F;
         this.amount += stackAmount;
         if (this.amount == 0) {
-            AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, "InsightfulPrayer"));
+            AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, "DelvingPrayer"));
         }
 
         if (this.amount >= 999) {
@@ -59,7 +59,7 @@ public class DelvingPrayerPower extends AbstractPower {
         }
 
         if (this.amount <= 0) {
-            AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, "InsightfulPrayer"));
+            AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, "DelvingPrayer"));
         }
 
     }
@@ -75,13 +75,13 @@ public class DelvingPrayerPower extends AbstractPower {
 
     public void atStartOfTurn() {
         AbstractDungeon.actionManager.addToTop(new DrawCardAction(this.owner,cardsToDraw));
-        AbstractDungeon.actionManager.addToTop(new ExhaustTopOfDrawPileAction(this.owner,cardsToDraw));
+        AbstractDungeon.actionManager.addToTop(new ExhaustTopOfDrawPileAction(this.owner,1));
     }
 
     static {
         DESCRIPTIONS = new String[] {
-                "At the beginning to each turn, draw a card and Exhaust the top card of your draw pile",
-                "At the beginning to each turn, draw #b card and Exhaust the top #b cards of your draw pile."
+                "At the beginning to each turn, draw a card and #yExhaust the top card of your draw pile",
+                "At the beginning to each turn, draw #b cards and #yExhaust the top card of your draw pile."
         };
         NAME = "Delving Prayer";
     }

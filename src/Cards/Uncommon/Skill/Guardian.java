@@ -53,6 +53,17 @@ public class Guardian extends CustomCard
     public void applyPowers() {
         super.applyPowers();
         this.baseBlock = this.baseMagicNumber * EnergyPanel.totalCount;
+        this.setDescription(false);
+    }
+
+    private void setDescription(boolean addExtended) {
+        this.rawDescription = CARD_STRINGS.DESCRIPTION;
+        if (addExtended) {
+            this.rawDescription += CARD_STRINGS.EXTENDED_DESCRIPTION[0];
+        }
+        if (this.exhaustOnUseOnce && !this.exhaust)
+            this.rawDescription += " NL Exhaust.";
+        this.initializeDescription();
     }
 
     @Override

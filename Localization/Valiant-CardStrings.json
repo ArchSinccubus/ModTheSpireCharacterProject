@@ -274,7 +274,7 @@
   },
   "SeekAnswers": {
     "NAME": "Seek Answers",
-    "DESCRIPTION": "Draw a card. If it costs !M! Or more, gain [R]"
+    "DESCRIPTION": "Draw a card. If it costs !M! Or more, gain [R] [R]"
   },
   "ArchangelsBoon": {
     "NAME": "Archangel's Denouncement",
@@ -353,7 +353,7 @@
 }, "DelvingPrayer": {
   "NAME": "Delving Prayer",
   "DESCRIPTION": "At the beginning of each turn, draw a card and Exhaust the top card of your draw pile.",
-  "UPGRADE_DESCRIPTION": "At the beginning of each turn, draw !M! cards and Exhaust the top !M! cards of your draw pile."
+  "UPGRADE_DESCRIPTION": "At the beginning of each turn, draw !M! cards and Exhaust the top card of your draw pile."
 },
   "Salvation": {
     "NAME": "Salvation",

@@ -266,7 +266,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
         Texture badgeTexture = new Texture(Gdx.files.internal("resources/BaseModBadge.png"));
         ModPanel settingsPanel = new ModPanel();
         settingsPanel.addLabel("This mod does not have any settings (yet)", 400.0f, 700.0f, (me) -> {});
-        BaseMod.registerModBadge(badgeTexture, Dev, Dev, "This is muh shit. F**k ye", settingsPanel);
+        BaseMod.registerModBadge(badgeTexture, Dev, Dev, "The Valiant, wielder of rage and purity, is now en route to the spire!", settingsPanel);
 
         Settings.isDailyRun = false;
         Settings.isTrial = false;
@@ -280,16 +280,20 @@ public class Fudgesickle implements PostInitializeSubscriber,
         // Add relics
         RelicLibrary.add(new CrossPendant());
         RelicLibrary.add(new WingedNecklace());
-        RelicLibrary.add(new OrbOfLight());
-        RelicLibrary.add(new WeakeningIncense());
-        RelicLibrary.add(new CrumpledPaper());
+        BaseMod.addRelicToCustomPool(new OrbOfLight(), "Holy");
+        //RelicLibrary.add(new OrbOfLight());
+        BaseMod.addRelicToCustomPool(new WeakeningIncense(), "Holy");
+        //RelicLibrary.add(new WeakeningIncense());
+        BaseMod.addRelicToCustomPool(new CrumpledPaper(), "Holy");
+        //RelicLibrary.add(new CrumpledPaper());
         RelicLibrary.add(new HugeEgg());
         RelicLibrary.add(new PrayerBeads());
         RelicLibrary.add(new ArchAngelsFeather());
-        RelicLibrary.add(new CrownOfThorns());
-        RelicLibrary.add(new BladeOfLegend());
+        BaseMod.addRelicToCustomPool(new CrownOfThorns(), "Holy");
+        //RelicLibrary.add(new CrownOfThorns());
+        BaseMod.addRelicToCustomPool(new BladeOfLegend(), "Holy");
+        //RelicLibrary.add(new BladeOfLegend());
 
-        //BaseMod.addRelicToCustomPool(new OrbOfLight(), "Holy");
 
         logger.info("done editting relics");
     }
@@ -442,8 +446,8 @@ public class Fudgesickle implements PostInitializeSubscriber,
         logger.info("begin editting characters");
 
         logger.info("add " + CharacterEnum.TheValiant.toString());
-        BaseMod.addCharacter(Valiant.class, "The Zealous", "A nun sent to destroy the heart of evil in the name of The Lord. Wields both holy power and untold fury.",
-                AbstractCardEnum.Holy.toString(), "The Zealous",
+        BaseMod.addCharacter(Valiant.class, "The Valiant", "A nun sent to destroy the heart of evil in the name of The Lord. Wields both holy power and untold fury.",
+                AbstractCardEnum.Holy.toString(), "The Valiant",
                 makePath(VALIANT_BUTTON) , makePath(VALIANT_POTRAIT),
                 CharacterEnum.TheValiant.toString());
 
@@ -453,8 +457,8 @@ public class Fudgesickle implements PostInitializeSubscriber,
     @Override
     public void receiveEditKeywords() {
         logger.info("setting up custom keywords");
-        BaseMod.addKeyword(new String[] {"spirit", "Spirit"}, "Spirit increases the potency of healing.");
-        BaseMod.addKeyword(new String[] {"wavering", "Wavering"}, "At the start of each turn, this monster is dealt 3 damage.");
+        BaseMod.addKeyword(new String[] {"spirit", "Spirit"}, "Spirit increases the potency of #yhealing.");
+        BaseMod.addKeyword(new String[] {"wavering", "Wavering"}, "At the start of each turn, this monster is dealt #y3 damage.");
     }
 
     @Override

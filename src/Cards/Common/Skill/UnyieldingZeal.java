@@ -43,8 +43,25 @@ public class UnyieldingZeal extends CustomCard
     }
 
     @Override
+    public void applyPowers()
+    {
+        super.applyPowers();
+        this.setDescription(false);
+    }
+
+    @Override
     public AbstractCard makeCopy() {
         return new UnyieldingZeal();
+    }
+
+    private void setDescription(boolean addExtended) {
+        this.rawDescription = CARD_STRINGS.DESCRIPTION;
+        if (addExtended) {
+            this.rawDescription += CARD_STRINGS.EXTENDED_DESCRIPTION[0];
+        }
+        if (this.exhaustOnUseOnce && !this.exhaust)
+            this.rawDescription += " NL Exhaust.";
+        this.initializeDescription();
     }
 
     @Override

@@ -39,7 +39,7 @@ public class DelvingPrayer extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DelvingPrayerPower(p, 1, this.magicNumber), 1, true, AbstractGameAction.AttackEffect.NONE));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DelvingPrayerPower(p, this.magicNumber, this.magicNumber), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
     }
 
 
