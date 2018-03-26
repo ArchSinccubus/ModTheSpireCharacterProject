@@ -18,7 +18,7 @@ public class CombatStancePower extends AbstractPower {
     public static final String NAME = "Combat Stance";
     public static final String[] DESCRIPTIONS = new String[] {
             "When you are attacked this turn apply ",
-            " Frail and ",
+            " Wavering and ",
             " Weak to the attacker."
     };
 

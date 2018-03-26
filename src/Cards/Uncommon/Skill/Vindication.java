@@ -59,8 +59,8 @@ public class Vindication extends CustomCard
         {
             this.upgradeName();
             this.upgradeMagicNumber(SPIRIT_UPGRADE);
-            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
-            this.initializeDescription();
+            //this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
+            //this.initializeDescription();
         }
 
     }

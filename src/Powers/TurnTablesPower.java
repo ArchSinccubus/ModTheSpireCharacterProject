@@ -55,7 +55,7 @@ public class TurnTablesPower extends AbstractPower {
 
     static {
         DESCRIPTIONS = new String[] {
-                "Whenever you apply Frail to an Enemy, Lose 4 HP and gain 1 Energy."
+                "Whenever you apply Frail to an Enemy, Lose 3 HP and gain 1 Energy."
         };
         NAME = "Turn Tables";
     }
