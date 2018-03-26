@@ -8,8 +8,8 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardBrieflyEffect;
 
-import Cards.Starter.Defend_W;
-import Cards.Starter.Strike_W;
+import Cards.Starter.Defend_Valiant;
+import Cards.Starter.Strike_Valiant;
 
 @SpirePatch(cls = "com.megacrit.cardcrawl.events.thecity.BackToBasics", method = "buttonEffect")
 public class BackToBasicsPatch {
@@ -20,7 +20,7 @@ public class BackToBasicsPatch {
         if (!selection.toString().equals("IRONCLAD") && !selection.toString().equals("THE_SILENT")
                 && !selection.toString().equals("CROWBOT")) {
             for (AbstractCard c : AbstractDungeon.player.masterDeck.group) {
-                if ((c instanceof Strike_W || c instanceof Defend_W) && c.canUpgrade()) {
+                if ((c instanceof Strike_Valiant || c instanceof Defend_Valiant) && c.canUpgrade()) {
                     c.upgrade();
                     AbstractDungeon.player.bottledCardUpgradeCheck(c);
                     AbstractDungeon.effectList.add(

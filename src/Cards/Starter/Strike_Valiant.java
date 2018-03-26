@@ -10,8 +10,8 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class Strike_W extends CustomCard{
-    public static final String ID = "AttackDemo";
+public class Strike_Valiant extends CustomCard{
+    public static final String ID = "Strike_Valiant";
     public static final String NAME = "Strike";
     public static final String DESCRIPTION = "Deal !D! damage.";
     public static final String IMG_PATH = "Cards_other/Attacks/comet.png";
@@ -23,7 +23,7 @@ public class Strike_W extends CustomCard{
     private static final CardTarget target = CardTarget.ENEMY;
 
 
-    public Strike_W() {
+    public Strike_Valiant() {
         super(ID, NAME, Fudgesickle.makePath(IMG_PATH), COST, DESCRIPTION, AbstractCard.CardType.ATTACK,
                 AbstractCardEnum.Holy, rarity,
                 target, POOL);
@@ -40,7 +40,7 @@ public class Strike_W extends CustomCard{
 
     @Override
     public AbstractCard makeCopy() {
-        return new Strike_W();
+        return new Strike_Valiant();
     }
 
     @Override

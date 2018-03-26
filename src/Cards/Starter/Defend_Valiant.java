@@ -8,8 +8,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
 
-public class Defend_W extends CustomCard{
-    public static final String ID = "SkillDemo";
+public class Defend_Valiant extends CustomCard{
+    public static final String ID = "Defend_Valiant";
     public static final String NAME = "Defend";
     public static final String DESCRIPTION = "Gain !B! block.";
     public static final String IMG_PATH = "Cards_other/Skills/corona.png";
@@ -20,7 +20,7 @@ public class Defend_W extends CustomCard{
     private static final CardRarity rarity = CardRarity.BASIC;
     private static final CardTarget target = CardTarget.SELF;
 
-    public Defend_W() {
+    public Defend_Valiant() {
         super(ID, NAME, Fudgesickle.makePath(IMG_PATH), COST, DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
                 rarity, target, POOL);
@@ -39,7 +39,7 @@ public class Defend_W extends CustomCard{
 
     @Override
     public AbstractCard makeCopy() {
-        return new Defend_W();
+        return new Defend_Valiant();
     }
 
     @Override

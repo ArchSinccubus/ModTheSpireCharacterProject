@@ -81,15 +81,15 @@ public class Valiant extends CustomPlayer{
     // ADD CARDS
     public static ArrayList<String> getStartingDeck() { // starting deck 'nuff said
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add("AttackDemo");
-        retVal.add("AttackDemo");
-        retVal.add("AttackDemo");
-        retVal.add("AttackDemo");
-        retVal.add("AttackDemo");
-        retVal.add("SkillDemo");
-        retVal.add("SkillDemo");
-        retVal.add("SkillDemo");
-        retVal.add("SkillDemo");
+        retVal.add("Strike_Valiant");
+        retVal.add("Strike_Valiant");
+        retVal.add("Strike_Valiant");
+        retVal.add("Strike_Valiant");
+        retVal.add("Strike_Valiant");
+        retVal.add("Defend_Valiant");
+        retVal.add("Defend_Valiant");
+        retVal.add("Defend_Valiant");
+        retVal.add("Defend_Valiant");
         retVal.add("BlindingLight");
         retVal.add("MinorHealing");
         return retVal;

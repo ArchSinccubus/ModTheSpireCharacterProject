@@ -9,9 +9,9 @@ import Cards.Rare.Power.PeacefulStance;
 import Cards.Rare.Power.WeakForm;
 import Cards.Rare.Skill.*;
 import Cards.Starter.BlindingLight;
-import Cards.Starter.Defend_W;
+import Cards.Starter.Defend_Valiant;
 import Cards.Starter.MinorHealing;
-import Cards.Starter.Strike_W;
+import Cards.Starter.Strike_Valiant;
 import Cards.Uncommon.Attack.*;
 import Cards.Uncommon.Power.*;
 import Cards.Uncommon.Skill.*;
@@ -304,8 +304,8 @@ public class Fudgesickle implements PostInitializeSubscriber,
 
         //logger.info("add cards for " + TheSeekerEnum.THE_SEEKER.toString());
 
-        BaseMod.addCard(new Defend_W());
-        BaseMod.addCard(new Strike_W());
+        BaseMod.addCard(new Defend_Valiant());
+        BaseMod.addCard(new Strike_Valiant());
         BaseMod.addCard(new BlindingLight());
         BaseMod.addCard(new MinorHealing());
 
