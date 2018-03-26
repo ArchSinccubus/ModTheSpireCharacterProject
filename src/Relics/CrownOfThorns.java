@@ -2,6 +2,7 @@ package Relics;
 
 import Actions.AddCardToHandAtion;
 import Actions.CrossPendantAction;
+import Cards.Rare.Attack.FinalGambit;
 import Cards.Rare.Skill.DeadlyPlay;
 import MainMod.*;
 import Powers.SpiritPower;
@@ -128,10 +129,10 @@ public class CrownOfThorns extends CustomRelic {
         logger.info(c.name + " "+ c.type + " " + c.rawDescription);
         if (c.name == new DeadlyPlay().name)
             return false;
-        if (
+        if ((c.name == new FinalGambit().name) || (
                 (c.type != AbstractCard.CardType.POWER && c.type != AbstractCard.CardType.STATUS && c.type != AbstractCard.CardType.CURSE) &&
                         (c.rawDescription.contains("Lose") || c.rawDescription.contains("lose")) &&
-                        (c.rawDescription.contains("HP")))
+                        (c.rawDescription.contains("HP"))))
         {
             return true;
         }

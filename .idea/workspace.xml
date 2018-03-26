@@ -37,11 +37,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeadlyPlayPower.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DeadlyPlayPower.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Powers/DeadlyPlayPower.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="56" column="38" lean-forward="false" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
+            <state relative-caret-position="388">
+              <caret line="92" column="43" lean-forward="true" selection-start-line="89" selection-start-column="5" selection-end-line="92" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CrownOfThorns.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Relics/CrownOfThorns.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="134" column="59" lean-forward="false" selection-start-line="134" selection-start-column="59" selection-end-line="134" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -423,16 +433,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArcaneHealing.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cards/Common/Skill/ArcaneHealing.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-893">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SoulStrain.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Skill/SoulStrain.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -520,7 +520,6 @@
         <option value="$PROJECT_DIR$/src/Relics/ArchAngelsFeather.java" />
         <option value="$PROJECT_DIR$/src/Relics/BladeOfLegend.java" />
         <option value="$PROJECT_DIR$/src/Relics/CrossPendant.java" />
-        <option value="$PROJECT_DIR$/src/Relics/CrownOfThorns.java" />
         <option value="$PROJECT_DIR$/src/Relics/CrumpledPaper.java" />
         <option value="$PROJECT_DIR$/src/Relics/HugeEgg.java" />
         <option value="$PROJECT_DIR$/src/Relics/OrbOfLight.java" />
@@ -559,6 +558,7 @@
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Skill/Guardian.java" />
         <option value="$PROJECT_DIR$/src/MainMod/Fudgesickle.java" />
         <option value="$PROJECT_DIR$/src/Powers/DeadlyPlayPower.java" />
+        <option value="$PROJECT_DIR$/src/Relics/CrownOfThorns.java" />
       </list>
     </option>
   </component>
@@ -1035,17 +1035,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Cards/Rare/Attack/DangerousSmash.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="49" column="153" lean-forward="false" selection-start-line="49" selection-start-column="153" selection-end-line="49" selection-end-column="153" />
-          <folding>
-            <element signature="e#2658#2659#0" expanded="false" />
-            <element signature="e#2701#2702#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Cards/Rare/Attack/Execution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -1817,8 +1806,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Powers/DeadlyPlayPower.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="56" column="38" lean-forward="false" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
+        <state relative-caret-position="388">
+          <caret line="92" column="43" lean-forward="true" selection-start-line="89" selection-start-column="5" selection-end-line="92" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Relics/CrownOfThorns.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="134" column="59" lean-forward="false" selection-start-line="134" selection-start-column="59" selection-end-line="134" selection-end-column="59" />
           <folding />
         </state>
       </provider>
