@@ -35,7 +35,7 @@ public class Valiant extends CustomPlayer{
     public static final int ENERGY_PER_TURN = 3; // how much energy you get every turn
     public static final String MY_CHARACTER_SHOULDER_2 = "resources/TestAnim/shoulder2.png"; // campfire pose
     public static final String MY_CHARACTER_SHOULDER_1 = "resources/TestAnim/shoulder.png"; // another campfire pose
-    public static final String MY_CHARACTER_CORPSE = "resources/Char/Blahblahhugebitch.png"; // dead corpse
+    public static final String MY_CHARACTER_CORPSE = "resources/TestAnim/corpse.png"; // dead corpse
     public static final String MY_CHARACTER_SKELETON_ATLAS = "resources/TestAnim/idle/skeleton.atlas"; // spine animation atlas
     public static final String MY_CHARACTER_SKELETON_JSON = "resources/TestAnim/idle/skeleton.json"; // spine animation json
 

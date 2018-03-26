@@ -33,8 +33,8 @@
     "DESCRIPTION": "Deal !M! damage for each Smite card in your hand. If the enemy is Wavering, deal 50% more",
     "UPGRADE_DESCRIPTION": "Deal !M! damage for each Smite card in your hand. NL If the enemy is Wavering, deal twice as much.",
     "EXTENDED_DESCRIPTION": [
-      "Deal !M! damage for each Smite card in your hand. If enemy is Wavering, deal FFF more.",
-      " NL (You will deal !D! Damage. RRR more if Wavering.)"
+      "Deal !M! damage for all Smite card in your hand. If enemy is Wavering, deal FFF more.",
+      " (You will deal !D! Damage. RRR more if Wavering.)"
     ]
   },
   "Decimate": {
@@ -125,8 +125,8 @@
     "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Heal !M! HP. Exhaust."
   },
   "Desperation": {
-    "NAME": "Desperation",
-    "DESCRIPTION": "Deal !D! damage. NL Lose !M! HP. NL Apply 3 Vulnerable."
+    "NAME": "Desperate Wailing",
+    "DESCRIPTION": "Innate. Deal !D! damage. NL Lose !M! HP. NL Apply 3 Vulnerable. Exhaust."
   },
   "AbandonReason": {
     "NAME": "Abandon Reason",

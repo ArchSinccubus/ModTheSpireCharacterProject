@@ -20,8 +20,38 @@
       <file leaf-file-name="Valiant-CardStrings.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Localization/Valiant-CardStrings.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="359" column="28" lean-forward="false" selection-start-line="359" selection-start-column="28" selection-end-line="359" selection-end-column="28" />
+            <state relative-caret-position="396">
+              <caret line="36" column="58" lean-forward="true" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Quickstep.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cards/Common/Skill/Quickstep.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="69" column="41" lean-forward="false" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuraDischarge.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/AuraDischarge.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="53" column="96" lean-forward="false" selection-start-line="53" selection-start-column="96" selection-end-line="53" selection-end-column="96" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Desperation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/Desperation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -40,8 +70,18 @@
       <file leaf-file-name="Fudgesickle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainMod/Fudgesickle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2271">
+            <state relative-caret-position="-1200">
               <caret line="171" column="0" lean-forward="false" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="90" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Valiant.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Character/Valiant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -50,8 +90,28 @@
       <file leaf-file-name="Salvation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cards/Rare/Skill/Salvation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
+            <state relative-caret-position="346">
               <caret line="97" column="96" lean-forward="false" selection-start-line="97" selection-start-column="96" selection-end-line="97" selection-end-column="96" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chainer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/Chainer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-599">
+              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sharpen.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Power/Sharpen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="56" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -68,8 +128,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Fudgesickle.</find>
-      <find>holy_</find>
       <find>peace</find>
       <find>Cross</find>
       <find>can only</find>
@@ -98,6 +156,8 @@
       <find>block</find>
       <find>Onr</find>
       <find>salva</find>
+      <find>quick</find>
+      <find>mercil</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -129,7 +189,6 @@
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Skill/BraceThePain.java" />
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Skill/Meaballize.java" />
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Skill/ZealousAmbition.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Common/Skill/Quickstep.java" />
         <option value="$PROJECT_DIR$/src/Cards/Rare/Skill/PowerBloom.java" />
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Skill/Charge.java" />
         <option value="$PROJECT_DIR$/src/Actions/CrossPendantAction.java" />
@@ -148,7 +207,6 @@
         <option value="$PROJECT_DIR$/src/Relics/WeakeningIncense.java" />
         <option value="$PROJECT_DIR$/src/Relics/ArchAngelsFeather.java" />
         <option value="$PROJECT_DIR$/src/MainMod/Fudgesickle.java" />
-        <option value="$PROJECT_DIR$/src/Character/Valiant.java" />
         <option value="$PROJECT_DIR$/Localization/Valiant-RelicStrings.json" />
         <option value="$PROJECT_DIR$/src/Relics/WingedNecklace.java" />
         <option value="$PROJECT_DIR$/src/Relics/CrownOfThorns.java" />
@@ -162,6 +220,8 @@
         <option value="$PROJECT_DIR$/src/Cards/Rare/Attack/AlmightySmite.java" />
         <option value="$PROJECT_DIR$/src/Cards/Starter/MinorHealing.java" />
         <option value="$PROJECT_DIR$/src/Cards/Rare/Skill/Salvation.java" />
+        <option value="$PROJECT_DIR$/src/Character/Valiant.java" />
+        <option value="$PROJECT_DIR$/src/Cards/Common/Skill/Quickstep.java" />
         <option value="$PROJECT_DIR$/Localization/Valiant-CardStrings.json" />
       </list>
     </option>
@@ -263,6 +323,29 @@
               <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Cards_other" type="462c0819:PsiDirectoryNode" />
+              <item name="Backgrounds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Cards_other" type="462c0819:PsiDirectoryNode" />
+              <item name="Backgrounds" type="462c0819:PsiDirectoryNode" />
+              <item name="512" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Cards_other" type="462c0819:PsiDirectoryNode" />
+              <item name="Backgrounds" type="462c0819:PsiDirectoryNode" />
+              <item name="1024" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="Char" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -314,6 +397,14 @@
               <item name="Cards" type="462c0819:PsiDirectoryNode" />
               <item name="Common" type="462c0819:PsiDirectoryNode" />
               <item name="Attack" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Cards" type="462c0819:PsiDirectoryNode" />
+              <item name="Common" type="462c0819:PsiDirectoryNode" />
+              <item name="Skill" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
@@ -586,86 +677,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa7420.49563/com/megacrit/cardcrawl/powers/WeakPower.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-832">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/STS mod projects/BaseMod.jar!/basemod/abstracts/CustomPlayer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3654">
-          <caret line="36" column="50" lean-forward="false" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/characters/AbstractPlayer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="363" column="17" lean-forward="false" selection-start-line="363" selection-start-column="16" selection-end-line="363" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Powers/PeacefulStancePower.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="58" column="34" lean-forward="false" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa7420.17642/com/megacrit/cardcrawl/relics/DuVuDoll.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Powers/DeadlyPlayPower.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="94" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa7420.30323/com/megacrit/cardcrawl/powers/WeakPower.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa7420.33997/com/megacrit/cardcrawl/actions/common/ApplyPowerAction.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="159" column="59" lean-forward="false" selection-start-line="159" selection-start-column="53" selection-end-line="159" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa7420.17715/com/megacrit/cardcrawl/relics/CursedKey.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="70" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/actions/common/ExhaustSpecificCardAction.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="29" column="80" lean-forward="true" selection-start-line="29" selection-start-column="80" selection-end-line="29" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa7420.470/com/megacrit/cardcrawl/powers/CorruptionPower.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -1300,14 +1311,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Character/Valiant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="99" column="35" lean-forward="false" selection-start-line="99" selection-start-column="35" selection-end-line="99" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/relics/AbstractRelic.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="427">
@@ -1580,12 +1583,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainMod/Fudgesickle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2271">
-          <caret line="171" column="0" lean-forward="false" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="90" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/resources/TestAnim/Orb/layer1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/Cards_other/Backgrounds/512/card_holy_orb.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/orb/layer1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/TestAnim/shoulder.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/LeilaPic.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cards/Starter/MinorHealing.java">
@@ -1596,18 +1616,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainMod/Fudgesickle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1200">
+          <caret line="171" column="0" lean-forward="false" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Character/Valiant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Cards/Rare/Skill/Salvation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
+        <state relative-caret-position="346">
           <caret line="97" column="96" lean-forward="false" selection-start-line="97" selection-start-column="96" selection-end-line="97" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/Chainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-599">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Power/Sharpen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="56" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/AuraDischarge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="53" column="96" lean-forward="false" selection-start-line="53" selection-start-column="96" selection-end-line="53" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/Desperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Common/Skill/Quickstep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="69" column="41" lean-forward="false" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Localization/Valiant-CardStrings.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="359" column="28" lean-forward="false" selection-start-line="359" selection-start-column="28" selection-end-line="359" selection-end-column="28" />
+        <state relative-caret-position="396">
+          <caret line="36" column="58" lean-forward="true" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
           <folding />
         </state>
       </provider>
