@@ -28,8 +28,8 @@ public class Desperation extends CustomCard
     private static final CardRarity rarity = CardRarity.UNCOMMON;
     private static final CardTarget target = CardTarget.ENEMY;
     private static final CardType type = CardType.ATTACK;
-    private static final int DAMAGE = 20;
-    private static final int DAMAGE_UPGRADE = 7;
+    private static final int DAMAGE = 15;
+    private static final int DAMAGE_UPGRADE = 5;
     private static final int MAGIC_NUM = 6;
 
     public Desperation() {

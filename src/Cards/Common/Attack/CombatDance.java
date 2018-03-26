@@ -27,7 +27,7 @@ public class CombatDance extends CustomCard
     private static final CardRarity rarity = CardRarity.COMMON;
     private static final CardTarget target = CardTarget.ENEMY;
     private static final CardType type = CardType.ATTACK;
-    private static final int DAMAGE = 8;
+    private static final int DAMAGE = 9;
     private static final int UPGRADE_DAMAGE = 4;
 
     public CombatDance() {

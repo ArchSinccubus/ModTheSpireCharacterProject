@@ -41,17 +41,47 @@
         <entry file="file://$PROJECT_DIR$/src/Powers/DeadlyPlayPower.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="388">
-              <caret line="92" column="43" lean-forward="true" selection-start-line="89" selection-start-column="5" selection-end-line="92" selection-end-column="43" />
+              <caret line="92" column="43" lean-forward="false" selection-start-line="89" selection-start-column="5" selection-end-line="92" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CrownOfThorns.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CrownOfThorns.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Relics/CrownOfThorns.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="630">
               <caret line="134" column="59" lean-forward="false" selection-start-line="134" selection-start-column="59" selection-end-line="134" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DivineFavor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cards/Common/Skill/DivineFavor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="26" column="50" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Desperation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/Desperation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="31" column="47" lean-forward="false" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CombatDance.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/CombatDance.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="29" column="39" lean-forward="false" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -423,36 +453,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UnyieldingZeal.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cards/Common/Skill/UnyieldingZeal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="577">
-              <caret line="48" column="8" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SoulStrain.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Skill/SoulStrain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-53">
-              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Charge.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Skill/Charge.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="60" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -508,7 +508,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Cards/Common/Attack/RecklessSmite.java" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Attack/FuriousSmite.java" />
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Attack/MercilessSmite.java" />
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Attack/StrainingSmite.java" />
@@ -529,7 +528,6 @@
         <option value="$PROJECT_DIR$/Localization/Valiant-RelicStrings.json" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Attack/PiercingStab.java" />
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Attack/AuraDischarge.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Common/Attack/CombatDance.java" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Attack/ToweringCharge.java" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Skill/HolyFury.java" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Skill/MightBracer.java" />
@@ -543,7 +541,6 @@
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Attack/AbandonReason.java" />
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Attack/BreakThrough.java" />
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Attack/Chainer.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Uncommon/Attack/Desperation.java" />
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Attack/TearPsyche.java" />
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Power/Ensoul.java" />
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Power/Sharpen.java" />
@@ -559,6 +556,9 @@
         <option value="$PROJECT_DIR$/src/MainMod/Fudgesickle.java" />
         <option value="$PROJECT_DIR$/src/Powers/DeadlyPlayPower.java" />
         <option value="$PROJECT_DIR$/src/Relics/CrownOfThorns.java" />
+        <option value="$PROJECT_DIR$/src/Cards/Common/Skill/DivineFavor.java" />
+        <option value="$PROJECT_DIR$/src/Cards/Uncommon/Attack/Desperation.java" />
+        <option value="$PROJECT_DIR$/src/Cards/Common/Attack/CombatDance.java" />
       </list>
     </option>
   </component>
@@ -1035,22 +1035,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Cards/Rare/Attack/Execution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="50" column="59" lean-forward="false" selection-start-line="50" selection-start-column="59" selection-end-line="50" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Rare/Attack/FinalGambit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Cards/Rare/Attack/HolyStorm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -1150,14 +1134,6 @@
             <marker date="1521753308000" expanded="true" signature="16408:17390" ph="{...}" />
             <marker date="1521753308000" expanded="true" signature="17403:17705" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/Desperation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="47" column="85" lean-forward="false" selection-start-line="47" selection-start-column="85" selection-end-line="47" selection-end-column="85" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1807,7 +1783,7 @@
     <entry file="file://$PROJECT_DIR$/src/Powers/DeadlyPlayPower.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
-          <caret line="92" column="43" lean-forward="true" selection-start-line="89" selection-start-column="5" selection-end-line="92" selection-end-column="43" />
+          <caret line="92" column="43" lean-forward="false" selection-start-line="89" selection-start-column="5" selection-end-line="92" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -1816,6 +1792,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="134" column="59" lean-forward="false" selection-start-line="134" selection-start-column="59" selection-end-line="134" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Common/Skill/DivineFavor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="26" column="50" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/Desperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="31" column="47" lean-forward="false" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Common/Attack/CombatDance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="29" column="39" lean-forward="false" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
           <folding />
         </state>
       </provider>
