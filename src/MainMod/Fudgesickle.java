@@ -280,18 +280,18 @@ public class Fudgesickle implements PostInitializeSubscriber,
         // Add relics
         RelicLibrary.add(new CrossPendant());
         RelicLibrary.add(new WingedNecklace());
-        BaseMod.addRelicToCustomPool(new OrbOfLight(), "Holy");
+        BaseMod.addRelicToCustomPool(new OrbOfLight(), AbstractCardEnum.Holy.name());
         //RelicLibrary.add(new OrbOfLight());
-        BaseMod.addRelicToCustomPool(new WeakeningIncense(), "Holy");
+        BaseMod.addRelicToCustomPool(new WeakeningIncense(), AbstractCardEnum.Holy.name());
         //RelicLibrary.add(new WeakeningIncense());
-        BaseMod.addRelicToCustomPool(new CrumpledPaper(), "Holy");
+        BaseMod.addRelicToCustomPool(new CrumpledPaper(), AbstractCardEnum.Holy.name());
         //RelicLibrary.add(new CrumpledPaper());
         RelicLibrary.add(new HugeEgg());
         RelicLibrary.add(new PrayerBeads());
         RelicLibrary.add(new ArchAngelsFeather());
-        BaseMod.addRelicToCustomPool(new CrownOfThorns(), "Holy");
+        BaseMod.addRelicToCustomPool(new CrownOfThorns(), AbstractCardEnum.Holy.name());
         //RelicLibrary.add(new CrownOfThorns());
-        BaseMod.addRelicToCustomPool(new BladeOfLegend(), "Holy");
+        BaseMod.addRelicToCustomPool(new BladeOfLegend(), AbstractCardEnum.Holy.name());
         //RelicLibrary.add(new BladeOfLegend());
 
 

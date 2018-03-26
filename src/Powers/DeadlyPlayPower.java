@@ -1,5 +1,6 @@
 package Powers;
 
+import Cards.Rare.Attack.FinalGambit;
 import Cards.Rare.Skill.DeadlyPlay;
 import MainMod.Fudgesickle;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
@@ -52,6 +53,8 @@ public class DeadlyPlayPower extends AbstractPower {
             }
 
             AbstractCard tmp = card.makeStatEquivalentCopy();
+            if (tmp.name == new FinalGambit().name)
+            {tmp.damage = card.damage;}
             AbstractDungeon.player.limbo.addToBottom(tmp);
             tmp.current_x = card.current_x;
             tmp.current_y = card.current_y;
@@ -84,10 +87,10 @@ public class DeadlyPlayPower extends AbstractPower {
         logger.info(c.name + " "+ c.type + " " + c.rawDescription);
         if (c.name == new DeadlyPlay().name)
             return false;
-     if (
+     if ((c.name == new FinalGambit().name) || (
         (c.type != CardType.POWER && c.type != CardType.STATUS && c.type != CardType.CURSE) &&
         (c.rawDescription.contains("Lose") || c.rawDescription.contains("lose")) &&
-        (c.rawDescription.contains("HP")))
+        (c.rawDescription.contains("HP"))))
         {
             return true;
         }
