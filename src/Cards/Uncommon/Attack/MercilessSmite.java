@@ -23,7 +23,7 @@ public class MercilessSmite extends CustomCard
     public static final String IMG_PATH = "Cards/Attacks/comet.png";
     private static final int COST = 2;
     private static final int POOL = 1;
-    private static final int ATTACK_DMG = 8;
+    private static final int ATTACK_DMG = 6;
     private static final CardRarity rarity = CardRarity.UNCOMMON;
     private static final CardTarget target = CardTarget.ENEMY;
     private static final CardType type = CardType.ATTACK;

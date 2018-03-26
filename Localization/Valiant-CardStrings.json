@@ -33,8 +33,8 @@
     "DESCRIPTION": "Deal !M! damage for each Smite card in your hand. If the enemy is Wavering, deal 50% more",
     "UPGRADE_DESCRIPTION": "Deal !M! damage for each Smite card in your hand. NL If the enemy is Wavering, deal twice as much.",
     "EXTENDED_DESCRIPTION": [
-      "Deal !M! damage for all Smite card in your hand. If foe is Wavering, deal FFF more.",
-      " (You will deal !D! Damage. RRR more if Wavering.)"
+      "Deal !M! [ !M! + FFF if foe is Wavering ] damage for all Smite card in hand.",
+      " (You will deal !D! [ !D! + RRR ] Damage.)"
     ]
   },
   "Decimate": {
@@ -170,7 +170,7 @@
   },
   "Tantrum": {
   "NAME": "Tantrum",
-  "DESCRIPTION": "For each time you lost life during your turn, deal !M! to ALL enemies.",
+  "DESCRIPTION": "For each time you lost life this turn, deal !M! to ALL enemies.",
     "EXTENDED_DESCRIPTION": [
       " (You will deal !D! Damage)"
     ]
