@@ -17,35 +17,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Valiant-CardStrings.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Valiant-CardStrings.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Localization/Valiant-CardStrings.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="314" column="119" lean-forward="false" selection-start-line="314" selection-start-column="115" selection-end-line="314" selection-end-column="119" />
+            <state relative-caret-position="543">
+              <caret line="220" column="34" lean-forward="false" selection-start-line="220" selection-start-column="34" selection-end-line="220" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Salvation.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PandorasBoxPatch.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Patches/PandorasBoxPatch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="25" column="67" lean-forward="false" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VampirePatch.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Patches/VampirePatch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DangerousSmash.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cards/Rare/Attack/DangerousSmash.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="33" column="48" lean-forward="false" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Salvation.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Cards/Rare/Skill/Salvation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="664">
-              <caret line="94" column="5" lean-forward="false" selection-start-line="69" selection-start-column="4" selection-end-line="94" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArcaneHealing.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cards/Common/Skill/ArcaneHealing.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="92" selection-end-column="5" />
+            <state relative-caret-position="517">
+              <caret line="87" column="33" lean-forward="false" selection-start-line="87" selection-start-column="33" selection-end-line="87" selection-end-column="33" />
               <folding>
-                <element signature="method#applyPowersToHeal#0;class#ArcaneHealing#0" expanded="false" />
-                <element signature="method#setDescription#0;class#ArcaneHealing#0" expanded="false" />
-                <element signature="method#setDescription#1;class#ArcaneHealing#0" expanded="false" />
+                <element signature="e#4740#4741#0" expanded="true" />
+                <element signature="e#4778#4779#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,8 +73,8 @@
       <file leaf-file-name="DivineFavor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cards/Common/Skill/DivineFavor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
-              <caret line="93" column="5" lean-forward="false" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+            <state relative-caret-position="273">
+              <caret line="27" column="42" lean-forward="false" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
               <folding>
                 <element signature="method#applyPowersToHeal#0;class#DivineFavor#0" expanded="false" />
                 <element signature="method#setDescription#0;class#DivineFavor#0" expanded="false" />
@@ -96,8 +115,8 @@
       <file leaf-file-name="Meaballize.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Skill/Meaballize.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="808">
-              <caret line="96" column="5" lean-forward="false" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
+            <state relative-caret-position="210">
+              <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
               <folding>
                 <element signature="method#applyPowersToHeal#0;class#Meaballize#0" expanded="false" />
                 <element signature="method#setDescription#0;class#Meaballize#0" expanded="false" />
@@ -132,8 +151,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>OnUse</find>
-      <find>Iron</find>
       <find>Relic</find>
       <find>archan</find>
       <find>power</find>
@@ -162,6 +179,8 @@
       <find>Zealous</find>
       <find>Salva</find>
       <find>Heal</find>
+      <find>HolyS</find>
+      <find>Divine</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -176,7 +195,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Relics/ArchAngelsFeather.java" />
         <option value="$PROJECT_DIR$/src/Relics/BladeOfLegend.java" />
         <option value="$PROJECT_DIR$/src/Relics/CrossPendant.java" />
         <option value="$PROJECT_DIR$/src/Relics/CrumpledPaper.java" />
@@ -192,7 +210,6 @@
         <option value="$PROJECT_DIR$/src/Cards/Common/Skill/MightBracer.java" />
         <option value="$PROJECT_DIR$/src/Cards/Rare/Power/FullAwakening.java" />
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Attack/HolyLight.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Rare/Attack/DangerousSmash.java" />
         <option value="$PROJECT_DIR$/src/Cards/Rare/Attack/Execution.java" />
         <option value="$PROJECT_DIR$/src/Cards/Rare/Attack/Tantrum.java" />
         <option value="$PROJECT_DIR$/src/Actions/AddCardToHandAtion.java" />
@@ -219,14 +236,16 @@
         <option value="$PROJECT_DIR$/src/Powers/TurnTablesPower.java" />
         <option value="$PROJECT_DIR$/src/Powers/CombatStancePower.java" />
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Skill/Vindication.java" />
-        <option value="$PROJECT_DIR$/Localization/Valiant-CardStrings.json" />
-        <option value="$PROJECT_DIR$/src/Cards/Rare/Skill/Salvation.java" />
         <option value="$PROJECT_DIR$/src/Cards/Common/Skill/ArcaneHealing.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Common/Skill/DivineFavor.java" />
         <option value="$PROJECT_DIR$/src/Cards/Starter/MinorHealing.java" />
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Attack/AuraDischarge.java" />
-        <option value="$PROJECT_DIR$/src/Cards/Uncommon/Skill/Meaballize.java" />
         <option value="$PROJECT_DIR$/src/Cards/Uncommon/Skill/ZealousAmbition.java" />
+        <option value="$PROJECT_DIR$/src/Cards/Rare/Attack/DangerousSmash.java" />
+        <option value="$PROJECT_DIR$/src/Patches/PandorasBoxPatch.java" />
+        <option value="$PROJECT_DIR$/src/Cards/Uncommon/Skill/Meaballize.java" />
+        <option value="$PROJECT_DIR$/Localization/Valiant-CardStrings.json" />
+        <option value="$PROJECT_DIR$/src/Cards/Common/Skill/DivineFavor.java" />
+        <option value="$PROJECT_DIR$/src/Cards/Rare/Skill/Salvation.java" />
       </list>
     </option>
   </component>
@@ -703,30 +722,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/StrainingSmite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/TearPsyche.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="46" column="87" lean-forward="false" selection-start-line="46" selection-start-column="87" selection-end-line="46" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/TearSoul.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Attack/Uprising.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-221">
@@ -1569,14 +1564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Rare/Skill/Salvation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="94" column="5" lean-forward="false" selection-start-line="69" selection-start-column="4" selection-end-line="94" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Cards/Common/Skill/ArcaneHealing.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
@@ -1585,18 +1572,6 @@
             <element signature="method#applyPowersToHeal#0;class#ArcaneHealing#0" expanded="false" />
             <element signature="method#setDescription#0;class#ArcaneHealing#0" expanded="false" />
             <element signature="method#setDescription#1;class#ArcaneHealing#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Common/Skill/DivineFavor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="93" column="5" lean-forward="false" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
-          <folding>
-            <element signature="method#applyPowersToHeal#0;class#DivineFavor#0" expanded="false" />
-            <element signature="method#setDescription#0;class#DivineFavor#0" expanded="false" />
-            <element signature="method#setDescription#1;class#DivineFavor#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1625,18 +1600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Skill/Meaballize.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="808">
-          <caret line="96" column="5" lean-forward="false" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
-          <folding>
-            <element signature="method#applyPowersToHeal#0;class#Meaballize#0" expanded="false" />
-            <element signature="method#setDescription#0;class#Meaballize#0" expanded="false" />
-            <element signature="method#setDescription#1;class#Meaballize#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Skill/ZealousAmbition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="808">
@@ -1649,11 +1612,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Rare/Attack/DangerousSmash.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="33" column="48" lean-forward="false" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Patches/PandorasBoxPatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="25" column="67" lean-forward="false" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Patches/VampirePatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Uncommon/Skill/Meaballize.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+          <folding>
+            <element signature="method#applyPowersToHeal#0;class#Meaballize#0" expanded="false" />
+            <element signature="method#setDescription#0;class#Meaballize#0" expanded="false" />
+            <element signature="method#setDescription#1;class#Meaballize#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Common/Skill/DivineFavor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="27" column="42" lean-forward="false" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+          <folding>
+            <element signature="method#applyPowersToHeal#0;class#DivineFavor#0" expanded="false" />
+            <element signature="method#setDescription#0;class#DivineFavor#0" expanded="false" />
+            <element signature="method#setDescription#1;class#DivineFavor#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Localization/Valiant-CardStrings.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="314" column="119" lean-forward="false" selection-start-line="314" selection-start-column="115" selection-end-line="314" selection-end-column="119" />
+        <state relative-caret-position="543">
+          <caret line="220" column="34" lean-forward="false" selection-start-line="220" selection-start-column="34" selection-end-line="220" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cards/Rare/Skill/Salvation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="87" column="33" lean-forward="false" selection-start-line="87" selection-start-column="33" selection-end-line="87" selection-end-column="33" />
+          <folding>
+            <element signature="e#4740#4741#0" expanded="true" />
+            <element signature="e#4778#4779#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

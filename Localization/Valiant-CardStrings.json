@@ -159,7 +159,7 @@
   "HolyStorm": {
     "NAME": "Holy Storm",
     "DESCRIPTION": "Deal X + 3 damage X times.",
-    "UPGRADE_DESCRIPTION": "Deal 3 times (X + 3) damage X + 1 times.",
+    "UPGRADE_DESCRIPTION": "Deal (X + 3) damage X + 1 times.",
     "EXTENDED_DESCRIPTION": [
       " (You will deal !D! Damage !M! times.)"
     ]
@@ -207,7 +207,7 @@
   },
   "DivineFavor": {
     "NAME": "Divine Favor",
-    "DESCRIPTION": "Gain !B! Block. NL Heal !M! HP."
+    "DESCRIPTION": "Gain !B! Block. NL Heal !M! HP. Exhaust."
   },
   "Quickstep": {
     "NAME": "Quickstep",
@@ -240,7 +240,7 @@
   },
   "ItsSmitingTime": {
     "NAME": "It's Smitin' Time!",
-    "DESCRIPTION": "Gain !M! for each Smite card in your hand.",
+    "DESCRIPTION": "Gain !M! Block for each Smite card in your hand.",
     "EXTENDED_DESCRIPTION": [
       " (You will gain !B! Block)"
     ]

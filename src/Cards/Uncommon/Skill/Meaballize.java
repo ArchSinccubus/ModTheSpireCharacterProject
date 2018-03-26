@@ -21,7 +21,7 @@ public class Meaballize extends CustomCard
     public static final String NAME = "Meaballize";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Skills/corona.png";
-    private static final int COST = 1;
+    private static final int COST = 0;
     private static final int HP_AMOUNT = 10;
     private static final int UPGRADE_HP_AMOUNT = 3;
     private static final int POOL = 1;

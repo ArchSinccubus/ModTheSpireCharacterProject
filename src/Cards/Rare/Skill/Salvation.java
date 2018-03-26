@@ -83,9 +83,9 @@ public class Salvation extends CustomCard
             }
         }
 
-        if (foundSpirit)
+        if (!foundSpirit)
         {
-
+            setDescription(true);
         }
         //this.isMagicNumberModified = foundSpirit;
 

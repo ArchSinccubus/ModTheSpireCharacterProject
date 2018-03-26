@@ -3,6 +3,8 @@ package Patches;
 import java.lang.reflect.Field;
 import java.util.Iterator;
 
+import Cards.Starter.Defend_W;
+import Cards.Starter.Strike_W;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInsertPatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -21,7 +23,7 @@ public class PandorasBoxPatch {
 
             for (Iterator<AbstractCard> i = AbstractDungeon.player.masterDeck.group.iterator(); i.hasNext();) {
                 AbstractCard e = (AbstractCard) i.next();
-                if (e.cardID.equals("Strike_W") || e.cardID.equals("Defend_W")) {
+                if (e instanceof Strike_W || e  instanceof Defend_W) {
                     i.remove();
                     count.set(box, ((Integer) count.get(box)) + 1);
                 }

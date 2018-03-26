@@ -31,7 +31,7 @@ public class DangerousSmash extends CustomCard
     private static final CardTarget target = CardTarget.ENEMY;
     private static final CardType type = CardType.ATTACK;
     private static final int DAMAGE_INIT = 35;
-    private static final int DAMAGE_UPGRADE = 45;
+    private static final int DAMAGE_UPGRADE = 13;
 
 
     public DangerousSmash() {
