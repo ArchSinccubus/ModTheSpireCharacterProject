@@ -13,6 +13,8 @@ import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.combat.HealVerticalLineEffect;
 import com.megacrit.cardcrawl.vfx.combat.InflameEffect;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.Iterator;
 
@@ -29,6 +31,10 @@ public class Salvation extends CustomCard
     private static final CardRarity rarity = CardRarity.RARE;
     private static final CardTarget target = CardTarget.SELF;
     private static final CardType type = CardType.SKILL;
+
+    boolean foundSpirit = false;
+
+    public static final Logger logger = LogManager.getLogger(Fudgesickle.class.getName());
 
     public Salvation() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.SALVATION), COST, CARD_STRINGS.DESCRIPTION,
@@ -58,7 +64,6 @@ public class Salvation extends CustomCard
     public void applyPowers()
     {
         super.applyPowers();
-        setDescription(true);
         applyPowersToHeal();
     }
 
@@ -72,18 +77,36 @@ public class Salvation extends CustomCard
                 setDescription(tmp, p, true);
                 foundSpirit = true;
             }
-            else
+            else if (!foundSpirit)
             {
-                this.rawDescription = CARD_STRINGS.DESCRIPTION;
-                this.initializeDescription();
+                setDescription(true);
             }
         }
 
+        if (foundSpirit)
+        {
+
+        }
         //this.isMagicNumberModified = foundSpirit;
 
         if (tmp < 0) {
             tmp = 0;
         }
+    }
+
+    @Override
+    public void atTurnStart() {
+        logger.info("THE TURN HAS STARTED");
+        foundSpirit = false;
+        this.applyPowers();
+        super.update();
+    }
+
+    @Override
+    public void update() {
+        logger.info(foundSpirit);
+        this.applyPowers();
+        super.update();
     }
 
     private void setDescription(boolean addExtended) {

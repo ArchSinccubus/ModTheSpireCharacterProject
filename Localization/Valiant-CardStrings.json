@@ -255,7 +255,7 @@
   },
   "Vindication": {
     "NAME": "Vindication",
-    "DESCRIPTION": "Apply 10 Wavering. NL. If the enemy is less than half health, gain !M! Spirit. Exhaust."
+    "DESCRIPTION": "Apply 10 Wavering. NL If the enemy is less than half health, gain !M! Spirit. Exhaust."
   },
   "Radiance": {
     "NAME": "Radiance",

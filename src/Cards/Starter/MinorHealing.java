@@ -68,14 +68,17 @@ public class MinorHealing extends CustomCard
                 setDescription(p, tmp);
                 foundSpirit = true;
             }
-            else
+            else if (!foundSpirit)
             {
-                this.rawDescription = CARD_STRINGS.DESCRIPTION;
-                this.initializeDescription();
+                setDescription(tmp);
             }
         }
 
-        this.isMagicNumberModified = foundSpirit;
+        if (foundSpirit)
+        {
+
+        }
+        //this.isMagicNumberModified = foundSpirit;
 
         if (tmp < 0) {
             tmp = 0;
@@ -84,6 +87,15 @@ public class MinorHealing extends CustomCard
 
     private void setDescription(AbstractPower p , int tmp) {
         this.rawDescription = CARD_STRINGS.DESCRIPTION.replace("!M!" , "" + (tmp + p.amount));
+        if (this.exhaustOnUseOnce && !this.exhaust)
+            this.rawDescription += " NL Exhaust.";
+        this.initializeDescription();
+    }
+
+    private void setDescription(int tmp) {
+        this.rawDescription = CARD_STRINGS.DESCRIPTION.replace("!M!" , "" + (tmp));
+        if (this.exhaustOnUseOnce && !this.exhaust)
+            this.rawDescription += " NL Exhaust.";
         this.initializeDescription();
     }
 
