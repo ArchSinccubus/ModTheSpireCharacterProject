@@ -3,6 +3,7 @@ import MainMod.*;
 import Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -42,6 +43,8 @@ public class TearPsyche extends CustomCard
         float percent = (float)this.magicNumber / 100;
 
         int HP_loss = (int) (p.maxHealth * percent);
+
+        AbstractDungeon.actionManager.addToBottom(new SFXAction("THUNDERCLAP", 0.05F));
 
         AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p, p, HP_loss));
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m,

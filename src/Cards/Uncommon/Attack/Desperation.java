@@ -1,17 +1,21 @@
 package Cards.Uncommon.Attack;
 import MainMod.*;
 import Patches.AbstractCardEnum;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.*;
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.vfx.combat.ShockWaveEffect;
 
 public class Desperation extends CustomCard
 {
@@ -24,7 +28,7 @@ public class Desperation extends CustomCard
     private static final CardRarity rarity = CardRarity.UNCOMMON;
     private static final CardTarget target = CardTarget.ENEMY;
     private static final CardType type = CardType.ATTACK;
-    private static final int DAMAGE = 26;
+    private static final int DAMAGE = 20;
     private static final int DAMAGE_UPGRADE = 7;
     private static final int MAGIC_NUM = 6;
 
@@ -41,10 +45,12 @@ public class Desperation extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
 
+        AbstractDungeon.actionManager.addToBottom(new SFXAction("VO_AWAKENEDONE_3"));
+        AbstractDungeon.actionManager.addToBottom(new VFXAction(p, new ShockWaveEffect(p.hb.cX, p.hb.cY, Settings.GREEN_TEXT_COLOR, ShockWaveEffect.ShockWaveType.CHAOTIC), 1.5F));
 
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m,
                 new DamageInfo(p, this.damage, this.damageTypeForTurn),
-                AbstractGameAction.AttackEffect.FIRE));
+                AbstractGameAction.AttackEffect.NONE));
 
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new VulnerablePower(m, 3, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
         AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p, p, this.magicNumber));

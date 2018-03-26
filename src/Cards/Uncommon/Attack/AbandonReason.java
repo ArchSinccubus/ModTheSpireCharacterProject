@@ -39,7 +39,7 @@ public class AbandonReason extends CustomCard
     {
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m,
                 new DamageInfo(p, this.damage, this.damageTypeForTurn),
-                AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+                AbstractGameAction.AttackEffect.SLASH_HEAVY));
     }
 
     /*

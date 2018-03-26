@@ -7,6 +7,7 @@ import Powers.SharpenPower;
 import Powers.ZenPower;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -39,6 +40,8 @@ public class Sharpen extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
+        //AbstractDungeon.actionManager.addToBottom(new SFXAction("UPGRADE", 0.05F));
+
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new SharpenPower(p,this.magicNumber, 1), 1, true, AbstractGameAction.AttackEffect.NONE));
     }
 

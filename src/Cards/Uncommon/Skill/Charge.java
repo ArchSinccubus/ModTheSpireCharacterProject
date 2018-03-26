@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.powers.WeakPower;
+import com.megacrit.cardcrawl.vfx.SpeechBubble;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -42,6 +43,7 @@ public class Charge extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
+        AbstractDungeon.effectList.add(new SpeechBubble(p.dialogX, p.dialogY, 3.0F, "Hmm...", true));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ChargePower(p, 1), 1, true, AbstractGameAction.AttackEffect.NONE));
         AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p, p, this.baseMagicNumber));
     }

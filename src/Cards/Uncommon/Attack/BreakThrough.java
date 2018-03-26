@@ -45,7 +45,7 @@ public class BreakThrough extends CustomCard
 
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m,
                 new DamageInfo(p, this.damage, this.damageTypeForTurn),
-                AbstractGameAction.AttackEffect.FIRE));
+                AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
 
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new VulnerablePower(p, 1, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
     }

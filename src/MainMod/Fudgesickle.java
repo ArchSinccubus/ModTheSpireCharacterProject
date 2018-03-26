@@ -149,7 +149,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
     public static final String ZEALOUS_AMBITION = "cards/genesis.png";
     public static final String BLINDING_LIGHT = "cards/prismatic_sphere.png";
     public static final String MINOR_HEALING = "cards/flux.png";
-    public static final String HOLY_LIGHT = "cards/void_shackles.png";
+    public static final String HOLY_LIGHT = "cards/vortex.png";
 
 
     public static final String VORTEX = "cards/vortex.png";

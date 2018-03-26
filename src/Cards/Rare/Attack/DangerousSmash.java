@@ -46,13 +46,13 @@ public class DangerousSmash extends CustomCard
     {
         AbstractDungeon.actionManager.addToBottom(new WaitAction(0.8F));
 
-        //if (m != null) {
-        //    AbstractDungeon.actionManager.addToBottom(new VFXAction(new DamageHeartEffect(0,m.hb.cX, m.hb.cY, AbstractGameAction.AttackEffect.BLUNT_HEAVY)));
-        //}
+        if (m != null) {
+            AbstractDungeon.actionManager.addToBottom(new VFXAction(new DamageHeartEffect(0,m.hb.cX, m.hb.cY, AbstractGameAction.AttackEffect.SLASH_HEAVY)));
+        }
 
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m,
                 new DamageInfo(p, this.damage, this.damageTypeForTurn),
-                AbstractGameAction.AttackEffect.SLASH_HEAVY));
+                AbstractGameAction.AttackEffect.NONE));
 
         if(energyOnUse - cost == 0)
         {

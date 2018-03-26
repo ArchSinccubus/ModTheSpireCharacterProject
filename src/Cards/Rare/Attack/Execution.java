@@ -48,7 +48,7 @@ public class Execution extends CustomCard
         this.calculateCardDamage(m);
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m,
                 new DamageInfo(p, this.damage, this.damageTypeForTurn),
-                AbstractGameAction.AttackEffect.NONE));
+                AbstractGameAction.AttackEffect.SLASH_HEAVY));
         AbstractDungeon.actionManager.addToBottom(new ExecutionAction(m, p));
         }
     }

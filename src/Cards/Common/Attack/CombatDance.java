@@ -1,6 +1,8 @@
 package Cards.Common.Attack;
 import MainMod.*;
 import Patches.AbstractCardEnum;
+import com.badlogic.gdx.graphics.Color;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -11,6 +13,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.vfx.combat.AdditiveSlashImpactEffect;
+import com.megacrit.cardcrawl.vfx.combat.LightningEffect;
 
 public class CombatDance extends CustomCard
 {

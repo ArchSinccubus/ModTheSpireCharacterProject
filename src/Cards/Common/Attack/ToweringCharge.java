@@ -49,7 +49,7 @@ public class ToweringCharge extends CustomCard
     {
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m,
                 new DamageInfo(p, this.damage, this.damageTypeForTurn),
-                AbstractGameAction.AttackEffect.FIRE));
+                AbstractGameAction.AttackEffect.BLUNT_HEAVY));
 
         logger.info(this.energyOnUse + " TRANSITION ");
 

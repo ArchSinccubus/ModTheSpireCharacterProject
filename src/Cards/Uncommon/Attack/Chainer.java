@@ -43,7 +43,7 @@ public class Chainer extends CustomCard
         this.baseDamage = (AbstractDungeon.player.currentHealth / 10) * this.baseMagicNumber;
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m,
                 new DamageInfo(p, this.damage, this.damageTypeForTurn),
-                AbstractGameAction.AttackEffect.FIRE));
+                AbstractGameAction.AttackEffect.SLASH_VERTICAL));
 
     }
 

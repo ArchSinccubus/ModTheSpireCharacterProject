@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.vfx.SpeechBubble;
 
 public class ChargePower extends AbstractPower {
     public static final String POWER_ID = "Charge";
@@ -38,6 +39,7 @@ public class ChargePower extends AbstractPower {
 
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (!card.purgeOnUse && card.type == CardType.ATTACK && this.amount > 0) {
+            AbstractDungeon.effectList.add(new SpeechBubble(AbstractDungeon.player.dialogX, AbstractDungeon.player.dialogY, 3.0F, "@IT'S@ @OVER!@", true));
             AbstractMonster m = null;
             if (action.target != null) {
                 m = (AbstractMonster)action.target;
@@ -59,7 +61,7 @@ public class ChargePower extends AbstractPower {
     }
 
     public float atDamageGive(float damage, DamageInfo.DamageType type) {
-        return type == DamageInfo.DamageType.NORMAL ? damage * 1.5F : damage;
+         return type == DamageInfo.DamageType.NORMAL ? damage * 1.5F : damage;
     }
 
     static {

@@ -41,7 +41,7 @@ public class PiercingStab extends CustomCard
     {
         AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DamageAction(m,
                 new DamageInfo(p, this.damage, this.damageTypeForTurn),
-                AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+                AbstractGameAction.AttackEffect.BLUNT_LIGHT));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new WaveringPower(m, WEAK_AMOUNT, true), WEAK_AMOUNT, true, AbstractGameAction.AttackEffect.NONE));
 
     }

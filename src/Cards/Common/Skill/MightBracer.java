@@ -37,6 +37,7 @@ public class MightBracer extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
+
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
         AbstractDungeon.actionManager.addToBottom(new MightBracerAction(p , 1 ));
 

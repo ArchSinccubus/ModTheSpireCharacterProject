@@ -2,6 +2,7 @@ package Actions;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.ActionType;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardType;
@@ -12,8 +13,10 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.random.Random;
+import com.megacrit.cardcrawl.vfx.CollectorCurseEffect;
 import com.megacrit.cardcrawl.vfx.SpeechBubble;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
+import com.megacrit.cardcrawl.vfx.combat.InflameEffect;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -39,6 +42,10 @@ public class AddCardToHandAtion extends AbstractGameAction {
             Iterator var6 = this.p.discardPile.group.iterator();
             Iterator var7 = this.p.exhaustPile.group.iterator();
 
+            if (upgraded)
+            {
+                AbstractDungeon.actionManager.addToBottom(new VFXAction(p, new CollectorCurseEffect(p.drawX, p.drawY+ 35), 1.5F));
+            }
 
             while(var5.hasNext()) {
                 AbstractCard c = (AbstractCard)var5.next();
