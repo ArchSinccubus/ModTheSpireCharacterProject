@@ -3,6 +3,7 @@ package Cards.Uncommon.Power;
 import MainMod.*;
 import Patches.AbstractCardEnum;
 import Powers.PowerThroughPower;
+import Powers.PushOnwardPower;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -19,7 +20,7 @@ public class PushOnward extends CustomCard
     public static final String NAME = "Push Onward";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Powers/enigma.png";
-    private static final int COST = 3;
+    private static final int COST = 2;
     private static final int POOL = 1;
     private static final CardRarity rarity = CardRarity.UNCOMMON;
     private static final CardTarget target = CardTarget.SELF;
@@ -35,7 +36,7 @@ public class PushOnward extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new PowerThroughPower(p), 1, true, AbstractGameAction.AttackEffect.NONE));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new PushOnwardPower(p), 1, true, AbstractGameAction.AttackEffect.NONE));
     }
 
 
@@ -49,7 +50,7 @@ public class PushOnward extends CustomCard
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBaseCost(2);
+            this.upgradeBaseCost(1);
         }
 
     }

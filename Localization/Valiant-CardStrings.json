@@ -342,9 +342,10 @@
 }, "TurnTables": {
   "NAME": "Turn Tables",
   "DESCRIPTION": "Whenever you apply Wavering to an enemy, lose 3 HP and gain [R]."
+
 },  "PushOnward": {
   "NAME": "Push Onward",
-  "DESCRIPTION": "Whenever you lose HP from a card, Exhaust a random card from your hand and gain 2 HP."
+  "DESCRIPTION": "Whenever you lose HP from a card, Exhaust a card from your hand and gain 3 HP."
 
 }, "InsightfulPrayer": {
   "NAME": "Insightful Prayer",
