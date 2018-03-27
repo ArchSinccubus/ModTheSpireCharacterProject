@@ -19,10 +19,10 @@ public class SeekAnswers extends CustomCard
     public static final String NAME = "Seek Answers";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Skills/corona.png";
-    private static final int COST = 1;
+    private static final int COST = 0;
     private static final int POOL = 1;
-    private static final int BASE_COST_LIMIT = 3;
-    private static final int BASE_COST_UPGRADE = -1;
+    private static final int BASE_COST_LIMIT = 1;
+    private static final int BASE_COST_UPGRADE = 1;
     private static final CardRarity rarity = CardRarity.COMMON;
     private static final CardTarget target = CardTarget.SELF;
 

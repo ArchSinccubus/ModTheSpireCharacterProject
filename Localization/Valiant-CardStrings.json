@@ -58,7 +58,7 @@
   },
   "CombatDance": {
     "NAME": "Combat Dance",
-    "DESCRIPTION": "Deal !D! damage. NL Gain [R]. NL Lose 5 HP."
+    "DESCRIPTION": "Deal !D! damage. NL Gain [R]. NL Lose 3 HP."
   },
   "DivineLashes": {
     "NAME": "Divine Lashes",
@@ -247,7 +247,7 @@
   },
   "ZealousPersecution": {
     "NAME": "Zealous Persecution",
-    "DESCRIPTION": "Can only be played if you have a card in your hand that costs 3 or more. NL Draw !M! cards. Lose 4 life."
+    "DESCRIPTION": "Can only be played if you have a card in your hand that costs 2 or more. NL Draw !M! cards. Lose 2 life."
   },
   "OverwhelmingLight": {
     "NAME": "Overwhelming Light",
@@ -274,7 +274,8 @@
   },
   "SeekAnswers": {
     "NAME": "Seek Answers",
-    "DESCRIPTION": "Draw a card. If it costs !M! Or more, gain [R] [R]"
+    "DESCRIPTION": "Draw a card. If it costs 2 Or more, gain [R].",
+    "UPGRADE_DESCRIPTION": "Draw a card. If it costs 2 Or more, gain [R] [R]."
   },
   "ArchangelsBoon": {
     "NAME": "Archangel's Denouncement",
@@ -316,13 +317,13 @@
 },
   "Charge": {
   "NAME": "Charge",
-  "DESCRIPTION": "The next Attack you play deals 50% more damage. Lose !M! HP. Exhaust.",
-    "UPGRADE_DESCRIPTION": "The next Attack you play deals 50% more damage. Lose !M! HP."
+  "DESCRIPTION": "The next Attack you play deals 50 % more damage. Lose !M! HP. Exhaust.",
+    "UPGRADE_DESCRIPTION": "The next Attack you play deals 50 % more damage. Lose !M! HP."
 },
   "SoulStrain": {
   "NAME": "Soul Strain",
   "DESCRIPTION": "Gain [R] [R] [R]. Lose 7 HP.",
-    "UPGRADE_DESCRIPTION": "Gain [R] [R] [R] [R]. Lose 7 HP."
+    "UPGRADE_DESCRIPTION": "Gain [R] [R] [R] [R]. Lose 4 HP."
 },
   "Ensoul": {
     "NAME": "Ensoul",
@@ -347,8 +348,8 @@
 
 }, "InsightfulPrayer": {
   "NAME": "Insightful Prayer",
-  "DESCRIPTION": "Whenever you heal, if you're above 60% HP, draw a card.",
-  "UPGRADE_DESCRIPTION": "Whenever you heal, if you're above 60% HP, draw !M! cards."
+  "DESCRIPTION": "Whenever you heal, if you're above 60 % HP, draw a card.",
+  "UPGRADE_DESCRIPTION": "Whenever you heal, if you're above 60 % HP, draw !M! cards."
 
 }, "DelvingPrayer": {
   "NAME": "Delving Prayer",
@@ -357,7 +358,7 @@
 },
   "Salvation": {
     "NAME": "Salvation",
-    "DESCRIPTION": "Heal !M!% of your max HP. Exhaust.",
+    "DESCRIPTION": "Heal !M! % of your max HP. Exhaust.",
     "EXTENDED_DESCRIPTION": [
       " (You will heal !F! HP)"
     ]
@@ -379,7 +380,7 @@
   },
   "Bombastic": {
     "NAME": "Bombastic",
-    "DESCRIPTION": "Choose a card from your hand that costs 3 or more. It costs 0 this combat. You can't draw cards this turn."
+    "DESCRIPTION": "Choose a card from your hand that costs 2 or more. It costs 0 this combat. You can't draw cards this turn."
   },
   "PowerBloom": {
     "NAME": "Power Bloom",
@@ -392,7 +393,7 @@
 },
   "PeacefulStance": {
     "NAME": "Peaceful Stance",
-    "DESCRIPTION": "Reduce all damage by 25%. Deal 50% less damage."
+    "DESCRIPTION": "Reduce all damage by 25 %. Deal 50 % less damage."
   },
   "Overburn": {
     "NAME": "Overburn",
@@ -400,6 +401,6 @@
   },
   "WeakForm": {
     "NAME": "Weak Form",
-    "DESCRIPTION": "Whenever you draw a card that costs 3 or more, reduce its cost by 1 for this turn. You take 50% more damage."
+    "DESCRIPTION": "Whenever you draw a card that costs 3 or more, reduce its cost by 1 for this turn. You take 25 % more damage."
   }
 }

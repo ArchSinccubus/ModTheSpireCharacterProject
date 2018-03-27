@@ -27,7 +27,8 @@ public class TearPsyche extends CustomCard
     private static final CardType type = CardType.ATTACK;
     private static final int DAMAGE = 35;
     private static final int DAMAGE_UPGRADE = 15;
-    private static final int PERCENT = 15;
+    private static final int PERCENT = 10;
+    private static final int PERCENT_UPGRADE = -5;
 
     public TearPsyche() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.TEAR_PSYCHE), COST, CARD_STRINGS.DESCRIPTION,
@@ -80,6 +81,7 @@ public class TearPsyche extends CustomCard
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeDamage(DAMAGE_UPGRADE);
+            this.upgradeMagicNumber(PERCENT_UPGRADE);
         }
     }
 }

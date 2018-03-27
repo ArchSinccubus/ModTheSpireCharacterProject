@@ -204,8 +204,8 @@ public class Fudgesickle implements PostInitializeSubscriber,
         BaseMod.subscribeToEditCards(this);
 
         /* Disable this during playtesting for being counterproductive */
-         logger.info("subscribing to setUnlocks event");
-         BaseMod.subscribeToSetUnlocks(this);
+         //logger.info("subscribing to setUnlocks event");
+         //BaseMod.subscribeToSetUnlocks(this);
 
         logger.info("subscribing to editStrings event");
         BaseMod.subscribeToEditStrings(this);

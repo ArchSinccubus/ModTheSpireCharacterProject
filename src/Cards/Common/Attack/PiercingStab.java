@@ -28,6 +28,7 @@ public class PiercingStab extends CustomCard
     private static final int DAMAGE = 7;
     private static final int UPGRADE_PLUS_DMG = 3;
     private static final int WEAK_AMOUNT = 2;
+    private static final int WEAK_AMOUNT_UPGRADE = 1;
 
     public PiercingStab() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.PIERCING_STAB), COST, CARD_STRINGS.DESCRIPTION,
@@ -56,6 +57,7 @@ public class PiercingStab extends CustomCard
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeDamage(UPGRADE_PLUS_DMG);
+            this.upgradeMagicNumber(WEAK_AMOUNT_UPGRADE);
         }
     }
 }

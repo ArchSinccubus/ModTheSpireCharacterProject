@@ -56,9 +56,9 @@ public class Valiant extends CustomPlayer{
     };
 
 
-    public static final int STARTING_HP = 90;
-    public static final int MAX_HP = 90;
-    public static final int STARTING_GOLD = 99;
+    public static final int STARTING_HP = 100;
+    public static final int MAX_HP = 100;
+    public static final int STARTING_GOLD = 49;
     public static final int HAND_SIZE = 5;
 
     public Valiant(String name, PlayerClass chosenClass) {
@@ -91,6 +91,7 @@ public class Valiant extends CustomPlayer{
         retVal.add("Defend_Valiant");
         retVal.add("Defend_Valiant");
         retVal.add("BlindingLight");
+        retVal.add("MinorHealing");
         retVal.add("MinorHealing");
         return retVal;
     }

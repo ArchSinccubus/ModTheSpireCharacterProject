@@ -25,8 +25,8 @@ public class DivineFavor extends CustomCard
     private static final int POOL = 1;
     private static final int BLOCK_AMOUNT = 6;
     private static final int UPGRADE_BLOCK_DMG = 3;
-    private static final int HP_AMOUNT = 3;
-    private static final int UPGRADE_HP_AMOUNT = 1;
+    private static final int HP_AMOUNT = 5;
+    private static final int UPGRADE_HP_AMOUNT = 3;
     private static final CardRarity rarity = CardRarity.COMMON;
     private static final CardTarget target = CardTarget.SELF;
 

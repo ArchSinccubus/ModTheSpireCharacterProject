@@ -25,7 +25,7 @@ public class Salvation extends CustomCard
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Skills/corona.png";
     private static final int COST = 3;
-    private static final int HP_AMOUNT = 20;
+    private static final int HP_AMOUNT = 25;
     private static final int UPGRADE_HP_AMOUNT = 10;
     private static final int POOL = 1;
     private static final CardRarity rarity = CardRarity.RARE;

@@ -21,7 +21,7 @@ public class MinorHealing extends CustomCard
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Skills/corona.png";
     private static final int COST = 1;
-    private static final int HP_AMOUNT = 5;
+    private static final int HP_AMOUNT = 7;
     private static final int UPGRADE_HP_AMOUNT = 2;
     private static final int POOL = 1;
 

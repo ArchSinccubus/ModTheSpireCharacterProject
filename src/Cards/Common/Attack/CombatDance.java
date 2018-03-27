@@ -44,7 +44,7 @@ public class CombatDance extends CustomCard
                 new DamageInfo(p, this.damage, this.damageTypeForTurn),
                 AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(1));
-        AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p, p, 5));
+        AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p, p, 3));
     }
 
     @Override
