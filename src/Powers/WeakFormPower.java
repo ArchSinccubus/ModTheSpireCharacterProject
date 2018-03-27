@@ -98,7 +98,7 @@ public class WeakFormPower extends AbstractPower implements PostDrawSubscriber, 
     }
 
     public int onAttacked(DamageInfo info, int damageAmount) {
-        return (int)(damageAmount * 1.5F);
+        return (int)(damageAmount * 1.25F);
 
     }
 

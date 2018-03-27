@@ -40,11 +40,11 @@ public class CombatDance extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
+        AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p, p, 3));
         AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DamageAction(m,
                 new DamageInfo(p, this.damage, this.damageTypeForTurn),
                 AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(1));
-        AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p, p, 3));
     }
 
     @Override

@@ -134,7 +134,7 @@
   },
   "Retaliate": {
     "NAME": "Retaliate",
-    "DESCRIPTION": "Can only be played if you lost life this turn. Deal !D! damage."
+    "DESCRIPTION": "Can only be played if you lost HP this turn. Deal !D! damage."
   },
   "StrainingSmite": {
     "NAME": "Straining Smite",
@@ -170,7 +170,7 @@
   },
   "Tantrum": {
   "NAME": "Tantrum",
-  "DESCRIPTION": "For each time you lost life this turn, deal !M! to ALL enemies.",
+  "DESCRIPTION": "For each time you lost HP this turn, deal !M! to ALL enemies.",
     "EXTENDED_DESCRIPTION": [
       " (You will deal !D! Damage)"
     ]
@@ -232,7 +232,7 @@
   },
   "MightBracer": {
     "NAME": "Might Bracer",
-    "DESCRIPTION": "Gain !B! Block. Exhaust the top card of your deck"
+    "DESCRIPTION": "Gain !B! Block. Exhaust the top card of your deck."
   },
   "HolyFury": {
     "NAME": "Holy Fury",
@@ -247,7 +247,7 @@
   },
   "ZealousPersecution": {
     "NAME": "Zealous Persecution",
-    "DESCRIPTION": "Can only be played if you have a card in your hand that costs 2 or more. NL Draw !M! cards. Lose 2 life."
+    "DESCRIPTION": "Can only be played if you have a card in your hand that costs 2 or more. NL Draw !M! cards. Lose 2 HP."
   },
   "OverwhelmingLight": {
     "NAME": "Overwhelming Light",
