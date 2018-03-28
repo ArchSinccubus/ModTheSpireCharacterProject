@@ -20,6 +20,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.relics.BirdFacedUrn;
 import com.megacrit.cardcrawl.relics.CursedKey;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
@@ -96,15 +97,6 @@ public class Valiant extends CustomPlayer{
         return retVal;
     }
 
-    @Override
-    public void addPower(AbstractPower powerToApply) {
-        logger.info(powerToApply.ID + " LOOK AT THIS SHIT SON");
-        if (hasRelic("Winged Necklace") && powerToApply.ID == "Frail")
-            getRelic("Winged Necklace").flash();
-        else
-            super.addPower(powerToApply);
-
-    }
 
     // ADD RELICS
     public static ArrayList<String> getStartingRelics() { // starting relics - also simple
@@ -124,6 +116,12 @@ public class Valiant extends CustomPlayer{
         super.applyStartOfTurnPostDrawPowers();
         this.damagedThisCombat = 0;
     }
+
+//    @Override
+//    public void onVictory() {
+//        super.onVictory();
+//
+//    }
 
     public static CharSelectInfo getLoadout() { // the rest of the character loadout so includes your character select screen info plus hp and starting gold
         return new CharSelectInfo("Valiant", "A zealous nun wielding both holy power and untold fury.",

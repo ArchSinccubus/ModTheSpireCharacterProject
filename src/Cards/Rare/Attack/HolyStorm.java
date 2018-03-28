@@ -50,8 +50,24 @@ public class HolyStorm extends CustomCard
 
     @Override
     public void applyPowers() {
-        this.baseDamage = EnergyPanel.totalCount + 3;
-        super.applyPowers();;
+        super.applyPowers();
+        this.setDescription(true);
+    }
+
+    private void setDescription(boolean addExtended) {
+        this.rawDescription = CARD_STRINGS.DESCRIPTION;
+        this.baseDamage = EnergyPanel.getCurrentEnergy() + 5;
+        this.baseMagicNumber = EnergyPanel.getCurrentEnergy();
+        if (upgraded) {
+            baseMagicNumber++;
+            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
+        }
+        if (addExtended) {
+            this.rawDescription += CARD_STRINGS.EXTENDED_DESCRIPTION[0];
+        }
+        if (this.exhaustOnUseOnce && !this.exhaust)
+            this.rawDescription += " NL Exhaust.";
+        this.initializeDescription();
     }
 
     @Override

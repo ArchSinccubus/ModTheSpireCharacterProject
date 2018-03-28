@@ -35,6 +35,7 @@ public class PiercingStab extends CustomCard
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.baseDamage = this.damage = DAMAGE;
+        this.baseMagicNumber = this.magicNumber = WEAK_AMOUNT;
     }
 
     @Override
@@ -43,7 +44,7 @@ public class PiercingStab extends CustomCard
         AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DamageAction(m,
                 new DamageInfo(p, this.damage, this.damageTypeForTurn),
                 AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new WaveringPower(m, WEAK_AMOUNT, true), WEAK_AMOUNT, true, AbstractGameAction.AttackEffect.NONE));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new WaveringPower(m, this.magicNumber, true), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
 
     }
 

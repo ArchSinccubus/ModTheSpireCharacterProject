@@ -20,7 +20,7 @@ public class Zen extends CustomCard
     public static final String NAME = "Zen";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Powers/enigma.png";
-    private static final int COST = 2;
+    private static final int COST = 1;
     private static final int POOL = 1;
     private static final CardRarity rarity = CardRarity.UNCOMMON;
     private static final CardTarget target = CardTarget.SELF;
@@ -37,7 +37,7 @@ public class Zen extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ZenPower(p, 1), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ZenPower(p, this.magicNumber), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
 
     }
 
@@ -50,7 +50,7 @@ public class Zen extends CustomCard
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBaseCost(1);
+            this.upgradeMagicNumber(1);
         }
 
     }

@@ -50,10 +50,10 @@ public class CrownOfThorns extends CustomRelic {
 
     public void setCounter(int c) {
         this.counter = c;
-        if (this.counter == 0) {
+        if (this.AMT == 0) {
             this.description = this.DESCRIPTIONS[0] + 1 + this.DESCRIPTIONS[1] + this.DESCRIPTIONS[2];
         } else {
-            this.description = this.DESCRIPTIONS[0] + 1 + this.DESCRIPTIONS[1] + this.DESCRIPTIONS[3].replace("#g" , "" + AMT) + this.counter + this.DESCRIPTIONS[4];
+            this.description = this.DESCRIPTIONS[0] + 1 + this.DESCRIPTIONS[1] + this.DESCRIPTIONS[3].replace("#g" , "" + AMT) + this.DESCRIPTIONS[4];
         }
 
         this.tips.clear();
@@ -75,7 +75,7 @@ public class CrownOfThorns extends CustomRelic {
         this.counter = AMT / 3;
         logger.info("COUNTER: " + this.counter);
 
-        if (this.counter == 0) {
+        if (this.AMT == 0) {
             this.description = this.DESCRIPTIONS[0] + 1 + this.DESCRIPTIONS[1] + this.DESCRIPTIONS[2];
         } else {
             this.description = this.DESCRIPTIONS[0] + 1 + this.DESCRIPTIONS[1] + this.DESCRIPTIONS[3].replace("#g" , "" + AMT) + this.DESCRIPTIONS[4];

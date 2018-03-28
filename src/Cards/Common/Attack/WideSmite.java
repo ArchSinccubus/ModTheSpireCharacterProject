@@ -27,7 +27,7 @@ public class WideSmite extends CustomCard
     private static final CardRarity rarity = CardRarity.COMMON;
     private static final CardTarget target = CardTarget.ALL_ENEMY;
     private static final CardType type = CardType.ATTACK;
-    private static final int DAMAGE = 8;
+    private static final int DAMAGE = 10;
     private int extraDamage;
 
     public WideSmite() {
@@ -40,10 +40,10 @@ public class WideSmite extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        extraDamage = this.damage / 2;
+        extraDamage = this.damage;
         if (this.upgraded)
         {
-            extraDamage *= 2;
+            extraDamage *= (int)(this.damage * 2.5f);
         }
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
             AbstractDungeon.actionManager.addToBottom(new SFXAction("THUNDERCLAP", 0.05F));

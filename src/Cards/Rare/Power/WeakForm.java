@@ -20,7 +20,7 @@ public class WeakForm extends CustomCard
     public static final String NAME = "Weak Form";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Skills/corona.png";
-    private static final int COST = 3;
+    private static final int COST = 2;
     private static final int POOL = 1;
     private static final CardRarity rarity = CardRarity.RARE;
     private static final CardTarget target = CardTarget.SELF;
@@ -34,6 +34,7 @@ public class WeakForm extends CustomCard
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.baseMagicNumber = this.magicNumber = STRENGTH_LOSS;
+        this.isInnate = false;
     }
 
     @Override
@@ -53,6 +54,10 @@ public class WeakForm extends CustomCard
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeMagicNumber(STRENGTH_LOSS_PLUS);
+            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
+            this.isInnate = true;
+            this.initializeDescription();
+
         }
 
     }

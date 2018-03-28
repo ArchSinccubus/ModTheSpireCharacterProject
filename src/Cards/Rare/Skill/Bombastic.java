@@ -80,7 +80,7 @@ public class Bombastic extends CustomCard
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBaseCost(2);
+            this.upgradeBaseCost(1);
         }
 
     }

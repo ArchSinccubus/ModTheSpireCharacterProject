@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction.ActionType;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -13,6 +14,10 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import com.megacrit.cardcrawl.vfx.combat.DamageHeartEffect;
+import com.megacrit.cardcrawl.vfx.combat.LightningEffect;
+
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class HolyStormAction extends AbstractGameAction {
     private boolean freeToPlayOnce = false;
@@ -57,14 +62,17 @@ public class HolyStormAction extends AbstractGameAction {
             effect += 2;
             this.p.getRelic("Chemical X").flash();
         }
-
+        Random rand = new Random();
         if (effect > 0) {
             for(int i = 0; i < effect; ++i) {
                 //if (this.m != null) {
                     //AbstractDungeon.actionManager.addToBottom(new VFXAction(new W(0,m.hb.cX, m.hb.cY, AbstractGameAction.AttackEffect.FIRE)));
                 //}
 
-
+                int xRand = ThreadLocalRandom.current().nextInt(-20, 21);
+                int yRand = ThreadLocalRandom.current().nextInt(-20, 21);
+                AbstractDungeon.actionManager.addToBottom(new SFXAction("THUNDERCLAP", 0.005F));
+                AbstractDungeon.actionManager.addToBottom(new VFXAction(new LightningEffect(m.drawX + xRand, m.drawY + yRand), 0.05F));
                 AbstractDungeon.actionManager.addToBottom(new DamageAction(this.m, new DamageInfo(this.p, damage, this.damageTypeForTurn), AttackEffect.FIRE));
             }
 

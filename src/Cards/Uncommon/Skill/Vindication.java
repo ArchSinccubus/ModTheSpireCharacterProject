@@ -40,11 +40,11 @@ public class Vindication extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new WaveringPower(m, 10, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new WaveringPower(m, 10, false), 10, true, AbstractGameAction.AttackEffect.NONE));
 
         if ((m.maxHealth / 2) >= m.currentHealth)
         {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p , p , new SpiritPower(p , this.magicNumber)));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p , p , new StrengthPower(p , this.magicNumber)));
         }
     }
 
@@ -59,6 +59,7 @@ public class Vindication extends CustomCard
         {
             this.upgradeName();
             this.upgradeMagicNumber(SPIRIT_UPGRADE);
+            this.upgradeMagicNumber(1);
             //this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             //this.initializeDescription();
         }

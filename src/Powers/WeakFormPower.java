@@ -87,8 +87,8 @@ public class WeakFormPower extends AbstractPower implements PostDrawSubscriber, 
 
     @Override
     public void receivePostDraw(AbstractCard c) {
-        if(c.cost >= 3) {
-            c.setCostForTurn(c.cost - 1);
+        if(c.cost >= 2) {
+            c.setCostForTurn(1);
         }
     }
 
@@ -97,10 +97,21 @@ public class WeakFormPower extends AbstractPower implements PostDrawSubscriber, 
 
     }
 
-    public int onAttacked(DamageInfo info, int damageAmount) {
-        return (int)(damageAmount * 1.25F);
-
+    public float atDamageReceive(float damage, DamageInfo.DamageType type) {
+        if (type == DamageInfo.DamageType.NORMAL) {
+            if (this.owner.isPlayer) {
+                return damage * 1.25F;
+            } else {
+                return damage;
+            }
+        }
+            return damage;
     }
+//
+//    public int onAttacked(DamageInfo info, int damageAmount) {
+//        return (int)(damageAmount * 1.25F);
+//
+//    }
 
     static {
         DESCRIPTIONS = new String[] {

@@ -146,8 +146,7 @@
   },
   "FinalGambit": {
     "NAME": "Final Gambit",
-    "DESCRIPTION": "Deal damage equal to your HP. Your HP becomes 1.",
-    "UPGRADE_DESCRIPTION": "Deal damage equal to your HP. Lose 80% of your HP.",
+    "DESCRIPTION": "Deal damage equal to your HP. Lose !M! % of your max HP.",
     "EXTENDED_DESCRIPTION": [
       " (You will deal !D! Damage.)"
     ]
@@ -158,8 +157,8 @@
   },
   "HolyStorm": {
     "NAME": "Holy Storm",
-    "DESCRIPTION": "Deal X + 3 damage X times.",
-    "UPGRADE_DESCRIPTION": "Deal (X + 3) damage X + 1 times.",
+    "DESCRIPTION": "Deal X + 5 damage X times.",
+    "UPGRADE_DESCRIPTION": "Deal X + 5 damage X + 1 times.",
     "EXTENDED_DESCRIPTION": [
       " (You will deal !D! Damage !M! times.)"
     ]
@@ -255,7 +254,7 @@
   },
   "Vindication": {
     "NAME": "Vindication",
-    "DESCRIPTION": "Apply 10 Wavering. NL If the enemy is less than half health, gain !M! Spirit. Exhaust."
+    "DESCRIPTION": "Apply 10 Wavering. NL If the enemy is less than half health, gain !M! Strength. Exhaust."
   },
   "Radiance": {
     "NAME": "Radiance",
@@ -270,7 +269,7 @@
   },
   "Guardian": {
     "NAME": "Guardian",
-    "DESCRIPTION": "Gain !M! times X Block. Exhaust."
+    "DESCRIPTION": "Gain !M! times X Block."
   },
   "SeekAnswers": {
     "NAME": "Seek Answers",
@@ -359,15 +358,15 @@
 },
   "Salvation": {
     "NAME": "Salvation",
-    "DESCRIPTION": "Heal !M! % of your max HP. Exhaust.",
+    "DESCRIPTION": "Heal !B! % of your max HP. Exhaust.",
     "EXTENDED_DESCRIPTION": [
-      " (You will heal !F! HP)"
+      " (You will heal !M! HP)"
     ]
   }
 , "AtAllCosts": {
   "NAME": "At All Costs",
-  "DESCRIPTION": "Choose and add a card from your Draw Pile to your hand. Add a random Curse to your deck PERMANENTLY. Exhaust.",
-  "UPGRADE_DESCRIPTION": "Choose and add a card from ANY Pile to your hand. Add a random Curse to your deck PERMANENTLY. Exhaust."
+  "DESCRIPTION": "Choose and add a card from your Draw Pile to your hand. Add a random Curse to your hand. Exhaust.",
+  "UPGRADE_DESCRIPTION": "Choose and add a card from ANY Pile to your hand. Add a random Curse to your hand. Exhaust."
 },
   "TempoMaster": {
     "NAME": "Tempo Master",
@@ -398,10 +397,11 @@
   },
   "Overburn": {
     "NAME": "Overburn",
-    "DESCRIPTION": "Shuffle !M! Burns to your Discard Pile. Whenever you lose HP from a card, deal 3 damage to ALL enemies."
+    "DESCRIPTION": "Shuffle 3 Burns to your Discard Pile. Whenever you draw an HP loss card, deal !M! damage to ALL enemies."
   },
   "WeakForm": {
     "NAME": "Weak Form",
-    "DESCRIPTION": "Whenever you draw a card that costs 3 or more, reduce its cost by 1 for this turn. You take 25 % more damage."
+    "DESCRIPTION": "Whenever you draw a card that costs 3 or more, reduce its cost by 1 for this turn. You take 25 % more damage.",
+    "UPGRADE_DESCRIPTION": "Innate. Whenever you draw a card that costs 3 or more, reduce its cost by 1 for this turn. You take 25 % more damage."
   }
 }

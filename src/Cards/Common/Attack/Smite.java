@@ -40,12 +40,10 @@ public class Smite extends CustomCard
 
     @Override
     public void applyPowers() {
-        extraDamage = this.baseDamage / 2;
-        if (isDamageModified)
-            extraDamage = this.damage / 2;
+        extraDamage = this.damage;
         if (this.upgraded)
         {
-            extraDamage *= 2;
+            extraDamage *= (int)(this.damage * 2.5f);
         }
         super.applyPowers();
         this.setDescription(true);
@@ -64,10 +62,10 @@ public class Smite extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        extraDamage = this.damage / 2;
+        extraDamage = this.damage;
         if (this.upgraded)
         {
-            extraDamage *= 2;
+            extraDamage *= (int)(this.damage * 2.5f);
         }
         AbstractDungeon.actionManager.addToBottom(new SFXAction("THUNDERCLAP", 0.05F));
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new LightningEffect(m.drawX, m.drawY), 0.05F));

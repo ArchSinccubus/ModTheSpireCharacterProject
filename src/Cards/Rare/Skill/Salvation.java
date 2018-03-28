@@ -1,6 +1,9 @@
 package Cards.Rare.Skill;
 import MainMod.*;
 import Patches.AbstractCardEnum;
+import basemod.BaseMod;
+import basemod.interfaces.PostBattleSubscriber;
+import basemod.interfaces.PostDungeonInitializeSubscriber;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -11,6 +14,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.combat.HealVerticalLineEffect;
 import com.megacrit.cardcrawl.vfx.combat.InflameEffect;
 import org.apache.logging.log4j.LogManager;
@@ -18,7 +22,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.Iterator;
 
-public class Salvation extends CustomCard
+public class Salvation extends CustomCard /*implements PostBattleSubscriber,PostDungeonInitializeSubscriber*/
 {
     public static final String ID = "Salvation";
     public static final String NAME = "Salvation";
@@ -31,6 +35,7 @@ public class Salvation extends CustomCard
     private static final CardRarity rarity = CardRarity.RARE;
     private static final CardTarget target = CardTarget.SELF;
     private static final CardType type = CardType.SKILL;
+    private int percent_gain;
 
     boolean foundSpirit = false;
 
@@ -40,95 +45,110 @@ public class Salvation extends CustomCard
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.SALVATION), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
-        this.baseMagicNumber = HP_AMOUNT;
-        this.magicNumber = this.baseMagicNumber;
-        this.heal=this.baseHeal = HP_AMOUNT;
+        this.baseBlock = HP_AMOUNT;
+        float base = (float)(this.magicNumber) / 100;
+        //this.baseMagicNumber = (int)((float)AbstractDungeon.player.maxHealth * percent);
+        this.baseMagicNumber = this.magicNumber = this.baseBlock;
+        //this.heal=this.baseHeal = HP_AMOUNT;
         this.exhaust= true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        float percent = (float)(this.magicNumber) / 100;
-        int finalHP = (int)((float)p.maxHealth * percent);
-
-        //AbstractDungeon.actionManager.addToBottom(new VFXAction(p, new HealVerticalLineEffect(p.drawX, p.drawY), 0.1F));
-
-        if (com.megacrit.cardcrawl.core.Settings.isDebug) {
-            AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, 50));
-        } else {
-            AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, finalHP));
+        float percent = (float)(this.baseBlock) / 100;
+        this.baseMagicNumber = (int)((float)AbstractDungeon.player.maxHealth * percent);
+        this.magicNumber = this.baseMagicNumber;
+        Iterator var2 = AbstractDungeon.player.powers.iterator();
+        while (var2.hasNext()) {
+            AbstractPower power = (AbstractPower) var2.next();
+            if (power.name == "Spirit") {
+                this.magicNumber = this.baseMagicNumber + power.amount;
+                //this.isMagicNumberModified = true;
+            }
         }
+        AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, this.magicNumber));
     }
+
     @Override
     public void applyPowers()
     {
+        //float percent = (float)(percent_gain) / 100;
+        //this.baseMagicNumber = (int)((float)AbstractDungeon.player.maxHealth * percent);
         super.applyPowers();
-        applyPowersToHeal();
+        setDescription(true);
     }
 
-    private void applyPowersToHeal() {
-        int tmp = this.baseMagicNumber;
+//    @Override
+//    public void atTurnStart() {
+//        logger.info("THE TURN HAS STARTED");
+//        foundSpirit = false;
+//        this.applyPowers();
+//        super.update();
+//    }
+
+//    @Override
+//    public void receivePostBattle(AbstractRoom arg0) {
+//        BaseMod.unsubscribeFromPostDungeonInitialize(this);
+//
+//        Thread delayed = new Thread(() -> {
+//            try {
+//                Thread.sleep(200);
+//            } catch (Exception e) {
+//                System.out.println("could not delay unsubscribe to avoid ConcurrentModificationException");
+//                e.printStackTrace();
+//            }
+//            BaseMod.unsubscribeFromPostBattle(this);
+//        });
+//        delayed.start();
+//    }
+//
+//    @Override
+//    public void receivePostDungeonInitialize() {
+//        BaseMod.unsubscribeFromPostBattle(this);
+//        setDescription(false);
+//        Thread delayed = new Thread(() -> {
+//            try {
+//                Thread.sleep(200);
+//            } catch (Exception e) {
+//                System.out.println("could not delay unsubscribe to avoid ConcurrentModificationException");
+//                e.printStackTrace();
+//            }
+//            BaseMod.unsubscribeFromPostDungeonInitialize(this);
+//        });
+//        delayed.start();
+//    }
+
+    @Override
+    public void calculateCardDamage(AbstractMonster mo)
+    {
+        //super.calculateCardDamage(mo);
         Iterator var2 = AbstractDungeon.player.powers.iterator();
-        boolean foundSpirit = false;
-        while(var2.hasNext()) {
-            AbstractPower p = (AbstractPower)var2.next();
+        while (var2.hasNext()) {
+            AbstractPower p = (AbstractPower) var2.next();
             if (p.name == "Spirit") {
-                setDescription(tmp, p, true);
-                foundSpirit = true;
-            }
-            else if (!foundSpirit)
-            {
-                setDescription(true);
+                logger.info("FOUND SPIRIT. MAGIC NUMBER:" + this.magicNumber + " BASE MAGIC NUMBER: " + baseMagicNumber);
+                this.magicNumber = this.baseMagicNumber + p.amount;
+                this.isMagicNumberModified = true;
             }
         }
 
-        if (!foundSpirit)
-        {
-            setDescription(true);
-        }
-        //this.isMagicNumberModified = foundSpirit;
-
-        if (tmp < 0) {
-            tmp = 0;
-        }
-    }
-
-    @Override
-    public void atTurnStart() {
-        logger.info("THE TURN HAS STARTED");
-        foundSpirit = false;
-        this.applyPowers();
-        super.update();
-    }
-
-    @Override
-    public void update() {
-        logger.info(foundSpirit);
-        this.applyPowers();
-        super.update();
     }
 
     private void setDescription(boolean addExtended) {
-        float percent = (float)(this.magicNumber) / 100;
-        int finalHP = (int)((float)AbstractDungeon.player.maxHealth * percent);
+//        float percent = (float)(this.magicNumber) / 100;
+//        this.baseMagicNumber = (int)((float)AbstractDungeon.player.maxHealth * percent);
+        float percent = (float)(this.baseBlock) / 100;
+        this.baseMagicNumber = (int)((float)AbstractDungeon.player.maxHealth * percent);
+        this.magicNumber = this.baseMagicNumber;
         this.rawDescription = CARD_STRINGS.DESCRIPTION;
         if (addExtended) {
-            this.rawDescription += CARD_STRINGS.EXTENDED_DESCRIPTION[0].replace("!F!" , "" + (finalHP));
+            this.rawDescription += CARD_STRINGS.EXTENDED_DESCRIPTION[0];
         }
 
         this.initializeDescription();
     }
 
-    private void setDescription(int tmp, AbstractPower p, boolean addExtended) {
-        float percent = (float)(this.magicNumber) / 100;
-        int finalHP = (int)((float)AbstractDungeon.player.maxHealth * percent);
-        this.rawDescription = CARD_STRINGS.DESCRIPTION.replace("max HP" , "max HP + " + p.amount);
-        if (addExtended) {
-            this.rawDescription += CARD_STRINGS.EXTENDED_DESCRIPTION[0].replace("!F!" , "" + (finalHP + p.amount));
-        }
-        this.initializeDescription();
-    }
 
     @Override
     public AbstractCard makeCopy() {
@@ -139,7 +159,7 @@ public class Salvation extends CustomCard
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADE_HP_AMOUNT);
+            this.upgradeBlock(UPGRADE_HP_AMOUNT);
         }
     }
 }

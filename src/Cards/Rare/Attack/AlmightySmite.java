@@ -29,7 +29,7 @@ public class AlmightySmite extends CustomCard
     private static final int POOL = 1;
     private static final CardRarity rarity = CardRarity.RARE;
     private static final CardTarget target = CardTarget.ENEMY;
-    private static final int DAMAGE = 24;
+    private static final int DAMAGE = 26;
     private int extraDamage;
 
     public AlmightySmite() {
@@ -42,10 +42,10 @@ public class AlmightySmite extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        extraDamage = this.damage / 2;
+        extraDamage = this.damage;
         if (this.upgraded)
         {
-            extraDamage *= 2;
+            extraDamage *= (int)(this.damage * 2.5f);
         }
         Random rand = new Random();
         int xRand = ThreadLocalRandom.current().nextInt(-20, 21);

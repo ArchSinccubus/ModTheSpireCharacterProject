@@ -1,10 +1,7 @@
 package Powers;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
-import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -14,6 +11,8 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import MainMod.Fudgesickle;
+import com.megacrit.cardcrawl.powers.GainStrengthPower;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 
 public class WaveringPower extends AbstractPower {
     public static final String POWER_ID = "Wavering";
@@ -52,37 +51,44 @@ public class WaveringPower extends AbstractPower {
         owner.currentBlock = owner.currentBlock * 3/4;
     }
 
-    public void atEndOfRound() {
-        if (this.justApplied) {
-            this.justApplied = false;
-        } else {
-            if (this.amount == 0) {
-                AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, "Wavering"));
+    @Override
+    public void atStartOfTurn() {
+        //if (!isPlayer) {
+            if (this.justApplied) {
+                this.justApplied = false;
             } else {
-                int damage = 3;
-                if (AbstractDungeon.player.hasRelic("Crumpled Paper")) {
-                    damage= 6;
+                if (this.amount == 0) {
+                    AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, "Wavering"));
+                } else {
+                    int damage = this.amount;
+                    if (AbstractDungeon.player.hasRelic("Crumpled Paper")) {
+                        damage = (int)(this.amount * 1.5f);
+                    }
+
+                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, owner, new StrengthPower(owner, -damage), -damage));
+                    if (owner != null && !owner.hasPower("Artifact")) {
+                        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, owner, new GainStrengthPower(owner, damage), damage));
+                    }
+//                    AbstractDungeon.actionManager.addToBottom(new DamageAction(this.owner,
+//                            new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.HP_LOSS),
+//                            AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+                    AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, "Wavering", 1));
                 }
 
-                AbstractDungeon.actionManager.addToBottom(new DamageAction(this.owner,
-                        new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.HP_LOSS),
-                        AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-                AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, "Wavering", 1));
             }
-
-        }
+        //}
     }
 
     @Override
     public void updateDescription() {
-        int damage = 3;
+        int damage = this.amount;
         if (AbstractDungeon.player.hasRelic("Crumpled Paper")) {
-            damage= 6;
+            damage = (int)(this.amount * 1.5f);
         }
         if (this.amount == 1) {
-            this.description = "At the start of the next turn, this monster is dealt "+damage+" damage.";
+            this.description = "At the end of the next turn, this monster loses " + damage + " strength for this turn.";
         } else {
-            this.description = "At the start of the next " + this.amount + " turns, this monster is dealt "+damage+" damage.";
+            this.description = "At the end of each turn, this monster loses " + damage + " strength for this turn.";
         }
 
     }

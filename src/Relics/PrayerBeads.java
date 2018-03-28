@@ -62,7 +62,9 @@ public class PrayerBeads extends CustomRelic {
         if (c.cost >= 3 && !WasObtained)
         {
             this.flash();
-            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(returnTruly1Cost(1, AbstractDungeon.cardRandomRng)));
+            AbstractCard cad = returnTruly1Cost(1, AbstractDungeon.cardRandomRng);
+            cad.cost = 0;
+            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(cad));
             WasObtained = true;
         }
     }

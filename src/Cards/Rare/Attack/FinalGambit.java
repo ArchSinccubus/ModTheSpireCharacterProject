@@ -27,43 +27,49 @@ public class FinalGambit extends CustomCard
     private static final CardRarity rarity = CardRarity.RARE;
     private static final CardTarget target = CardTarget.ENEMY;
     private static final CardType type = CardType.ATTACK;
-
+    private static final int HP_LOSS_AMOUNT = 80;
+    private static final int HP_LOSS_AMOUNT_UPGRADE = -20;
+    int LifeLoss;
+    boolean attacked;
 
 
     public FinalGambit() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.FINAL_GAMBIT), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
-        this.baseDamage = 0;
+        this.baseMagicNumber = HP_LOSS_AMOUNT;
+
+        attacked = false;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        int LifeLoss;
         if (!upgraded)
-            LifeLoss = p.currentHealth - 1;
-        else
             LifeLoss = (int)(p.currentHealth * 0.8F);
+        else
+            LifeLoss = (int)(p.currentHealth * 0.6F);
 
-        AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p, p,LifeLoss));
+        attacked = true;
 
         if (m != null) {
             AbstractDungeon.actionManager.addToBottom(new VFXAction(new WeightyImpactEffect(m.hb.cX, m.hb.cY)));
         }
+
+            AbstractDungeon.actionManager.addToBottom(new LoseHPAction(AbstractDungeon.player, AbstractDungeon.player, LifeLoss));
+
 
         AbstractDungeon.actionManager.addToBottom(new WaitAction(0.8F));
         this.baseDamage = AbstractDungeon.player.currentHealth;
         AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DamageAction(m,
                 new DamageInfo(p, this.damage, this.damageTypeForTurn),
                 AbstractGameAction.AttackEffect.NONE));
-
-
     }
+
 
     @Override
     public void applyPowers() {
-        this.baseDamage = AbstractDungeon.player.currentHealth;
+        this.baseDamage = AbstractDungeon.player.maxHealth;
         super.applyPowers();
         this.setDescription(true);
     }
@@ -89,8 +95,9 @@ public class FinalGambit extends CustomCard
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
-            this.initializeDescription();
+            this.upgradeMagicNumber(HP_LOSS_AMOUNT_UPGRADE);
+//            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
+//            this.initializeDescription();
         }
 
     }

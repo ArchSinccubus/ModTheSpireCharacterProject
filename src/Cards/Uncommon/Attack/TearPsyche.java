@@ -22,10 +22,10 @@ public class TearPsyche extends CustomCard
     public static final String IMG_PATH = "Cards/Attacks/comet.png";
     private static final int COST = 3;
     private static final int POOL = 1;
-    private static final CardRarity rarity = CardRarity.UNCOMMON;
+    private static final CardRarity rarity = CardRarity.RARE;
     private static final CardTarget target = CardTarget.ENEMY;
     private static final CardType type = CardType.ATTACK;
-    private static final int DAMAGE = 35;
+    private static final int DAMAGE = 40;
     private static final int DAMAGE_UPGRADE = 15;
     private static final int PERCENT = 10;
     private static final int PERCENT_UPGRADE = -5;

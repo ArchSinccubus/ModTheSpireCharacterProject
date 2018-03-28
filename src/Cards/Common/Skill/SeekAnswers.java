@@ -50,6 +50,8 @@ public class SeekAnswers extends CustomCard
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeMagicNumber(BASE_COST_UPGRADE);
+            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
+            this.initializeDescription();
         }
 
     }

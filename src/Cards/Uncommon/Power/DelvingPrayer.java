@@ -20,12 +20,12 @@ public class DelvingPrayer extends CustomCard
     public static final String NAME = "Delving Prayer";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Powers/enigma.png";
-    private static final int COST = 3;
+    private static final int COST = 2;
     private static final int POOL = 1;
     private static final CardRarity rarity = CardRarity.UNCOMMON;
     private static final CardTarget target = CardTarget.SELF;
     private static final CardType type = CardType.POWER;
-    private static final int CARS_TO_DRAW = 1;
+    private static final int CARS_TO_DRAW = 2;
     private static final int CARS_TO_DRAW_UPGRADE = 1;
 
 

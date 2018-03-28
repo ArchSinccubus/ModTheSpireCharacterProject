@@ -49,14 +49,21 @@ public class PeacefulStancePower extends AbstractPower {
 
     }
 
-    public int onAttacked(DamageInfo info, int damageAmount) {
-            return (int)(damageAmount * 0.75F);
-
+    public float atDamageReceive(float damage, DamageInfo.DamageType type) {
+            if (this.owner.isPlayer) {
+                return damage * 0.5F;
+            }
+        return damage;
     }
+
+//    public int onAttacked(DamageInfo info, int damageAmount) {
+//            return (int)(damageAmount * 0.75F);
+//
+//    }
 
     static {
         DESCRIPTIONS = new String[] {
-                "You take 25% less damage and give 50% less damage."
+                "You take 50% less damage."
         };
         NAME = "Peaceful Stance";
     }
