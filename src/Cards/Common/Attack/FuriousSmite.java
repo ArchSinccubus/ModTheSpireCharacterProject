@@ -28,6 +28,7 @@ public class FuriousSmite extends CustomCard
     private static final CardTarget target = CardTarget.ENEMY;
     private static final CardType type = CardType.ATTACK;
     private static final int DAMAGE = 10;
+    private static final int DAMAGE_UPGRADE = 3;
     private static final int HP_LOSS = 3;
     private static final int HP_LOSS_UPGRADE = -1;
     private int extraDamage;
@@ -93,6 +94,7 @@ public class FuriousSmite extends CustomCard
         if (!this.upgraded) {
             this.upgradeName();
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
+            this.upgradeDamage(DAMAGE_UPGRADE);
             this.upgradeMagicNumber(HP_LOSS_UPGRADE);
             this.initializeDescription();
         }

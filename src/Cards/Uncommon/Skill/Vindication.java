@@ -21,8 +21,8 @@ public class Vindication extends CustomCard
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Skills/corona.png";
     private static final int COST = 2;
-    private static final int SPIRIT_AMOUNT = 1;
-    private static final int SPIRIT_UPGRADE = 2;
+    private static final int SPIRIT_AMOUNT = 2;
+    private static final int SPIRIT_UPGRADE = 1;
     private static final int POOL = 1;
     private static final CardRarity rarity = CardRarity.UNCOMMON;
     private static final CardTarget target = CardTarget.ENEMY;
@@ -59,7 +59,6 @@ public class Vindication extends CustomCard
         {
             this.upgradeName();
             this.upgradeMagicNumber(SPIRIT_UPGRADE);
-            this.upgradeMagicNumber(1);
             //this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             //this.initializeDescription();
         }

@@ -28,6 +28,7 @@ public class WideSmite extends CustomCard
     private static final CardTarget target = CardTarget.ALL_ENEMY;
     private static final CardType type = CardType.ATTACK;
     private static final int DAMAGE = 10;
+    private static final int DAMAGE_UPGRADE = 4;
     private int extraDamage;
 
     public WideSmite() {
@@ -88,6 +89,7 @@ public class WideSmite extends CustomCard
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.upgradeDamage(DAMAGE_UPGRADE);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

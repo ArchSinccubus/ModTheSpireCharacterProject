@@ -29,6 +29,7 @@ public class RecklessSmite extends CustomCard
     private static final CardTarget target = CardTarget.ENEMY;
     private static final CardType type = CardType.ATTACK;
     private static final int DAMAGE = 12;
+    private static final int DAMAGE_UPGRADE = 2;
     private int extraDamage;
 
     public RecklessSmite() {
@@ -89,6 +90,7 @@ public class RecklessSmite extends CustomCard
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.upgradeDamage(DAMAGE_UPGRADE);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

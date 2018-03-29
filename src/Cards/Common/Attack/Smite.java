@@ -28,6 +28,7 @@ public class Smite extends CustomCard
     private static final CardTarget target = CardTarget.ENEMY;
     private static final CardType type = CardType.ATTACK;
     private static final int DAMAGE = 8;
+    private static final int DAMAGE_UPGRADE = 2;
     private int extraDamage;
 
     public Smite() {
@@ -40,10 +41,12 @@ public class Smite extends CustomCard
 
     @Override
     public void applyPowers() {
-        extraDamage = this.damage;
+        extraDamage = this.baseDamage / 2;
+        if (isDamageModified)
+            extraDamage = this.damage / 2;
         if (this.upgraded)
         {
-            extraDamage *= (int)(this.damage * 2.5f);
+            extraDamage *= 2;
         }
         super.applyPowers();
         this.setDescription(true);
@@ -62,10 +65,12 @@ public class Smite extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        extraDamage = this.damage;
+        extraDamage = this.baseDamage / 2;
+        if (isDamageModified)
+            extraDamage = this.damage / 2;
         if (this.upgraded)
         {
-            extraDamage *= (int)(this.damage * 2.5f);
+            extraDamage *= 2;
         }
         AbstractDungeon.actionManager.addToBottom(new SFXAction("THUNDERCLAP", 0.05F));
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new LightningEffect(m.drawX, m.drawY), 0.05F));
@@ -84,6 +89,7 @@ public class Smite extends CustomCard
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.upgradeDamage(DAMAGE_UPGRADE);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

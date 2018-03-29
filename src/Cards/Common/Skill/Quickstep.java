@@ -19,7 +19,7 @@ public class Quickstep extends CustomCard
     public static final String NAME = "Quickstep";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Skills/corona.png";
-    private static final int COST = 1;
+    private static final int COST = 0;
     private static final int POOL = 1;
     private static final int CARDS = 2;
     private static final CardRarity rarity = CardRarity.COMMON;

@@ -28,8 +28,8 @@ public class StrainingSmite extends CustomCard
     private static final CardRarity rarity = CardRarity.UNCOMMON;
     private static final CardTarget target = CardTarget.ENEMY;
     private static final CardType type = CardType.ATTACK;
-    private static final int DAMAGE = 8;
-    private static final int DAMAGE_PLUS = 3;
+    private static final int DAMAGE = 4;
+    private static final int DAMAGE_PLUS = 2;
     private int extraDamage;
 
     public StrainingSmite() {
@@ -42,23 +42,21 @@ public class StrainingSmite extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        extraDamage = this.baseDamage / 2;
-        if (isDamageModified)
-            extraDamage = this.damage / 2;
-        if (this.upgraded)
-        {
-            extraDamage *= 2;
-        }
+        extraDamage = this.damage;
         AbstractDungeon.actionManager.addToBottom(new SFXAction("THUNDERCLAP", 0.05F));
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new LightningEffect(m.drawX, m.drawY), 0.05F));
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
         AbstractDungeon.actionManager.addToBottom(new SmiteAction(m, new DamageInfo(p, extraDamage, this.damageTypeForTurn)));
-        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Burn(), 1));
+        if (upgraded)
+        {
+            AbstractDungeon.actionManager.addToBottom(new SmiteAction(m, new DamageInfo(p, extraDamage, this.damageTypeForTurn)));
+        }
+        //AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Burn(), 1));
     }
 
     @Override
     public void applyPowers() {
-        extraDamage = this.baseDamage / 2;
+        extraDamage = this.baseDamage;
         if (this.upgraded)
         {
             extraDamage *= 2;

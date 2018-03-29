@@ -137,11 +137,11 @@
     "DESCRIPTION": "Can only be played if you lost HP this turn. Deal !D! damage."
   },
   "StrainingSmite": {
-    "NAME": "Straining Smite",
-    "DESCRIPTION": "Deal !D! damage. If the enemy is Wavering, deal 50% more. NL Add a Burn to your hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. If the enemy is Wavering, deal twice as much. NL Add a Burn to your hand.",
+    "NAME": "Chained Smite",
+    "DESCRIPTION": "Deal !D! damage. If the enemy is Wavering, deal twice as much.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. If the enemy is Wavering, deal three times as much.",
     "EXTENDED_DESCRIPTION": [
-      "Deal !D! damage. If the enemy is Wavering, deal !F! more. NL Add A Burn to your hand."
+      "Deal !D! damage. If the enemy is Wavering, deal !F! more."
     ]
   },
   "FinalGambit": {
