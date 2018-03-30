@@ -63,7 +63,7 @@ public class Bombastic extends CustomCard
     {
         int SmiteCount = 0;
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
-            if (c.cost >= 3 && c != this)
+            if (c.cost >= 2 && c != this)
                 return true;
             SmiteCount++;
         }

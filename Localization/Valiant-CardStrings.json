@@ -316,7 +316,7 @@
 },
   "Charge": {
   "NAME": "Charge",
-  "DESCRIPTION": "The next Attack you play deals 50 % more damage. Lose !M! HP. Exhaust.",
+  "DESCRIPTION": "The next Attack you play deals 50 % more damage. Lose !M! HP.",
     "UPGRADE_DESCRIPTION": "The next Attack you play deals 50 % more damage. Lose !M! HP."
 },
   "SoulStrain": {
@@ -370,8 +370,8 @@
 },
   "TempoMaster": {
     "NAME": "Tempo Master",
-    "DESCRIPTION": "Apply !M! Slow to one enemy. Exhaust.",
-    "UPGRADE_DESCRIPTION": "Apply !M! Slow to ALL enemies. Exhaust."
+    "DESCRIPTION": "Gain 1 Haste.",
+    "UPGRADE_DESCRIPTION": "Innate. Gain 1 Haste."
   },
   "DeadlyPlay": {
     "NAME": "Deadly Play",
@@ -389,7 +389,7 @@
   },
 "FullAwakening": {
 "NAME": "Full Awakening",
-"DESCRIPTION": "Gain !M! Spirit, Strength and Dexterity."
+"DESCRIPTION": "At the start of each turn, gain !M! Spirit, Strength and Dexterity."
 },
   "PeacefulStance": {
     "NAME": "Peaceful Stance",

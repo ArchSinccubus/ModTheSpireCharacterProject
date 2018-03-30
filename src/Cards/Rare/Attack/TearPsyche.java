@@ -1,4 +1,4 @@
-package Cards.Uncommon.Attack;
+package Cards.Rare.Attack;
 import MainMod.*;
 import Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.*;

@@ -2,6 +2,7 @@ package Cards.Common.Attack;
 import Actions.SmiteAction;
 import MainMod.*;
 import Patches.AbstractCardEnum;
+import Relics.DivineWrath;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -15,6 +16,8 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.vfx.combat.LightningEffect;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class WideSmite extends CustomCard
 {
@@ -28,8 +31,10 @@ public class WideSmite extends CustomCard
     private static final CardTarget target = CardTarget.ALL_ENEMY;
     private static final CardType type = CardType.ATTACK;
     private static final int DAMAGE = 10;
-    private static final int DAMAGE_UPGRADE = 4;
+    private static final int DAMAGE_UPGRADE = 2;
     private int extraDamage;
+    public static final Logger logger = LogManager.getLogger(DivineWrath.class.getName());
+
 
     public WideSmite() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.WIDE_SMITE), COST, CARD_STRINGS.DESCRIPTION,
@@ -41,10 +46,12 @@ public class WideSmite extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        extraDamage = this.damage;
+        extraDamage = this.baseDamage / 2;
+        if (isDamageModified)
+            extraDamage = this.damage / 2;
         if (this.upgraded)
         {
-            extraDamage *= (int)(this.damage * 2.5f);
+            extraDamage *= 2;
         }
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
             AbstractDungeon.actionManager.addToBottom(new SFXAction("THUNDERCLAP", 0.05F));
@@ -89,7 +96,7 @@ public class WideSmite extends CustomCard
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(DAMAGE_UPGRADE);
+            //this.upgradeDamage(DAMAGE_UPGRADE);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

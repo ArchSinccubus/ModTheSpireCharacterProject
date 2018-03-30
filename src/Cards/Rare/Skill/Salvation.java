@@ -4,9 +4,12 @@ import Patches.AbstractCardEnum;
 import basemod.BaseMod;
 import basemod.interfaces.PostBattleSubscriber;
 import basemod.interfaces.PostDungeonInitializeSubscriber;
+import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.red.HeavyBlade;
+import com.megacrit.cardcrawl.cards.red.PerfectedStrike;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -14,12 +17,14 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.combat.HealVerticalLineEffect;
 import com.megacrit.cardcrawl.vfx.combat.InflameEffect;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Salvation extends CustomCard /*implements PostBattleSubscriber,PostDungeonInitializeSubscriber*/
@@ -29,7 +34,7 @@ public class Salvation extends CustomCard /*implements PostBattleSubscriber,Post
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Skills/corona.png";
     private static final int COST = 3;
-    private static final int HP_AMOUNT = 25;
+    private static final int HP_AMOUNT = 20;
     private static final int UPGRADE_HP_AMOUNT = 10;
     private static final int POOL = 1;
     private static final CardRarity rarity = CardRarity.RARE;
@@ -70,54 +75,92 @@ public class Salvation extends CustomCard /*implements PostBattleSubscriber,Post
         AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, this.magicNumber));
     }
 
+
     @Override
-    public void applyPowers()
-    {
-        //float percent = (float)(percent_gain) / 100;
-        //this.baseMagicNumber = (int)((float)AbstractDungeon.player.maxHealth * percent);
-        super.applyPowers();
+    public void applyPowers() {
+        AbstractPlayer player = AbstractDungeon.player;
+        this.isDamageModified = false;
+        if (!this.isMultiDamage) {
+            float tmp = (float)this.baseDamage;
+
+            Iterator var3 = player.powers.iterator();
+
+            AbstractPower p;
+            while(var3.hasNext()) {
+                p = (AbstractPower)var3.next();
+
+                tmp = p.atDamageGive(tmp, this.damageTypeForTurn);
+                if (this.baseDamage != (int)tmp) {
+                    this.isDamageModified = true;
+                }
+            }
+
+            var3 = player.powers.iterator();
+
+            while(var3.hasNext()) {
+                p = (AbstractPower)var3.next();
+                tmp = p.atDamageFinalGive(tmp, this.damageTypeForTurn);
+                if (this.baseDamage != (int)tmp) {
+                    this.isDamageModified = true;
+                }
+            }
+
+            if (tmp < 0.0F) {
+                tmp = 0.0F;
+            }
+
+            this.damage = MathUtils.floor(tmp);
+        } else {
+            ArrayList<AbstractMonster> m = AbstractDungeon.getCurrRoom().monsters.monsters;
+            float[] tmp = new float[m.size()];
+
+            int i;
+            for(i = 0; i < tmp.length; ++i) {
+                tmp[i] = (float)this.baseDamage;
+            }
+
+            Iterator var5;
+            AbstractPower p;
+            for(i = 0; i < tmp.length; ++i) {
+                var5 = player.powers.iterator();
+
+                while(var5.hasNext()) {
+                    p = (AbstractPower)var5.next();
+                    tmp[i] = p.atDamageGive(tmp[i], this.damageTypeForTurn);
+                    if (this.baseDamage != (int)tmp[i]) {
+                        this.isDamageModified = true;
+                    }
+                }
+            }
+
+            for(i = 0; i < tmp.length; ++i) {
+                var5 = player.powers.iterator();
+
+                while(var5.hasNext()) {
+                    p = (AbstractPower)var5.next();
+                    tmp[i] = p.atDamageFinalGive(tmp[i], this.damageTypeForTurn);
+                    if (this.baseDamage != (int)tmp[i]) {
+                        this.isDamageModified = true;
+                    }
+                }
+            }
+
+            for(i = 0; i < tmp.length; ++i) {
+                if (tmp[i] < 0.0F) {
+                    tmp[i] = 0.0F;
+                }
+            }
+
+            this.multiDamage = new int[tmp.length];
+
+            for(i = 0; i < tmp.length; ++i) {
+                this.multiDamage[i] = MathUtils.floor(tmp[i]);
+            }
+
+            this.damage = this.multiDamage[0];
+        }
         setDescription(true);
     }
-
-//    @Override
-//    public void atTurnStart() {
-//        logger.info("THE TURN HAS STARTED");
-//        foundSpirit = false;
-//        this.applyPowers();
-//        super.update();
-//    }
-
-//    @Override
-//    public void receivePostBattle(AbstractRoom arg0) {
-//        BaseMod.unsubscribeFromPostDungeonInitialize(this);
-//
-//        Thread delayed = new Thread(() -> {
-//            try {
-//                Thread.sleep(200);
-//            } catch (Exception e) {
-//                System.out.println("could not delay unsubscribe to avoid ConcurrentModificationException");
-//                e.printStackTrace();
-//            }
-//            BaseMod.unsubscribeFromPostBattle(this);
-//        });
-//        delayed.start();
-//    }
-//
-//    @Override
-//    public void receivePostDungeonInitialize() {
-//        BaseMod.unsubscribeFromPostBattle(this);
-//        setDescription(false);
-//        Thread delayed = new Thread(() -> {
-//            try {
-//                Thread.sleep(200);
-//            } catch (Exception e) {
-//                System.out.println("could not delay unsubscribe to avoid ConcurrentModificationException");
-//                e.printStackTrace();
-//            }
-//            BaseMod.unsubscribeFromPostDungeonInitialize(this);
-//        });
-//        delayed.start();
-//    }
 
     @Override
     public void calculateCardDamage(AbstractMonster mo)

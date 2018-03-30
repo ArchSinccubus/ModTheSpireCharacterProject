@@ -65,8 +65,6 @@ public class AlmightySmite extends CustomCard
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new LightningEffect(m.drawX + xRand, m.drawY + yRand), 0.01F));
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
         AbstractDungeon.actionManager.addToBottom(new SmiteAction(m, new DamageInfo(p, extraDamage, this.damageTypeForTurn)));
-
-
     }
 
     @Override

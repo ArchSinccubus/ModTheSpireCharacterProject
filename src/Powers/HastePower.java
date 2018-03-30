@@ -24,8 +24,8 @@ public class HastePower extends AbstractPower {
         this.ID = "Haste";
         NAME = powerStrings.NAME;
         DESCRIPTIONS = new String[] {
-                "For each card you play this turn, deal 25% more damage.",
-                " (You will deal #b" + (25 * amount) + "% more damage"
+                "For each card you play this turn, deal 20% more damage.",
+                " (You will deal #b" + (20 * amount) + "% more damage"
         };
         this.owner = owner;
         this.amount = amount;
@@ -51,7 +51,7 @@ public class HastePower extends AbstractPower {
     }
 
     public float atDamageReceive(float damage, DamageType type) {
-        return type == DamageType.NORMAL ? damage * (1.0F + (float)this.amount * 0.25F) : damage;
+        return type == DamageType.NORMAL ? damage * (1.0F + (float)this.amount * 0.2F) : damage;
     }
 
 }

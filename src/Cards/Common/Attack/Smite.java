@@ -89,7 +89,7 @@ public class Smite extends CustomCard
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(DAMAGE_UPGRADE);
+            //this.upgradeDamage(DAMAGE_UPGRADE);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

@@ -62,7 +62,7 @@ public class WaveringPower extends AbstractPower {
                 } else {
                     int damage = 5;
                     if (AbstractDungeon.player.hasRelic("Crumpled Paper")) {
-                        damage = (int)(this.amount * 2);
+                        damage *= 2;
                     }
 
 //                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, owner, new StrengthPower(owner, -damage), -damage));
@@ -83,7 +83,7 @@ public class WaveringPower extends AbstractPower {
     public void updateDescription() {
         int damage = 5;
         if (AbstractDungeon.player.hasRelic("Crumpled Paper")) {
-            damage = (int)(this.amount * 2);
+            damage *= 2;
         }
         if (this.amount == 1) {
             this.description = "At the end of the next turn, this monster loses " + damage + " HP.";

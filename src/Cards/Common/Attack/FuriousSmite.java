@@ -94,7 +94,7 @@ public class FuriousSmite extends CustomCard
         if (!this.upgraded) {
             this.upgradeName();
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
-            this.upgradeDamage(DAMAGE_UPGRADE);
+            //this.upgradeDamage(DAMAGE_UPGRADE);
             this.upgradeMagicNumber(HP_LOSS_UPGRADE);
             this.initializeDescription();
         }
