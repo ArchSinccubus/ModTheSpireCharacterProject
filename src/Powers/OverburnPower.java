@@ -68,9 +68,7 @@ public class OverburnPower extends AbstractPower implements PostDrawSubscriber, 
 
     @Override
     public void onInitialApplication() {
-        BaseMod.subscribeToPostDraw(this);
-        BaseMod.subscribeToPostBattle(this);
-        BaseMod.subscribeToPostDungeonInitialize(this);
+        BaseMod.subscribe(this);
     }
 
     public void stackPower(int stackAmount) {
@@ -102,7 +100,7 @@ public class OverburnPower extends AbstractPower implements PostDrawSubscriber, 
 
     @Override
     public void onRemove() {
-        BaseMod.unsubscribeFromPostDraw(this);
+        BaseMod.subscribe(this);
     }
 
     @Override
@@ -125,35 +123,12 @@ public class OverburnPower extends AbstractPower implements PostDrawSubscriber, 
 
     @Override
     public void receivePostBattle(AbstractRoom arg0) {
-        BaseMod.unsubscribeFromPostDraw(this);
-        BaseMod.unsubscribeFromPostDungeonInitialize(this);
-
-        Thread delayed = new Thread(() -> {
-            try {
-                Thread.sleep(200);
-            } catch (Exception e) {
-                System.out.println("could not delay unsubscribe to avoid ConcurrentModificationException");
-                e.printStackTrace();
-            }
-            BaseMod.unsubscribeFromPostBattle(this);
-        });
-        delayed.start();
+        BaseMod.unsubscribeLater(this);
     }
 
     @Override
     public void receivePostDungeonInitialize() {
-        BaseMod.unsubscribeFromPostDraw(this);
-        BaseMod.unsubscribeFromPostBattle(this);
-        Thread delayed = new Thread(() -> {
-            try {
-                Thread.sleep(200);
-            } catch (Exception e) {
-                System.out.println("could not delay unsubscribe to avoid ConcurrentModificationException");
-                e.printStackTrace();
-            }
-            BaseMod.unsubscribeFromPostDungeonInitialize(this);
-        });
-        delayed.start();
+        BaseMod.unsubscribeLater(this);
     }
 
     public boolean IsLifeLossCard (AbstractCard c)

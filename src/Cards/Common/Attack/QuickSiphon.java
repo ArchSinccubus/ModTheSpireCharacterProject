@@ -51,7 +51,7 @@ public class QuickSiphon extends CustomCard
         if (!upgraded)
         {
             this.upgradeName();
-            this.upgradeBaseCost(0);
+            this.upgradeBaseCost(UPGRADED_COST);
         }
 
     }

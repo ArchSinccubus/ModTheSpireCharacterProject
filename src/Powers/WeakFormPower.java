@@ -48,15 +48,12 @@ public class WeakFormPower extends AbstractPower implements PostDrawSubscriber, 
 
     @Override
     public void onInitialApplication() {
-        BaseMod.subscribeToPostDraw(this);
-        BaseMod.subscribeToPostBattle(this);
-        BaseMod.subscribeToPostDungeonInitialize(this);
+        BaseMod.subscribe(this);
     }
 
     @Override
     public void receivePostBattle(AbstractRoom arg0) {
-        BaseMod.unsubscribeFromPostDraw(this);
-        BaseMod.unsubscribeFromPostDungeonInitialize(this);
+        BaseMod.unsubscribe(this);
         Thread delayed = new Thread(() -> {
             try {
                 Thread.sleep(200);
@@ -64,15 +61,14 @@ public class WeakFormPower extends AbstractPower implements PostDrawSubscriber, 
                 System.out.println("could not delay unsubscribe to avoid ConcurrentModificationException");
                 e.printStackTrace();
             }
-            BaseMod.unsubscribeFromPostBattle(this);
+            //BaseMod.unsubscribeFromPostBattle(this);
         });
         delayed.start();
     }
 
     @Override
     public void receivePostDungeonInitialize() {
-        BaseMod.unsubscribeFromPostDraw(this);
-        BaseMod.unsubscribeFromPostBattle(this);
+        BaseMod.unsubscribe(this);
         Thread delayed = new Thread(() -> {
             try {
                 Thread.sleep(200);
@@ -80,7 +76,7 @@ public class WeakFormPower extends AbstractPower implements PostDrawSubscriber, 
                 System.out.println("could not delay unsubscribe to avoid ConcurrentModificationException");
                 e.printStackTrace();
             }
-            BaseMod.unsubscribeFromPostDungeonInitialize(this);
+            //BaseMod.unsubscribeFromPostBattle(this);
         });
         delayed.start();
     }

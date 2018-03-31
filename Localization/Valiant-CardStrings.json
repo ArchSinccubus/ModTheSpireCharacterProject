@@ -58,7 +58,7 @@
   },
   "CombatDance": {
     "NAME": "Combat Dance",
-    "DESCRIPTION": "Deal !D! damage. NL Gain [R]. NL Lose 3 HP."
+    "DESCRIPTION": "Deal !D! damage. NL Gain [R] and draw 1 card. NL Lose 3 HP."
   },
   "DivineLashes": {
     "NAME": "Divine Lashes",
