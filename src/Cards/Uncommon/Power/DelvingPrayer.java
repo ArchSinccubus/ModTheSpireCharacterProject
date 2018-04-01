@@ -53,8 +53,6 @@ public class DelvingPrayer extends CustomCard
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
-            this.initializeDescription();
             this.upgradeMagicNumber(CARS_TO_DRAW_UPGRADE);
         }
 

@@ -78,86 +78,15 @@ public class Salvation extends CustomCard /*implements PostBattleSubscriber,Post
 
     @Override
     public void applyPowers() {
-        AbstractPlayer player = AbstractDungeon.player;
-        this.isDamageModified = false;
-        if (!this.isMultiDamage) {
-            float tmp = (float)this.baseDamage;
-
-            Iterator var3 = player.powers.iterator();
-
-            AbstractPower p;
-            while(var3.hasNext()) {
-                p = (AbstractPower)var3.next();
-
-                tmp = p.atDamageGive(tmp, this.damageTypeForTurn);
-                if (this.baseDamage != (int)tmp) {
-                    this.isDamageModified = true;
-                }
+        float percent = (float)(this.baseBlock) / 100;
+        this.baseMagicNumber = (int)((float)AbstractDungeon.player.maxHealth * percent);
+        Iterator var2 = AbstractDungeon.player.powers.iterator();
+        while (var2.hasNext()) {
+            AbstractPower p = (AbstractPower) var2.next();
+            if (p.name == "Spirit") {
+                this.magicNumber = this.baseMagicNumber + p.amount;
+                this.isMagicNumberModified = true;
             }
-
-            var3 = player.powers.iterator();
-
-            while(var3.hasNext()) {
-                p = (AbstractPower)var3.next();
-                tmp = p.atDamageFinalGive(tmp, this.damageTypeForTurn);
-                if (this.baseDamage != (int)tmp) {
-                    this.isDamageModified = true;
-                }
-            }
-
-            if (tmp < 0.0F) {
-                tmp = 0.0F;
-            }
-
-            this.damage = MathUtils.floor(tmp);
-        } else {
-            ArrayList<AbstractMonster> m = AbstractDungeon.getCurrRoom().monsters.monsters;
-            float[] tmp = new float[m.size()];
-
-            int i;
-            for(i = 0; i < tmp.length; ++i) {
-                tmp[i] = (float)this.baseDamage;
-            }
-
-            Iterator var5;
-            AbstractPower p;
-            for(i = 0; i < tmp.length; ++i) {
-                var5 = player.powers.iterator();
-
-                while(var5.hasNext()) {
-                    p = (AbstractPower)var5.next();
-                    tmp[i] = p.atDamageGive(tmp[i], this.damageTypeForTurn);
-                    if (this.baseDamage != (int)tmp[i]) {
-                        this.isDamageModified = true;
-                    }
-                }
-            }
-
-            for(i = 0; i < tmp.length; ++i) {
-                var5 = player.powers.iterator();
-
-                while(var5.hasNext()) {
-                    p = (AbstractPower)var5.next();
-                    tmp[i] = p.atDamageFinalGive(tmp[i], this.damageTypeForTurn);
-                    if (this.baseDamage != (int)tmp[i]) {
-                        this.isDamageModified = true;
-                    }
-                }
-            }
-
-            for(i = 0; i < tmp.length; ++i) {
-                if (tmp[i] < 0.0F) {
-                    tmp[i] = 0.0F;
-                }
-            }
-
-            this.multiDamage = new int[tmp.length];
-
-            for(i = 0; i < tmp.length; ++i) {
-                this.multiDamage[i] = MathUtils.floor(tmp[i]);
-            }
-
-            this.damage = this.multiDamage[0];
         }
         setDescription(true);
     }
@@ -166,24 +95,12 @@ public class Salvation extends CustomCard /*implements PostBattleSubscriber,Post
     public void calculateCardDamage(AbstractMonster mo)
     {
         //super.calculateCardDamage(mo);
-        Iterator var2 = AbstractDungeon.player.powers.iterator();
-        while (var2.hasNext()) {
-            AbstractPower p = (AbstractPower) var2.next();
-            if (p.name == "Spirit") {
-                logger.info("FOUND SPIRIT. MAGIC NUMBER:" + this.magicNumber + " BASE MAGIC NUMBER: " + baseMagicNumber);
-                this.magicNumber = this.baseMagicNumber + p.amount;
-                this.isMagicNumberModified = true;
-            }
-        }
 
     }
 
     private void setDescription(boolean addExtended) {
 //        float percent = (float)(this.magicNumber) / 100;
 //        this.baseMagicNumber = (int)((float)AbstractDungeon.player.maxHealth * percent);
-        float percent = (float)(this.baseBlock) / 100;
-        this.baseMagicNumber = (int)((float)AbstractDungeon.player.maxHealth * percent);
-        this.magicNumber = this.baseMagicNumber;
         this.rawDescription = CARD_STRINGS.DESCRIPTION;
         if (addExtended) {
             this.rawDescription += CARD_STRINGS.EXTENDED_DESCRIPTION[0];

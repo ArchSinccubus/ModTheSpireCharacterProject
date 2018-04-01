@@ -56,11 +56,11 @@ public class StrainingSmite extends CustomCard
 
     @Override
     public void applyPowers() {
-        extraDamage = this.baseDamage;
-        if (this.upgraded)
-        {
-            extraDamage *= 2;
-        }
+//        extraDamage = this.baseDamage;
+//        if (this.upgraded)
+//        {
+//            extraDamage *= 2;
+//        }
         super.applyPowers();
         this.setDescription(true);
     }

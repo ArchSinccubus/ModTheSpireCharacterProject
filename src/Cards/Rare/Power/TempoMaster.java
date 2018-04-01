@@ -36,7 +36,7 @@ public class TempoMaster extends CustomCard
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new HastePower(m, this.magicNumber), 1, true, AbstractGameAction.AttackEffect.NONE));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new HastePower(p, this.magicNumber), 1, true, AbstractGameAction.AttackEffect.NONE));
     }
 
     @Override

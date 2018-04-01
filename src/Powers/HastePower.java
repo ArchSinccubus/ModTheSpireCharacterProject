@@ -14,15 +14,14 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.AbstractPower.PowerType;
 
 public class HastePower extends AbstractPower {
-    public static final String POWER_ID = "Slow";
+    public static final String POWER_ID = "Haste";
     private static PowerStrings powerStrings;
     public String NAME;
     public String[] DESCRIPTIONS;
 
     public HastePower(AbstractCreature owner, int amount) {
-        this.name = NAME;
+        this.name = "Haste";
         this.ID = "Haste";
-        NAME = powerStrings.NAME;
         DESCRIPTIONS = new String[] {
                 "For each card you play this turn, deal 20% more damage.",
                 " (You will deal #b" + (20 * amount) + "% more damage"
@@ -50,7 +49,7 @@ public class HastePower extends AbstractPower {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this.owner, this.owner, new HastePower(this.owner, 1), 1));
     }
 
-    public float atDamageReceive(float damage, DamageType type) {
+    public float atDamageGive(float damage, DamageType type) {
         return type == DamageType.NORMAL ? damage * (1.0F + (float)this.amount * 0.2F) : damage;
     }
 

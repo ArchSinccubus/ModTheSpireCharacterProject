@@ -55,6 +55,14 @@ public class MinorHealing extends CustomCard
     public void applyPowers()
     {
         super.applyPowers();
+        Iterator var2 = AbstractDungeon.player.powers.iterator();
+        while (var2.hasNext()) {
+            AbstractPower p = (AbstractPower) var2.next();
+            if (p.name == "Spirit") {
+                this.magicNumber = this.baseMagicNumber + p.amount;
+                this.isMagicNumberModified = true;
+            }
+        }
         setDescription();
     }
 
@@ -62,14 +70,6 @@ public class MinorHealing extends CustomCard
     public void calculateCardDamage(AbstractMonster mo)
     {
         super.calculateCardDamage(mo);
-                Iterator var2 = AbstractDungeon.player.powers.iterator();
-                while (var2.hasNext()) {
-                    AbstractPower p = (AbstractPower) var2.next();
-                    if (p.name == "Spirit") {
-                        this.magicNumber = this.baseMagicNumber + p.amount;
-                        this.isMagicNumberModified = true;
-                    }
-                }
 
     }
 

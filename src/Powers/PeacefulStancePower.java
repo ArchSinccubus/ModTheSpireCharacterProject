@@ -36,13 +36,13 @@ public class PeacefulStancePower extends AbstractPower {
         this.img = Fudgesickle.getTex("Powers/Charge.png");
     }
 
-    public float atDamageGive(float damage, DamageInfo.DamageType type) {
-        if (type == DamageInfo.DamageType.NORMAL) {
-            return damage * 0.5F;
-        } else {
-            return damage;
-        }
-    }
+//    public float atDamageGive(float damage, DamageInfo.DamageType type) {
+//        if (type == DamageInfo.DamageType.NORMAL) {
+//            return damage * 0.5F;
+//        } else {
+//            return damage;
+//        }
+//    }
 
     public void updateDescription() {
         this.description = DESCRIPTIONS[0];

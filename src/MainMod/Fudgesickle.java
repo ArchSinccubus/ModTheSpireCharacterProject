@@ -264,7 +264,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
         // Mod badge
         Texture badgeTexture = new Texture(Gdx.files.internal("resources/BaseModBadge.png"));
         ModPanel settingsPanel = new ModPanel();
-        settingsPanel.addLabel("This mod does not have any settings (yet)", 400.0f, 700.0f, (me) -> {});
+        //settingsPanel("This mod does not have any settings (yet)", 400.0f, 700.0f, (me) -> {});
         BaseMod.registerModBadge(badgeTexture, Dev, Dev, "The Valiant, wielder of rage and purity, is now en route to the spire!", settingsPanel);
 
         Settings.isDailyRun = false;

@@ -48,13 +48,6 @@ public class ArcaneHealing extends CustomCard
     public void applyPowers()
     {
         super.applyPowers();
-        //applyPowersToHeal();
-    }
-
-    @Override
-    public void calculateCardDamage(AbstractMonster mo)
-    {
-        super.calculateCardDamage(mo);
         Iterator var2 = AbstractDungeon.player.powers.iterator();
         while (var2.hasNext()) {
             AbstractPower p = (AbstractPower) var2.next();
@@ -63,6 +56,13 @@ public class ArcaneHealing extends CustomCard
                 this.isMagicNumberModified = true;
             }
         }
+        //applyPowersToHeal();
+    }
+
+    @Override
+    public void calculateCardDamage(AbstractMonster mo)
+    {
+        super.calculateCardDamage(mo);
 
     }
 

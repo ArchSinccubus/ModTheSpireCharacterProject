@@ -53,32 +53,12 @@ public class WeakFormPower extends AbstractPower implements PostDrawSubscriber, 
 
     @Override
     public void receivePostBattle(AbstractRoom arg0) {
-        BaseMod.unsubscribe(this);
-        Thread delayed = new Thread(() -> {
-            try {
-                Thread.sleep(200);
-            } catch (Exception e) {
-                System.out.println("could not delay unsubscribe to avoid ConcurrentModificationException");
-                e.printStackTrace();
-            }
-            //BaseMod.unsubscribeFromPostBattle(this);
-        });
-        delayed.start();
+        BaseMod.unsubscribeLater(this);
     }
 
     @Override
     public void receivePostDungeonInitialize() {
-        BaseMod.unsubscribe(this);
-        Thread delayed = new Thread(() -> {
-            try {
-                Thread.sleep(200);
-            } catch (Exception e) {
-                System.out.println("could not delay unsubscribe to avoid ConcurrentModificationException");
-                e.printStackTrace();
-            }
-            //BaseMod.unsubscribeFromPostBattle(this);
-        });
-        delayed.start();
+        BaseMod.unsubscribeLater(this);
     }
 
     @Override
@@ -111,7 +91,7 @@ public class WeakFormPower extends AbstractPower implements PostDrawSubscriber, 
 
     static {
         DESCRIPTIONS = new String[] {
-                "Whenever you draw a card that costs 3 or more, reduce its cost by 1 for this turn. You take 25% more damage."
+                "Whenever you draw a card that costs 2 or more, reduce its cost to 1 for this turn. You take 25% more damage."
         };
         NAME = "Weak Form";
     }

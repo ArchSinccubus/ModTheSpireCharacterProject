@@ -262,7 +262,7 @@
   },
   "BraceThePain": {
     "NAME": "Brace the Pain",
-    "DESCRIPTION": "For each 8 HP you lost, gain !M! Block.",
+    "DESCRIPTION": "Gain !M! Block for each 8 points oh HP you lost so far.",
     "EXTENDED_DESCRIPTION": [
       " (You will gain !B! Block)"
     ]
@@ -329,7 +329,7 @@
     "DESCRIPTION": "Gain !M! Spirit."
   },  "Zen": {
   "NAME": "Zen",
-  "DESCRIPTION": "Whenever you lose HP from a card, gain 1 Dexterity."
+  "DESCRIPTION": "Whenever you lose HP from a card, gain !M! Dexterity."
 },  "MightForm": {
   "NAME": "Might Form",
   "DESCRIPTION": "Whenever you play a card that costs 3 or more, gain !M! Block."
@@ -353,8 +353,7 @@
 
 }, "DelvingPrayer": {
   "NAME": "Delving Prayer",
-  "DESCRIPTION": "At the beginning of each turn, draw a card and Exhaust the top card of your draw pile.",
-  "UPGRADE_DESCRIPTION": "At the beginning of each turn, draw !M! cards and Exhaust the top card of your draw pile."
+  "DESCRIPTION": "At the beginning of each turn, draw !M! cards and Exhaust the top card of your draw pile."
 },
   "Salvation": {
     "NAME": "Salvation",
@@ -393,7 +392,7 @@
 },
   "PeacefulStance": {
     "NAME": "Peaceful Stance",
-    "DESCRIPTION": "Reduce all damage by 25 %. Deal 50 % less damage."
+    "DESCRIPTION": "Lose 3 Strength. You take 50% less damage."
   },
   "Overburn": {
     "NAME": "Overburn",
@@ -401,7 +400,7 @@
   },
   "WeakForm": {
     "NAME": "Weak Form",
-    "DESCRIPTION": "Whenever you draw a card that costs 3 or more, reduce its cost by 1 for this turn. You take 25 % more damage.",
-    "UPGRADE_DESCRIPTION": "Innate. Whenever you draw a card that costs 3 or more, reduce its cost by 1 for this turn. You take 25 % more damage."
+    "DESCRIPTION": "Whenever you draw a card that costs 2 or more, reduce its cost to 1 for this turn. You take 25 % more damage.",
+    "UPGRADE_DESCRIPTION": "Innate. Whenever you draw a card that costs 2 or more, reduce its cost to 1 for this turn. You take 25 % more damage."
   }
 }

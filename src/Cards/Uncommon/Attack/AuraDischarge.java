@@ -38,9 +38,9 @@ public class AuraDischarge extends CustomCard {
     private static final CardRarity rarity = CardRarity.UNCOMMON;
     private static final CardTarget target = CardTarget.ALL_ENEMY;
     private static final CardType type = CardType.ATTACK;
-    private static final int DAMAGE = 10;
+    private static final int DAMAGE = 8;
     private static final int DAMAGE_UPGRADE = 4;
-    private static final int HP_HEAL = 10;
+    private static final int HP_HEAL = 8;
     private static final int HP_HEAL_UPGRADE = 4;
 
     public AuraDischarge() {
