@@ -33,8 +33,8 @@ public class SeekAnswersAction extends AbstractGameAction implements PostDrawSub
     public void receivePostDraw(AbstractCard c) {
         if (listening) {
             this.listening = false;
-            if (c.cost >= amount) {
-                AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(2));
+            if (c.cost >= 2) {
+                AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(this.amount));
             }
             /*
              *  calling unsubscribeFromPostBattle inside the callback

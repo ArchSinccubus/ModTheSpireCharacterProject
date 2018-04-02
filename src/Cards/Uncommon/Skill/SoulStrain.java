@@ -38,7 +38,7 @@ public class SoulStrain extends CustomCard
     public void use(AbstractPlayer p, AbstractMonster m)
     {
         AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(this.magicNumber));
-        AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p, p, 7));
+        AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p, p, 4));
     }
 
 

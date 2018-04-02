@@ -35,7 +35,7 @@ public class Guardian extends CustomCard
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.baseMagicNumber = this.magicNumber = BLOCK_COUNT;
-        this.exhaust = true;
+        //this.exhaust = true;
     }
 
     @Override

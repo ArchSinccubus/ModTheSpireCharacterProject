@@ -1,7 +1,9 @@
 package Powers;
 
 import MainMod.Fudgesickle;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -77,21 +79,31 @@ public class SpiritPower extends AbstractPower {
     @Override
     public void updateDescription() {
         if (this.amount > 0) {
-            this.description = "Increases healing by " + this.amount + ".";
+            this.description = "Increases healing skills amount by " + this.amount + ".";
             this.type = PowerType.BUFF;
         } else {
             int tmp = -this.amount;
-            this.description = "Decreases healing by " + this.amount + ".";
+            this.description = "Decreases healing skills amount by " + this.amount + ".";
             this.type = PowerType.DEBUFF;
         }
 
     }
 
-
     @Override
-    public int onHeal(int healAmount) {
-        return healAmount + amount;
+    public void onUseCard(AbstractCard card, UseCardAction action) {
+        //if (card.type == AbstractCard.CardType.SKILL)
+        //{
+            action.amount += this.amount;
+
+            //card.magicNumber += this.amount;
+            card.isMagicNumberModified = true;
+        //}
     }
+
+    //@Override
+   // public int onHeal(int healAmount) {
+   //     return healAmount + amount;
+   // }
 
 
 

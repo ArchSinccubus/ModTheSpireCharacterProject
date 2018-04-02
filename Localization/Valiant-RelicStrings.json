@@ -43,7 +43,7 @@
 		"NAME": "Crumpled Paper",
 		"FLAVOR": "Just a trashed piece of paper and totally not a failed attempt at a paper dragon.",
 		"DESCRIPTIONS": [
-			"#yWavering deals an extra #b3 damage at the start of each turn."
+			"#yWavering deals an extra #b5 damage at the start of each turn."
 		]
 	}
 ,
@@ -59,14 +59,14 @@
 		"NAME": "Prayer Beads",
 		"FLAVOR": "A chain of beads for prayer. Invoking them invites divinity to interline.",
 		"DESCRIPTIONS": [
-			"Whenever you play the first 3 or more cost card for your turn, add a random 1 or 0 cost card. It costs 0 this turn."
+			"Whenever you play the first 3 or more cost card for your turn, add a random 1 cost card. It costs 0 this turn."
 		]
 	},
 	"Crown Of Thorns": {
 		"NAME": "Crown Of Thorns",
 		"FLAVOR": "A crown shaped thorn vine. Wearing it fills one with both divine protection and untold pain.",
 		"DESCRIPTIONS": [
-			"For every 3 #yLife #yLoss card in your deck, start each combat with #b1",
+			"For every 3 #yLife #yLoss card in your deck, start each combat with #b",
 			" additional #yDexterity.",
 			" You have no #yLife #yLoss cards.",
 			" You have #g",

@@ -48,47 +48,23 @@ public class WeakFormPower extends AbstractPower implements PostDrawSubscriber, 
 
     @Override
     public void onInitialApplication() {
-        BaseMod.subscribeToPostDraw(this);
-        BaseMod.subscribeToPostBattle(this);
-        BaseMod.subscribeToPostDungeonInitialize(this);
+        BaseMod.subscribe(this);
     }
 
     @Override
     public void receivePostBattle(AbstractRoom arg0) {
-        BaseMod.unsubscribeFromPostDraw(this);
-        BaseMod.unsubscribeFromPostDungeonInitialize(this);
-        Thread delayed = new Thread(() -> {
-            try {
-                Thread.sleep(200);
-            } catch (Exception e) {
-                System.out.println("could not delay unsubscribe to avoid ConcurrentModificationException");
-                e.printStackTrace();
-            }
-            BaseMod.unsubscribeFromPostBattle(this);
-        });
-        delayed.start();
+        BaseMod.unsubscribeLater(this);
     }
 
     @Override
     public void receivePostDungeonInitialize() {
-        BaseMod.unsubscribeFromPostDraw(this);
-        BaseMod.unsubscribeFromPostBattle(this);
-        Thread delayed = new Thread(() -> {
-            try {
-                Thread.sleep(200);
-            } catch (Exception e) {
-                System.out.println("could not delay unsubscribe to avoid ConcurrentModificationException");
-                e.printStackTrace();
-            }
-            BaseMod.unsubscribeFromPostDungeonInitialize(this);
-        });
-        delayed.start();
+        BaseMod.unsubscribeLater(this);
     }
 
     @Override
     public void receivePostDraw(AbstractCard c) {
-        if(c.cost >= 3) {
-            c.setCostForTurn(c.cost - 1);
+        if(c.cost >= 2) {
+            c.setCostForTurn(1);
         }
     }
 
@@ -97,14 +73,25 @@ public class WeakFormPower extends AbstractPower implements PostDrawSubscriber, 
 
     }
 
-    public int onAttacked(DamageInfo info, int damageAmount) {
-        return (int)(damageAmount * 1.5F);
-
+    public float atDamageReceive(float damage, DamageInfo.DamageType type) {
+        if (type == DamageInfo.DamageType.NORMAL) {
+            if (this.owner.isPlayer) {
+                return damage * 1.25F;
+            } else {
+                return damage;
+            }
+        }
+            return damage;
     }
+//
+//    public int onAttacked(DamageInfo info, int damageAmount) {
+//        return (int)(damageAmount * 1.25F);
+//
+//    }
 
     static {
         DESCRIPTIONS = new String[] {
-                "Whenever you draw a card that costs 3 or more, reduce its cost by 1 for this turn. You take 50% more damage."
+                "Whenever you draw a card that costs 2 or more, reduce its cost to 1 for this turn. You take 25% more damage."
         };
         NAME = "Weak Form";
     }

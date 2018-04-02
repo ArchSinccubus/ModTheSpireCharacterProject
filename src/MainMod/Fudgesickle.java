@@ -3,10 +3,7 @@ package MainMod;
 import Cards.Common.Attack.*;
 import Cards.Common.Skill.*;
 import Cards.Rare.Attack.*;
-import Cards.Rare.Power.FullAwakening;
-import Cards.Rare.Power.Overburn;
-import Cards.Rare.Power.PeacefulStance;
-import Cards.Rare.Power.WeakForm;
+import Cards.Rare.Power.*;
 import Cards.Rare.Skill.*;
 import Cards.Starter.BlindingLight;
 import Cards.Starter.Defend_Valiant;
@@ -191,27 +188,29 @@ public class Fudgesickle implements PostInitializeSubscriber,
 
     public Fudgesickle(){
 
-        logger.info("subscribing to postInitialize event");
-        BaseMod.subscribeToPostInitialize(this);
+        BaseMod.subscribe(this);
 
-        logger.info("subscribing to editCharacters event");
-        BaseMod.subscribeToEditCharacters(this);
-
-        logger.info("subscribing to editRelics event");
-        BaseMod.subscribeToEditRelics(this);
-
-        logger.info("subscribing to editCards event");
-        BaseMod.subscribeToEditCards(this);
-
-        /* Disable this during playtesting for being counterproductive */
-         logger.info("subscribing to setUnlocks event");
-         BaseMod.subscribeToSetUnlocks(this);
-
-        logger.info("subscribing to editStrings event");
-        BaseMod.subscribeToEditStrings(this);
-
-        logger.info("subscribing to editKeywords event");
-        BaseMod.subscribeToEditKeywords(this);
+//        logger.info("subscribing to postInitialize event");
+//        BaseMod.subscribeToPostInitialize(this);
+//
+//        logger.info("subscribing to editCharacters event");
+//        BaseMod.subscribeToEditCharacters(this);
+//
+//        logger.info("subscribing to editRelics event");
+//        BaseMod.subscribeToEditRelics(this);
+//
+//        logger.info("subscribing to editCards event");
+//        BaseMod.subscribeToEditCards(this);
+//
+//        /* Disable this during playtesting for being counterproductive */
+//         //logger.info("subscribing to setUnlocks event");
+//         //BaseMod.subscribeToSetUnlocks(this);
+//
+//        logger.info("subscribing to editStrings event");
+//        BaseMod.subscribeToEditStrings(this);
+//
+//        logger.info("subscribing to editKeywords event");
+//        BaseMod.subscribeToEditKeywords(this);
 
         logger.info("creating the color " + AbstractCardEnum.Holy.toString());
         BaseMod.addColor(AbstractCardEnum.Holy.toString(),
@@ -265,7 +264,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
         // Mod badge
         Texture badgeTexture = new Texture(Gdx.files.internal("resources/BaseModBadge.png"));
         ModPanel settingsPanel = new ModPanel();
-        settingsPanel.addLabel("This mod does not have any settings (yet)", 400.0f, 700.0f, (me) -> {});
+        //settingsPanel("This mod does not have any settings (yet)", 400.0f, 700.0f, (me) -> {});
         BaseMod.registerModBadge(badgeTexture, Dev, Dev, "The Valiant, wielder of rage and purity, is now en route to the spire!", settingsPanel);
 
         Settings.isDailyRun = false;
@@ -400,45 +399,45 @@ public class Fudgesickle implements PostInitializeSubscriber,
 
     @Override
     public void receiveSetUnlocks() {
-		UnlockTracker.addCard("Charge");
-		UnlockTracker.addCard("Decimate");
-		UnlockTracker.addCard("MercilessSmite");
-		// valiant unlock 1
-		BaseMod.addUnlockBundle(new CustomUnlockBundle(
-				"Charge", "Decimate", "MercilessSmite"
-				), CharacterEnum.TheValiant, 1);
-
-        // valiant unlock 2
-        BaseMod.addUnlockBundle(new CustomUnlockBundle(
-                "Winged Necklace", "Huge Egg", "Crown of Thorns"
-        ), CharacterEnum.TheValiant, 2);
-        UnlockTracker.addRelic("Winged Necklace");
-        UnlockTracker.addRelic("Huge Egg");
-        UnlockTracker.addRelic("Crown of Thorns");
-
-		// valiant unlock 3
-		BaseMod.addUnlockBundle(new CustomUnlockBundle(
-				"TempoMaster", "QuickSiphon", "Zen"
-				), CharacterEnum.TheValiant, 3);
-		UnlockTracker.addCard("TempoMaster");
-		UnlockTracker.addCard("QuickSiphon");
-		UnlockTracker.addCard("Zen");
-
-        // valiant unlock 5
-        BaseMod.addUnlockBundle(new CustomUnlockBundle(
-                "Archangel's Feather", "Blade of Legends", "Prayer Beads"
-        ), CharacterEnum.TheValiant, 4);
-        UnlockTracker.addRelic("Archangel's Feather");
-        UnlockTracker.addRelic("Blade of Legends");
-        UnlockTracker.addRelic("Prayer Beads");
-
-		// valiant unlock 5
-		BaseMod.addUnlockBundle(new CustomUnlockBundle(
-				"FinalGambit", "AtAllCosts", "Uprising"
-				), CharacterEnum.TheValiant, 5);
-		UnlockTracker.addCard("FinalGambit");
-		UnlockTracker.addCard("AtAllCosts");
-		UnlockTracker.addCard("Nexus");
+//		UnlockTracker.addCard("Charge");
+//		UnlockTracker.addCard("Decimate");
+//		UnlockTracker.addCard("MercilessSmite");
+//		// valiant unlock 1
+//		BaseMod.addUnlockBundle(new CustomUnlockBundle(
+//				"Charge", "Decimate", "MercilessSmite"
+//				), CharacterEnum.TheValiant, 1);
+//
+//        // valiant unlock 2
+//        BaseMod.addUnlockBundle(new CustomUnlockBundle(
+//                "Winged Necklace", "Huge Egg", "Crown of Thorns"
+//        ), CharacterEnum.TheValiant, 2);
+//        UnlockTracker.addRelic("Winged Necklace");
+//        UnlockTracker.addRelic("Huge Egg");
+//        UnlockTracker.addRelic("Crown of Thorns");
+//
+//		// valiant unlock 3
+//		BaseMod.addUnlockBundle(new CustomUnlockBundle(
+//				"TempoMaster", "QuickSiphon", "Zen"
+//				), CharacterEnum.TheValiant, 3);
+//		UnlockTracker.addCard("TempoMaster");
+//		UnlockTracker.addCard("QuickSiphon");
+//		UnlockTracker.addCard("Zen");
+//
+//        // valiant unlock 5
+//        BaseMod.addUnlockBundle(new CustomUnlockBundle(
+//                "Archangel's Feather", "Blade of Legends", "Prayer Beads"
+//        ), CharacterEnum.TheValiant, 4);
+//        UnlockTracker.addRelic("Archangel's Feather");
+//        UnlockTracker.addRelic("Blade of Legends");
+//        UnlockTracker.addRelic("Prayer Beads");
+//
+//		// valiant unlock 5
+//		BaseMod.addUnlockBundle(new CustomUnlockBundle(
+//				"FinalGambit", "AtAllCosts", "Uprising"
+//				), CharacterEnum.TheValiant, 5);
+//		UnlockTracker.addCard("FinalGambit");
+//		UnlockTracker.addCard("AtAllCosts");
+//		UnlockTracker.addCard("Nexus");
     }
 
     @Override
@@ -458,7 +457,8 @@ public class Fudgesickle implements PostInitializeSubscriber,
     public void receiveEditKeywords() {
         logger.info("setting up custom keywords");
         BaseMod.addKeyword(new String[] {"spirit", "Spirit"}, "Spirit increases the potency of #yhealing.");
-        BaseMod.addKeyword(new String[] {"wavering", "Wavering"}, "At the start of each turn, this monster is dealt #y3 damage.");
+        BaseMod.addKeyword(new String[] {"wavering", "Wavering"}, "At the start of each turn, this monster is dealt #y5 damage.");
+        BaseMod.addKeyword(new String[] {"haste", "Haste"}, "For each card you play this turn, deal 10% more damage.");
     }
 
     @Override

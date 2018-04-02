@@ -40,24 +40,6 @@ public class TakeAim extends CustomCard
         AbstractDungeon.actionManager.addToBottom(new TakeAimAction(p, p, -this.magicNumber));
     }
 
-    @Override
-    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-
-        boolean canUse = super.canUse(p, m);
-
-
-        if (!canUse) {
-            return false;
-        }
-        canUse = false;
-        if (HasReducableCost()) {
-            canUse = true;
-            return canUse;
-        }
-        this.cantUseMessage = "I don't have a card that can be aimed...";
-        return canUse;
-    }
-
     public boolean HasReducableCost()
     {
         int SmiteCount = 0;

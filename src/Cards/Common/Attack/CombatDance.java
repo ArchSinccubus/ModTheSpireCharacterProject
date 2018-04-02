@@ -27,12 +27,12 @@ public class CombatDance extends CustomCard
     private static final CardRarity rarity = CardRarity.COMMON;
     private static final CardTarget target = CardTarget.ENEMY;
     private static final CardType type = CardType.ATTACK;
-    private static final int DAMAGE = 9;
-    private static final int UPGRADE_DAMAGE = 4;
+    private static final int DAMAGE = 5;
+    private static final int UPGRADE_DAMAGE = 2;
 
     public CombatDance() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.COMBAT_DANCE), COST, CARD_STRINGS.DESCRIPTION,
-                CardType.SKILL, AbstractCardEnum.Holy,
+                type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.baseDamage = this.damage = DAMAGE;
     }
@@ -40,11 +40,12 @@ public class CombatDance extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
+        AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p, p, 3));
         AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DamageAction(m,
                 new DamageInfo(p, this.damage, this.damageTypeForTurn),
                 AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(1));
-        AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p, p, 5));
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p , 1));
     }
 
     @Override

@@ -21,8 +21,8 @@ public class Vindication extends CustomCard
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Skills/corona.png";
     private static final int COST = 2;
-    private static final int SPIRIT_AMOUNT = 1;
-    private static final int SPIRIT_UPGRADE = 2;
+    private static final int SPIRIT_AMOUNT = 2;
+    private static final int SPIRIT_UPGRADE = 1;
     private static final int POOL = 1;
     private static final CardRarity rarity = CardRarity.UNCOMMON;
     private static final CardTarget target = CardTarget.ENEMY;
@@ -40,11 +40,11 @@ public class Vindication extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new WaveringPower(m, 10, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new WaveringPower(m, 10, false), 10, true, AbstractGameAction.AttackEffect.NONE));
 
         if ((m.maxHealth / 2) >= m.currentHealth)
         {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p , p , new SpiritPower(p , this.magicNumber)));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p , p , new StrengthPower(p , this.magicNumber)));
         }
     }
 

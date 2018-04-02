@@ -58,7 +58,7 @@
   },
   "CombatDance": {
     "NAME": "Combat Dance",
-    "DESCRIPTION": "Deal !D! damage. NL Gain [R]. NL Lose 5 HP."
+    "DESCRIPTION": "Deal !D! damage. NL Gain [R] and draw 1 card. NL Lose 3 HP."
   },
   "DivineLashes": {
     "NAME": "Divine Lashes",
@@ -134,20 +134,20 @@
   },
   "Retaliate": {
     "NAME": "Retaliate",
-    "DESCRIPTION": "Can only be played if you lost life this turn. Deal !D! damage."
+    "DESCRIPTION": "Can only be played if you lost HP this turn. Deal !D! damage."
   },
   "StrainingSmite": {
-    "NAME": "Straining Smite",
-    "DESCRIPTION": "Deal !D! damage. If the enemy is Wavering, deal 50% more. NL Add a Burn to your hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. If the enemy is Wavering, deal twice as much. NL Add a Burn to your hand.",
+    "NAME": "Chained Smite",
+    "DESCRIPTION": "Deal !D! damage. If the enemy is Wavering, deal twice as much.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. If the enemy is Wavering, deal three times as much.",
     "EXTENDED_DESCRIPTION": [
-      "Deal !D! damage. If the enemy is Wavering, deal !F! more. NL Add A Burn to your hand."
+      "Deal !D! damage. If the enemy is Wavering, deal !M! more.",
+      "Deal !D! damage. If the enemy is Wavering, deal !M! more twice."
     ]
   },
   "FinalGambit": {
     "NAME": "Final Gambit",
-    "DESCRIPTION": "Deal damage equal to your HP. Your HP becomes 1.",
-    "UPGRADE_DESCRIPTION": "Deal damage equal to your HP. Lose 80% of your HP.",
+    "DESCRIPTION": "Deal damage equal to your HP. Lose !M! % of your max HP.",
     "EXTENDED_DESCRIPTION": [
       " (You will deal !D! Damage.)"
     ]
@@ -158,8 +158,8 @@
   },
   "HolyStorm": {
     "NAME": "Holy Storm",
-    "DESCRIPTION": "Deal X + 3 damage X times.",
-    "UPGRADE_DESCRIPTION": "Deal (X + 3) damage X + 1 times.",
+    "DESCRIPTION": "Deal X + 6 damage X times.",
+    "UPGRADE_DESCRIPTION": "Deal X + 6 damage X + 1 times.",
     "EXTENDED_DESCRIPTION": [
       " (You will deal !D! Damage !M! times.)"
     ]
@@ -170,7 +170,7 @@
   },
   "Tantrum": {
   "NAME": "Tantrum",
-  "DESCRIPTION": "For each time you lost life this turn, deal !M! to ALL enemies.",
+  "DESCRIPTION": "For each time you lost HP this turn, deal !M! to ALL enemies.",
     "EXTENDED_DESCRIPTION": [
       " (You will deal !D! Damage)"
     ]
@@ -232,7 +232,7 @@
   },
   "MightBracer": {
     "NAME": "Might Bracer",
-    "DESCRIPTION": "Gain !B! Block. Exhaust the top card of your deck"
+    "DESCRIPTION": "Gain !B! Block. Exhaust the top card of your deck."
   },
   "HolyFury": {
     "NAME": "Holy Fury",
@@ -247,7 +247,7 @@
   },
   "ZealousPersecution": {
     "NAME": "Zealous Persecution",
-    "DESCRIPTION": "Can only be played if you have a card in your hand that costs 3 or more. NL Draw !M! cards. Lose 4 life."
+    "DESCRIPTION": "Can only be played if you have a card in your hand that costs 2 or more. NL Draw !M! cards. Lose 2 HP."
   },
   "OverwhelmingLight": {
     "NAME": "Overwhelming Light",
@@ -255,7 +255,7 @@
   },
   "Vindication": {
     "NAME": "Vindication",
-    "DESCRIPTION": "Apply 10 Wavering. NL If the enemy is less than half health, gain !M! Spirit. Exhaust."
+    "DESCRIPTION": "Apply 10 Wavering. NL If the enemy is less than half health, gain !M! Strength. Exhaust."
   },
   "Radiance": {
     "NAME": "Radiance",
@@ -263,18 +263,19 @@
   },
   "BraceThePain": {
     "NAME": "Brace the Pain",
-    "DESCRIPTION": "For each 8 HP you lost, gain !M! Block.",
+    "DESCRIPTION": "Gain !M! Block for each 8 points oh HP you lost so far.",
     "EXTENDED_DESCRIPTION": [
       " (You will gain !B! Block)"
     ]
   },
   "Guardian": {
     "NAME": "Guardian",
-    "DESCRIPTION": "Gain !M! times X Block. Exhaust."
+    "DESCRIPTION": "Gain !M! times X Block."
   },
   "SeekAnswers": {
     "NAME": "Seek Answers",
-    "DESCRIPTION": "Draw a card. If it costs !M! Or more, gain [R] [R]"
+    "DESCRIPTION": "Draw a card. If it costs 2 Or more, gain [R].",
+    "UPGRADE_DESCRIPTION": "Draw a card. If it costs 2 Or more, gain [R] [R]."
   },
   "ArchangelsBoon": {
     "NAME": "Archangel's Denouncement",
@@ -316,61 +317,61 @@
 },
   "Charge": {
   "NAME": "Charge",
-  "DESCRIPTION": "The next Attack you play deals 50% more damage. Lose !M! HP. Exhaust.",
-    "UPGRADE_DESCRIPTION": "The next Attack you play deals 50% more damage. Lose !M! HP."
+  "DESCRIPTION": "The next Attack you play deals 50 % more damage. Lose !M! HP.",
+    "UPGRADE_DESCRIPTION": "The next Attack you play deals 50 % more damage. Lose !M! HP."
 },
   "SoulStrain": {
   "NAME": "Soul Strain",
   "DESCRIPTION": "Gain [R] [R] [R]. Lose 7 HP.",
-    "UPGRADE_DESCRIPTION": "Gain [R] [R] [R] [R]. Lose 7 HP."
+    "UPGRADE_DESCRIPTION": "Gain [R] [R] [R] [R]. Lose 4 HP."
 },
   "Ensoul": {
     "NAME": "Ensoul",
     "DESCRIPTION": "Gain !M! Spirit."
   },  "Zen": {
   "NAME": "Zen",
-  "DESCRIPTION": "Whenever you lose HP from a card, gain 1 Dexterity."
+  "DESCRIPTION": "Whenever you lose HP from a card, gain !M! Dexterity."
 },  "MightForm": {
   "NAME": "Might Form",
   "DESCRIPTION": "Whenever you play a card that costs 3 or more, gain !M! Block."
 },  "Sharpen": {
   "NAME": "Sharpen",
-  "DESCRIPTION": "At the end of each turn, upgrade an Attack card in your hand. If you can't, lose 3 HP.",
+  "DESCRIPTION": "At the end of each turn, upgrade an Attack card in your hand. If you can't, lose 2 HP.",
   "UPGRADE_DESCRIPTION": "Innate. At the end of each turn, upgrade an Attack card in your hand. If you can't, lose 2 HP."
 
 }, "TurnTables": {
   "NAME": "Turn Tables",
   "DESCRIPTION": "Whenever you apply Wavering to an enemy, lose 3 HP and gain [R]."
+
 },  "PushOnward": {
   "NAME": "Push Onward",
-  "DESCRIPTION": "Whenever you lose HP from a card, Exhaust a random card from your hand and gain 2 HP."
+  "DESCRIPTION": "Whenever you lose HP from a card, Exhaust a card from your hand and gain 3 HP."
 
 }, "InsightfulPrayer": {
   "NAME": "Insightful Prayer",
-  "DESCRIPTION": "Whenever you heal, if you're above 60% HP, draw a card.",
-  "UPGRADE_DESCRIPTION": "Whenever you heal, if you're above 60% HP, draw !M! cards."
+  "DESCRIPTION": "Whenever you heal, if you're above 60 % HP, draw a card.",
+  "UPGRADE_DESCRIPTION": "Whenever you heal, if you're above 60 % HP, draw !M! cards."
 
 }, "DelvingPrayer": {
   "NAME": "Delving Prayer",
-  "DESCRIPTION": "At the beginning of each turn, draw a card and Exhaust the top card of your draw pile.",
-  "UPGRADE_DESCRIPTION": "At the beginning of each turn, draw !M! cards and Exhaust the top card of your draw pile."
+  "DESCRIPTION": "At the beginning of each turn, draw !M! cards and Exhaust the top card of your draw pile."
 },
   "Salvation": {
     "NAME": "Salvation",
-    "DESCRIPTION": "Heal !M!% of your max HP. Exhaust.",
+    "DESCRIPTION": "Heal !B! % of your max HP. Exhaust.",
     "EXTENDED_DESCRIPTION": [
-      " (You will heal !F! HP)"
+      " (You will heal !M! HP)"
     ]
   }
 , "AtAllCosts": {
   "NAME": "At All Costs",
-  "DESCRIPTION": "Choose and add a card from your Draw Pile to your hand. Add a random Curse to your deck PERMANENTLY. Exhaust.",
-  "UPGRADE_DESCRIPTION": "Choose and add a card from ANY Pile to your hand. Add a random Curse to your deck PERMANENTLY. Exhaust."
+  "DESCRIPTION": "Choose and add a card from your Draw Pile to your hand. Add a random Curse to your hand. Exhaust.",
+  "UPGRADE_DESCRIPTION": "Choose and add a card from ANY Pile to your hand. Add a random Curse to your hand. Exhaust."
 },
   "TempoMaster": {
     "NAME": "Tempo Master",
-    "DESCRIPTION": "Apply !M! Slow to one enemy. Exhaust.",
-    "UPGRADE_DESCRIPTION": "Apply !M! Slow to ALL enemies. Exhaust."
+    "DESCRIPTION": "Gain 1 Haste.",
+    "UPGRADE_DESCRIPTION": "Innate. Gain 1 Haste."
   },
   "DeadlyPlay": {
     "NAME": "Deadly Play",
@@ -379,7 +380,7 @@
   },
   "Bombastic": {
     "NAME": "Bombastic",
-    "DESCRIPTION": "Choose a card from your hand that costs 3 or more. It costs 0 this combat. You can't draw cards this turn."
+    "DESCRIPTION": "Choose a card from your hand that costs 2 or more. It costs 0 this combat. You can't draw cards this turn."
   },
   "PowerBloom": {
     "NAME": "Power Bloom",
@@ -388,18 +389,19 @@
   },
 "FullAwakening": {
 "NAME": "Full Awakening",
-"DESCRIPTION": "Gain !M! Spirit, Strength and Dexterity."
+"DESCRIPTION": "At the start of each turn, gain !M! Spirit, Strength and Dexterity."
 },
   "PeacefulStance": {
     "NAME": "Peaceful Stance",
-    "DESCRIPTION": "Reduce all damage by 25%. Deal 50% less damage."
+    "DESCRIPTION": "Lose 3 Strength. You take 50% less damage."
   },
   "Overburn": {
     "NAME": "Overburn",
-    "DESCRIPTION": "Shuffle !M! Burns to your Discard Pile. Whenever you lose HP from a card, deal 3 damage to ALL enemies."
+    "DESCRIPTION": "Shuffle 3 Burns to your Discard Pile. Whenever you draw an HP loss card, deal !M! damage to ALL enemies."
   },
   "WeakForm": {
     "NAME": "Weak Form",
-    "DESCRIPTION": "Whenever you draw a card that costs 3 or more, reduce its cost by 1 for this turn. You take 50% more damage."
+    "DESCRIPTION": "Whenever you draw a card that costs 2 or more, reduce its cost to 1 for this turn. You take 25 % more damage.",
+    "UPGRADE_DESCRIPTION": "Innate. Whenever you draw a card that costs 2 or more, reduce its cost to 1 for this turn. You take 25 % more damage."
   }
 }

@@ -37,7 +37,7 @@ public class MaddeningRevelation extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p, p, 6));
+        AbstractDungeon.actionManager.addToBottom(new LoseHPAction(p, p, 4));
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p , this.magicNumber));
     }
 

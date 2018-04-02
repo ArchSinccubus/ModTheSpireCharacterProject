@@ -26,7 +26,7 @@ public class BombasticAction extends AbstractGameAction {
         if (this.duration == Settings.ACTION_DUR_FAST) {
 
             for (AbstractCard c : this.p.hand.group) {
-                if (c.cost <= 2) {
+                if (c.cost <= 1) {
                     this.cannotUpgrade.add(c);
                 }
             }
@@ -38,7 +38,7 @@ public class BombasticAction extends AbstractGameAction {
 
             if (this.p.hand.group.size() - this.cannotUpgrade.size() == 1) {
                 for (AbstractCard c : this.p.hand.group) {
-                    if (c.cost >= 3) {
+                    if (c.cost >= 2) {
                         c.modifyCostForCombat(-c.cost);
                         this.isDone = true;
                         return;
@@ -66,7 +66,7 @@ public class BombasticAction extends AbstractGameAction {
 
         if (!AbstractDungeon.handCardSelectScreen.wereCardsRetrieved) {
             for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group) {
-                if (c.cost >= 3)
+                if (c.cost >= 2)
                 c.modifyCostForCombat(-c.cost);
                 this.p.hand.addToTop(c);
             }

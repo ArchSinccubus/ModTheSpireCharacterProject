@@ -1,4 +1,4 @@
-package Cards.Rare.Attack;
+package Cards.Uncommon.Attack;
 
 import MainMod.*;
 import Patches.AbstractCardEnum;
@@ -13,7 +13,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.powers.WeakPower;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -26,10 +25,10 @@ public class Tantrum extends CustomCard
     public static final String IMG_PATH = "Cards/Attacks/comet.png";
     private static final int COST = 1;
     private static final int POOL = 1;
-    private static final CardRarity rarity = CardRarity.RARE;
+    private static final CardRarity rarity = CardRarity.UNCOMMON;
     private static final CardTarget target = CardTarget.ALL_ENEMY;
     private static final CardType type = CardType.ATTACK;
-    private static final int DAMAGE = 7;
+    private static final int DAMAGE = 5;
     private static final int DAMAGE_PLUS = 3;
 
     public static final Logger logger = LogManager.getLogger(Fudgesickle.class.getName());

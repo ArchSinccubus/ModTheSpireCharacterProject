@@ -2,6 +2,7 @@ package Cards.Uncommon.Attack;
 import Actions.SmiteAction;
 import MainMod.*;
 import Patches.AbstractCardEnum;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -13,6 +14,8 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.*;
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.vfx.combat.DaggerSprayEffect;
+import com.megacrit.cardcrawl.vfx.combat.LightningEffect;
 
 public class BreakThrough extends CustomCard
 {
@@ -42,6 +45,25 @@ public class BreakThrough extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
+
+        AbstractDungeon.actionManager.addToBottom(new VFXAction(new LightningEffect(m.drawX, m.drawY), 0.05F));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m,
                 new DamageInfo(p, this.damage, this.damageTypeForTurn),

@@ -29,12 +29,13 @@ public class AlmightySmite extends CustomCard
     private static final int POOL = 1;
     private static final CardRarity rarity = CardRarity.RARE;
     private static final CardTarget target = CardTarget.ENEMY;
-    private static final int DAMAGE = 24;
+    private static final int DAMAGE = 26;
+    private static final int DAMAGE_UPGRADE = 4;
     private int extraDamage;
 
     public AlmightySmite() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.ALMIGHTY_SMITE), COST, CARD_STRINGS.DESCRIPTION,
-                CardType.SKILL, AbstractCardEnum.Holy,
+                CardType.ATTACK, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.baseDamage = this.damage = DAMAGE;
     }
@@ -42,7 +43,9 @@ public class AlmightySmite extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        extraDamage = this.damage / 2;
+        extraDamage = this.baseDamage / 2;
+        if (isDamageModified)
+            extraDamage = this.damage / 2;
         if (this.upgraded)
         {
             extraDamage *= 2;
@@ -62,8 +65,6 @@ public class AlmightySmite extends CustomCard
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new LightningEffect(m.drawX + xRand, m.drawY + yRand), 0.01F));
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
         AbstractDungeon.actionManager.addToBottom(new SmiteAction(m, new DamageInfo(p, extraDamage, this.damageTypeForTurn)));
-
-
     }
 
     @Override
@@ -99,6 +100,7 @@ public class AlmightySmite extends CustomCard
         if (!this.upgraded) {
             this.upgradeName();
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
+            this.upgradeDamage(DAMAGE_UPGRADE);
             this.initializeDescription();
         }
     }

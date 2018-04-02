@@ -4,7 +4,9 @@ import Actions.PowerThroughAction;
 import Actions.SharpenAction;
 import MainMod.Fudgesickle;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.*;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardQueueItem;
@@ -21,50 +23,38 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 
-public class PeacefulStancePower extends AbstractPower {
-    public static final String POWER_ID = "PeacefulStance";
+public class PushOnwardPower extends AbstractPower {
+    public static final String POWER_ID = "PushOnward";
     public static final String NAME;
     public static final String[] DESCRIPTIONS;
 
-    public PeacefulStancePower(AbstractCreature owner,int numBlock, int amount) {
+    public PushOnwardPower(AbstractCreature owner) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
         this.amount = -1;
         this.updateDescription();
-        this.priority = 100;
         this.img = Fudgesickle.getTex("Powers/Charge.png");
     }
 
-//    public float atDamageGive(float damage, DamageInfo.DamageType type) {
-//        if (type == DamageInfo.DamageType.NORMAL) {
-//            return damage * 0.5F;
-//        } else {
-//            return damage;
-//        }
-//    }
 
     public void updateDescription() {
         this.description = DESCRIPTIONS[0];
-
     }
 
-    public float atDamageReceive(float damage, DamageInfo.DamageType type) {
-            if (this.owner.isPlayer) {
-                return damage * 0.5F;
-            }
-        return damage;
-    }
+    public int onAttacked(DamageInfo info, int damageAmount) {
+        if (damageAmount > 0 && info.owner == this.owner) {
+            this.flash();
+            AbstractDungeon.actionManager.addToTop(new PowerThroughAction(false));
+        }
 
-//    public int onAttacked(DamageInfo info, int damageAmount) {
-//            return (int)(damageAmount * 0.75F);
-//
-//    }
+        return damageAmount;
+    }
 
     static {
         DESCRIPTIONS = new String[] {
-                "You take 50% less damage."
+                "Whenever you lose life from a card, Exhaust a card from your hand and gain 3 HP."
         };
-        NAME = "Peaceful Stance";
+        NAME = "Push Onward";
     }
 }

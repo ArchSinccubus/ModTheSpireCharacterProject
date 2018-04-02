@@ -75,7 +75,7 @@ public class DelvingPrayerPower extends AbstractPower {
 
     public void atStartOfTurn() {
         AbstractDungeon.actionManager.addToTop(new DrawCardAction(this.owner,cardsToDraw));
-        AbstractDungeon.actionManager.addToTop(new ExhaustTopOfDrawPileAction(this.owner,1));
+        AbstractDungeon.actionManager.addToBottom(new ExhaustTopOfDrawPileAction(this.owner,1));
     }
 
     static {

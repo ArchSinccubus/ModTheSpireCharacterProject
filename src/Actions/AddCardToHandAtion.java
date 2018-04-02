@@ -3,6 +3,7 @@ package Actions;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.ActionType;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardType;
@@ -97,7 +98,8 @@ public class AddCardToHandAtion extends AbstractGameAction {
                     AbstractDungeon.player.hand.addToTop(card);
                     AbstractDungeon.effectList.add(new SpeechBubble(p.dialogX, p.dialogY, 3.0F, "#r@THE@ #r@PRICE@ #r@IS@ #r@PAID@", true));
                     AbstractCard THEPRICEISPAID = returnTrulyRandomCurse(CardType.CURSE , AbstractDungeon.cardRandomRng);
-                    AbstractDungeon.effectList.add(/*EL:199*/new ShowCardAndObtainEffect(THEPRICEISPAID.makeCopy(), Settings.WIDTH / 1.5f, Settings.HEIGHT / 2.0f));
+                    AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(THEPRICEISPAID));
+                    //AbstractDungeon.effectList.add(/*EL:199*/new ShowCardAndObtainEffect(THEPRICEISPAID.makeCopy(), Settings.WIDTH / 1.5f, Settings.HEIGHT / 2.0f));
                     AbstractDungeon.player.hand.refreshHandLayout();
                     AbstractDungeon.player.hand.applyPowers();
                 }
@@ -129,8 +131,8 @@ public class AddCardToHandAtion extends AbstractGameAction {
                     }
                     AbstractDungeon.effectList.add(new SpeechBubble(p.dialogX, p.dialogY, 3.0F, "#r@THE@ #r@PRICE@ #r@IS@ #r@PAID@", true));
                     AbstractCard THEPRICEISPAID = returnTrulyRandomCurse(CardType.CURSE , AbstractDungeon.cardRandomRng);
-                    AbstractDungeon.effectList.add(/*EL:199*/new ShowCardAndObtainEffect(THEPRICEISPAID.makeCopy(), Settings.WIDTH / 1.5f, Settings.HEIGHT / 2.0f));
-
+                    //AbstractDungeon.effectList.add(/*EL:199*/new ShowCardAndObtainEffect(THEPRICEISPAID.makeCopy(), Settings.WIDTH / 1.5f, Settings.HEIGHT / 2.0f));
+                    AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(THEPRICEISPAID));
                     this.p.hand.refreshHandLayout();
                     this.p.hand.applyPowers();
                 }

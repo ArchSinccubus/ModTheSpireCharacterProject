@@ -26,7 +26,7 @@ public class DivineFavor extends CustomCard
     private static final int BLOCK_AMOUNT = 6;
     private static final int UPGRADE_BLOCK_DMG = 3;
     private static final int HP_AMOUNT = 3;
-    private static final int UPGRADE_HP_AMOUNT = 1;
+    private static final int UPGRADE_HP_AMOUNT = 3;
     private static final CardRarity rarity = CardRarity.COMMON;
     private static final CardTarget target = CardTarget.SELF;
 
@@ -50,48 +50,22 @@ public class DivineFavor extends CustomCard
     public void applyPowers()
     {
         super.applyPowers();
-        applyPowersToHeal();
-    }
-
-    private void applyPowersToHeal() {
-        int tmp = this.baseMagicNumber;
         Iterator var2 = AbstractDungeon.player.powers.iterator();
-        boolean foundSpirit = false;
-        while(var2.hasNext()) {
-            AbstractPower p = (AbstractPower)var2.next();
+        while (var2.hasNext()) {
+            AbstractPower p = (AbstractPower) var2.next();
             if (p.name == "Spirit") {
-                setDescription(p, tmp);
-                foundSpirit = true;
-            }
-            else if (!foundSpirit)
-            {
-                setDescription(tmp);
+                this.magicNumber = this.baseMagicNumber + p.amount;
+                this.isMagicNumberModified = true;
             }
         }
-
-        if (foundSpirit)
-        {
-
-        }
-        //this.isMagicNumberModified = foundSpirit;
-
-        if (tmp < 0) {
-            tmp = 0;
-        }
+        //applyPowersToHeal();
     }
 
-    private void setDescription(AbstractPower p , int tmp) {
-        this.rawDescription = CARD_STRINGS.DESCRIPTION.replace("!M!" , "" + (tmp + p.amount));
-        if (this.exhaustOnUseOnce && !this.exhaust)
-            this.rawDescription += " NL Exhaust.";
-        this.initializeDescription();
-    }
+    @Override
+    public void calculateCardDamage(AbstractMonster mo)
+    {
+        super.calculateCardDamage(mo);
 
-    private void setDescription(int tmp) {
-        this.rawDescription = CARD_STRINGS.DESCRIPTION.replace("!M!" , "" + (tmp));
-        if (this.exhaustOnUseOnce && !this.exhaust)
-            this.rawDescription += " NL Exhaust.";
-        this.initializeDescription();
     }
 
 

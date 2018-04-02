@@ -28,12 +28,14 @@ public class PiercingStab extends CustomCard
     private static final int DAMAGE = 7;
     private static final int UPGRADE_PLUS_DMG = 3;
     private static final int WEAK_AMOUNT = 2;
+    private static final int WEAK_AMOUNT_UPGRADE = 1;
 
     public PiercingStab() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.PIERCING_STAB), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.baseDamage = this.damage = DAMAGE;
+        this.baseMagicNumber = this.magicNumber = WEAK_AMOUNT;
     }
 
     @Override
@@ -42,7 +44,7 @@ public class PiercingStab extends CustomCard
         AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DamageAction(m,
                 new DamageInfo(p, this.damage, this.damageTypeForTurn),
                 AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new WaveringPower(m, WEAK_AMOUNT, true), WEAK_AMOUNT, true, AbstractGameAction.AttackEffect.NONE));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new WaveringPower(m, this.magicNumber, true), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
 
     }
 
@@ -56,6 +58,7 @@ public class PiercingStab extends CustomCard
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeDamage(UPGRADE_PLUS_DMG);
+            this.upgradeMagicNumber(WEAK_AMOUNT_UPGRADE);
         }
     }
 }

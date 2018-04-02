@@ -25,7 +25,7 @@ public class Overburn extends CustomCard
     private static final CardRarity rarity = CardRarity.RARE;
     private static final CardTarget target = CardTarget.SELF;
     private static final CardType type = CardType.POWER;
-    private static final int BURN_COUNT = 3;
+    private static final int BURN_COUNT = 6;
     private static final int BURN_COUNT_PLUS = 2;
 
 
@@ -39,9 +39,9 @@ public class Overburn extends CustomCard
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
-        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDiscardAction(new Burn(), this.magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDiscardAction(new Burn(), 3));
 
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new OverburnPower(p, 1, 3), 3, true, AbstractGameAction.AttackEffect.NONE));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new OverburnPower(p, 1, this.magicNumber), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
     }
 
     @Override

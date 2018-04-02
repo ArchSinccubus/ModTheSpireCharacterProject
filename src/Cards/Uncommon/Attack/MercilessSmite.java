@@ -67,7 +67,8 @@ public class MercilessSmite extends CustomCard
     }
 
     private void setDescription(boolean addExtended) {
-        this.rawDescription = CARD_STRINGS.EXTENDED_DESCRIPTION[0].replace("FFF" , "" + this.baseMagicNumber / 2);
+
+        this.rawDescription = CARD_STRINGS.EXTENDED_DESCRIPTION[0].replace("FFF" , "" + ((upgraded) ? this.baseMagicNumber : this.baseMagicNumber / 2 ));
         if (addExtended) {
             this.rawDescription += CARD_STRINGS.EXTENDED_DESCRIPTION[1].replace("RRR" , "" + extraDamage);
         }

@@ -1,6 +1,7 @@
 package Cards.Rare.Power;
 import MainMod.*;
 import Patches.AbstractCardEnum;
+import Powers.AscensionPower;
 import Powers.SpiritPower;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.*;
@@ -28,8 +29,7 @@ public class FullAwakening extends CustomCard
     private static final CardRarity rarity = CardRarity.RARE;
     private static final CardTarget target = CardTarget.SELF;
     private static final CardType type = CardType.POWER;
-    private static final int STACK_BASE = 3;
-    private static final int STACK_BASE_UPGRADE = 1;
+    private static final int STACK_BASE = 1;
 
 
     public FullAwakening() {
@@ -43,10 +43,7 @@ public class FullAwakening extends CustomCard
     public void use(AbstractPlayer p, AbstractMonster m)
     {
         AbstractDungeon.actionManager.addToBottom(new VFXAction(p, new InflameEffect(p), 1.5F));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new SpiritPower(p, this.magicNumber), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DexterityPower(p, this.magicNumber), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new StrengthPower(p, this.magicNumber), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
-
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new AscensionPower(p, this.magicNumber), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
 
     }
 
@@ -59,7 +56,7 @@ public class FullAwakening extends CustomCard
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(STACK_BASE_UPGRADE);
+            this.upgradeBaseCost(2);
         }
 
     }

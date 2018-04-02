@@ -1,4 +1,4 @@
-package Cards.Uncommon.Attack;
+package Cards.Rare.Attack;
 import MainMod.*;
 import Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.*;
@@ -22,12 +22,13 @@ public class TearPsyche extends CustomCard
     public static final String IMG_PATH = "Cards/Attacks/comet.png";
     private static final int COST = 3;
     private static final int POOL = 1;
-    private static final CardRarity rarity = CardRarity.UNCOMMON;
+    private static final CardRarity rarity = CardRarity.RARE;
     private static final CardTarget target = CardTarget.ENEMY;
     private static final CardType type = CardType.ATTACK;
-    private static final int DAMAGE = 35;
+    private static final int DAMAGE = 40;
     private static final int DAMAGE_UPGRADE = 15;
-    private static final int PERCENT = 15;
+    private static final int PERCENT = 10;
+    private static final int PERCENT_UPGRADE = -5;
 
     public TearPsyche() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.TEAR_PSYCHE), COST, CARD_STRINGS.DESCRIPTION,
@@ -80,6 +81,7 @@ public class TearPsyche extends CustomCard
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeDamage(DAMAGE_UPGRADE);
+            this.upgradeMagicNumber(PERCENT_UPGRADE);
         }
     }
 }

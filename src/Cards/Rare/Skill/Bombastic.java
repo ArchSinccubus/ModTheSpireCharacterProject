@@ -21,7 +21,7 @@ public class Bombastic extends CustomCard
     public static final String NAME = "Bombastic";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Skills/corona.png";
-    private static final int COST = 3;
+    private static final int COST = 2;
     private static final int POOL = 1;
     private static final CardRarity rarity = CardRarity.RARE;
     private static final CardTarget target = CardTarget.SELF;
@@ -63,7 +63,7 @@ public class Bombastic extends CustomCard
     {
         int SmiteCount = 0;
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
-            if (c.cost >= 3 && c != this)
+            if (c.cost >= 2 && c != this)
                 return true;
             SmiteCount++;
         }
@@ -80,7 +80,7 @@ public class Bombastic extends CustomCard
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBaseCost(2);
+            this.upgradeBaseCost(1);
         }
 
     }

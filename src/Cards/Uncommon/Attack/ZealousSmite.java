@@ -22,7 +22,7 @@ public class ZealousSmite extends CustomCard
     public static final String NAME = "Zealous Smite";
     public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG_PATH = "Cards/Attacks/comet.png";
-    private static final int COST = 2;
+    private static final int COST = 1;
     private static final int POOL = 1;
     private static final CardRarity rarity = CardRarity.UNCOMMON;
     private static final CardTarget target = CardTarget.ENEMY;

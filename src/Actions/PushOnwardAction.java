@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
-public class PowerThroughAction extends AbstractGameAction {
+public class PushOnwardAction extends AbstractGameAction {
     private AbstractPlayer p;
     private ArrayList<AbstractCard> cannotUpgrade = new ArrayList<>();
     private ArrayList<AbstractCard> canUpgrade = new ArrayList<>();
@@ -22,7 +22,7 @@ public class PowerThroughAction extends AbstractGameAction {
 
     public static final String TEXT = "Select a card to Exhaust.";
 
-    public PowerThroughAction(boolean upgraded) {
+    public PushOnwardAction(boolean upgraded) {
         this.actionType = AbstractGameAction.ActionType.CARD_MANIPULATION;
         this.p = AbstractDungeon.player;
         this.duration = Settings.ACTION_DUR_FAST;
@@ -33,8 +33,8 @@ public class PowerThroughAction extends AbstractGameAction {
     public void update() {
         if (this.duration == Settings.ACTION_DUR_FAST) {
 
-            AbstractDungeon.actionManager.addToBottom(new ExhaustAction(p, p, 1, false));
-            AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, 3));
+            AbstractDungeon.actionManager.addToBottom(new ExhaustAction(p, p, 1, true));
+            AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, 2));
         }
 
         tickDuration();

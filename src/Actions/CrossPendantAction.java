@@ -41,6 +41,9 @@ public class CrossPendantAction extends AbstractGameAction {
                     //codexCard.isEthereal = true;
                     AbstractDungeon.player.hand.addToTop(c);
                     AbstractDungeon.cardRewardScreen.codexCard = null;
+                    for (AbstractCard cToUpdate : AbstractDungeon.player.hand.group) {
+                        cToUpdate.applyPowers();
+                    }
                 }
 
                 this.retrieveCard = true;

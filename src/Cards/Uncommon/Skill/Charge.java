@@ -27,8 +27,8 @@ public class Charge extends CustomCard
     private static final CardRarity rarity = CardRarity.UNCOMMON;
     private static final CardTarget target = CardTarget.SELF;
     private static final CardType type = CardType.SKILL;
-    private static final int HP_LOSS = 5;
-    private static final int HP_LOSS_UPGRADE = -1;
+    private static final int HP_LOSS = 4;
+    private static final int HP_LOSS_UPGRADE = -2;
 
     public static final Logger logger = LogManager.getLogger(Fudgesickle.class.getName());
 
@@ -37,7 +37,7 @@ public class Charge extends CustomCard
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
         this.baseMagicNumber = this.magicNumber = HP_LOSS;
-        this.exhaust = true;
+        //this.exhaust = true;
     }
 
     @Override
@@ -75,9 +75,9 @@ public class Charge extends CustomCard
         if (!this.upgraded) {
             this.upgradeName();
             logger.info("THIS FUCKING SHIT:" + this.exhaustOnUseOnce + " " + this.exhaust);
-            if (!exhaustOnUseOnce)
-            this.exhaust = false;
-            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
+            //this.exhaust = false;
+            this.upgradeMagicNumber(HP_LOSS_UPGRADE);
+            //this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
             //this.upgradeBaseCost(0);
         }
