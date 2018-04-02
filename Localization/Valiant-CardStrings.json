@@ -141,7 +141,8 @@
     "DESCRIPTION": "Deal !D! damage. If the enemy is Wavering, deal twice as much.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. If the enemy is Wavering, deal three times as much.",
     "EXTENDED_DESCRIPTION": [
-      "Deal !D! damage. If the enemy is Wavering, deal !F! more."
+      "Deal !D! damage. If the enemy is Wavering, deal !M! more.",
+      "Deal !D! damage. If the enemy is Wavering, deal !M! more twice."
     ]
   },
   "FinalGambit": {
@@ -157,8 +158,8 @@
   },
   "HolyStorm": {
     "NAME": "Holy Storm",
-    "DESCRIPTION": "Deal X + 5 damage X times.",
-    "UPGRADE_DESCRIPTION": "Deal X + 5 damage X + 1 times.",
+    "DESCRIPTION": "Deal X + 6 damage X times.",
+    "UPGRADE_DESCRIPTION": "Deal X + 6 damage X + 1 times.",
     "EXTENDED_DESCRIPTION": [
       " (You will deal !D! Damage !M! times.)"
     ]
@@ -335,7 +336,7 @@
   "DESCRIPTION": "Whenever you play a card that costs 3 or more, gain !M! Block."
 },  "Sharpen": {
   "NAME": "Sharpen",
-  "DESCRIPTION": "At the end of each turn, upgrade an Attack card in your hand. If you can't, lose 3 HP.",
+  "DESCRIPTION": "At the end of each turn, upgrade an Attack card in your hand. If you can't, lose 2 HP.",
   "UPGRADE_DESCRIPTION": "Innate. At the end of each turn, upgrade an Attack card in your hand. If you can't, lose 2 HP."
 
 }, "TurnTables": {

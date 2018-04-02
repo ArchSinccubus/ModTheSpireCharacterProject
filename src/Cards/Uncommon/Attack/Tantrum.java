@@ -28,7 +28,7 @@ public class Tantrum extends CustomCard
     private static final CardRarity rarity = CardRarity.UNCOMMON;
     private static final CardTarget target = CardTarget.ALL_ENEMY;
     private static final CardType type = CardType.ATTACK;
-    private static final int DAMAGE = 7;
+    private static final int DAMAGE = 5;
     private static final int DAMAGE_PLUS = 3;
 
     public static final Logger logger = LogManager.getLogger(Fudgesickle.class.getName());

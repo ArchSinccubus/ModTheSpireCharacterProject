@@ -25,6 +25,7 @@ public class TearSoul extends CustomCard {
     private static final CardTarget target = CardTarget.ENEMY;
     private static final CardType type = CardType.ATTACK;
     private static final int DAMAGE = 25;
+    private static final int DAMAGE_UPGRADE = 7;
     private static final int MP_REDUCTION = 2;
     private static final int MP_REDUCTION_UPGRADE = -1;
 
@@ -55,6 +56,7 @@ public class TearSoul extends CustomCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeMagicNumber(MP_REDUCTION_UPGRADE);
+            this.upgradeDamage(DAMAGE_UPGRADE);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

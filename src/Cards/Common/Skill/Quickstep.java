@@ -49,6 +49,8 @@ public class Quickstep extends CustomCard
 
     private void setDescription(boolean addExtended) {
         this.rawDescription = CARD_STRINGS.DESCRIPTION;
+        if (upgraded)
+            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
         if (addExtended) {
             this.rawDescription += CARD_STRINGS.EXTENDED_DESCRIPTION[0];
         }

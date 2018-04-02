@@ -32,7 +32,7 @@ public class HolyStorm extends CustomCard
     private static final CardRarity rarity = CardRarity.RARE;
     private static final CardTarget target = CardTarget.ENEMY;
     private static final CardType type = CardType.ATTACK;
-
+private static final int DAMAGE_BOOST = 6;
 
     public HolyStorm() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.HOLY_STORM), COST, CARD_STRINGS.DESCRIPTION,
@@ -56,7 +56,7 @@ public class HolyStorm extends CustomCard
 
     private void setDescription(boolean addExtended) {
         this.rawDescription = CARD_STRINGS.DESCRIPTION;
-        this.baseDamage = EnergyPanel.getCurrentEnergy() + 5;
+        this.baseDamage = EnergyPanel.getCurrentEnergy() + DAMAGE_BOOST;
         this.baseMagicNumber = EnergyPanel.getCurrentEnergy();
         if (upgraded) {
             baseMagicNumber++;

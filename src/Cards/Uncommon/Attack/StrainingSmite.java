@@ -29,7 +29,7 @@ public class StrainingSmite extends CustomCard
     private static final CardTarget target = CardTarget.ENEMY;
     private static final CardType type = CardType.ATTACK;
     private static final int DAMAGE = 4;
-    private static final int DAMAGE_PLUS = 2;
+    private static final int DAMAGE_PLUS = 1;
     private int extraDamage;
 
     public StrainingSmite() {
@@ -56,11 +56,8 @@ public class StrainingSmite extends CustomCard
 
     @Override
     public void applyPowers() {
-//        extraDamage = this.baseDamage;
-//        if (this.upgraded)
-//        {
-//            extraDamage *= 2;
-//        }
+        extraDamage = this.damage;
+        this.baseMagicNumber = extraDamage;
         super.applyPowers();
         this.setDescription(true);
     }
@@ -68,7 +65,11 @@ public class StrainingSmite extends CustomCard
     private void setDescription(boolean addExtended) {
         //this.rawDescription = CARD_STRINGS.DESCRIPTION;
         if (addExtended) {
-            this.rawDescription = CARD_STRINGS.EXTENDED_DESCRIPTION[0].replace("!F!" , "" + extraDamage);
+            this.rawDescription = CARD_STRINGS.EXTENDED_DESCRIPTION[0];
+            if (upgraded)
+            {
+                this.rawDescription = CARD_STRINGS.EXTENDED_DESCRIPTION[1];
+            }
         }
         if (this.exhaustOnUseOnce && !this.exhaust)
             this.rawDescription += " NL Exhaust.";
