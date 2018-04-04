@@ -308,8 +308,8 @@
   },
   "Cleanse": {
     "NAME": "Cleanse",
-    "DESCRIPTION": "Remove all Weak, Vulnerable and Frail.",
-    "UPGRADE_DESCRIPTION": "Remove all Weak, Vulnerable and Frail. Exhaust all Statuses and Curses in your hand."
+    "DESCRIPTION": "Remove all Debuffs.",
+    "UPGRADE_DESCRIPTION": "Remove all Debuffs. Exhaust all Statuses and Curses in your hand."
   },
   "ZealousAmbition": {
   "NAME": "Zealous Ambition",
