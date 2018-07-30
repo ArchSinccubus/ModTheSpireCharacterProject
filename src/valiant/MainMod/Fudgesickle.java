@@ -147,8 +147,8 @@ public class Fudgesickle implements PostInitializeSubscriber,
     public static final String PHASE_COIL = "cards/phase_coil.png";
 
     //powers
-    public static final String SpiritPic = "valiant/Powers/Spirit.png";
-    public static final String CombatStancePic = "valiant/Powers/CombatStance.png";
+    public static final String SpiritPic = "Powers/Spirit.png";
+    public static final String CombatStancePic = "Powers/CombatStance.png";
 
     //icons
     private static final String VALIANT_BUTTON = "Logo1.png";

@@ -9,27 +9,25 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.AbstractPower.PowerType;
+import valiant.MainMod.Fudgesickle;
 
 public class TearSoulPower extends AbstractPower {
     public static final String POWER_ID = "Darkness";
-    private static final PowerStrings powerStrings;
-    public static final String NAME;
-    public static final String[] DESCRIPTIONS;
 
     public TearSoulPower(int energyAmt) {
         this.name = "Torn Soul";
-        this.ID = "Darkness";
+        this.ID = "TornSoul";
         this.owner = AbstractDungeon.player;
         this.amount = energyAmt;
         this.updateDescription();
-        this.img = ImageMaster.loadImage("images/powers/32/darkness.png");
+        this.img = Fudgesickle.getTex("Powers/darkness.png");
         this.type = PowerType.DEBUFF;
         this.isTurnBased = true;
     }
 
-    public void updateDescription() {
-        this.description = DESCRIPTIONS[0].replace("" + 1 , "" + amount);
-    }
+    //public void updateDescription() {
+    //   this.description = DESCRIPTIONS[0].replace("" + 1 , "" + amount);
+    //}
 
     public void onEnergyRecharge() {
         AbstractDungeon.actionManager.addToBottom(new LoseEnergyAction(amount));
@@ -40,9 +38,18 @@ public class TearSoulPower extends AbstractPower {
         AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(AbstractDungeon.player, AbstractDungeon.player, "Darkness"));
     }
 
-    static {
-        powerStrings = CardCrawlGame.languagePack.getPowerStrings("Darkness");
-        NAME = powerStrings.NAME;
-        DESCRIPTIONS = powerStrings.DESCRIPTIONS;
+    @Override
+    public void updateDescription() {
+        if (this.amount > 0) {
+            this.description = "Next turn, start with " + this.amount + " Less #yEnergy";
+            this.type = PowerType.BUFF;
+        }
+
     }
+
+    //static {
+    //    powerStrings = CardCrawlGame.languagePack.getPowerStrings("Darkness");
+    //    NAME = powerStrings.NAME;
+    //    DESCRIPTIONS = powerStrings.DESCRIPTIONS;
+    //}
 }

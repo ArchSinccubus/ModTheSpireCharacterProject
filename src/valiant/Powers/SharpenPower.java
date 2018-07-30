@@ -21,7 +21,7 @@ public class SharpenPower extends AbstractPower {
         this.amount = -1;
         this.updateDescription();
         this.damage = numBlock;
-        this.img = Fudgesickle.getTex("valiant/Powers/Charge.png");
+        this.img = Fudgesickle.getTex("Powers/Charge.png");
     }
 
     public void updateDescription() {

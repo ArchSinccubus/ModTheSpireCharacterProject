@@ -23,7 +23,7 @@ public class ChargePower extends AbstractPower {
         this.owner = owner;
         this.amount = amount;
         this.updateDescription();
-        this.img = Fudgesickle.getTex("valiant/Powers/Charge.png");
+        this.img = Fudgesickle.getTex("Powers/Charge.png");
     }
 
     public void updateDescription() {

@@ -6,4 +6,12 @@
       "Decrease healing cards' power by #b"
     ]
   }
+,
+  "Darkness": {
+    "NAME": "Darkness",
+    "DESCRIPTIONS": [
+      "Increases healing cards' power by #b",
+      "Decrease healing cards' power by #b"
+    ]
+  }
 }

@@ -18,7 +18,7 @@ public class PowerThroughPower extends AbstractPower {
         this.owner = owner;
         this.amount = -1;
         this.updateDescription();
-        this.img = Fudgesickle.getTex("valiant/Powers/Charge.png");
+        this.img = Fudgesickle.getTex("Powers/Charge.png");
     }
 
 

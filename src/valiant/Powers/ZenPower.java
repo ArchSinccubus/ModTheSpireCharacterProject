@@ -27,7 +27,7 @@ public class ZenPower extends AbstractPower {
             this.amount = -999;
         }
         this.updateDescription();
-        this.img = Fudgesickle.getTex("valiant/Powers/Charge.png");
+        this.img = Fudgesickle.getTex("Powers/Charge.png");
     }
 
     public void stackPower(int stackAmount) {

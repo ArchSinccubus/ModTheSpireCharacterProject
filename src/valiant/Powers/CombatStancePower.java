@@ -32,7 +32,7 @@ public class CombatStancePower extends AbstractPower {
         this.type = AbstractPower.PowerType.BUFF;
         this.isTurnBased = true;
         this.priority = 90;
-        this.img = Fudgesickle.getTex("valiant/Powers/CombatStance.png");
+        this.img = Fudgesickle.getTex("Powers/CombatStance.png");
         this.attackers = new ArrayList<AbstractCreature>();
     }
 
