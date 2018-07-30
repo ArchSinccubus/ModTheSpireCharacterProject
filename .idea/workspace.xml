@@ -7,25 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="166ff544-f595-483b-bbfe-a7e4ae8af0c2" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/ModTheSpire.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Powers/darkness.png" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Localization/Valiant-PowerStrings.json" afterPath="$PROJECT_DIR$/Localization/Valiant-PowerStrings.json" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/MainMod/Fudgesickle.java" afterPath="$PROJECT_DIR$/src/valiant/MainMod/Fudgesickle.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Powers/ChargePower.java" afterPath="$PROJECT_DIR$/src/valiant/Powers/ChargePower.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Powers/CombatStancePower.java" afterPath="$PROJECT_DIR$/src/valiant/Powers/CombatStancePower.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Powers/DeadlyPlayPower.java" afterPath="$PROJECT_DIR$/src/valiant/Powers/DeadlyPlayPower.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Powers/DelvingPrayerPower.java" afterPath="$PROJECT_DIR$/src/valiant/Powers/DelvingPrayerPower.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Powers/InsightfulPrayerPower.java" afterPath="$PROJECT_DIR$/src/valiant/Powers/InsightfulPrayerPower.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Powers/MightFormPower.java" afterPath="$PROJECT_DIR$/src/valiant/Powers/MightFormPower.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Powers/PeacefulStancePower.java" afterPath="$PROJECT_DIR$/src/valiant/Powers/PeacefulStancePower.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Powers/PowerThroughPower.java" afterPath="$PROJECT_DIR$/src/valiant/Powers/PowerThroughPower.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Powers/PushOnwardPower.java" afterPath="$PROJECT_DIR$/src/valiant/Powers/PushOnwardPower.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Powers/SharpenPower.java" afterPath="$PROJECT_DIR$/src/valiant/Powers/SharpenPower.java" />
       <change beforePath="$PROJECT_DIR$/src/valiant/Powers/TearSoulPower.java" afterPath="$PROJECT_DIR$/src/valiant/Powers/TearSoulPower.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Powers/TurnTablesPower.java" afterPath="$PROJECT_DIR$/src/valiant/Powers/TurnTablesPower.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Powers/WeakFormPower.java" afterPath="$PROJECT_DIR$/src/valiant/Powers/WeakFormPower.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Powers/ZenPower.java" afterPath="$PROJECT_DIR$/src/valiant/Powers/ZenPower.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,21 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="PeacefulStancePower.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/valiant/Powers/PeacefulStancePower.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PowerThroughPower.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/valiant/Powers/PowerThroughPower.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
               <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TearSoulPower.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/valiant/Powers/TearSoulPower.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="535">
+              <caret line="37" column="137" lean-forward="false" selection-start-line="37" selection-start-column="137" selection-end-line="37" selection-end-column="137" />
               <folding />
             </state>
           </provider>
@@ -91,7 +73,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Fudgesickle.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Fudgesickle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/valiant/MainMod/Fudgesickle.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2485">
@@ -235,7 +217,6 @@
         <option value="$PROJECT_DIR$/resources/ModTheSpire.json" />
         <option value="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/Meaballize.java" />
         <option value="$PROJECT_DIR$/Localization/Valiant-PowerStrings.json" />
-        <option value="$PROJECT_DIR$/src/valiant/Powers/TearSoulPower.java" />
         <option value="$PROJECT_DIR$/src/valiant/Powers/PeacefulStancePower.java" />
         <option value="$PROJECT_DIR$/src/valiant/Powers/ChargePower.java" />
         <option value="$PROJECT_DIR$/src/valiant/Powers/CombatStancePower.java" />
@@ -250,6 +231,7 @@
         <option value="$PROJECT_DIR$/src/valiant/Powers/TurnTablesPower.java" />
         <option value="$PROJECT_DIR$/src/valiant/Powers/WeakFormPower.java" />
         <option value="$PROJECT_DIR$/src/valiant/Powers/ZenPower.java" />
+        <option value="$PROJECT_DIR$/src/valiant/Powers/TearSoulPower.java" />
       </list>
     </option>
   </component>
@@ -966,14 +948,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Powers/TearSoulPower.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/valiant/Powers/AscensionPower.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -1054,14 +1028,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Powers/PowerThroughPower.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/valiant/Powers/PushOnwardPower.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1074,14 +1040,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Powers/SpiritPower.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="31" column="37" lean-forward="false" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -1126,6 +1084,30 @@
             <element signature="e#11849#11850#0" expanded="true" />
             <element signature="e#11904#11905#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Powers/SpiritPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="31" column="37" lean-forward="false" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Powers/PowerThroughPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Powers/TearSoulPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="37" column="137" lean-forward="false" selection-start-line="37" selection-start-column="137" selection-end-line="37" selection-end-column="137" />
+          <folding />
         </state>
       </provider>
     </entry>

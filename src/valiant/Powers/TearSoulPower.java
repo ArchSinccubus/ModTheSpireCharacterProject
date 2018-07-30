@@ -35,13 +35,13 @@ public class TearSoulPower extends AbstractPower {
 
     public void atStartOfTurnPostDraw() {
         this.flash();
-        AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(AbstractDungeon.player, AbstractDungeon.player, "Darkness"));
+        AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(AbstractDungeon.player, AbstractDungeon.player, "TornSoul"));
     }
 
     @Override
     public void updateDescription() {
         if (this.amount > 0) {
-            this.description = "Next turn, start with " + this.amount + " Less #yEnergy";
+            this.description = "Next turn, start with " + this.amount + " less #yEnergy";
             this.type = PowerType.BUFF;
         }
 
