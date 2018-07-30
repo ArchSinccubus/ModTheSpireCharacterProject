@@ -1,6 +1,6 @@
-package Cards.Uncommon.Skill;
+package valiant.Cards.Uncommon.Skill;
 
-import Actions.DualSpiritAction;
+import valiant.Actions.DualSpiritAction;
 import valiant.MainMod.Fudgesickle;
 import valiant.Patches.AbstractCardEnum;
 import basemod.abstracts.CustomCard;

@@ -1,4 +1,4 @@
-package Cards.Rare.Power;
+package valiant.Cards.Rare.Power;
 
 import valiant.Powers.PeacefulStancePower;
 import valiant.MainMod.*;

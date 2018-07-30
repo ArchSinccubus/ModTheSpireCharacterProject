@@ -1,4 +1,4 @@
-package Cards.Uncommon.Attack;
+package valiant.Cards.Uncommon.Attack;
 import valiant.MainMod.*;
 import valiant.Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;

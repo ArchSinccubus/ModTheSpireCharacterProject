@@ -1,4 +1,4 @@
-package Cards.Uncommon.Skill;
+package valiant.Cards.Uncommon.Skill;
 import valiant.MainMod.*;
 import valiant.Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.*;

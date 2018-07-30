@@ -15,7 +15,7 @@ public class CrumpledPaper extends CustomRelic {
     public static final String[] DESCRIPTIONS = STRINGS.DESCRIPTIONS;
     private static final int StrengthAmount = 1;
 
-    private static final String texturePath = "valiant/Relics/CrossPendantPic.png";
+    private static final String texturePath = "Relics/CrossPendantPic.png";
 
     public static final Logger logger = LogManager.getLogger(DivineWrath.class.getName());
 

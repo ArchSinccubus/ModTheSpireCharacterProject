@@ -157,7 +157,7 @@
     "DESCRIPTION": "Deal !D! damage. If you have no energy in your pool, start next turn with [R] less."
   },
   "HolyStorm": {
-    "NAME": "Holy Storm",
+    "NAME": "DEUS VULT",
     "DESCRIPTION": "Deal X + 6 damage X times.",
     "UPGRADE_DESCRIPTION": "Deal X + 6 damage X + 1 times.",
     "EXTENDED_DESCRIPTION": [
@@ -263,7 +263,7 @@
   },
   "BraceThePain": {
     "NAME": "Brace the Pain",
-    "DESCRIPTION": "Gain !M! Block for each 8 points oh HP you lost so far.",
+    "DESCRIPTION": "Gain !M! Block for each 8 points of HP you lost so far.",
     "EXTENDED_DESCRIPTION": [
       " (You will gain !B! Block)"
     ]
@@ -322,7 +322,7 @@
 },
   "SoulStrain": {
   "NAME": "Soul Strain",
-  "DESCRIPTION": "Gain [R] [R] [R]. Lose 7 HP.",
+  "DESCRIPTION": "Gain [R] [R] [R]. Lose 4 HP.",
     "UPGRADE_DESCRIPTION": "Gain [R] [R] [R] [R]. Lose 4 HP."
 },
   "Ensoul": {

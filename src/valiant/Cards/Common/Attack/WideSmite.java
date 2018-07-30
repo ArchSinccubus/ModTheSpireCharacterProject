@@ -1,5 +1,5 @@
-package Cards.Common.Attack;
-import Actions.SmiteAction;
+package valiant.Cards.Common.Attack;
+import valiant.Actions.SmiteAction;
 import valiant.MainMod.*;
 import valiant.Patches.AbstractCardEnum;
 import valiant.Relics.DivineWrath;

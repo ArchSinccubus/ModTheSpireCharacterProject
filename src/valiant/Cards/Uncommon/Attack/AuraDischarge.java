@@ -1,4 +1,4 @@
-package Cards.Uncommon.Attack;
+package valiant.Cards.Uncommon.Attack;
 
 import valiant.MainMod.Fudgesickle;
 import valiant.Patches.AbstractCardEnum;

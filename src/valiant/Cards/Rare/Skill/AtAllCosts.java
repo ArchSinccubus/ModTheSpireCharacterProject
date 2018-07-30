@@ -1,6 +1,6 @@
-package Cards.Rare.Skill;
+package valiant.Cards.Rare.Skill;
 
-import Actions.AddCardToHandAtion;
+import valiant.Actions.AddCardToHandAtion;
 import valiant.MainMod.*;
 import valiant.Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -32,7 +32,7 @@ public class AtAllCosts extends CustomCard
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.AT_ALL_COSTS), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, target, POOL);
-        this.isInnate = false;
+        //this.isInnate = false;
         this.exhaust = true;
     }
 
@@ -103,7 +103,7 @@ public class AtAllCosts extends CustomCard
             this.upgradeName();
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
-            this.isInnate = true;
+            //this.isInnate = true;
         }
 
     }

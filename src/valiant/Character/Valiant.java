@@ -2,6 +2,7 @@ package valiant.Character;
 
 import java.util.ArrayList;
 
+import com.megacrit.cardcrawl.daily.DailyMods;
 import valiant.Patches.CharacterEnum;
 
 import valiant.Relics.*;
@@ -53,6 +54,10 @@ public class Valiant extends CustomPlayer{
 
         this.dialogX = (this.drawX + 0.0F * Settings.scale); // set location for text bubbles
         this.dialogY = (this.drawY + 220.0F * Settings.scale); // you can just copy these values
+
+        if (Settings.dailyModsEnabled() && DailyMods.cardMods.get("Diverse")) {
+            this.masterMaxOrbs = 1;
+        }
 
         initializeClass(null, MY_CHARACTER_SHOULDER_2, // required call to load textures and setup energy/loadout
                 MY_CHARACTER_SHOULDER_1,
@@ -111,7 +116,7 @@ public class Valiant extends CustomPlayer{
 
     public static CharSelectInfo getLoadout() { // the rest of the character loadout so includes your character select screen info plus hp and starting gold
         return new CharSelectInfo("Valiant", "A zealous nun wielding both holy power and untold fury.",
-                STARTING_HP, MAX_HP, STARTING_GOLD, HAND_SIZE,
+                STARTING_HP, MAX_HP,0, STARTING_GOLD, HAND_SIZE,
                 CharacterEnum.TheValiant, getStartingRelics(), getStartingDeck(), false);
     }
 

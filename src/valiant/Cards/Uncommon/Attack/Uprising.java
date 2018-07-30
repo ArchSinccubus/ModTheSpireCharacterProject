@@ -1,9 +1,9 @@
-package Cards.Uncommon.Attack;
+package valiant.Cards.Uncommon.Attack;
 import valiant.MainMod.*;
 import valiant.Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.deprecated.DiscardPileToHandAction;
+import com.megacrit.cardcrawl.actions.defect.DiscardPileToHandAction;
 import com.megacrit.cardcrawl.actions.utility.DiscardToHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;

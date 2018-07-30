@@ -1,7 +1,7 @@
 package valiant.Powers;
 
-import Cards.Rare.Attack.FinalGambit;
-import Cards.Rare.Skill.DeadlyPlay;
+import valiant.Cards.Rare.Attack.FinalGambit;
+import valiant.Cards.Rare.Skill.DeadlyPlay;
 import basemod.BaseMod;
 import basemod.interfaces.PostBattleSubscriber;
 import basemod.interfaces.PostDrawSubscriber;

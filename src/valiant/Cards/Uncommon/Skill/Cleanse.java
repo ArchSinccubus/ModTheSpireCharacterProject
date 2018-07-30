@@ -1,6 +1,6 @@
-package Cards.Uncommon.Skill;
+package valiant.Cards.Uncommon.Skill;
 
-import Actions.ExhaustAllCursesAndStatusesAction;
+import valiant.Actions.ExhaustAllCursesAndStatusesAction;
 import valiant.MainMod.*;
 import valiant.Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.unique.RemoveDebuffsAction;

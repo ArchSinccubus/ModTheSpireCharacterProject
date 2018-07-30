@@ -1,42 +1,37 @@
 package valiant.MainMod;
 
-import Cards.Common.Attack.*;
-import Cards.Common.Skill.*;
-import Cards.Rare.Attack.*;
-import Cards.Rare.Power.*;
-import Cards.Rare.Skill.*;
+import valiant.Cards.Common.Attack.*;
+import valiant.Cards.Common.Skill.*;
+import valiant.Cards.Rare.Attack.*;
+import valiant.Cards.Rare.Power.*;
+import valiant.Cards.Rare.Skill.*;
 import Cards.Starter.BlindingLight;
 import Cards.Starter.Defend_Valiant;
 import Cards.Starter.MinorHealing;
 import Cards.Starter.Strike_Valiant;
-import Cards.Uncommon.Attack.*;
-import Cards.Uncommon.Power.*;
-import Cards.Uncommon.Skill.*;
-import Cards.Uncommon.Skill.Cleanse;
-import valiant.Patches.AbstractCardEnum;
-import valiant.Patches.CharacterEnum;
+import valiant.Cards.Uncommon.Attack.*;
+import valiant.Cards.Uncommon.Power.*;
 import basemod.BaseMod;
-
 import basemod.ModPanel;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
-
-import valiant.Relics.*;
-import valiant.Character.*;
-
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import java.nio.charset.StandardCharsets;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import valiant.Cards.Uncommon.Skill.*;
+import valiant.Character.Valiant;
+import valiant.Patches.AbstractCardEnum;
+import valiant.Patches.CharacterEnum;
+import valiant.Relics.*;
+
+import java.nio.charset.StandardCharsets;
 
 @SpireInitializer
 public class Fudgesickle implements PostInitializeSubscriber,
@@ -163,16 +158,16 @@ public class Fudgesickle implements PostInitializeSubscriber,
     public static final String BADGE_IMG = "resources/BaseModBadge.png";
 
     public static final String texturePath = "valiant/Relics/arcanosphere.png";
-    public static final String ARCHANGEL_FEATHER = "valiant/Relics/ArchangelsFeather.png";
-    public static final String BLADE_OF_LEGEND = "valiant/Relics/BladeOfLegend.png";
-    public static final String CROWN_OF_THORNS = "valiant/Relics/CrownOfThorns.png";
-    public static final String CRUMPLED_PAPER = "valiant/Relics/CrumpledPaper.png";
-    public static final String HUGE_EGG = "valiant/Relics/HugeEgg.png";
-    public static final String ORB_OF_LIGHT = "valiant/Relics/OrbOfLight.png";
-    public static final String PRAYER_BEADS = "valiant/Relics/PrayerBeads.png";
-    public static final String WEAKENING_INCENSE = "valiant/Relics/WeakeningIncease.png";
-    public static final String WINGED_NECKLACE = "valiant/Relics/WingedNecklace.png";
-    public static final String CROSS_PENDANT = "valiant/Relics/CrossPendantPic.png";
+    public static final String ARCHANGEL_FEATHER = "Relics/ArchangelsFeather.png";
+    public static final String BLADE_OF_LEGEND = "Relics/BladeOfLegend.png";
+    public static final String CROWN_OF_THORNS = "Relics/CrownOfThorns.png";
+    public static final String CRUMPLED_PAPER = "Relics/CrumpledPaper.png";
+    public static final String HUGE_EGG = "Relics/HugeEgg.png";
+    public static final String ORB_OF_LIGHT = "Relics/OrbOfLight.png";
+    public static final String PRAYER_BEADS = "Relics/PrayerBeads.png";
+    public static final String WEAKENING_INCENSE = "Relics/WeakeningIncease.png";
+    public static final String WINGED_NECKLACE = "Relics/WingedNecklace.png";
+    public static final String CROSS_PENDANT = "Relics/CrossPendantPic.png";
 
 
     public static final Logger logger = LogManager.getLogger(Fudgesickle.class.getName());

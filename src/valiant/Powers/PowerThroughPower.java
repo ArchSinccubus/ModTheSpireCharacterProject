@@ -1,6 +1,6 @@
 package valiant.Powers;
 
-import Actions.PowerThroughAction;
+import valiant.Actions.PowerThroughAction;
 import valiant.MainMod.Fudgesickle;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;

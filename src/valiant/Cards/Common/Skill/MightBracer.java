@@ -1,5 +1,5 @@
-package Cards.Common.Skill;
-import Actions.MightBracerAction;
+package valiant.Cards.Common.Skill;
+import valiant.Actions.MightBracerAction;
 import valiant.MainMod.*;
 import valiant.Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.*;

@@ -1,4 +1,4 @@
-package Actions;
+package valiant.Actions;
 
 import valiant.Powers.WaveringPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;

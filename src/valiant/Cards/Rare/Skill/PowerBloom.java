@@ -1,6 +1,6 @@
-package Cards.Rare.Skill;
+package valiant.Cards.Rare.Skill;
 
-import Actions.PowerBloomAction;
+import valiant.Actions.PowerBloomAction;
 import valiant.MainMod.*;
 import valiant.Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.cards.AbstractCard;

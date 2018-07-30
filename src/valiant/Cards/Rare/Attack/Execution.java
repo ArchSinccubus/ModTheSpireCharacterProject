@@ -1,6 +1,6 @@
-package Cards.Rare.Attack;
+package valiant.Cards.Rare.Attack;
 
-import Actions.ExecutionAction;
+import valiant.Actions.ExecutionAction;
 import valiant.MainMod.*;
 import valiant.Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.*;

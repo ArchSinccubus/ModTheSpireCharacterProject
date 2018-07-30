@@ -1,4 +1,4 @@
-package Cards.Uncommon.Power;
+package valiant.Cards.Uncommon.Power;
 
 import valiant.MainMod.*;
 import valiant.Patches.AbstractCardEnum;

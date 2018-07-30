@@ -1,7 +1,7 @@
 package valiant.Relics;
 
-import Cards.Rare.Attack.FinalGambit;
-import Cards.Rare.Skill.DeadlyPlay;
+import valiant.Cards.Rare.Attack.FinalGambit;
+import valiant.Cards.Rare.Skill.DeadlyPlay;
 import valiant.MainMod.*;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
@@ -26,7 +26,7 @@ public class CrownOfThorns extends CustomRelic {
     public static final String[] DESCRIPTIONS = STRINGS.DESCRIPTIONS;
     private int AMT;
 
-    private static final String texturePath = "valiant/Relics/CrossPendantPic.png";
+    private static final String texturePath = "Relics/CrossPendantPic.png";
 
     public static final Logger logger = LogManager.getLogger(DivineWrath.class.getName());
 

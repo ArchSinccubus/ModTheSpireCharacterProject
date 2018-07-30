@@ -1,6 +1,6 @@
-package Cards.Rare.Skill;
+package valiant.Cards.Rare.Skill;
 
-import Actions.BombasticAction;
+import valiant.Actions.BombasticAction;
 import valiant.MainMod.*;
 import valiant.Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.*;

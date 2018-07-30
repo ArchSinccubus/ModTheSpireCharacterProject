@@ -1,4 +1,4 @@
-package Cards.Rare.Attack;
+package valiant.Cards.Rare.Attack;
 
 import valiant.MainMod.*;
 import valiant.Patches.AbstractCardEnum;
@@ -45,7 +45,7 @@ public class DangerousSmash extends CustomCard
         AbstractDungeon.actionManager.addToBottom(new WaitAction(0.8F));
 
         if (m != null) {
-            AbstractDungeon.actionManager.addToBottom(new VFXAction(new DamageHeartEffect(0,m.hb.cX, m.hb.cY, AbstractGameAction.AttackEffect.SLASH_HEAVY)));
+            AbstractDungeon.actionManager.addToBottom(new VFXAction(new DamageHeartEffect(0,m.hb.cX, m.hb.cY, AbstractGameAction.AttackEffect.SLASH_HEAVY,this.damage)));
         }
 
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m,

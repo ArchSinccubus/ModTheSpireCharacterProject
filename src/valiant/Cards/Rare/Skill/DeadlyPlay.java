@@ -1,4 +1,4 @@
-package Cards.Rare.Skill;
+package valiant.Cards.Rare.Skill;
 
 import valiant.MainMod.*;
 import valiant.Patches.AbstractCardEnum;

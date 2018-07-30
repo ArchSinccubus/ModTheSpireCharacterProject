@@ -1,4 +1,4 @@
-package Cards.Common.Attack;
+package valiant.Cards.Common.Attack;
 import valiant.MainMod.*;
 import valiant.Patches.AbstractCardEnum;
 import valiant.Powers.WaveringPower;

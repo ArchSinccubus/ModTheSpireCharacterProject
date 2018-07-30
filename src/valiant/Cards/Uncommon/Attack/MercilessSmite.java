@@ -1,5 +1,5 @@
-package Cards.Uncommon.Attack;
-import Actions.SmiteAction;
+package valiant.Cards.Uncommon.Attack;
+import valiant.Actions.SmiteAction;
 import valiant.MainMod.*;
 import valiant.Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;

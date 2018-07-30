@@ -33,13 +33,13 @@ public class WaveringPower extends AbstractPower {
 
 
     @Override
-    public int modifyBlock(int blockAmount) {
+    public float modifyBlock(float blockAmount) {
         AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(1));
         return blockAmount * 3 / 4;
     }
 
     @Override
-    public void onGainedBlock(int blockAmount){
+    public void onGainedBlock(float blockAmount){
         AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(1));
         owner.currentBlock = owner.currentBlock * 3/4;
     }

@@ -1,5 +1,5 @@
-package Cards.Common.Attack;
-import Actions.EmpoweringForceAction;
+package valiant.Cards.Common.Attack;
+import valiant.Actions.EmpoweringForceAction;
 import valiant.MainMod.*;
 import valiant.Patches.AbstractCardEnum;
 import basemod.abstracts.CustomCard;

@@ -1,5 +1,5 @@
-package Cards.Common.Skill;
-import Actions.SeekAnswersAction;
+package valiant.Cards.Common.Skill;
+import valiant.Actions.SeekAnswersAction;
 import valiant.MainMod.*;
 import valiant.Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.cards.AbstractCard;

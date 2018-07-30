@@ -1,4 +1,4 @@
-package Cards;
+package valiant.Cards;
 import valiant.MainMod.*;
 import valiant.Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.cards.AbstractCard;

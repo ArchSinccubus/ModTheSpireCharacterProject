@@ -1,6 +1,6 @@
 package valiant.Powers;
 
-import Actions.SharpenAction;
+import valiant.Actions.SharpenAction;
 import valiant.MainMod.Fudgesickle;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;

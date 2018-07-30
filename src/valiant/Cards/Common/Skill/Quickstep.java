@@ -1,4 +1,4 @@
-package Cards.Common.Skill;
+package valiant.Cards.Common.Skill;
 import valiant.MainMod.*;
 import valiant.Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.*;
@@ -26,7 +26,7 @@ public class Quickstep extends CustomCard
     public Quickstep() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.QUICKSTEP), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.exhaust = true;
         this.baseMagicNumber = this.magicNumber = CARDS;
     }

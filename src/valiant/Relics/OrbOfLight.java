@@ -18,7 +18,7 @@ public class OrbOfLight extends CustomRelic {
     public static final RelicStrings STRINGS = CardCrawlGame.languagePack.getRelicStrings(ID);
     public static final String[] DESCRIPTIONS = STRINGS.DESCRIPTIONS;
 
-    private static final String texturePath = "valiant/Relics/CrossPendantPic.png";
+    private static final String texturePath = "Relics/CrossPendantPic.png";
 
     public static final Logger logger = LogManager.getLogger(DivineWrath.class.getName());
 

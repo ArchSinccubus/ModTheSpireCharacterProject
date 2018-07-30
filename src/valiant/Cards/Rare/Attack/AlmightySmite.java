@@ -1,5 +1,5 @@
-package Cards.Rare.Attack;
-import Actions.SmiteAction;
+package valiant.Cards.Rare.Attack;
+import valiant.Actions.SmiteAction;
 import valiant.MainMod.*;
 import valiant.Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;

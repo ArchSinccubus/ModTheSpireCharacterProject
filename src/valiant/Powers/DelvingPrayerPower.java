@@ -1,6 +1,6 @@
 package valiant.Powers;
 
-import Actions.ExhaustTopOfDrawPileAction;
+import valiant.Actions.ExhaustTopOfDrawPileAction;
 import valiant.MainMod.Fudgesickle;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.core.AbstractCreature;

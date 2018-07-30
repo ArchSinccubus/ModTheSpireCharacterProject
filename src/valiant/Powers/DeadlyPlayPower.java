@@ -1,7 +1,7 @@
 package valiant.Powers;
 
-import Cards.Rare.Attack.FinalGambit;
-import Cards.Rare.Skill.DeadlyPlay;
+import valiant.Cards.Rare.Attack.FinalGambit;
+import valiant.Cards.Rare.Skill.DeadlyPlay;
 import valiant.MainMod.Fudgesickle;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;

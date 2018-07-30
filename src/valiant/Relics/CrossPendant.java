@@ -1,6 +1,6 @@
 package valiant.Relics;
 
-import Actions.CrossPendantAction;
+import valiant.Actions.CrossPendantAction;
 import valiant.MainMod.*;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
@@ -20,7 +20,7 @@ public class CrossPendant extends CustomRelic {
     private static final int StrengthAmount = 1;
     public AbstractCard chosenCard;
 
-    private static final String texturePath = "valiant/Relics/CrossPendantPic.png";
+    private static final String texturePath = "Relics/CrossPendantPic.png";
 
     public static final Logger logger = LogManager.getLogger(DivineWrath.class.getName());
 

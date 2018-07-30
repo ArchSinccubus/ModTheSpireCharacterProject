@@ -1,4 +1,4 @@
-package Cards.Common.Skill;
+package valiant.Cards.Common.Skill;
 import valiant.MainMod.*;
 import valiant.Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
