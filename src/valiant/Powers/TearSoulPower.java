@@ -46,10 +46,4 @@ public class TearSoulPower extends AbstractPower {
         }
 
     }
-
-    //static {
-    //    powerStrings = CardCrawlGame.languagePack.getPowerStrings("Darkness");
-    //    NAME = powerStrings.NAME;
-    //    DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    //}
 }

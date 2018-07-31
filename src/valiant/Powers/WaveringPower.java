@@ -6,11 +6,17 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import valiant.MainMod.Fudgesickle;
 
 public class WaveringPower extends AbstractPower {
     public static final String POWER_ID = "Wavering";
     public static final String NAME = "Wavering";
     private boolean justApplied = false;
+    public static final float WAVERING_MOD = 2;
+    public static final Logger logger = LogManager.getLogger(Fudgesickle.class.getName());
+
 
     public WaveringPower(AbstractCreature owner, int amount, boolean isSourcePlayer) {
         this.name = NAME;
@@ -62,10 +68,10 @@ public class WaveringPower extends AbstractPower {
 //                    if (owner != null && !owner.hasPower("Artifact")) {
 //                        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, owner, new GainStrengthPower(owner, damage), damage));
 //                    }
-                    AbstractDungeon.actionManager.addToBottom(new DamageAction(this.owner,
-                            new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.HP_LOSS),
-                            AbstractGameAction.AttackEffect.FIRE));
-                    AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, "Wavering", 1));
+                    //AbstractDungeon.actionManager.addToBottom(new DamageAction(this.owner,
+                    //        new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.HP_LOSS),
+                    //        AbstractGameAction.AttackEffect.FIRE));
+                    //AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, "Wavering", 1));
                 }
 
             }
@@ -73,16 +79,28 @@ public class WaveringPower extends AbstractPower {
     }
 
     @Override
+    public float atDamageReceive(float damage, DamageInfo.DamageType type) {
+        float percent = ((amount * WAVERING_MOD) / (float)100);
+        logger.info("Pre paper: " + percent);
+        if (type == DamageInfo.DamageType.NORMAL && !this.owner.isPlayer) {
+            if (AbstractDungeon.player.hasRelic("Crumpled Paper")) {
+                percent *= 2;
+                logger.info("Post paper: " + percent);
+            }
+            return damage * (1 + percent);
+
+        }
+        return damage;
+
+    }
+
+    @Override
     public void updateDescription() {
-        int damage = 5;
+        int damage = amount;
         if (AbstractDungeon.player.hasRelic("Crumpled Paper")) {
             damage *= 2;
         }
-        if (this.amount == 1) {
-            this.description = "At the end of the next turn, this monster loses " + damage + " HP.";
-        } else {
-            this.description = "At the end of each turn, this monster loses " + damage + " HP.";
-        }
+        this.description = "This enemy takes " + damage + "% more damage from attacks.";
 
     }
 

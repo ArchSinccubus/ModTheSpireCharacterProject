@@ -43,7 +43,7 @@
 		"NAME": "Crumpled Paper",
 		"FLAVOR": "Just a trashed piece of paper and totally not a failed attempt at a paper dragon.",
 		"DESCRIPTIONS": [
-			"#yWavering deals an extra #b5 damage at the start of each turn."
+			"Wavering makes enemies take #y4% more damage from attacks per stack."
 		]
 	}
 ,
