@@ -8,8 +8,8 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardBrieflyEffect;
 
-import Cards.Starter.Defend_Valiant;
-import Cards.Starter.Strike_Valiant;
+import valiant.Cards.Starter.Defend_Valiant;
+import valiant.Cards.Starter.Strike_Valiant;
 
 @SpirePatch(cls = "com.megacrit.cardcrawl.events.thecity.BackToBasics", method = "buttonEffect")
 public class BackToBasicsPatch {

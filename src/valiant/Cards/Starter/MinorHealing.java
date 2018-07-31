@@ -1,4 +1,4 @@
-package Cards.Starter;
+package valiant.Cards.Starter;
 import valiant.MainMod.*;
 import valiant.Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.*;
@@ -59,10 +59,10 @@ public class MinorHealing extends CustomCard
             AbstractPower p = (AbstractPower) var2.next();
             if (p.name == "Spirit") {
                 this.magicNumber = this.baseMagicNumber + p.amount;
-                this.isMagicNumberModified = true;
+                //this.isMagicNumberModified = true;
             }
         }
-        setDescription();
+        //setDescription();
     }
 
     @Override

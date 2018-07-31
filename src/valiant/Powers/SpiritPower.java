@@ -1,5 +1,8 @@
 package valiant.Powers;
 
+import com.megacrit.cardcrawl.cards.colorless.BandageUp;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import valiant.MainMod.Fudgesickle;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
@@ -12,6 +15,8 @@ public class SpiritPower extends AbstractPower {
     public static final String POWER_ID = "Spirit";
     public static final String NAME;
     public boolean MagicNumberModified;
+
+    public static final Logger logger = LogManager.getLogger(Fudgesickle.class.getName());
 
     static {
         NAME = "Spirit";
@@ -84,13 +89,18 @@ public class SpiritPower extends AbstractPower {
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        //if (card.type == AbstractCard.CardType.SKILL)
-        //{
+        if (card.type == AbstractCard.CardType.SKILL)
+        {
+        logger.info("card name: " + card.name);
             action.amount += this.amount;
 
             //card.magicNumber += this.amount;
             card.isMagicNumberModified = true;
-        //}
+        }
+        else if(card.name == new BandageUp().name)
+        {
+            card.magicNumber += amount;
+        }
     }
 
     //@Override

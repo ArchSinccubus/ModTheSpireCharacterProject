@@ -49,6 +49,7 @@ public class Salvation extends CustomCard /*implements PostBattleSubscriber,Post
     @Override
     public void use(AbstractPlayer p, AbstractMonster m)
     {
+        /*
         float percent = (float)(this.baseBlock) / 100;
         this.baseMagicNumber = (int)((float)AbstractDungeon.player.maxHealth * percent);
         this.magicNumber = this.baseMagicNumber;
@@ -60,6 +61,7 @@ public class Salvation extends CustomCard /*implements PostBattleSubscriber,Post
                 //this.isMagicNumberModified = true;
             }
         }
+        */
         AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, this.magicNumber));
     }
 

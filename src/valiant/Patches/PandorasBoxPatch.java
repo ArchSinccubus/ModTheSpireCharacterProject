@@ -3,8 +3,8 @@ package valiant.Patches;
 import java.lang.reflect.Field;
 import java.util.Iterator;
 
-import Cards.Starter.Defend_Valiant;
-import Cards.Starter.Strike_Valiant;
+import valiant.Cards.Starter.Defend_Valiant;
+import valiant.Cards.Starter.Strike_Valiant;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInsertPatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.megacrit.cardcrawl.cards.AbstractCard;

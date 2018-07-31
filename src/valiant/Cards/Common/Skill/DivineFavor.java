@@ -53,7 +53,7 @@ public class DivineFavor extends CustomCard
             AbstractPower p = (AbstractPower) var2.next();
             if (p.name == "Spirit") {
                 this.magicNumber = this.baseMagicNumber + p.amount;
-                this.isMagicNumberModified = true;
+                //this.isMagicNumberModified = true;
             }
         }
         //applyPowersToHeal();

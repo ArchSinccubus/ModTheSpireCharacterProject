@@ -1,4 +1,4 @@
-package Cards.Starter;
+package valiant.Cards.Starter;
 import valiant.MainMod.Fudgesickle;
 import valiant.Patches.AbstractCardEnum;
 import basemod.abstracts.CustomCard;
