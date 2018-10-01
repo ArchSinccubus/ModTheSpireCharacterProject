@@ -35,7 +35,7 @@ public class FinalGambit extends CustomCard
     public FinalGambit() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.FINAL_GAMBIT), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseMagicNumber = HP_LOSS_AMOUNT;
 
         attacked = false;

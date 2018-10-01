@@ -36,7 +36,7 @@ public class AlmightySmite extends CustomCard
     public AlmightySmite() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.ALMIGHTY_SMITE), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.ATTACK, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseDamage = this.damage = DAMAGE;
     }
 

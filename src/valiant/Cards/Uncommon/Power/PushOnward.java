@@ -29,7 +29,7 @@ public class PushOnward extends CustomCard
     public PushOnward() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.PUSH_ONWARD), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
     }
 
     @Override

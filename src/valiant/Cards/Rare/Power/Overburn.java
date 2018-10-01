@@ -32,7 +32,7 @@ public class Overburn extends CustomCard
     public Overburn() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.OVERBURN), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseMagicNumber = this.magicNumber = BURN_COUNT;
     }
 

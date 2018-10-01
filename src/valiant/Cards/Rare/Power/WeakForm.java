@@ -1,5 +1,7 @@
 package valiant.Cards.Rare.Power;
 
+import basemod.helpers.BaseModTags;
+import basemod.helpers.CardTags;
 import valiant.MainMod.*;
 import valiant.Patches.AbstractCardEnum;
 import valiant.Powers.WeakFormPower;
@@ -31,7 +33,8 @@ public class WeakForm extends CustomCard
     public WeakForm() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.WEAK_FORM), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
+        CardTags.addTags(this, BaseModTags.FORM);
         this.baseMagicNumber = this.magicNumber = STRENGTH_LOSS;
         this.isInnate = false;
     }

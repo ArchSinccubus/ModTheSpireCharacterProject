@@ -32,7 +32,7 @@ public class TearPsyche extends CustomCard
     public TearPsyche() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.TEAR_PSYCHE), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseDamage = this.damage = DAMAGE;
         this.baseMagicNumber = this.magicNumber = PERCENT;
     }

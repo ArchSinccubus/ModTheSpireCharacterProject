@@ -30,7 +30,7 @@ public class QuickSiphon extends CustomCard
     public QuickSiphon() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.QUICK_SIPHON), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseDamage = this.damage = ATTACK_DMG;
     }
 

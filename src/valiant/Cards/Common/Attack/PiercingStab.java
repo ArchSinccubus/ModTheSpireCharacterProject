@@ -32,7 +32,7 @@ public class PiercingStab extends CustomCard
     public PiercingStab() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.PIERCING_STAB), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseDamage = this.damage = DAMAGE;
         this.baseMagicNumber = this.magicNumber = WEAK_AMOUNT;
     }

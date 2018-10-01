@@ -29,7 +29,7 @@ public class CombatStance extends CustomCard {
     public CombatStance() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.COMBAT_STANCE), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.magicNumber = this.baseMagicNumber = WEAK_VUL_AMT;
     }
 

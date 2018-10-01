@@ -31,7 +31,7 @@ public class InsightfulPrayer extends CustomCard
     public InsightfulPrayer() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.INSIGHTFUL_PRAYER), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseMagicNumber = this.magicNumber = CARS_TO_DRAW;
         this.isEthereal = true;
     }

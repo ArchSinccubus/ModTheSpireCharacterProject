@@ -27,7 +27,7 @@ public class SeekAnswers extends CustomCard
     public SeekAnswers() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.SEEK_ANSWERS), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseMagicNumber = this.magicNumber = BASE_COST_LIMIT;
     }
 

@@ -34,7 +34,7 @@ public class StrainingSmite extends CustomCard
     public StrainingSmite() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.STRAINING_SMITE), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseDamage = this.damage = DAMAGE;
     }
 

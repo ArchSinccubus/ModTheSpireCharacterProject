@@ -18,6 +18,8 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
+import basemod.animations.SpriterAnimation;
+import com.esotericsoftware.spine.AnimationState;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
@@ -61,85 +63,83 @@ public class Fudgesickle implements PostInitializeSubscriber,
     public static final String PowerDemo = "Cards_other/valiant.Powers/enigma.png";
 
 
-    public static final String COMBAT_DANCE = "cards/anomaly.png";
-    public static final String DECIMATE = "cards/starburst.png";
-    public static final String DIVINE_LASHES = "cards/arcane_tempest.png";
-    public static final String EMPOWERING_FORCE = "cards/irradiate.png";
-    public static final String GRACEFUL_SIPHON = "cards/archives.png";
-    public static final String MERCILESS_SMITE = "cards/astral_haze.png";
-    public static final String PIERCING_STAB = "cards/dimension_door.png";
-    public static final String POWER_STRIKE = "cards/brainstorm.png";
-    public static final String QUICK_SIPHON = "cards/brilliance.png";
-    public static final String RECKLESS_SMITE = "cards/channel.png";
-    public static final String SMITE = "cards/chaos_form.png";
-    public static final String TOWERING_CHARGE = "cards/coalescence.png";
-    public static final String WIDE_SMITE = "cards/comet.png";
-    public static final String ARCANE_HEALING = "cards/convergence.png";
-    public static final String DIVINE_FAVOR = "cards/corona.png";
-    public static final String FLASH_OF_ANGER = "cards/creativity.png";
-    public static final String HOLY_FURY = "cards/dark_matter.png";
-    public static final String ITS_SMITING_TIME = "cards/defend_purple.png";
-    public static final String MIGHT_BRACER = "cards/arcane_armor.png";
-    public static final String POWER_STANCE = "cards/echo.png";
-    public static final String QUICKSTEP = "cards/eclipse.png";
-    public static final String SEEK_ANSWERS = "cards/enigma.png";
-    public static final String TAKE_AIM = "cards/entropy.png";
-    public static final String UNYIELDING_ZEAL = "cards/equinox.png";
-    public static final String ZEALOUS_PERSECUTION = "cards/phase_coil.png";
-    public static final String ALMIGHTY_SMITE = "cards/flicker.png";
-    public static final String DANGEROUS_SMASH = "cards/plasma_wave.png";
-    public static final String EXECUTION = "cards/pulse_barrier.png";
-    public static final String FINAL_GAMBIT = "cards/nebula.png";
-    public static final String HOLY_STORM = "cards/ether_blast.png";
-    public static final String TANTRUM = "cards/essence_dart.png";
-    public static final String FULL_AWAKENING = "cards/eureka.png";
-    public static final String OVERBURN = "cards/event_horizon.png";
-    public static final String PEACEFUL_STANCE = "cards/conversion.png";
-    public static final String WEAK_FORM = "cards/feedback.png";
-    public static final String AT_ALL_COSTS = "cards/flare.png";
-    public static final String BOMBASTIC = "cards/flow.png";
-    public static final String DEADLY_PLAY = "cards/null_storm.png";
-    public static final String POWER_BLOOM = "cards/void_ray.png";
-    public static final String SALVATION = "cards/flux_shield.png";
-    public static final String TEMPO_MASTER = "cards/force_ripple.png";
-    public static final String ABANDON_REASON = "cards/unstable_orb.png";
-    public static final String AURA_DISCHARGE = "cards/gravity_well.png";
-    public static final String BREAK_THROUGH = "cards/hypothesis.png";
-    public static final String CHAINER = "cards/illuminate.png";
-    public static final String DESPERATION = "cards/implosion.png";
-    public static final String FURIOUS_SMITE = "cards/magic_missile.png";
-    public static final String RETALIATE = "cards/magnetize.png";
-    public static final String STRAINING_SMITE = "cards/meteor_shower.png";
-    public static final String TEAR_PSYCHE = "cards/mind_over_matter.png";
-    public static final String TEAR_SOUL = "cards/nexus.png";
-    public static final String UPRISING = "cards/nova.png";
-    public static final String ZEALOUS_SMITE = "cards/periapt_of_celerity.png";
-    public static final String DELVING_PRAYER = "cards/periapt_of_potency.png";
-    public static final String ENSOUL = "cards/zenith.png";
-    public static final String INSIGHTFUL_PRAYER = "cards/vortex.png";
-    public static final String MIGHT_FORM = "cards/power_overwhelming.png";
-    public static final String PUSH_ONWARD = "cards/overload.png";
-    public static final String SHARPEN = "cards/disperse.png";
-    public static final String TURN_TABLES = "cards/reflection_ward.png";
-    public static final String ZEN = "cards/retrograde.png";
-    public static final String ARCHANGEL_BOON = "cards/runic_binding.png";
-    public static final String BRACE_THE_PAIN = "cards/shimmer.png";
-    public static final String CHARGE = "cards/convergence.png";
-    public static final String CLEANSE = "cards/siphon_power.png";
-    public static final String COMBAT_STANCE = "cards/siphon_speed.png";
-    public static final String DUAL_SPIRIT = "cards/strike_purple.png";
-    public static final String GUARDIAN = "cards/stroke_of_genius.png";
-    public static final String MADDENING_REVELATION = "cards/surge.png";
-    public static final String MEABALIZE = "cards/syzygy.png";
-    public static final String OVERWHELMING_LIGHT = "cards/thought_raze.png";
-    public static final String RADIANCE = "cards/transference.png";
-    public static final String REDUCE_TO_NOTHING = "cards/umbral_bolt.png";
-    public static final String SOUL_STRAIN = "cards/singularity.png";
-    public static final String VINDICATION = "cards/vacuum.png";
-    public static final String ZEALOUS_AMBITION = "cards/genesis.png";
-    public static final String BLINDING_LIGHT = "cards/prismatic_sphere.png";
-    public static final String MINOR_HEALING = "cards/flux.png";
-    public static final String HOLY_LIGHT = "cards/vortex.png";
+    public static final String COMBAT_DANCE = "CardsFinal/Combat Dance.png";
+    public static final String DECIMATE = "CardsFinal/Decimate.png";
+    public static final String EMPOWERING_FORCE = "CardsFinal/Empowering Force.png";
+    public static final String GRACEFUL_SIPHON = "CardsFinal/Graceful Siphon.png";
+    public static final String MERCILESS_SMITE = "CardsFinal/Merciless Smite.png";
+    public static final String PIERCING_STAB = "CardsFinal/Piercing Stab.png";
+    public static final String POWER_STRIKE = "CardsFinal/brainstorm.png";
+    public static final String QUICK_SIPHON = "CardsFinal/Quick Siphon.png";
+    public static final String RECKLESS_SMITE = "CardsFinal/Reckless Smite.png";
+    public static final String SMITE = "CardsFinal/Smite.png";
+    public static final String TOWERING_CHARGE = "CardsFinal/Towering Charge.png";
+    public static final String WIDE_SMITE = "CardsFinal/Wide Smite.png";
+    public static final String ARCANE_HEALING = "CardsFinal/Arcane healing.png";
+    //    public static final String DIVINE_FAVOR = "CardsFinal/corona.png";
+    public static final String FLASH_OF_ANGER = "CardsFinal/Flash OF Anger.png";
+    public static final String HOLY_FURY = "CardsFinal/Holy Fury.png";
+    public static final String ITS_SMITING_TIME = "CardsFinal/Its Smiting Time.png";
+    public static final String MIGHT_BRACER = "CardsFinal/Might Bracer.png";
+    public static final String POWER_STANCE = "CardsFinal/Power Stance.png";
+    public static final String QUICKSTEP = "CardsFinal/Quickstep.png";
+    public static final String SEEK_ANSWERS = "CardsFinal/Seek Answers.png";
+    public static final String TAKE_AIM = "CardsFinal/Take Aim.png";
+    public static final String UNYIELDING_ZEAL = "CardsFinal/Unyielding Zeal.png";
+    public static final String ZEALOUS_PERSECUTION = "CardsFinal/Zealous Persecution.png";
+    public static final String ALMIGHTY_SMITE = "CardsFinal/Almighty Smite.png";
+    public static final String DANGEROUS_SMASH = "CardsFinal/Dangerous Smash.png";
+    public static final String EXECUTION = "CardsFinal/Execution.png";
+    public static final String FINAL_GAMBIT = "CardsFinal/Final Gambit.png";
+    public static final String HOLY_STORM = "CardsFinal/DEUS VULT.png";
+    public static final String TANTRUM = "CardsFinal/Tantrum.png";
+    public static final String FULL_AWAKENING = "CardsFinal/Full Awakening.png";
+    public static final String OVERBURN = "CardsFinal/Overburn.png";
+    public static final String PEACEFUL_STANCE = "CardsFinal/Peaceful Stance.png";
+    public static final String WEAK_FORM = "CardsFinal/Weak Form.png";
+    public static final String AT_ALL_COSTS = "CardsFinal/At All Costs.png";
+    public static final String BOMBASTIC = "CardsFinal/Bombastic.png";
+    public static final String DEADLY_PLAY = "CardsFinal/Deadly Play.png";
+    public static final String SALVATION = "CardsFinal/Salvation.png";
+    public static final String TEMPO_MASTER = "CardsFinal/Tempo Master.png";
+    public static final String ABANDON_REASON = "CardsFinal/Abandon Reason.png";
+    public static final String AURA_DISCHARGE = "CardsFinal/Aura Discharge.png";
+    public static final String BREAK_THROUGH = "CardsFinal/Break Through.png";
+    public static final String CHAINER = "CardsFinal/Chainer.png";
+    public static final String DESPERATION = "CardsFinal/Desperation.png";
+    public static final String FURIOUS_SMITE = "CardsFinal/Furious Smite.png";
+    public static final String RETALIATE = "CardsFinal/Retaliate.png";
+    public static final String STRAINING_SMITE = "CardsFinal/Chained Smite.png";
+    public static final String TEAR_PSYCHE = "CardsFinal/Tear Psyche.png";
+    public static final String TEAR_SOUL = "CardsFinal/Tear Soul.png";
+    public static final String UPRISING = "CardsFinal/Uprising.png";
+    public static final String ZEALOUS_SMITE = "CardsFinal/Zealous Smite.png";
+    public static final String DELVING_PRAYER = "CardsFinal/Delving Prayer.png";
+    public static final String ENSOUL = "CardsFinal/Ensoul.png";
+    public static final String INSIGHTFUL_PRAYER = "CardsFinal/Insightful Prayer.png";
+    public static final String MIGHT_FORM = "CardsFinal/Might Form.png";
+    public static final String PUSH_ONWARD = "CardsFinal/Push Onward.png";
+    public static final String SHARPEN = "CardsFinal/Sharpen.png";
+    public static final String TURN_TABLES = "CardsFinal/Turn Tables.png";
+    public static final String ZEN = "CardsFinal/Zen.png";
+    public static final String ARCHANGEL_BOON = "CardsFinal/Archangel's Denouement.png";
+    public static final String BRACE_THE_PAIN = "CardsFinal/Brace The Pain.png";
+    public static final String CHARGE = "CardsFinal/Charge.png";
+    public static final String CLEANSE = "CardsFinal/Cleanse.png";
+    public static final String COMBAT_STANCE = "CardsFinal/Combat Dance.png";
+    public static final String DUAL_SPIRIT = "CardsFinal/Dual Spirit.png";
+    public static final String GUARDIAN = "CardsFinal/Guardian.png";
+    public static final String MADDENING_REVELATION = "CardsFinal/Maddening Revelation.png";
+    public static final String MEABALIZE = "CardsFinal/Meaballize.png";
+    public static final String OVERWHELMING_LIGHT = "CardsFinal/thought_raze.png";
+    public static final String RADIANCE = "CardsFinal/Radiance.png";
+    public static final String REDUCE_TO_NOTHING = "CardsFinal/Reduce To Nothing.png";
+    public static final String SOUL_STRAIN = "CardsFinal/Soul Strain.png";
+    public static final String VINDICATION = "CardsFinal/Vindication.png";
+    public static final String ZEALOUS_AMBITION = "CardsFinal/Zealous Ambition.png";
+    public static final String BLINDING_LIGHT = "CardsFinal/Blinding Light.png";
+    public static final String MINOR_HEALING = "CardsFinal/Minor Healing.png";
+    public static final String HOLY_LIGHT = "CardsFinal/Holy Light.png";
 
 
     public static final String VORTEX = "cards/vortex.png";
@@ -152,7 +152,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
 
     //icons
     private static final String VALIANT_BUTTON = "Logo1.png";
-    private static final String VALIANT_POTRAIT = "LeilaPic.jpg";
+    private static final String VALIANT_POTRAIT = "Valiant_Select_Screen.png";
 
     // badge
     public static final String BADGE_IMG = "resources/BaseModBadge.png";
@@ -206,7 +206,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
 //        BaseMod.subscribeToEditKeywords(this);
 
         logger.info("creating the color " + AbstractCardEnum.Holy.toString());
-        BaseMod.addColor(AbstractCardEnum.Holy.toString(),
+        BaseMod.addColor(AbstractCardEnum.Holy,
                 HOLY, HOLY, HOLY, HOLY, HOLY, HOLY, HOLY,
                 ATTACK_WHITE, SKILL_WHITE,
                 POWER_WHITE, ENERGY_ORB_HOLY,
@@ -273,18 +273,18 @@ public class Fudgesickle implements PostInitializeSubscriber,
         // Add relics
         RelicLibrary.add(new CrossPendant());
         RelicLibrary.add(new WingedNecklace());
-        BaseMod.addRelicToCustomPool(new OrbOfLight(), AbstractCardEnum.Holy.name());
+        BaseMod.addRelicToCustomPool(new OrbOfLight(), AbstractCardEnum.Holy);
         //RelicLibrary.add(new OrbOfLight());
-        BaseMod.addRelicToCustomPool(new WeakeningIncense(), AbstractCardEnum.Holy.name());
+        BaseMod.addRelicToCustomPool(new WeakeningIncense(), AbstractCardEnum.Holy);
         //RelicLibrary.add(new WeakeningIncense());
-        BaseMod.addRelicToCustomPool(new CrumpledPaper(), AbstractCardEnum.Holy.name());
+        BaseMod.addRelicToCustomPool(new CrumpledPaper(), AbstractCardEnum.Holy);
         //RelicLibrary.add(new CrumpledPaper());
         RelicLibrary.add(new HugeEgg());
         RelicLibrary.add(new PrayerBeads());
         RelicLibrary.add(new ArchAngelsFeather());
-        BaseMod.addRelicToCustomPool(new CrownOfThorns(), AbstractCardEnum.Holy.name());
+        BaseMod.addRelicToCustomPool(new CrownOfThorns(), AbstractCardEnum.Holy);
         //RelicLibrary.add(new CrownOfThorns());
-        BaseMod.addRelicToCustomPool(new BladeOfLegend(), AbstractCardEnum.Holy.name());
+        BaseMod.addRelicToCustomPool(new BladeOfLegend(), AbstractCardEnum.Holy);
         //RelicLibrary.add(new BladeOfLegend());
 
 
@@ -311,8 +311,6 @@ public class Fudgesickle implements PostInitializeSubscriber,
         BaseMod.addCard(new WideSmite());
         BaseMod.addCard(new MercilessSmite());
         BaseMod.addCard(new CombatDance());
-        //BaseMod.addCard(new DivineLashes());
-        //BaseMod.addCard(new PowerStrike());
         BaseMod.addCard(new GracefulSiphon());
         BaseMod.addCard(new ToweringCharge());
 
@@ -320,7 +318,6 @@ public class Fudgesickle implements PostInitializeSubscriber,
         BaseMod.addCard(new DivineFavor());
         BaseMod.addCard(new ArcaneHealing());
         BaseMod.addCard(new FlashOfAnger());
-        //BaseMod.addCard(new PowerStance());
         BaseMod.addCard(new ZealousPersecution());
         BaseMod.addCard(new HolyFury());
         BaseMod.addCard(new ItsSmitingTime());
@@ -440,9 +437,9 @@ public class Fudgesickle implements PostInitializeSubscriber,
 
         logger.info("add " + CharacterEnum.TheValiant.toString());
         BaseMod.addCharacter(Valiant.class, "The Valiant", "A nun sent to destroy the heart of evil in the name of The Lord. Wields both holy power and untold fury.",
-                AbstractCardEnum.Holy.toString(), "The Valiant",
+                AbstractCardEnum.Holy, "The Valiant",
                 makePath(VALIANT_BUTTON) , makePath(VALIANT_POTRAIT),
-                CharacterEnum.TheValiant.toString());
+                CharacterEnum.TheValiant);
 
         logger.info("done editting characters");
     }

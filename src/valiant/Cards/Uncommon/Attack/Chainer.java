@@ -31,7 +31,7 @@ public class Chainer extends CustomCard
     public Chainer() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.CHAINER), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         BASIC_DAMAGE = 2;
         this.baseMagicNumber = this.magicNumber = HP_THREASHOLD;
     }

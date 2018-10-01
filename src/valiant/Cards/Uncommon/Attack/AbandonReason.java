@@ -30,7 +30,7 @@ public class AbandonReason extends CustomCard
     public AbandonReason() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.ABANDON_REASON), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseDamage = DAMAGE;
     }
 

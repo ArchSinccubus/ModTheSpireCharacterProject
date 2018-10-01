@@ -28,7 +28,7 @@ public class SoulStrain extends CustomCard
     public SoulStrain() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.SOUL_STRAIN), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseMagicNumber = this.magicNumber = ENERGY_GAIN;
     }
 

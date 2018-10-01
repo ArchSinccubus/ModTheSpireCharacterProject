@@ -29,7 +29,7 @@ private static final int DAMAGE_BOOST = 6;
     public HolyStorm() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.HOLY_STORM), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
     }
 
     @Override

@@ -27,7 +27,7 @@ public class ReduceToNothing extends CustomCard
     public ReduceToNothing() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.REDUCE_TO_NOTHING), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
     }
 
     @Override

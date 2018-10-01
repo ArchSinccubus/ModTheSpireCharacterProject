@@ -29,7 +29,7 @@ public class PowerBloom extends CustomCard
     public PowerBloom() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.exhaust = true;
     }
 

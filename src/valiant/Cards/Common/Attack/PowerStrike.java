@@ -33,7 +33,7 @@ public class PowerStrike extends CustomCard
     public PowerStrike() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.POWER_STRIKE), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseMagicNumber = this.magicNumber = ATTACK_DMG;
     }
 

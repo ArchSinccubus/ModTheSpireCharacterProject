@@ -37,7 +37,7 @@ public class Salvation extends CustomCard /*implements PostBattleSubscriber,Post
     public Salvation() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.SALVATION), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseBlock = HP_AMOUNT;
         float base = (float)(this.magicNumber) / 100;
         //this.baseMagicNumber = (int)((float)AbstractDungeon.player.maxHealth * percent);

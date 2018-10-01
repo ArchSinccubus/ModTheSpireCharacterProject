@@ -34,7 +34,7 @@ public class GracefulSiphon extends CustomCard
     public GracefulSiphon() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.GRACEFUL_SIPHON), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseDamage = this.damage = ATTACK_DMG;
         this.baseMagicNumber = HEAL_AMOUNT;
         this.magicNumber = this.baseMagicNumber;

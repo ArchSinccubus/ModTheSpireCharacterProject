@@ -26,7 +26,7 @@ public class TakeAim extends CustomCard
     public TakeAim() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.TAKE_AIM), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseMagicNumber = this.magicNumber = COST_REDUCTION;
         this.exhaust = true;
     }

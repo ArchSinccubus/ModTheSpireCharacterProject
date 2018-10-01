@@ -26,7 +26,7 @@ public class Radiance extends CustomCard
     public Radiance() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.RADIANCE), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
     }
 
     @Override

@@ -32,7 +32,7 @@ public class MercilessSmite extends CustomCard
     public MercilessSmite() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.MERCILESS_SMITE), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseMagicNumber = this.magicNumber = ATTACK_DMG;
     }
 

@@ -31,7 +31,7 @@ public class HolyLight extends CustomCard {
     public HolyLight() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.HOLY_LIGHT), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseDamage = DAMAGE;
         this.isMultiDamage = true;
     }

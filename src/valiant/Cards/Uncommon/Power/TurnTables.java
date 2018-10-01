@@ -30,7 +30,7 @@ public class TurnTables extends CustomCard
     public TurnTables() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.TURN_TABLES), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.magicNumber = this.baseMagicNumber = LIFE_LOSING;
     }
 

@@ -30,9 +30,9 @@ public class DivineFavor extends CustomCard
 
 
     public DivineFavor() {
-        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.DIVINE_FAVOR), COST, CARD_STRINGS.DESCRIPTION,
+        super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseBlock = this.block = BLOCK_AMOUNT;
         this.baseMagicNumber = this.magicNumber = HP_AMOUNT;
         this.exhaust = true;

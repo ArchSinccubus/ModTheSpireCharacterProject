@@ -28,7 +28,7 @@ public class Cleanse extends CustomCard
     public Cleanse() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.CLEANSE), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
     }
 
     @Override

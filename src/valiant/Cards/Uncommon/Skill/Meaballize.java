@@ -29,7 +29,7 @@ public class Meaballize extends CustomCard
     public Meaballize() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.MEABALIZE), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
-                CardRarity.COMMON, CardTarget.SELF, POOL);
+                CardRarity.COMMON, CardTarget.SELF);
         this.baseMagicNumber = HP_AMOUNT;
         this.magicNumber = this.baseMagicNumber;
         this.heal=this.baseHeal = HP_AMOUNT;

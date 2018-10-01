@@ -29,7 +29,7 @@ public class FlashOfAnger extends CustomCard
     public FlashOfAnger() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.FLASH_OF_ANGER), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseBlock = this.block = BLOCK_AMOUNT;
         this.baseMagicNumber = this.magicNumber = 1;
     }

@@ -29,7 +29,7 @@ public class Sharpen extends CustomCard
     public Sharpen() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.SHARPEN), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseMagicNumber = this.magicNumber = 2;
     }
 

@@ -33,7 +33,7 @@ public class BreakThrough extends CustomCard
     public BreakThrough() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.BREAK_THROUGH), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseDamage = this.damage = DAMAGE;
         this.baseMagicNumber = this.magicNumber = MAGIC_NUM;
         this.isInnate = true;

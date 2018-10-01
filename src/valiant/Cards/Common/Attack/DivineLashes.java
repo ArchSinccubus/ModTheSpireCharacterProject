@@ -31,7 +31,7 @@ public class DivineLashes extends CustomCard
     public DivineLashes() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(IMG_PATH), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseBlock = this.block = BLOCK_DMG;
         this.baseDamage = this.damage = ATTACK_DMG;
     }

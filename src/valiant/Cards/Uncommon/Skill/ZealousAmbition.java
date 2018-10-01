@@ -30,7 +30,7 @@ public class ZealousAmbition extends CustomCard
     public ZealousAmbition() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.ZEALOUS_AMBITION), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.exhaust = true;
         this.baseMagicNumber = this.magicNumber = 6;
     }

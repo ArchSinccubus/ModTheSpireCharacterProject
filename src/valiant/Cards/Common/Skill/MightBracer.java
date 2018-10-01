@@ -28,7 +28,7 @@ public class MightBracer extends CustomCard
     public MightBracer() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.MIGHT_BRACER), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseBlock = this.block = BLOCK_AMOUNT;
     }
 

@@ -31,7 +31,7 @@ public class AtAllCosts extends CustomCard
     public AtAllCosts() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.AT_ALL_COSTS), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         //this.isInnate = false;
         this.exhaust = true;
     }

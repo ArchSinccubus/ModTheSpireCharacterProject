@@ -34,7 +34,7 @@ public class Charge extends CustomCard
     public Charge() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.CHARGE), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseMagicNumber = this.magicNumber = HP_LOSS;
         //this.exhaust = true;
     }

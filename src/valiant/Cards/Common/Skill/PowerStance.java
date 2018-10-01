@@ -30,7 +30,7 @@ public class PowerStance extends CustomCard
     public PowerStance() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.POWER_STANCE), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.magicNumber = this.baseMagicNumber = BLOCK_AMOUNT;
     }
 

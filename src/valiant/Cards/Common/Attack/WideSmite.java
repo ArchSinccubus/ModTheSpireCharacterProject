@@ -39,7 +39,7 @@ public class WideSmite extends CustomCard
     public WideSmite() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.WIDE_SMITE), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseDamage = this.damage = DAMAGE;
     }
 

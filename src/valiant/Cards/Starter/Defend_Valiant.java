@@ -1,4 +1,6 @@
 package valiant.Cards.Starter;
+import basemod.helpers.BaseModTags;
+import basemod.helpers.CardTags;
 import valiant.MainMod.Fudgesickle;
 import valiant.Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
@@ -12,7 +14,7 @@ public class Defend_Valiant extends CustomCard{
     public static final String ID = "Defend_Valiant";
     public static final String NAME = "Defend";
     public static final String DESCRIPTION = "Gain !B! block.";
-    public static final String IMG_PATH = "Cards_other/Skills/corona.png";
+    public static final String IMG_PATH = "CardsFinal/Defend.png";
     private static final int COST = 1;
     private static final int BLOCK_AMOUNT = 5;
     private static final int UPGRADE_BLOCK_DMG = 3;
@@ -23,7 +25,8 @@ public class Defend_Valiant extends CustomCard{
     public Defend_Valiant() {
         super(ID, NAME, Fudgesickle.makePath(IMG_PATH), COST, DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
+        CardTags.addTags(this, BaseModTags.BASIC_DEFEND);
         this.block=this.baseBlock = BLOCK_AMOUNT;
     }
 

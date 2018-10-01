@@ -36,7 +36,7 @@ public class FuriousSmite extends CustomCard
     public FuriousSmite() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.FURIOUS_SMITE), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseDamage = this.damage = DAMAGE;
         this.baseMagicNumber = this.magicNumber = HP_LOSS;
     }

@@ -36,7 +36,7 @@ public class ToweringCharge extends CustomCard
     public ToweringCharge() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.TOWERING_CHARGE), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseDamage = this.damage = ATTACK_DMG;
         this.baseMagicNumber =WEAK_AMOUNT;
         this.magicNumber = this.baseMagicNumber;

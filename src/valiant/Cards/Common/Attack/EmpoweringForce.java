@@ -31,7 +31,7 @@ public class EmpoweringForce extends CustomCard{
     public EmpoweringForce() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.EMPOWERING_FORCE), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
 
         this.baseDamage = this.damage = ATTACK_DMG;
         this.baseMagicNumber = this.magicNumber = UPGRADE_NUM;

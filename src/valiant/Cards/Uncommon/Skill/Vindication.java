@@ -30,7 +30,7 @@ public class Vindication extends CustomCard
     public Vindication() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.VINDICATION), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseMagicNumber =SPIRIT_AMOUNT;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;

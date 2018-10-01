@@ -29,7 +29,7 @@ public class DeadlyPlay extends CustomCard
     public DeadlyPlay() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.DEADLY_PLAY), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.magicNumber = this.baseMagicNumber = DRAW;
     }
 

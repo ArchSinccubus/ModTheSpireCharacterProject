@@ -37,7 +37,7 @@ public class AuraDischarge extends CustomCard {
     public AuraDischarge() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.AURA_DISCHARGE), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseDamage = DAMAGE;
         this.isMultiDamage = true;
         this.baseMagicNumber = this.magicNumber = HP_HEAL;

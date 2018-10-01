@@ -29,7 +29,7 @@ public class Guardian extends CustomCard
     public Guardian() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.GUARDIAN), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseMagicNumber = this.magicNumber = BLOCK_COUNT;
         //this.exhaust = true;
     }

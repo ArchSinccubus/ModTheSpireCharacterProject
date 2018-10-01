@@ -35,7 +35,7 @@ public class Desperation extends CustomCard
     public Desperation() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.DESPERATION), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseDamage = this.damage = DAMAGE;
         this.baseMagicNumber = this.magicNumber = MAGIC_NUM;
         this.isInnate = true;

@@ -27,7 +27,7 @@ public class DualSpirit extends CustomCard {
     public DualSpirit() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.DUAL_SPIRIT), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
     }

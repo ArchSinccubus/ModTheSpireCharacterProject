@@ -37,7 +37,7 @@ public class Retaliate extends CustomCard
     public Retaliate() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.RETALIATE), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         logger.info("Initialized");
         this.baseDamage = DAMAGE;
         if (AbstractDungeon.player != null)

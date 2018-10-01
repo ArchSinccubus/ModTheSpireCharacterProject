@@ -29,7 +29,7 @@ public class CombatDance extends CustomCard
     public CombatDance() {
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.COMBAT_DANCE), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
-                rarity, target, POOL);
+                rarity, target);
         this.baseDamage = this.damage = DAMAGE;
     }
 

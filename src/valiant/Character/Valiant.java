@@ -2,7 +2,7 @@ package valiant.Character;
 
 import java.util.ArrayList;
 
-import com.megacrit.cardcrawl.daily.DailyMods;
+import basemod.animations.SpriterAnimation;
 import valiant.Patches.CharacterEnum;
 
 import valiant.Relics.*;
@@ -21,9 +21,9 @@ import org.apache.logging.log4j.Logger;
 public class Valiant extends CustomPlayer{
 
     public static final int ENERGY_PER_TURN = 3; // how much energy you get every turn
-    public static final String MY_CHARACTER_SHOULDER_2 = "resources/TestAnim/shoulder2.png"; // campfire pose
-    public static final String MY_CHARACTER_SHOULDER_1 = "resources/TestAnim/shoulder.png"; // another campfire pose
-    public static final String MY_CHARACTER_CORPSE = "resources/TestAnim/corpse.png"; // dead corpse
+    public static final String MY_CHARACTER_SHOULDER_2 = "resources/TestAnim/valiant_shoulder2.png"; // campfire pose
+    public static final String MY_CHARACTER_SHOULDER_1 = "resources/TestAnim/valiant_shoulder.png"; // another campfire pose
+    public static final String MY_CHARACTER_CORPSE = "resources/TestAnim/corpse_valiant.png"; // dead corpse
     public static final String MY_CHARACTER_SKELETON_ATLAS = "resources/TestAnim/idle/skeleton.atlas"; // spine animation atlas
     public static final String MY_CHARACTER_SKELETON_JSON = "resources/TestAnim/idle/skeleton.json"; // spine animation json
 
@@ -50,14 +50,11 @@ public class Valiant extends CustomPlayer{
     public static final int HAND_SIZE = 5;
 
     public Valiant(String name, PlayerClass chosenClass) {
-        super(name, chosenClass,orbTextures ,"resources/orb/vfx.png" ,null, MY_CHARACTER_SKELETON_JSON );
+        super(name, chosenClass,orbTextures ,"resources/orb/vfx.png" ,null, new SpriterAnimation("resources/Animation/Idle_final_sizetest.scml"));
 
         this.dialogX = (this.drawX + 0.0F * Settings.scale); // set location for text bubbles
         this.dialogY = (this.drawY + 220.0F * Settings.scale); // you can just copy these values
 
-        if (Settings.dailyModsEnabled() && DailyMods.cardMods.get("Diverse")) {
-            this.masterMaxOrbs = 1;
-        }
 
         initializeClass(null, MY_CHARACTER_SHOULDER_2, // required call to load textures and setup energy/loadout
                 MY_CHARACTER_SHOULDER_1,
