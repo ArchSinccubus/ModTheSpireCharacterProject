@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+import valiant.MainMod.Fudgesickle;
 
 public class AscensionPower extends AbstractPower {
     public static final String POWER_ID = "Demon Form";
@@ -21,7 +22,7 @@ public class AscensionPower extends AbstractPower {
         this.owner = owner;
         this.amount = strengthAmount;
         this.updateDescription();
-        this.img = ImageMaster.loadImage("images/powers/32/drawCardRed.png");
+        this.img = Fudgesickle.getTex("Powers/FullAwakening.png");
     }
 
     public void updateDescription() {

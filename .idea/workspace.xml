@@ -7,275 +7,202 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="166ff544-f595-483b-bbfe-a7e4ae8af0c2" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Animation/Hair.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Animation/Idle.autosave.scml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Animation/Idle.scml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Animation/Idle_000.autosave.scml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Animation/Idle_000.scml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Animation/Idle_final.autosave.scml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Animation/Idle_final.scml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Animation/Idle_final_sizetest.scml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Animation/blade.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Animation/cape.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Animation/glove.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Animation/head.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Animation/left foot boot bottom.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Animation/left foot boot top.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Animation/left leg boot top.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Animation/lower arm.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Animation/mask.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Animation/right leg upper.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Animation/right leg.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Animation/shadow.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Animation/sheathe.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Animation/skirt.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Animation/test.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Animation/torso.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Animation/upper arm.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Abandon Reason.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Abandon Reason_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Almighty Smite.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Almighty Smite_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Arcane Healing.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Arcane Healing_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Archangel's Denouement.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Archangel's Denouement_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/At All Costs.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/At All Costs_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Aura Discharge.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Aura Discharge_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Blinding Flash.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Blinding Flash_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Bombastic.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Bombastic_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Brace the pain.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Brace the pain_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Chained Smite.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Chained Smite_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Chainer.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Chainer_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Charge.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Charge_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Cleanse.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Cleanse_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Combat Dance.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Combat Dance_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Combat Stance.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Combat Stance_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/DEUS VULT.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/DEUS VULT_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Deadly Play.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Deadly Play_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Debilitation.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Debilitation_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Decimate.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Decimate_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Defend.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Defend_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Delving Prayer.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Delving Prayer_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Desperate Wailing.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Desperate Wailing_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Divine Favor.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Divine Favor_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Dual Spirit.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Dual Spirit_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Empowering Force.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Empowering Force_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Ensoul.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Ensoul_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Execution.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Execution_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Exhausting Smash.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Exhausting Smash_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Final Gambit.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Final Gambit_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Flash of Anger.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Flash of Anger_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Full Awakening.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Full Awakening_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Furious Smite.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Furious Smite_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Guardian.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Guardian_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Holy Fury.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Holy Fury_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Holy Light.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Holy Light_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Insightful Prayer.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Insightful Prayer_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Its Smiting Time.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Its Smiting Time_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Maddening Revelation.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Maddening Revelation_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Meaballize.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Meaballize_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Merciless Smite.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Merciless Smite_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Might Bracer.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Might Bracer_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Might Form.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Might Form_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Minor Healing.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Minor Healing_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Overburn.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Overburn_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Peaceful Stance.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Peaceful Stance_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Piercing Stab.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Piercing Stab_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Push Onward.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Push Onward_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Quick Siphon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Quick Siphon_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Quickstep.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Quickstep_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Radiance.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Radiance_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Reckless Smite.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Reckless Smite_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Reduce to Nothing.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Reduce to Nothing_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Retaliate.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Retaliate_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Salvation.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Salvation_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Seek Answers.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Seek Answers_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Sharpen.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Sharpen_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Smite.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Smite_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Soul Strain.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Soul Strain_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Strike.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Strike_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Take Aim.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Take Aim_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Tantrum.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Tantrum_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Tear Psyche.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Tear Psyche_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Tear Soul.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Tear Soul_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Tempo Master.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Tempo Master_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Towering Charge.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Towering Charge_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Turn Tables.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Turn Tables_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Unyielding Zeal.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Unyielding Zeal_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Uprising.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Uprising_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Vindication.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Vindication_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Weak Form.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Weak Form_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Wide Smite.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Wide Smite_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Zealous Ambition.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Zealous Ambition_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Zealous Persecution.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Zealous Persecution_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Zealous Smite.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Zealous Smite_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Zen.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/CardsFinal/Zen_p.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Powers/DeadlyPlay.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Powers/DelvingPrayer.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Powers/InsightfulPrayer.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Powers/Might form.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Powers/anvil.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Powers/weakForm.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/TestAnim/corpse_valiant.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/TestAnim/valiant_shoulder.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/TestAnim/valiant_shoulder2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Valiant_Select_Screen.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Powers/FullAwakening.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Powers/Peace.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Powers/PushOnward.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/resources/Powers/Zen.png" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/CardTemplate.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/CardTemplate.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/CombatDance.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/CombatDance.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/Decimate.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/Decimate.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/DivineLashes.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/DivineLashes.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/EmpoweringForce.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/EmpoweringForce.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/FuriousSmite.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/FuriousSmite.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/GracefulSiphon.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/GracefulSiphon.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/PiercingStab.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/PiercingStab.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/PowerStrike.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/PowerStrike.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/QuickSiphon.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/QuickSiphon.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/RecklessSmite.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/RecklessSmite.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/Smite.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/Smite.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/ToweringCharge.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/ToweringCharge.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/WideSmite.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/WideSmite.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/ArcaneHealing.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/ArcaneHealing.java" />
+      <change beforePath="$PROJECT_DIR$/resources/Cards_other/Attacks/comet.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/Cards_other/Attacks/comet_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/Cards_other/Powers/enigma.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/Cards_other/Powers/enigma_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/Cards_other/Skills/corona.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/Cards_other/Skills/corona_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/Cards_other/Testattack.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/Cards_other/Testdefend.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/Char/Blahblahhugebitch.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/LeilaPic.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/Logo1.png" afterPath="$PROJECT_DIR$/resources/Logo1.png" />
+      <change beforePath="$PROJECT_DIR$/resources/ModTheSpire.json" afterPath="$PROJECT_DIR$/resources/ModTheSpire.json" />
+      <change beforePath="$PROJECT_DIR$/resources/TestAnim/main2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/TestAnim/shoulder.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/TestAnim/shoulder2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/TestIcon.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/STRIKE.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/STRIKE_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/anomaly.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/anomaly_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/arcane_armor.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/arcane_armor_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/archives.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/archives_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/astral_haze.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/astral_haze_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/brainstorm.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/brainstorm_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/brilliance.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/brilliance_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/channel.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/channel_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/chaos_form.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/chaos_form_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/coalescence.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/coalescence_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/comet.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/comet_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/convergence.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/convergence_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/conversion.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/conversion_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/corona.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/corona_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/creativity.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/creativity_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/dark_matter.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/dark_matter_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/defend_purple.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/defend_purple_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/dimension_door.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/dimension_door_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/disperse.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/disperse_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/echo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/echo_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/eclipse.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/eclipse_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/enigma.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/enigma_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/entropy.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/entropy_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/equinox.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/equinox_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/essence_dart.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/essence_dart_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/ether_blast.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/ether_blast_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/eureka.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/eureka_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/event_horizon.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/event_horizon_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/feedback.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/feedback_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/flare.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/flare_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/flicker.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/flicker_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/flow.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/flow_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/flux.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/flux_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/flux_shield.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/flux_shield_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/force_ripple.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/force_ripple_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/genesis.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/genesis_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/gravity_well.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/gravity_well_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/hypothesis.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/hypothesis_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/illuminate.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/illuminate_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/implosion.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/implosion_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/irradiate.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/irradiate_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/magic_missile.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/magic_missile_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/magnetize.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/magnetize_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/meteor_shower.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/meteor_shower_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/mind_over_matter.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/mind_over_matter_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/nebula.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/nebula_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/nexus.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/nexus_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/nova.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/nova_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/null_storm.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/null_storm_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/overload.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/overload_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/periapt_of_celerity.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/periapt_of_celerity_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/periapt_of_potency.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/periapt_of_potency_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/phase_coil.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/phase_coil_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/plasma_wave.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/plasma_wave_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/power_overwhelming.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/power_overwhelming_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/prismatic_sphere.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/prismatic_sphere_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/pulse_barrier.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/pulse_barrier_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/reflection_ward.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/reflection_ward_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/retrograde.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/retrograde_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/runic_binding.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/runic_binding_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/shimmer.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/shimmer_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/singularity.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/singularity_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/siphon_power.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/siphon_power_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/siphon_speed.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/siphon_speed_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/starburst.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/starburst_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/strike_purple.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/strike_purple_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/stroke_of_genius.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/stroke_of_genius_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/surge.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/surge_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/syzygy.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/syzygy_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/thought_raze.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/thought_raze_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/transference.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/transference_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/umbral_bolt.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/umbral_bolt_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/unstable_orb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/unstable_orb_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/vacuum.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/vacuum_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/void_ray.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/void_ray_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/vortex.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/vortex_p.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/zenith.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/cards/zenith_p.png" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/DivineFavor.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/DivineFavor.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/FlashOfAnger.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/FlashOfAnger.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/HolyFury.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/HolyFury.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/ItsSmitingTime.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/ItsSmitingTime.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/MightBracer.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/MightBracer.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/PowerStance.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/PowerStance.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/SeekAnswers.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/SeekAnswers.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/TakeAim.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/TakeAim.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/UnyieldingZeal.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/UnyieldingZeal.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/ZealousPersecution.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/ZealousPersecution.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Rare/Attack/AlmightySmite.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Rare/Attack/AlmightySmite.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Rare/Attack/DangerousSmash.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Rare/Attack/DangerousSmash.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Rare/Attack/Execution.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Rare/Attack/Execution.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Rare/Attack/FinalGambit.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Rare/Attack/FinalGambit.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Rare/Attack/HolyStorm.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Rare/Attack/HolyStorm.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Rare/Attack/TearPsyche.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Rare/Attack/TearPsyche.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Rare/Power/FullAwakening.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Rare/Power/FullAwakening.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Rare/Power/Overburn.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Rare/Power/Overburn.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Rare/Power/PeacefulStance.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Rare/Power/PeacefulStance.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Rare/Power/TempoMaster.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Rare/Power/TempoMaster.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Rare/Power/WeakForm.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Rare/Power/WeakForm.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Rare/Skill/AtAllCosts.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Rare/Skill/AtAllCosts.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Rare/Skill/Bombastic.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Rare/Skill/Bombastic.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Rare/Skill/DeadlyPlay.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Rare/Skill/DeadlyPlay.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Rare/Skill/PowerBloom.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Rare/Skill/PowerBloom.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Rare/Skill/Salvation.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Rare/Skill/Salvation.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Starter/BlindingLight.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Starter/BlindingLight.java" />
       <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Starter/Defend_Valiant.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Starter/Defend_Valiant.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Starter/MinorHealing.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Starter/MinorHealing.java" />
       <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Starter/Strike_Valiant.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Starter/Strike_Valiant.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Attack/AbandonReason.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Attack/AbandonReason.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Attack/AuraDischarge.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Attack/AuraDischarge.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Attack/BreakThrough.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Attack/BreakThrough.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Attack/Chainer.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Attack/Chainer.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Attack/Desperation.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Attack/Desperation.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Attack/HolyLight.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Attack/HolyLight.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Attack/MercilessSmite.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Attack/MercilessSmite.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Attack/Retaliate.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Attack/Retaliate.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Attack/StrainingSmite.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Attack/StrainingSmite.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Attack/Tantrum.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Attack/Tantrum.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Attack/TearSoul.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Attack/TearSoul.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Attack/Uprising.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Attack/Uprising.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Attack/ZealousSmite.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Attack/ZealousSmite.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Power/DelvingPrayer.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Power/DelvingPrayer.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Power/Ensoul.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Power/Ensoul.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Power/InsightfulPrayer.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Power/InsightfulPrayer.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Power/MightForm.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Power/MightForm.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Power/PushOnward.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Power/PushOnward.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Power/Sharpen.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Power/Sharpen.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Power/TurnTables.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Power/TurnTables.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Power/Zen.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Power/Zen.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/ArchangelsBoon.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/ArchangelsBoon.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/BraceThePain.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/BraceThePain.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/Charge.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/Charge.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/Cleanse.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/Cleanse.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/CombatStance.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/CombatStance.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/DualSpirit.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/DualSpirit.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/Guardian.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/Guardian.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/MaddeningRevelation.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/MaddeningRevelation.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/Meaballize.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/Meaballize.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/OverwhelmingLight.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/OverwhelmingLight.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/Radiance.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/Radiance.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/ReduceToNothing.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/ReduceToNothing.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/SoulStrain.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/SoulStrain.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/Vindication.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/Vindication.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/ZealousAmbition.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/ZealousAmbition.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Character/Valiant.java" afterPath="$PROJECT_DIR$/src/valiant/Character/Valiant.java" />
       <change beforePath="$PROJECT_DIR$/src/valiant/MainMod/Fudgesickle.java" afterPath="$PROJECT_DIR$/src/valiant/MainMod/Fudgesickle.java" />
+      <change beforePath="$PROJECT_DIR$/src/valiant/Patches/AbstractCardSpiritPatch.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/valiant/Patches/BackToBasicsPatch.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/valiant/Patches/GremlinMatchPatch.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/valiant/Patches/PandorasBoxPatch.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/valiant/Patches/VampirePatch.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/valiant/Powers/AscensionPower.java" afterPath="$PROJECT_DIR$/src/valiant/Powers/AscensionPower.java" />
+      <change beforePath="$PROJECT_DIR$/src/valiant/Powers/DeadlyPlayPower.java" afterPath="$PROJECT_DIR$/src/valiant/Powers/DeadlyPlayPower.java" />
+      <change beforePath="$PROJECT_DIR$/src/valiant/Powers/DelvingPrayerPower.java" afterPath="$PROJECT_DIR$/src/valiant/Powers/DelvingPrayerPower.java" />
+      <change beforePath="$PROJECT_DIR$/src/valiant/Powers/InsightfulPrayerPower.java" afterPath="$PROJECT_DIR$/src/valiant/Powers/InsightfulPrayerPower.java" />
+      <change beforePath="$PROJECT_DIR$/src/valiant/Powers/MightFormPower.java" afterPath="$PROJECT_DIR$/src/valiant/Powers/MightFormPower.java" />
+      <change beforePath="$PROJECT_DIR$/src/valiant/Powers/PeacefulStancePower.java" afterPath="$PROJECT_DIR$/src/valiant/Powers/PeacefulStancePower.java" />
+      <change beforePath="$PROJECT_DIR$/src/valiant/Powers/PowerThroughPower.java" afterPath="$PROJECT_DIR$/src/valiant/Powers/PowerThroughPower.java" />
+      <change beforePath="$PROJECT_DIR$/src/valiant/Powers/PushOnwardPower.java" afterPath="$PROJECT_DIR$/src/valiant/Powers/PushOnwardPower.java" />
+      <change beforePath="$PROJECT_DIR$/src/valiant/Powers/SharpenPower.java" afterPath="$PROJECT_DIR$/src/valiant/Powers/SharpenPower.java" />
+      <change beforePath="$PROJECT_DIR$/src/valiant/Powers/TurnTablesPower.java" afterPath="$PROJECT_DIR$/src/valiant/Powers/TurnTablesPower.java" />
+      <change beforePath="$PROJECT_DIR$/src/valiant/Powers/WeakFormPower.java" afterPath="$PROJECT_DIR$/src/valiant/Powers/WeakFormPower.java" />
+      <change beforePath="$PROJECT_DIR$/src/valiant/Powers/ZenPower.java" afterPath="$PROJECT_DIR$/src/valiant/Powers/ZenPower.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -291,18 +218,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Defend_Valiant.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Starter/Defend_Valiant.java">
+      <file leaf-file-name="Valiant.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/valiant/Character/Valiant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="28" column="57" lean-forward="true" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+            <state relative-caret-position="84">
+              <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GremlinMatchPatch.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/valiant/Patches/GremlinMatchPatch.java">
+      <file leaf-file-name="ModTheSpire.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/ModTheSpire.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PushOnwardPower.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/valiant/Powers/PushOnwardPower.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="20" column="56" lean-forward="false" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SharpenPower.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/valiant/Powers/SharpenPower.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="23" column="51" lean-forward="false" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpiritPower.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/valiant/Powers/SpiritPower.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TearSoulPower.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/valiant/Powers/TearSoulPower.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
@@ -311,81 +278,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LibraryTypeEnum.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/valiant/Patches/LibraryTypeEnum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpiritPatch.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/valiant/Patches/SpiritPatch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WaveringDamagetypeEnumPatch.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/valiant/Patches/WaveringDamagetypeEnumPatch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VampirePatch.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/valiant/Patches/VampirePatch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BackToBasicsPatch.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/valiant/Patches/BackToBasicsPatch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MinorHealing.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Starter/MinorHealing.java">
+      <file leaf-file-name="TurnTablesPower.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/valiant/Powers/TurnTablesPower.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
-              <caret line="32" column="56" lean-forward="false" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+              <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WeakForm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Rare/Power/WeakForm.java">
+      <file leaf-file-name="WaveringPower.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/valiant/Powers/WaveringPower.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="49" />
+            <state relative-caret-position="84">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MightForm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Uncommon/Power/MightForm.java">
+      <file leaf-file-name="WeakFormPower.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/valiant/Powers/WeakFormPower.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="36" column="49" lean-forward="false" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
+            <state relative-caret-position="336">
+              <caret line="25" column="54" lean-forward="false" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ZenPower.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/valiant/Powers/ZenPower.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="29" column="49" lean-forward="false" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -402,14 +329,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>bracethe</find>
-      <find>delving</find>
-      <find>weakform</find>
-      <find>Zen</find>
-      <find>Sharpen</find>
-      <find>chained</find>
-      <find>quickste</find>
-      <find>merciless</find>
       <find>HolyStorm</find>
       <find>DAMAGE</find>
       <find>cleanse</find>
@@ -432,6 +351,14 @@
       <find>gracefu</find>
       <find>public static final String COMBAT_DANCE \= \&quot;cards\/anomaly\.png\&quot;\;\n    public static final String DECIMATE \= \&quot;cards\/starburst\.png\&quot;\;\n    public static final String DIVINE_LASHES \= \&quot;cards\/arcane_tempest\.png\&quot;\;\n    public static final String EMPOWERING_FORCE \= \&quot;cards\/irradiate\.png\&quot;\;\n    public static final String GRACEFUL_SIPHON \= \&quot;cards\/archives\.png\&quot;\;\n    public static final String MERCILESS_SMITE \= \&quot;cards\/astral_haze\.png\&quot;\;\n    public static final String PIERCING_STAB \= \&quot;cards\/dimension_door\.png\&quot;\;\n    public static final String POWER_STRIKE \= \&quot;cards\/brainstorm\.png\&quot;\;\n    public static final String QUICK_SIPHON \= \&quot;cards\/brilliance\.png\&quot;\;\n    public static final String RECKLESS_SMITE \= \&quot;cards\/channel\.png\&quot;\;\n    public static final String SMITE \= \&quot;cards\/chaos_form\.png\&quot;\;\n    public static final String TOWERING_CHARGE \= \&quot;cards\/coalescence\.png\&quot;\;\n    public static final String WIDE_SMITE \= \&quot;cards\/comet\.png\&quot;\;\n    public static final String ARCANE_HEALING \= \&quot;cards\/convergence\.png\&quot;\;\n    public static final String DIVINE_FAVOR \= \&quot;cards\/corona\.png\&quot;\;\n    public static final String FLASH_OF_ANGER \= \&quot;cards\/creativity\.png\&quot;\;\n    public static final String HOLY_FURY \= \&quot;cards\/dark_matter\.png\&quot;\;\n    public static final String ITS_SMITING_TIME \= \&quot;cards\/defend_purple\.png\&quot;\;\n    public static final String MIGHT_BRACER \= \&quot;cards\/arcane_armor\.png\&quot;\;\n    public static final String POWER_STANCE \= \&quot;cards\/echo\.png\&quot;\;\n    public static final String QUICKSTEP \= \&quot;cards\/eclipse\.png\&quot;\;\n    public static final String SEEK_ANSWERS \= \&quot;cards\/enigma\.png\&quot;\;\n    public static final String TAKE_AIM \= \&quot;cards\/entropy\.png\&quot;\;\n    public static final String UNYIELDING_ZEAL \= \&quot;cards\/equinox\.png\&quot;\;\n    public static final String ZEALOUS_PERSECUTION \= \&quot;cards\/phase_coil\.png\&quot;\;\n    public static final String ALMIGHTY_SMITE \= \&quot;cards\/flicker\.png\&quot;\;\n    public static final String DANGEROUS_SMASH \= \&quot;cards\/plasma_wave\.png\&quot;\;\n    public static final String EXECUTION \= \&quot;cards\/pulse_barrier\.png\&quot;\;\n    public static final String FINAL_GAMBIT \= \&quot;cards\/nebula\.png\&quot;\;\n    public static final String HOLY_STORM \= \&quot;cards\/ether_blast\.png\&quot;\;\n    public static final String TANTRUM \= \&quot;cards\/essence_dart\.png\&quot;\;\n    public static final String FULL_AWAKENING \= \&quot;cards\/eureka\.png\&quot;\;\n    public static final String OVERBURN \= \&quot;cards\/event_horizon\.png\&quot;\;\n    public static final String PEACEFUL_STANCE \= \&quot;cards\/conversion\.png\&quot;\;\n    public static final String WEAK_FORM \= \&quot;cards\/feedback\.png\&quot;\;\n    public static final String AT_ALL_COSTS \= \&quot;cards\/flare\.png\&quot;\;\n    public static final String BOMBASTIC \= \&quot;cards\/flow\.png\&quot;\;\n    public static final String DEADLY_PLAY \= \&quot;cards\/null_storm\.png\&quot;\;\n    public static final String POWER_BLOOM \= \&quot;cards\/void_ray\.png\&quot;\;\n    public static final String SALVATION \= \&quot;cards\/flux_shield\.png\&quot;\;\n    public static final String TEMPO_MASTER \= \&quot;cards\/force_ripple\.png\&quot;\;\n    public static final String ABANDON_REASON \= \&quot;cards\/unstable_orb\.png\&quot;\;\n    public static final String AURA_DISCHARGE \= \&quot;cards\/gravity_well\.png\&quot;\;\n    public static final String BREAK_THROUGH \= \&quot;cards\/hypothesis\.png\&quot;\;\n    public static final String CHAINER \= \&quot;cards\/illuminate\.png\&quot;\;\n    public static final String DESPERATION \= \&quot;cards\/implosion\.png\&quot;\;\n    public static final String FURIOUS_SMITE \= \&quot;cards\/magic_missile\.png\&quot;\;\n    public static final String RETALIATE \= \&quot;cards\/magnetize\.png\&quot;\;\n    public static final String STRAINING_SMITE \= \&quot;cards\/meteor_shower\.png\&quot;\;\n    public static final String TEAR_PSYCHE \= \&quot;cards\/mind_over_matter\.png\&quot;\;\n    public static final String TEAR_SOUL \= \&quot;cards\/nexus\.png\&quot;\;\n    public static final String UPRISING \= \&quot;cards\/nova\.png\&quot;\;\n    public static final String ZEALOUS_SMITE \= \&quot;cards\/periapt_of_celerity\.png\&quot;\;\n    public static final String DELVING_PRAYER \= \&quot;cards\/periapt_of_potency\.png\&quot;\;\n    public static final String ENSOUL \= \&quot;cards\/zenith\.png\&quot;\;\n    public static final String INSIGHTFUL_PRAYER \= \&quot;cards\/vortex\.png\&quot;\;\n    public static final String MIGHT_FORM \= \&quot;cards\/power_overwhelming\.png\&quot;\;\n    public static final String PUSH_ONWARD \= \&quot;cards\/overload\.png\&quot;\;\n    public static final String SHARPEN \= \&quot;cards\/disperse\.png\&quot;\;\n    public static final String TURN_TABLES \= \&quot;cards\/reflection_ward\.png\&quot;\;\n    public static final String ZEN \= \&quot;cards\/retrograde\.png\&quot;\;\n    public static final String ARCHANGEL_BOON \= \&quot;cards\/runic_binding\.png\&quot;\;\n    public static final String BRACE_THE_PAIN \= \&quot;cards\/shimmer\.png\&quot;\;\n    public static final String CHARGE \= \&quot;cards\/convergence\.png\&quot;\;\n    public static final String CLEANSE \= \&quot;cards\/siphon_power\.png\&quot;\;\n    public static final String COMBAT_STANCE \= \&quot;cards\/siphon_speed\.png\&quot;\;\n    public static final String DUAL_SPIRIT \= \&quot;cards\/strike_purple\.png\&quot;\;\n    public static final String GUARDIAN \= \&quot;cards\/stroke_of_genius\.png\&quot;\;\n    public static final String MADDENING_REVELATION \= \&quot;cards\/surge\.png\&quot;\;\n    public static final String MEABALIZE \= \&quot;cards\/syzygy\.png\&quot;\;\n    public static final String OVERWHELMING_LIGHT \= \&quot;cards\/thought_raze\.png\&quot;\;\n    public static final String RADIANCE \= \&quot;cards\/transference\.png\&quot;\;\n    public static final String REDUCE_TO_NOTHING \= \&quot;cards\/umbral_bolt\.png\&quot;\;\n    public static final String SOUL_STRAIN \= \&quot;cards\/singularity\.png\&quot;\;\n    public static final String VINDICATION \= \&quot;cards\/vacuum\.png\&quot;\;\n    public static final String ZEALOUS_AMBITION \= \&quot;cards\/genesis\.png\&quot;\;\n    public static final String BLINDING_LIGHT \= \&quot;cards\/prismatic_sphere\.png\&quot;\;\n    public static final String MINOR_HEALING \= \&quot;cards\/flux\.png\&quot;\;\n    public static final String HOLY_LIGHT \= \&quot;cards\/vortex\.png\&quot;\;</find>
       <find>DIVINE_FAVOR</find>
+      <find>Blin</find>
+      <find>grac</find>
+      <find>grace</find>
+      <find>divine</find>
+      <find>Arcane</find>
+      <find>des</find>
+      <find>desp</find>
+      <find>dange</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -446,28 +373,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/Radiance.java" />
-        <option value="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/ReduceToNothing.java" />
-        <option value="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/SoulStrain.java" />
-        <option value="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/Vindication.java" />
-        <option value="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/ZealousAmbition.java" />
-        <option value="$PROJECT_DIR$/src/valiant/Cards/CardTemplate.java" />
-        <option value="$PROJECT_DIR$/src/valiant/Character/Valiant.java" />
-        <option value="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/CombatDance.java" />
-        <option value="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/Decimate.java" />
-        <option value="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/EmpoweringForce.java" />
-        <option value="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/DivineLashes.java" />
-        <option value="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/FuriousSmite.java" />
-        <option value="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/GracefulSiphon.java" />
-        <option value="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/PiercingStab.java" />
-        <option value="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/PowerStrike.java" />
-        <option value="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/QuickSiphon.java" />
-        <option value="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/RecklessSmite.java" />
         <option value="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/Smite.java" />
         <option value="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/ToweringCharge.java" />
         <option value="$PROJECT_DIR$/src/valiant/Cards/Common/Attack/WideSmite.java" />
         <option value="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/ArcaneHealing.java" />
-        <option value="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/DivineFavor.java" />
         <option value="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/FlashOfAnger.java" />
         <option value="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/HolyFury.java" />
         <option value="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/ItsSmitingTime.java" />
@@ -492,11 +401,29 @@
         <option value="$PROJECT_DIR$/src/valiant/Cards/Rare/Skill/DeadlyPlay.java" />
         <option value="$PROJECT_DIR$/src/valiant/Cards/Rare/Skill/PowerBloom.java" />
         <option value="$PROJECT_DIR$/src/valiant/Cards/Rare/Skill/Salvation.java" />
-        <option value="$PROJECT_DIR$/src/valiant/Cards/Starter/Strike_Valiant.java" />
-        <option value="$PROJECT_DIR$/src/valiant/Cards/Starter/Defend_Valiant.java" />
         <option value="$PROJECT_DIR$/src/valiant/Cards/Starter/MinorHealing.java" />
         <option value="$PROJECT_DIR$/src/valiant/Cards/Rare/Power/WeakForm.java" />
         <option value="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Power/MightForm.java" />
+        <option value="$PROJECT_DIR$/src/valiant/Patches/AbstractCardSpiritPatch.java" />
+        <option value="$PROJECT_DIR$/src/valiant/Cards/Starter/BlindingLight.java" />
+        <option value="$PROJECT_DIR$/src/valiant/Cards/Starter/Strike_Valiant.java" />
+        <option value="$PROJECT_DIR$/src/valiant/Cards/Starter/Defend_Valiant.java" />
+        <option value="$PROJECT_DIR$/Localization/Valiant-CardStrings.json" />
+        <option value="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/DivineFavor.java" />
+        <option value="$PROJECT_DIR$/src/valiant/MainMod/Fudgesickle.java" />
+        <option value="$PROJECT_DIR$/src/valiant/Powers/DeadlyPlayPower.java" />
+        <option value="$PROJECT_DIR$/src/valiant/Powers/DelvingPrayerPower.java" />
+        <option value="$PROJECT_DIR$/src/valiant/Powers/InsightfulPrayerPower.java" />
+        <option value="$PROJECT_DIR$/src/valiant/Powers/MightFormPower.java" />
+        <option value="$PROJECT_DIR$/src/valiant/Powers/SharpenPower.java" />
+        <option value="$PROJECT_DIR$/src/valiant/Powers/WeakFormPower.java" />
+        <option value="$PROJECT_DIR$/src/valiant/Powers/AscensionPower.java" />
+        <option value="$PROJECT_DIR$/src/valiant/Powers/TurnTablesPower.java" />
+        <option value="$PROJECT_DIR$/src/valiant/Powers/PushOnwardPower.java" />
+        <option value="$PROJECT_DIR$/src/valiant/Powers/PowerThroughPower.java" />
+        <option value="$PROJECT_DIR$/src/valiant/Powers/PeacefulStancePower.java" />
+        <option value="$PROJECT_DIR$/src/valiant/Powers/ZenPower.java" />
+        <option value="$PROJECT_DIR$/resources/ModTheSpire.json" />
       </list>
     </option>
   </component>
@@ -590,6 +517,24 @@
             <path>
               <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Cards_other" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Powers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="TestAnim" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -612,84 +557,6 @@
               <item name="valiant" type="462c0819:PsiDirectoryNode" />
               <item name="Cards" type="462c0819:PsiDirectoryNode" />
               <item name="Common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="valiant" type="462c0819:PsiDirectoryNode" />
-              <item name="Cards" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-              <item name="Attack" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="valiant" type="462c0819:PsiDirectoryNode" />
-              <item name="Cards" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-              <item name="Skill" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="valiant" type="462c0819:PsiDirectoryNode" />
-              <item name="Cards" type="462c0819:PsiDirectoryNode" />
-              <item name="Rare" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="valiant" type="462c0819:PsiDirectoryNode" />
-              <item name="Cards" type="462c0819:PsiDirectoryNode" />
-              <item name="Rare" type="462c0819:PsiDirectoryNode" />
-              <item name="Attack" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="valiant" type="462c0819:PsiDirectoryNode" />
-              <item name="Cards" type="462c0819:PsiDirectoryNode" />
-              <item name="Rare" type="462c0819:PsiDirectoryNode" />
-              <item name="Power" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="valiant" type="462c0819:PsiDirectoryNode" />
-              <item name="Cards" type="462c0819:PsiDirectoryNode" />
-              <item name="Rare" type="462c0819:PsiDirectoryNode" />
-              <item name="Skill" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="valiant" type="462c0819:PsiDirectoryNode" />
-              <item name="Cards" type="462c0819:PsiDirectoryNode" />
-              <item name="Starter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="valiant" type="462c0819:PsiDirectoryNode" />
-              <item name="Cards" type="462c0819:PsiDirectoryNode" />
-              <item name="Uncommon" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModTheSpireCharacterProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="valiant" type="462c0819:PsiDirectoryNode" />
-              <item name="Cards" type="462c0819:PsiDirectoryNode" />
-              <item name="Uncommon" type="462c0819:PsiDirectoryNode" />
-              <item name="Power" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ModTheSpireCharacterProject" type="b2602c69:ProjectViewProjectNode" />
@@ -741,8 +608,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\user\IdeaProjects\ModTheSpireCharacterProject\resources\CardsFinal" />
       <recent name="C:\Users\user\IdeaProjects\ModTheSpireCharacterProject\resources\Powers" />
+      <recent name="C:\Users\user\IdeaProjects\ModTheSpireCharacterProject\resources\CardsFinal" />
       <recent name="C:\Users\user\IdeaProjects\ModTheSpireCharacterProject\resources\Char" />
       <recent name="C:\Users\user\IdeaProjects\ModTheSpireCharacterProject\resources\Animation" />
       <recent name="C:\Users\user\IdeaProjects\ModTheSpireCharacterProject\resources\TestAnim" />
@@ -875,6 +742,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11306257" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -898,7 +766,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11306257" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -907,383 +774,31 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Common/Attack/Decimate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="38" column="30" lean-forward="false" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Common/Attack/EmpoweringForce.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="33" column="30" lean-forward="false" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Common/Attack/DivineLashes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="33" column="30" lean-forward="false" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Common/Attack/FuriousSmite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="38" column="30" lean-forward="false" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Common/Attack/GracefulSiphon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Common/Attack/PiercingStab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Common/Attack/PowerStrike.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="35" column="30" lean-forward="false" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Common/Attack/QuickSiphon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Common/Attack/RecklessSmite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="37" column="30" lean-forward="false" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Common/Attack/Smite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Common/Attack/ToweringCharge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="38" column="30" lean-forward="false" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Common/Attack/WideSmite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="41" column="30" lean-forward="false" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Common/Skill/ArcaneHealing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="29" column="50" lean-forward="false" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Common/Skill/DivineFavor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="32" column="66" lean-forward="false" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Common/Skill/FlashOfAnger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Common/Skill/HolyFury.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Common/Skill/ItsSmitingTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Common/Skill/MightBracer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Common/Skill/PowerStance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Common/Skill/Quickstep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Common/Skill/SeekAnswers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="29" column="30" lean-forward="false" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Common/Skill/TakeAim.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Common/Skill/UnyieldingZeal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Common/Skill/ZealousPersecution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Rare/Attack/AlmightySmite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="38" column="30" lean-forward="false" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Rare/Attack/DangerousSmash.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="37" column="30" lean-forward="false" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Rare/Attack/Execution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="33" column="30" lean-forward="false" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Rare/Attack/FinalGambit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="37" column="30" lean-forward="false" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Rare/Attack/HolyStorm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Rare/Attack/TearPsyche.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Rare/Power/FullAwakening.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="33" column="30" lean-forward="false" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Rare/Power/Overburn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Rare/Power/TempoMaster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="31" column="39" lean-forward="false" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Rare/Power/PeacefulStance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Rare/Skill/AtAllCosts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="33" column="30" lean-forward="false" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Rare/Skill/Bombastic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Rare/Skill/DeadlyPlay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Rare/Skill/PowerBloom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Rare/Skill/Salvation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="39" column="30" lean-forward="false" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/MainMod/Fudgesickle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Starter/Strike_Valiant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="31" column="8" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Starter/Defend_Valiant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="28" column="57" lean-forward="true" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Starter/MinorHealing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="32" column="56" lean-forward="false" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Rare/Power/WeakForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Uncommon/Power/MightForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="36" column="49" lean-forward="false" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Patches/GremlinMatchPatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Patches/LibraryTypeEnum.java">
+    <entry file="file://$PROJECT_DIR$/src/valiant/Patches/WaveringDamagetypeEnumPatch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Patches/VampirePatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Patches/AbstractCardSpiritPatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1304,18 +819,328 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Patches/WaveringDamagetypeEnumPatch.java">
+    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Starter/MinorHealing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="378">
+          <caret line="32" column="56" lean-forward="false" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Patches/VampirePatch.java">
+    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/CardTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/CardsFinal/Blinding Flash.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Starter/Strike_Valiant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="28" column="65" lean-forward="false" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Common/Skill/DivineFavor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="32" column="82" lean-forward="false" selection-start-line="32" selection-start-column="82" selection-end-line="32" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Localization/Valiant-CardStrings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="127" column="30" lean-forward="false" selection-start-line="127" selection-start-column="13" selection-end-line="127" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/Cards_other/Testattack.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/MainMod/Fudgesickle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="86" column="71" lean-forward="false" selection-start-line="86" selection-start-column="71" selection-end-line="86" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Starter/Defend_Valiant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="25" column="65" lean-forward="false" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Starter/BlindingLight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="27" column="78" lean-forward="false" selection-start-line="27" selection-start-column="78" selection-end-line="27" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/Powers/DeadlyPlay.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/Powers/DelvingPrayer.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/Powers/anvil.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/monsters/exordium/GremlinNob.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-819">
+          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/STS mod projects/desktop-1.0.jar!/com/megacrit/cardcrawl/powers/RagePower.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Powers/AscensionPower.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <caret line="24" column="59" lean-forward="false" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Powers/ChargePower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Powers/CombatStancePower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Powers/DeadlyPlayPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="31" column="56" lean-forward="false" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Powers/DelvingPrayerPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="30" column="59" lean-forward="false" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Powers/HastePower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Powers/InsightfulPrayerPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="30" column="62" lean-forward="false" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Powers/MightFormPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="30" column="56" lean-forward="false" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Powers/OverburnPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Powers/PeacefulStancePower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="19" column="51" lean-forward="false" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Powers/PowerThroughPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="20" column="56" lean-forward="false" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Powers/PushOnwardPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="20" column="56" lean-forward="false" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Powers/SharpenPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="23" column="51" lean-forward="false" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Powers/SpiritPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Powers/TearSoulPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Powers/TurnTablesPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Powers/WaveringPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Powers/WeakFormPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="25" column="54" lean-forward="false" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Powers/ZenPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="29" column="49" lean-forward="false" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/TestAnim/main2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/TestAnim/shoulder.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/TestAnim/shoulder2.xcf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/LeilaPic.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/Valiant_Select_Screen.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/Logo1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/BaseModBadge.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/TestIcon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/Char/Blahblahhugebitch.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/Animation/blade.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Character/Valiant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/ModTheSpire.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
           <folding />
         </state>
       </provider>

@@ -23,7 +23,7 @@ public class Defend_Valiant extends CustomCard{
     private static final CardTarget target = CardTarget.SELF;
 
     public Defend_Valiant() {
-        super(ID, NAME, Fudgesickle.makePath(IMG_PATH), COST, DESCRIPTION,
+        super(ID, NAME, Fudgesickle.makePath(Fudgesickle.DEFEND_V), COST, DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
                 rarity, target);
         CardTags.addTags(this, BaseModTags.BASIC_DEFEND);

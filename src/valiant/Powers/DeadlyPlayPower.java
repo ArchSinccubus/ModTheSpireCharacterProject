@@ -29,7 +29,7 @@ public class DeadlyPlayPower extends AbstractPower {
         this.owner = owner;
         this.amount = amount;
         this.updateDescription();
-        this.img = Fudgesickle.getTex("Powers/Charge.png");
+        this.img = Fudgesickle.getTex("Powers/DeadlyPlay.png");
     }
 
     public void updateDescription() {

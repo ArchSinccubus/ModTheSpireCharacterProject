@@ -1,5 +1,7 @@
 package valiant.Powers;
 
+import com.megacrit.cardcrawl.monsters.exordium.GremlinNob;
+import com.megacrit.cardcrawl.powers.RagePower;
 import valiant.MainMod.Fudgesickle;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -20,7 +22,7 @@ public class TurnTablesPower extends AbstractPower {
         this.owner = owner;
         this.amount = -1;
         this.updateDescription();
-        this.img = Fudgesickle.getTex("Powers/Charge.png");
+        this.loadRegion("anger");
     }
 
     @Override

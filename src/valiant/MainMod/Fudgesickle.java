@@ -57,16 +57,12 @@ public class Fudgesickle implements PostInitializeSubscriber,
     private static final String POWER_WHITE_PORTRAIT = "resources/Cards_other/Backgrounds/1024/bg_power_holy_1024.png";
     private static final String ENERGY_ORB_HOLY_PORTRAIT = "resources/Cards_other/Backgrounds/1024/card_holy_orb.png";
 
-    //card pics
-    public static final String AttackDemo = "cards/STRIKE.png";
-    public static final String SkillDemo = "Cards_other/Skills/corona.png";
-    public static final String PowerDemo = "Cards_other/valiant.Powers/enigma.png";
-
-
+    public static final String STRIKE_V = "CardsFinal/Strike.png";
+    public static final String DEFEND_V = "CardsFinal/Defend.png";
     public static final String COMBAT_DANCE = "CardsFinal/Combat Dance.png";
     public static final String DECIMATE = "CardsFinal/Decimate.png";
     public static final String EMPOWERING_FORCE = "CardsFinal/Empowering Force.png";
-    public static final String GRACEFUL_SIPHON = "CardsFinal/Graceful Siphon.png";
+    public static final String GRACEFUL_SIPHON = "CardsFinal/Debilitation.png";
     public static final String MERCILESS_SMITE = "CardsFinal/Merciless Smite.png";
     public static final String PIERCING_STAB = "CardsFinal/Piercing Stab.png";
     public static final String POWER_STRIKE = "CardsFinal/brainstorm.png";
@@ -75,9 +71,9 @@ public class Fudgesickle implements PostInitializeSubscriber,
     public static final String SMITE = "CardsFinal/Smite.png";
     public static final String TOWERING_CHARGE = "CardsFinal/Towering Charge.png";
     public static final String WIDE_SMITE = "CardsFinal/Wide Smite.png";
-    public static final String ARCANE_HEALING = "CardsFinal/Arcane healing.png";
-    //    public static final String DIVINE_FAVOR = "CardsFinal/corona.png";
-    public static final String FLASH_OF_ANGER = "CardsFinal/Flash OF Anger.png";
+    public static final String ARCANE_HEALING = "CardsFinal/Arcane Healing.png";
+    public static final String DIVINE_FAVOR = "CardsFinal/Divine Favor.png";
+    public static final String FLASH_OF_ANGER = "CardsFinal/Flash of Anger.png";
     public static final String HOLY_FURY = "CardsFinal/Holy Fury.png";
     public static final String ITS_SMITING_TIME = "CardsFinal/Its Smiting Time.png";
     public static final String MIGHT_BRACER = "CardsFinal/Might Bracer.png";
@@ -88,7 +84,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
     public static final String UNYIELDING_ZEAL = "CardsFinal/Unyielding Zeal.png";
     public static final String ZEALOUS_PERSECUTION = "CardsFinal/Zealous Persecution.png";
     public static final String ALMIGHTY_SMITE = "CardsFinal/Almighty Smite.png";
-    public static final String DANGEROUS_SMASH = "CardsFinal/Dangerous Smash.png";
+    public static final String DANGEROUS_SMASH = "CardsFinal/Exhausting Smash.png";
     public static final String EXECUTION = "CardsFinal/Execution.png";
     public static final String FINAL_GAMBIT = "CardsFinal/Final Gambit.png";
     public static final String HOLY_STORM = "CardsFinal/DEUS VULT.png";
@@ -106,7 +102,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
     public static final String AURA_DISCHARGE = "CardsFinal/Aura Discharge.png";
     public static final String BREAK_THROUGH = "CardsFinal/Break Through.png";
     public static final String CHAINER = "CardsFinal/Chainer.png";
-    public static final String DESPERATION = "CardsFinal/Desperation.png";
+    public static final String DESPERATION = "CardsFinal/Desperate Wailing.png";
     public static final String FURIOUS_SMITE = "CardsFinal/Furious Smite.png";
     public static final String RETALIATE = "CardsFinal/Retaliate.png";
     public static final String STRAINING_SMITE = "CardsFinal/Chained Smite.png";
@@ -123,7 +119,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
     public static final String TURN_TABLES = "CardsFinal/Turn Tables.png";
     public static final String ZEN = "CardsFinal/Zen.png";
     public static final String ARCHANGEL_BOON = "CardsFinal/Archangel's Denouement.png";
-    public static final String BRACE_THE_PAIN = "CardsFinal/Brace The Pain.png";
+    public static final String BRACE_THE_PAIN = "CardsFinal/Brace the pain.png";
     public static final String CHARGE = "CardsFinal/Charge.png";
     public static final String CLEANSE = "CardsFinal/Cleanse.png";
     public static final String COMBAT_STANCE = "CardsFinal/Combat Dance.png";
@@ -133,18 +129,14 @@ public class Fudgesickle implements PostInitializeSubscriber,
     public static final String MEABALIZE = "CardsFinal/Meaballize.png";
     public static final String OVERWHELMING_LIGHT = "CardsFinal/thought_raze.png";
     public static final String RADIANCE = "CardsFinal/Radiance.png";
-    public static final String REDUCE_TO_NOTHING = "CardsFinal/Reduce To Nothing.png";
+    public static final String REDUCE_TO_NOTHING = "CardsFinal/Reduce to Nothing.png";
     public static final String SOUL_STRAIN = "CardsFinal/Soul Strain.png";
     public static final String VINDICATION = "CardsFinal/Vindication.png";
     public static final String ZEALOUS_AMBITION = "CardsFinal/Zealous Ambition.png";
-    public static final String BLINDING_LIGHT = "CardsFinal/Blinding Light.png";
+    public static final String BLINDING_LIGHT = "CardsFinal/Blinding Flash.png";
     public static final String MINOR_HEALING = "CardsFinal/Minor Healing.png";
     public static final String HOLY_LIGHT = "CardsFinal/Holy Light.png";
 
-
-    public static final String VORTEX = "cards/vortex.png";
-    public static final String ZENITH = "cards/zenith.png";
-    public static final String PHASE_COIL = "cards/phase_coil.png";
 
     //powers
     public static final String SpiritPic = "Powers/Spirit.png";
@@ -216,20 +208,6 @@ public class Fudgesickle implements PostInitializeSubscriber,
         IsDamaged = false;
     }
 
-    public static Texture GetAttack_WTexture()
-    {
-        return new Texture(makePath(AttackDemo));
-    }
-
-    public static Texture GetDefend_WTexture()
-    {
-        return new Texture(makePath(SkillDemo));
-    }
-
-    public static Texture GetPower_WTexture()
-    {
-        return new Texture(makePath(PowerDemo));
-    }
 
     public static Texture GetSpirit_Texture()
     {

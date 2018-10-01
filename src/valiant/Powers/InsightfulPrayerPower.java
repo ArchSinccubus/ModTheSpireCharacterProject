@@ -28,7 +28,7 @@ public class InsightfulPrayerPower extends AbstractPower {
         }
         this.updateDescription();
         this.cardsToDraw = cards;
-        this.img = Fudgesickle.getTex("Powers/Charge.png");
+        this.img = Fudgesickle.getTex("Powers/InsightfulPrayer.png");
     }
 
     public void stackPower(int stackAmount) {

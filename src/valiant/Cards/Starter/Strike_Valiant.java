@@ -26,7 +26,7 @@ public class Strike_Valiant extends CustomCard{
 
 
     public Strike_Valiant() {
-        super(ID, NAME, Fudgesickle.makePath(Fudgesickle.AttackDemo), COST, DESCRIPTION, AbstractCard.CardType.ATTACK,
+        super(ID, NAME, Fudgesickle.makePath(Fudgesickle.STRIKE_V), COST, DESCRIPTION, AbstractCard.CardType.ATTACK,
                 AbstractCardEnum.Holy, rarity,
                 target);
         CardTags.addTags(this, BaseModTags.BASIC_STRIKE, BaseModTags.STRIKE);

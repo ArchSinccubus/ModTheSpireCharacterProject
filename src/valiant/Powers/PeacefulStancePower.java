@@ -17,7 +17,7 @@ public class PeacefulStancePower extends AbstractPower {
         this.amount = -1;
         this.updateDescription();
         this.priority = 100;
-        this.img = Fudgesickle.getTex("Powers/Charge.png");
+        this.img = Fudgesickle.getTex("Powers/Peace.png");
     }
 
 //    public float atDamageGive(float damage, DamageInfo.DamageType type) {

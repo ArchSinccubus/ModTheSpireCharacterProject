@@ -23,7 +23,7 @@ public class WeakFormPower extends AbstractPower implements PostDrawSubscriber, 
         this.owner = owner;
         this.amount = -1;
         this.updateDescription();
-        this.img = Fudgesickle.getTex("Powers/Charge.png");
+        this.img = Fudgesickle.getTex("Powers/weakForm.png");
     }
 
     @Override

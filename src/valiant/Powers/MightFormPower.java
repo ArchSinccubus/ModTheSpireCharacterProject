@@ -28,7 +28,7 @@ public class MightFormPower extends AbstractPower {
             this.amount = -999;
         }
         this.updateDescription();
-        this.img = Fudgesickle.getTex("Powers/Charge.png");
+        this.img = Fudgesickle.getTex("Powers/Might form.png");
     }
 
     public void updateDescription() {
