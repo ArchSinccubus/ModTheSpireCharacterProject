@@ -18,7 +18,7 @@ public class SeekAnswersAction extends AbstractGameAction implements PostDrawSub
     public SeekAnswersAction(AbstractCreature target, AbstractCreature source, int amount) {
         this.setValues(target, source, amount);
         this.actionType = AbstractGameAction.ActionType.WAIT;
-        BaseMod.subscribeToPostDraw(this);
+        BaseMod.subscribe(this);
     }
 
     @Override
@@ -55,7 +55,7 @@ public class SeekAnswersAction extends AbstractGameAction implements PostDrawSub
                     System.out.println("could not delay unsubscribe to avoid ConcurrentModificationException");
                     e.printStackTrace();
                 }
-                BaseMod.unsubscribeFromPostDraw(this);
+                BaseMod.unsubscribe(this);
             });
             delayed.start();
         }

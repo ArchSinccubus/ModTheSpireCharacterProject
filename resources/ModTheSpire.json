@@ -2,7 +2,7 @@
   "modid": "TheValiant",
   "name": "The Valiant",
   "dependencies": ["basemod"],
-  "author_list": ["ArchSinccubus", "EvilBanana"],
+  "author_list": ["ArchSinccubus", "EvilBanana", "CuteLittleAngel"],
   "description": "Adds a new character, the Valiant, to the game.",
   "version": "1.0",
   "update_json": "https://api.github.com/repos/ArchSinccubus/ModTheSpireCharacterProject/releases/latest"
