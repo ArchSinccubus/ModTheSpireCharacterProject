@@ -1,5 +1,5 @@
 package valiant.Cards.Starter;
-import basemod.helpers.BaseModTags;
+import basemod.helpers.BaseModCardTags;
 import basemod.helpers.CardTags;
 import valiant.MainMod.Fudgesickle;
 import valiant.Patches.AbstractCardEnum;
@@ -29,7 +29,7 @@ public class Strike_Valiant extends CustomCard{
         super(ID, NAME, Fudgesickle.makePath(Fudgesickle.STRIKE_V), COST, DESCRIPTION, AbstractCard.CardType.ATTACK,
                 AbstractCardEnum.Holy, rarity,
                 target);
-        CardTags.addTags(this, BaseModTags.BASIC_STRIKE, BaseModTags.STRIKE);
+        this.tags.add(BaseModCardTags.BASIC_STRIKE);
         this.baseDamage = ATTACK_DMG;
     }
 

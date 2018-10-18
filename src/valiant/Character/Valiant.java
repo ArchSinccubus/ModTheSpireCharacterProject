@@ -3,8 +3,20 @@ package valiant.Character;
 import java.util.ArrayList;
 
 import basemod.animations.SpriterAnimation;
+import java.util.Map.Entry;
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.helpers.CardLibrary;
+import com.megacrit.cardcrawl.helpers.FontHelper;
+import com.megacrit.cardcrawl.helpers.ModHelper;
+import valiant.Cards.Starter.MinorHealing;
+import valiant.Patches.AbstractCardEnum;
 import valiant.Patches.CharacterEnum;
 
+import valiant.Patches.LibraryTypeEnum;
 import valiant.Relics.*;
 
 import basemod.abstracts.CustomPlayer;
@@ -49,8 +61,8 @@ public class Valiant extends CustomPlayer{
     public static final int STARTING_GOLD = 49;
     public static final int HAND_SIZE = 5;
 
-    public Valiant(String name, PlayerClass chosenClass) {
-        super(name, chosenClass,orbTextures ,"resources/orb/vfx.png" ,null, new SpriterAnimation("resources/Animation/Idle_final_sizetest.scml"));
+    public Valiant(String playerName) {
+        super(playerName, CharacterEnum.TheValiant,orbTextures ,"resources/orb/vfx.png" ,null, new SpriterAnimation("resources/Animation/Idle_final_sizetest.scml"));
 
         this.dialogX = (this.drawX + 0.0F * Settings.scale); // set location for text bubbles
         this.dialogY = (this.drawY + 220.0F * Settings.scale); // you can just copy these values
@@ -67,8 +79,18 @@ public class Valiant extends CustomPlayer{
         e.setTime(e.getEndTime() * MathUtils.random());
     }
 
+    @Override
+    public String getLocalizedCharacterName() {
+        return "Valiant";
+    }
+
+    @Override
+    public AbstractPlayer newInstance() {
+        return null;
+    }
+
     // ADD CARDS
-    public static ArrayList<String> getStartingDeck() { // starting deck 'nuff said
+    public ArrayList<String> getStartingDeck() { // starting deck 'nuff said
         ArrayList<String> retVal = new ArrayList<>();
         retVal.add("Strike_Valiant");
         retVal.add("Strike_Valiant");
@@ -85,9 +107,33 @@ public class Valiant extends CustomPlayer{
         return retVal;
     }
 
+    @Override
+    public ArrayList<AbstractCard> getCardPool(ArrayList<AbstractCard> tmpPool) {
+        AbstractCard card = null;
+        for (Entry<String, AbstractCard> c : CardLibrary.cards.entrySet()) {
+            card = (AbstractCard) c.getValue();
+            if ((card.color == AbstractCardEnum.Holy) && (card.rarity != AbstractCard.CardRarity.BASIC)
+                    && ((!UnlockTracker.isCardLocked((String) c.getKey())) || (Settings.treatEverythingAsUnlocked()))) {
+                tmpPool.add(card);
+            }
+        }
+        if (ModHelper.isModEnabled("Red Cards")) {
+            CardLibrary.addRedCards(tmpPool);
+        }
+        if (ModHelper.isModEnabled("Green Cards")) {
+            CardLibrary.addGreenCards(tmpPool);
+        }
+        if (ModHelper.isModEnabled("Blue Cards")) {
+            CardLibrary.addBlueCards(tmpPool);
+        }
+        if (ModHelper.isModEnabled("Colorless Cards")) {
+            CardLibrary.addColorlessCards(tmpPool);
+        }
+        return tmpPool;
+    }
 
     // ADD RELICS
-    public static ArrayList<String> getStartingRelics() { // starting relics - also simple
+    public ArrayList<String> getStartingRelics() { // starting relics - also simple
         ArrayList<String> retVal = new ArrayList<>();
 
         retVal.add(CrossPendant.ID);
@@ -111,10 +157,50 @@ public class Valiant extends CustomPlayer{
 //
 //    }
 
-    public static CharSelectInfo getLoadout() { // the rest of the character loadout so includes your character select screen info plus hp and starting gold
+    public CharSelectInfo getLoadout() { // the rest of the character loadout so includes your character select screen info plus hp and starting gold
         return new CharSelectInfo("Valiant", "A zealous nun wielding both holy power and untold fury.",
                 STARTING_HP, MAX_HP,0, STARTING_GOLD, HAND_SIZE,
-                CharacterEnum.TheValiant, getStartingRelics(), getStartingDeck(), false);
+                this, getStartingRelics(), getStartingDeck(), false);
+    }
+
+    @Override
+    public String getTitle(PlayerClass playerClass) {
+        return playerClass.name();
+    }
+
+    @Override
+    public Color getCardColor() {
+        return Color.WHITE;
+    }
+
+    @Override
+    public AbstractCard getStartCardForEvent() {
+        return new MinorHealing();
+    }
+
+    @Override
+    public Color getCardTrailColor() {
+        return Color.WHITE;
+    }
+
+    @Override
+    public int getAscensionMaxHPLoss() {
+        return 10;
+    }
+
+    @Override
+    public BitmapFont getEnergyNumFont() {
+        return FontHelper.energyNumFontRed;
+    }
+
+    @Override
+    public void doCharSelectScreenSelectEffect() {
+        CardCrawlGame.sound.playA("ATTACK_IRON_2", MathUtils.random(-0.2F, 0.2F));
+    }
+
+    @Override
+    public String getCustomModeCharacterButtonSoundKey() {
+        return "ATTACK_IRON_2";
     }
 
 

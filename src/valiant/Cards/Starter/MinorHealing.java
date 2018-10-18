@@ -1,5 +1,5 @@
 package valiant.Cards.Starter;
-import basemod.helpers.BaseModTags;
+import basemod.helpers.BaseModCardTags;
 import basemod.helpers.CardTags;
 import valiant.MainMod.*;
 import valiant.Patches.AbstractCardEnum;
@@ -30,7 +30,7 @@ public class MinorHealing extends CustomCard
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.MINOR_HEALING), COST, CARD_STRINGS.DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
                 CardRarity.BASIC, CardTarget.SELF);
-        CardTags.addTags(this, BaseModTags.GREMLIN_MATCH);
+        this.tags.add(AbstractCard.CardTags.HEALING);
         this.baseMagicNumber = HP_AMOUNT;
         this.magicNumber = this.baseMagicNumber;
         this.heal=this.baseHeal = HP_AMOUNT;

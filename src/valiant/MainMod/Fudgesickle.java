@@ -1,5 +1,8 @@
 package valiant.MainMod;
 
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import valiant.Cards.Common.Attack.*;
 import valiant.Cards.Common.Skill.*;
 import valiant.Cards.Rare.Attack.*;
@@ -236,7 +239,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
         Texture badgeTexture = new Texture(Gdx.files.internal("resources/BaseModBadge.png"));
         ModPanel settingsPanel = new ModPanel();
         //settingsPanel("This mod does not have any settings (yet)", 400.0f, 700.0f, (me) -> {});
-        BaseMod.registerModBadge(badgeTexture, Dev, Dev, "The Valiant, wielder of rage and purity, is now en route to the spire!", settingsPanel);
+        BaseMod.registerModBadge(badgeTexture, "The Valiant", "ArchSinccubus", "A nun sent to destroy the heart of evil in the name of The Lord. Wields both holy power and untold fury.", null);
 
         Settings.isDailyRun = false;
         Settings.isTrial = false;
@@ -414,13 +417,12 @@ public class Fudgesickle implements PostInitializeSubscriber,
         logger.info("begin editting characters");
 
         logger.info("add " + CharacterEnum.TheValiant.toString());
-        BaseMod.addCharacter(Valiant.class, "The Valiant", "A nun sent to destroy the heart of evil in the name of The Lord. Wields both holy power and untold fury.",
-                AbstractCardEnum.Holy, "The Valiant",
-                makePath(VALIANT_BUTTON) , makePath(VALIANT_POTRAIT),
-                CharacterEnum.TheValiant);
+        BaseMod.addCharacter(new Valiant(CardCrawlGame.playerName), AbstractCardEnum.Holy, makePath(VALIANT_BUTTON),
+                makePath(VALIANT_POTRAIT), CharacterEnum.TheValiant);
 
         logger.info("done editting characters");
     }
+
 
     @Override
     public void receiveEditKeywords() {

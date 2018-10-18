@@ -39,6 +39,7 @@ public class AuraDischarge extends CustomCard {
                 type, AbstractCardEnum.Holy,
                 rarity, target);
         this.baseDamage = DAMAGE;
+        this.tags.add(AbstractCard.CardTags.HEALING);
         this.isMultiDamage = true;
         this.baseMagicNumber = this.magicNumber = HP_HEAL;
 

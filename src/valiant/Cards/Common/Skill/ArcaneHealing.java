@@ -31,6 +31,7 @@ public class ArcaneHealing extends CustomCard
         this.baseMagicNumber = HP_AMOUNT;
         this.magicNumber = this.baseMagicNumber;
         this.heal=this.baseHeal = HP_AMOUNT;
+        this.tags.add(AbstractCard.CardTags.HEALING);
         this.exhaust= true;
     }
 

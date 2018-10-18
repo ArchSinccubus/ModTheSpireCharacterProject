@@ -32,6 +32,7 @@ public class Meaballize extends CustomCard
                 CardRarity.COMMON, CardTarget.SELF);
         this.baseMagicNumber = HP_AMOUNT;
         this.magicNumber = this.baseMagicNumber;
+        this.tags.add(AbstractCard.CardTags.HEALING);
         this.heal=this.baseHeal = HP_AMOUNT;
         this.exhaust= true;
     }

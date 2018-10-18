@@ -1,5 +1,5 @@
 package valiant.Cards.Starter;
-import basemod.helpers.BaseModTags;
+import basemod.helpers.BaseModCardTags;
 import basemod.helpers.CardTags;
 import valiant.MainMod.Fudgesickle;
 import valiant.Patches.AbstractCardEnum;
@@ -18,7 +18,6 @@ public class Defend_Valiant extends CustomCard{
     private static final int COST = 1;
     private static final int BLOCK_AMOUNT = 5;
     private static final int UPGRADE_BLOCK_DMG = 3;
-    private static final int POOL = 1;
     private static final CardRarity rarity = CardRarity.BASIC;
     private static final CardTarget target = CardTarget.SELF;
 
@@ -26,7 +25,7 @@ public class Defend_Valiant extends CustomCard{
         super(ID, NAME, Fudgesickle.makePath(Fudgesickle.DEFEND_V), COST, DESCRIPTION,
                 CardType.SKILL, AbstractCardEnum.Holy,
                 rarity, target);
-        CardTags.addTags(this, BaseModTags.BASIC_DEFEND);
+        this.tags.add(BaseModCardTags.BASIC_DEFEND);
         this.block=this.baseBlock = BLOCK_AMOUNT;
     }
 

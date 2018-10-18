@@ -40,6 +40,7 @@ public class Salvation extends CustomCard /*implements PostBattleSubscriber,Post
                 rarity, target);
         this.baseBlock = HP_AMOUNT;
         float base = (float)(this.magicNumber) / 100;
+        this.tags.add(AbstractCard.CardTags.HEALING);
         //this.baseMagicNumber = (int)((float)AbstractDungeon.player.maxHealth * percent);
         this.baseMagicNumber = this.magicNumber = this.baseBlock;
         //this.heal=this.baseHeal = HP_AMOUNT;

@@ -32,6 +32,7 @@ public class ZealousAmbition extends CustomCard
                 type, AbstractCardEnum.Holy,
                 rarity, target);
         this.exhaust = true;
+        this.tags.add(AbstractCard.CardTags.HEALING);
         this.baseMagicNumber = this.magicNumber = 6;
     }
 

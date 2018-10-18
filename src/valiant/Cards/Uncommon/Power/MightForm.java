@@ -1,6 +1,6 @@
 package valiant.Cards.Uncommon.Power;
 
-import basemod.helpers.BaseModTags;
+import basemod.helpers.BaseModCardTags;
 import basemod.helpers.CardTags;
 import valiant.MainMod.*;
 import valiant.Patches.AbstractCardEnum;
@@ -34,7 +34,7 @@ public class MightForm extends CustomCard
         super(ID, CARD_STRINGS.NAME, Fudgesickle.makePath(Fudgesickle.MIGHT_FORM), COST, CARD_STRINGS.DESCRIPTION,
                 type, AbstractCardEnum.Holy,
                 rarity, target);
-        CardTags.addTags(this, BaseModTags.FORM);
+        this.tags.add(BaseModCardTags.FORM);
         this.baseMagicNumber = this.magicNumber = BLOCK_AMOUNT;
     }
 
