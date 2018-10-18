@@ -86,7 +86,7 @@ public class Valiant extends CustomPlayer{
 
     @Override
     public AbstractPlayer newInstance() {
-        return null;
+        return this;
     }
 
     // ADD CARDS

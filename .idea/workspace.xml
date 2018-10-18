@@ -7,19 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="166ff544-f595-483b-bbfe-a7e4ae8af0c2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/ArcaneHealing.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/ArcaneHealing.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Rare/Power/WeakForm.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Rare/Power/WeakForm.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Rare/Skill/Salvation.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Rare/Skill/Salvation.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Starter/Defend_Valiant.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Starter/Defend_Valiant.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Starter/MinorHealing.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Starter/MinorHealing.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Starter/Strike_Valiant.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Starter/Strike_Valiant.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Attack/AuraDischarge.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Attack/AuraDischarge.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Power/MightForm.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Power/MightForm.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/Meaballize.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/Meaballize.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/ZealousAmbition.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/ZealousAmbition.java" />
+      <change beforePath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/Radiance.java" afterPath="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/Radiance.java" />
       <change beforePath="$PROJECT_DIR$/src/valiant/Character/Valiant.java" afterPath="$PROJECT_DIR$/src/valiant/Character/Valiant.java" />
-      <change beforePath="$PROJECT_DIR$/src/valiant/MainMod/Fudgesickle.java" afterPath="$PROJECT_DIR$/src/valiant/MainMod/Fudgesickle.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,8 +27,8 @@
       <file leaf-file-name="Valiant.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/valiant/Character/Valiant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="64" column="50" lean-forward="false" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
+            <state relative-caret-position="-504">
+              <caret line="88" column="19" lean-forward="false" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
               <folding>
                 <element signature="e#3768#3769#0" expanded="true" />
                 <element signature="e#3800#3801#0" expanded="true" />
@@ -60,6 +49,36 @@
                 <element signature="e#7259#7260#0" expanded="true" />
                 <element signature="e#7297#7298#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Radiance.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/Radiance.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="34" column="85" lean-forward="false" selection-start-line="34" selection-start-column="85" selection-end-line="34" selection-end-column="85" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AtAllCosts.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Rare/Skill/AtAllCosts.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-231">
+              <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddCardToHandAtion.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/valiant/Actions/AddCardToHandAtion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2360">
+              <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,11 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Fudgesickle.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Fudgesickle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/valiant/MainMod/Fudgesickle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="423" column="5" lean-forward="true" selection-start-line="423" selection-start-column="5" selection-end-line="423" selection-end-column="5" />
+            <state relative-caret-position="270">
+              <caret line="419" column="40" lean-forward="false" selection-start-line="419" selection-start-column="29" selection-end-line="419" selection-end-column="40" />
               <folding>
                 <element signature="method#receiveSetUnlocks#0;class#Fudgesickle#0" expanded="false" />
               </folding>
@@ -126,36 +145,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractCardEnum.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/valiant/Patches/AbstractCardEnum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChargePower.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/valiant/Powers/ChargePower.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SharpenPower.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/valiant/Powers/SharpenPower.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -167,8 +156,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cleanse</find>
-      <find>defend</find>
       <find>applypowers</find>
       <find>Enum</find>
       <find>soulstr</find>
@@ -197,6 +184,8 @@
       <find>seek</find>
       <find>heal</find>
       <find>receivePostInitialize</find>
+      <find>ARCHMOD_ASSETS_FOLDER</find>
+      <find>New Valiant</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -211,7 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/ItsSmitingTime.java" />
         <option value="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/MightBracer.java" />
         <option value="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/PowerStance.java" />
         <option value="$PROJECT_DIR$/src/valiant/Cards/Common/Skill/SeekAnswers.java" />
@@ -260,12 +248,13 @@
         <option value="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/Meaballize.java" />
         <option value="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/ZealousAmbition.java" />
         <option value="$PROJECT_DIR$/src/valiant/Cards/Starter/MinorHealing.java" />
-        <option value="$PROJECT_DIR$/src/valiant/Character/Valiant.java" />
         <option value="$PROJECT_DIR$/src/valiant/MainMod/Fudgesickle.java" />
+        <option value="$PROJECT_DIR$/src/valiant/Character/Valiant.java" />
+        <option value="$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/Radiance.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="28" />
     <option name="y" value="27" />
     <option name="width" value="1936" />
@@ -670,7 +659,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -712,16 +701,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/LeilaPic.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/Valiant_Select_Screen.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/Logo1.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -751,14 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="65" lean-forward="false" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Actions/AddCardToHandAtion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1932">
-          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1063,33 +1034,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/valiant/Character/Valiant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="64" column="50" lean-forward="false" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
-          <folding>
-            <element signature="e#3768#3769#0" expanded="true" />
-            <element signature="e#3800#3801#0" expanded="true" />
-            <element signature="e#3857#3858#0" expanded="true" />
-            <element signature="e#3884#3885#0" expanded="true" />
-            <element signature="e#6524#6525#0" expanded="true" />
-            <element signature="e#6565#6566#0" expanded="true" />
-            <element signature="e#6614#6615#0" expanded="true" />
-            <element signature="e#6648#6649#0" expanded="true" />
-            <element signature="e#6712#6713#0" expanded="true" />
-            <element signature="e#6753#6754#0" expanded="true" />
-            <element signature="e#6807#6808#0" expanded="true" />
-            <element signature="e#6841#6842#0" expanded="true" />
-            <element signature="e#6897#6898#0" expanded="true" />
-            <element signature="e#6922#6923#0" expanded="true" />
-            <element signature="e#6980#6981#0" expanded="true" />
-            <element signature="e#7030#7031#0" expanded="true" />
-            <element signature="e#7259#7260#0" expanded="true" />
-            <element signature="e#7297#7298#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/valiant/Cards/CardTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -1116,11 +1060,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/valiant/MainMod/Fudgesickle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="423" column="5" lean-forward="true" selection-start-line="423" selection-start-column="5" selection-end-line="423" selection-end-column="5" />
+        <state relative-caret-position="270">
+          <caret line="419" column="40" lean-forward="false" selection-start-line="419" selection-start-column="29" selection-end-line="419" selection-end-column="40" />
           <folding>
             <element signature="method#receiveSetUnlocks#0;class#Fudgesickle#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Character/Valiant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-504">
+          <caret line="88" column="19" lean-forward="false" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
+          <folding>
+            <element signature="e#3768#3769#0" expanded="true" />
+            <element signature="e#3800#3801#0" expanded="true" />
+            <element signature="e#3857#3858#0" expanded="true" />
+            <element signature="e#3884#3885#0" expanded="true" />
+            <element signature="e#6524#6525#0" expanded="true" />
+            <element signature="e#6565#6566#0" expanded="true" />
+            <element signature="e#6614#6615#0" expanded="true" />
+            <element signature="e#6648#6649#0" expanded="true" />
+            <element signature="e#6712#6713#0" expanded="true" />
+            <element signature="e#6753#6754#0" expanded="true" />
+            <element signature="e#6807#6808#0" expanded="true" />
+            <element signature="e#6841#6842#0" expanded="true" />
+            <element signature="e#6897#6898#0" expanded="true" />
+            <element signature="e#6922#6923#0" expanded="true" />
+            <element signature="e#6980#6981#0" expanded="true" />
+            <element signature="e#7030#7031#0" expanded="true" />
+            <element signature="e#7259#7260#0" expanded="true" />
+            <element signature="e#7297#7298#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Uncommon/Skill/Radiance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="34" column="85" lean-forward="false" selection-start-line="34" selection-start-column="85" selection-end-line="34" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Cards/Rare/Skill/AtAllCosts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-231">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/valiant/Actions/AddCardToHandAtion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2360">
+          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
