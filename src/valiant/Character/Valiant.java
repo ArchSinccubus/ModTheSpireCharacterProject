@@ -6,6 +6,7 @@ import basemod.animations.SpriterAnimation;
 import java.util.Map.Entry;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -86,7 +87,7 @@ public class Valiant extends CustomPlayer{
 
     @Override
     public AbstractPlayer newInstance() {
-        return this;
+        return new Valiant("The Valiant");
     }
 
     // ADD CARDS
@@ -169,8 +170,13 @@ public class Valiant extends CustomPlayer{
     }
 
     @Override
-    public Color getCardColor() {
-        return Color.WHITE;
+    public AbstractCard.CardColor getCardColor() {
+        return AbstractCardEnum.Holy;
+    }
+
+    @Override
+    public Color getCardRenderColor() {
+        return Color.WHITE.cpy();
     }
 
     @Override
@@ -180,7 +186,7 @@ public class Valiant extends CustomPlayer{
 
     @Override
     public Color getCardTrailColor() {
-        return Color.WHITE;
+        return Color.WHITE.cpy();
     }
 
     @Override
@@ -203,5 +209,24 @@ public class Valiant extends CustomPlayer{
         return "ATTACK_IRON_2";
     }
 
+    @Override
+    public String getSpireHeartText() {
+        return "NL You ready your Weapon...";
+    }
 
+    @Override
+    public Color getSlashAttackColor() {
+        return Color.WHITE.cpy();
+    }
+
+    @Override
+    public AbstractGameAction.AttackEffect[] getSpireHeartSlashEffect() {
+        return new AbstractGameAction.AttackEffect[0];
+    }
+
+    //TODO: Character Specific Dialog
+    @Override
+    public String getVampireText() {
+        return "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us,~ ~oh Mighty Warrior,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~";
+    }
 }
