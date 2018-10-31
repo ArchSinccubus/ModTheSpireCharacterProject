@@ -24,3 +24,4 @@ Credits:
 
 Arch (myself): Coding, Balancing, Design, Art.
 EvilBanana (My brother): Testing, Balancing, Design.
+Residualshade: Maintenance, Bugfixes

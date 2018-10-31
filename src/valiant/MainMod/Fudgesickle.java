@@ -417,7 +417,7 @@ public class Fudgesickle implements PostInitializeSubscriber,
         logger.info("begin editting characters");
 
         logger.info("add " + CharacterEnum.TheValiant.toString());
-        BaseMod.addCharacter(new Valiant(CardCrawlGame.playerName), AbstractCardEnum.Holy, makePath(VALIANT_BUTTON),
+        BaseMod.addCharacter(new Valiant(CardCrawlGame.playerName), makePath(VALIANT_BUTTON),
                 makePath(VALIANT_POTRAIT), CharacterEnum.TheValiant);
 
         logger.info("done editting characters");
