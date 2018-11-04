@@ -239,7 +239,12 @@ public class Valiant extends CustomPlayer{
 
     @Override
     public AbstractGameAction.AttackEffect[] getSpireHeartSlashEffect() {
-        return new AbstractGameAction.AttackEffect[0];
+        return new AbstractGameAction.AttackEffect[]{
+                AbstractGameAction.AttackEffect.SLASH_DIAGONAL
+                , AbstractGameAction.AttackEffect.SLASH_HORIZONTAL
+                , AbstractGameAction.AttackEffect.SLASH_VERTICAL
+                , AbstractGameAction.AttackEffect.SLASH_HEAVY
+        };
     }
 
     //TODO: characters Specific Dialog
