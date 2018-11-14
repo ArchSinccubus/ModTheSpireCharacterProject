@@ -150,8 +150,8 @@ public class ValiantMod implements PostInitializeSubscriber,
     public static final String POWER_IMG_PATH = IMG_PATH + "powers/";
     public static final String SPIRIT = POWER_IMG_PATH + "Spirit.png";
     public static final String COMBAT_STANCE_POWER =  POWER_IMG_PATH + "CombatStance.png";
-    public static final String ZEN_POWER = POWER_IMG_PATH + "zen.png";
-    public static final String CHARGE_POWER = POWER_IMG_PATH + "charge.png";
+    public static final String ZEN_POWER = POWER_IMG_PATH + "Zen.png";
+    public static final String CHARGE_POWER = POWER_IMG_PATH + "Charge.png";
     public static final String ASCENSION_POWER = POWER_IMG_PATH + "FullAwakening.png";
     public static final String DEADLY_PLAY_POWER = POWER_IMG_PATH + "DeadlyPlay.png";
     public static final String DELVING_PRAYER_POWER = POWER_IMG_PATH + "DelvingPrayer.png";
