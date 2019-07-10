@@ -1,8 +1,8 @@
 {
-	"Strike_Valiant": {
-		"NAME": "Strike",
-		"DESCRIPTION": "Deal !D! damage."
-	},
+  "Strike_Valiant": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
   "PiercingStab": {
     "NAME": "Piercing Stab",
     "DESCRIPTION": "Deal !D! damage. NL Apply 2 Wavering."
@@ -77,13 +77,13 @@
     "DESCRIPTION": "Deal !D! damage and apply !M! Wavering to ALL enemies."
   },
   "ZealousSmite": {
-  "NAME": "Zealous Smite",
-  "DESCRIPTION": "Deal !D! damage. NL If the enemy is Wavering, deal 50% more, gain [R] and draw a card.",
-  "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is Wavering, deal twice as much, gain [R] and draw a card.",
+    "NAME": "Zealous Smite",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy is Wavering, deal 50% more, gain [R] and draw a card.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is Wavering, deal twice as much, gain [R] and draw a card.",
     "EXTENDED_DESCRIPTION": [
       "Deal !D! damage. If the enemy is Wavering, deal !F! more, gain [R] and draw a card."
     ]
-},
+  },
   "TearPsyche": {
     "NAME": "Tear Psyche",
     "DESCRIPTION": "Deal !D! damage. Lose !M!% HP."
@@ -169,22 +169,20 @@
     "DESCRIPTION": "Remove an enemy's Wavering and deal 3 times that much damage to them."
   },
   "Tantrum": {
-  "NAME": "Tantrum",
-  "DESCRIPTION": "For each time you lost HP this turn, deal !M! to ALL enemies.",
+    "NAME": "Tantrum",
+    "DESCRIPTION": "For each time you lost HP this turn, deal !M! to ALL enemies.",
     "EXTENDED_DESCRIPTION": [
       " (You will deal !D! Damage)"
     ]
-},
+  },
   "AlmightySmite": {
-  "NAME": "Almighty Smite",
-  "DESCRIPTION": "Deal !D! damage. NL If the enemy is Wavering, deal 50% more.",
-  "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is Wavering, deal twice as much.",
+    "NAME": "Almighty Smite",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy is Wavering, deal 50% more.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the enemy is Wavering, deal twice as much.",
     "EXTENDED_DESCRIPTION": [
       "Deal !D! damage. If the enemy is Wavering, deal !F! more."
     ]
-},
-
-
+  },
   "Defend_Valiant": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
@@ -312,62 +310,64 @@
     "UPGRADE_DESCRIPTION": "Remove all Debuffs. Exhaust all Statuses and Curses in your hand."
   },
   "ZealousAmbition": {
-  "NAME": "Zealous Ambition",
-  "DESCRIPTION": "If you have over half your HP, Lose 6 HP and draw 2 cards. If you have less, Discard 2 cards and heal !M! HP. Exhaust"
-},
+    "NAME": "Zealous Ambition",
+    "DESCRIPTION": "If you have over half your HP, Lose 6 HP and draw 2 cards. If you have less, Discard 2 cards and heal !M! HP. Exhaust"
+  },
   "Charge": {
-  "NAME": "Charge",
-  "DESCRIPTION": "The next Attack you play deals 50 % more damage. Lose !M! HP.",
+    "NAME": "Charge",
+    "DESCRIPTION": "The next Attack you play deals 50 % more damage. Lose !M! HP.",
     "UPGRADE_DESCRIPTION": "The next Attack you play deals 50 % more damage. Lose !M! HP."
-},
+  },
   "SoulStrain": {
-  "NAME": "Soul Strain",
-  "DESCRIPTION": "Gain [R] [R] [R]. Lose 4 HP.",
+    "NAME": "Soul Strain",
+    "DESCRIPTION": "Gain [R] [R] [R]. Lose 4 HP.",
     "UPGRADE_DESCRIPTION": "Gain [R] [R] [R] [R]. Lose 4 HP."
-},
+  },
   "Ensoul": {
     "NAME": "Ensoul",
     "DESCRIPTION": "Gain !M! Spirit."
   },  "Zen": {
-  "NAME": "Zen",
-  "DESCRIPTION": "Whenever you lose HP from a card, gain !M! Dexterity."
-},  "MightForm": {
-  "NAME": "Might Form",
-  "DESCRIPTION": "Whenever you play a card that costs 3 or more, gain !M! Block."
-},  "Sharpen": {
-  "NAME": "Sharpen",
-  "DESCRIPTION": "At the end of each turn, upgrade an Attack card in your hand. If you can't, lose 2 HP.",
+    "NAME": "Zen",
+    "DESCRIPTION": "Whenever you lose HP from a card, gain !M! Dexterity."
+  },
+  "MightForm": {
+    "NAME": "Might Form",
+    "DESCRIPTION": "Whenever you play a card that costs 3 or more, gain !M! Block."
+  },
+  "Sharpen": {
+    "NAME": "Sharpen",
+      "DESCRIPTION": "At the end of each turn, upgrade an Attack card in your hand. If you can't, lose 2 HP.",
   "UPGRADE_DESCRIPTION": "Innate. At the end of each turn, upgrade an Attack card in your hand. If you can't, lose 2 HP."
-
-}, "TurnTables": {
-  "NAME": "Turn Tables",
-  "DESCRIPTION": "Whenever you apply Wavering to an enemy, lose 3 HP and gain [R]."
-
-},  "PushOnward": {
-  "NAME": "Push Onward",
-  "DESCRIPTION": "Whenever you lose HP from a card, Exhaust a card from your hand and gain 3 HP."
-
-}, "InsightfulPrayer": {
-  "NAME": "Insightful Prayer",
-  "DESCRIPTION": "Whenever you heal, if you're above 60 % HP, draw a card.",
-  "UPGRADE_DESCRIPTION": "Whenever you heal, if you're above 60 % HP, draw !M! cards."
-
-}, "DelvingPrayer": {
-  "NAME": "Delving Prayer",
-  "DESCRIPTION": "At the beginning of each turn, draw !M! cards and Exhaust the top card of your draw pile."
-},
+  },
+  "TurnTables": {
+    "NAME": "Turn Tables",
+    "DESCRIPTION": "Whenever you apply Wavering to an enemy, lose 3 HP and gain [R]."
+  },
+  "PushOnward": {
+    "NAME": "Push Onward",
+    "DESCRIPTION": "Whenever you lose HP from a card, Exhaust a card from your hand and gain 3 HP."
+  },
+  "InsightfulPrayer": {
+    "NAME": "Insightful Prayer",
+    "DESCRIPTION": "Whenever you heal, if you're above 60 % HP, draw a card.",
+    "UPGRADE_DESCRIPTION": "Whenever you heal, if you're above 60 % HP, draw !M! cards."
+  },
+  "DelvingPrayer": {
+    "NAME": "Delving Prayer",
+    "DESCRIPTION": "At the beginning of each turn, draw !M! cards and Exhaust the top card of your draw pile."
+  },
   "Salvation": {
     "NAME": "Salvation",
     "DESCRIPTION": "Heal !B! % of your max HP. Exhaust.",
     "EXTENDED_DESCRIPTION": [
       " (You will heal !M! HP)"
     ]
-  }
-, "AtAllCosts": {
-  "NAME": "At All Costs",
-  "DESCRIPTION": "Choose and add a card from your Draw Pile to your hand. Add a random Curse to your hand. Exhaust.",
-  "UPGRADE_DESCRIPTION": "Choose and add a card from ANY Pile to your hand. Add a random Curse to your hand. Exhaust."
-},
+  },
+  "AtAllCosts": {
+    "NAME": "At All Costs",
+    "DESCRIPTION": "Choose and add a card from your Draw Pile to your hand. Add a random Curse to your hand. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose and add a card from ANY Pile to your hand. Add a random Curse to your hand. Exhaust."
+  },
   "TempoMaster": {
     "NAME": "Tempo Master",
     "DESCRIPTION": "Gain 1 Haste.",
@@ -387,10 +387,10 @@
     "DESCRIPTION": "Choose and add a card from your Discard Pile that costs 3 or more to your hand. Exhaust.",
     "UPGRADE_DESCRIPTION": "NL Choose and add a card from your Discard Pile that costs 3 to your hand. Add a random Curse to your hand."
   },
-"FullAwakening": {
-"NAME": "Full Awakening",
-"DESCRIPTION": "At the start of each turn, gain !M! Spirit, Strength and Dexterity."
-},
+  "FullAwakening": {
+    "NAME": "Full Awakening",
+    "DESCRIPTION": "At the start of each turn, gain !M! Spirit, Strength and Dexterity."
+  },
   "PeacefulStance": {
     "NAME": "Peaceful Stance",
     "DESCRIPTION": "Lose 3 Strength. You take 50% less damage."
