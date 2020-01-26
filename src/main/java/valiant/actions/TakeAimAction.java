@@ -42,7 +42,7 @@ public class TakeAimAction extends AbstractGameAction {
             if (this.p.hand.group.size() - this.cannotReduce.size() == 1) {
                 for (AbstractCard c : this.p.hand.group) {
                     if (canReduce(c)) {
-                        c.modifyCostForTurn(-1);
+                        c.setCostForTurn(c.cost - 1);
                         this.isDone = true;
                         return;
                     }
@@ -59,7 +59,7 @@ public class TakeAimAction extends AbstractGameAction {
                     return;
                 }
                 else if (this.p.hand.group.size() == 1) {
-                    this.p.hand.getTopCard().modifyCostForTurn(-1);
+                    this.p.hand.getTopCard().setCostForTurn(this.p.hand.getTopCard().cost -1);
                     returnCards();
                     this.isDone = true;
                 }
@@ -67,7 +67,7 @@ public class TakeAimAction extends AbstractGameAction {
 
         if (!AbstractDungeon.handCardSelectScreen.wereCardsRetrieved) {
             for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group) {
-                c.modifyCostForTurn(-1);
+                c.setCostForTurn(c.cost - 1);
                 this.p.hand.addToTop(c);
             }
 
