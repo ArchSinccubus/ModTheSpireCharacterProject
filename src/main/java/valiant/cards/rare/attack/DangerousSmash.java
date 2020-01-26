@@ -15,7 +15,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.vfx.combat.DamageHeartEffect;
+import com.megacrit.cardcrawl.vfx.DamageHeartEffect;
 
 public class DangerousSmash extends CustomCard
 {
